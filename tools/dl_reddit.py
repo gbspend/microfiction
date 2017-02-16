@@ -10,10 +10,18 @@ if __name__ == "__main__":
     parser.add_argument('--after', action="store", dest="after", type=str, default="", required=False, help="Download after given name.")
     parser.add_argument('--amount', action="store", dest="amount", type=int, default=5, required=False, help="Number of pages of 50 to download.")
     parser.add_argument('--out', action="store", dest="out", type=str, default="../corpus/reddit.json", required=False, help="Name of output file.")
-    compiled_dict = {}
-    compiled_dict["stories"] = []
+    parser.add_argument('--infile', action="store", dest="infile", type=str, default="", required=False, help="File to append to.")
     args = parser.parse_args()
     after = args.after
+
+
+    compiled_dict = {}
+    compiled_dict["stories"] = []
+    if args.infile != "":
+        with open(args.infile, "r") as f:
+            compiled_dict = json.load(f)
+        after = compiled_dict["last"]
+
     for i in range(args.amount):
         if after == "":
             url = get_url
