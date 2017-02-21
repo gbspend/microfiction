@@ -127,19 +127,29 @@ class ConceptNet:
 	#gets all "Start" words that end with "End" given the relation
 	def getIncoming(self, word, rel):
 		u = 'http://api.conceptnet.io/query?end=/c/en/'+word+'&rel=/r/'+rel
-		return self.doQuery(u)
+		return self.doQuery(u, True)
 
 	def getOutgoing(self, word, rel):
 		u = 'http://api.conceptnet.io/query?start=/c/en/'+word+'&rel=/r/'+rel
-		return self.doQuery(u)
+		return self.doQuery(u, False)
 
-	def doQuery(self, u):
+	def getIdIncoming(self, id, rel):
+		u = 'http://api.conceptnet.io/query?end='+id+'&rel=/r/'+rel
+		return self.doQuery(u, True)
+
+	def getIdOutgoing(self, id, rel):
+		u = 'http://api.conceptnet.io/query?start='+id+'&rel=/r/'+rel
+		return self.doQuery(u, False)
+
+	def doQuery(self, u, retStart):
 		obj = requests.get(u).json()
 		ret = []
 		for edge in obj['edges']:
-			start = edge['start']
-			if start['language'] == 'en':
-				ret.append((start['@id'],start['label']))
+			node = edge['start']
+			if not retStart:
+				node = edge['end']
+			if node['language'] == 'en':
+				ret.append((node['@id'],node['label']))
 		return ret		
 
 	#get a word (request if necessary)
