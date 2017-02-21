@@ -111,6 +111,7 @@ def doIt(noun,verbi):
 					choices.append(curr)
 	choices = list(set(choices)) #removes duplicates
 
+	#the idea here was to sort them by how they're related to the noun/verb and then... chop off the bottom 1/4?
 #	ordered = sorted(choices, key=lambda x: nvCompare(x, noun, verb), reverse=True)
 #	print ordered[:10]
 	print ". ".join([firstCharUp(x) for x in pickSome(choices, 3, noun, verb)])+". "+random.choice(["A","The"])+" "+noun+" "+verbi+"."
