@@ -6,7 +6,7 @@ class Word:
 		self.label = l
 		self.lang = g
 		self.term = t
-		self.rels = { #arrays of strings that can be looked up in ConceptNet
+		self.rels = { #arrays of id/label tuples that can be looked up in ConceptNet
 			'RelatedTo':set(),
 			#'ExternalURL':set(),
 			'FormOf':set(),
@@ -120,18 +120,45 @@ class ConceptNet:
 		self.data = {}
 		self.url = 'http://api.conceptnet.io'
 
+	#ex: http://api.conceptnet.io/query?end=/c/en/scream&rel=/r/HasSubevent
+	# that gets all words that have the "[word] has subevent: scream" relation (edge)
+	#make functions that query for a word in start or end position and a relation. return words from edges by breaking out the while True part of getWord
+
+	#gets all "Start" words that end with "End" given the relation
+	def getIncoming(self, word, rel):
+		u = 'http://api.conceptnet.io/query?end=/c/en/'+word+'&rel=/r/'+rel
+		return self.doQuery(u)
+
+	def getOutgoing(self, word, rel):
+		u = 'http://api.conceptnet.io/query?start=/c/en/'+word+'&rel=/r/'+rel
+		return self.doQuery(u)
+
+	def doQuery(self, u):
+		obj = requests.get(u).json()
+		ret = []
+		for edge in obj['edges']:
+			start = edge['start']
+			if start['language'] == 'en':
+				ret.append((start['@id'],start['label']))
+		return ret		
+
 	#get a word (request if necessary)
 	#ex. "dog" (use "label" from an edge)
 	def getWord(self, word):
 		if word in self.data:
 			return self.data[word]
-		obj = requests.get(self.url + '/c/en/' + word).json()
+		return self.getId('/c/en/' + word)
+
+	def getId(self, id):
+		#TODO re-design so that it caches ids too (fetch first page, then look up caching?)
+		obj = requests.get(self.url + id).json()
 		if 'view' not in obj:
 			return None
 		#note: can't do self.data[word]=... here because we don't have "start"
 		#load edges
 		while True:
 			for edge in obj['edges']:
+				word = edge['start']['label']
 				if word not in self.data:
 					s = edge['start']
 					self.data[word] = Word(s['@id'],s['label'],s['language'],s['term'])
@@ -140,7 +167,7 @@ class ConceptNet:
 				if not self.data[word].isOther(rel):
 					end = edge['end']
 					if end['language'] == 'en':
-						self.data[word].addRel(rel, end['label'])
+						self.data[word].addRel(rel, (end['@id'], end['label']))
 				#doesn't include "surfaceText" or "weight"
 			if 'nextPage' not in obj['view']:
 				self.data[word].loaded = True
