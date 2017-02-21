@@ -6,12 +6,15 @@ import sys
 
 #w2v = gensim.models.Word2Vec.load_word2vec_format('gn.bin',binary=True)
 #w2v.init_sims(replace=True)
+#print "Word2Vec Loaded"
 c = cn.ConceptNet()
 
 def baseWord(word):
 	while True:
 		last = word
 		word = wn.morphy(word)
+		if word is None:
+			return last
 		if last == word:
 			return word
 
@@ -22,7 +25,7 @@ def comesBeforeId(id):
 	return c.getIdIncoming(id,"Causes") + c.getIdIncoming(id,"HasSubevent") + c.getIdOutgoing(id,"HasPrerequisite")
 
 def synName(s):
-	return s.name().split('.')[0]
+	return s.lemma_names()[0]
 
 def dist(s1, s2):
 	if len(s1) > len(s2):
@@ -41,11 +44,14 @@ def dist(s1, s2):
 
 def nounify(verb_word):
 	set_of_related_nouns = set()
-
-	for lemma in wn.lemmas(wn.morphy(verb_word, wn.VERB), pos="v"):
-		for related_form in lemma.derivationally_related_forms():
-			for synset in wn.synsets(related_form.name(), pos=wn.NOUN):
-				set_of_related_nouns.add(synset)
+	
+	m = wn.morphy(verb_word, wn.VERB)
+	if m is not None:
+		for lemma in wn.lemmas(m, pos="v"):
+			for related_form in lemma.derivationally_related_forms():
+				for synset in wn.synsets(related_form.name(), pos=wn.NOUN):
+					if not synName(synset)[0].isupper(): #filters out proper nouns
+						set_of_related_nouns.add(synset)
 
 	return set_of_related_nouns
 
@@ -66,7 +72,7 @@ def toNoun(w):
 
 def pickSome(l, n, noun, verb):
 	ret = []
-	dontMatch = [baseWord(noun),baseWord(verb)]
+	dontMatch = [baseWord(noun),baseWord(verb),baseWord(toNoun(verb))]
 	while len(ret) < n:
 		c = random.choice(l)
 		if baseWord(c) in dontMatch:
@@ -79,6 +85,14 @@ def pickSome(l, n, noun, verb):
 def firstCharUp(s):
 	return s[0].upper() + s[1:]
 
+def w2vDist(x,y):
+	if x not in w2v or y not in w2v:
+		return 0
+	return w2v.similarity(x,y)
+
+def nvCompare(word, noun, verb):
+	return w2vDist(word, noun) + w2vDist(word, verb)
+
 def doIt(noun,verbi):
 	verb = baseWord(verbi)
 
@@ -86,11 +100,23 @@ def doIt(noun,verbi):
 	choices = []
 	for x in before:
 		for y in comesBeforeId(x[0]):
-			if len(y[1].split()) == 1:
-				choices.append(y[1])
+			curr = y[1]
+			if len(curr.split()) == 1:
+				ss = wn.synsets(curr)
+				found = False
+				for s in ss:
+					if synName(s) == verb:
+						found = True
+				if not found:
+					choices.append(curr)
+	choices = list(set(choices)) #removes duplicates
+
+#	ordered = sorted(choices, key=lambda x: nvCompare(x, noun, verb), reverse=True)
+#	print ordered[:10]
 	print ". ".join([firstCharUp(x) for x in pickSome(choices, 3, noun, verb)])+". "+random.choice(["A","The"])+" "+noun+" "+verbi+"."
 
-noun = sys.argv[1]
-verbi = sys.argv[2]
+if __name__ == "__main__":
+	noun = sys.argv[1]
+	verbi = sys.argv[2]
 
-doIt(noun, verbi)
+	doIt(noun, verbi)
