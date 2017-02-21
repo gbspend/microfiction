@@ -6,10 +6,9 @@ class Word:
 		self.label = l
 		self.lang = g
 		self.term = t
-		self.loaded = False #denotes whether relations have been loaded
 		self.rels = { #arrays of strings that can be looked up in ConceptNet
 			'RelatedTo':set(),
-			'ExternalURL':set(),
+			#'ExternalURL':set(),
 			'FormOf':set(),
 			'IsA':set(),
 			'PartOf':set(),
@@ -35,18 +34,30 @@ class Word:
 			'Entails':set(),
 			'MannerOf':set(),
 			'LocatedNear':set(),
-			'Other':set()
+			'Other':set() #this will always be empty
 		}
+	
+	#returns names of non-empty relations
+	def nonEmpty(self):
+		ret = []
+		for k in self.rels.keys():
+			if len(self.rels[k]) > 0:
+				ret.append(k)
+		return ret
 
 	def addRel(self, rel, label):
 		if rel not in self.rels:
 			rel = 'Other'
 		self.rels[rel].add(label)
+	
+	#convenience function to say whether a relation is "Other" or not
+	def isOther(self, rel):
+		return rel not in self.rels
 
 	def relatedTo (self):
 		return self.rels['RelatedTo']
-	def externalURL (self):
-		return self.rels['ExternalURL']
+	#def externalURL (self):
+	#	return self.rels['ExternalURL']
 	def formOf (self):
 		return self.rels['FormOf']
 	def isA (self):
@@ -115,6 +126,8 @@ class ConceptNet:
 		if word in self.data:
 			return self.data[word]
 		obj = requests.get(self.url + '/c/en/' + word).json()
+		if 'view' not in obj:
+			return None
 		#note: can't do self.data[word]=... here because we don't have "start"
 		#load edges
 		while True:
@@ -123,7 +136,11 @@ class ConceptNet:
 					s = edge['start']
 					self.data[word] = Word(s['@id'],s['label'],s['language'],s['term'])
 				rel = edge['rel']['label']
-				self.data[word].addRel(rel, edge['end']['label'])
+				#check whether the relation is "Other", if it is, skip it
+				if not self.data[word].isOther(rel):
+					end = edge['end']
+					if end['language'] == 'en':
+						self.data[word].addRel(rel, end['label'])
 				#doesn't include "surfaceText" or "weight"
 			if 'nextPage' not in obj['view']:
 				self.data[word].loaded = True
