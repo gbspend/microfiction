@@ -7,7 +7,6 @@ import sys
 #w2v = gensim.models.Word2Vec.load_word2vec_format('gn.bin',binary=True)
 #w2v.init_sims(replace=True)
 #print "Word2Vec Loaded"
-c = cn.ConceptNet()
 
 def baseWord(word):
 	while True:
@@ -19,10 +18,10 @@ def baseWord(word):
 			return word
 
 def comesBefore(word):
-	return c.getIncoming(word,"Causes") + c.getIncoming(word,"HasSubevent") + c.getOutgoing(word,"HasPrerequisite")
+	return cn.getIncoming(word,"Causes") + cn.getIncoming(word,"HasSubevent") + cn.getOutgoing(word,"HasPrerequisite")
 
 def comesBeforeId(id):
-	return c.getIdIncoming(id,"Causes") + c.getIdIncoming(id,"HasSubevent") + c.getIdOutgoing(id,"HasPrerequisite")
+	return cn.getIdIncoming(id,"Causes") + cn.getIdIncoming(id,"HasSubevent") + cn.getIdOutgoing(id,"HasPrerequisite")
 
 def synName(s):
 	return s.lemma_names()[0]
@@ -93,11 +92,12 @@ def w2vDist(x,y):
 def nvCompare(word, noun, verb):
 	return w2vDist(word, noun) + w2vDist(word, verb)
 
-def doIt(noun,verbi):
+def doIt(noun,verbi,n):
 	verb = baseWord(verbi)
 
+	print "building choices"
 	before = comesBefore(verb)
-	choices = []
+	choices = [] #fill choices with "before" initially?
 	for x in before:
 		for y in comesBeforeId(x[0]):
 			curr = y[1]
@@ -110,14 +110,16 @@ def doIt(noun,verbi):
 				if not found:
 					choices.append(curr)
 	choices = list(set(choices)) #removes duplicates
-
+	print "done"
 	#the idea here was to sort them by how they're related to the noun/verb and then... chop off the bottom 1/4?
 #	ordered = sorted(choices, key=lambda x: nvCompare(x, noun, verb), reverse=True)
 #	print ordered[:10]
-	print ". ".join([firstCharUp(x) for x in pickSome(choices, 3, noun, verb)])+". "+random.choice(["A","The"])+" "+noun+" "+verbi+"."
+	while n > 0:
+		print ". ".join([firstCharUp(x) for x in pickSome(choices, 3, noun, verb)])+". "+random.choice(["A","The"])+" "+noun+" "+verbi+"."
+		n-=1
 
 if __name__ == "__main__":
 	noun = sys.argv[1]
 	verbi = sys.argv[2]
 
-	doIt(noun, verbi)
+	doIt(noun, verbi,3)
