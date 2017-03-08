@@ -3,123 +3,74 @@ import conceptnet as cn
 from nltk.corpus import wordnet as wn
 import random
 import sys
+import helpers as h
+import punchy as p
+import nounverb as nv
 
-#w2v = gensim.models.Word2Vec.load_word2vec_format('gn.bin',binary=True)
-#w2v.init_sims(replace=True)
-#print "Word2Vec Loaded"
+#=FORMATS===========================================
+#formats take 1 string "topic" and a list of either None or string that will be "locked in" (from eval.)
+# it's up to each function to intelligently handle "locks" in their respective hierarchies
+# (for example, in 123action if the noun is unlocked, then ignore other locks because everything needs to change
 
-def baseWord(word):
-	while True:
-		last = word
-		word = wn.morphy(word)
-		if word is None:
-			return last
-		if last == word:
-			return word
+nones = [None,None,None,None,None,None]
 
-def comesBefore(word):
-	return cn.getIncoming(word,"Causes") + cn.getIncoming(word,"HasSubevent") + cn.getOutgoing(word,"HasPrerequisite")
+def threeaction(topic,w2v,lock=nones):
+	useLock = True
+	if lock[4] is not None:
+		noun = lock[4]
+	else:
+		noun = nv.makeNoun(topic)
+		useLock = False
 
-def comesBeforeId(id):
-	return cn.getIdIncoming(id,"Causes") + cn.getIdIncoming(id,"HasSubevent") + cn.getIdOutgoing(id,"HasPrerequisite")
+	if lock[5] is not None and useLock:
+		verb = lock[5]
+	else:
+		verb = nv.makeVerb(topic,[noun],1,False)[0] #how to decide jux?
+		useLock = False
 
-def synName(s):
-	return s.lemma_names()[0]
+	bgs = ['', '', '']
+	for i in range(3):
+		if lock[i] is not None and useLock:
+			bgs[i] = lock[i]
+		else:
+			bgs[i] = p.get_bg(topic,[verb],w2v)
 
-def dist(s1, s2):
-	if len(s1) > len(s2):
-		s1, s2 = s2, s1
+	return ". ".join([h.firstCharUp(x) for x in bgs])+". "+random.choice(["A","The"])+" "+noun+" "+verb+"."
 
-	distances = range(len(s1) + 1)
-	for i2, c2 in enumerate(s2):
-		distances_ = [i2+1]
-		for i1, c1 in enumerate(s1):
-			if c1 == c2:
-				distances_.append(distances[i1])
-			else:
-				distances_.append(1 + min((distances[i1], distances[i1 + 1], distances_[-1])))
-		distances = distances_
-	return distances[-1]
+formats = [
+	threeaction
+]
 
-def nounify(verb_word):
-	set_of_related_nouns = set()
-	
-	m = wn.morphy(verb_word, wn.VERB)
-	if m is not None:
-		for lemma in wn.lemmas(m, pos="v"):
-			for related_form in lemma.derivationally_related_forms():
-				for synset in wn.synsets(related_form.name(), pos=wn.NOUN):
-					if not synName(synset)[0].isupper(): #filters out proper nouns
-						set_of_related_nouns.add(synset)
+#===================================================
+temp = False
+#if eval likes everything, return None (not a list)
+def eval(s):
+	global temp
 
-	return set_of_related_nouns
-
-def toNoun(w):
-	for ss in wn.synsets(w):
-		if ss.pos() == 'n':
-			return w
-	related = nounify(w)
-	best = w
-	mindist = 100000
-	for r in related:
-		s = synName(r)
-		d = dist(s,w)
-		if d < mindist:
-			mindist = d
-			best = s
-	return best
-
-def pickSome(l, n, noun, verb):
-	ret = []
-	dontMatch = [baseWord(noun),baseWord(verb),baseWord(toNoun(verb))]
-	while len(ret) < n:
-		c = random.choice(l)
-		if baseWord(c) in dontMatch:
-			continue
-		ret.append(toNoun(c))
-		dontMatch.append(baseWord(c))
-		
+	if temp:
+		return None
+	s = h.strip(s)
+	words = s.split()
+	i = random.randint(0,5)
+	ret = words
+	ret[i] = None
+	temp = True
 	return ret
 
-def firstCharUp(s):
-	return s[0].upper() + s[1:]
-
-def w2vDist(x,y):
-	if x not in w2v or y not in w2v:
-		return 0
-	return w2v.similarity(x,y)
-
-def nvCompare(word, noun, verb):
-	return w2vDist(word, noun) + w2vDist(word, verb)
-
-def doIt(noun,verbi,n):
-	verb = baseWord(verbi)
-
-	print "building choices"
-	before = comesBefore(verb)
-	choices = [] #fill choices with "before" initially?
-	for x in before:
-		for y in comesBeforeId(x[0]):
-			curr = y[1]
-			if len(curr.split()) == 1:
-				ss = wn.synsets(curr)
-				found = False
-				for s in ss:
-					if synName(s) == verb:
-						found = True
-				if not found:
-					choices.append(curr)
-	choices = list(set(choices)) #removes duplicates
-	print "done"
-	#the idea here was to sort them by how they're related to the noun/verb and then... chop off the bottom 1/4?
-#	ordered = sorted(choices, key=lambda x: nvCompare(x, noun, verb), reverse=True)
-#	print ordered[:10]
-	while n > 0:
-		print ". ".join([firstCharUp(x) for x in pickSome(choices, 3, noun, verb)])+". "+random.choice(["A","The"])+" "+noun+" "+verbi+"."
-		n-=1
+def doit(topic,w2v):
+	form = random.choice(formats)
+	s = form(topic,w2v)
+	while True:
+		print "GEN:",s
+		lock = eval(s)
+		if lock is None:
+			break
+		s = form(topic,w2v,lock)
+	print s
 
 if __name__ == "__main__":
-	noun = sys.argv[1]
-	verbi = sys.argv[2]
-
-	doIt(noun, verbi,3)
+	w2v = gensim.models.Word2Vec.load_word2vec_format('gn.bin',binary=True)
+	w2v.init_sims(replace=True)
+	print "Word2Vec Loaded"
+	topic = sys.argv[1]
+	
