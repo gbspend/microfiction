@@ -62,7 +62,7 @@ def firstCharUp(s):
 
 #takes in a list of words and returns the ones that match part of speech p ('n' or 'v' for example) (unmorphied)
 #if "extra" is True: add all synset names that are related (example: 'chair' (verb) would return 'chair' and 'moderate')
-def pos(a,p,extra=False):
+def pos(a,p):
 	ret = set()
 	for i in a:
 		m = wn.morphy(i)
@@ -70,10 +70,14 @@ def pos(a,p,extra=False):
 			continue
 		for ss in wn.synsets(m):
 			if ss.pos() == p:
-				if not extra:
-					ret.add(i)
-					break
-				else:
-					ret.add(synName(ss))
+				ret.add(i)
 	return list(ret)
+
+#Ideas:
+#wn.synsets(word) -> lemmas -> names (to "cast a wider net")
+
+#use w2v to make our own "relations": give it [(nail,hammer),(horse,ride)] and pass in king
+#see nancy's notes in Slack
+
+
 

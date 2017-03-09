@@ -7,7 +7,7 @@ import helpers as h
 
 #TODO
 #ignores parents, num and juxtaposition for now
-def makeNoun(sysin):
+def makeNoun(topic):
 	return "cowboy"
 
 #=============================================
@@ -17,10 +17,10 @@ def addAll(s,a):
 	for i in a:
 		s.add(i)
 
-#TODO: doesn't take sysin into account
+#TODO: doesn't take topic into account
 #"parents" in a list of strings (assumed to be nouns)
 #returns list of strings with [0-num] elements (in case it can't find that many)
-def makeVerb(sysin, parents, num, jux=False):
+def makeVerb(topic, parents, num, jux=False):
 	choices = set()
 	for p in parents:
 		for r in ['bga','trg']:

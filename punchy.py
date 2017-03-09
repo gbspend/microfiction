@@ -49,7 +49,7 @@ def augment(word_list, topic, w2v):
 		for result in means_like:
 			meta = result[1]
 			if 'tags' in meta:
-				if 'n' in meta['tags'] and len(result[0].split()) == 1 and result[0] in w2v and w2v.similarity(topic, result[0]) > 0.3:
+				if 'n' in meta['tags'] and len(result[0].split()) == 1:# and result[0] in w2v and w2v.similarity(topic, result[0]) > 0.3:
 					extended.append(result[0])
 
 	word_list.extend(extended)
@@ -72,12 +72,14 @@ def get_bg(topic, parents, w2v, juxtapose = False):
 		picked_bg = augment(picked_bg, topic, w2v)
 		picked_bg = filterNoun(picked_bg)
 		picked_bg = sorted(picked_bg, key=lambda w:w2v.similarity(topic, w) if w in w2v else 0, reverse=True) # make sure word is actually in w2v
-		picked_bg = picked_bg[:-len(picked_bg)/4]
+#		picked_bg = picked_bg[:-len(picked_bg)/4]
 
 		bg_key = topic + "".join(parents)
 		bg_cache = picked_bg
 		removeMatch(bg_cache,topic,parents)
+		print 'CACHE:',bg_cache
 		if not bg_cache:
+			print "bg_cache empty"
 			return None
 
 	return pickOne(bg_cache, topic, parents)

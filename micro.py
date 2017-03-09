@@ -20,20 +20,33 @@ def threeaction(topic,w2v,lock=nones):
 		noun = lock[4]
 	else:
 		noun = nv.makeNoun(topic)
+		if noun is None:
+			print "ABORT! NO NOUN FOR:",topic
+			exit()
 		useLock = False
 
 	if lock[5] is not None and useLock:
 		verb = lock[5]
 	else:
-		verb = nv.makeVerb(topic,[noun],1,False)[0] #how to decide jux?
+		verbs = nv.makeVerb(topic,[noun],1,False)[0] #how to decide jux?
+		if not verbs:
+			print "NO VERB FOR:",noun
+			return None
+		verb = verbs[0]
 		useLock = False
+
+	print "VERB:",verb
 
 	bgs = ['', '', '']
 	for i in range(3):
 		if lock[i] is not None and useLock:
 			bgs[i] = lock[i]
 		else:
-			bgs[i] = p.get_bg(topic,[verb],w2v)
+			b = p.get_bg(topic,[verb],w2v)
+			if b is None:
+				print "NO BG WORDS FOR:",noun,verb
+				return None
+			bgs[i] = b
 
 	return ". ".join([h.firstCharUp(x) for x in bgs])+". "+random.choice(["A","The"])+" "+noun+" "+verb+"."
 
@@ -51,22 +64,29 @@ def eval(s):
 		return None
 	s = h.strip(s)
 	words = s.split()
-	i = random.randint(0,5)
+	i = random.choice([0,1,2,5]) #TODO add 4
 	ret = words
+	print "EVAL REPLACE:",i,ret[i]
 	ret[i] = None
 	temp = True
 	return ret
 
 def doit(topic,w2v):
+	global temp
+	temp = False
 	form = random.choice(formats)
 	s = form(topic,w2v)
-	while True:
-		print "GEN:",s
-		lock = eval(s)
-		if lock is None:
-			break
-		s = form(topic,w2v,lock)
-	print s
+	if s is None:
+		print "RETRYING"
+		doit(topic,w2v)
+	else:
+		while True:
+			print "GEN:",s
+			lock = eval(s)
+			if lock is None:
+				break
+			s = form(topic,w2v,lock)
+		print s
 
 if __name__ == "__main__":
 	w2v = gensim.models.Word2Vec.load_word2vec_format('gn.bin',binary=True)
