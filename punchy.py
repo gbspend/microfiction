@@ -55,6 +55,10 @@ def augment(word_list, topic, w2v):
 	word_list.extend(extended)
 	return list(set(word_list))
 
+def total_similarity(word, relations, w2v):
+	if word not in w2v:
+		return 0.0
+	return sum((w2v.similarity(word, x) for x in relations if x in w2v), 0.0)
 
 def get_bg(topic, parents, w2v, juxtapose = False):
 	global bg_key, bg_cache
@@ -71,7 +75,8 @@ def get_bg(topic, parents, w2v, juxtapose = False):
 		picked_bg = filterNoun(picked_bg)
 		picked_bg = augment(picked_bg, topic, w2v)
 		picked_bg = filterNoun(picked_bg)
-		picked_bg = sorted(picked_bg, key=lambda w:w2v.similarity(topic, w) if w in w2v else 0, reverse=True) # make sure word is actually in w2v
+		relations = parents + [topic]
+		picked_bg = sorted(picked_bg, key=lambda w:total_similarity(w, relations, w2v), reverse=True) # make sure word is actually in w2v
 #		picked_bg = picked_bg[:-len(picked_bg)/4]
 
 		bg_key = topic + "".join(parents)
@@ -99,7 +104,8 @@ def get_result(topic, parents, w2v, juxtapose = False):
 		picked_results = filterNoun(picked_results)
 		picked_results = augment(picked_results, topic, w2v)
 		picked_results = filterNoun(picked_results)
-		picked_results = sorted(picked_results, key=lambda w:w2v.similarity(topic, w) if w in w2v else 0, reverse=True)
+		relations = parents + [topic]
+		picked_results = sorted(picked_results, key=lambda w:total_similarity(w, relations, w2v), reverse=True)
 		picked_results = picked_results[:-len(picked_results)/4]
 
 		res_key = topic + "".join(parents)
