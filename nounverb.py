@@ -23,8 +23,8 @@ def addAll(s,a):
 def makeVerb(topic, parents, num, jux=False):
 	choices = set()
 	for p in parents:
-		for r in ['bga','trg']:
-			addAll(choices,h.pos([x[0] for x in dm.query(dm.related(r,p))],'v'))
+		for r in ['trg']: #bga is terrible
+			addAll(choices,h.pos([x[0] for x in dm.query(dm.related(r,p),dm.topics(topic))],'v'))
 		for r in ['CapableOf','UsedFor','Desires']:
 			for phrase in [x[1] for x in cn.getOutgoing(p,r)]:
 				addAll(choices,h.pos(phrase.split(),'v'))
@@ -33,7 +33,7 @@ def makeVerb(topic, parents, num, jux=False):
 	if jux:
 		temp = set()
 		for w in final:
-			addAll(temp,h.pos([x[0] for x in dm.query(dm.related('ant',w))],'v'))
+			addAll(temp,h.pos([x[0] for x in dm.query(dm.related('ant',w),dm.topics(topic))],'v'))
 			for phrase in [x[1] for x in cn.getOutgoing(w,'Antonym')]:
 				addAll(choices,h.pos(phrase.split(),'v'))
 

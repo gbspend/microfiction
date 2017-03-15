@@ -90,3 +90,4 @@ ENV/
 
 # BigFiles
 data/*
+penseur/*

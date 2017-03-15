@@ -1,6 +1,8 @@
 from nltk.corpus import wordnet as wn
 import string
 import numpy as np
+import datamuse as dm
+import random
 
 def synName(s):
 	return s.lemma_names()[0]
@@ -73,6 +75,51 @@ def pos(a,p):
 			if ss.pos() == p:
 				ret.add(i)
 	return list(ret)
+
+# Grab words with similar meaning from datamuse.
+#word_list is list of strings, topic is string, pos is string like 'n' or 'v'
+def augment(word_list, topic, pos):
+	extended = []
+	for w in word_list:
+		means_like = dm.query(dm.meansLike(w), dm.metadata('p'), dm.topics(topic))
+		for result in means_like:
+			meta = result[1]
+			if 'tags' in meta:
+				if pos in meta['tags'] and len(result[0].split()) == 1:# and result[0] in w2v and w2v.similarity(topic, result[0]) > 0.3:
+					extended.append(result[0])
+
+	word_list.extend(extended)
+	return list(set(word_list))
+
+def total_similarity(word, relations, w2v):
+	if word not in w2v:
+		return 0.0
+	return sum((w2v.similarity(word, x) for x in relations if x in w2v), 0.0)
+
+#l is a list of words, word is the word that the w2v similarity will be measured against
+def w2vsort(l,word,w2v):
+	return sorted(l,reverse=True,key=lambda x: w2v.similarity(word,x))
+
+def w2vweights(l,word,w2v):
+	return [(x,w2v.similarity(word,x)) for x in l]
+
+def w2vweightslist(l,words,w2v):
+	return [(x,total_similarity(x,words,w2v)) for x in l]
+
+#choices is a list of (choice,weight) tuples
+#Doesn't need to be sorted! :D
+#returns index
+def weighted_choice(choices):
+	total = sum(w for c, w in choices)
+	r = random.uniform(0, total)
+	upto = 0
+	for i,t in enumerate(choices):
+		w = t[1]
+		if upto + w >= r:
+			return i
+		upto += w
+	assert False, "Shouldn't get here"
+
 
 '''
 Parameters

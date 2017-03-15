@@ -14,16 +14,16 @@ import nounverb as nv
 
 nones = [None,None,None,None,None,None]
 
-def threeaction(topic,w2v,lock=nones):
+def threeaction(topic,noun,w2v,lock=nones):
 	useLock = True
-	if lock[4] is not None:
-		noun = lock[4]
-	else:
-		noun = nv.makeNoun(topic)
-		if noun is None:
-			print "ABORT! NO NOUN FOR:",topic
-			exit()
-		useLock = False
+	#if lock[4] is not None:
+	#	noun = lock[4]
+	#else:
+	#	noun = nv.makeNoun(topic)
+	#	if noun is None:
+	#		print "ABORT! NO NOUN FOR:",topic
+	#		exit()
+	#	useLock = False
 
 	if lock[5] is not None and useLock:
 		verb = lock[5]
@@ -71,26 +71,28 @@ def eval(s):
 	temp = True
 	return ret
 
-def doit(topic,w2v):
+def doit(topic,noun,w2v):
 	global temp
 	temp = False
 	form = random.choice(formats)
-	s = form(topic,w2v)
+	s = form(topic,noun,w2v)
 	if s is None:
 		print "RETRYING"
-		doit(topic,w2v)
+		doit(topic,noun,w2v)
 	else:
 		while True:
 			print "GEN:",s
 			lock = eval(s)
 			if lock is None:
 				break
-			s = form(topic,w2v,lock)
+			s = form(topic,noun,w2v,lock)
 		print s
 
 if __name__ == "__main__":
-	w2v = gensim.models.Word2Vec.load_word2vec_format('gn.bin',binary=True)
+	w2v = gensim.models.Word2Vec.load_word2vec_format('../gn.bin',binary=True)
 	w2v.init_sims(replace=True)
 	print "Word2Vec Loaded"
 	topic = sys.argv[1]
+	noun = sys.argv[2]
+	doit(topic,noun,w2v)
 	
