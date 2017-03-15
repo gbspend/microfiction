@@ -1,5 +1,6 @@
 from nltk.corpus import wordnet as wn
 import string
+import numpy as np
 
 def synName(s):
 	return s.lemma_names()[0]
@@ -73,11 +74,33 @@ def pos(a,p):
 				ret.add(i)
 	return list(ret)
 
+'''
+Parameters
+----------
+start : str
+	The word that the calculated vector should be added to.
+relations : list of tuple of str
+	A list of tuples of the form (from, to) for creating the relationship vector
+
+Returns
+--------
+ret : list of str
+'''
+# [('dog', 'bark'), ('bird', 'chirp'), ('pig', 'oink'), ('cow', 'moo'), ('chicken', 'cluck')]
+def relation(start, relations, w2v):
+	if start not in w2v:
+		print start, ' not in w2v. Can\'t use if for relations.'
+		return []
+	filtered = [x for x in relations if x[0] in w2v and x[1] in w2v]
+	froms, tos = zip(*filtered)
+	from_p = sum((w2v[x] for x in froms)) /  len(relations)
+	to_p = sum((w2v[x] for x in tos)) / len(relations)
+	rel = to_p - from_p
+
+	return sorted([x[0] for x in w2v.similar_by_vector(w2v[start] + rel)], key=lambda x : w2v.similarity(start, x), reverse = True)
+
 #Ideas:
 #wn.synsets(word) -> lemmas -> names (to "cast a wider net")
 
 #use w2v to make our own "relations": give it [(nail,hammer),(horse,ride)] and pass in king
 #see nancy's notes in Slack
-
-
-
