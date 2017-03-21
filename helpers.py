@@ -120,21 +120,20 @@ def weighted_choice(choices):
 		upto += w
 	assert False, "Shouldn't get here"
 
-
-'''
-Parameters
-----------
-start : str
-	The word that the calculated vector should be added to.
-relations : list of tuple of str
-	A list of tuples of the form (from, to) for creating the relationship vector
-
-Returns
---------
-ret : list of str
-'''
 # [('dog', 'bark'), ('bird', 'chirp'), ('pig', 'oink'), ('cow', 'moo'), ('chicken', 'cluck')]
 def relation(start, relations, w2v):
+	'''
+	Parameters
+	----------
+	start : str
+		The word that the calculated vector should be added to.
+	relations : list of tuple of str
+		A list of tuples of the form (from, to) for creating the relationship vector
+
+	Returns
+	--------
+	ret : list of str
+	'''
 	if start not in w2v:
 		print start, ' not in w2v. Can\'t use if for relations.'
 		return []

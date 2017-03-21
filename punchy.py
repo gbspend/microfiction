@@ -1,4 +1,5 @@
 import conceptnet as cn
+import datamuse as dm
 import helpers as h
 import random
 
@@ -41,30 +42,41 @@ def pickOne(l):
 	i = h.weighted_choice(l)
 	return l.pop(i)[0]
 
+def get_words(topic, parents, cn_relations, isIncoming=True):
+	res = []
+	for p in parents:
+		for rel in cn_relations:
+			if isIncoming:
+				res += (x[1] for x in cn.getIncoming(p, rel))
+			else:
+				res += (x[1] for x in cn.getOutgoing(p, rel))
+
+		# TODO: find good datamuse relationships for outgoing edges.
+		if isIncoming:
+			res += (x[0] for x in dm.query(dm.related('trg',p),dm.topics(topic), dm.metadata('p'))
+					 if ('tags' in x[1] and x[1]['tags'][0] == 'n')) # get only nouns
+
+	res = filterNoun(res)
+	removeMatch(res, topic, parents)
+	return res
+
 def get_bg(topic, parents, w2v, juxtapose = False):
 	global bg_key, bg_cache
 
 	if bg_key != topic + "".join(parents) or len(bg_cache) == 0:
-		incoming = []
-		for p in parents:
-			incoming.extend(cn.getIncoming(p, "HasSubevent"))
-			incoming.extend(cn.getIncoming(p, "Causes"))
-			incoming.extend(cn.getIncoming(p, "HasPrerequisite"))
-			incoming.extend(cn.getIncoming(p, "UsedFor"))
+		cn_relations = ["HasSubevent", "Causes", "HasPrerequisite", "UsedFor"]
 
-		picked_bg = extract_cn(incoming)
-		picked_bg = filterNoun(picked_bg)
-		#picked_bg = h.augment(picked_bg, topic, 'n')
-		picked_bg = filterNoun(picked_bg)
+		picked_bg = get_words(topic, parents, cn_relations)
+
 		relations = parents + [topic]
 		picked_bg = sorted(picked_bg, key=lambda w:h.total_similarity(w, relations, w2v), reverse=True) # make sure word is actually in w2v
-#		picked_bg = picked_bg[:-len(picked_bg)/4]
+		if len(picked_bg) > 20:
+			picked_bg = picked_bg[:-len(picked_bg)/5]
 
 		bg_key = topic + "".join(parents)
 		bg_cache = picked_bg
-		removeMatch(bg_cache,topic,parents)
 		bg_cache = h.w2vweightslist(bg_cache,relations,w2v)
-		#print 'CACHE:',[x[0] for x in bg_cache]
+		print 'CACHE:',[x[0] for x in bg_cache]
 		if not bg_cache:
 			print "bg_cache empty"
 			return None
@@ -75,43 +87,19 @@ def get_result(topic, parents, w2v, juxtapose = False):
 	global res_key, res_cache
 
 	if res_key != topic + "".join(parents) or len(res_cache) == 0:
-		outgoing = []
-		for p in parents:
-			outgoing.extend(cn.getOutgoing(p, "HasSubevent"))
-			outgoing.extend(cn.getOutgoing(p, "Causes"))
-			outgoing.extend(cn.getOutgoing(p, "HasPrerequisite"))
+		cn_relations = ["HasSubevent", "Causes", "HasPrerequisite", "UsedFor"]
 
-		print outgoing
-		picked_results = extract_cn(outgoing)
-		picked_results = filterNoun(picked_results)
-		#picked_results = h.augment(picked_results, topic, 'n')
-		picked_results = filterNoun(picked_results)
+		picked_results = get_words(topic, parents, cn_relations, False)
+
 		relations = parents + [topic]
 		picked_results = sorted(picked_results, key=lambda w:h.total_similarity(w, relations, w2v), reverse=True)
-		picked_results = picked_results[:-len(picked_results)/4]
+		if len(picked_results) > 20:
+			picked_results = picked_results[:-len(picked_results)/5]
 
 		res_key = topic + "".join(parents)
 		res_cache = picked_results
-		removeMatch(res_cache,topic,parents)
 		res_cache = h.w2vweightslist(res_cache,relations,w2v)
 		if not res_cache:
 			return None
 
 	return pickOne(res_cache)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
