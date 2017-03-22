@@ -5,6 +5,9 @@ import helpers as h
 
 dmrs = ['bga','trg'] #Datamuse relations
 cnrs = ['CapableOf','UsedFor','Desires'] #ConceptNet relations
+custom_rels = [('pencil', 'write'), ('brush', 'paint'), ('gun','shoot'),
+			   ('knife', 'cut'), ('phone', 'call'), ('chair', 'sit'),
+			   ('oven', 'bake')]
 
 def isint(value):
 	try:
@@ -36,18 +39,22 @@ def ask(topic,noun,word):
 				s = 'nope'
 	return int(s)
 
-def doit(topic, parent,pos):
+def doit(topic, parent, pos, w2v=None):
 	choices = {}
 	for r in dmrs:
-		addAllDict(choices,h.pos([x[0] for x in dm.query(dm.related(r,noun),dm.topics(topic))],pos),'dm:'+r)
+		addAllDict(choices,h.pos([x[0] for x in dm.query(dm.related(r,parent),dm.topics(topic))],pos),'dm:'+r)
 	for r in cnrs:
-		for phrase in [x[1] for x in cn.getOutgoing(noun,r)]:
+		for phrase in [x[1] for x in cn.getOutgoing(parent,r)]:
 			addAllDict(choices,h.pos(phrase.split(),pos),'cn:'+r)
 	#add w2v "custom relation" thing
+	if w2v is not None:
+		addAllDict(choices, h.pos(h.relation(parent, custom_rels, w2v), pos), 'custom')
+		
 	print len(choices.keys())
+
 	scores = {}
 	for k in choices.keys():
-		s = ask(topic,noun,k)
+		s = ask(topic,parent,k)
 		s -= 5 #(-5 to 5 scale)
 		choices[k]['score'] += s
 		for src in choices[k]['sources']:
