@@ -160,3 +160,33 @@ def relation(start, relations, w2v):
 
 #use w2v to make our own "relations": give it [(nail,hammer),(horse,ride)] and pass in king
 #see nancy's notes in Slack
+
+
+#good/bad are axis ends
+#s is sentence to score
+#p is Penseur instance
+#returns score, higher is better
+def getSkipScore(good,bad,s,p):
+	p.encode([s,'gun mask note the teller screams'])
+	return p.get_axis_scores(bad,good)[0]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
