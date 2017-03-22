@@ -1,3 +1,4 @@
+from collections import defaultdict
 from nltk.corpus import wordnet as wn
 import string
 import numpy as np
@@ -154,6 +155,39 @@ def relation(start, relations, w2v):
 	rel = to_p - from_p
 
 	return sorted([x[0] for x in w2v.similar_by_vector(w2v[start] + rel)], key=lambda x : w2v.similarity(start, x), reverse = True)
+
+# relations should be [(noun, verb)...]
+def get_verbs_from_noun(start, relations, w2v_alt):
+	start += '_NN'
+	return get_scholar_rels(start, relations, w2v_alt, '_NN', '_VB')
+
+# relations should be [(verb, noun)...]
+def get_nouns_from_verb(start, relations, w2v_alt):
+	start += '_VB'
+	return get_scholar_rels(start, relations, w2v_alt, '_VB', '_NN')
+
+# Scholar by Daniel Ricks: https://github.com/danielricks/scholar
+def get_scholar_rels(start, relations, w2v_alt, tag1, tag2):
+	positives = []
+	negatives = []
+	counts = defaultdict(int)
+	total_res = []
+	for rel in relations:
+		positives += [rel[1] + tag2, start]
+		negatives += [rel[0] + tag1]
+
+		idxs, metrics = w2v_alt.analogy(pos=positives, neg=negatives, n=10)
+		res = w2v_alt.generate_response(idxs, metrics).tolist()
+		total_res += res
+		for x in res:
+			counts [x[0]] += 1
+
+	total_res = [x[0] for x in total_res]
+	total_res = list(set(total_res)) # remove duplicates
+	total_res = sorted(total_res, key=counts.get, reverse=True)
+	total_res = [x[:-(len(x)-x.find('_'))] for x in total_res]
+
+	return total_res
 
 #Ideas:
 #wn.synsets(word) -> lemmas -> names (to "cast a wider net")
