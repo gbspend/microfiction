@@ -97,12 +97,22 @@ def total_similarity(word, relations, w2v):
 	return sum((w2v.similarity(word, x) for x in relations if x in w2v), 0.0)
 
 #l is a list of words, word is the word that the w2v similarity will be measured against
+#returns the list sorted by similarity
 def w2vsort(l,word,w2v):
 	return sorted(l,reverse=True,key=lambda x: w2v.similarity(word,x))
 
+#l is a list of words, words is the LIST OF words that the w2v total_similarity will be measured against
+#returns the list sorted by similarity
+def w2vsortlist(l,words,w2v):
+	return sorted(l,reverse=True,key=lambda x: total_similarity(x,words,w2v))
+
+#l is a list of words, word is the word that the w2v similarity will be measured against
+#returns a list of (w, similarty) tuples
 def w2vweights(l,word,w2v):
 	return [(x,w2v.similarity(word,x)) for x in l]
 
+#l is a list of words, words is the LIST OF words that the w2v total_similarity will be measured against
+#returns a list of (w, similarty) tuples
 def w2vweightslist(l,words,w2v):
 	return [(x,total_similarity(x,words,w2v)) for x in l]
 

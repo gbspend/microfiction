@@ -4,11 +4,11 @@ from nltk.corpus import wordnet as wn
 import datamuse as dm
 import sys
 import helpers as h
+import oxdict as od
 
-#TODO
-#ignores parents, num and juxtaposition for now
-def makeNoun(topic):
-	return "cowboy"
+def pickOne(l):
+	i = h.weighted_choice(l)
+	return l.pop(i)[0]
 
 #=============================================
 
@@ -20,7 +20,7 @@ def addAll(s,a):
 #TODO: doesn't take topic into account
 #"parents" in a list of strings (assumed to be nouns)
 #returns list of strings with [0-num] elements (in case it can't find that many)
-def makeVerb(topic, parents, num, jux=False):
+def makeVerb(topic, parents, num, w2v, jux=False):
 	choices = set()
 	for p in parents:
 		for r in ['trg']: #bga is terrible
@@ -39,19 +39,23 @@ def makeVerb(topic, parents, num, jux=False):
 
 		final = list(temp)
 
-	#word2vec threshold?
+	final = [str(wn.morphy(x)) for x in final]
 
+	#remove transitive verbs
+	final = [x for x in final if od.checkTransitivity(x)]
+	#word2vec sort
+	relations = parents + [topic]
+	final = h.w2vsortlist(final,relations,w2v)
+	#word2vec threshold
+	if len(final) > 20:
+			final = final[:-len(final)/5]
+
+	final = h.w2vweightslist(final,relations,w2v)
 	#just in case
 	if len(final) <= num:
-		return final
+		return [x[0] for x in final]
 
-	ret = []
-	while True:
-		next = random.choice(final)
-		if next not in ret:
-			ret.append(next)
-		if len(ret) >= num:
-			return ret
+	return [pickOne(final) for x in range(num)]
 
 
 if __name__ == "__main__":

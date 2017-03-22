@@ -28,7 +28,7 @@ def threeaction(topic,noun,w2v,lock=nones):
 	if lock[5] is not None and useLock:
 		verb = lock[5]
 	else:
-		verbs = nv.makeVerb(topic,[noun],1,False) #how to decide jux?
+		verbs = nv.makeVerb(topic,[noun],1,w2v,False) #how to decide jux?
 		if not verbs:
 			print "NO VERB FOR:",noun
 			return None

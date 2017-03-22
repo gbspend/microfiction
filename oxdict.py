@@ -23,14 +23,39 @@ def getpos(r,pos):
 			return e
 	return None
 
+#takes a word and a POS ("Verb","Noun") and returns True if OxDict says that word is that POS
+def ispos(word,pos):
+	r = lookup(word)
+	if r is None:
+		return False
+	return getpos(r,pos) is not None
+
 gf = 'grammaticalFeatures'
 
-def isTransitive(word):	
+#returns True if Ox Dict thinks the word is a verb and it is intransitive, False otherwise
+def checkTransitivity(word):
 	r = lookup(word)
+	if r is None:
+		return False #TODO: revisit? do we want to exclude a verb if OxDict doesnt list it?
 	v = getpos(r,'Verb')
+	if v is None:
+		return False #not a verb
 	for i in [x[gf] for x in v['entries'] if gf in x]:
 		for e in i:
 			if 'text' in e and e['text'] == "Transitive":
-				return True
+				return False #transitive
+	return True #an intransitive verb
+
+#this is important for "punchies", but I think it's not perfect (example: 'time')
+def isMass(word):	
+	r = lookup(word)
+	if r is None:
+		return False
+	v = getpos(r,'Noun')
+	if v is not None:
+		for i in [x[gf] for x in v['entries'] if gf in x]:
+			for e in i:
+				if 'text' in e and e['text'] == "Mass":
+					return True
 	return False
 
