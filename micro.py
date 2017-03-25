@@ -6,6 +6,8 @@ import sys
 import helpers as h
 import punchy as p
 import nounverb as nv
+from penseur import penseur
+import evaluate
 
 #=FORMATS===========================================
 #formats take 1 string "topic" and a list of either None or string that will be "locked in" (from eval.)
@@ -14,6 +16,8 @@ import nounverb as nv
 
 nones = [None,None,None,None,None,None]
 
+threeactaxes = [('plunger volcano paper the mug switches','bridge standoff gunshot the revolution begins')]
+threeactregen = [0,1,2,5] #TODO add 4
 def threeaction(topic,noun,w2v,lock=nones):
 	useLock = True
 	#if lock[4] is not None:
@@ -35,7 +39,7 @@ def threeaction(topic,noun,w2v,lock=nones):
 		verb = verbs[0]
 		useLock = False
 
-	print "VERB:",verb
+	#print "VERB:",verb
 
 	bgs = ['', '', '']
 	for i in range(3):
@@ -51,13 +55,13 @@ def threeaction(topic,noun,w2v,lock=nones):
 	return ". ".join([h.firstCharUp(x) for x in bgs])+". "+random.choice(["A","The"])+" "+noun+" "+verb+"."
 
 formats = [
-	threeaction
+	(threeaction, threeactaxes, threeactregen)
 ]
 
 #===================================================
 temp = False
 #if eval likes everything, return None (not a list)
-def eval(s):
+def oldeval(s):
 	global temp
 
 	if temp:
@@ -71,28 +75,53 @@ def eval(s):
 	temp = True
 	return ret
 
-def doit(topic,noun,w2v):
+def olddoit(topic,noun,w2v,dum):
 	global temp
 	temp = False
-	form = random.choice(formats)
+	f = random.choice(formats)
+	form = f[0]
 	s = form(topic,noun,w2v)
 	if s is None:
 		print "RETRYING"
-		doit(topic,noun,w2v)
+		olddoit(topic,noun,w2v,dum)
 	else:
 		while True:
 			print "GEN:",s
-			lock = eval(s)
+			lock = oldeval(s)
 			if lock is None:
 				break
 			s = form(topic,noun,w2v,lock)
 		print s
 
+def score(s,axes,pens):
+	scores = [h.getSkipScore(a[0],a[1],s,pens) for a in axes]
+	return sum(scores)/len(scores)
+
+def doit(topic,noun,w2v,pens):
+	global temp
+	temp = False
+	f = random.choice(formats)
+	form = f[0]
+	axes = f[1]
+	canRegen = f[2]
+	s = "Going. Get. Go. A horse walk."#form(topic,noun,w2v)
+	regenf = lambda lock: form(topic,noun,w2v,lock)
+	scoref = lambda x: score(x,axes,pens)
+	if s is None:
+		print "RETRYING"
+		doit(topic,noun,w2v,pens)
+	else:
+		best = evaluate.best(s,regenf,canRegen,scoref)
+		print best
+
 if __name__ == "__main__":
 	w2v = gensim.models.Word2Vec.load_word2vec_format('../gn.bin',binary=True)
 	w2v.init_sims(replace=True)
 	print "Word2Vec Loaded"
+	pens = penseur.Penseur()
+	print "Penseur Loaded"
+
 	topic = sys.argv[1]
 	noun = sys.argv[2]
-	doit(topic,noun,w2v)
+	doit(topic,noun,w2v,pens)
 	

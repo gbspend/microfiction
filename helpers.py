@@ -200,7 +200,7 @@ def get_scholar_rels(start, relations, w2v_alt, tag1, tag2):
 #s is sentence to score
 #p is Penseur instance
 #returns score, higher is better
-def getSkipScore(good,bad,s,p):
+def getSkipScore(bad,good,s,p):
 	p.encode([s,'gun mask note the teller screams'])
 	return p.get_axis_scores(bad,good)[0]
 
