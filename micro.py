@@ -104,7 +104,7 @@ def doit(topic,noun,w2v,pens):
 	form = f[0]
 	axes = f[1]
 	canRegen = f[2]
-	s = "Going. Get. Go. A horse walk."#form(topic,noun,w2v)
+	s = form(topic,noun,w2v) #"Going. Get. Go. A horse walk." for micro.py fast horse
 	regenf = lambda lock: form(topic,noun,w2v,lock)
 	scoref = lambda x: score(x,axes,pens)
 	if s is None:
