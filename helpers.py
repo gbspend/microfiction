@@ -204,6 +204,12 @@ def getSkipScore(bad,good,s,p):
 	p.encode([s,'gun mask note the teller screams'])
 	return p.get_axis_scores(bad,good)[0]
 
+#len(l) > 1
+def getSkipScores(bad,good,l,p):
+	if len (l) == 1:
+		return [getSkipScore(bad,good,l[0],p)]
+	p.encode(l)
+	return p.get_axis_scores(bad,good)
 
 
 

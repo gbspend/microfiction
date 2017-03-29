@@ -20,7 +20,7 @@ class Node:
 		self.score = sett.calcScore(s)
 		self.count = len(sett.canRegen)
 		self.children = [None] * len(sett.canRegen)
-		#print "Created node [",s,"]",self.score
+		print "--Created node [",s,"]",self.score
 
 	def getChild(self,i):
 		if self.children[i] == None:
@@ -48,4 +48,4 @@ def bestrec(node,bestsc,ts):
 			print "\t"*ts,"Current best:",bestch.s,bestsc
 	if bestch == None:
 		bestch = node
-	return bestch, bestsc
+	return bestch, bestch.score

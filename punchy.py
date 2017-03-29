@@ -3,12 +3,10 @@ import datamuse as dm
 import helpers as h
 import random
 
-
-bg_key = ""
-bg_cache = []
+bg_cache = {}
 
 res_key = ""
-res_cache = []
+res_cache = [] #TODO change to dict
 
 def extract_cn(cn_result):
 	return [res[1] for res in cn_result]
@@ -40,7 +38,7 @@ def removeMatch(l, topic, parents):
 #assumes l is a list of (word,weight) tuples
 def pickOne(l):
 	i = h.weighted_choice(l)
-	return l.pop(i)[0]
+	return l[i][0]
 
 def get_words(topic, parents, cn_relations, isIncoming=True):
 	res = []
@@ -61,9 +59,10 @@ def get_words(topic, parents, cn_relations, isIncoming=True):
 	return res
 
 def get_bg(topic, parents, w2v, juxtapose = False):
-	global bg_key, bg_cache
+	global bg_cache
 
-	if bg_key != topic + "".join(parents) or len(bg_cache) == 0:
+	k = topic + "".join(parents)
+	if k not in bg_cache:
 		cn_relations = ["HasSubevent", "Causes", "HasPrerequisite", "UsedFor"]
 
 		picked_bg = get_words(topic, parents, cn_relations)
@@ -74,14 +73,17 @@ def get_bg(topic, parents, w2v, juxtapose = False):
 			picked_bg = picked_bg[:-len(picked_bg)/5]
 
 		bg_key = topic + "".join(parents)
-		bg_cache = picked_bg
-		bg_cache = h.w2vweightslist(bg_cache,relations,w2v)
-		print 'CACHE:',[x[0] for x in bg_cache]
-		if not bg_cache:
-			print "bg_cache empty"
+		bg_list = picked_bg
+		bg_list = h.w2vweightslist(bg_list,relations,w2v)
+		#print parents,'CACHE:',[x[0] for x in bg_list]
+		if not bg_list:
+			print "bg_list empty"
 			return None
+		bg_cache[k] = bg_list
+	else:
+		bg_list = bg_cache[k]
 
-	return pickOne(bg_cache)
+	return pickOne(bg_list)
 
 def get_result(topic, parents, w2v, juxtapose = False):
 	global res_key, res_cache

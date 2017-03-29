@@ -1,0 +1,19 @@
+#just paste this as the bottom of penseur.py
+#make sure its in [git]/penseur/penseur.py
+
+	def get_axis_scores(self, good, bad):
+		x_axis_sentences = [bad, good]
+		y_axis_sentences = x_axis_sentences
+
+		x_axis = self.get_vector(x_axis_sentences[0]) - self.get_vector(x_axis_sentences[1])
+		y_axis = self.get_vector(y_axis_sentences[0]) - self.get_vector(y_axis_sentences[1])
+
+		data = []
+		for s in self.sentences:
+			data.append(self.get_vector(s))
+
+		flattened_data = self.flatten(np.squeeze(np.array(data)), x_axis, y_axis)
+		plt.xlabel = ('[' + x_axis_sentences[0][:20] + '...] - [' + x_axis_sentences[1][:20] + '...]')
+		plt.ylabel = ('[' + y_axis_sentences[0][:20] + '...] - [' + y_axis_sentences[1][:20] + '...]')
+
+		return [v[0] for v in np.squeeze(flattened_data)]

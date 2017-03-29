@@ -1,13 +1,15 @@
 import gensim
-import conceptnet as cn
-from nltk.corpus import wordnet as wn
 import random
 import sys
 import helpers as h
 import punchy as p
 import nounverb as nv
 from penseur import penseur
-import evaluate
+import priority
+
+priority = reload(priority)
+p = reload(p)
+h = reload(h)
 
 #=FORMATS===========================================
 #formats take 1 string "topic" and a list of either None or string that will be "locked in" (from eval.)
@@ -16,8 +18,8 @@ import evaluate
 
 nones = [None,None,None,None,None,None]
 
-threeactaxes = [('plunger volcano paper the mug switches','bridge standoff gunshot the revolution begins')]
-threeactregen = [0,1,2,5] #TODO add 4
+threeactaxis = ('plunger volcano paper the mug switches','bridge standoff gunshot the revolution begins')
+threeactregen = [0,1,2,5] #TODO add 4 [[],[],[],None,None,[]]
 def threeaction(topic,noun,w2v,lock=nones):
 	useLock = True
 	#if lock[4] is not None:
@@ -55,7 +57,7 @@ def threeaction(topic,noun,w2v,lock=nones):
 	return ". ".join([h.firstCharUp(x) for x in bgs])+". "+random.choice(["A","The"])+" "+noun+" "+verb+"."
 
 formats = [
-	(threeaction, threeactaxes, threeactregen)
+	(threeaction, threeactaxis, threeactregen)
 ]
 
 #===================================================
@@ -93,25 +95,25 @@ def olddoit(topic,noun,w2v,dum):
 			s = form(topic,noun,w2v,lock)
 		print s
 
-def score(s,axes,pens):
-	scores = [h.getSkipScore(a[0],a[1],s,pens) for a in axes]
-	return sum(scores)/len(scores)
+#def score(s,axes,pens):
+#	scores = [h.getSkipScore(a[0],a[1],s,pens) for a in axes]
+#	return sum(scores)/len(scores)
 
 def doit(topic,noun,w2v,pens):
 	global temp
 	temp = False
 	f = random.choice(formats)
 	form = f[0]
-	axes = f[1]
+	axis = f[1]
 	canRegen = f[2]
 	s = form(topic,noun,w2v) #"Going. Get. Go. A horse walk." for micro.py fast horse
 	regenf = lambda lock: form(topic,noun,w2v,lock)
-	scoref = lambda x: score(x,axes,pens)
+	scoref = lambda x: h.getSkipScores(axis[0],axis[1],x,pens)
 	if s is None:
 		print "RETRYING"
 		doit(topic,noun,w2v,pens)
 	else:
-		best = evaluate.best(s,regenf,canRegen,scoref)
+		best = priority.best(s,regenf,canRegen,scoref)
 		print best
 
 if __name__ == "__main__":
