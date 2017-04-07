@@ -32,7 +32,7 @@ class Node:
 		return node
 
 numChildren = 10
-strikes = 10 #10000?
+strikes = 100
 heap = []
 
 #s is initial artifact
