@@ -91,3 +91,4 @@ ENV/
 # BigFiles
 data/*
 penseur/*
+corenlp-python/*

@@ -1,6 +1,8 @@
 import conceptnet as cn
 import datamuse as dm
 import helpers as h
+import stanford as stan
+stan = reload(stan)
 import random
 
 bg_cache = {}
@@ -8,18 +10,16 @@ bg_cache = {}
 res_key = ""
 res_cache = [] #TODO change to dict
 
-def extract_cn(cn_result):
-	return [res[1] for res in cn_result]
-
+# TODO see how get_nouns affects single words
 def filterNoun(list_in):
 	filtered = set()
 	for inc in list_in:
-		words = inc.split()
-		if len(words) == 1:
-			filtered.add(inc)
+		if len(inc.split()) > 1:
+			nounified = stan.get_nouns(inc)
+			for n in nounified:
+				filtered.add(n)
 		else:
-			for w in h.pos(words,'n'):
-				filtered.add(w)
+			filtered.add(inc)
 
 	return list(filtered)
 
@@ -82,7 +82,7 @@ def get_bg(topic, parents, w2v, juxtapose = False):
 		bg_cache[k] = bg_list
 	else:
 		bg_list = bg_cache[k]
-
+	print(bg_list)
 	return pickOne(bg_list)
 
 def get_result(topic, parents, w2v, juxtapose = False):
