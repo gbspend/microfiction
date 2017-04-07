@@ -4,6 +4,9 @@ import string
 import numpy as np
 import datamuse as dm
 import random
+from pattern.en import conjugate, PRESENT, parse, pluralize
+import oxdict as od
+od = reload(od)
 
 def synName(s):
 	return s.lemma_names()[0]
@@ -206,14 +209,20 @@ def getSkipScore(bad,good,s,p):
 
 #len(l) > 1
 def getSkipScores(bad,good,l,p):
+	#return [random.random() for x in l]
 	if len (l) == 1:
 		return [getSkipScore(bad,good,l[0],p)]
 	p.encode(l)
 	return p.get_axis_scores(bad,good)
 
+def toPresent(verb):
+	return conjugate(verb,PRESENT)
 
-
-
+#only takes single words!
+def makePlural(w):
+	if od.isMassOrProper(w) or parse(w).split('/')[1] == 'NNS':
+		return w
+	return pluralize(w)
 
 
 

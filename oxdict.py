@@ -18,7 +18,6 @@ def lookup(word):
 #pos is like "Verb" or "Noun"
 #returns object with the following keys: ['pronunciations', 'text', 'lexicalCategory', 'language', 'entries'], entries is most useful
 def getpos(r,pos):
-	return None #TODO REMOVE
 	for e in r:
 		if e['lexicalCategory'] == pos:
 			return e
@@ -26,7 +25,6 @@ def getpos(r,pos):
 
 #takes a word and a POS ("Verb","Noun") and returns True if OxDict says that word is that POS
 def ispos(word,pos):
-	return True #TODO REMOVE
 	r = lookup(word)
 	if r is None:
 		return False
@@ -36,7 +34,6 @@ gf = 'grammaticalFeatures'
 
 #returns True if Ox Dict thinks the word is a verb and it is intransitive, False otherwise
 def checkTransitivity(word):
-	return True #TODO REMOVE
 	r = lookup(word)
 	if r is None:
 		return False #TODO: revisit? do we want to exclude a verb if OxDict doesnt list it?
@@ -50,8 +47,7 @@ def checkTransitivity(word):
 	return True #an intransitive verb
 
 #this is important for "punchies", but I think it's not perfect (example: 'time')
-def isMass(word):
-	return True #TODO REMOVE
+def isMassOrProper(word):
 	r = lookup(word)
 	if r is None:
 		return False
@@ -59,7 +55,7 @@ def isMass(word):
 	if v is not None:
 		for i in [x[gf] for x in v['entries'] if gf in x]:
 			for e in i:
-				if 'text' in e and e['text'] == "Mass":
+				if 'text' in e and e['text'] in ["Mass", "Proper"]:
 					return True
 	return False
 

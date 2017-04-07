@@ -2,7 +2,6 @@ import conceptnet as cn
 import datamuse as dm
 import helpers as h
 import stanford as stan
-stan = reload(stan)
 import random
 
 bg_cache = {}
@@ -11,16 +10,25 @@ res_key = ""
 res_cache = [] #TODO change to dict
 
 # TODO see how get_nouns affects single words
+#doesnt help much, but slows down a lot
 def filterNoun(list_in):
 	filtered = set()
 	for inc in list_in:
-		if len(inc.split()) > 1:
-			nounified = stan.get_nouns(inc)
-			for n in nounified:
-				filtered.add(n)
-		else:
-			filtered.add(inc)
+		nounified = stan.get_nouns(inc)
+		for n in nounified:
+			filtered.add(n)
 
+	return list(filtered)
+
+def oldFilterNoun(list_in):	
+	filtered = set()
+	for inc in list_in:
+		words = inc.split()
+		if len(words) == 1:
+			filtered.add(inc)
+		else:
+			for w in h.pos(words,'n'):
+				filtered.add(w)
 	return list(filtered)
 
 def removeMatch(l, topic, parents):
@@ -54,7 +62,8 @@ def get_words(topic, parents, cn_relations, isIncoming=True):
 			res += (x[0] for x in dm.query(dm.related('trg',p),dm.topics(topic), dm.metadata('p'))
 					 if ('tags' in x[1] and x[1]['tags'][0] == 'n')) # get only nouns
 
-	res = filterNoun(res)
+	#res = filterNoun(res)
+	res = oldFilterNoun(res)
 	removeMatch(res, topic, parents)
 	return res
 
@@ -82,7 +91,7 @@ def get_bg(topic, parents, w2v, juxtapose = False):
 		bg_cache[k] = bg_list
 	else:
 		bg_list = bg_cache[k]
-	print(bg_list)
+	#print(bg_list)
 	return pickOne(bg_list)
 
 def get_result(topic, parents, w2v, juxtapose = False):

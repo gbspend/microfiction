@@ -24,13 +24,15 @@ class Node:
 		lock = self.words[:]
 		lock[i] = None
 		news = self.sett.regen(lock)
+		if not news:
+			return None
 		node = Node(news,self.sett)
 		if len(set(node.words)) != len(node.words) or node.s == self.s: #duplicate or didn't change
-			return self.getChild()
+			return None
 		return node
 
 numChildren = 10
-strikes = 100 #10000?
+strikes = 10 #10000?
 heap = []
 
 #s is initial artifact
@@ -43,21 +45,27 @@ def best(s,regenf,canRegen,scoref):
 	bestch = root
 	count = 0
 	print "starting priority loop"
-	while True: #add stopping condition
+	while True:
+		if not heap:
+			break
 		curr = hq.heappop(heap)[1]
 		print curr.s,curr.score
 		if curr.score > bestsc:
 			bestsc = curr.score
 			bestch = curr
 			count = 0
-			print "New best:",bestch.s,bestch.score
+			print "NEW BEST:",bestch.s,bestch.score
 		else:
 			count += 1
 			if count > strikes:
 				break
 		childs = []
 		for i in xrange(numChildren):
-			childs.append(curr.getChild())
+			newch = curr.getChild()
+			if newch is not None:
+				childs.append(newch)
+		if not childs:
+			continue
 		raw = [" ".join(c.words) for c in childs]
 		scores = scoref(raw)
 		for i,child in enumerate(childs):

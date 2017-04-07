@@ -42,7 +42,7 @@ def makeVerb(topic, parents, num, w2v, jux=False):
 	final = [str(wn.morphy(x)) for x in final]
 
 	#remove transitive verbs
-	final = [x for x in final if od.checkTransitivity(x)]
+	#final = [x for x in final if od.checkTransitivity(x)]
 	#word2vec sort
 	relations = parents + [topic]
 	final = h.w2vsortlist(final,relations,w2v)
@@ -51,6 +51,8 @@ def makeVerb(topic, parents, num, w2v, jux=False):
 			final = final[:-len(final)/5]
 
 	final = h.w2vweightslist(final,relations,w2v)
+	if len(final) < 1:
+		print "VERB FINAL IS EMPTY:",topic,parents,num,list(choices)
 	#just in case
 	if len(final) <= num:
 		return [x[0] for x in final]

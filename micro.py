@@ -6,10 +6,13 @@ import punchy as p
 import nounverb as nv
 from penseur import penseur
 import priority
+import stanford
+from pattern.en import conjugate,INFINITIVE
 
 priority = reload(priority)
 p = reload(p)
 h = reload(h)
+nv = reload(nv)
 
 #=FORMATS===========================================
 #formats take 1 string "topic" and a list of either None or string that will be "locked in" (from eval.)
@@ -32,7 +35,7 @@ def threeaction(topic,noun,w2v,lock=nones):
 	#	useLock = False
 
 	if lock[5] is not None and useLock:
-		verb = lock[5]
+		verb = conjugate(lock[5],INFINITIVE)
 	else:
 		verbs = nv.makeVerb(topic,[noun],1,w2v,False) #how to decide jux?
 		if not verbs:
@@ -54,7 +57,7 @@ def threeaction(topic,noun,w2v,lock=nones):
 				return None
 			bgs[i] = b
 
-	return ". ".join([h.firstCharUp(x) for x in bgs])+". "+random.choice(["A","The"])+" "+noun+" "+verb+"."
+	return ". ".join([h.firstCharUp(x) for x in bgs])+". "+random.choice(["A","The"])+" "+noun+" "+h.toPresent(verb)+"."
 
 formats = [
 	(threeaction, threeactaxis, threeactregen)
@@ -100,8 +103,9 @@ def olddoit(topic,noun,w2v,dum):
 #	return sum(scores)/len(scores)
 
 def doit(topic,noun,w2v,pens):
-	global temp
-	temp = False
+	#if not stanford.check():
+	#	print "START THE SERVER"
+	#	raw_input('Press Enter...')
 	f = random.choice(formats)
 	form = f[0]
 	axis = f[1]

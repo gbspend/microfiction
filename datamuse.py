@@ -38,7 +38,11 @@ def metadata(m):
 def query(*args):
 	ret = []
 	u = url+'/words?max='+str(maxWords)+'&' + '&'.join(str(a) for a in args)
-	obj = requests.get(u).json()
+	r = requests.get(u)
+	if r.status_code != 200:
+		print 'DATA MUSE RETURNED',r.status_code
+		return ret
+	obj = r.json()
 	for o in obj:
 		if 'score' not in o:
 			o['score']=0
