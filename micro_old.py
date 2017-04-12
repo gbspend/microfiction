@@ -9,6 +9,10 @@ import helpers as h
 #w2v.init_sims(replace=True)
 #print "Word2Vec Loaded"
 
+#NEW
+# import word2vec
+# w2v = word2vec.load('data/tagged_w2v.bin')
+
 def comesBefore(word):
 	return cn.getIncoming(word,"Causes") + cn.getIncoming(word,"HasSubevent") + cn.getOutgoing(word,"HasPrerequisite")
 
@@ -26,7 +30,7 @@ def pickSome(l, n, noun, verb):
 			continue
 		ret.append(h.toNoun(c))
 		dontMatch.append(h.baseWord(c))
-		
+
 	return ret
 
 def w2vDist(x,y):

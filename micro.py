@@ -130,4 +130,3 @@ if __name__ == "__main__":
 	topic = sys.argv[1]
 	noun = sys.argv[2]
 	doit(topic,noun,w2v,pens)
-	

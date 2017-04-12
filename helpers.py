@@ -6,7 +6,7 @@ import datamuse as dm
 import random
 from pattern.en import conjugate, PRESENT, parse, pluralize
 import oxdict as od
-od = reload(od)
+from operator import itemgetter
 
 def synName(s):
 	return s.lemma_names()[0]
@@ -100,6 +100,19 @@ def total_similarity(word, relations, w2v):
 		return 0.0
 	return sum((w2v.similarity(word, x) for x in relations if x in w2v), 0.0)
 
+def new_total_similarity(word, relations, w2v):
+	if word not in w2v:
+		return 0.0
+	return sum((get_cosine_similarity(word, x, w2v) for x in relations if x in w2v), 0.0)
+
+def get_cosine_similarity(word1, word2, w2v):
+	vec1 = w2v.get_vector(word1)
+	vec2 = w2v.get_vector(word2)
+	dividend = np.dot(vec1, vec2)
+	divisor = np.linalg.norm(vec1) * np.linalg.norm(vec2)
+	result = dividend / divisor
+	return result
+
 #l is a list of words, word is the word that the w2v similarity will be measured against
 #returns the list sorted by similarity
 def w2vsort(l,word,w2v):
@@ -110,6 +123,9 @@ def w2vsort(l,word,w2v):
 def w2vsortlist(l,words,w2v):
 	return sorted(l,reverse=True,key=lambda x: total_similarity(x,words,w2v))
 
+def w2vsortlistNew(l,words,w2v):
+	return sorted(l,reverse=True,key=lambda x: new_total_similarity(x,words,w2v))
+
 #l is a list of words, word is the word that the w2v similarity will be measured against
 #returns a list of (w, similarty) tuples
 def w2vweights(l,word,w2v):
@@ -119,6 +135,14 @@ def w2vweights(l,word,w2v):
 #returns a list of (w, similarty) tuples
 def w2vweightslist(l,words,w2v):
 	return [(x,total_similarity(x,words,w2v)) for x in l]
+
+def strip_tag(tagged):
+	return tagged[:-(len(tagged)-tagged.find('_'))]
+
+def w2vWeightsListNew(l, words, w2v):
+	tuple_list = [(strip_tag(x), new_total_similarity(x, words, w2v)) for x in l]
+	return sorted(tuple_list, key=itemgetter(1), reverse=True)
+
 
 #choices is a list of (choice,weight) tuples
 #Doesn't need to be sorted! :D
@@ -171,13 +195,11 @@ def get_nouns_from_verb(start, relations, w2v_alt):
 
 # Scholar by Daniel Ricks: https://github.com/danielricks/scholar
 def get_scholar_rels(start, relations, w2v_alt, tag1, tag2):
-	positives = []
-	negatives = []
 	counts = defaultdict(int)
 	total_res = []
 	for rel in relations:
-		positives += [rel[1] + tag2, start]
-		negatives += [rel[0] + tag1]
+		positives = [rel[1] + tag2, start]
+		negatives = [rel[0] + tag1]
 
 		idxs, metrics = w2v_alt.analogy(pos=positives, neg=negatives, n=10)
 		res = w2v_alt.generate_response(idxs, metrics).tolist()
@@ -223,19 +245,3 @@ def makePlural(w):
 	if od.isMassOrProper(w) or parse(w).split('/')[1] == 'NNS':
 		return w
 	return pluralize(w)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
