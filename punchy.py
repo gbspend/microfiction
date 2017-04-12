@@ -57,7 +57,7 @@ def pickOne(l):
 	i = h.weighted_choice(l)
 	return l[i][0]
 
-def get_words(topic, parents, cn_relations, isIncoming=True):
+def get_words(topic, parents, cn_relations, w2v_relations, w2v, isIncoming=True):
 	res = []
 	stripped_topic = h.strip_tag(topic)
 	for p in parents:
@@ -73,8 +73,11 @@ def get_words(topic, parents, cn_relations, isIncoming=True):
 			res += (x[0] for x in dm.query(dm.related('trg',stripped_parent),dm.topics(stripped_topic), dm.metadata('p'))
 					 if ('tags' in x[1] and x[1]['tags'][0] == 'n')) # get only nouns
 
+		w2v_words = h.get_nouns_from_verb(stripped_parent, w2v_relations, w2v)
+		res += w2v_words
+
 	#res = filterNoun(res)
-	res = oldFilterNoun(res)	
+	res = oldFilterNoun(res)
 	removeMatch(res, topic, parents)
 	res = [x+'_NN' for x in res] # should hopefully all be nouns at this point...
 	return res
@@ -85,7 +88,8 @@ def get_bg(topic, parents, w2v, juxtapose = False):
 	k = topic + "".join(parents)
 	if k not in bg_cache:
 		cn_relations = ["HasSubevent", "Causes", "HasPrerequisite", "UsedFor"]
-		picked_bg = get_words(topic, parents, cn_relations)
+		w2v_relations = [('eat', 'hunger'), ('drink', 'thirst'), ('shoot', 'hatred'), ('laugh', 'happiness'), ('sleep', 'fatigue'), ('scream', 'fear')]
+		picked_bg = get_words(topic, parents, cn_relations, w2v_relations, w2v)
 		relations = parents + [topic]
 		if len(picked_bg) > 20:
 			picked_bg = picked_bg[:-len(picked_bg)/5]

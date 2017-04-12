@@ -136,7 +136,12 @@ def w2vweights(l,word,w2v):
 def w2vweightslist(l,words,w2v):
 	return [(x,total_similarity(x,words,w2v)) for x in l]
 
+def has_tag(word):
+	return word.find('_') != -1
+
 def strip_tag(tagged):
+	if not has_tag(tagged):
+		return tagged
 	return tagged[:-(len(tagged)-tagged.find('_'))]
 
 def w2vWeightsListNew(l, words, w2v):
@@ -184,12 +189,14 @@ def relation(start, relations, w2v):
 
 # relations should be [(noun, verb)...]
 def get_verbs_from_noun(start, relations, w2v_alt):
-	start += '_NN'
+	if not has_tag(start):
+		start += '_NN'
 	return get_scholar_rels(start, relations, w2v_alt, '_NN', '_VB')
 
 # relations should be [(verb, noun)...]
 def get_nouns_from_verb(start, relations, w2v_alt):
-	start += '_VB'
+	if not has_tag(start):
+		start += '_VB'
 	return get_scholar_rels(start, relations, w2v_alt, '_VB', '_NN')
 
 # Scholar by Daniel Ricks: https://github.com/danielricks/scholar

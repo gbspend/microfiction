@@ -56,7 +56,7 @@ def threeaction(topic,noun,w2v,lock=nones):
 				print "NO BG WORDS FOR:",noun,verb
 				return None
 			bgs[i] = b
-	
+
 	return ". ".join([h.firstCharUp(x) for x in bgs])+". "+random.choice(["A","The"])+" "+noun+" "+h.toPresent(h.strip_tag(verb))+"."
 
 formats = [
