@@ -40,15 +40,14 @@ def oldFilterNoun(list_in):
 	return list(filtered)
 
 def removeMatch(l, topic, parents):
-	dontMatch = {topic}
+	dontMatch = {h.strip_tag(topic)}
 	for p in parents:
-		dontMatch.add(p)
+		dontMatch.add(h.strip_tag(p))
 		#dontMatch.add(h.baseWord(h.toNoun(p)))
 
 	temp = []
 	for w in l:
 		if w not in dontMatch:
-
 			temp.append(w)
 			dontMatch.add(w)
 	l[:] = temp
@@ -62,21 +61,22 @@ def get_words(topic, parents, cn_relations, isIncoming=True):
 	res = []
 	stripped_topic = h.strip_tag(topic)
 	for p in parents:
+		stripped_parent = h.strip_tag(p)
 		for rel in cn_relations:
 			if isIncoming:
-				res += (x[1] for x in cn.getIncoming(p, rel))
+				res += (x[1] for x in cn.getIncoming(stripped_parent, rel))
 			else:
-				res += (x[1] for x in cn.getOutgoing(p, rel))
+				res += (x[1] for x in cn.getOutgoing(stripped_parent, rel))
 
 		# TODO: find good datamuse relationships for outgoing edges.
 		if isIncoming:
-			res += (x[0] for x in dm.query(dm.related('trg',p),dm.topics(stripped_topic), dm.metadata('p'))
+			res += (x[0] for x in dm.query(dm.related('trg',stripped_parent),dm.topics(stripped_topic), dm.metadata('p'))
 					 if ('tags' in x[1] and x[1]['tags'][0] == 'n')) # get only nouns
 
 	#res = filterNoun(res)
-	res = oldFilterNoun(res)
-	res = [x+'_NN' for x in res] # should hopefully all be nouns at this point...
+	res = oldFilterNoun(res)	
 	removeMatch(res, topic, parents)
+	res = [x+'_NN' for x in res] # should hopefully all be nouns at this point...
 	return res
 
 def get_bg(topic, parents, w2v, juxtapose = False):
@@ -100,7 +100,7 @@ def get_bg(topic, parents, w2v, juxtapose = False):
 	else:
 		bg_list = bg_cache[k]
 	#print(bg_list)
-	return pickOne(bg_list)
+	return h.strip_tag(pickOne(bg_list))
 
 def get_result(topic, parents, w2v, juxtapose = False):
 	global res_key, res_cache

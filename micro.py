@@ -35,7 +35,7 @@ def threeaction(topic,noun,w2v,lock=nones):
 	#	useLock = False
 
 	if lock[5] is not None and useLock:
-		verb = conjugate(lock[5],INFINITIVE)
+		verb = conjugate(lock[5],INFINITIVE) + '_VB'
 	else:
 		verbs = nv.makeVerb(topic,[noun],1,w2v,False) #how to decide jux?
 		if not verbs:
@@ -44,20 +44,20 @@ def threeaction(topic,noun,w2v,lock=nones):
 		verb = verbs[0]
 		useLock = False
 
-	#print "VERB:",verb
+	# print "VERB:",verb
 
 	bgs = ['', '', '']
 	for i in range(3):
 		if lock[i] is not None and useLock:
 			bgs[i] = lock[i]
 		else:
-			b = p.get_bg(topic,[verb],w2v)
+			b = p.get_bg(topic,[verb, noun+'_NN'],w2v) # add tag for w2v
 			if b is None:
 				print "NO BG WORDS FOR:",noun,verb
 				return None
 			bgs[i] = b
-
-	return ". ".join([h.firstCharUp(x) for x in bgs])+". "+random.choice(["A","The"])+" "+noun+" "+h.toPresent(verb)+"."
+	
+	return ". ".join([h.firstCharUp(x) for x in bgs])+". "+random.choice(["A","The"])+" "+noun+" "+h.toPresent(h.strip_tag(verb))+"."
 
 formats = [
 	(threeaction, threeactaxis, threeactregen)

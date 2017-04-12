@@ -19,8 +19,6 @@ def comesBefore(word):
 def comesBeforeId(id):
 	return cn.getIdIncoming(id,"Causes") + cn.getIdIncoming(id,"HasSubevent") + cn.getIdOutgoing(id,"HasPrerequisite")
 
-
-
 def pickSome(l, n, noun, verb):
 	ret = []
 	dontMatch = [h.baseWord(noun),h.baseWord(verb),h.baseWord(h.toNoun(verb))]

@@ -103,7 +103,7 @@ def total_similarity(word, relations, w2v):
 def new_total_similarity(word, relations, w2v):
 	if word not in w2v:
 		return 0.0
-	return sum((get_cosine_similarity(word, x, w2v) for x in relations if x in w2v), 0.0)
+	return sum((max(0.0,get_cosine_similarity(word, x, w2v)) for x in relations if x in w2v), 0.0)
 
 def get_cosine_similarity(word1, word2, w2v):
 	vec1 = w2v.get_vector(word1)
@@ -140,9 +140,8 @@ def strip_tag(tagged):
 	return tagged[:-(len(tagged)-tagged.find('_'))]
 
 def w2vWeightsListNew(l, words, w2v):
-	tuple_list = [(strip_tag(x), new_total_similarity(x, words, w2v)) for x in l]
+	tuple_list = [(x, new_total_similarity(x, words, w2v)) for x in l]
 	return sorted(tuple_list, key=itemgetter(1), reverse=True)
-
 
 #choices is a list of (choice,weight) tuples
 #Doesn't need to be sorted! :D

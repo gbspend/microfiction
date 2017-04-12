@@ -59,7 +59,6 @@ def makeVerb(topic, parents, num, w2v, jux=False):
 	#just in case
 	if len(final) <= num:
 		return [x[0] for x in final]
-
 	return [pickOne(final) for x in range(num)]
 
 
