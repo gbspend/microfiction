@@ -1,6 +1,74 @@
 import helpers as h
 import random
 import heapq as hq
+import oxdict as od
+
+numChildren = 10
+strikes = 5#100
+
+class Niche:
+	def __init__(self,v, node, f):
+		self.verb = v
+		self.intrans = od.checkVerb(v)
+		self.isDead = not self.intrans		
+		self.scoref = f
+		self.heap = []
+		self.stale = 0
+		self.bestsc = node.score
+		self.bestch = node
+		self.push(node)
+
+	def checkBest(self,curr):
+		if curr.score > self.bestsc:
+			self.bestsc = curr.score
+			self.bestch = curr
+			self.stale = 0
+			print "NEW BEST:",self.bestch.s,self.bestch.score 
+			return True
+		return False
+
+	def push(self,node):
+		if self.stale > strikes or not self.intrans:
+			return
+		if not self.heap:
+			if self.isDead:
+				print self.verb, "REANIMATED"
+			self.isDead = False
+		hq.heappush(self.heap,(-node.score,node))
+
+	def step(self):
+		if self.isDead:
+			return []
+		if not self.heap:
+			self.isDead = True
+			print self.verb, "DIED: heap empty"
+			return []
+		curr = hq.heappop(self.heap)[1]
+		#print curr.s,curr.score
+		if not self.checkBest(curr):
+			self.stale += 1
+			if self.stale > strikes:
+				self.isDead = True
+				print self.verb, "DIED: struck out"
+				return []
+		childs = []
+		for i in xrange(numChildren):
+			newch = curr.getChild()
+			if newch is not None:
+				childs.append(newch)
+		if not childs:
+			return []
+		raw = [" ".join(c.words) for c in childs]
+		scores = self.scoref(raw)
+		ret = []
+		for i,child in enumerate(childs):
+			child.score = scores[i]
+			if h.getV(child.s) != self.verb:
+				ret.append(child)
+			else:
+				hq.heappush(self.heap,(-child.score,child))
+		return ret
+		
 
 class Settings:
 	#rf is function that takes a "locks" list (see "formats" functions in micro.py)
@@ -31,10 +99,43 @@ class Node:
 			return None
 		return node
 
-numChildren = 10
-strikes = 100
-heap = []
 
+def best(s,regenf,canRegen,scoref):
+	niches = {}
+	verb = h.getV(s)
+	root = Node(s,Settings(regenf,canRegen))
+	root.score = scoref([s])[0]
+	ni = Niche(verb,root,scoref)
+	niches[verb] = ni
+	while True:
+		print "--------------------------------"
+		orphans = []
+		allDead = True
+		for k in niches:
+			n = niches[k]
+			if not n.isDead:
+				allDead = False
+				orphans += n.step()
+		if allDead and not orphans:
+			break
+		for o in orphans:
+			v = h.getV(o.s)
+			if v not in niches:
+				ni2 = Niche(v,o,scoref)
+				niches[v] = ni2
+			else:
+				niches[v].push(o)
+	bestsc = -10000
+	bestch = None
+	for v in niches:
+		n = niches[v]
+		if n.bestsc > bestsc:
+			bestsc = n.bestsc
+			bestch = n.bestch
+	return bestch.s,bestsc
+
+'''
+heap = []
 #s is initial artifact
 #regenf,canRegen,scoref: see Settings __init__ (identical params)
 def best(s,regenf,canRegen,scoref):
@@ -72,3 +173,4 @@ def best(s,regenf,canRegen,scoref):
 			child.score = scores[i]
 			hq.heappush(heap,(-child.score,child))
 	return bestch.s,bestsc
+'''

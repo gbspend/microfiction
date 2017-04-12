@@ -26,17 +26,11 @@ def oldFilterNoun(list_in):
 	filtered = set()
 	for inc in list_in:
 		words = inc.split()
-		if len(words) == 1:
-			if wn.morphy(inc) is not None:
-				filtered.add(wn.morphy(inc))
+		for w in h.pos(words,'n'):
+			if wn.morphy(w) is not None:
+				filtered.add(wn.morphy(w))
 			else:
-				filtered.add(inc)
-		else:
-			for w in h.pos(words,'n'):
-				if wn.morphy(w) is not None:
-					filtered.add(wn.morphy(w))
-				else:
-					filtered.add(w)
+				filtered.add(w)
 	return list(filtered)
 
 def removeMatch(l, topic, parents):

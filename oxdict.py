@@ -32,8 +32,8 @@ def ispos(word,pos):
 
 gf = 'grammaticalFeatures'
 
-#returns True if Ox Dict thinks the word is a verb and it is intransitive, False otherwise
-def checkTransitivity(word):
+#returns True if Ox Dict thinks the word is a verb and it is intransitive and its not dated or archaic, False otherwise
+def checkVerb(word):
 	r = lookup(word)
 	if r is None:
 		return False #TODO: revisit? do we want to exclude a verb if OxDict doesnt list it?
@@ -44,6 +44,14 @@ def checkTransitivity(word):
 		for e in i:
 			if 'text' in e and e['text'] == "Transitive":
 				return False #transitive
+	for i in v['entries']:
+		if 'senses' in i:
+			for s in i['senses']:
+				if 'registers' in s:
+					for rg in s['registers']:
+						if rg in ['archaic','dated']:
+							return False
+					
 	return True #an intransitive verb
 
 #this is important for "punchies", but I think it's not perfect (example: 'time')

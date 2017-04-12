@@ -1,4 +1,4 @@
-import gensim
+import word2vec
 import random
 import sys
 import helpers as h
@@ -8,6 +8,8 @@ from penseur import penseur
 import priority
 import stanford
 from pattern.en import conjugate,INFINITIVE
+import oxdict as od
+import pickle
 
 priority = reload(priority)
 p = reload(p)
@@ -21,7 +23,7 @@ nv = reload(nv)
 
 nones = [None,None,None,None,None,None]
 
-threeactaxis = ('plunger volcano paper the mug switches','bridge standoff gunshot the revolution begins')
+threeactaxis = ('plunger volcano paper the mug switches',['bridge standoff gunshot the revolution begins','eternity loneliness homecoming the tail wags'])
 threeactregen = [0,1,2,5] #TODO add 4 [[],[],[],None,None,[]]
 def threeaction(topic,noun,w2v,lock=nones):
 	useLock = True
@@ -102,31 +104,54 @@ def olddoit(topic,noun,w2v,dum):
 #	scores = [h.getSkipScore(a[0],a[1],s,pens) for a in axes]
 #	return sum(scores)/len(scores)
 
+badverbs = set()
+
+def isBad(v):
+	if v in badverbs:
+		return True
+	if not od.checkVerb(v):
+		badverbs.add(v)
+		return True
+	return False
+
 def doit(topic,noun,w2v,pens):
 	#if not stanford.check():
 	#	print "START THE SERVER"
 	#	raw_input('Press Enter...')
+	global badverbs
+	try:
+		with open('badverbs','rb') as f:
+			badverbs = pickle.load(f)
+	except IOError:
+		badverbs = set()
 	f = random.choice(formats)
 	form = f[0]
 	axis = f[1]
 	canRegen = f[2]
 	s = form(topic,noun,w2v) #"Going. Get. Go. A horse walk." for micro.py fast horse
 	regenf = lambda lock: form(topic,noun,w2v,lock)
-	scoref = lambda x: h.getSkipScores(axis[0],axis[1],x,pens)
-	if s is None:
+	scoref = lambda x: h.getSkipScores(axis[0],axis[1][0],axis[1][1],x,pens)
+	if s is None or isBad(h.getV(s)):
 		print "RETRYING"
 		doit(topic,noun,w2v,pens)
 	else:
 		best = priority.best(s,regenf,canRegen,scoref)
 		print best
+		with open('badverbs','wb') as f:
+			pickle.dump(badverbs,f)
+		return best
 
 if __name__ == "__main__":
-	w2v = gensim.models.Word2Vec.load_word2vec_format('../gn.bin',binary=True)
-	w2v.init_sims(replace=True)
+	topic = sys.argv[1]
+	if '_' not in topic:
+		print "Make sure to tag topic"
+		exit()
+	noun = sys.argv[2]
+	w2v = word2vec.load('data/tagged.bin')
+	#w2v = gensim.models.Word2Vec.load_word2vec_format('../gn.bin',binary=True)
+	#w2v.init_sims(replace=True)
 	print "Word2Vec Loaded"
 	pens = penseur.Penseur()
 	print "Penseur Loaded"
 
-	topic = sys.argv[1]
-	noun = sys.argv[2]
 	doit(topic,noun,w2v,pens)

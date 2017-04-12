@@ -228,20 +228,21 @@ def get_scholar_rels(start, relations, w2v_alt, tag1, tag2):
 
 
 #good/bad are axis ends
-#s is sentence to score
+#l is list of sentences to score
 #p is Penseur instance
 #returns score, higher is better
-def getSkipScore(bad,good,s,p):
-	p.encode([s,'gun mask note the teller screams'])
-	return p.get_axis_scores(bad,good)[0]
-
 #len(l) > 1
-def getSkipScores(bad,good,l,p):
+def getSkipScores(bad,good1,good2,l,p):
 	#return [random.random() for x in l]
-	if len (l) == 1:
-		return [getSkipScore(bad,good,l[0],p)]
+	dummy = False
+	if len(l) == 1:
+		dummy = True
+		l += ['asd']
 	p.encode(l)
-	return p.get_axis_scores(bad,good)
+	scores = p.get_axis_scores(bad,good1,good2)
+	if dummy:
+		return scores[:1]
+	return scores
 
 def toPresent(verb):
 	return conjugate(verb,PRESENT)
@@ -251,3 +252,8 @@ def makePlural(w):
 	if od.isMassOrProper(w) or parse(w).split('/')[1] == 'NNS':
 		return w
 	return pluralize(w)
+
+def getV(s,i=5):
+	return wn.morphy(strip(s).split()[i])
+
+

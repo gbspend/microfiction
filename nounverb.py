@@ -41,8 +41,6 @@ def makeVerb(topic, parents, num, w2v, jux=False):
 
 		final = list(temp)
 
-	#remove transitive verbs
-	#final = [x for x in final if od.checkTransitivity(x)]
 	#word2vec sort
 	parents = [x+'_NN' for x in parents]
 	relations = parents + [topic]
