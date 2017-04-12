@@ -135,10 +135,13 @@ def doit(topic,noun,w2v,pens):
 		print "RETRYING"
 		doit(topic,noun,w2v,pens)
 	else:
-		best = priority.best(s,regenf,canRegen,scoref)
-		print best
+		best = priority.best(s,regenf,canRegen,scoref)[0]
 		with open('badverbs','wb') as f:
 			pickle.dump(badverbs,f)
+		raw = h.strip(best).split()[:3]
+		notraw = best.split()
+		best = ". ".join([h.firstCharUp(h.makePlural(r)) for r in raw])+". "+" ".join(notraw[3:])
+		print best
 		return best
 
 if __name__ == "__main__":

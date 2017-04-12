@@ -4,14 +4,13 @@ import heapq as hq
 import oxdict as od
 
 numChildren = 10
-strikes = 5#100
+strikes = 5#10
 
 class Niche:
-	def __init__(self,v, node, f):
+	def __init__(self,v, node):
 		self.verb = v
 		self.intrans = od.checkVerb(v)
 		self.isDead = not self.intrans		
-		self.scoref = f
 		self.heap = []
 		self.stale = 0
 		self.bestsc = node.score
@@ -56,6 +55,8 @@ class Niche:
 			newch = curr.getChild()
 			if newch is not None:
 				childs.append(newch)
+		return childs
+'''
 		if not childs:
 			return []
 		raw = [" ".join(c.words) for c in childs]
@@ -68,6 +69,7 @@ class Niche:
 			else:
 				hq.heappush(self.heap,(-child.score,child))
 		return ret
+'''
 		
 
 class Settings:
@@ -105,34 +107,42 @@ def best(s,regenf,canRegen,scoref):
 	verb = h.getV(s)
 	root = Node(s,Settings(regenf,canRegen))
 	root.score = scoref([s])[0]
-	ni = Niche(verb,root,scoref)
+	ni = Niche(verb,root)
 	niches[verb] = ni
 	while True:
 		print "--------------------------------"
-		orphans = []
+		children = []
 		allDead = True
 		for k in niches:
 			n = niches[k]
 			if not n.isDead:
 				allDead = False
-				orphans += n.step()
-		if allDead and not orphans:
+				children += n.step()
+		if allDead and not children:
 			break
-		for o in orphans:
-			v = h.getV(o.s)
+		if not children:
+			continue
+		raw = [" ".join(c.words) for c in children]
+		scores = scoref(raw)
+		for i,child in enumerate(children):
+			child.score = scores[i]
+			v = h.getV(child.s)
 			if v not in niches:
-				ni2 = Niche(v,o,scoref)
+				ni2 = Niche(v,child)
 				niches[v] = ni2
 			else:
-				niches[v].push(o)
-	bestsc = -10000
-	bestch = None
+				niches[v].push(child)
+	choices = []
 	for v in niches:
 		n = niches[v]
-		if n.bestsc > bestsc:
-			bestsc = n.bestsc
-			bestch = n.bestch
-	return bestch.s,bestsc
+		print n.bestch.s,n.bestsc
+		choices.append((n.bestch,n.bestsc))
+	m = min([c[1] for c in choices])
+	if m >=0:
+		m = 0
+	i = h.weighted_choice(choices,-m)
+	best = choices[i][0]
+	return best.s,best.score
 
 '''
 heap = []

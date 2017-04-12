@@ -151,12 +151,12 @@ def w2vWeightsListNew(l, words, w2v):
 #choices is a list of (choice,weight) tuples
 #Doesn't need to be sorted! :D
 #returns index
-def weighted_choice(choices):
-	total = sum(w for c, w in choices)
+def weighted_choice(choices,offset=0):
+	total = sum(w+offset for c, w in choices)
 	r = random.uniform(0, total)
 	upto = 0
 	for i,t in enumerate(choices):
-		w = t[1]
+		w = t[1]+offset
 		if upto + w >= r:
 			return i
 		upto += w
@@ -206,6 +206,12 @@ def get_scholar_rels(start, relations, w2v_alt, tag1, tag2):
 	for rel in relations:
 		positives = [rel[1] + tag2, start]
 		negatives = [rel[0] + tag1]
+		flag = False
+		for w in positives+negatives:
+			if w not in w2v_alt:
+				flag = True
+		if flag:
+			continue
 
 		idxs, metrics = w2v_alt.analogy(pos=positives, neg=negatives, n=10)
 		res = w2v_alt.generate_response(idxs, metrics).tolist()

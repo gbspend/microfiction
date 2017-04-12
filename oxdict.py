@@ -42,7 +42,7 @@ def checkVerb(word):
 		return False #not a verb
 	for i in [x[gf] for x in v['entries'] if gf in x]:
 		for e in i:
-			if 'text' in e and e['text'] == "Transitive":
+			if 'text' in e and (e['text'] == "Transitive" or 'with object' in e['text']):
 				return False #transitive
 	for i in v['entries']:
 		if 'senses' in i:
