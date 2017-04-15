@@ -7,7 +7,7 @@ import nounverb as nv
 from penseur import penseur
 import priority
 import stanford
-from pattern.en import conjugate,INFINITIVE
+from pattern.en import conjugate,INFINITIVE,article,DEFINITE,INDEFINITE
 import oxdict as od
 import pickle
 
@@ -58,8 +58,8 @@ def threeaction(topic,noun,w2v,lock=nones):
 				print "NO BG WORDS FOR:",noun,verb
 				return None
 			bgs[i] = b
-
-	return ". ".join([h.firstCharUp(x) for x in bgs])+". "+random.choice(["A","The"])+" "+noun+" "+h.toPresent(h.strip_tag(verb))+"."
+	art = h.firstCharUp(article(noun.lower(), function=random.choice([INDEFINITE,DEFINITE])))
+	return ". ".join([h.firstCharUp(x) for x in bgs])+". "+art+" "+noun+" "+h.toPresent(h.strip_tag(verb))+"."
 
 formats = [
 	(threeaction, threeactaxis, threeactregen)
@@ -114,7 +114,7 @@ def isBad(v):
 		return True
 	return False
 
-def doit(topic,noun,w2v,pens):
+def doit(topic,noun,w2v,pens,retries=0):
 	#if not stanford.check():
 	#	print "START THE SERVER"
 	#	raw_input('Press Enter...')
@@ -128,12 +128,14 @@ def doit(topic,noun,w2v,pens):
 	form = f[0]
 	axis = f[1]
 	canRegen = f[2]
-	s = form(topic,noun,w2v) #"Going. Get. Go. A horse walk." for micro.py fast horse
+	s = form(topic,noun,w2v)
 	regenf = lambda lock: form(topic,noun,w2v,lock)
 	scoref = lambda x: h.getSkipScores(axis[0],axis[1][0],axis[1][1],x,pens)
 	if s is None or isBad(h.getV(s)):
+		if retries > 20:
+			return None
 		print "RETRYING"
-		doit(topic,noun,w2v,pens)
+		return doit(topic,noun,w2v,pens,retries+1)
 	else:
 		best = priority.best(s,regenf,canRegen,scoref)[0]
 		with open('badverbs','wb') as f:
@@ -141,7 +143,7 @@ def doit(topic,noun,w2v,pens):
 		raw = h.strip(best).split()[:3]
 		notraw = best.split()
 		best = ". ".join([h.firstCharUp(h.makePlural(r)) for r in raw])+". "+" ".join(notraw[3:])
-		print best
+		print best,"\n"
 		return best
 
 if __name__ == "__main__":

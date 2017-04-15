@@ -4,7 +4,7 @@ import heapq as hq
 import oxdict as od
 
 numChildren = 10
-strikes = 5#10
+strikes = 7#10
 
 class Niche:
 	def __init__(self,v, node):
@@ -22,7 +22,7 @@ class Niche:
 			self.bestsc = curr.score
 			self.bestch = curr
 			self.stale = 0
-			print "NEW BEST:",self.bestch.s,self.bestch.score 
+			#print "NEW BEST:",self.bestch.s,self.bestch.score 
 			return True
 		return False
 
@@ -30,8 +30,8 @@ class Niche:
 		if self.stale > strikes or not self.intrans:
 			return
 		if not self.heap:
-			if self.isDead:
-				print self.verb, "REANIMATED"
+			#if self.isDead:
+			#	print self.verb, "REANIMATED"
 			self.isDead = False
 		hq.heappush(self.heap,(-node.score,node))
 
@@ -40,7 +40,7 @@ class Niche:
 			return []
 		if not self.heap:
 			self.isDead = True
-			print self.verb, "DIED: heap empty"
+			#print self.verb, "DIED: heap empty"
 			return []
 		curr = hq.heappop(self.heap)[1]
 		#print curr.s,curr.score
@@ -48,7 +48,7 @@ class Niche:
 			self.stale += 1
 			if self.stale > strikes:
 				self.isDead = True
-				print self.verb, "DIED: struck out"
+				#print self.verb, "DIED: struck out"
 				return []
 		childs = []
 		for i in xrange(numChildren):
@@ -110,7 +110,7 @@ def best(s,regenf,canRegen,scoref):
 	ni = Niche(verb,root)
 	niches[verb] = ni
 	while True:
-		print "--------------------------------"
+		#print "--------------------------------"
 		children = []
 		allDead = True
 		for k in niches:
@@ -135,6 +135,8 @@ def best(s,regenf,canRegen,scoref):
 	choices = []
 	for v in niches:
 		n = niches[v]
+		if not n.intrans:
+			continue
 		print n.bestch.s,n.bestsc
 		choices.append((n.bestch,n.bestsc))
 	m = min([c[1] for c in choices])

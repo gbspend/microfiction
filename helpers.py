@@ -260,6 +260,10 @@ def makePlural(w):
 	return pluralize(w)
 
 def getV(s,i=5):
-	return wn.morphy(strip(s).split()[i])
+	v = strip(s).split()[i]
+	m = wn.morphy(v)
+	if m is None:
+		return v
+	return m
 
 
