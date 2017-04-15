@@ -11,6 +11,7 @@ url = 'https://od-api.oxforddictionaries.com:443/api/v1/entries/en/'
 def lookup(word):
 	r = requests.get(url + word.lower(), headers = {'app_id': app_id, 'app_key': app_key})
 	if r.status_code != 200:
+		print "OXDICT returned code", r.status_code
 		return None
 	return r.json()['results'][0]['lexicalEntries']
 
@@ -36,7 +37,7 @@ gf = 'grammaticalFeatures'
 def checkVerb(word):
 	r = lookup(word)
 	if r is None:
-		return False #TODO: revisit? do we want to exclude a verb if OxDict doesnt list it?
+		return True #accept all if oxdict goes down
 	v = getpos(r,'Verb')
 	if v is None:
 		return False #not a verb
@@ -52,7 +53,7 @@ def checkVerb(word):
 						if rg in ['archaic','dated']:
 							return False
 					
-	return True #an intransitive verb
+	return True
 
 #this is important for "punchies", but I think it's not perfect (example: 'time')
 def isMassOrProper(word):
