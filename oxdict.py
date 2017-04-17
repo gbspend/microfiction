@@ -1,17 +1,18 @@
 import requests
 
-app_id = '2c9ba5ba'
-app_key = '2dca6744ee6251d8ef081ada48d40772'
+#new username is brads
+#password is fowl with special char at end
 
-language = 'en'
-word_id = 'Ace'
+app_id = 'e2682864'
+app_key = 'e71a2e787482944c1ab230671331836b'
 
 url = 'https://od-api.oxforddictionaries.com:443/api/v1/entries/en/'
 
 def lookup(word):
 	r = requests.get(url + word.lower(), headers = {'app_id': app_id, 'app_key': app_key})
 	if r.status_code != 200:
-		print "OXDICT returned code", r.status_code
+		if r.status_code != 404:
+			print "OXDICT returned code", r.status_code
 		return None
 	return r.json()['results'][0]['lexicalEntries']
 
@@ -33,38 +34,51 @@ def ispos(word,pos):
 
 gf = 'grammaticalFeatures'
 
+verbdict = {}
 #returns True if Ox Dict thinks the word is a verb and it is intransitive and its not dated or archaic, False otherwise
 def checkVerb(word):
-	r = lookup(word)
-	if r is None:
-		return True #accept all if oxdict goes down
-	v = getpos(r,'Verb')
-	if v is None:
-		return False #not a verb
-	for i in [x[gf] for x in v['entries'] if gf in x]:
-		for e in i:
-			if 'text' in e and (e['text'] == "Transitive" or 'with object' in e['text']):
-				return False #transitive
-	for i in v['entries']:
-		if 'senses' in i:
-			for s in i['senses']:
-				if 'registers' in s:
-					for rg in s['registers']:
-						if rg in ['archaic','dated']:
-							return False
-					
-	return True
-
-#this is important for "punchies", but I think it's not perfect (example: 'time')
-def isMassOrProper(word):
-	r = lookup(word)
-	if r is None:
-		return False
-	v = getpos(r,'Noun')
-	if v is not None:
+	if word in verbdict:
+		return verbdict[word]
+	else:
+		r = lookup(word)
+		if r is None:
+			return True #accept all if oxdict goes down (and don't cache)
+		v = getpos(r,'Verb')
+		if v is None:
+			verbdict[word] = False
+			return False #not a verb
 		for i in [x[gf] for x in v['entries'] if gf in x]:
 			for e in i:
-				if 'text' in e and e['text'] in ["Mass", "Proper"]:
-					return True
-	return False
+				if 'text' in e and (e['text'] == "Transitive" or 'with object' in e['text']):
+					verbdict[word] = False
+					return False #transitive
+		for i in v['entries']:
+			if 'senses' in i:
+				for s in i['senses']:
+					if 'registers' in s:
+						for rg in s['registers']:
+							if rg in ['archaic','dated']:
+								verbdict[word] = False
+								return False
+		verbdict[word] = True
+		return True
+
+mpdict = {}
+#this is important for "punchies", but I think it's not perfect (example: 'time')
+def isMassOrProper(word):
+	if word in mpdict:
+		return mpdict[word]
+	else:
+		r = lookup(word)
+		if r is None:
+			return False #don't cache in case it's unavailable
+		v = getpos(r,'Noun')
+		if v is not None:
+			for i in [x[gf] for x in v['entries'] if gf in x]:
+				for e in i:
+					if 'text' in e and e['text'] in ["Mass", "Proper"]:
+						mpdict[word] = True
+						return True
+		mpdict[word] = False
+		return False
 
