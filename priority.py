@@ -10,7 +10,7 @@ class Niche:
 	def __init__(self,v, node):
 		self.verb = v
 		self.intrans = od.checkVerb(v)
-		self.isDead = not self.intrans		
+		self.isDead = not self.intrans
 		self.heap = []
 		self.stale = 0
 		self.bestsc = node.score
@@ -22,7 +22,7 @@ class Niche:
 			self.bestsc = curr.score
 			self.bestch = curr
 			self.stale = 0
-			#print "NEW BEST:",self.bestch.s,self.bestch.score 
+			print "NEW BEST:",self.bestch.s,self.bestch.score
 			return True
 		return False
 
@@ -70,7 +70,7 @@ class Niche:
 				hq.heappush(self.heap,(-child.score,child))
 		return ret
 '''
-		
+
 
 class Settings:
 	#rf is function that takes a "locks" list (see "formats" functions in micro.py)
@@ -110,7 +110,7 @@ def best(s,regenf,canRegen,scoref):
 	ni = Niche(verb,root)
 	niches[verb] = ni
 	while True:
-		#print "--------------------------------"
+		print "--------------------------------"
 		children = []
 		allDead = True
 		for k in niches:

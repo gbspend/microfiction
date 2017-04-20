@@ -2,9 +2,10 @@ import conceptnet as cn
 import datamuse as dm
 import helpers as h
 h = reload(h)
-import stanford as stan
+#import stanford as stan
 import random
 from nltk.corpus import wordnet as wn
+from operator import itemgetter
 
 bg_cache = {}
 
@@ -35,6 +36,7 @@ def oldFilterNoun(list_in):
 
 def removeMatch(l, topic, parents):
 	dontMatch = {h.strip_tag(topic)}
+	dontMatch.update(['lust', 'philia', 'rape', 'xiii'])
 	for p in parents:
 		dontMatch.add(h.strip_tag(p))
 		#dontMatch.add(h.baseWord(h.toNoun(p)))
@@ -85,10 +87,13 @@ def get_bg(topic, parents, w2v, juxtapose = False):
 		w2v_relations = [('eat', 'hunger'), ('drink', 'thirst'), ('shoot', 'hatred'), ('laugh', 'happiness'), ('sleep', 'fatigue'), ('scream', 'fear')]
 		picked_bg = get_words(topic, parents, cn_relations, w2v_relations, w2v)
 		relations = parents + [topic]
-		if len(picked_bg) > 20:
-			picked_bg = picked_bg[:-len(picked_bg)/5]
 
 		picked_bg = h.w2vWeightsListNew(picked_bg, relations, w2v)
+
+		if len(picked_bg) > 20:
+			print picked_bg[-len(picked_bg)/5:]
+			picked_bg = picked_bg[:-len(picked_bg)/5]
+
 		bg_key = topic + "".join(parents)
 		bg_list = picked_bg
 		if not bg_list:

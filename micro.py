@@ -6,7 +6,6 @@ import punchy as p
 import nounverb as nv
 from penseur import penseur
 import priority
-import stanford
 from pattern.en import conjugate,INFINITIVE,article,DEFINITE,INDEFINITE
 import oxdict as od
 import pickle
@@ -104,13 +103,8 @@ def olddoit(topic,noun,w2v,dum):
 #	scores = [h.getSkipScore(a[0],a[1],s,pens) for a in axes]
 #	return sum(scores)/len(scores)
 
-badverbs = set()
-
 def isBad(v):
-	if v in badverbs:
-		return True
 	if not od.checkVerb(v):
-		badverbs.add(v)
 		return True
 	return False
 
@@ -118,12 +112,6 @@ def doit(topic,noun,w2v,pens,retries=0):
 	#if not stanford.check():
 	#	print "START THE SERVER"
 	#	raw_input('Press Enter...')
-	global badverbs
-	try:
-		with open('badverbs','rb') as f:
-			badverbs = pickle.load(f)
-	except IOError:
-		badverbs = set()
 	f = random.choice(formats)
 	form = f[0]
 	axis = f[1]
@@ -138,8 +126,6 @@ def doit(topic,noun,w2v,pens,retries=0):
 		return doit(topic,noun,w2v,pens,retries+1)
 	else:
 		best = priority.best(s,regenf,canRegen,scoref)[0]
-		with open('badverbs','wb') as f:
-			pickle.dump(badverbs,f)
 		raw = h.strip(best).split()[:3]
 		notraw = best.split()
 		best = ". ".join([h.firstCharUp(h.makePlural(r)) for r in raw])+". "+" ".join(notraw[3:])

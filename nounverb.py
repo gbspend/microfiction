@@ -51,11 +51,12 @@ def makeVerb(topic, parents, num, w2v, jux=False):
 		relations = parents + [topic]
 
 		#word2vec threshold
-		if len(final) > 20:
-			final = final[:-len(final)/5]
 
 		final = [pen.conjugate(x)+'_VB' for x in final]
 		final = h.w2vWeightsListNew(final,relations,w2v)
+		if len(final) > 20:
+			final = final[:-len(final)/5]
+			
 		cache[key] = final
 
 	if len(final) < 1:
