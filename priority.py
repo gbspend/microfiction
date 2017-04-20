@@ -22,7 +22,7 @@ class Niche:
 			self.bestsc = curr.score
 			self.bestch = curr
 			self.stale = 0
-			print "NEW BEST:",self.bestch.s,self.bestch.score
+			#print "NEW BEST:",self.bestch.s,self.bestch.score
 			return True
 		return False
 
@@ -110,7 +110,7 @@ def best(s,regenf,canRegen,scoref):
 	ni = Niche(verb,root)
 	niches[verb] = ni
 	while True:
-		print "--------------------------------"
+		#print "--------------------------------"
 		children = []
 		allDead = True
 		for k in niches:

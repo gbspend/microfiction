@@ -81,3 +81,4 @@ def isMassOrProper(word):
 						return True
 		mpdict[word] = False
 		return False
+
