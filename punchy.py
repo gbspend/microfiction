@@ -91,7 +91,6 @@ def get_bg(topic, parents, w2v, juxtapose = False):
 		picked_bg = h.w2vWeightsListNew(picked_bg, relations, w2v)
 
 		if len(picked_bg) > 20:
-			print picked_bg[-len(picked_bg)/5:]
 			picked_bg = picked_bg[:-len(picked_bg)/5]
 
 		bg_key = topic + "".join(parents)
