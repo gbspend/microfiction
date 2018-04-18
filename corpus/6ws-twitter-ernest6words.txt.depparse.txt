@@ -1,0 +1,8234 @@
+Good ideas start with great coffee.
+
+0 -> start/VBP (root)
+1 -> ideas/NNS (nsubj)
+2 -> Good/JJ (amod)
+1 -> coffee/NN (nmod:with)
+2 -> with/IN (case)
+2 -> great/JJ (amod)
+1 -> ./. (punct)
+
+Be a good friend to yourself.
+
+0 -> friend/NN (root)
+1 -> Be/VB (cop)
+1 -> a/DT (det)
+1 -> good/JJ (amod)
+1 -> yourself/PRP (nmod:to)
+2 -> to/TO (case)
+1 -> ./. (punct)
+
+I look like dad's college roommate.
+
+0 -> look/VBP (root)
+1 -> I/PRP (nsubj)
+1 -> roommate/NN (nmod:like)
+2 -> like/IN (case)
+2 -> dad/NN (nmod:poss)
+3 -> 's/POS (case)
+2 -> college/NN (compound)
+1 -> ./. (punct)
+
+Are you happy or just comfortable?
+
+0 -> happy/JJ (root)
+1 -> Are/VBP (cop)
+1 -> you/PRP (nsubj)
+1 -> or/CC (cc)
+1 -> comfortable/JJ (conj:or)
+2 -> you/PRP (nsubj)
+2 -> just/RB (advmod)
+1 -> ?/. (punct)
+
+Relativity applies to physics, not ethics.
+
+0 -> applies/VBZ (root)
+1 -> Relativity/NN (nsubj)
+1 -> physics/NNS (nmod:to)
+2 -> to/TO (case)
+2 -> ,/, (punct)
+2 -> ethics/NNS (appos)
+3 -> not/RB (neg)
+1 -> ./. (punct)
+
+Live for moments that become memories.
+
+0 -> Live/VB (root)
+1 -> moments/NNS (nmod:for)
+2 -> for/IN (case)
+2 -> that/WDT (ref)
+2 -> become/VBP (acl:relcl)
+3 -> moments/NNS (nsubj)
+3 -> memories/NNS (xcomp)
+1 -> ./. (punct)
+
+Don't lose yourself in your fear.
+
+0 -> lose/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> yourself/PRP (dobj)
+1 -> fear/NN (nmod:in)
+2 -> in/IN (case)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Within nature lies cure for humanity.
+
+0 -> lies/VBZ (root)
+1 -> nature/NN (nmod:within)
+2 -> Within/IN (case)
+1 -> cure/NN (nsubj)
+2 -> humanity/NN (nmod:for)
+3 -> for/IN (case)
+1 -> ./. (punct)
+
+Art is not imitation but illusion.
+
+0 -> imitation/NN (root)
+1 -> Art/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> not/RB (neg)
+1 -> but/CC (cc)
+1 -> illusion/NN (conj:but)
+1 -> ./. (punct)
+
+Expectation is root of all heartache.
+
+0 -> root/NN (root)
+1 -> Expectation/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> heartache/NN (nmod:of)
+2 -> of/IN (case)
+2 -> all/DT (det)
+1 -> ./. (punct)
+
+Art brings our imagination to life.
+
+0 -> brings/VBZ (root)
+1 -> Art/NNP (nsubj)
+1 -> imagination/NN (dobj)
+2 -> our/PRP$ (nmod:poss)
+1 -> life/NN (nmod:to)
+2 -> to/TO (case)
+1 -> ./. (punct)
+
+You are capable of greater things.
+
+0 -> capable/JJ (root)
+1 -> You/PRP (nsubj)
+1 -> are/VBP (cop)
+1 -> things/NNS (nmod:of)
+2 -> of/IN (case)
+2 -> greater/JJR (amod)
+1 -> ./. (punct)
+
+Knowledge speaks; Wisdom listens; Philosophy contemplates.
+
+0 -> speaks/VBZ (root)
+1 -> Knowledge/NN (nsubj)
+1 -> ;/: (punct)
+1 -> listens/VBZ (parataxis)
+2 -> Wisdom/NN (nsubj)
+1 -> ;/: (punct)
+1 -> contemplates/VBZ (parataxis)
+2 -> Philosophy/NN (nsubj)
+1 -> ./. (punct)
+
+We live to make impossible possible.
+
+0 -> live/VBP (root)
+1 -> We/PRP (nsubj)
+1 -> make/VB (xcomp)
+2 -> We/PRP (nsubj:xsubj)
+2 -> to/TO (mark)
+2 -> possible/JJ (xcomp)
+3 -> impossible/JJ (dep)
+1 -> ./. (punct)
+
+Keep your head down and work.
+
+0 -> Keep/VB (root)
+1 -> head/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> down/RB (advmod)
+1 -> and/CC (cc)
+1 -> work/NN (conj:and)
+1 -> ./. (punct)
+
+Passion is the genesis of genius.
+
+0 -> genesis/NN (root)
+1 -> Passion/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> genius/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+How do I explain this stain?
+
+0 -> explain/VB (root)
+1 -> How/WRB (advmod)
+1 -> do/VBP (aux)
+1 -> I/PRP (nsubj)
+1 -> stain/VB (ccomp)
+2 -> this/DT (nsubj)
+1 -> ?/. (punct)
+
+How can emptiness be so heavy?
+
+0 -> heavy/JJ (root)
+1 -> emptiness/VB (csubj)
+2 -> How/WRB (advmod)
+2 -> can/MD (aux)
+1 -> be/VB (cop)
+1 -> so/RB (advmod)
+1 -> ?/. (punct)
+
+Your purpose is to create one.
+
+0 -> is/VBZ (root)
+1 -> purpose/NN (nsubj)
+2 -> Your/PRP$ (nmod:poss)
+1 -> create/VB (xcomp)
+2 -> purpose/NN (nsubj:xsubj)
+2 -> to/TO (mark)
+2 -> one/CD (dobj)
+1 -> ./. (punct)
+
+It's our EARTH; Let's protect it.
+
+0 -> EARTH/NN (root)
+1 -> It/PRP (nsubj)
+1 -> 's/VBZ (cop)
+1 -> our/PRP$ (nmod:poss)
+1 -> ;/: (punct)
+1 -> Let/VB (parataxis)
+2 -> protect/VB (ccomp)
+3 -> 's/POS (nsubj)
+3 -> it/PRP (dobj)
+1 -> ./. (punct)
+
+Never underestimate the stupidity of idiots.
+
+0 -> underestimate/VB (root)
+1 -> Never/RB (neg)
+1 -> stupidity/NN (dobj)
+2 -> the/DT (det)
+2 -> idiots/NNS (nmod:of)
+3 -> of/IN (case)
+1 -> ./. (punct)
+
+With hope, the odds don't matter.
+
+0 -> matter/VB (root)
+1 -> hope/NN (nmod:with)
+2 -> With/IN (case)
+1 -> ,/, (punct)
+1 -> odds/NNS (nsubj)
+2 -> the/DT (det)
+1 -> do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> ./. (punct)
+
+Dreams are whispers from your soul.
+
+0 -> whispers/NNS (root)
+1 -> Dreams/NNS (nsubj)
+1 -> are/VBP (cop)
+1 -> soul/NN (nmod:from)
+2 -> from/IN (case)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+I choose to be happy today.
+
+0 -> choose/VBP (root)
+1 -> I/PRP (nsubj)
+1 -> happy/JJ (xcomp)
+2 -> I/PRP (nsubj:xsubj)
+2 -> to/TO (mark)
+2 -> be/VB (cop)
+2 -> today/NN (nmod:tmod)
+1 -> ./. (punct)
+
+Every day is a second chance.
+
+0 -> chance/NN (root)
+1 -> day/NN (nsubj)
+2 -> Every/DT (det)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> second/JJ (amod)
+1 -> ./. (punct)
+
+Love one another with great love.
+
+0 -> Love/NN (root)
+1 -> another/DT (dep)
+2 -> one/CD (nummod)
+2 -> love/NN (nmod:with)
+3 -> with/IN (case)
+3 -> great/JJ (amod)
+1 -> ./. (punct)
+
+Every end is a new beginning.
+
+0 -> beginning/NN (root)
+1 -> end/NN (nsubj)
+2 -> Every/DT (det)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> new/JJ (amod)
+1 -> ./. (punct)
+
+Just turn your wounds into wisdom.
+
+0 -> turn/VB (root)
+1 -> Just/RB (advmod)
+1 -> wounds/NNS (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> wisdom/NN (nmod:into)
+2 -> into/IN (case)
+1 -> ./. (punct)
+
+Compassion is passion with a heart.
+
+0 -> passion/NN (root)
+1 -> Compassion/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> heart/NN (nmod:with)
+2 -> with/IN (case)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+Perfection is opinion and nothing more.
+
+0 -> opinion/NN (root)
+1 -> Perfection/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> and/CC (cc)
+1 -> nothing/NN (conj:and)
+2 -> more/JJR (amod)
+1 -> ./. (punct)
+
+Success is not changing with fame.
+
+0 -> changing/VBG (root)
+1 -> Success/NN (nsubj)
+1 -> is/VBZ (aux)
+1 -> not/RB (neg)
+1 -> fame/NN (nmod:with)
+2 -> with/IN (case)
+1 -> ./. (punct)
+
+One person can make a difference.
+
+0 -> make/VB (root)
+1 -> person/NN (nsubj)
+2 -> One/CD (nummod)
+1 -> can/MD (aux)
+1 -> difference/NN (dobj)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+What you seek is seeking you.
+
+0 -> seeking/VBG (root)
+1 -> seek/VBP (csubj)
+2 -> What/WP (dobj)
+2 -> you/PRP (nsubj)
+1 -> is/VBZ (aux)
+1 -> you/PRP (dobj)
+1 -> ./. (punct)
+
+Your success will speak for itself.
+
+0 -> speak/VB (root)
+1 -> success/NN (nsubj)
+2 -> Your/PRP$ (nmod:poss)
+1 -> will/MD (aux)
+1 -> itself/PRP (nmod:for)
+2 -> for/IN (case)
+1 -> ./. (punct)
+
+Trees are poems the earth writes.
+
+0 -> poems/NNS (root)
+1 -> Trees/NNP (nsubj)
+1 -> are/VBP (cop)
+1 -> writes/VBZ (acl:relcl)
+2 -> earth/NN (nsubj)
+3 -> the/DT (det)
+1 -> ./. (punct)
+
+Art is the essence of awareness.
+
+0 -> essence/NN (root)
+1 -> Art/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> awareness/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Believe you can; You're halfway there.
+
+0 -> Believe/VB (root)
+1 -> can/MD (ccomp)
+2 -> you/PRP (nsubj)
+1 -> ;/: (punct)
+1 -> there/RB (parataxis)
+2 -> You/PRP (nsubj)
+2 -> 're/VBP (cop)
+2 -> halfway/RB (advmod)
+1 -> ./. (punct)
+
+Pause for a moment and reflect.
+
+0 -> Pause/NN (root)
+1 -> moment/NN (nmod:for)
+2 -> for/IN (case)
+2 -> a/DT (det)
+1 -> and/CC (cc)
+1 -> reflect/VBP (conj:and)
+1 -> ./. (punct)
+
+Wasting food is stealing from poor.
+
+0 -> stealing/VBG (root)
+1 -> Wasting/VBG (csubj)
+2 -> food/NN (dobj)
+1 -> is/VBZ (aux)
+1 -> poor/JJ (nmod:from)
+2 -> from/IN (case)
+1 -> ./. (punct)
+
+Don't judge what you don't understand.
+
+0 -> judge/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> understand/VB (ccomp)
+2 -> what/WP (dobj)
+2 -> you/PRP (nsubj)
+2 -> do/VBP (aux)
+2 -> n't/RB (neg)
+1 -> ./. (punct)
+
+Remember, every day is Earth Day.
+
+0 -> Day/NNP (root)
+1 -> Remember/VB (discourse)
+1 -> ,/, (punct)
+1 -> day/NN (nmod:tmod)
+2 -> every/DT (det)
+1 -> is/VBZ (cop)
+1 -> Earth/NNP (compound)
+1 -> ./. (punct)
+
+Nothing worth having ever comes easy.
+
+0 -> comes/VBZ (root)
+1 -> Nothing/NN (nsubj)
+1 -> worth/JJ (advmod)
+1 -> having/VBG (aux)
+1 -> ever/RB (advmod)
+1 -> easy/JJ (advmod)
+1 -> ./. (punct)
+
+Remember, you make your own luck.
+
+0 -> make/VBP (root)
+1 -> Remember/VB (advcl)
+1 -> ,/, (punct)
+1 -> you/PRP (nsubj)
+1 -> luck/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+2 -> own/JJ (amod)
+1 -> ./. (punct)
+
+Travel far enough, you meet yourself.
+
+0 -> meet/VBP (root)
+1 -> Travel/NN (advcl)
+2 -> enough/RB (advmod)
+3 -> far/RB (advmod)
+1 -> ,/, (punct)
+1 -> you/PRP (nsubj)
+1 -> yourself/PRP (dobj)
+1 -> ./. (punct)
+
+Live every single day with intention.
+
+0 -> Live/VB (root)
+1 -> day/NN (nmod:tmod)
+2 -> every/DT (det)
+2 -> single/JJ (amod)
+1 -> intention/NN (nmod:with)
+2 -> with/IN (case)
+1 -> ./. (punct)
+
+Tradition and morality aren't the same.
+
+0 -> same/JJ (root)
+1 -> Tradition/NN (nsubj)
+2 -> and/CC (cc)
+2 -> morality/NN (conj:and)
+1 -> morality/NN (nsubj)
+1 -> are/VBP (cop)
+1 -> n't/RB (neg)
+1 -> the/DT (det)
+1 -> ./. (punct)
+
+Perception believed is always reality achieved.
+
+0 -> reality/NN (root)
+1 -> Perception/NN (nsubj)
+2 -> believed/VBN (acl)
+1 -> is/VBZ (cop)
+1 -> always/RB (advmod)
+1 -> achieved/VBD (acl)
+1 -> ./. (punct)
+
+Live your dream; Share your passion.
+
+0 -> Live/VB (root)
+1 -> dream/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ;/: (punct)
+1 -> Share/NN (dep)
+2 -> passion/NN (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Peace is a precious priceless gift.
+
+0 -> gift/NN (root)
+1 -> Peace/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> precious/JJ (amod)
+1 -> priceless/JJ (amod)
+1 -> ./. (punct)
+
+Our friends become our chosen family.
+
+0 -> become/VBP (root)
+1 -> friends/NNS (nsubj)
+2 -> Our/PRP$ (nmod:poss)
+1 -> family/NN (xcomp)
+2 -> our/PRP$ (nmod:poss)
+2 -> chosen/VBN (amod)
+1 -> ./. (punct)
+
+Free cheese only comes in traps.
+
+0 -> comes/VBZ (root)
+1 -> cheese/NN (nsubj)
+2 -> Free/NNP (compound)
+1 -> only/RB (advmod)
+1 -> traps/NNS (nmod:in)
+2 -> in/IN (case)
+1 -> ./. (punct)
+
+Conquer yourself rather than the world.
+
+0 -> Conquer/VB (root)
+1 -> yourself/PRP (dobj)
+1 -> world/NN (nmod:rather_than)
+2 -> rather/RB (case)
+3 -> than/IN (mwe)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+There's two sides to every story.
+
+0 -> 's/VBZ (root)
+1 -> There/EX (expl)
+1 -> sides/NNS (nsubj)
+2 -> two/CD (nummod)
+1 -> story/NN (nmod:to)
+2 -> to/TO (case)
+2 -> every/DT (det)
+1 -> ./. (punct)
+
+Poetry heals wounds inflicted by reason.
+
+0 -> wounds/NNS (root)
+1 -> Poetry/NNP (compound)
+1 -> heals/NNS (compound)
+1 -> inflicted/VBN (acl)
+2 -> reason/NN (nmod:by)
+3 -> by/IN (case)
+1 -> ./. (punct)
+
+Silent eyes find stories in faces.
+
+0 -> find/VBP (root)
+1 -> eyes/NNS (nsubj)
+2 -> Silent/JJ (amod)
+1 -> stories/NNS (dobj)
+2 -> faces/NNS (nmod:in)
+3 -> in/IN (case)
+1 -> ./. (punct)
+
+Only disability is a bad attitude.
+
+0 -> attitude/NN (root)
+1 -> disability/NN (nsubj)
+2 -> Only/RB (advmod)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> bad/JJ (amod)
+1 -> ./. (punct)
+
+Turn a setback into a comeback.
+
+0 -> Turn/VB (root)
+1 -> setback/NN (dobj)
+2 -> a/DT (det)
+1 -> comeback/NN (nmod:into)
+2 -> into/IN (case)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+Stop focussing on the dark spots.
+
+0 -> Stop/VB (root)
+1 -> focussing/VBG (xcomp)
+2 -> spots/NNS (nmod:on)
+3 -> on/IN (case)
+3 -> the/DT (det)
+3 -> dark/JJ (amod)
+1 -> ./. (punct)
+
+Let your inner child out today.
+
+0 -> Let/VB (root)
+1 -> child/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+2 -> inner/JJ (amod)
+1 -> today/NN (nmod:out)
+2 -> out/IN (case)
+1 -> ./. (punct)
+
+Every drop in the ocean counts.
+
+0 -> drop/NN (root)
+1 -> Every/DT (det)
+1 -> counts/NNS (nmod:in)
+2 -> in/IN (case)
+2 -> the/DT (det)
+2 -> ocean/NN (compound)
+1 -> ./. (punct)
+
+There's an exception to every rule.
+
+0 -> 's/VBZ (root)
+1 -> There/EX (expl)
+1 -> exception/NN (nsubj)
+2 -> an/DT (det)
+2 -> rule/NN (nmod:to)
+3 -> to/TO (case)
+3 -> every/DT (det)
+1 -> ./. (punct)
+
+Mother still dressed him every day.
+
+0 -> dressed/VBD (root)
+1 -> Mother/NN (nsubj)
+1 -> still/RB (advmod)
+1 -> him/PRP (dobj)
+1 -> day/NN (nmod:tmod)
+2 -> every/DT (det)
+1 -> ./. (punct)
+
+Give hope; Give blood; Give life.
+
+0 -> Give/VB (root)
+1 -> hope/NN (dobj)
+1 -> ;/: (punct)
+1 -> Give/VB (conj)
+2 -> blood/NN (dobj)
+1 -> ;/: (punct)
+1 -> Give/VB (parataxis)
+2 -> life/NN (dobj)
+1 -> ./. (punct)
+
+Eat half; Walk double; Laugh triple.
+
+0 -> Eat/VB (root)
+1 -> half/NN (dobj)
+1 -> ;/: (punct)
+1 -> Walk/VB (dep)
+2 -> double/RB (advmod)
+1 -> ;/: (punct)
+1 -> Laugh/NNP (dep)
+2 -> triple/RB (advmod)
+1 -> ./. (punct)
+
+True friends make your world beautiful.
+
+0 -> make/VBP (root)
+1 -> friends/NNS (nsubj)
+2 -> True/JJ (amod)
+1 -> beautiful/JJ (xcomp)
+2 -> world/NN (nsubj)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Failed exam; Attempted suicide; Failed again.
+
+0 -> exam/NN (root)
+1 -> Failed/VBN (amod)
+1 -> ;/: (punct)
+1 -> suicide/NN (dep)
+2 -> Attempted/VBN (amod)
+1 -> ;/: (punct)
+1 -> Failed/VBD (dep)
+2 -> again/RB (advmod)
+1 -> ./. (punct)
+
+Healthy soil leads to healthy civilization.
+
+0 -> leads/VBZ (root)
+1 -> soil/NN (nsubj)
+2 -> Healthy/JJ (amod)
+1 -> civilization/NN (nmod:to)
+2 -> to/TO (case)
+2 -> healthy/JJ (amod)
+1 -> ./. (punct)
+
+The news as it should be.
+
+0 -> news/NN (root)
+1 -> The/DT (det)
+1 -> be/VB (dep)
+2 -> as/IN (mark)
+2 -> it/PRP (nsubj)
+2 -> should/MD (aux)
+1 -> ./. (punct)
+
+Showing-off is fool's idea of glory.
+
+0 -> idea/NN (root)
+1 -> Showing-off/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> fool/NN (nmod:poss)
+2 -> 's/POS (case)
+1 -> glory/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Silence has never sounded so good.
+
+0 -> sounded/VBN (root)
+1 -> Silence/NN (nsubj)
+1 -> has/VBZ (aux)
+1 -> never/RB (neg)
+1 -> good/JJ (xcomp)
+2 -> so/RB (advmod)
+1 -> ./. (punct)
+
+Greatness exists in all of us.
+
+0 -> exists/VBZ (root)
+1 -> Greatness/NN (nsubj)
+1 -> us/PRP (nmod)
+2 -> all/DT (det:qmod)
+3 -> in/IN (case)
+3 -> of/IN (mwe)
+1 -> ./. (punct)
+
+Creativity is more important than literacy.
+
+0 -> important/JJ (root)
+1 -> Creativity/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> more/RBR (advmod)
+1 -> literacy/NN (nmod:than)
+2 -> than/IN (case)
+1 -> ./. (punct)
+
+May the forest be with you.
+
+0 -> May/NNP (root)
+1 -> you/PRP (acl:relcl)
+2 -> forest/NN (nsubj)
+3 -> the/DT (det)
+2 -> be/VB (cop)
+2 -> with/IN (case)
+1 -> ./. (punct)
+
+Accept, let go and strongly believe.
+
+0 -> let/VB (root)
+1 -> Accept/VB (discourse)
+1 -> ,/, (punct)
+1 -> go/VB (ccomp)
+2 -> and/CC (cc)
+2 -> believe/VB (conj:and)
+3 -> strongly/RB (advmod)
+1 -> believe/VB (ccomp)
+1 -> ./. (punct)
+
+Gossip's mouth is the devil's postbag.
+
+0 -> postbag/NN (root)
+1 -> mouth/NN (nsubj)
+2 -> Gossip/NN (nmod:poss)
+3 -> 's/POS (case)
+1 -> is/VBZ (cop)
+1 -> devil/NNP (nmod:poss)
+2 -> the/DT (det)
+2 -> 's/POS (case)
+1 -> ./. (punct)
+
+Have infinite patience, success is yours.
+
+0 -> Have/VBP (root)
+1 -> yours/PRP$ (ccomp)
+2 -> patience/NN (nsubj)
+3 -> infinite/JJ (amod)
+3 -> ,/, (punct)
+3 -> success/NN (appos)
+2 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+Stop existing and start living today.
+
+0 -> Stop/VB (root)
+1 -> existing/VBG (dobj)
+1 -> and/CC (cc)
+1 -> start/VB (conj:and)
+2 -> living/VBG (xcomp)
+3 -> today/NN (nmod:tmod)
+1 -> ./. (punct)
+
+Modern technology owes ecology an apology.
+
+0 -> owes/VBZ (root)
+1 -> technology/NN (nsubj)
+2 -> Modern/NNP (compound)
+1 -> ecology/VB (ccomp)
+2 -> apology/NN (dobj)
+3 -> an/DT (det)
+1 -> ./. (punct)
+
+One person can change the world.
+
+0 -> change/VB (root)
+1 -> person/NN (nsubj)
+2 -> One/CD (nummod)
+1 -> can/MD (aux)
+1 -> world/NN (dobj)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Do not forget your real friends.
+
+0 -> forget/VB (root)
+1 -> Do/VB (aux)
+1 -> not/RB (neg)
+1 -> friends/NNS (dobj)
+2 -> your/PRP$ (nmod:poss)
+2 -> real/JJ (amod)
+1 -> ./. (punct)
+
+Unexpected friendship are the best ones.
+
+0 -> ones/NNS (root)
+1 -> friendship/NN (nsubj)
+2 -> Unexpected/JJ (amod)
+1 -> are/VBP (cop)
+1 -> the/DT (det)
+1 -> best/JJS (amod)
+1 -> ./. (punct)
+
+Being happy is a conscious choice.
+
+0 -> choice/NN (root)
+1 -> Being/VBG (csubj)
+2 -> happy/JJ (xcomp)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> conscious/JJ (amod)
+1 -> ./. (punct)
+
+Change you thoughts; Transform your life.
+
+0 -> Change/NNP (root)
+1 -> thoughts/NNS (acl:relcl)
+2 -> you/PRP (nsubj)
+1 -> ;/: (punct)
+1 -> Transform/VB (dep)
+2 -> life/NN (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Time is your most valuable asset.
+
+0 -> asset/NN (root)
+1 -> Time/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> your/PRP$ (nmod:poss)
+1 -> valuable/JJ (amod)
+2 -> most/RBS (advmod)
+1 -> ./. (punct)
+
+Breathe in peace; Breathe out love.
+
+0 -> Breathe/VB (root)
+1 -> peace/NN (nmod:in)
+2 -> in/IN (case)
+1 -> ;/: (punct)
+1 -> Breathe/NNP (dep)
+2 -> love/NN (nmod:out)
+3 -> out/IN (case)
+1 -> ./. (punct)
+
+Risk being seen in your glory.
+
+0 -> seen/VBN (root)
+1 -> Risk/NN (nsubjpass)
+1 -> being/VBG (auxpass)
+1 -> glory/NN (nmod:in)
+2 -> in/IN (case)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+I dreamt of you last night.
+
+0 -> dreamt/VBD (root)
+1 -> I/PRP (nsubj)
+1 -> you/PRP (nmod:of)
+2 -> of/IN (case)
+1 -> night/NN (nmod:tmod)
+2 -> last/JJ (amod)
+1 -> ./. (punct)
+
+Forget your phone; Live your life.
+
+0 -> Forget/VB (root)
+1 -> phone/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ;/: (punct)
+1 -> Live/VB (parataxis)
+2 -> life/NN (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Reading can seriously damage your ignorance.
+
+0 -> damage/VB (root)
+1 -> Reading/VBG (nsubj)
+1 -> can/MD (aux)
+1 -> seriously/RB (advmod)
+1 -> ignorance/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Success is never owned, it's rented.
+
+0 -> owned/VBN (root)
+1 -> Success/NN (nsubjpass)
+1 -> is/VBZ (auxpass)
+1 -> never/RB (neg)
+1 -> ,/, (punct)
+1 -> rented/VBN (parataxis)
+2 -> it/PRP (nsubjpass)
+2 -> 's/VBZ (auxpass)
+1 -> ./. (punct)
+
+Words are the money of fools.
+
+0 -> money/NN (root)
+1 -> Words/NNS (nsubj)
+1 -> are/VBP (cop)
+1 -> the/DT (det)
+1 -> fools/NNS (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Hope shines brightest in darkest moments.
+
+0 -> shines/VBZ (root)
+1 -> Hope/NNP (nsubj)
+1 -> brightest/JJS (advmod)
+1 -> moments/NNS (nmod:in)
+2 -> in/IN (case)
+2 -> darkest/JJS (amod)
+1 -> ./. (punct)
+
+Go where your dreams take you.
+
+0 -> Go/VB (root)
+1 -> take/VBP (advcl)
+2 -> where/WRB (advmod)
+2 -> dreams/NNS (nsubj)
+3 -> your/PRP$ (nmod:poss)
+2 -> you/PRP (dobj)
+1 -> ./. (punct)
+
+You are the choices you make.
+
+0 -> choices/NNS (root)
+1 -> You/PRP (nsubj)
+1 -> are/VBP (cop)
+1 -> the/DT (det)
+1 -> make/VBP (acl:relcl)
+2 -> you/PRP (nsubj)
+1 -> ./. (punct)
+
+Smartphones bring out our stupid side.
+
+0 -> bring/VBP (root)
+1 -> Smartphones/NNS (nsubj)
+1 -> out/RP (compound:prt)
+1 -> side/NN (dobj)
+2 -> our/PRP$ (nmod:poss)
+2 -> stupid/JJ (amod)
+1 -> ./. (punct)
+
+Patience is the companion of wisdom.
+
+0 -> companion/NN (root)
+1 -> Patience/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> wisdom/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Happiness pursued eludes; Happiness given returns.
+
+0 -> pursued/VBD (root)
+1 -> Happiness/NN (nsubj)
+1 -> eludes/NNS (dobj)
+1 -> ;/: (punct)
+1 -> returns/NNS (dep)
+2 -> Happiness/NN (compound)
+2 -> given/VBN (amod)
+1 -> ./. (punct)
+
+Even small steps move you forward.
+
+0 -> move/VBP (root)
+1 -> steps/NNS (nsubj)
+2 -> Even/RB (advmod)
+2 -> small/JJ (amod)
+1 -> you/PRP (dobj)
+1 -> forward/RB (advmod)
+1 -> ./. (punct)
+
+Long-term consistency always trumps short-term intensity.
+
+0 -> trumps/VBZ (root)
+1 -> consistency/NN (nsubj)
+2 -> Long-term/JJ (amod)
+1 -> always/RB (advmod)
+1 -> intensity/NN (dobj)
+2 -> short-term/JJ (amod)
+1 -> ./. (punct)
+
+Today's preparation always determines tomorrow's achievement.
+
+0 -> determines/VBZ (root)
+1 -> preparation/NN (nsubj)
+2 -> Today/NN (nmod:poss)
+3 -> 's/POS (case)
+1 -> always/RB (advmod)
+1 -> achievement/NN (dobj)
+2 -> tomorrow/NN (nmod:poss)
+3 -> 's/POS (case)
+1 -> ./. (punct)
+
+Self confidence is the best makeup.
+
+0 -> makeup/NN (root)
+1 -> confidence/NN (nsubj)
+2 -> Self/NN (compound)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> best/JJS (amod)
+1 -> ./. (punct)
+
+You too can make a difference.
+
+0 -> make/VB (root)
+1 -> You/PRP (nsubj)
+1 -> too/RB (advmod)
+1 -> can/MD (aux)
+1 -> difference/NN (dobj)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+Love is a four legged word.
+
+0 -> word/NN (root)
+1 -> Love/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> four/CD (nummod)
+1 -> legged/VBD (amod)
+1 -> ./. (punct)
+
+Just do it; Whispered the heart.
+
+0 -> do/VB (root)
+1 -> Just/RB (advmod)
+1 -> it/PRP (dobj)
+1 -> ;/: (punct)
+1 -> Whispered/VBD (dep)
+2 -> heart/NN (dobj)
+3 -> the/DT (det)
+1 -> ./. (punct)
+
+The greatest moral value is humanity.
+
+0 -> humanity/NN (root)
+1 -> value/NN (nsubj)
+2 -> The/DT (det)
+2 -> greatest/JJS (amod)
+2 -> moral/JJ (amod)
+1 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+Don't let someone's opinion define you.
+
+0 -> let/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> define/VB (ccomp)
+2 -> opinion/NN (nsubj)
+3 -> someone/NN (nmod:poss)
+4 -> 's/POS (case)
+2 -> you/PRP (dobj)
+1 -> ./. (punct)
+
+Love and compassion are absolute necessities.
+
+0 -> necessities/NNS (root)
+1 -> Love/NN (nsubj)
+2 -> and/CC (cc)
+2 -> compassion/NN (conj:and)
+1 -> compassion/NN (nsubj)
+1 -> are/VBP (cop)
+1 -> absolute/JJ (amod)
+1 -> ./. (punct)
+
+Life is better with a dog.
+
+0 -> better/RBR (root)
+1 -> Life/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> dog/NN (nmod:with)
+2 -> with/IN (case)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+Forgetfulness is a form of freedom.
+
+0 -> freedom/NN (root)
+1 -> a/DT (det:qmod)
+2 -> form/NN (mwe)
+3 -> Forgetfulness/NN (nsubj)
+3 -> is/VBZ (cop)
+3 -> ./. (punct)
+2 -> of/IN (mwe)
+
+True wealth is a free soul.
+
+0 -> soul/NN (root)
+1 -> wealth/NN (nsubj)
+2 -> True/JJ (amod)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> free/JJ (amod)
+1 -> ./. (punct)
+
+Tear-soaked goodbye letter; Stamped but unsent.
+
+0 -> letter/NN (root)
+1 -> Tear-soaked/JJ (amod)
+1 -> goodbye/NN (compound)
+1 -> ;/: (punct)
+1 -> Stamped/NNP (dep)
+2 -> but/CC (cc)
+2 -> unsent/JJ (conj:but)
+1 -> unsent/JJ (dep)
+1 -> ./. (punct)
+
+Knowledge only speaks but wisdom listens.
+
+0 -> speaks/VBZ (root)
+1 -> Knowledge/NN (nsubj)
+1 -> only/RB (advmod)
+1 -> but/CC (cc)
+1 -> listens/VBZ (conj:but)
+2 -> wisdom/NN (nsubj)
+1 -> ./. (punct)
+
+Small home; Big dreams; Happy wife.
+
+0 -> home/NN (root)
+1 -> Small/JJ (amod)
+1 -> ;/: (punct)
+1 -> dreams/VBZ (dep)
+2 -> Big/NNP (compound)
+1 -> ;/: (punct)
+1 -> wife/NN (dep)
+2 -> Happy/JJ (amod)
+1 -> ./. (punct)
+
+Sorry soldier, shoes sold in pairs.
+
+0 -> soldier/NN (root)
+1 -> Sorry/JJ (amod)
+1 -> ,/, (punct)
+1 -> shoes/NNS (appos)
+2 -> sold/VBN (acl)
+3 -> pairs/NNS (nmod:in)
+4 -> in/IN (case)
+1 -> ./. (punct)
+
+Art is reality of a reflection.
+
+0 -> reality/NN (root)
+1 -> Art/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> reflection/NN (nmod:of)
+2 -> of/IN (case)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+Nature is my manifestation of God.
+
+0 -> manifestation/NN (root)
+1 -> Nature/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> my/PRP$ (nmod:poss)
+1 -> God/NNP (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Dream it; Believe it; Achieve it.
+
+0 -> Dream/VB (root)
+1 -> it/PRP (dobj)
+1 -> ;/: (punct)
+1 -> Believe/VB (dep)
+2 -> it/PRP (dobj)
+1 -> ;/: (punct)
+1 -> Achieve/VB (dep)
+2 -> it/PRP (dobj)
+1 -> ./. (punct)
+
+Courage is found in unlikely places.
+
+0 -> found/VBN (root)
+1 -> Courage/NN (nsubjpass)
+1 -> is/VBZ (auxpass)
+1 -> places/NNS (nmod:in)
+2 -> in/IN (case)
+2 -> unlikely/JJ (amod)
+1 -> ./. (punct)
+
+The difference isn't resources, it's attitude.
+
+0 -> resources/NNS (root)
+1 -> difference/NN (nsubj)
+2 -> The/DT (det)
+1 -> is/VBZ (cop)
+1 -> n't/RB (neg)
+1 -> ,/, (punct)
+1 -> attitude/NN (acl:relcl)
+2 -> it/PRP (nsubj)
+2 -> 's/VBZ (cop)
+1 -> ./. (punct)
+
+You can't lead from the crowd.
+
+0 -> lead/VB (root)
+1 -> You/PRP (nsubj)
+1 -> ca/MD (aux)
+1 -> n't/RB (neg)
+1 -> crowd/NN (nmod:from)
+2 -> from/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Self-love is actually realizing your potential.
+
+0 -> realizing/VBG (root)
+1 -> Self-love/NN (nsubj)
+1 -> is/VBZ (aux)
+1 -> actually/RB (advmod)
+1 -> potential/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Mothers are right about most things.
+
+0 -> right/JJ (root)
+1 -> Mothers/NNS (nsubj)
+1 -> are/VBP (cop)
+1 -> things/NNS (nmod:about)
+2 -> about/IN (case)
+2 -> most/JJS (amod)
+1 -> ./. (punct)
+
+A father's love warms the heart.
+
+0 -> warms/VBZ (root)
+1 -> love/NN (nsubj)
+2 -> father/NN (nmod:poss)
+3 -> A/DT (det)
+3 -> 's/POS (case)
+1 -> heart/NN (dobj)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Kind people are my kinda people.
+
+0 -> people/NNS (root)
+1 -> people/NNS (nsubj)
+2 -> Kind/NNP (compound)
+1 -> are/VBP (cop)
+1 -> my/PRP$ (nmod:poss)
+1 -> kinda/NN (compound)
+1 -> ./. (punct)
+
+A smile confuses an approaching frown.
+
+0 -> confuses/VBZ (root)
+1 -> smile/NN (nsubj)
+2 -> A/DT (det)
+1 -> frown/NN (dobj)
+2 -> an/DT (det)
+2 -> approaching/VBG (amod)
+1 -> ./. (punct)
+
+Stopping pollution is the best solution.
+
+0 -> solution/NN (root)
+1 -> Stopping/VBG (csubj)
+2 -> pollution/NN (dobj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> best/JJS (amod)
+1 -> ./. (punct)
+
+The journey itself is my home.
+
+0 -> home/NN (root)
+1 -> journey/NN (nsubj)
+2 -> The/DT (det)
+2 -> itself/PRP (nmod:npmod)
+1 -> is/VBZ (cop)
+1 -> my/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+One Flag; One Land; One Spirit.
+
+0 -> Flag/NN (root)
+1 -> One/CD (nummod)
+1 -> ;/: (punct)
+1 -> Land/NN (dep)
+2 -> One/CD (nummod)
+1 -> ;/: (punct)
+1 -> Spirit/NN (dep)
+2 -> One/CD (nummod)
+1 -> ./. (punct)
+
+Successful people just inculcate successful habits.
+
+0 -> inculcate/VB (root)
+1 -> people/NNS (nsubj)
+2 -> Successful/JJ (amod)
+1 -> just/RB (advmod)
+1 -> habits/NNS (dobj)
+2 -> successful/JJ (amod)
+1 -> ./. (punct)
+
+Find your tribe; Love them hard.
+
+0 -> Find/VB (root)
+1 -> tribe/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ;/: (punct)
+1 -> Love/NNP (dep)
+2 -> them/PRP (dobj)
+2 -> hard/RB (advmod)
+1 -> ./. (punct)
+
+I leave; Dog panics; Furniture shopping.
+
+0 -> leave/VBP (root)
+1 -> I/PRP (nsubj)
+1 -> ;/: (punct)
+1 -> panics/VBZ (parataxis)
+2 -> Dog/NN (nsubj)
+1 -> ;/: (punct)
+1 -> shopping/NN (parataxis)
+2 -> Furniture/NNP (compound)
+1 -> ./. (punct)
+
+Let love guide you, not fear.
+
+0 -> Let/VB (root)
+1 -> guide/NN (dobj)
+2 -> love/NN (compound)
+1 -> fear/VB (ccomp)
+2 -> you/PRP (nsubj)
+2 -> ,/, (punct)
+2 -> not/RB (neg)
+1 -> ./. (punct)
+
+Art is dirtying the paper delicately.
+
+0 -> dirtying/VBG (root)
+1 -> Art/NNP (nsubj)
+1 -> is/VBZ (aux)
+1 -> paper/NN (dobj)
+2 -> the/DT (det)
+1 -> delicately/RB (advmod)
+1 -> ./. (punct)
+
+Imagination is reality of the dreamer.
+
+0 -> reality/NN (root)
+1 -> Imagination/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> dreamer/NN (nmod:of)
+2 -> of/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Patience is the companion of wisdom.
+
+0 -> companion/NN (root)
+1 -> Patience/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> wisdom/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+I'm a woman phenomenally; That's me.
+
+0 -> woman/NN (root)
+1 -> I/PRP (nsubj)
+1 -> 'm/VBP (cop)
+1 -> a/DT (det)
+1 -> phenomenally/RB (advmod)
+1 -> ;/: (punct)
+1 -> me/PRP (parataxis)
+2 -> That/DT (nsubj)
+2 -> 's/VBZ (cop)
+1 -> ./. (punct)
+
+Stopping pollution is the best solution.
+
+0 -> solution/NN (root)
+1 -> Stopping/VBG (csubj)
+2 -> pollution/NN (dobj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> best/JJS (amod)
+1 -> ./. (punct)
+
+Nothing is worse than active ignorance.
+
+0 -> worse/JJR (root)
+1 -> Nothing/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> ignorance/NN (nmod:than)
+2 -> than/IN (case)
+2 -> active/JJ (amod)
+1 -> ./. (punct)
+
+Never give up on your dreams.
+
+0 -> give/VB (root)
+1 -> Never/RB (neg)
+1 -> up/RP (compound:prt)
+1 -> dreams/NNS (nmod:on)
+2 -> on/IN (case)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Falling down is not always losing.
+
+0 -> losing/VBG (root)
+1 -> Falling/VBG (csubj)
+2 -> down/RP (advmod)
+1 -> is/VBZ (aux)
+1 -> not/RB (neg)
+1 -> always/RB (advmod)
+1 -> ./. (punct)
+
+World belongs to those who read.
+
+0 -> belongs/VBZ (root)
+1 -> World/NNP (nsubj)
+1 -> those/DT (nmod:to)
+2 -> to/TO (case)
+2 -> who/WP (ref)
+2 -> read/VBP (acl:relcl)
+3 -> those/DT (nsubj)
+1 -> ./. (punct)
+
+Ego is your souls worst enemy.
+
+0 -> enemy/NN (root)
+1 -> Ego/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> souls/NNS (nsubj)
+2 -> your/PRP$ (nmod:poss)
+1 -> worst/JJS (amod)
+1 -> ./. (punct)
+
+Personal progress can change the world.
+
+0 -> change/VB (root)
+1 -> progress/NN (nsubj)
+2 -> Personal/JJ (amod)
+1 -> can/MD (aux)
+1 -> world/NN (dobj)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Be stronger than your strongest excuse.
+
+0 -> stronger/JJR (root)
+1 -> Be/VB (cop)
+1 -> excuse/NN (nmod:than)
+2 -> than/IN (case)
+2 -> your/PRP$ (nmod:poss)
+2 -> strongest/JJS (amod)
+1 -> ./. (punct)
+
+Ignore the noise; Follow your choice.
+
+0 -> Ignore/VB (root)
+1 -> noise/NN (dobj)
+2 -> the/DT (det)
+1 -> ;/: (punct)
+1 -> Follow/VB (parataxis)
+2 -> choice/NN (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Gender equality must become lived reality.
+
+0 -> become/VB (root)
+1 -> equality/NN (nsubj)
+2 -> Gender/NN (compound)
+1 -> must/MD (aux)
+1 -> lived/VBD (xcomp)
+2 -> reality/NN (dobj)
+1 -> ./. (punct)
+
+The most precious gift is time.
+
+0 -> time/NN (root)
+1 -> gift/NN (nsubj)
+2 -> The/DT (det)
+2 -> precious/JJ (amod)
+3 -> most/RBS (advmod)
+1 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+Never stop believing; Miracles happen everyday.
+
+0 -> stop/VB (root)
+1 -> Never/RB (neg)
+1 -> believing/VBG (xcomp)
+1 -> ;/: (punct)
+1 -> happen/VB (parataxis)
+2 -> Miracles/NNS (nsubj)
+2 -> everyday/JJ (xcomp)
+1 -> ./. (punct)
+
+Find someone to accept you completely.
+
+0 -> Find/VB (root)
+1 -> someone/NN (dobj)
+2 -> accept/VB (acl:to)
+3 -> to/TO (mark)
+3 -> you/PRP (dobj)
+3 -> completely/RB (advmod)
+1 -> ./. (punct)
+
+Women are the architects of society.
+
+0 -> architects/NNS (root)
+1 -> Women/NNS (nsubj)
+1 -> are/VBP (cop)
+1 -> the/DT (det)
+1 -> society/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+One Land; One Flag; One Republic.
+
+0 -> Land/NN (root)
+1 -> One/CD (nummod)
+1 -> ;/: (punct)
+1 -> Flag/NN (dep)
+2 -> One/CD (nummod)
+2 -> ;/: (punct)
+2 -> Republic/NN (dep)
+3 -> One/CD (nummod)
+1 -> ./. (punct)
+
+Poetry heals wounds inflicted by reason.
+
+0 -> wounds/NNS (root)
+1 -> Poetry/NNP (compound)
+1 -> heals/NNS (compound)
+1 -> inflicted/VBN (acl)
+2 -> reason/NN (nmod:by)
+3 -> by/IN (case)
+1 -> ./. (punct)
+
+Your thoughts will shape your character.
+
+0 -> shape/VB (root)
+1 -> thoughts/NNS (nsubj)
+2 -> Your/PRP$ (nmod:poss)
+1 -> will/MD (aux)
+1 -> character/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Self confidence is the best cosmetic.
+
+0 -> cosmetic/NN (root)
+1 -> confidence/NN (nsubj)
+2 -> Self/NN (compound)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> best/JJS (amod)
+1 -> ./. (punct)
+
+You're amazing, the way you are.
+
+0 -> amazing/JJ (root)
+1 -> You/PRP (nsubj)
+1 -> 're/VBP (cop)
+1 -> ,/, (punct)
+1 -> way/NN (appos)
+2 -> the/DT (det)
+2 -> are/VBP (acl:relcl)
+3 -> you/PRP (nsubj)
+1 -> ./. (punct)
+
+Worrying will never change the outcome.
+
+0 -> change/VB (root)
+1 -> Worrying/VBG (nsubj)
+1 -> will/MD (aux)
+1 -> never/RB (neg)
+1 -> outcome/NN (dobj)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+One conscious breath is a meditation.
+
+0 -> meditation/NN (root)
+1 -> breath/NN (nsubj)
+2 -> One/CD (nummod)
+2 -> conscious/JJ (amod)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> ./. (punct)
+
+Time moves slowly; But passes quickly.
+
+0 -> moves/VBZ (root)
+1 -> Time/NNP (nsubj)
+1 -> slowly/RB (advmod)
+1 -> ;/: (punct)
+1 -> But/CC (cc)
+1 -> passes/VBZ (conj:but)
+2 -> Time/NNP (nsubj)
+2 -> quickly/RB (advmod)
+1 -> ./. (punct)
+
+Cut-off fake people for real reasons.
+
+0 -> people/NNS (root)
+1 -> Cut-off/JJ (amod)
+1 -> fake/JJ (amod)
+1 -> reasons/NNS (nmod:for)
+2 -> for/IN (case)
+2 -> real/JJ (amod)
+1 -> ./. (punct)
+
+Don't ever forget to love yourself.
+
+0 -> forget/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> ever/RB (advmod)
+1 -> love/VB (xcomp)
+2 -> to/TO (mark)
+2 -> yourself/PRP (dobj)
+1 -> ./. (punct)
+
+Intelligent desire self-control; children want candy.
+
+0 -> self-control/NN (root)
+1 -> Intelligent/JJ (amod)
+1 -> desire/NN (compound)
+1 -> ;/: (punct)
+1 -> want/VBP (parataxis)
+2 -> children/NNS (nsubj)
+2 -> candy/NN (dobj)
+1 -> ./. (punct)
+
+Have a cup of positivitea today.
+
+0 -> Have/VBP (root)
+1 -> cup/NN (dobj)
+2 -> a/DT (det)
+2 -> positivitea/NN (nmod:of)
+3 -> of/IN (case)
+1 -> today/NN (nmod:tmod)
+1 -> ./. (punct)
+
+Live without pretending; Speak without offending.
+
+0 -> Live/VB (root)
+1 -> pretending/VBG (advcl:without)
+2 -> without/IN (mark)
+1 -> ;/: (punct)
+1 -> Speak/VB (parataxis)
+2 -> offending/VBG (advcl:without)
+3 -> without/IN (mark)
+1 -> ./. (punct)
+
+Patience is the companion of wisdom.
+
+0 -> companion/NN (root)
+1 -> Patience/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> wisdom/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+We need fantasy to survive reality.
+
+0 -> need/VBP (root)
+1 -> We/PRP (nsubj)
+1 -> fantasy/NN (dobj)
+1 -> survive/VB (advcl:to)
+2 -> to/TO (mark)
+2 -> reality/NN (dobj)
+1 -> ./. (punct)
+
+I will start my diet tomorrow.
+
+0 -> start/VB (root)
+1 -> I/PRP (nsubj)
+1 -> will/MD (aux)
+1 -> diet/NN (dobj)
+2 -> my/PRP$ (nmod:poss)
+1 -> tomorrow/NN (nmod:tmod)
+1 -> ./. (punct)
+
+Fear is stupid; So are regrets.
+
+0 -> stupid/JJ (root)
+1 -> Fear/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> ;/: (punct)
+1 -> regrets/NNS (parataxis)
+2 -> So/RB (advmod)
+2 -> are/VBP (cop)
+1 -> ./. (punct)
+
+Regrets and mistakes are memories made.
+
+0 -> memories/NNS (root)
+1 -> Regrets/NNS (nsubj)
+2 -> and/CC (cc)
+2 -> mistakes/NNS (conj:and)
+1 -> mistakes/NNS (nsubj)
+1 -> are/VBP (cop)
+1 -> made/VBN (acl)
+1 -> ./. (punct)
+
+Wiser to THINK before you speak.
+
+0 -> Wiser/JJR (root)
+1 -> THINK/NNP (nmod:to)
+2 -> to/TO (case)
+1 -> speak/VBP (advcl:before)
+2 -> before/IN (mark)
+2 -> you/PRP (nsubj)
+1 -> ./. (punct)
+
+Soil is the soul of earth.
+
+0 -> soul/NN (root)
+1 -> Soil/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> earth/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Pain is inevitable; Suffering is optional.
+
+0 -> inevitable/JJ (root)
+1 -> Pain/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> ;/: (punct)
+1 -> optional/JJ (parataxis)
+2 -> Suffering/VBG (nsubj)
+2 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+Fake news is a manufactured epidemic.
+
+0 -> epidemic/JJ (root)
+1 -> news/NN (nsubj)
+2 -> Fake/JJ (amod)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> manufactured/VBN (amod)
+1 -> ./. (punct)
+
+Perfection is opinion and nothing more.
+
+0 -> opinion/NN (root)
+1 -> Perfection/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> and/CC (cc)
+1 -> nothing/NN (conj:and)
+2 -> more/JJR (amod)
+1 -> ./. (punct)
+
+Within nature lies cure for humanity.
+
+0 -> lies/VBZ (root)
+1 -> nature/NN (nmod:within)
+2 -> Within/IN (case)
+1 -> cure/NN (nsubj)
+2 -> humanity/NN (nmod:for)
+3 -> for/IN (case)
+1 -> ./. (punct)
+
+Denying human rights means challenging humanity.
+
+0 -> means/VBZ (root)
+1 -> rights/NNS (nsubj)
+2 -> Denying/VBG (amod)
+2 -> human/JJ (amod)
+1 -> humanity/NN (dobj)
+2 -> challenging/JJ (amod)
+1 -> ./. (punct)
+
+Imagination is more important than knowledge.
+
+0 -> important/JJ (root)
+1 -> Imagination/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> more/RBR (advmod)
+1 -> knowledge/NN (nmod:than)
+2 -> than/IN (case)
+1 -> ./. (punct)
+
+Silence is best reply to fools.
+
+0 -> reply/NN (root)
+1 -> Silence/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> best/JJS (amod)
+1 -> fools/NNS (nmod:to)
+2 -> to/TO (case)
+1 -> ./. (punct)
+
+Humility is secret of the wise.
+
+0 -> secret/JJ (root)
+1 -> Humility/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> wise/JJ (nmod:of)
+2 -> of/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Embrace the life that's calling you.
+
+0 -> Embrace/VB (root)
+1 -> life/NN (dobj)
+2 -> the/DT (det)
+2 -> that/WDT (ref)
+2 -> calling/VBG (acl:relcl)
+3 -> life/NN (nsubj)
+3 -> 's/VBZ (aux)
+3 -> you/PRP (dobj)
+1 -> ./. (punct)
+
+Try again; Fail again; Fail better.
+
+0 -> Try/VB (root)
+1 -> again/RB (advmod)
+1 -> ;/: (punct)
+1 -> Fail/NN (dep)
+2 -> again/RB (advmod)
+1 -> ;/: (punct)
+1 -> Fail/NN (dep)
+2 -> better/JJR (amod)
+1 -> ./. (punct)
+
+For I no longer am confined.
+
+0 -> confined/VBN (root)
+1 -> For/IN (mark)
+1 -> I/PRP (nsubjpass)
+1 -> longer/JJR (advmod)
+2 -> no/DT (neg)
+1 -> am/VBP (auxpass)
+1 -> ./. (punct)
+
+True love is born from understanding.
+
+0 -> born/VBN (root)
+1 -> love/NN (nsubjpass)
+2 -> True/JJ (amod)
+1 -> is/VBZ (auxpass)
+1 -> understanding/NN (nmod:from)
+2 -> from/IN (case)
+1 -> ./. (punct)
+
+You achieve what the mind believes.
+
+0 -> achieve/VBP (root)
+1 -> You/PRP (nsubj)
+1 -> believes/VBZ (ccomp)
+2 -> what/WP (dobj)
+2 -> mind/NN (nsubj)
+3 -> the/DT (det)
+1 -> ./. (punct)
+
+Don't stand in your own way.
+
+0 -> stand/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> way/NN (nmod:in)
+2 -> in/IN (case)
+2 -> your/PRP$ (nmod:poss)
+2 -> own/JJ (amod)
+1 -> ./. (punct)
+
+Good fiction creates its own reality.
+
+0 -> creates/VBZ (root)
+1 -> fiction/NN (nsubj)
+2 -> Good/JJ (amod)
+1 -> reality/NN (dobj)
+2 -> its/PRP$ (nmod:poss)
+2 -> own/JJ (amod)
+1 -> ./. (punct)
+
+Life is tough; So are you.
+
+0 -> tough/JJ (root)
+1 -> Life/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> ;/: (punct)
+1 -> are/VBP (parataxis)
+2 -> So/RB (advmod)
+2 -> you/PRP (nsubj)
+1 -> ./. (punct)
+
+Hate the sin, love the sinner.
+
+0 -> Hate/VB (root)
+1 -> sin/NN (dobj)
+2 -> the/DT (det)
+1 -> ,/, (punct)
+1 -> love/VBP (dep)
+2 -> sinner/NN (dobj)
+3 -> the/DT (det)
+1 -> ./. (punct)
+
+To survive, you must tell stories.
+
+0 -> tell/VB (root)
+1 -> survive/VB (advcl:to)
+2 -> To/TO (mark)
+1 -> ,/, (punct)
+1 -> you/PRP (nsubj)
+1 -> must/MD (aux)
+1 -> stories/NNS (dobj)
+1 -> ./. (punct)
+
+Be smart, but never show it.
+
+0 -> smart/JJ (root)
+1 -> Be/VB (cop)
+1 -> ,/, (punct)
+1 -> but/CC (cc)
+1 -> show/VBP (conj:but)
+2 -> never/RB (neg)
+2 -> it/PRP (dobj)
+1 -> ./. (punct)
+
+From every mountainside let freedom ring!
+
+0 -> let/VB (root)
+1 -> mountainside/NN (nmod:from)
+2 -> From/IN (case)
+2 -> every/DT (det)
+1 -> ring/NN (dobj)
+2 -> freedom/NN (compound)
+1 -> !/. (punct)
+
+Remember, maturity starts when drama ends.
+
+0 -> starts/VBZ (root)
+1 -> Remember/VB (advcl)
+1 -> ,/, (punct)
+1 -> maturity/NN (nsubj)
+1 -> ends/VBZ (advcl)
+2 -> when/WRB (advmod)
+2 -> drama/NN (nsubj)
+1 -> ./. (punct)
+
+It's the will; Not the skill.
+
+0 -> the/DT (root)
+1 -> It/PRP (nsubj)
+1 -> 's/VBZ (cop)
+1 -> skill/NN (dep)
+2 -> will/MD (aux)
+2 -> ;/: (punct)
+2 -> Not/RB (dep)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Nobody is superior; Nobody is inferior.
+
+0 -> superior/JJ (root)
+1 -> Nobody/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> ;/: (punct)
+1 -> inferior/JJ (parataxis)
+2 -> Nobody/NN (nsubj)
+2 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+Nature is definitely our greatest treasure.
+
+0 -> treasure/NN (root)
+1 -> Nature/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> definitely/RB (advmod)
+1 -> our/PRP$ (nmod:poss)
+1 -> greatest/JJS (amod)
+1 -> ./. (punct)
+
+Your choices will define your life.
+
+0 -> define/VB (root)
+1 -> choices/NNS (nsubj)
+2 -> Your/PRP$ (nmod:poss)
+1 -> will/MD (aux)
+1 -> life/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Reading is dreaming with open eyes.
+
+0 -> dreaming/VBG (root)
+1 -> Reading/VBG (nsubj)
+1 -> is/VBZ (aux)
+1 -> eyes/NNS (nmod:with)
+2 -> with/IN (case)
+2 -> open/JJ (amod)
+1 -> ./. (punct)
+
+Innocence sees no race or colour.
+
+0 -> sees/VBZ (root)
+1 -> Innocence/NN (nsubj)
+1 -> race/NN (dobj)
+2 -> no/DT (neg)
+2 -> or/CC (cc)
+2 -> colour/NN (conj:or)
+1 -> colour/NN (dobj)
+1 -> ./. (punct)
+
+Positive things happen to positive people.
+
+0 -> happen/VB (root)
+1 -> things/NNS (nsubj)
+2 -> Positive/JJ (amod)
+1 -> people/NNS (nmod:to)
+2 -> to/TO (case)
+2 -> positive/JJ (amod)
+1 -> ./. (punct)
+
+Silence is a fence around wisdom.
+
+0 -> fence/NN (root)
+1 -> Silence/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> wisdom/NN (nmod:around)
+2 -> around/IN (case)
+1 -> ./. (punct)
+
+Life is fragile; Handle with prayer.
+
+0 -> fragile/JJ (root)
+1 -> Life/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> ;/: (punct)
+1 -> Handle/VB (parataxis)
+2 -> prayer/NN (nmod:with)
+3 -> with/IN (case)
+1 -> ./. (punct)
+
+Was hot; Raised kids; Lost cool.
+
+0 -> Was/VBD (root)
+1 -> hot/JJ (xcomp)
+1 -> ;/: (punct)
+1 -> kids/NNS (dep)
+2 -> Raised/VBN (amod)
+2 -> ;/: (punct)
+2 -> cool/NN (dep)
+3 -> Lost/VBN (amod)
+1 -> ./. (punct)
+
+Never let fear decide your future.
+
+0 -> Never/RB (root)
+1 -> let/VB (dep)
+2 -> fear/VB (ccomp)
+3 -> decide/VB (ccomp)
+4 -> future/NN (dobj)
+5 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+What if we were all stories?
+
+0 -> stories/NNS (root)
+1 -> What/WP (dep)
+1 -> if/IN (mark)
+1 -> we/PRP (nsubj)
+1 -> were/VBD (cop)
+1 -> all/DT (det)
+1 -> ?/. (punct)
+
+In politics, lie unanswered becomes truth.
+
+0 -> lie/VBP (root)
+1 -> politics/NNS (nmod:in)
+2 -> In/IN (case)
+1 -> ,/, (punct)
+1 -> becomes/VBZ (ccomp)
+2 -> unanswered/JJ (nsubj)
+2 -> truth/NN (xcomp)
+1 -> ./. (punct)
+
+Every storm runs out of rain.
+
+0 -> runs/VBZ (root)
+1 -> storm/NN (nsubj)
+2 -> Every/DT (det)
+1 -> rain/NN (nmod:out_of)
+2 -> out/IN (case)
+3 -> of/IN (mwe)
+1 -> ./. (punct)
+
+Heroes get remembered; Legends never die.
+
+0 -> remembered/VBN (root)
+1 -> Heroes/NNS (nsubjpass)
+1 -> get/VBP (auxpass)
+1 -> ;/: (punct)
+1 -> die/VBP (parataxis)
+2 -> Legends/NNPS (nsubj)
+2 -> never/RB (neg)
+1 -> ./. (punct)
+
+Be you; The world will adjust.
+
+0 -> Be/VB (root)
+1 -> you/PRP (nsubj)
+2 -> ;/: (punct)
+2 -> adjust/VB (parataxis)
+3 -> world/NN (nsubj)
+4 -> The/DT (det)
+3 -> will/MD (aux)
+1 -> ./. (punct)
+
+For greed, all nature is little.
+
+0 -> little/JJ (root)
+1 -> greed/NN (nmod:for)
+2 -> For/IN (case)
+1 -> ,/, (punct)
+1 -> nature/NN (nsubj)
+2 -> all/DT (det)
+1 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+Together we make a blessed family.
+
+0 -> make/VBP (root)
+1 -> Together/RB (advmod)
+1 -> we/PRP (nsubj)
+1 -> family/NN (dobj)
+2 -> a/DT (det)
+2 -> blessed/VBN (amod)
+1 -> ./. (punct)
+
+Pick yourself up and move on.
+
+0 -> Pick/VB (root)
+1 -> yourself/PRP (dobj)
+1 -> up/RB (compound:prt)
+1 -> and/CC (cc)
+1 -> move/VB (conj:and)
+2 -> on/IN (compound:prt)
+1 -> ./. (punct)
+
+There is ability in every disability.
+
+0 -> is/VBZ (root)
+1 -> There/EX (expl)
+1 -> ability/NN (nsubj)
+2 -> disability/NN (nmod:in)
+3 -> in/IN (case)
+3 -> every/DT (det)
+1 -> ./. (punct)
+
+Not all who wander are lost.
+
+0 -> lost/VBN (root)
+1 -> all/DT (nsubjpass)
+2 -> Not/RB (neg)
+2 -> who/WP (ref)
+2 -> wander/VBP (acl:relcl)
+3 -> all/DT (nsubj)
+1 -> are/VBP (auxpass)
+1 -> ./. (punct)
+
+Without struggle there is no progress.
+
+0 -> is/VBZ (root)
+1 -> struggle/NN (nmod:without)
+2 -> Without/IN (case)
+1 -> there/EX (expl)
+1 -> progress/NN (nsubj)
+2 -> no/DT (neg)
+1 -> ./. (punct)
+
+You cannot fail at being yourself.
+
+0 -> fail/VB (root)
+1 -> You/PRP (nsubj)
+1 -> can/MD (aux)
+1 -> not/RB (neg)
+1 -> yourself/PRP (advcl:at)
+2 -> at/IN (mark)
+2 -> being/VBG (cop)
+1 -> ./. (punct)
+
+Conduct is more convincing than language.
+
+0 -> convincing/JJ (root)
+1 -> Conduct/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> more/RBR (advmod)
+1 -> language/NN (nmod:than)
+2 -> than/IN (case)
+1 -> ./. (punct)
+
+Remember, we rise by lifting others.
+
+0 -> rise/VBP (root)
+1 -> Remember/VB (advcl)
+1 -> ,/, (punct)
+1 -> we/PRP (nsubj)
+1 -> lifting/VBG (advcl:by)
+2 -> by/IN (mark)
+2 -> others/NNS (dobj)
+1 -> ./. (punct)
+
+God answers when you least expect.
+
+0 -> answers/VBZ (root)
+1 -> God/NNP (nsubj)
+1 -> expect/VBP (advcl)
+2 -> when/WRB (advmod)
+2 -> you/PRP (nsubj)
+2 -> least/JJS (advmod)
+1 -> ./. (punct)
+
+Two wrongs don't make a right.
+
+0 -> make/VB (root)
+1 -> wrongs/NNS (nsubj)
+2 -> Two/CD (nummod)
+1 -> do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> right/NN (dobj)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+Art is when work meets love.
+
+0 -> is/VBZ (root)
+1 -> Art/NNP (nsubj)
+1 -> meets/VBZ (advcl)
+2 -> when/WRB (advmod)
+2 -> work/NN (nsubj)
+2 -> love/NN (dobj)
+1 -> ./. (punct)
+
+Leader is admired; Boss is feared.
+
+0 -> admired/VBN (root)
+1 -> Leader/NNP (nsubjpass)
+1 -> is/VBZ (auxpass)
+1 -> ;/: (punct)
+1 -> feared/VBN (parataxis)
+2 -> Boss/NNP (nsubjpass)
+2 -> is/VBZ (auxpass)
+1 -> ./. (punct)
+
+GOD, save me from your followers.
+
+0 -> save/VB (root)
+1 -> GOD/NN (nsubj)
+1 -> ,/, (punct)
+1 -> me/PRP (dobj)
+1 -> followers/NNS (nmod:from)
+2 -> from/IN (case)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Stay grounded, connect with your roots.
+
+0 -> grounded/VBD (root)
+1 -> Stay/NNP (nsubj)
+1 -> ,/, (punct)
+1 -> connect/VB (xcomp)
+2 -> roots/NNS (nmod:with)
+3 -> with/IN (case)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+The struggle ends when gratitude begins.
+
+0 -> ends/VBZ (root)
+1 -> struggle/NN (nsubj)
+2 -> The/DT (det)
+1 -> begins/VBZ (advcl)
+2 -> when/WRB (advmod)
+2 -> gratitude/NN (nsubj)
+1 -> ./. (punct)
+
+He read his obituary with confusion.
+
+0 -> read/VBD (root)
+1 -> He/PRP (nsubj)
+1 -> obituary/JJ (dobj)
+2 -> his/PRP$ (nmod:poss)
+1 -> confusion/NN (nmod:with)
+2 -> with/IN (case)
+1 -> ./. (punct)
+
+Crazy looking problems are sometimes real.
+
+0 -> real/JJ (root)
+1 -> problems/NNS (nsubj)
+2 -> Crazy/NNP (compound)
+2 -> looking/VBG (amod)
+1 -> are/VBP (cop)
+1 -> sometimes/RB (advmod)
+1 -> ./. (punct)
+
+Confidence is silent; Insecurities are loud.
+
+0 -> silent/JJ (root)
+1 -> Confidence/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> ;/: (punct)
+1 -> loud/JJ (parataxis)
+2 -> Insecurities/NNS (nsubj)
+2 -> are/VBP (cop)
+1 -> ./. (punct)
+
+Do what is right for you.
+
+0 -> Do/VB (root)
+1 -> right/RB (ccomp)
+2 -> what/WP (nsubj)
+2 -> is/VBZ (cop)
+2 -> you/PRP (nmod:for)
+3 -> for/IN (case)
+1 -> ./. (punct)
+
+Everything in nature is about balance.
+
+0 -> balance/NN (root)
+1 -> Everything/NN (nsubj)
+2 -> nature/NN (nmod:in)
+3 -> in/IN (case)
+1 -> is/VBZ (cop)
+1 -> about/IN (case)
+1 -> ./. (punct)
+
+Intuition is seeing with the soul.
+
+0 -> seeing/VBG (root)
+1 -> Intuition/NN (nsubj)
+1 -> is/VBZ (aux)
+1 -> soul/NN (nmod:with)
+2 -> with/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Hard work will always pay off.
+
+0 -> pay/VB (root)
+1 -> work/NN (nsubj)
+2 -> Hard/JJ (amod)
+1 -> will/MD (aux)
+1 -> always/RB (advmod)
+1 -> off/RP (compound:prt)
+1 -> ./. (punct)
+
+Profound learning starts with curious listening.
+
+0 -> starts/VBZ (root)
+1 -> learning/NN (nsubj)
+2 -> Profound/JJ (amod)
+1 -> listening/NN (nmod:with)
+2 -> with/IN (case)
+2 -> curious/JJ (amod)
+1 -> ./. (punct)
+
+Your beauty shines through your thoughts.
+
+0 -> shines/VBZ (root)
+1 -> beauty/NN (nsubj)
+2 -> Your/PRP$ (nmod:poss)
+1 -> thoughts/NNS (nmod:through)
+2 -> through/IN (case)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Modern technology owes ecology an apology.
+
+0 -> owes/VBZ (root)
+1 -> technology/NN (nsubj)
+2 -> Modern/NNP (compound)
+1 -> ecology/VB (ccomp)
+2 -> apology/NN (dobj)
+3 -> an/DT (det)
+1 -> ./. (punct)
+
+"Happy Father's Day". He said reluctantly.
+
+0 -> Day/NN (root)
+1 -> ``/`` (punct)
+1 -> Father/NN (nmod:poss)
+2 -> Happy/JJ (amod)
+2 -> 's/POS (case)
+1 -> ''/'' (punct)
+1 -> ./. (punct)
+1 -> said/VBD (root)
+2 -> He/PRP (nsubj)
+2 -> reluctantly/RB (advmod)
+2 -> ./. (punct)
+
+You are responsible for your life.
+
+0 -> responsible/JJ (root)
+1 -> You/PRP (nsubj)
+1 -> are/VBP (cop)
+1 -> life/NN (nmod:for)
+2 -> for/IN (case)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Eyes see what the mind knows.
+
+0 -> see/VBP (root)
+1 -> Eyes/NNS (nsubj)
+1 -> knows/VBZ (ccomp)
+2 -> what/WP (dobj)
+2 -> mind/NN (nsubj)
+3 -> the/DT (det)
+1 -> ./. (punct)
+
+Live like it's your last day.
+
+0 -> Live/VB (root)
+1 -> day/NN (advcl:like)
+2 -> like/IN (mark)
+2 -> it/PRP (nsubj)
+2 -> 's/VBZ (cop)
+2 -> your/PRP$ (nmod:poss)
+2 -> last/JJ (amod)
+1 -> ./. (punct)
+
+There is no joy without gratitude.
+
+0 -> is/VBZ (root)
+1 -> There/EX (expl)
+1 -> joy/NN (nsubj)
+2 -> no/DT (neg)
+1 -> gratitude/NN (nmod:without)
+2 -> without/IN (case)
+1 -> ./. (punct)
+
+There is no education like adversity.
+
+0 -> is/VBZ (root)
+1 -> There/EX (expl)
+1 -> education/NN (nsubj)
+2 -> no/DT (neg)
+2 -> adversity/NN (nmod:like)
+3 -> like/IN (case)
+1 -> ./. (punct)
+
+Great things come out of patience.
+
+0 -> come/VBP (root)
+1 -> things/NNS (nsubj)
+2 -> Great/JJ (amod)
+1 -> patience/NN (nmod:out_of)
+2 -> out/IN (case)
+3 -> of/IN (mwe)
+1 -> ./. (punct)
+
+My mom is a great dad.
+
+0 -> dad/NN (root)
+1 -> mom/NN (nsubj)
+2 -> My/PRP$ (nmod:poss)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> great/JJ (amod)
+1 -> ./. (punct)
+
+Take a small step every day.
+
+0 -> Take/VB (root)
+1 -> step/NN (dobj)
+2 -> a/DT (det)
+2 -> small/JJ (amod)
+1 -> day/NN (nmod:tmod)
+2 -> every/DT (det)
+1 -> ./. (punct)
+
+Remember, hard times reveal true friends.
+
+0 -> reveal/VBP (root)
+1 -> Remember/VB (advcl)
+1 -> ,/, (punct)
+1 -> times/NNS (nsubj)
+2 -> hard/JJ (amod)
+1 -> friends/NNS (dobj)
+2 -> true/JJ (amod)
+1 -> ./. (punct)
+
+We must not let terrorism triumph.
+
+0 -> let/VB (root)
+1 -> We/PRP (nsubj)
+1 -> must/MD (aux)
+1 -> not/RB (neg)
+1 -> triumph/NN (dobj)
+2 -> terrorism/NN (compound)
+1 -> ./. (punct)
+
+I believe in redefining my impossible.
+
+0 -> believe/VBP (root)
+1 -> I/PRP (nsubj)
+1 -> redefining/VBG (advcl:in)
+2 -> in/IN (mark)
+2 -> impossible/JJ (dobj)
+3 -> my/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+FRIDAY; My second favourite "F" word.
+
+0 -> FRIDAY/NN (root)
+1 -> ;/: (punct)
+1 -> word/NN (dep)
+2 -> My/PRP$ (nmod:poss)
+2 -> second/JJ (amod)
+2 -> favourite/JJ (amod)
+2 -> ``/`` (punct)
+2 -> F/NN (compound)
+2 -> ''/'' (punct)
+1 -> ./. (punct)
+
+Every artist was first an amateur.
+
+0 -> amateur/JJ (root)
+1 -> artist/NN (nsubj)
+2 -> Every/DT (det)
+1 -> was/VBD (cop)
+1 -> first/RB (advmod)
+1 -> an/DT (det)
+1 -> ./. (punct)
+
+Patience attracts happiness; Happiness drives everything.
+
+0 -> attracts/VBZ (root)
+1 -> Patience/NN (nsubj)
+1 -> happiness/NN (dobj)
+1 -> ;/: (punct)
+1 -> everything/NN (parataxis)
+2 -> drives/NNS (nsubj)
+3 -> Happiness/NN (compound)
+1 -> ./. (punct)
+
+Art is an investigation of being.
+
+0 -> investigation/NN (root)
+1 -> Art/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> an/DT (det)
+1 -> being/VBG (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Wise souls speak loudly in silence.
+
+0 -> speak/VBP (root)
+1 -> souls/NNS (nsubj)
+2 -> Wise/NNP (compound)
+1 -> loudly/RB (advmod)
+1 -> silence/NN (nmod:in)
+2 -> in/IN (case)
+1 -> ./. (punct)
+
+She fell down; Broke her heart.
+
+0 -> fell/VBD (root)
+1 -> She/PRP (nsubj)
+1 -> down/RB (advmod)
+1 -> ;/: (punct)
+1 -> Broke/NNP (dep)
+2 -> heart/NN (dobj)
+3 -> her/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Sow the seeds of love today.
+
+0 -> Sow/VB (root)
+1 -> seeds/NNS (dobj)
+2 -> the/DT (det)
+2 -> love/NN (nmod:of)
+3 -> of/IN (case)
+1 -> today/NN (nmod:tmod)
+1 -> ./. (punct)
+
+No water; No life; No existence.
+
+0 -> water/NN (root)
+1 -> No/DT (neg)
+1 -> ;/: (punct)
+1 -> life/NN (dep)
+2 -> No/DT (neg)
+1 -> ;/: (punct)
+1 -> existence/NN (dep)
+2 -> No/DT (neg)
+1 -> ./. (punct)
+
+Problem with capitalism is the capitalists.
+
+0 -> capitalists/NNS (root)
+1 -> Problem/NNP (nsubj)
+2 -> capitalism/NN (nmod:with)
+3 -> with/IN (case)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> ./. (punct)
+
+The smallest feline is a masterpiece.
+
+0 -> masterpiece/NN (root)
+1 -> feline/JJ (nsubj)
+2 -> The/DT (det)
+2 -> smallest/JJS (amod)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> ./. (punct)
+
+Our friends become our chosen family.
+
+0 -> become/VBP (root)
+1 -> friends/NNS (nsubj)
+2 -> Our/PRP$ (nmod:poss)
+1 -> family/NN (xcomp)
+2 -> our/PRP$ (nmod:poss)
+2 -> chosen/VBN (amod)
+1 -> ./. (punct)
+
+Remember, there is no PLAN[et] B.
+
+0 -> is/VBZ (root)
+1 -> Remember/VB (ccomp)
+1 -> ,/, (punct)
+1 -> there/EX (expl)
+1 -> PLAN/NN (nsubj)
+2 -> no/DT (neg)
+2 -> B./NNP (dep)
+3 -> -LSB-/-LRB- (punct)
+3 -> et/FW (compound)
+3 -> -RSB-/-RRB- (punct)
+
+Art's a never-ending dance of illusions.
+
+0 -> dance/NN (root)
+1 -> Art/NNP (nmod:poss)
+2 -> 's/POS (case)
+1 -> a/DT (det)
+1 -> never-ending/JJ (amod)
+1 -> illusions/NNS (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+It's my sins that nailed HIM.
+
+0 -> sins/NNS (root)
+1 -> It/PRP (nsubj)
+1 -> 's/VBZ (cop)
+1 -> my/PRP$ (nmod:poss)
+1 -> that/WDT (ref)
+1 -> nailed/VBD (acl:relcl)
+2 -> sins/NNS (nsubj)
+2 -> HIM/NNP (dobj)
+1 -> ./. (punct)
+
+Won the world; Lost the girl.
+
+0 -> Lost/VBD (root)
+1 -> Won/NNP (nsubj)
+2 -> world/NN (dep)
+3 -> the/DT (det)
+2 -> ;/: (punct)
+1 -> girl/NN (dobj)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Gratitude opens the doors to happiness.
+
+0 -> opens/VBZ (root)
+1 -> Gratitude/NN (nsubj)
+1 -> doors/NNS (dobj)
+2 -> the/DT (det)
+1 -> happiness/NN (nmod:to)
+2 -> to/TO (case)
+1 -> ./. (punct)
+
+Excessive sorrow laughs; Excessive joy weeps.
+
+0 -> laughs/VBZ (root)
+1 -> sorrow/NN (nsubj)
+2 -> Excessive/JJ (amod)
+1 -> ;/: (punct)
+1 -> weeps/NNS (dep)
+2 -> Excessive/JJ (amod)
+2 -> joy/NN (compound)
+1 -> ./. (punct)
+
+When i assume…I'm usually right.
+
+0 -> right/JJ (root)
+1 -> assume/VB (advcl)
+2 -> When/WRB (advmod)
+2 -> i/FW (nsubj)
+1 -> .../: (punct)
+1 -> I/PRP (nsubj)
+1 -> 'm/VBP (cop)
+1 -> usually/RB (advmod)
+1 -> ./. (punct)
+
+But still, like dust, I'll rise.
+
+0 -> rise/VB (root)
+1 -> But/CC (cc)
+1 -> still/RB (advmod)
+1 -> ,/, (punct)
+1 -> dust/NN (nmod:like)
+2 -> like/IN (case)
+1 -> ,/, (punct)
+1 -> I/PRP (nsubj)
+1 -> 'll/MD (aux)
+1 -> ./. (punct)
+
+Just let yourself become living poetry
+
+0 -> let/VB (root)
+1 -> Just/RB (advmod)
+1 -> become/VB (ccomp)
+2 -> yourself/PRP (nsubj)
+2 -> living/VBG (xcomp)
+3 -> poetry/NN (dobj)
+
+Peace is a battle worth waging.
+
+0 -> battle/NN (root)
+1 -> Peace/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> worth/JJ (amod)
+2 -> waging/VBG (dep)
+1 -> ./. (punct)
+
+Better the foot-slip than the tongue.
+
+0 -> foot-slip/NN (root)
+1 -> Better/RBR (advmod)
+1 -> the/DT (det)
+1 -> tongue/NN (nmod:than)
+2 -> than/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+A thousand wrinkles; A thousand stories.
+
+0 -> wrinkles/NNS (root)
+1 -> A/DT (det)
+1 -> thousand/CD (nummod)
+1 -> ;/: (punct)
+1 -> stories/NNS (dep)
+2 -> A/DT (det)
+2 -> thousand/CD (nummod)
+1 -> ./. (punct)
+
+Wanted: Puppy; Must fit old collar.
+
+0 -> Wanted/VBN (root)
+1 -> :/: (punct)
+1 -> Puppy/NN (dep)
+1 -> ;/: (punct)
+1 -> fit/VB (dep)
+2 -> Must/MD (aux)
+2 -> collar/NN (dobj)
+3 -> old/JJ (amod)
+1 -> ./. (punct)
+
+Choices are the hinges of destiny.
+
+0 -> hinges/NNS (root)
+1 -> Choices/NNS (nsubj)
+1 -> are/VBP (cop)
+1 -> the/DT (det)
+1 -> destiny/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+True profound happiness lies beyond sadness.
+
+0 -> lies/VBZ (root)
+1 -> happiness/NN (nsubj)
+2 -> True/JJ (amod)
+2 -> profound/JJ (amod)
+1 -> sadness/NN (nmod:beyond)
+2 -> beyond/IN (case)
+1 -> ./. (punct)
+
+Drove through parkway, parked in driveway.
+
+0 -> Drove/VB (root)
+1 -> parkway/NN (nmod:through)
+2 -> through/IN (case)
+1 -> ,/, (punct)
+1 -> parked/VBN (dep)
+2 -> driveway/NN (nmod:in)
+3 -> in/IN (case)
+1 -> ./. (punct)
+
+Why walk when you can dance.
+
+0 -> walk/VBP (root)
+1 -> Why/WRB (advmod)
+1 -> dance/VB (advcl)
+2 -> when/WRB (advmod)
+2 -> you/PRP (nsubj)
+2 -> can/MD (aux)
+1 -> ./. (punct)
+
+Music is love looking for words.
+
+0 -> love/NN (root)
+1 -> Music/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> looking/VBG (acl)
+2 -> words/NNS (nmod:for)
+3 -> for/IN (case)
+1 -> ./. (punct)
+
+We chase dreams and embrace shadows.
+
+0 -> chase/VBP (root)
+1 -> We/PRP (nsubj)
+1 -> dreams/NNS (dobj)
+1 -> and/CC (cc)
+1 -> embrace/VB (conj:and)
+2 -> We/PRP (nsubj)
+2 -> shadows/NNS (dobj)
+1 -> ./. (punct)
+
+Sell your cleverness and buy bewilderment.
+
+0 -> Sell/VB (root)
+1 -> cleverness/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> and/CC (cc)
+1 -> buy/VB (conj:and)
+2 -> bewilderment/NN (dobj)
+1 -> ./. (punct)
+
+Chemistry lab partners with real chemistry.
+
+0 -> partners/NNS (root)
+1 -> Chemistry/NNP (compound)
+1 -> lab/NN (compound)
+1 -> chemistry/NN (nmod:with)
+2 -> with/IN (case)
+2 -> real/JJ (amod)
+1 -> ./. (punct)
+
+Make this Sunday a productive day.
+
+0 -> Make/VB (root)
+1 -> Sunday/NNP (nmod:tmod)
+2 -> this/DT (det)
+1 -> day/NN (nmod:tmod)
+2 -> a/DT (det)
+2 -> productive/JJ (amod)
+1 -> ./. (punct)
+
+Never ever let failure stop you.
+
+0 -> let/VB (root)
+1 -> Never/RB (neg)
+1 -> ever/RB (advmod)
+1 -> stop/VB (ccomp)
+2 -> failure/NN (nsubj)
+2 -> you/PRP (dobj)
+1 -> ./. (punct)
+
+Shine a light on climate action.
+
+0 -> Shine/VB (root)
+1 -> light/NN (dobj)
+2 -> a/DT (det)
+1 -> action/NN (nmod:on)
+2 -> on/IN (case)
+2 -> climate/NN (compound)
+1 -> ./. (punct)
+
+Go out and paint the stars.
+
+0 -> Go/VB (root)
+1 -> out/RP (compound:prt)
+1 -> and/CC (cc)
+1 -> paint/VBP (conj:and)
+1 -> stars/NNS (dobj)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+You deserve happiness; So I left.
+
+0 -> deserve/VBP (root)
+1 -> You/PRP (nsubj)
+1 -> happiness/NN (dobj)
+1 -> ;/: (punct)
+1 -> left/VBD (parataxis)
+2 -> So/CC (cc)
+2 -> I/PRP (nsubj)
+1 -> ./. (punct)
+
+Because every picture tells a story.
+
+0 -> tells/VBZ (root)
+1 -> Because/IN (mark)
+1 -> picture/NN (nsubj)
+2 -> every/DT (det)
+1 -> story/NN (dobj)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+Life's a continual game of cat-and-mouse.
+
+0 -> game/NN (root)
+1 -> Life/NNP (nmod:poss)
+2 -> 's/POS (case)
+1 -> a/DT (det)
+1 -> continual/JJ (amod)
+1 -> cat-and-mouse/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Have faith and believe in yourself.
+
+0 -> Have/VBP (root)
+1 -> faith/NN (dobj)
+1 -> and/CC (cc)
+1 -> believe/VB (conj:and)
+2 -> yourself/PRP (nmod:in)
+3 -> in/IN (case)
+1 -> ./. (punct)
+
+The root of suffering is attachment.
+
+0 -> attachment/NN (root)
+1 -> root/NN (nsubj)
+2 -> The/DT (det)
+2 -> suffering/NN (nmod:of)
+3 -> of/IN (case)
+1 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+Water is an important human right.
+
+0 -> right/NN (root)
+1 -> Water/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> an/DT (det)
+1 -> important/JJ (amod)
+1 -> human/JJ (amod)
+1 -> ./. (punct)
+
+Your faith will determine your fate.
+
+0 -> determine/VB (root)
+1 -> faith/NN (nsubj)
+2 -> Your/PRP$ (nmod:poss)
+1 -> will/MD (aux)
+1 -> fate/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Showing-off is fool's idea of glory.
+
+0 -> idea/NN (root)
+1 -> Showing-off/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> fool/NN (nmod:poss)
+2 -> 's/POS (case)
+1 -> glory/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Trust your instinct; Trust your abilities.
+
+0 -> instinct/NN (root)
+1 -> Trust/NNP (compound)
+1 -> your/PRP$ (nmod:poss)
+1 -> ;/: (punct)
+1 -> abilities/NNS (dep)
+2 -> Trust/NNP (compound)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Rise above gossip, jealousy and hate.
+
+0 -> Rise/NN (root)
+1 -> gossip/NN (nmod:above)
+2 -> above/IN (case)
+2 -> ,/, (punct)
+2 -> jealousy/NN (conj:and)
+2 -> and/CC (cc)
+2 -> hate/NN (conj:and)
+1 -> jealousy/NN (nmod:above)
+1 -> hate/NN (nmod:above)
+1 -> ./. (punct)
+
+I read; I travel; I become.
+
+0 -> read/VBP (root)
+1 -> I/PRP (nsubj)
+1 -> ;/: (punct)
+1 -> travel/VBP (parataxis)
+2 -> I/PRP (nsubj)
+1 -> ;/: (punct)
+1 -> become/VBP (parataxis)
+2 -> I/PRP (nsubj)
+1 -> ./. (punct)
+
+Believe in the magic of Christmas.
+
+0 -> Believe/VB (root)
+1 -> magic/NN (nmod:in)
+2 -> in/IN (case)
+2 -> the/DT (det)
+2 -> Christmas/NNP (nmod:of)
+3 -> of/IN (case)
+1 -> ./. (punct)
+
+Unwanted boy grows into wanted man.
+
+0 -> grows/VBZ (root)
+1 -> boy/NN (nsubj)
+2 -> Unwanted/JJ (amod)
+1 -> man/NN (nmod:into)
+2 -> into/IN (case)
+2 -> wanted/JJ (amod)
+1 -> ./. (punct)
+
+It's not failure, it's unfinished success.
+
+0 -> failure/NN (root)
+1 -> It/PRP (nsubj)
+1 -> 's/VBZ (cop)
+1 -> not/RB (neg)
+1 -> ,/, (punct)
+1 -> success/NN (parataxis)
+2 -> it/PRP (nsubj)
+2 -> 's/VBZ (cop)
+2 -> unfinished/JJ (amod)
+1 -> ./. (punct)
+
+Our oceans are turning into plastic.
+
+0 -> turning/VBG (root)
+1 -> oceans/NNS (nsubj)
+2 -> Our/PRP$ (nmod:poss)
+1 -> are/VBP (aux)
+1 -> plastic/NN (nmod:into)
+2 -> into/IN (case)
+1 -> ./. (punct)
+
+Wonder if heaven got a ghetto?
+
+0 -> Wonder/JJ (root)
+1 -> got/VBD (advcl:if)
+2 -> if/IN (mark)
+2 -> heaven/NN (nsubj)
+2 -> ghetto/NN (dobj)
+3 -> a/DT (det)
+1 -> ?/. (punct)
+
+Time traveller's thought: "What's the password?"
+
+0 -> thought/NN (root)
+1 -> traveller/NN (nmod:poss)
+2 -> Time/NNP (compound)
+2 -> 's/POS (case)
+1 -> :/: (punct)
+1 -> ``/`` (punct)
+1 -> What/WP (dep)
+2 -> 's/VBZ (cop)
+2 -> password/NN (nsubj)
+3 -> the/DT (det)
+1 -> ?/. (punct)
+1 -> ''/'' (punct)
+
+Quiet people have the loudest minds.
+
+0 -> have/VBP (root)
+1 -> people/NNS (nsubj)
+2 -> Quiet/JJ (amod)
+1 -> minds/NNS (dobj)
+2 -> the/DT (det)
+2 -> loudest/JJS (amod)
+1 -> ./. (punct)
+
+Do ordinary things with extraordinary love.
+
+0 -> Do/VB (root)
+1 -> things/NNS (dobj)
+2 -> ordinary/JJ (amod)
+2 -> love/NN (nmod:with)
+3 -> with/IN (case)
+3 -> extraordinary/JJ (amod)
+1 -> ./. (punct)
+
+I remember you with every heartbeat.
+
+0 -> remember/VBP (root)
+1 -> I/PRP (nsubj)
+1 -> you/PRP (dobj)
+1 -> heartbeat/NN (nmod:with)
+2 -> with/IN (case)
+2 -> every/DT (det)
+1 -> ./. (punct)
+
+Life's too short to blend in.
+
+0 -> short/JJ (root)
+1 -> Life/NNP (nmod:poss)
+2 -> 's/POS (case)
+1 -> too/RB (advmod)
+1 -> blend/VB (xcomp)
+2 -> to/TO (mark)
+2 -> in/IN (compound:prt)
+1 -> ./. (punct)
+
+Even in silence there is chaos.
+
+0 -> is/VBZ (root)
+1 -> silence/NN (nmod:in)
+2 -> Even/RB (advmod)
+2 -> in/IN (case)
+1 -> there/EX (expl)
+1 -> chaos/NN (nsubj)
+1 -> ./. (punct)
+
+Let your dreams set sail today.
+
+0 -> Let/VB (root)
+1 -> set/VBN (ccomp)
+2 -> dreams/NNS (nsubj)
+3 -> your/PRP$ (nmod:poss)
+2 -> sail/NN (dobj)
+2 -> today/NN (nmod:tmod)
+1 -> ./. (punct)
+
+Darkest nights produce the brightest stars.
+
+0 -> produce/VBP (root)
+1 -> nights/NNS (nsubj)
+2 -> Darkest/JJS (amod)
+1 -> stars/NNS (dobj)
+2 -> the/DT (det)
+2 -> brightest/JJS (amod)
+1 -> ./. (punct)
+
+Over thinking leads to negative thoughts.
+
+0 -> leads/VBZ (root)
+1 -> thinking/NN (nmod:over)
+2 -> Over/IN (case)
+1 -> thoughts/NNS (nmod:to)
+2 -> to/TO (case)
+2 -> negative/JJ (amod)
+1 -> ./. (punct)
+
+Your mistake is your greatest opportunity.
+
+0 -> opportunity/NN (root)
+1 -> mistake/NN (nsubj)
+2 -> Your/PRP$ (nmod:poss)
+1 -> is/VBZ (cop)
+1 -> your/PRP$ (nmod:poss)
+1 -> greatest/JJS (amod)
+1 -> ./. (punct)
+
+The truth would have been nice.
+
+0 -> nice/JJ (root)
+1 -> truth/NN (nsubj)
+2 -> The/DT (det)
+1 -> would/MD (aux)
+1 -> have/VB (aux)
+1 -> been/VBN (cop)
+1 -> ./. (punct)
+
+Your words reveal who you are.
+
+0 -> reveal/VBP (root)
+1 -> words/NNS (nsubj)
+2 -> Your/PRP$ (nmod:poss)
+1 -> are/VBP (ccomp)
+2 -> who/WP (dobj)
+2 -> you/PRP (nsubj)
+1 -> ./. (punct)
+
+In teaching others we teach ourselves.
+
+0 -> teaching/NN (root)
+1 -> In/IN (case)
+1 -> others/NNS (dobj)
+2 -> teach/VBP (acl:relcl)
+3 -> we/PRP (nsubj)
+3 -> ourselves/PRP (dobj)
+1 -> ./. (punct)
+
+Dear older me: Don't look back.
+
+0 -> Dear/NNP (root)
+1 -> me/PRP (nmod:npmod)
+2 -> older/JJR (amod)
+1 -> :/: (punct)
+1 -> look/VB (dep)
+2 -> Do/VBP (aux)
+2 -> n't/RB (neg)
+2 -> back/RB (advmod)
+1 -> ./. (punct)
+
+Never give up on your dreams.
+
+0 -> give/VB (root)
+1 -> Never/RB (neg)
+1 -> up/RP (compound:prt)
+1 -> dreams/NNS (nmod:on)
+2 -> on/IN (case)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+The best apology is changed behaviour.
+
+0 -> changed/VBN (root)
+1 -> apology/NN (nsubjpass)
+2 -> The/DT (det)
+2 -> best/JJS (amod)
+1 -> is/VBZ (auxpass)
+1 -> behaviour/NN (dobj)
+1 -> ./. (punct)
+
+I choose to be happy today.
+
+0 -> choose/VBP (root)
+1 -> I/PRP (nsubj)
+1 -> happy/JJ (xcomp)
+2 -> I/PRP (nsubj:xsubj)
+2 -> to/TO (mark)
+2 -> be/VB (cop)
+2 -> today/NN (nmod:tmod)
+1 -> ./. (punct)
+
+Everyone dies, but not everyone lives.
+
+0 -> dies/VBZ (root)
+1 -> Everyone/NN (nsubj)
+1 -> ,/, (punct)
+1 -> but/CC (cc)
+1 -> lives/VBZ (conj:but)
+2 -> everyone/NN (nsubj)
+3 -> not/RB (neg)
+1 -> ./. (punct)
+
+Innocence knows no race or color.
+
+0 -> knows/VBZ (root)
+1 -> Innocence/NN (nsubj)
+1 -> race/NN (dobj)
+2 -> no/DT (neg)
+2 -> or/CC (cc)
+2 -> color/NN (conj:or)
+1 -> color/NN (dobj)
+1 -> ./. (punct)
+
+Easy reading is damn hard writing.
+
+0 -> writing/NN (root)
+1 -> reading/NN (nsubj)
+2 -> Easy/NNP (compound)
+1 -> is/VBZ (cop)
+1 -> hard/JJ (amod)
+2 -> damn/RB (advmod)
+1 -> ./. (punct)
+
+Dream it; Believe it; Achieve it.
+
+0 -> Dream/VB (root)
+1 -> it/PRP (dobj)
+1 -> ;/: (punct)
+1 -> Believe/VB (dep)
+2 -> it/PRP (dobj)
+1 -> ;/: (punct)
+1 -> Achieve/VB (dep)
+2 -> it/PRP (dobj)
+1 -> ./. (punct)
+
+Strangers; Friends; Best friends; Lovers; Strangers.
+
+0 -> Strangers/NNS (root)
+1 -> ;/: (punct)
+1 -> friends/NNS (dep)
+2 -> Friends/NNPS (compound)
+2 -> ;/: (punct)
+2 -> Best/JJS (amod)
+2 -> ;/: (punct)
+2 -> Lovers/NNS (conj)
+2 -> ;/: (punct)
+2 -> Strangers/NNS (conj)
+1 -> ./. (punct)
+
+Women are real architects of society.
+
+0 -> architects/NNS (root)
+1 -> Women/NNS (nsubj)
+1 -> are/VBP (cop)
+1 -> real/JJ (amod)
+1 -> society/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Focus on solutions, not on problems.
+
+0 -> Focus/NN (root)
+1 -> solutions/NNS (nmod:on)
+2 -> on/IN (case)
+2 -> ,/, (punct)
+2 -> problems/NNS (nmod:on)
+3 -> not/RB (neg)
+3 -> on/IN (case)
+1 -> ./. (punct)
+
+Guard your mind against negative thoughts.
+
+0 -> Guard/NNP (root)
+1 -> mind/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> thoughts/NNS (nmod:against)
+2 -> against/IN (case)
+2 -> negative/JJ (amod)
+1 -> ./. (punct)
+
+Remember, success without integrity is failure.
+
+0 -> Remember/VB (root)
+1 -> ,/, (punct)
+1 -> failure/NN (ccomp)
+2 -> success/NN (nsubj)
+3 -> integrity/NN (nmod:without)
+4 -> without/IN (case)
+2 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+The greatest gift is life itself.
+
+0 -> life/NN (root)
+1 -> gift/NN (nsubj)
+2 -> The/DT (det)
+2 -> greatest/JJS (amod)
+1 -> is/VBZ (cop)
+1 -> itself/PRP (nmod:npmod)
+1 -> ./. (punct)
+
+One happiness scatters a thousand sorrows.
+
+0 -> scatters/VBZ (root)
+1 -> happiness/NN (nsubj)
+2 -> One/CD (nummod)
+1 -> sorrows/NNS (dobj)
+2 -> a/DT (det)
+2 -> thousand/CD (nummod)
+1 -> ./. (punct)
+
+Courage is the foundation of success.
+
+0 -> foundation/NN (root)
+1 -> Courage/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> success/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Every flower must grow through dirt.
+
+0 -> grow/VB (root)
+1 -> flower/NN (nsubj)
+2 -> Every/DT (det)
+1 -> must/MD (aux)
+1 -> dirt/NN (nmod:through)
+2 -> through/IN (case)
+1 -> ./. (punct)
+
+Don't fill your head with worries.
+
+0 -> fill/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> head/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> worries/NNS (nmod:with)
+2 -> with/IN (case)
+1 -> ./. (punct)
+
+Laughter is fireworks of the soul.
+
+0 -> fireworks/NNS (root)
+1 -> Laughter/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> soul/NN (nmod:of)
+2 -> of/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Conquer yourself rather than the world.
+
+0 -> Conquer/VB (root)
+1 -> yourself/PRP (dobj)
+1 -> world/NN (nmod:rather_than)
+2 -> rather/RB (case)
+3 -> than/IN (mwe)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Not every wall needs a ceiling.
+
+0 -> needs/VBZ (root)
+1 -> wall/NN (nsubj)
+2 -> Not/RB (neg)
+2 -> every/DT (det)
+1 -> ceiling/NN (dobj)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+Life is better when you're laughing.
+
+0 -> better/RBR (root)
+1 -> Life/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> laughing/VBG (advcl)
+2 -> when/WRB (advmod)
+2 -> you/PRP (nsubj)
+2 -> 're/VBP (aux)
+1 -> ./. (punct)
+
+Sarcasm is natural defence against stupidity.
+
+0 -> defence/NN (root)
+1 -> Sarcasm/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> natural/JJ (amod)
+1 -> stupidity/NN (nmod:against)
+2 -> against/IN (case)
+1 -> ./. (punct)
+
+Don't let the humour escape you.
+
+0 -> let/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> escape/NN (dobj)
+2 -> the/DT (det)
+2 -> humour/NN (compound)
+2 -> you/PRP (nmod:npmod)
+1 -> ./. (punct)
+
+Stop letting fear rule your life.
+
+0 -> Stop/VB (root)
+1 -> letting/VBG (xcomp)
+2 -> fear/NN (dobj)
+3 -> rule/NN (dep)
+4 -> life/NN (dobj)
+5 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Today is full of possible beginnings.
+
+0 -> full/JJ (root)
+1 -> Today/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> beginnings/NNS (nmod:of)
+2 -> of/IN (case)
+2 -> possible/JJ (amod)
+1 -> ./. (punct)
+
+Honest feelings; Bad timing; Painful combination.
+
+0 -> feelings/NNS (root)
+1 -> Honest/JJ (amod)
+1 -> ;/: (punct)
+1 -> timing/NN (dep)
+2 -> Bad/JJ (amod)
+2 -> ;/: (punct)
+2 -> combination/NN (dep)
+3 -> Painful/JJ (amod)
+1 -> ./. (punct)
+
+Art never expresses anything but itself.
+
+0 -> expresses/VBZ (root)
+1 -> Art/NNP (nsubj)
+1 -> never/RB (neg)
+1 -> anything/NN (dobj)
+2 -> but/CC (cc)
+2 -> itself/PRP (conj:but)
+1 -> itself/PRP (dobj)
+1 -> ./. (punct)
+
+Always love people and use things.
+
+0 -> love/VBP (root)
+1 -> Always/RB (advmod)
+1 -> people/NNS (dobj)
+1 -> and/CC (cc)
+1 -> use/VB (conj:and)
+2 -> things/NNS (dobj)
+1 -> ./. (punct)
+
+Be the best version of you.
+
+0 -> version/NN (root)
+1 -> Be/VB (cop)
+1 -> the/DT (det)
+1 -> best/JJS (amod)
+1 -> you/PRP (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Raise your words, not your voice.
+
+0 -> Raise/VB (root)
+1 -> words/NNS (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ,/, (punct)
+1 -> voice/NN (dep)
+2 -> not/RB (neg)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Let your dreams take flight today.
+
+0 -> Let/VB (root)
+1 -> take/VBP (ccomp)
+2 -> dreams/NNS (nsubj)
+3 -> your/PRP$ (nmod:poss)
+2 -> flight/NN (dobj)
+2 -> today/NN (nmod:tmod)
+1 -> ./. (punct)
+
+The spirit of Mumbai is unbeatable.
+
+0 -> unbeatable/JJ (root)
+1 -> spirit/NN (nsubj)
+2 -> The/DT (det)
+2 -> Mumbai/NNP (nmod:of)
+3 -> of/IN (case)
+1 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+Positive attitude leads to positive outcomes.
+
+0 -> leads/VBZ (root)
+1 -> attitude/NN (nsubj)
+2 -> Positive/JJ (amod)
+1 -> outcomes/NNS (nmod:to)
+2 -> to/TO (case)
+2 -> positive/JJ (amod)
+1 -> ./. (punct)
+
+There were only six words left.
+
+0 -> were/VBD (root)
+1 -> There/EX (expl)
+1 -> left/VBD (ccomp)
+2 -> words/NNS (nsubj)
+3 -> six/CD (nummod)
+4 -> only/RB (advmod)
+1 -> ./. (punct)
+
+Beauty shines even through your flaws.
+
+0 -> shines/VBZ (root)
+1 -> Beauty/NN (nsubj)
+1 -> flaws/NNS (nmod:through)
+2 -> even/RB (advmod)
+2 -> through/IN (case)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+You asked; I answered with silence.
+
+0 -> asked/VBD (root)
+1 -> You/PRP (nsubj)
+1 -> ;/: (punct)
+1 -> answered/VBD (parataxis)
+2 -> I/PRP (nsubj)
+2 -> silence/NN (nmod:with)
+3 -> with/IN (case)
+1 -> ./. (punct)
+
+Wherever you are, be all there.
+
+0 -> Wherever/NNP (root)
+1 -> are/VBP (acl:relcl)
+2 -> you/PRP (nsubj)
+2 -> ,/, (punct)
+2 -> there/EX (dep)
+3 -> be/VB (cop)
+3 -> all/DT (dep)
+1 -> ./. (punct)
+
+Don't wait till it's too late.
+
+0 -> wait/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> late/JJ (advcl:till)
+2 -> till/IN (mark)
+2 -> it/PRP (nsubj)
+2 -> 's/VBZ (cop)
+2 -> too/RB (advmod)
+1 -> ./. (punct)
+
+Handle others anger with a smile.
+
+0 -> Handle/VB (root)
+1 -> anger/NN (dobj)
+2 -> others/NNS (compound)
+1 -> smile/NN (nmod:with)
+2 -> with/IN (case)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+Love and hope can conquer all.
+
+0 -> conquer/VB (root)
+1 -> Love/NN (nsubj)
+2 -> and/CC (cc)
+2 -> hope/NN (conj:and)
+1 -> hope/NN (nsubj)
+1 -> can/MD (aux)
+1 -> all/DT (dobj)
+1 -> ./. (punct)
+
+You are a unique beautiful soul.
+
+0 -> soul/NN (root)
+1 -> You/PRP (nsubj)
+1 -> are/VBP (cop)
+1 -> a/DT (det)
+1 -> unique/JJ (amod)
+1 -> beautiful/JJ (amod)
+1 -> ./. (punct)
+
+Be a rainbow in someone's cloud.
+
+0 -> rainbow/NN (root)
+1 -> Be/VB (cop)
+1 -> a/DT (det)
+1 -> cloud/NN (nmod:in)
+2 -> in/IN (case)
+2 -> someone/NN (nmod:poss)
+3 -> 's/POS (case)
+1 -> ./. (punct)
+
+Don't waste your youth growing up.
+
+0 -> waste/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> growing/VBG (dep)
+2 -> youth/NN (nsubj)
+3 -> your/PRP$ (nmod:poss)
+2 -> up/RP (compound:prt)
+1 -> ./. (punct)
+
+Rewards come in actions, not discussions.
+
+0 -> come/VBP (root)
+1 -> Rewards/NNS (nsubj)
+1 -> actions/NNS (nmod:in)
+2 -> in/IN (case)
+2 -> ,/, (punct)
+2 -> discussions/NNS (appos)
+3 -> not/RB (neg)
+1 -> ./. (punct)
+
+Live well; Laugh often; Love much.
+
+0 -> Live/VB (root)
+1 -> well/RB (advmod)
+1 -> ;/: (punct)
+1 -> Laugh/NNP (conj)
+2 -> often/RB (advmod)
+1 -> ;/: (punct)
+1 -> Love/NNP (dep)
+2 -> much/RB (advmod)
+1 -> ./. (punct)
+
+Comparison is the thief of joy.
+
+0 -> thief/NN (root)
+1 -> Comparison/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> joy/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Loving yourself is the greatest revolution.
+
+0 -> revolution/NN (root)
+1 -> yourself/PRP (nsubj)
+2 -> Loving/JJ (amod)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> greatest/JJS (amod)
+1 -> ./. (punct)
+
+Adversity introduces a man to himself.
+
+0 -> introduces/VBZ (root)
+1 -> Adversity/NNP (nsubj)
+1 -> man/NN (dobj)
+2 -> a/DT (det)
+1 -> himself/PRP (nmod:to)
+2 -> to/TO (case)
+1 -> ./. (punct)
+
+Be who you're born to be. #LifeLessons
+
+0 -> Be/VB (root)
+1 -> born/VBN (ccomp)
+2 -> who/WP (dobj)
+2 -> you/PRP (nsubjpass)
+2 -> 're/VBP (auxpass)
+2 -> be/VB (xcomp)
+3 -> who/WP (nsubj:xsubj)
+3 -> to/TO (mark)
+1 -> ./. (punct)
+1 -> #LifeLessons/NNS (root)
+
+You are responsible for your life.
+
+0 -> responsible/JJ (root)
+1 -> You/PRP (nsubj)
+1 -> are/VBP (cop)
+1 -> life/NN (nmod:for)
+2 -> for/IN (case)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Healthy heart makes the face cheerful.
+
+0 -> makes/VBZ (root)
+1 -> heart/NN (nsubj)
+2 -> Healthy/JJ (amod)
+1 -> cheerful/JJ (xcomp)
+2 -> face/NN (nsubj)
+3 -> the/DT (det)
+1 -> ./. (punct)
+
+Compassion cures more sins than condemnation.
+
+0 -> cures/NNS (root)
+1 -> Compassion/NNP (compound)
+1 -> sins/NNS (dobj)
+2 -> more/RBR (amod)
+2 -> condemnation/NN (nmod:than)
+3 -> than/IN (case)
+1 -> ./. (punct)
+
+God writes love and speaks poetry.
+
+0 -> writes/VBZ (root)
+1 -> God/NNP (nsubj)
+1 -> love/NN (dobj)
+1 -> and/CC (cc)
+1 -> speaks/VBZ (conj:and)
+2 -> God/NNP (nsubj)
+2 -> poetry/NN (dobj)
+1 -> ./. (punct)
+
+When anger rises, think of consequences.
+
+0 -> think/VB (root)
+1 -> rises/VBZ (advcl)
+2 -> When/WRB (advmod)
+2 -> anger/NN (nsubj)
+1 -> ,/, (punct)
+1 -> consequences/NNS (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Beware the barrenness of busy life.
+
+0 -> Beware/VB (root)
+1 -> barrenness/NN (dobj)
+2 -> the/DT (det)
+2 -> life/NN (nmod:of)
+3 -> of/IN (case)
+3 -> busy/JJ (amod)
+1 -> ./. (punct)
+
+Take a moment to appreciate beauty.
+
+0 -> Take/VB (root)
+1 -> moment/NN (dobj)
+2 -> a/DT (det)
+1 -> appreciate/VB (advcl:to)
+2 -> to/TO (mark)
+2 -> beauty/NN (dobj)
+1 -> ./. (punct)
+
+Books are a uniquely portable magic.
+
+0 -> magic/NN (root)
+1 -> Books/NNS (nsubj)
+1 -> are/VBP (cop)
+1 -> a/DT (det)
+1 -> portable/JJ (amod)
+2 -> uniquely/RB (advmod)
+1 -> ./. (punct)
+
+Save our tigers; Save our habitat.
+
+0 -> Save/VB (root)
+1 -> tigers/NNS (dobj)
+2 -> our/PRP$ (nmod:poss)
+1 -> ;/: (punct)
+1 -> Save/VB (parataxis)
+2 -> habitat/NN (dobj)
+3 -> our/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Nature protects if she is protected.
+
+0 -> protects/VBZ (root)
+1 -> Nature/NNP (nsubj)
+1 -> protected/VBN (advcl:if)
+2 -> if/IN (mark)
+2 -> she/PRP (nsubjpass)
+2 -> is/VBZ (auxpass)
+1 -> ./. (punct)
+
+Words can inspire; Words can destroy.
+
+0 -> inspire/VB (root)
+1 -> Words/NNS (nsubj)
+1 -> can/MD (aux)
+1 -> ;/: (punct)
+1 -> destroy/VB (parataxis)
+2 -> Words/NNS (nsubj)
+2 -> can/MD (aux)
+1 -> ./. (punct)
+
+Free cheese only comes in traps.
+
+0 -> comes/VBZ (root)
+1 -> cheese/NN (nsubj)
+2 -> Free/NNP (compound)
+1 -> only/RB (advmod)
+1 -> traps/NNS (nmod:in)
+2 -> in/IN (case)
+1 -> ./. (punct)
+
+Without courage, wisdom bears no fruits.
+
+0 -> bears/VBZ (root)
+1 -> courage/NN (nmod:without)
+2 -> Without/IN (case)
+1 -> ,/, (punct)
+1 -> wisdom/NN (nsubj)
+1 -> fruits/NNS (dobj)
+2 -> no/DT (neg)
+1 -> ./. (punct)
+
+We are what we repeatedly do.
+
+0 -> are/VBP (root)
+1 -> We/PRP (nsubj)
+1 -> do/VBP (ccomp)
+2 -> what/WP (dobj)
+2 -> we/PRP (nsubj)
+2 -> repeatedly/RB (advmod)
+1 -> ./. (punct)
+
+Don't let emotions make your decisions.
+
+0 -> let/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> make/VB (ccomp)
+2 -> emotions/NNS (nsubj)
+2 -> decisions/NNS (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Every good conversation starts with listening.
+
+0 -> starts/VBZ (root)
+1 -> conversation/NN (nsubj)
+2 -> Every/DT (det)
+2 -> good/JJ (amod)
+1 -> listening/VBG (nmod:with)
+2 -> with/IN (case)
+1 -> ./. (punct)
+
+Don't let technology ruin your family.
+
+0 -> let/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> ruin/VB (ccomp)
+2 -> technology/NN (nsubj)
+2 -> family/NN (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Wisdom is the daughter of experience.
+
+0 -> daughter/NN (root)
+1 -> Wisdom/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> experience/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Fading memories: the lonely heart's mirage.
+
+0 -> memories/NNS (root)
+1 -> Fading/JJ (amod)
+1 -> :/: (punct)
+1 -> mirage/NN (dep)
+2 -> heart/NN (nmod:poss)
+3 -> the/DT (det)
+3 -> lonely/JJ (amod)
+3 -> 's/POS (case)
+1 -> ./. (punct)
+
+Find your tribe; Love them hard.
+
+0 -> Find/VB (root)
+1 -> tribe/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ;/: (punct)
+1 -> Love/NNP (dep)
+2 -> them/PRP (dobj)
+2 -> hard/RB (advmod)
+1 -> ./. (punct)
+
+Wake me up before you go-go.
+
+0 -> Wake/VB (root)
+1 -> me/PRP (dobj)
+1 -> up/RP (compound:prt)
+1 -> go-go/JJ (advcl:before)
+2 -> before/IN (mark)
+2 -> you/PRP (nsubj)
+1 -> ./. (punct)
+
+Be the one to stand out.
+
+0 -> Be/VB (root)
+1 -> one/CD (dobj)
+2 -> the/DT (det)
+2 -> stand/VB (acl:to)
+3 -> to/TO (mark)
+3 -> out/RP (compound:prt)
+1 -> ./. (punct)
+
+Married best friend; No longer friends.
+
+0 -> friend/NN (root)
+1 -> Married/JJ (amod)
+1 -> best/JJS (amod)
+1 -> ;/: (punct)
+1 -> friends/NNS (dep)
+2 -> No/DT (neg)
+2 -> longer/RBR (amod)
+1 -> ./. (punct)
+
+Music is universal language of mankind
+
+0 -> language/NN (root)
+1 -> Music/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> universal/JJ (amod)
+1 -> mankind/NN (nmod:of)
+2 -> of/IN (case)
+
+Visualize your success; Then take action!
+
+0 -> Visualize/VB (root)
+1 -> success/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ;/: (punct)
+1 -> take/VB (parataxis)
+2 -> Then/RB (advmod)
+2 -> action/NN (dobj)
+1 -> !/. (punct)
+
+Starve your distractions; Feed your focus.
+
+0 -> Starve/VB (root)
+1 -> distractions/NNS (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ;/: (punct)
+1 -> Feed/VB (dep)
+2 -> focus/NN (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Sacred thread that binds the heart.
+
+0 -> thread/NN (root)
+1 -> Sacred/JJ (amod)
+1 -> that/WDT (ref)
+1 -> binds/VBZ (acl:relcl)
+2 -> thread/NN (nsubj)
+2 -> heart/NN (dobj)
+3 -> the/DT (det)
+1 -> ./. (punct)
+
+In the end only kindness matters.
+
+0 -> end/NN (root)
+1 -> In/IN (case)
+1 -> the/DT (det)
+1 -> matters/NNS (dep)
+2 -> only/RB (advmod)
+2 -> kindness/NN (compound)
+1 -> ./. (punct)
+
+We're lying in bed; She's lying.
+
+0 -> lying/VBG (root)
+1 -> We/PRP (nsubj)
+1 -> 're/VBP (aux)
+1 -> bed/NN (nmod:in)
+2 -> in/IN (case)
+1 -> ;/: (punct)
+1 -> lying/VBG (parataxis)
+2 -> She/PRP (nsubj)
+2 -> 's/VBZ (aux)
+1 -> ./. (punct)
+
+The secret of living is giving.
+
+0 -> giving/VBG (root)
+1 -> secret/NN (nsubj)
+2 -> The/DT (det)
+2 -> living/NN (nmod:of)
+3 -> of/IN (case)
+1 -> is/VBZ (aux)
+1 -> ./. (punct)
+
+Broken crayons still colour; Donate them.
+
+0 -> colour/NN (root)
+1 -> crayons/NNS (nsubj)
+2 -> Broken/JJ (amod)
+1 -> still/RB (advmod)
+1 -> ;/: (punct)
+1 -> Donate/VB (parataxis)
+2 -> them/PRP (dobj)
+1 -> ./. (punct)
+
+Purpose is an incredible alarm clock.
+
+0 -> clock/NN (root)
+1 -> Purpose/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> an/DT (det)
+1 -> incredible/JJ (amod)
+1 -> alarm/NN (compound)
+1 -> ./. (punct)
+
+Don't stand in your own way.
+
+0 -> stand/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> way/NN (nmod:in)
+2 -> in/IN (case)
+2 -> your/PRP$ (nmod:poss)
+2 -> own/JJ (amod)
+1 -> ./. (punct)
+
+New stylist; New haircut; New hat.
+
+0 -> stylist/NN (root)
+1 -> New/NNP (compound)
+1 -> ;/: (punct)
+1 -> haircut/NNP (dep)
+2 -> New/NNP (compound)
+2 -> ;/: (punct)
+2 -> hat/NN (dep)
+3 -> New/NNP (compound)
+1 -> ./. (punct)
+
+Where ever hope grows, miracles blossom.
+
+0 -> blossom/NN (root)
+1 -> hope/VBP (dep)
+2 -> Where/WRB (advmod)
+2 -> ever/RB (advmod)
+2 -> grows/VBZ (ccomp)
+1 -> ,/, (punct)
+1 -> miracles/NNS (compound)
+1 -> ./. (punct)
+
+Make way for the positive day.
+
+0 -> Make/VB (root)
+1 -> way/NN (dobj)
+2 -> day/NN (nmod:for)
+3 -> for/IN (case)
+3 -> the/DT (det)
+3 -> positive/JJ (amod)
+1 -> ./. (punct)
+
+Scholar's greatest weakness: calling procrastination research.
+
+0 -> weakness/NN (root)
+1 -> Scholar/NNP (nmod:poss)
+2 -> 's/POS (case)
+1 -> greatest/JJS (amod)
+1 -> :/: (punct)
+1 -> calling/VBG (dep)
+2 -> research/NN (dobj)
+3 -> procrastination/NN (compound)
+1 -> ./. (punct)
+
+Always seems impossible until its done.
+
+0 -> seems/VBZ (root)
+1 -> Always/RB (advmod)
+1 -> impossible/JJ (xcomp)
+1 -> done/VBN (advcl:until)
+2 -> until/IN (mark)
+2 -> its/PRP$ (nsubj)
+1 -> ./. (punct)
+
+Happiness is a way of life.
+
+0 -> way/NN (root)
+1 -> Happiness/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> life/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+True poem rests between the words.
+
+0 -> rests/VBZ (root)
+1 -> poem/NN (nsubj)
+2 -> True/JJ (amod)
+1 -> words/NNS (nmod:between)
+2 -> between/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Smooth seas don't make skillful sailors.
+
+0 -> make/VB (root)
+1 -> seas/NNS (nsubj)
+2 -> Smooth/JJ (amod)
+1 -> do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> sailors/NNS (dobj)
+2 -> skillful/JJ (amod)
+1 -> ./. (punct)
+
+Purpose is an incredible alarm clock.
+
+0 -> clock/NN (root)
+1 -> Purpose/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> an/DT (det)
+1 -> incredible/JJ (amod)
+1 -> alarm/NN (compound)
+1 -> ./. (punct)
+
+Only love can save the world.
+
+0 -> save/VB (root)
+1 -> love/NN (nsubj)
+2 -> Only/RB (advmod)
+1 -> can/MD (aux)
+1 -> world/NN (dobj)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+That's not self-acceptance…that is self-defeat.
+
+0 -> self-acceptance/NN (root)
+1 -> That/DT (nsubj)
+1 -> 's/VBZ (cop)
+1 -> not/RB (neg)
+1 -> .../: (punct)
+1 -> that/DT (ref)
+1 -> self-defeat/NN (acl:relcl)
+2 -> self-acceptance/NN (nsubj)
+2 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+Right delayed is a right denied.
+
+0 -> delayed/VBN (root)
+1 -> Right/RB (advmod)
+1 -> is/VBZ (auxpass)
+1 -> right/JJ (nsubjpass)
+2 -> a/DT (det)
+2 -> denied/VBN (acl)
+1 -> ./. (punct)
+
+Quiet the mind, soul will speak.
+
+0 -> speak/VB (root)
+1 -> mind/NN (nmod:tmod)
+2 -> Quiet/JJ (amod)
+2 -> the/DT (det)
+1 -> ,/, (punct)
+1 -> soul/NN (nsubj)
+1 -> will/MD (aux)
+1 -> ./. (punct)
+
+Poke your nose into more books.
+
+0 -> Poke/VB (root)
+1 -> nose/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> books/NNS (nmod:into)
+2 -> into/IN (case)
+2 -> more/JJR (amod)
+1 -> ./. (punct)
+
+Never let self-doubt hold you captive.
+
+0 -> let/VB (root)
+1 -> Never/RB (neg)
+1 -> hold/VBP (ccomp)
+2 -> self-doubt/JJ (nsubj)
+2 -> captive/JJ (xcomp)
+3 -> you/PRP (nsubj)
+1 -> ./. (punct)
+
+Drowning in information; Starving for wisdom.
+
+0 -> Drowning/VBG (root)
+1 -> information/NN (nmod:in)
+2 -> in/IN (case)
+1 -> ;/: (punct)
+1 -> Starving/VBG (dep)
+2 -> wisdom/NN (nmod:for)
+3 -> for/IN (case)
+1 -> ./. (punct)
+
+Pride divides men, humility joins them.
+
+0 -> divides/VBZ (root)
+1 -> Pride/NN (nsubj)
+1 -> men/NNS (dobj)
+1 -> ,/, (punct)
+1 -> joins/VBZ (parataxis)
+2 -> humility/NN (nsubj)
+2 -> them/PRP (dobj)
+1 -> ./. (punct)
+
+Rain; Two strangers; One umbrella; Love.
+
+0 -> Rain/NN (root)
+1 -> ;/: (punct)
+1 -> strangers/NNS (dep)
+2 -> Two/CD (nummod)
+1 -> ;/: (punct)
+1 -> umbrella/NN (dep)
+2 -> One/CD (nummod)
+1 -> ;/: (punct)
+1 -> Love/NNP (dep)
+1 -> ./. (punct)
+
+Condemn me; History will absolve me.
+
+0 -> Condemn/VB (root)
+1 -> me/PRP (dobj)
+1 -> ;/: (punct)
+1 -> absolve/VB (parataxis)
+2 -> History/NN (nsubj)
+2 -> will/MD (aux)
+2 -> me/PRP (dobj)
+1 -> ./. (punct)
+
+Sinners judging sinners for sinning differently.
+
+0 -> sinners/NNS (root)
+1 -> Sinners/NNS (compound)
+1 -> judging/VBG (amod)
+1 -> sinning/VBG (acl:for)
+2 -> for/IN (mark)
+2 -> differently/RB (advmod)
+1 -> ./. (punct)
+
+Happiness is the path to life.
+
+0 -> path/NN (root)
+1 -> Happiness/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> life/NN (nmod:to)
+2 -> to/TO (case)
+1 -> ./. (punct)
+
+Modern technology owes ecology an apology.
+
+0 -> owes/VBZ (root)
+1 -> technology/NN (nsubj)
+2 -> Modern/NNP (compound)
+1 -> ecology/VB (ccomp)
+2 -> apology/NN (dobj)
+3 -> an/DT (det)
+1 -> ./. (punct)
+
+Truth isn't determined by majority vote.
+
+0 -> determined/VBN (root)
+1 -> Truth/NN (nsubjpass)
+1 -> is/VBZ (auxpass)
+1 -> n't/RB (neg)
+1 -> vote/NN (nmod:agent)
+2 -> by/IN (case)
+2 -> majority/NN (compound)
+1 -> ./. (punct)
+
+You are responsible for your life.
+
+0 -> responsible/JJ (root)
+1 -> You/PRP (nsubj)
+1 -> are/VBP (cop)
+1 -> life/NN (nmod:for)
+2 -> for/IN (case)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Stay humble; Work hard; Be kind.
+
+0 -> Stay/NNP (root)
+1 -> humble/JJ (amod)
+1 -> ;/: (punct)
+1 -> Work/NN (dep)
+2 -> hard/RB (advmod)
+1 -> ;/: (punct)
+1 -> kind/NN (dep)
+2 -> Be/VB (cop)
+1 -> ./. (punct)
+
+And she still wears the ring.
+
+0 -> wears/VBZ (root)
+1 -> And/CC (cc)
+1 -> she/PRP (nsubj)
+1 -> still/RB (advmod)
+1 -> ring/NN (dobj)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Don't facebook your problems; Face them.
+
+0 -> facebook/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> problems/NNS (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ;/: (punct)
+1 -> Face/NNP (dep)
+2 -> them/PRP (nmod:npmod)
+1 -> ./. (punct)
+
+Freedom of press is true democracy.
+
+0 -> democracy/NN (root)
+1 -> Freedom/NNP (nsubj)
+2 -> press/NN (nmod:of)
+3 -> of/IN (case)
+1 -> is/VBZ (cop)
+1 -> true/JJ (amod)
+1 -> ./. (punct)
+
+Where flowers bloom, so does hope.
+
+0 -> does/VBZ (root)
+1 -> bloom/VBP (advcl)
+2 -> Where/WRB (advmod)
+2 -> flowers/NNS (nsubj)
+1 -> ,/, (punct)
+1 -> so/RB (advmod)
+1 -> hope/NN (dobj)
+1 -> ./. (punct)
+
+Beware the barrenness of busy life.
+
+0 -> Beware/VB (root)
+1 -> barrenness/NN (dobj)
+2 -> the/DT (det)
+2 -> life/NN (nmod:of)
+3 -> of/IN (case)
+3 -> busy/JJ (amod)
+1 -> ./. (punct)
+
+Hard times will reveal true friends.
+
+0 -> reveal/VB (root)
+1 -> times/NNS (nsubj)
+2 -> Hard/JJ (amod)
+1 -> will/MD (aux)
+1 -> friends/NNS (dobj)
+2 -> true/JJ (amod)
+1 -> ./. (punct)
+
+Sometimes, change is what we need.
+
+0 -> is/VBZ (root)
+1 -> Sometimes/RB (advmod)
+1 -> ,/, (punct)
+1 -> change/NN (nsubj)
+1 -> need/VBP (ccomp)
+2 -> what/WP (dobj)
+2 -> we/PRP (nsubj)
+1 -> ./. (punct)
+
+Sometimes you need to let go.
+
+0 -> need/VBP (root)
+1 -> Sometimes/RB (advmod)
+1 -> you/PRP (nsubj)
+1 -> let/VB (xcomp)
+2 -> you/PRP (nsubj:xsubj)
+2 -> to/TO (mark)
+2 -> go/VB (ccomp)
+1 -> ./. (punct)
+
+Friends are the sunshine of life.
+
+0 -> sunshine/NN (root)
+1 -> Friends/NNS (nsubj)
+1 -> are/VBP (cop)
+1 -> the/DT (det)
+1 -> life/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+I'm sorry; I sold your fantasies.
+
+0 -> sorry/JJ (root)
+1 -> I/PRP (nsubj)
+1 -> 'm/VBP (cop)
+1 -> ;/: (punct)
+1 -> sold/VBD (parataxis)
+2 -> I/PRP (nsubj)
+2 -> fantasies/NNS (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+There is no love without suffering.
+
+0 -> is/VBZ (root)
+1 -> There/EX (expl)
+1 -> love/NN (nsubj)
+2 -> no/DT (neg)
+1 -> suffering/NN (nmod:without)
+2 -> without/IN (case)
+1 -> ./. (punct)
+
+All propaganda is disguised as news.
+
+0 -> disguised/VBN (root)
+1 -> propaganda/NN (nsubjpass)
+2 -> All/DT (det)
+1 -> is/VBZ (auxpass)
+1 -> news/NN (nmod:as)
+2 -> as/IN (case)
+1 -> ./. (punct)
+
+It's never too late to learn.
+
+0 -> late/JJ (root)
+1 -> It/PRP (nsubj)
+1 -> 's/VBZ (cop)
+1 -> never/RB (neg)
+1 -> too/RB (advmod)
+1 -> learn/VB (xcomp)
+2 -> It/PRP (nsubj:xsubj)
+2 -> to/TO (mark)
+1 -> ./. (punct)
+
+He screams; She screams; They complain.
+
+0 -> screams/VBZ (root)
+1 -> He/PRP (nsubj)
+1 -> ;/: (punct)
+1 -> screams/VBZ (parataxis)
+2 -> She/PRP (nsubj)
+1 -> ;/: (punct)
+1 -> complain/VBP (parataxis)
+2 -> They/PRP (nsubj)
+1 -> ./. (punct)
+
+Every word you choose has consequences.
+
+0 -> has/VBZ (root)
+1 -> word/NN (nsubj)
+2 -> Every/DT (det)
+2 -> choose/VBP (acl:relcl)
+3 -> you/PRP (nsubj)
+1 -> consequences/NNS (dobj)
+1 -> ./. (punct)
+
+To travel is to truly live.
+
+0 -> live/VB (root)
+1 -> travel/VB (csubj)
+2 -> To/TO (mark)
+1 -> is/VBZ (cop)
+1 -> to/TO (mark)
+1 -> truly/RB (advmod)
+1 -> ./. (punct)
+
+Heart stopping hellos; Heart breaking goodbyes.
+
+0 -> hellos/NNS (root)
+1 -> Heart/NNP (compound)
+1 -> stopping/VBG (compound)
+1 -> ;/: (punct)
+1 -> goodbyes/NNS (dep)
+2 -> Heart/NNP (compound)
+2 -> breaking/VBG (amod)
+1 -> ./. (punct)
+
+Nothing diminishes anxiety faster than action.
+
+0 -> diminishes/VBZ (root)
+1 -> Nothing/NN (nsubj)
+1 -> anxiety/NN (dobj)
+1 -> faster/RBR (advmod)
+2 -> action/NN (nmod:than)
+3 -> than/IN (case)
+1 -> ./. (punct)
+
+Beauty without expression is always boring.
+
+0 -> boring/JJ (root)
+1 -> Beauty/NN (nsubj)
+2 -> expression/NN (nmod:without)
+3 -> without/IN (case)
+1 -> is/VBZ (cop)
+1 -> always/RB (advmod)
+1 -> ./. (punct)
+
+The sound of rain soothes me.
+
+0 -> soothes/VBZ (root)
+1 -> sound/NN (nsubj)
+2 -> The/DT (det)
+2 -> rain/NN (nmod:of)
+3 -> of/IN (case)
+1 -> me/PRP (dobj)
+1 -> ./. (punct)
+
+True friends are always in sync.
+
+0 -> sync/NN (root)
+1 -> friends/NNS (nsubj)
+2 -> True/JJ (amod)
+1 -> are/VBP (cop)
+1 -> always/RB (advmod)
+1 -> in/IN (case)
+1 -> ./. (punct)
+
+The root of joy is gratefulness.
+
+0 -> gratefulness/NN (root)
+1 -> root/NN (nsubj)
+2 -> The/DT (det)
+2 -> joy/NN (nmod:of)
+3 -> of/IN (case)
+1 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+You're responsible for your own happiness.
+
+0 -> responsible/JJ (root)
+1 -> You/PRP (nsubj)
+1 -> 're/VBP (cop)
+1 -> happiness/NN (nmod:for)
+2 -> for/IN (case)
+2 -> your/PRP$ (nmod:poss)
+2 -> own/JJ (amod)
+1 -> ./. (punct)
+
+Dad is a daughter's first love.
+
+0 -> love/NN (root)
+1 -> Dad/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> daughter/NN (nmod:poss)
+2 -> a/DT (det)
+2 -> 's/POS (case)
+1 -> first/JJ (amod)
+1 -> ./. (punct)
+
+Played PokemonGo; Discovered playground in vicinity.
+
+0 -> PokemonGo/NN (root)
+1 -> Played/VBN (amod)
+1 -> ;/: (punct)
+1 -> playground/NN (dep)
+2 -> Discovered/VBN (amod)
+2 -> vicinity/NN (nmod:in)
+3 -> in/IN (case)
+1 -> ./. (punct)
+
+Books are a uniquely portable magic.
+
+0 -> magic/NN (root)
+1 -> Books/NNS (nsubj)
+1 -> are/VBP (cop)
+1 -> a/DT (det)
+1 -> portable/JJ (amod)
+2 -> uniquely/RB (advmod)
+1 -> ./. (punct)
+
+Always be positive, patient and persistent.
+
+0 -> positive/JJ (root)
+1 -> Always/RB (advmod)
+1 -> be/VB (cop)
+1 -> ,/, (punct)
+1 -> patient/NN (conj:and)
+1 -> and/CC (cc)
+1 -> persistent/JJ (conj:and)
+1 -> ./. (punct)
+
+There's no God higher than truth.
+
+0 -> 's/VBZ (root)
+1 -> There/EX (expl)
+1 -> higher/JJR (xcomp)
+2 -> God/NNP (nmod:npmod)
+3 -> no/DT (neg)
+2 -> truth/NN (nmod:than)
+3 -> than/IN (case)
+1 -> ./. (punct)
+
+Loyalty has fur and four legs.
+
+0 -> has/VBZ (root)
+1 -> Loyalty/NN (nsubj)
+1 -> fur/NN (dobj)
+2 -> and/CC (cc)
+2 -> legs/NNS (conj:and)
+3 -> four/CD (nummod)
+1 -> legs/NNS (dobj)
+1 -> ./. (punct)
+
+Simple act of caring is heroic.
+
+0 -> heroic/JJ (root)
+1 -> act/NN (nsubj)
+2 -> Simple/JJ (amod)
+2 -> caring/NN (nmod:of)
+3 -> of/IN (case)
+1 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+New beginnings; New ideas; new energies.
+
+0 -> beginnings/NNS (root)
+1 -> New/NNP (compound)
+1 -> ;/: (punct)
+1 -> ideas/NNS (conj)
+2 -> New/NNP (compound)
+1 -> ;/: (punct)
+1 -> energies/NNS (dep)
+2 -> new/JJ (amod)
+1 -> ./. (punct)
+
+Dreams don't work unless you do.
+
+0 -> work/VB (root)
+1 -> Dreams/NNS (nsubj)
+1 -> do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> do/VBP (advcl:unless)
+2 -> unless/IN (mark)
+2 -> you/PRP (nsubj)
+1 -> ./. (punct)
+
+Believe in yourself, you're halfway there.
+
+0 -> there/RB (root)
+1 -> Believe/VB (advcl)
+2 -> yourself/PRP (nmod:in)
+3 -> in/IN (case)
+1 -> ,/, (punct)
+1 -> you/PRP (nsubj)
+1 -> 're/VBP (cop)
+1 -> halfway/RB (advmod)
+1 -> ./. (punct)
+
+Life is all about creating yourself.
+
+0 -> creating/VBG (root)
+1 -> Life/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> all/DT (dep)
+1 -> about/IN (mark)
+1 -> yourself/PRP (dobj)
+1 -> ./. (punct)
+
+Whatever you're doing, keep moving forward.
+
+0 -> keep/VB (root)
+1 -> doing/VBG (advcl)
+2 -> Whatever/WDT (dobj)
+2 -> you/PRP (nsubj)
+2 -> 're/VBP (aux)
+1 -> ,/, (punct)
+1 -> moving/VBG (xcomp)
+2 -> forward/RB (advmod)
+1 -> ./. (punct)
+
+It's always too early to quit.
+
+0 -> early/JJ (root)
+1 -> It/PRP (nsubj)
+1 -> 's/VBZ (cop)
+1 -> always/RB (advmod)
+1 -> too/RB (advmod)
+1 -> quit/VB (xcomp)
+2 -> It/PRP (nsubj:xsubj)
+2 -> to/TO (mark)
+1 -> ./. (punct)
+
+Managing your diabetes is an art.
+
+0 -> art/NN (root)
+1 -> Managing/VBG (csubj)
+2 -> diabetes/NN (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> is/VBZ (cop)
+1 -> an/DT (det)
+1 -> ./. (punct)
+
+Adversity is the foundation of virtue.
+
+0 -> foundation/NN (root)
+1 -> Adversity/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> virtue/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+From 'Great Britain' to 'Little England'
+
+0 -> Britain/NNP (root)
+1 -> From/IN (case)
+1 -> `/`` (punct)
+1 -> Great/JJ (compound)
+1 -> '/POS (case)
+1 -> England/NNP (nmod:to)
+2 -> to/TO (case)
+2 -> `/`` (punct)
+2 -> Little/JJ (amod)
+1 -> '/'' (punct)
+
+It all starts with a dream.
+
+0 -> starts/NNS (root)
+1 -> It/PRP (nsubj)
+1 -> all/DT (det)
+1 -> dream/NN (nmod:with)
+2 -> with/IN (case)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+What is reading but silent conversation.
+
+0 -> reading/VBG (root)
+1 -> What/WP (nsubj)
+1 -> is/VBZ (aux)
+1 -> but/CC (cc)
+1 -> conversation/NN (conj:but)
+2 -> silent/JJ (amod)
+1 -> ./. (punct)
+
+You can make a different choice.
+
+0 -> make/VB (root)
+1 -> You/PRP (nsubj)
+1 -> can/MD (aux)
+1 -> choice/NN (dobj)
+2 -> a/DT (det)
+2 -> different/JJ (amod)
+1 -> ./. (punct)
+
+The moment is all there is.
+
+0 -> all/DT (root)
+1 -> moment/NN (nsubj)
+2 -> The/DT (det)
+1 -> is/VBZ (cop)
+1 -> is/VBZ (acl:relcl)
+2 -> there/EX (expl)
+1 -> ./. (punct)
+
+There is great strength in unity.
+
+0 -> is/VBZ (root)
+1 -> There/EX (expl)
+1 -> strength/NN (nsubj)
+2 -> great/JJ (amod)
+1 -> unity/NN (nmod:in)
+2 -> in/IN (case)
+1 -> ./. (punct)
+
+Saving a life will change yours.
+
+0 -> change/VB (root)
+1 -> Saving/VBG (csubj)
+2 -> life/NN (dobj)
+3 -> a/DT (det)
+1 -> will/MD (aux)
+1 -> yours/PRP$ (dobj)
+1 -> ./. (punct)
+
+Everyday is an opportunity; Seize it.
+
+0 -> opportunity/NN (root)
+1 -> Everyday/JJ (nsubj)
+1 -> is/VBZ (cop)
+1 -> an/DT (det)
+1 -> ;/: (punct)
+1 -> Seize/VB (parataxis)
+2 -> it/PRP (dobj)
+1 -> ./. (punct)
+
+Best teacher is your last mistake.
+
+0 -> mistake/NN (root)
+1 -> teacher/NN (nsubj)
+2 -> Best/JJS (amod)
+1 -> is/VBZ (cop)
+1 -> your/PRP$ (nmod:poss)
+1 -> last/JJ (amod)
+1 -> ./. (punct)
+
+Buy less; Choose well; Curb wastage.
+
+0 -> Buy/VB (root)
+1 -> less/RBR (advmod)
+1 -> ;/: (punct)
+1 -> Choose/VB (dep)
+2 -> well/RB (advmod)
+1 -> ;/: (punct)
+1 -> Curb/VB (dep)
+2 -> wastage/NN (dobj)
+1 -> ./. (punct)
+
+Bad attitude is the real disability.
+
+0 -> disability/NN (root)
+1 -> attitude/NN (nsubj)
+2 -> Bad/JJ (amod)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> real/JJ (amod)
+1 -> ./. (punct)
+
+Don't waste your youth growing up.
+
+0 -> waste/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> growing/VBG (dep)
+2 -> youth/NN (nsubj)
+3 -> your/PRP$ (nmod:poss)
+2 -> up/RP (compound:prt)
+1 -> ./. (punct)
+
+Your life is in your hands.
+
+0 -> hands/NNS (root)
+1 -> life/NN (nsubj)
+2 -> Your/PRP$ (nmod:poss)
+1 -> is/VBZ (cop)
+1 -> in/IN (case)
+1 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Hug's a handshake from the heart.
+
+0 -> handshake/NN (root)
+1 -> Hug/NN (nmod:poss)
+2 -> 's/POS (case)
+1 -> a/DT (det)
+1 -> heart/NN (nmod:from)
+2 -> from/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+A thousand wrinkles; A thousand stories.
+
+0 -> wrinkles/NNS (root)
+1 -> A/DT (det)
+1 -> thousand/CD (nummod)
+1 -> ;/: (punct)
+1 -> stories/NNS (dep)
+2 -> A/DT (det)
+2 -> thousand/CD (nummod)
+1 -> ./. (punct)
+
+Getting angry is actually punishing yourself.
+
+0 -> punishing/VBG (root)
+1 -> Getting/VBG (csubj)
+2 -> angry/JJ (xcomp)
+1 -> is/VBZ (aux)
+1 -> actually/RB (advmod)
+1 -> yourself/PRP (dobj)
+1 -> ./. (punct)
+
+Depression is merely anger without enthusiasm.
+
+0 -> anger/NN (root)
+1 -> Depression/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> merely/RB (advmod)
+1 -> enthusiasm/NN (nmod:without)
+2 -> without/IN (case)
+1 -> ./. (punct)
+
+Just let yourself become living poetry.
+
+0 -> let/VB (root)
+1 -> Just/RB (advmod)
+1 -> become/VB (ccomp)
+2 -> yourself/PRP (nsubj)
+2 -> poetry/NN (xcomp)
+3 -> living/VBG (amod)
+1 -> ./. (punct)
+
+Say anything but those three words.
+
+0 -> Say/VB (root)
+1 -> anything/NN (dobj)
+2 -> but/CC (cc)
+2 -> words/NNS (conj:but)
+3 -> those/DT (det)
+3 -> three/CD (nummod)
+1 -> words/NNS (dobj)
+1 -> ./. (punct)
+
+Gratitude is always the best attitude.
+
+0 -> attitude/NN (root)
+1 -> Gratitude/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> always/RB (advmod)
+1 -> the/DT (det)
+1 -> best/JJS (amod)
+1 -> ./. (punct)
+
+Happiness is a habit; Cultivate it.
+
+0 -> habit/NN (root)
+1 -> Happiness/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> ;/: (punct)
+1 -> Cultivate/VB (parataxis)
+2 -> it/PRP (dobj)
+1 -> ./. (punct)
+
+Success and happiness starts with you.
+
+0 -> starts/VBZ (root)
+1 -> Success/NN (nsubj)
+2 -> and/CC (cc)
+2 -> happiness/NN (conj:and)
+1 -> happiness/NN (nsubj)
+1 -> you/PRP (nmod:with)
+2 -> with/IN (case)
+1 -> ./. (punct)
+
+Live beautifully; Dream passionately; Love completely.
+
+0 -> Live/VB (root)
+1 -> beautifully/RB (advmod)
+1 -> ;/: (punct)
+1 -> Dream/NN (dep)
+2 -> passionately/RB (advmod)
+1 -> ;/: (punct)
+1 -> Love/NN (dep)
+2 -> completely/RB (advmod)
+1 -> ./. (punct)
+
+Can somebody get my Sunday back?
+
+0 -> get/VB (root)
+1 -> Can/MD (aux)
+1 -> somebody/NN (nsubj)
+1 -> Sunday/NNP (dobj)
+2 -> my/PRP$ (nmod:poss)
+1 -> back/RB (advmod)
+1 -> ?/. (punct)
+
+Eradicating sexism starts with educating kids.
+
+0 -> Eradicating/VBG (root)
+1 -> starts/VBZ (ccomp)
+2 -> sexism/NN (nsubj)
+2 -> educating/VBG (advcl:with)
+3 -> with/IN (mark)
+3 -> kids/NNS (dobj)
+1 -> ./. (punct)
+
+Hate the disease, not the diseased.
+
+0 -> Hate/VB (root)
+1 -> disease/NN (dobj)
+2 -> the/DT (det)
+1 -> ,/, (punct)
+1 -> diseased/JJ (dep)
+2 -> not/RB (neg)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+True wisdom can be found travelling.
+
+0 -> found/VBN (root)
+1 -> wisdom/NN (nsubjpass)
+2 -> True/JJ (amod)
+1 -> can/MD (aux)
+1 -> be/VB (auxpass)
+1 -> travelling/VBG (xcomp)
+1 -> ./. (punct)
+
+You either get bitter or better.
+
+0 -> get/VBP (root)
+1 -> You/PRP (nsubj)
+1 -> either/RB (advmod)
+1 -> bitter/JJ (xcomp)
+2 -> or/CC (cc)
+2 -> better/RBR (conj:or)
+1 -> better/RBR (xcomp)
+1 -> ./. (punct)
+
+Deaf does not make you dumb .
+
+0 -> make/VB (root)
+1 -> Deaf/JJ (nsubj)
+1 -> does/VBZ (aux)
+1 -> not/RB (neg)
+1 -> dumb/JJ (xcomp)
+2 -> you/PRP (nsubj)
+1 -> ./. (punct)
+
+You are here to understand yourself.
+
+0 -> You/PRP (root)
+1 -> are/VBP (dep)
+2 -> here/RB (advmod)
+3 -> understand/VB (dep)
+4 -> to/TO (mark)
+4 -> yourself/PRP (dobj)
+1 -> ./. (punct)
+
+Heroism is glorious concentration of courage.
+
+0 -> concentration/NN (root)
+1 -> Heroism/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> glorious/JJ (amod)
+1 -> courage/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Are you "man-enough" to be sensitive?
+
+0 -> Are/VBP (root)
+1 -> man-enough/JJ (xcomp)
+2 -> you/PRP (dep)
+2 -> ``/`` (punct)
+2 -> ''/'' (punct)
+2 -> sensitive/JJ (xcomp)
+3 -> to/TO (mark)
+3 -> be/VB (cop)
+1 -> ?/. (punct)
+
+Just quit smoking or die trying.
+
+0 -> quit/VB (root)
+1 -> Just/RB (advmod)
+1 -> smoking/NN (dobj)
+1 -> or/CC (cc)
+1 -> die/VB (conj:or)
+2 -> trying/VBG (xcomp)
+1 -> ./. (punct)
+
+Creativity is just intelligence having fun.
+
+0 -> intelligence/NN (root)
+1 -> Creativity/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> just/RB (advmod)
+1 -> having/VBG (acl)
+2 -> fun/NN (dobj)
+1 -> ./. (punct)
+
+Sometimes you win; Sometimes you learn.
+
+0 -> win/VBP (root)
+1 -> Sometimes/RB (advmod)
+1 -> you/PRP (nsubj)
+1 -> ;/: (punct)
+1 -> learn/VBP (parataxis)
+2 -> Sometimes/RB (advmod)
+2 -> you/PRP (nsubj)
+1 -> ./. (punct)
+
+Remember, money can't buy you happiness.
+
+0 -> buy/VB (root)
+1 -> Remember/VB (advcl)
+1 -> ,/, (punct)
+1 -> money/NN (nsubj)
+1 -> ca/MD (aux)
+1 -> n't/RB (neg)
+1 -> you/PRP (iobj)
+1 -> happiness/NN (dobj)
+1 -> ./. (punct)
+
+Make every day, every second count.
+
+0 -> Make/VB (root)
+1 -> day/NN (nmod:tmod)
+2 -> every/DT (det)
+1 -> ,/, (punct)
+1 -> count/NN (dobj)
+2 -> every/DT (det)
+2 -> second/JJ (amod)
+1 -> ./. (punct)
+
+New stylist; New haircut; New hat.
+
+0 -> stylist/NN (root)
+1 -> New/NNP (compound)
+1 -> ;/: (punct)
+1 -> haircut/NNP (dep)
+2 -> New/NNP (compound)
+2 -> ;/: (punct)
+2 -> hat/NN (dep)
+3 -> New/NNP (compound)
+1 -> ./. (punct)
+
+Courage is key to life itself.
+
+0 -> key/JJ (root)
+1 -> Courage/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> life/NN (nmod:to)
+2 -> to/TO (case)
+2 -> itself/PRP (nmod:npmod)
+1 -> ./. (punct)
+
+Sometimes change is what we need.
+
+0 -> is/VBZ (root)
+1 -> change/NN (nsubj)
+2 -> Sometimes/RB (advmod)
+1 -> need/VBP (ccomp)
+2 -> what/WP (dobj)
+2 -> we/PRP (nsubj)
+1 -> ./. (punct)
+
+Your scars are your greatest medals.
+
+0 -> medals/NNS (root)
+1 -> scars/NNS (nsubj)
+2 -> Your/PRP$ (nmod:poss)
+1 -> are/VBP (cop)
+1 -> your/PRP$ (nmod:poss)
+1 -> greatest/JJS (amod)
+1 -> ./. (punct)
+
+Passion, patience and perseverance equals success.
+
+0 -> equals/VBZ (root)
+1 -> Passion/NN (nsubj)
+2 -> ,/, (punct)
+2 -> patience/NN (conj:and)
+2 -> and/CC (cc)
+2 -> perseverance/NN (conj:and)
+1 -> patience/NN (nsubj)
+1 -> perseverance/NN (nsubj)
+1 -> success/NN (dobj)
+1 -> ./. (punct)
+
+You must choose purpose over perfect.
+
+0 -> choose/VB (root)
+1 -> You/PRP (nsubj)
+1 -> must/MD (aux)
+1 -> purpose/NN (dobj)
+1 -> perfect/JJ (nmod:over)
+2 -> over/IN (case)
+1 -> ./. (punct)
+
+Outdated map crumpled in my pocket.
+
+0 -> crumpled/VBD (root)
+1 -> map/NN (nsubj)
+2 -> Outdated/JJ (amod)
+1 -> pocket/NN (nmod:in)
+2 -> in/IN (case)
+2 -> my/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Wise souls speak loudly in silence.
+
+0 -> speak/VBP (root)
+1 -> souls/NNS (nsubj)
+2 -> Wise/NNP (compound)
+1 -> loudly/RB (advmod)
+1 -> silence/NN (nmod:in)
+2 -> in/IN (case)
+1 -> ./. (punct)
+
+Our friends become our chosen family.
+
+0 -> become/VBP (root)
+1 -> friends/NNS (nsubj)
+2 -> Our/PRP$ (nmod:poss)
+1 -> family/NN (xcomp)
+2 -> our/PRP$ (nmod:poss)
+2 -> chosen/VBN (amod)
+1 -> ./. (punct)
+
+Books are a uniquely portable magic.
+
+0 -> magic/NN (root)
+1 -> Books/NNS (nsubj)
+1 -> are/VBP (cop)
+1 -> a/DT (det)
+1 -> portable/JJ (amod)
+2 -> uniquely/RB (advmod)
+1 -> ./. (punct)
+
+Art is literacy of the heart.
+
+0 -> literacy/NN (root)
+1 -> Art/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> heart/NN (nmod:of)
+2 -> of/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Love is the absence of judgement.
+
+0 -> absence/NN (root)
+1 -> Love/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> judgement/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Live to express; Not to impress.
+
+0 -> Live/VB (root)
+1 -> express/VB (xcomp)
+2 -> to/TO (mark)
+1 -> ;/: (punct)
+1 -> impress/VB (parataxis)
+2 -> Not/RB (neg)
+2 -> to/TO (mark)
+1 -> ./. (punct)
+
+Remember, your ignorance is their power.
+
+0 -> power/NN (root)
+1 -> Remember/VB (dep)
+1 -> ,/, (punct)
+1 -> ignorance/NN (nsubj)
+2 -> your/PRP$ (nmod:poss)
+1 -> is/VBZ (cop)
+1 -> their/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Life is sum of your choices.
+
+0 -> sum/NN (root)
+1 -> Life/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> choices/NNS (nmod:of)
+2 -> of/IN (case)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Hard work and determination equals success.
+
+0 -> equals/VBZ (root)
+1 -> work/NN (nsubj)
+2 -> Hard/JJ (amod)
+2 -> and/CC (cc)
+2 -> determination/NN (conj:and)
+1 -> determination/NN (nsubj)
+1 -> success/NN (dobj)
+1 -> ./. (punct)
+
+God exists in each of us.
+
+0 -> exists/VBZ (root)
+1 -> God/NNP (nsubj)
+1 -> each/DT (nmod:in)
+2 -> in/IN (case)
+2 -> us/PRP (nmod:of)
+3 -> of/IN (case)
+1 -> ./. (punct)
+
+If there's no way, create one.
+
+0 -> create/VB (root)
+1 -> 's/VBZ (advcl:if)
+2 -> If/IN (mark)
+2 -> there/EX (expl)
+2 -> way/NN (nsubj)
+3 -> no/DT (neg)
+1 -> ,/, (punct)
+1 -> one/CD (dobj)
+1 -> ./. (punct)
+
+Truth exists; only lies are invented.
+
+0 -> exists/VBZ (root)
+1 -> Truth/NN (nsubj)
+1 -> ;/: (punct)
+1 -> invented/VBN (parataxis)
+2 -> lies/VBZ (nsubjpass)
+3 -> only/RB (advmod)
+2 -> are/VBP (auxpass)
+1 -> ./. (punct)
+
+True love is love of giving.
+
+0 -> love/NN (root)
+1 -> love/NN (nsubj)
+2 -> True/JJ (amod)
+1 -> is/VBZ (cop)
+1 -> giving/VBG (acl:of)
+2 -> of/IN (mark)
+1 -> ./. (punct)
+
+Starve your distractions; Feed your focus.
+
+0 -> Starve/VB (root)
+1 -> distractions/NNS (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ;/: (punct)
+1 -> Feed/VB (dep)
+2 -> focus/NN (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+God equips those who are called.
+
+0 -> equips/VBZ (root)
+1 -> God/NNP (nsubj)
+1 -> those/DT (dobj)
+2 -> who/WP (ref)
+2 -> called/VBN (acl:relcl)
+3 -> those/DT (nsubjpass)
+3 -> are/VBP (auxpass)
+1 -> ./. (punct)
+
+Be your own kind of beautiful.
+
+0 -> Be/VB (root)
+1 -> kind/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+2 -> own/JJ (amod)
+2 -> beautiful/JJ (nmod:of)
+3 -> of/IN (case)
+1 -> ./. (punct)
+
+Everything you can imagine is real.
+
+0 -> real/JJ (root)
+1 -> Everything/NN (nsubj)
+2 -> imagine/VB (acl:relcl)
+3 -> you/PRP (nsubj)
+3 -> can/MD (aux)
+1 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+War is a defeat for humanity.
+
+0 -> defeat/NN (root)
+1 -> War/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> humanity/NN (nmod:for)
+2 -> for/IN (case)
+1 -> ./. (punct)
+
+Drown all your troubles, not yourself.
+
+0 -> Drown/VB (root)
+1 -> troubles/NNS (dobj)
+2 -> all/DT (det:predet)
+2 -> your/PRP$ (nmod:poss)
+1 -> ,/, (punct)
+1 -> yourself/PRP (nmod:npmod)
+2 -> not/RB (neg)
+1 -> ./. (punct)
+
+Played PokemonGo; Discovered playground in vicinity.
+
+0 -> PokemonGo/NN (root)
+1 -> Played/VBN (amod)
+1 -> ;/: (punct)
+1 -> playground/NN (dep)
+2 -> Discovered/VBN (amod)
+2 -> vicinity/NN (nmod:in)
+3 -> in/IN (case)
+1 -> ./. (punct)
+
+Let's start a new tomorrow, today.
+
+0 -> Let/VB (root)
+1 -> start/VB (ccomp)
+2 -> 's/PRP (nsubj)
+2 -> tomorrow/NN (nmod:tmod)
+3 -> a/DT (det)
+3 -> new/JJ (amod)
+1 -> ,/, (punct)
+1 -> today/NN (nmod:tmod)
+1 -> ./. (punct)
+
+Let all your failures inspire you.
+
+0 -> Let/VB (root)
+1 -> inspire/VB (ccomp)
+2 -> failures/NNS (nsubj)
+3 -> all/DT (det:predet)
+3 -> your/PRP$ (nmod:poss)
+2 -> you/PRP (dobj)
+1 -> ./. (punct)
+
+Always treat your love with care.
+
+0 -> treat/VB (root)
+1 -> Always/RB (advmod)
+1 -> love/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> care/NN (nmod:with)
+2 -> with/IN (case)
+1 -> ./. (punct)
+
+Don't think yourself into bad moods.
+
+0 -> think/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> yourself/PRP (dobj)
+1 -> moods/NNS (nmod:into)
+2 -> into/IN (case)
+2 -> bad/JJ (amod)
+1 -> ./. (punct)
+
+You're not everyone's cup of tea.
+
+0 -> cup/NN (root)
+1 -> You/PRP (nsubj)
+1 -> 're/VBP (cop)
+1 -> not/RB (neg)
+1 -> everyone/NN (nmod:poss)
+2 -> 's/POS (case)
+1 -> tea/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Opportunities are where the complaints are.
+
+0 -> are/VBP (root)
+1 -> Opportunities/NNPS (nsubj)
+1 -> are/VBP (advcl)
+2 -> where/WRB (advmod)
+2 -> complaints/NNS (nsubj)
+3 -> the/DT (det)
+1 -> ./. (punct)
+
+The traffic sounded like the sea.
+
+0 -> sounded/VBD (root)
+1 -> traffic/NN (nsubj)
+2 -> The/DT (det)
+1 -> sea/NN (nmod:like)
+2 -> like/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+What if we were all stories?
+
+0 -> stories/NNS (root)
+1 -> What/WP (dep)
+1 -> if/IN (mark)
+1 -> we/PRP (nsubj)
+1 -> were/VBD (cop)
+1 -> all/DT (det)
+1 -> ?/. (punct)
+
+The essence of romance is uncertainty.
+
+0 -> uncertainty/NN (root)
+1 -> essence/NN (nsubj)
+2 -> The/DT (det)
+2 -> romance/NN (nmod:of)
+3 -> of/IN (case)
+1 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+Value your life and stop complaining.
+
+0 -> life/NN (root)
+1 -> Value/NNP (compound)
+1 -> your/PRP$ (nmod:poss)
+1 -> and/CC (cc)
+1 -> stop/VB (conj:and)
+2 -> complaining/VBG (xcomp)
+1 -> ./. (punct)
+
+8 letters; 3 words; Too late.
+
+0 -> letters/NNS (root)
+1 -> 8/CD (nummod)
+1 -> ;/: (punct)
+1 -> words/NNS (dep)
+2 -> 3/CD (nummod)
+1 -> ;/: (punct)
+1 -> late/RB (advmod)
+2 -> Too/RB (advmod)
+1 -> ./. (punct)
+
+Don't let your fears limit you.
+
+0 -> let/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> limit/VBP (ccomp)
+2 -> fears/NNS (nsubj)
+3 -> your/PRP$ (nmod:poss)
+2 -> you/PRP (dobj)
+1 -> ./. (punct)
+
+Your intentions will rule your life.
+
+0 -> rule/VB (root)
+1 -> intentions/NNS (nsubj)
+2 -> Your/PRP$ (nmod:poss)
+1 -> will/MD (aux)
+1 -> life/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Be kind to everything that lives.
+
+0 -> Be/VB (root)
+1 -> kind/NN (dobj)
+2 -> everything/NN (nmod:to)
+3 -> to/TO (case)
+3 -> that/WDT (ref)
+3 -> lives/VBZ (acl:relcl)
+4 -> everything/NN (nsubj)
+1 -> ./. (punct)
+
+Music is what feelings sound like.
+
+0 -> is/VBZ (root)
+1 -> Music/NN (nsubj)
+1 -> sound/VB (ccomp)
+2 -> what/WP (dobj)
+2 -> feelings/NNS (nsubj)
+2 -> like/IN (advmod)
+1 -> ./. (punct)
+
+Happiness multiplies when you share it.
+
+0 -> multiplies/NNS (root)
+1 -> Happiness/NN (compound)
+1 -> share/VBP (acl:relcl)
+2 -> when/WRB (advmod)
+2 -> you/PRP (nsubj)
+2 -> it/PRP (dobj)
+1 -> ./. (punct)
+
+She left me; Vodka for lunch.
+
+0 -> left/VBD (root)
+1 -> She/PRP (nsubj)
+1 -> me/PRP (dobj)
+1 -> ;/: (punct)
+1 -> Vodka/NNP (dep)
+2 -> lunch/NN (nmod:for)
+3 -> for/IN (case)
+1 -> ./. (punct)
+
+Karma and shadows follow one everywhere.
+
+0 -> follow/VBP (root)
+1 -> Karma/NN (nsubj)
+2 -> and/CC (cc)
+2 -> shadows/NNS (conj:and)
+1 -> shadows/NNS (nsubj)
+1 -> one/CD (dobj)
+2 -> everywhere/RB (advmod)
+1 -> ./. (punct)
+
+Disclaimer: Teri Maa Ki, Pahlaj Nihalani.
+
+0 -> Disclaimer/NNP (root)
+1 -> :/: (punct)
+1 -> Ki/NN (dep)
+2 -> Teri/NNP (compound)
+2 -> Maa/NNP (compound)
+2 -> ,/, (punct)
+2 -> Nihalani/NNP (appos)
+3 -> Pahlaj/NNP (compound)
+1 -> ./. (punct)
+
+She left me; Vodka for lunch.
+
+0 -> left/VBD (root)
+1 -> She/PRP (nsubj)
+1 -> me/PRP (dobj)
+1 -> ;/: (punct)
+1 -> Vodka/NNP (dep)
+2 -> lunch/NN (nmod:for)
+3 -> for/IN (case)
+1 -> ./. (punct)
+
+Teamwork always makes the dream work.
+
+0 -> makes/VBZ (root)
+1 -> Teamwork/NNP (nsubj)
+1 -> always/RB (advmod)
+1 -> work/NN (dobj)
+2 -> the/DT (det)
+2 -> dream/NN (compound)
+1 -> ./. (punct)
+
+Be realistic; Plan for a miracle.
+
+0 -> realistic/JJ (root)
+1 -> Be/VB (cop)
+1 -> ;/: (punct)
+1 -> Plan/NN (dep)
+2 -> miracle/NN (nmod:for)
+3 -> for/IN (case)
+3 -> a/DT (det)
+1 -> ./. (punct)
+
+"Live for Today" - Tomorrow tells Yesterday.
+
+0 -> tells/VBZ (root)
+1 -> ``/`` (punct)
+1 -> Live/VB (ccomp)
+2 -> Today/NN (nmod:for)
+3 -> for/IN (case)
+1 -> ''/'' (punct)
+1 -> -/: (punct)
+1 -> Tomorrow/NN (nsubj)
+1 -> Yesterday/NN (nmod:tmod)
+1 -> ./. (punct)
+
+Art is a scream of freedom.
+
+0 -> scream/NN (root)
+1 -> Art/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> freedom/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Played PokemonGo; Discovered playground in vicinity.
+
+0 -> PokemonGo/NN (root)
+1 -> Played/VBN (amod)
+1 -> ;/: (punct)
+1 -> playground/NN (dep)
+2 -> Discovered/VBN (amod)
+2 -> vicinity/NN (nmod:in)
+3 -> in/IN (case)
+1 -> ./. (punct)
+
+I dug until I found me.
+
+0 -> dug/VBD (root)
+1 -> I/PRP (nsubj)
+1 -> found/VBD (advcl:until)
+2 -> until/IN (mark)
+2 -> I/PRP (nsubj)
+2 -> me/PRP (dobj)
+1 -> ./. (punct)
+
+Believe in the magic of kindness.
+
+0 -> Believe/VB (root)
+1 -> magic/NN (nmod:in)
+2 -> in/IN (case)
+2 -> the/DT (det)
+2 -> kindness/NN (nmod:of)
+3 -> of/IN (case)
+1 -> ./. (punct)
+
+Swim out of your little pond.
+
+0 -> Swim/VB (root)
+1 -> pond/NN (nmod:out_of)
+2 -> out/IN (case)
+3 -> of/IN (mwe)
+2 -> your/PRP$ (nmod:poss)
+2 -> little/JJ (amod)
+1 -> ./. (punct)
+
+There's no greater motivator than rejection.
+
+0 -> 's/VBZ (root)
+1 -> There/EX (expl)
+1 -> motivator/NN (nsubj)
+2 -> no/DT (neg)
+2 -> greater/JJR (amod)
+2 -> rejection/NN (nmod:than)
+3 -> than/IN (case)
+1 -> ./. (punct)
+
+Discipline weighs ounces; Regret weighs tons.
+
+0 -> weighs/VBZ (root)
+1 -> Discipline/NN (nsubj)
+1 -> ounces/NNS (dobj)
+1 -> ;/: (punct)
+1 -> weighs/VBZ (parataxis)
+2 -> Regret/NNP (nsubj)
+2 -> tons/NNS (dobj)
+1 -> ./. (punct)
+
+It's in giving that we receive.
+
+0 -> giving/VBG (root)
+1 -> It/PRP (nsubj)
+1 -> 's/VBZ (cop)
+1 -> in/IN (mark)
+1 -> receive/VBP (ccomp)
+2 -> that/IN (mark)
+2 -> we/PRP (nsubj)
+1 -> ./. (punct)
+
+Fear is temporary; Regret is forever.
+
+0 -> temporary/JJ (root)
+1 -> Fear/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> ;/: (punct)
+1 -> forever/RB (parataxis)
+2 -> Regret/NNP (nsubj)
+2 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+Quiet the mind; Soul will speak.
+
+0 -> mind/NN (root)
+1 -> Quiet/JJ (amod)
+1 -> the/DT (det)
+1 -> ;/: (punct)
+1 -> speak/VB (parataxis)
+2 -> Soul/NNP (nsubj)
+2 -> will/MD (aux)
+1 -> ./. (punct)
+
+Fall seven times; Stand up eight.
+
+0 -> Fall/NN (root)
+1 -> times/NNS (nmod:npmod)
+2 -> seven/CD (nummod)
+1 -> ;/: (punct)
+1 -> Stand/VB (dep)
+2 -> up/RP (compound:prt)
+2 -> eight/CD (dobj)
+1 -> ./. (punct)
+
+You must improvise, adapt and overcome.
+
+0 -> improvise/VB (root)
+1 -> You/PRP (nsubj)
+1 -> must/MD (aux)
+1 -> ,/, (punct)
+1 -> adapt/VB (conj:and)
+2 -> You/PRP (nsubj)
+1 -> and/CC (cc)
+1 -> overcome/VB (conj:and)
+2 -> You/PRP (nsubj)
+1 -> ./. (punct)
+
+There's hope in a dog's eyes.
+
+0 -> 's/VBZ (root)
+1 -> There/EX (expl)
+1 -> hope/NN (nsubj)
+1 -> eyes/NNS (nmod:in)
+2 -> in/IN (case)
+2 -> dog/NN (nmod:poss)
+3 -> a/DT (det)
+3 -> 's/POS (case)
+1 -> ./. (punct)
+
+World needs humanity in great measure.
+
+0 -> needs/VBZ (root)
+1 -> World/NNP (nsubj)
+1 -> humanity/NN (dobj)
+1 -> measure/NN (nmod:in)
+2 -> in/IN (case)
+2 -> great/JJ (amod)
+1 -> ./. (punct)
+
+All I can be is me.
+
+0 -> All/DT (root)
+1 -> me/PRP (acl:relcl)
+2 -> I/PRP (nsubj)
+2 -> can/MD (aux)
+2 -> be/VB (cop)
+2 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+Media is weapon of mass deception.
+
+0 -> weapon/NN (root)
+1 -> Media/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> deception/NN (nmod:of)
+2 -> of/IN (case)
+2 -> mass/NN (compound)
+1 -> ./. (punct)
+
+Spread love as thick as Nutella.
+
+0 -> love/NN (root)
+1 -> Spread/NN (compound)
+1 -> thick/JJ (amod)
+2 -> as/IN (advmod)
+2 -> Nutella/NNP (nmod:as)
+3 -> as/IN (case)
+1 -> ./. (punct)
+
+Stop stressing; Let go; Move on.
+
+0 -> Stop/VB (root)
+1 -> stressing/VBG (xcomp)
+1 -> ;/: (punct)
+1 -> Let/VB (dep)
+2 -> go/VB (dobj)
+1 -> ;/: (punct)
+1 -> Move/VB (dep)
+2 -> on/IN (compound:prt)
+1 -> ./. (punct)
+
+The traffic sounded like the sea.
+
+0 -> sounded/VBD (root)
+1 -> traffic/NN (nsubj)
+2 -> The/DT (det)
+1 -> sea/NN (nmod:like)
+2 -> like/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Listen but don't lose your voice.
+
+0 -> Listen/VB (root)
+1 -> but/CC (cc)
+1 -> lose/VB (conj:but)
+2 -> do/VBP (aux)
+2 -> n't/RB (neg)
+2 -> voice/NN (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Don't live up to your stereotypes.
+
+0 -> live/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> stereotypes/NNS (advcl:to)
+2 -> up/RP (dep)
+2 -> to/TO (case)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+I'm not arrogant; I'm an introvert.
+
+0 -> arrogant/JJ (root)
+1 -> I/PRP (nsubj)
+1 -> 'm/VBP (cop)
+1 -> not/RB (neg)
+1 -> ;/: (punct)
+1 -> introvert/NN (parataxis)
+2 -> I/PRP (nsubj)
+2 -> 'm/VBP (cop)
+2 -> an/DT (det)
+1 -> ./. (punct)
+
+Make every drop of water count.
+
+0 -> Make/VB (root)
+1 -> drop/NN (dobj)
+2 -> every/DT (det)
+2 -> count/NN (nmod:of)
+3 -> of/IN (case)
+3 -> water/NN (compound)
+1 -> ./. (punct)
+
+My cat plays PokemonGo with mice.
+
+0 -> plays/VBZ (root)
+1 -> cat/NN (nsubj)
+2 -> My/PRP$ (nmod:poss)
+1 -> PokemonGo/NN (dobj)
+1 -> mice/NNS (nmod:with)
+2 -> with/IN (case)
+1 -> ./. (punct)
+
+Do ordinary things with extraordinary love.
+
+0 -> Do/VB (root)
+1 -> things/NNS (dobj)
+2 -> ordinary/JJ (amod)
+2 -> love/NN (nmod:with)
+3 -> with/IN (case)
+3 -> extraordinary/JJ (amod)
+1 -> ./. (punct)
+
+Once you choose hope, anything's possible.
+
+0 -> choose/VB (root)
+1 -> Once/RB (advmod)
+1 -> you/PRP (nsubj)
+1 -> hope/NN (dobj)
+1 -> ,/, (punct)
+2 -> anything/NN (root)
+3 -> 's/POS (case)
+3 -> possible/JJ (amod)
+3 -> ./. (punct)
+
+A child is an uncut diamond.
+
+0 -> diamond/NN (root)
+1 -> child/NN (nsubj)
+2 -> A/DT (det)
+1 -> is/VBZ (cop)
+1 -> an/DT (det)
+1 -> uncut/JJ (amod)
+1 -> ./. (punct)
+
+No act of kindness is wasted.
+
+0 -> wasted/VBN (root)
+1 -> act/NN (nsubjpass)
+2 -> No/DT (neg)
+2 -> kindness/NN (nmod:of)
+3 -> of/IN (case)
+1 -> is/VBZ (auxpass)
+1 -> ./. (punct)
+
+Your mood shouldn't dictate your manners.
+
+0 -> dictate/VB (root)
+1 -> mood/NN (nsubj)
+2 -> Your/PRP$ (nmod:poss)
+1 -> should/MD (aux)
+1 -> n't/RB (neg)
+1 -> manners/NNS (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Art is elimination of the unnecessary.
+
+0 -> elimination/NN (root)
+1 -> Art/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> unnecessary/JJ (nmod:of)
+2 -> of/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Words are the clothes thoughts wear.
+
+0 -> thoughts/NNS (root)
+1 -> Words/NNS (nsubj)
+1 -> are/VBP (cop)
+1 -> the/DT (det)
+1 -> clothes/NNS (compound)
+1 -> wear/VBP (acl)
+1 -> ./. (punct)
+
+Shine like whole universe is yours.
+
+0 -> yours/PRP$ (root)
+1 -> Shine/VB (nsubj)
+2 -> universe/NN (nmod:like)
+3 -> like/IN (case)
+3 -> whole/JJ (amod)
+1 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+You inspire me to be better.
+
+0 -> inspire/VBP (root)
+1 -> You/PRP (nsubj)
+1 -> me/PRP (dobj)
+1 -> better/JJR (xcomp)
+2 -> me/PRP (nsubj:xsubj)
+2 -> to/TO (mark)
+2 -> be/VB (cop)
+1 -> ./. (punct)
+
+Leave your ego at the door.
+
+0 -> Leave/VB (root)
+1 -> ego/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> door/NN (nmod:at)
+2 -> at/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Freedom to criticise is true democracy.
+
+0 -> democracy/NN (root)
+1 -> Freedom/NNP (nsubj)
+2 -> criticise/VB (acl:to)
+3 -> to/TO (mark)
+1 -> is/VBZ (cop)
+1 -> true/JJ (amod)
+1 -> ./. (punct)
+
+Happiness multiplies when you share it.
+
+0 -> multiplies/NNS (root)
+1 -> Happiness/NN (compound)
+1 -> share/VBP (acl:relcl)
+2 -> when/WRB (advmod)
+2 -> you/PRP (nsubj)
+2 -> it/PRP (dobj)
+1 -> ./. (punct)
+
+Everyone smiles in the same language.
+
+0 -> smiles/VBZ (root)
+1 -> Everyone/NN (nsubj)
+1 -> language/NN (nmod:in)
+2 -> in/IN (case)
+2 -> the/DT (det)
+2 -> same/JJ (amod)
+1 -> ./. (punct)
+
+My pen shall heal, not hurt.
+
+0 -> heal/VB (root)
+1 -> pen/NN (nsubj)
+2 -> My/PRP$ (nmod:poss)
+1 -> shall/MD (aux)
+1 -> ,/, (punct)
+1 -> hurt/VB (dep)
+2 -> not/RB (neg)
+1 -> ./. (punct)
+
+The most terrible poverty is loneliness.
+
+0 -> loneliness/NN (root)
+1 -> poverty/NN (nsubj)
+2 -> The/DT (det)
+2 -> terrible/JJ (amod)
+3 -> most/RBS (advmod)
+1 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+Literature is humanity talking to itself.
+
+0 -> humanity/NN (root)
+1 -> Literature/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> talking/VBG (acl)
+2 -> itself/PRP (nmod:to)
+3 -> to/TO (case)
+1 -> ./. (punct)
+
+Think like there is no box.
+
+0 -> Think/VB (root)
+1 -> is/VBZ (advcl:like)
+2 -> like/IN (mark)
+2 -> there/EX (expl)
+2 -> box/NN (nsubj)
+3 -> no/DT (neg)
+1 -> ./. (punct)
+
+Writing heals and keeps me sane.
+
+0 -> Writing/VBG (root)
+1 -> heals/NNS (dobj)
+1 -> and/CC (cc)
+1 -> keeps/VBZ (conj:and)
+2 -> sane/JJ (xcomp)
+3 -> me/PRP (nsubj)
+1 -> ./. (punct)
+
+Be a better version of you.
+
+0 -> version/NN (root)
+1 -> Be/VB (cop)
+1 -> a/DT (det)
+1 -> better/JJR (amod)
+1 -> you/PRP (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+The axe forgets; the tree remembers.
+
+0 -> forgets/VBZ (root)
+1 -> axe/NN (nsubj)
+2 -> The/DT (det)
+1 -> ;/: (punct)
+1 -> remembers/VBZ (parataxis)
+2 -> tree/NN (nsubj)
+3 -> the/DT (det)
+1 -> ./. (punct)
+
+Remember,money and success reveals you.
+
+0 -> reveals/VBZ (root)
+1 -> Remember/VB (nsubj)
+2 -> ,/, (punct)
+2 -> money/NN (conj:and)
+2 -> and/CC (cc)
+2 -> success/NN (conj:and)
+1 -> money/NN (nsubj)
+1 -> success/NN (nsubj)
+1 -> you/PRP (dobj)
+1 -> ./. (punct)
+
+We judge when we don't understand.
+
+0 -> judge/VBP (root)
+1 -> We/PRP (nsubj)
+1 -> understand/VB (advcl)
+2 -> when/WRB (advmod)
+2 -> we/PRP (nsubj)
+2 -> do/VBP (aux)
+2 -> n't/RB (neg)
+1 -> ./. (punct)
+
+Be the reason someone smiles today.
+
+0 -> reason/NN (root)
+1 -> Be/VB (cop)
+1 -> the/DT (det)
+1 -> smiles/VBZ (acl:relcl)
+2 -> someone/NN (nsubj)
+2 -> today/NN (nmod:tmod)
+1 -> ./. (punct)
+
+Never stop wondering; Never stop wandering.
+
+0 -> stop/VB (root)
+1 -> Never/RB (neg)
+1 -> wondering/VBG (xcomp)
+1 -> ;/: (punct)
+1 -> stop/VB (parataxis)
+2 -> Never/RB (neg)
+2 -> wandering/VBG (xcomp)
+1 -> ./. (punct)
+
+True greatness is about inspiring generations.
+
+0 -> generations/NNS (root)
+1 -> greatness/NN (nsubj)
+2 -> True/JJ (amod)
+1 -> is/VBZ (cop)
+1 -> about/IN (case)
+1 -> inspiring/JJ (amod)
+1 -> ./. (punct)
+
+Man is a universe within himself.
+
+0 -> universe/NN (root)
+1 -> Man/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> himself/PRP (nmod:within)
+2 -> within/IN (case)
+1 -> ./. (punct)
+
+Jazz is people's music, a collectivity.
+
+0 -> music/NN (root)
+1 -> Jazz/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> people/NNS (nmod:poss)
+2 -> 's/POS (case)
+1 -> ,/, (punct)
+1 -> collectivity/NN (appos)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+Over thinking leads to negative thoughts.
+
+0 -> leads/VBZ (root)
+1 -> thinking/NN (nmod:over)
+2 -> Over/IN (case)
+1 -> thoughts/NNS (nmod:to)
+2 -> to/TO (case)
+2 -> negative/JJ (amod)
+1 -> ./. (punct)
+
+Dad has Alzheimer\u2019s; Get introduced everyday.
+
+0 -> has/VBZ (root)
+1 -> Dad/NNP (nsubj)
+1 -> Alzheimer/NN (dobj)
+2 -> u2019s/NNS (dep)
+3 -> \/CD (nummod)
+1 -> ;/: (punct)
+1 -> introduced/VBN (parataxis)
+2 -> Get/VB (auxpass)
+2 -> everyday/JJ (xcomp)
+1 -> ./. (punct)
+
+Choose to change by taking chances.
+
+0 -> Choose/VB (root)
+1 -> change/VB (xcomp)
+2 -> to/TO (mark)
+2 -> taking/VBG (advcl:by)
+3 -> by/IN (mark)
+3 -> chances/NNS (dobj)
+1 -> ./. (punct)
+
+We were born to run carefree.
+
+0 -> born/VBN (root)
+1 -> We/PRP (nsubjpass)
+1 -> were/VBD (auxpass)
+1 -> run/VB (xcomp)
+2 -> We/PRP (nsubj:xsubj)
+2 -> to/TO (mark)
+2 -> carefree/JJ (xcomp)
+1 -> ./. (punct)
+
+My story isn't only six words.
+
+0 -> words/NNS (root)
+1 -> story/NN (nsubj)
+2 -> My/PRP$ (nmod:poss)
+1 -> is/VBZ (cop)
+1 -> n't/RB (neg)
+1 -> six/CD (nummod)
+2 -> only/RB (advmod)
+1 -> ./. (punct)
+
+Don't lose yourself in your fear.
+
+0 -> lose/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> yourself/PRP (dobj)
+1 -> fear/NN (nmod:in)
+2 -> in/IN (case)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Within nature lies cure for humanity.
+
+0 -> lies/VBZ (root)
+1 -> nature/NN (nmod:within)
+2 -> Within/IN (case)
+1 -> cure/NN (nsubj)
+2 -> humanity/NN (nmod:for)
+3 -> for/IN (case)
+1 -> ./. (punct)
+
+Logged out; Pulled plug; Found life.
+
+0 -> Logged/VBN (root)
+1 -> out/RP (compound:prt)
+1 -> ;/: (punct)
+1 -> plug/NN (dep)
+2 -> Pulled/VBN (amod)
+2 -> ;/: (punct)
+2 -> life/NN (dep)
+3 -> Found/JJ (amod)
+1 -> ./. (punct)
+
+Fall seven times, stand up eight.
+
+0 -> stand/VB (root)
+1 -> Fall/NN (nsubj)
+2 -> times/NNS (nmod:npmod)
+3 -> seven/CD (nummod)
+1 -> ,/, (punct)
+1 -> up/RP (compound:prt)
+1 -> eight/CD (dobj)
+1 -> ./. (punct)
+
+You are what you settle for.
+
+0 -> are/VBP (root)
+1 -> You/PRP (nsubj)
+1 -> settle/VBP (ccomp)
+2 -> what/WP (dobj)
+2 -> you/PRP (nsubj)
+2 -> for/IN (advcl)
+1 -> ./. (punct)
+
+Struggle is part of the story.
+
+0 -> part/NN (root)
+1 -> Struggle/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> story/NN (nmod:of)
+2 -> of/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+We grow when we face challenges.
+
+0 -> grow/VBP (root)
+1 -> We/PRP (nsubj)
+1 -> face/VBP (advcl)
+2 -> when/WRB (advmod)
+2 -> we/PRP (nsubj)
+2 -> challenges/NNS (dobj)
+1 -> ./. (punct)
+
+Father is every daughter's first love.
+
+0 -> love/NN (root)
+1 -> Father/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> daughter/NN (nmod:poss)
+2 -> every/DT (det)
+2 -> 's/POS (case)
+1 -> first/JJ (amod)
+1 -> ./. (punct)
+
+Be a Santa in someone's life.
+
+0 -> Be/VB (root)
+1 -> Santa/NNP (nsubj)
+2 -> a/DT (det)
+2 -> life/NN (nmod:in)
+3 -> in/IN (case)
+3 -> someone/NN (nmod:poss)
+4 -> 's/POS (case)
+1 -> ./. (punct)
+
+Boredom is the seed of laziness.
+
+0 -> seed/NN (root)
+1 -> Boredom/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> laziness/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Negative people need drama like oxygen.
+
+0 -> need/VBP (root)
+1 -> people/NNS (nsubj)
+2 -> Negative/JJ (amod)
+1 -> drama/NN (dobj)
+2 -> oxygen/NN (nmod:like)
+3 -> like/IN (case)
+1 -> ./. (punct)
+
+Love people for who they are.
+
+0 -> people/NNS (root)
+1 -> Love/NN (compound)
+1 -> are/VBP (acl:for)
+2 -> for/IN (mark)
+2 -> who/WP (dobj)
+2 -> they/PRP (nsubj)
+1 -> ./. (punct)
+
+Nobody can save you except you.
+
+0 -> save/VB (root)
+1 -> Nobody/NN (nsubj)
+1 -> can/MD (aux)
+1 -> you/PRP (dobj)
+1 -> you/PRP (nmod:except)
+2 -> except/IN (case)
+1 -> ./. (punct)
+
+Wherever you are, be all there.
+
+0 -> Wherever/NNP (root)
+1 -> are/VBP (acl:relcl)
+2 -> you/PRP (nsubj)
+2 -> ,/, (punct)
+2 -> there/EX (dep)
+3 -> be/VB (cop)
+3 -> all/DT (dep)
+1 -> ./. (punct)
+
+In that moment we were infinite.
+
+0 -> infinite/JJ (root)
+1 -> moment/NN (nmod:in)
+2 -> In/IN (case)
+2 -> that/DT (det)
+1 -> we/PRP (nsubj)
+1 -> were/VBD (cop)
+1 -> ./. (punct)
+
+Commit to beauty, love and justice.
+
+0 -> Commit/VB (root)
+1 -> beauty/NN (nmod:to)
+2 -> to/TO (case)
+2 -> ,/, (punct)
+2 -> love/NN (conj:and)
+2 -> and/CC (cc)
+2 -> justice/NN (conj:and)
+1 -> love/NN (nmod:to)
+1 -> justice/NN (nmod:to)
+1 -> ./. (punct)
+
+Money very often costs too much.
+
+0 -> costs/VBZ (root)
+1 -> Money/NN (nsubj)
+1 -> often/RB (advmod)
+2 -> very/RB (advmod)
+1 -> much/JJ (dobj)
+2 -> too/RB (advmod)
+1 -> ./. (punct)
+
+Grow through what you go through.
+
+0 -> Grow/VB (root)
+1 -> go/VBP (advcl:through)
+2 -> through/IN (mark)
+2 -> what/WP (dobj)
+2 -> you/PRP (nsubj)
+2 -> through/IN (advmod)
+1 -> ./. (punct)
+
+In this world we're all linked.
+
+0 -> linked/VBN (root)
+1 -> world/NN (nmod:in)
+2 -> In/IN (case)
+2 -> this/DT (det)
+1 -> we/PRP (nsubjpass)
+1 -> 're/VBP (auxpass)
+1 -> all/DT (advmod)
+1 -> ./. (punct)
+
+Without habitat there is no wildlife.
+
+0 -> is/VBZ (root)
+1 -> habitat/NN (nmod:without)
+2 -> Without/IN (case)
+1 -> there/EX (expl)
+1 -> wildlife/NN (nsubj)
+2 -> no/DT (neg)
+1 -> ./. (punct)
+
+See the person; Not the disability.
+
+0 -> See/VB (root)
+1 -> person/NN (dobj)
+2 -> the/DT (det)
+1 -> ;/: (punct)
+1 -> disability/NN (dep)
+2 -> Not/RB (neg)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Strangers; Friends; Best friends; Lovers; Strangers.
+
+0 -> Strangers/NNS (root)
+1 -> ;/: (punct)
+1 -> friends/NNS (dep)
+2 -> Friends/NNPS (compound)
+2 -> ;/: (punct)
+2 -> Best/JJS (amod)
+2 -> ;/: (punct)
+2 -> Lovers/NNS (conj)
+2 -> ;/: (punct)
+2 -> Strangers/NNS (conj)
+1 -> ./. (punct)
+
+Be yourself; everyone else is taken.
+
+0 -> yourself/PRP (root)
+1 -> Be/VB (cop)
+1 -> ;/: (punct)
+1 -> taken/VBN (parataxis)
+2 -> everyone/NN (nsubjpass)
+3 -> else/RB (amod)
+2 -> is/VBZ (auxpass)
+1 -> ./. (punct)
+
+Painfully he changed "is" to "was".
+
+0 -> changed/VBD (root)
+1 -> Painfully/RB (advmod)
+1 -> he/PRP (nsubj)
+1 -> ``/`` (punct)
+2 -> is/VBZ (root)
+3 -> was/VBD (ccomp)
+4 -> ''/'' (punct)
+4 -> to/TO (mark)
+4 -> ``/`` (punct)
+4 -> ''/'' (punct)
+3 -> ./. (punct)
+
+A sweet friendship refreshes the soul.
+
+0 -> refreshes/VBZ (root)
+1 -> friendship/NN (nsubj)
+2 -> A/DT (det)
+2 -> sweet/JJ (amod)
+1 -> soul/NN (dobj)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Nothing will change unless you do.
+
+0 -> change/VB (root)
+1 -> Nothing/NN (nsubj)
+1 -> will/MD (aux)
+1 -> do/VBP (advcl:unless)
+2 -> unless/IN (mark)
+2 -> you/PRP (nsubj)
+1 -> ./. (punct)
+
+Nurture nature for our own future.
+
+0 -> Nurture/VB (root)
+1 -> nature/NN (dobj)
+1 -> future/NN (nmod:for)
+2 -> for/IN (case)
+2 -> our/PRP$ (nmod:poss)
+2 -> own/JJ (amod)
+1 -> ./. (punct)
+
+Raise your words, not your voice.
+
+0 -> Raise/VB (root)
+1 -> words/NNS (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ,/, (punct)
+1 -> voice/NN (dep)
+2 -> not/RB (neg)
+2 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+How bad do you want success?
+
+0 -> want/VB (root)
+1 -> bad/JJ (dep)
+2 -> How/WRB (advmod)
+1 -> do/VBP (aux)
+1 -> you/PRP (nsubj)
+1 -> success/NN (dobj)
+1 -> ?/. (punct)
+
+Only failure is not to try.
+
+0 -> try/VB (root)
+1 -> failure/NN (nsubj)
+2 -> Only/RB (advmod)
+1 -> is/VBZ (cop)
+1 -> not/RB (neg)
+1 -> to/TO (mark)
+1 -> ./. (punct)
+
+You can beat death in life.
+
+0 -> beat/VB (root)
+1 -> You/PRP (nsubj)
+1 -> can/MD (aux)
+1 -> death/NN (dobj)
+1 -> life/NN (nmod:in)
+2 -> in/IN (case)
+1 -> ./. (punct)
+
+Square box; Round pizza; Triangle slices.
+
+0 -> box/NN (root)
+1 -> Square/NN (compound)
+1 -> ;/: (punct)
+1 -> pizza/NN (conj)
+2 -> Round/NNP (compound)
+1 -> ;/: (punct)
+1 -> slices/NNS (dep)
+2 -> Triangle/NNP (compound)
+1 -> ./. (punct)
+
+When will you stop hating me?
+
+0 -> stop/VB (root)
+1 -> When/WRB (advmod)
+1 -> will/MD (aux)
+1 -> you/PRP (nsubj)
+1 -> hating/VBG (xcomp)
+2 -> me/PRP (dobj)
+1 -> ?/. (punct)
+
+Gratitude is riches; Complaint is poverty.
+
+0 -> riches/NNS (root)
+1 -> Gratitude/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> ;/: (punct)
+1 -> poverty/NN (parataxis)
+2 -> Complaint/NNP (nsubj)
+2 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+The greatest gift is family; Always.
+
+0 -> family/NN (root)
+1 -> gift/NN (nsubj)
+2 -> The/DT (det)
+2 -> greatest/JJS (amod)
+1 -> is/VBZ (cop)
+1 -> ;/: (punct)
+1 -> Always/RB (dep)
+1 -> ./. (punct)
+
+Forgive yourself and welcome love back.
+
+0 -> Forgive/VB (root)
+1 -> yourself/PRP (dobj)
+2 -> and/CC (cc)
+2 -> love/NN (conj:and)
+3 -> welcome/JJ (amod)
+1 -> love/NN (dobj)
+1 -> back/RB (advmod)
+1 -> ./. (punct)
+
+Never meant yes; Now changing diapers.
+
+0 -> meant/VBN (root)
+1 -> Never/RB (neg)
+1 -> yes/RB (advmod)
+1 -> ;/: (punct)
+1 -> changing/VBG (parataxis)
+2 -> Now/RB (advmod)
+2 -> diapers/NNS (dobj)
+1 -> ./. (punct)
+
+Kind heart; Fierce mind; Brave spirit.
+
+0 -> heart/NN (root)
+1 -> Kind/NNP (compound)
+1 -> ;/: (punct)
+1 -> mind/NN (conj)
+2 -> Fierce/JJ (amod)
+1 -> ;/: (punct)
+1 -> spirit/NN (dep)
+2 -> Brave/NNP (compound)
+1 -> ./. (punct)
+
+Character, not circumstances, makes the man.
+
+0 -> makes/VBZ (root)
+1 -> Character/NN (nsubj)
+2 -> ,/, (punct)
+2 -> circumstances/NNS (appos)
+3 -> not/RB (neg)
+2 -> ,/, (punct)
+1 -> man/NN (dobj)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Paper is more patient than man.
+
+0 -> patient/JJ (root)
+1 -> Paper/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> more/RBR (advmod)
+1 -> man/NN (nmod:than)
+2 -> than/IN (case)
+1 -> ./. (punct)
+
+Art is never finished, only abandoned.
+
+0 -> finished/VBN (root)
+1 -> Art/NNP (nsubjpass)
+1 -> is/VBZ (auxpass)
+1 -> never/RB (neg)
+1 -> ,/, (punct)
+1 -> abandoned/VBN (xcomp)
+2 -> only/RB (advmod)
+1 -> ./. (punct)
+
+Big journeys begin with small steps.
+
+0 -> begin/VBP (root)
+1 -> journeys/NNS (nsubj)
+2 -> Big/JJ (amod)
+1 -> steps/NNS (nmod:with)
+2 -> with/IN (case)
+2 -> small/JJ (amod)
+1 -> ./. (punct)
+
+There is immense beauty in diversity.
+
+0 -> is/VBZ (root)
+1 -> There/EX (expl)
+1 -> beauty/NN (nsubj)
+2 -> immense/JJ (amod)
+1 -> diversity/NN (nmod:in)
+2 -> in/IN (case)
+1 -> ./. (punct)
+
+I hope you feel beautiful today.
+
+0 -> hope/VBP (root)
+1 -> I/PRP (nsubj)
+1 -> feel/VB (ccomp)
+2 -> you/PRP (nsubj)
+2 -> beautiful/JJ (xcomp)
+2 -> today/NN (nmod:tmod)
+1 -> ./. (punct)
+
+Those who tell stories rule society.
+
+0 -> Those/DT (root)
+1 -> who/WP (ref)
+1 -> tell/VBP (acl:relcl)
+2 -> Those/DT (nsubj)
+2 -> rule/VB (ccomp)
+3 -> stories/NNS (nsubj)
+3 -> society/NN (dobj)
+1 -> ./. (punct)
+
+Faith is the bridge to dreams.
+
+0 -> bridge/NN (root)
+1 -> Faith/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> dreams/NNS (nmod:to)
+2 -> to/TO (case)
+1 -> ./. (punct)
+
+Gratitude unlocks the fullness of life.
+
+0 -> unlocks/VBZ (root)
+1 -> Gratitude/NN (nsubj)
+1 -> fullness/NN (dobj)
+2 -> the/DT (det)
+2 -> life/NN (nmod:of)
+3 -> of/IN (case)
+1 -> ./. (punct)
+
+I'm famous in my own world
+
+0 -> famous/JJ (root)
+1 -> I/PRP (nsubj)
+1 -> 'm/VBP (cop)
+1 -> world/NN (nmod:in)
+2 -> in/IN (case)
+2 -> my/PRP$ (nmod:poss)
+2 -> own/JJ (amod)
+
+Success occurs when opportunity meets preparation.
+
+0 -> occurs/VBZ (root)
+1 -> Success/NN (nsubj)
+1 -> meets/VBZ (advcl)
+2 -> when/WRB (advmod)
+2 -> opportunity/NN (nsubj)
+2 -> preparation/NN (dobj)
+1 -> ./. (punct)
+
+Positive mind; Positive vibes; Positive life.
+
+0 -> mind/NN (root)
+1 -> Positive/JJ (amod)
+1 -> ;/: (punct)
+1 -> vibes/NNS (conj)
+2 -> Positive/JJ (amod)
+1 -> ;/: (punct)
+1 -> life/NN (dep)
+2 -> Positive/JJ (amod)
+1 -> ./. (punct)
+
+Silence is the most powerful scream
+
+0 -> scream/NN (root)
+1 -> Silence/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> powerful/JJ (amod)
+2 -> most/RBS (advmod)
+
+Be a voice; Not an echo.
+
+0 -> voice/NN (root)
+1 -> Be/VB (cop)
+1 -> a/DT (det)
+1 -> ;/: (punct)
+1 -> echo/VBP (dep)
+2 -> Not/RB (neg)
+2 -> an/DT (det)
+1 -> ./. (punct)
+
+Storms make trees take deeper roots.
+
+0 -> make/VBP (root)
+1 -> Storms/NNS (nsubj)
+1 -> take/VB (ccomp)
+2 -> trees/NNS (nsubj)
+2 -> roots/NNS (dobj)
+3 -> deeper/JJR (amod)
+1 -> ./. (punct)
+
+Politics have no relation to morals.
+
+0 -> have/VBP (root)
+1 -> Politics/NNS (nsubj)
+1 -> relation/NN (dobj)
+2 -> no/DT (neg)
+2 -> morals/NNS (nmod:to)
+3 -> to/TO (case)
+1 -> ./. (punct)
+
+Be a warrior; Not a worrier.
+
+0 -> warrior/NN (root)
+1 -> Be/VB (cop)
+1 -> a/DT (det)
+1 -> ;/: (punct)
+1 -> worrier/NN (dep)
+2 -> Not/RB (neg)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+No ego; No desire; Profound happiness.
+
+0 -> ego/NN (root)
+1 -> No/DT (neg)
+1 -> ;/: (punct)
+1 -> desire/NN (dep)
+2 -> No/DT (neg)
+1 -> ;/: (punct)
+1 -> happiness/NN (dep)
+2 -> Profound/NNP (compound)
+1 -> ./. (punct)
+
+Our friendship will always come first.
+
+0 -> come/VB (root)
+1 -> friendship/NN (nsubj)
+2 -> Our/PRP$ (nmod:poss)
+1 -> will/MD (aux)
+1 -> always/RB (advmod)
+1 -> first/RB (advmod)
+1 -> ./. (punct)
+
+Winners never quit; Quitters never win.
+
+0 -> quit/VBD (root)
+1 -> Winners/NNS (nsubj)
+1 -> never/RB (neg)
+1 -> ;/: (punct)
+1 -> win/VBP (parataxis)
+2 -> Quitters/NNS (nsubj)
+2 -> never/RB (neg)
+1 -> ./. (punct)
+
+One night; Three words; Never returned.
+
+0 -> night/NN (root)
+1 -> One/CD (nummod)
+1 -> ;/: (punct)
+1 -> words/NNS (dep)
+2 -> Three/CD (nummod)
+1 -> ;/: (punct)
+1 -> returned/VBN (dep)
+2 -> Never/RB (neg)
+1 -> ./. (punct)
+
+Slow down and enjoy the coffee.
+
+0 -> Slow/VB (root)
+1 -> down/RP (compound:prt)
+1 -> and/CC (cc)
+1 -> enjoy/VB (conj:and)
+2 -> coffee/NN (dobj)
+3 -> the/DT (det)
+1 -> ./. (punct)
+
+Don't let troubles weigh you down.
+
+0 -> let/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> weigh/VB (ccomp)
+2 -> troubles/NNS (nsubj)
+2 -> you/PRP (dobj)
+2 -> down/RP (compound:prt)
+1 -> ./. (punct)
+
+If only, my "if only's", happened.
+
+0 -> happened/VBD (root)
+1 -> only/RB (advcl:if)
+2 -> If/IN (case)
+1 -> ,/, (punct)
+1 -> my/PRP$ (dep)
+1 -> ``/`` (punct)
+1 -> 's/VBZ (dep)
+2 -> if/IN (mark)
+2 -> only/RB (advmod)
+1 -> ''/'' (punct)
+1 -> ,/, (punct)
+1 -> ./. (punct)
+
+He who is patient achieves victory.
+
+0 -> achieves/VBZ (root)
+1 -> He/PRP (nsubj)
+2 -> who/WP (ref)
+2 -> patient/NN (acl:relcl)
+3 -> He/PRP (nsubj)
+3 -> is/VBZ (cop)
+1 -> victory/NN (dobj)
+1 -> ./. (punct)
+
+Idea of perfect-womanhood is perfect independence.
+
+0 -> independence/NN (root)
+1 -> Idea/NN (nsubj)
+2 -> perfect-womanhood/NN (nmod:of)
+3 -> of/IN (case)
+1 -> is/VBZ (cop)
+1 -> perfect/JJ (amod)
+1 -> ./. (punct)
+
+One eye sees, the other feels.
+
+0 -> sees/VBZ (root)
+1 -> eye/NN (nsubj)
+2 -> One/CD (nummod)
+1 -> ,/, (punct)
+1 -> feels/VBZ (ccomp)
+2 -> other/JJ (nsubj)
+3 -> the/DT (det)
+1 -> ./. (punct)
+
+Don't let idiots ruin your day.
+
+0 -> let/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> ruin/VB (ccomp)
+2 -> idiots/NNS (nsubj)
+2 -> day/NN (nmod:tmod)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Jesus also was a refugee child.
+
+0 -> child/NN (root)
+1 -> Jesus/NNP (nsubj)
+1 -> also/RB (advmod)
+1 -> was/VBD (cop)
+1 -> a/DT (det)
+1 -> refugee/NN (compound)
+1 -> ./. (punct)
+
+My timing was not on time.
+
+0 -> time/NN (root)
+1 -> timing/NN (nsubj)
+2 -> My/PRP$ (nmod:poss)
+1 -> was/VBD (cop)
+1 -> not/RB (neg)
+1 -> on/IN (case)
+1 -> ./. (punct)
+
+What if gravity turned off today?
+
+0 -> turned/VBD (root)
+1 -> What/WP (dep)
+1 -> if/IN (mark)
+1 -> gravity/NN (nsubj)
+1 -> off/RP (compound:prt)
+1 -> today/NN (nmod:tmod)
+1 -> ?/. (punct)
+
+Every moment is a fresh beginning.
+
+0 -> beginning/NN (root)
+1 -> moment/NN (nsubj)
+2 -> Every/DT (det)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> fresh/JJ (amod)
+1 -> ./. (punct)
+
+Siblings love is a priceless blessing.
+
+0 -> love/VBP (root)
+1 -> Siblings/NNS (nsubj)
+1 -> blessing/NN (ccomp)
+2 -> is/VBZ (cop)
+2 -> a/DT (det)
+2 -> priceless/JJ (amod)
+1 -> ./. (punct)
+
+Choose what you feed your mind.
+
+0 -> Choose/VB (root)
+1 -> feed/VB (ccomp)
+2 -> what/WP (dobj)
+2 -> you/PRP (nsubj)
+2 -> mind/NN (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Be more awesome than last year.
+
+0 -> awesome/JJ (root)
+1 -> Be/VB (cop)
+1 -> more/RBR (advmod)
+1 -> year/NN (nmod:than)
+2 -> than/IN (case)
+2 -> last/JJ (amod)
+1 -> ./. (punct)
+
+Mastering your self is true power.
+
+0 -> power/NN (root)
+1 -> Mastering/VBG (csubj)
+2 -> self/NN (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> is/VBZ (cop)
+1 -> true/JJ (amod)
+1 -> ./. (punct)
+
+Dream big; Start small; Act now.
+
+0 -> Dream/VB (root)
+1 -> big/JJ (xcomp)
+1 -> ;/: (punct)
+1 -> Start/NNP (dep)
+2 -> small/JJ (amod)
+2 -> ;/: (punct)
+2 -> Act/NNP (dep)
+3 -> now/RB (advmod)
+1 -> ./. (punct)
+
+Clear and innocent conscience fears nothing.
+
+0 -> fears/VBZ (root)
+1 -> conscience/NN (nsubj)
+2 -> Clear/JJ (amod)
+3 -> and/CC (cc)
+3 -> innocent/JJ (conj:and)
+2 -> innocent/JJ (amod)
+1 -> nothing/NN (dobj)
+1 -> ./. (punct)
+
+Make your own happiness a priority.
+
+0 -> Make/VB (root)
+1 -> priority/NN (xcomp)
+2 -> happiness/NN (nsubj)
+3 -> your/PRP$ (nmod:poss)
+3 -> own/JJ (amod)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+Giving up is not an option.
+
+0 -> option/NN (root)
+1 -> Giving/VBG (csubj)
+2 -> up/RP (compound:prt)
+1 -> is/VBZ (cop)
+1 -> not/RB (neg)
+1 -> an/DT (det)
+1 -> ./. (punct)
+
+Sometimes you win; Sometimes you learn.
+
+0 -> win/VBP (root)
+1 -> Sometimes/RB (advmod)
+1 -> you/PRP (nsubj)
+1 -> ;/: (punct)
+1 -> learn/VBP (parataxis)
+2 -> Sometimes/RB (advmod)
+2 -> you/PRP (nsubj)
+1 -> ./. (punct)
+
+Re-imagine your life and live wholeheartedly.
+
+0 -> Re-imagine/VB (root)
+1 -> life/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> and/CC (cc)
+1 -> live/VB (conj:and)
+2 -> wholeheartedly/RB (advmod)
+1 -> ./. (punct)
+
+Imagination actually means nothing without doing.
+
+0 -> means/VBZ (root)
+1 -> Imagination/NN (nsubj)
+1 -> actually/RB (advmod)
+1 -> nothing/NN (dobj)
+2 -> doing/VBG (acl:without)
+3 -> without/IN (mark)
+1 -> ./. (punct)
+
+How a house built a family.
+
+0 -> built/VBD (root)
+1 -> How/WRB (advmod)
+1 -> house/NN (nsubj)
+2 -> a/DT (det)
+1 -> family/NN (dobj)
+2 -> a/DT (det)
+1 -> ./. (punct)
+
+Hey little fighter; It'll be brighter.
+
+0 -> fighter/NN (root)
+1 -> Hey/UH (det)
+1 -> little/RB (amod)
+1 -> ;/: (punct)
+1 -> brighter/RBR (parataxis)
+2 -> It/PRP (nsubj)
+2 -> 'll/MD (aux)
+2 -> be/VB (cop)
+1 -> ./. (punct)
+
+Faith moves mountains; Doubt creates them.
+
+0 -> mountains/NNS (root)
+1 -> Faith/NN (compound)
+1 -> moves/NNS (compound)
+1 -> ;/: (punct)
+1 -> creates/VBZ (parataxis)
+2 -> Doubt/NNP (nsubj)
+2 -> them/PRP (dobj)
+1 -> ./. (punct)
+
+Never underestimate the power of perspective.
+
+0 -> underestimate/VB (root)
+1 -> Never/RB (neg)
+1 -> power/NN (dobj)
+2 -> the/DT (det)
+2 -> perspective/NN (nmod:of)
+3 -> of/IN (case)
+1 -> ./. (punct)
+
+Confidence is the companion of success.
+
+0 -> companion/NN (root)
+1 -> Confidence/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> success/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+The root of suffering is attachment.
+
+0 -> attachment/NN (root)
+1 -> root/NN (nsubj)
+2 -> The/DT (det)
+2 -> suffering/NN (nmod:of)
+3 -> of/IN (case)
+1 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+Officially living my happily ever after.
+
+0 -> living/VBG (root)
+1 -> Officially/RB (advmod)
+1 -> happily/RB (dobj)
+2 -> my/PRP$ (nmod:poss)
+1 -> after/IN (advmod)
+2 -> ever/RB (advmod)
+1 -> ./. (punct)
+
+He who angers you, conquers you.
+
+0 -> conquers/VBZ (root)
+1 -> He/PRP (nsubj)
+2 -> who/WP (ref)
+2 -> angers/VBZ (acl:relcl)
+3 -> He/PRP (nsubj)
+3 -> you/PRP (dobj)
+2 -> ,/, (punct)
+1 -> you/PRP (dobj)
+1 -> ./. (punct)
+
+Common sense is not so common.
+
+0 -> common/JJ (root)
+1 -> sense/NN (nsubj)
+2 -> Common/JJ (amod)
+1 -> is/VBZ (cop)
+1 -> not/RB (neg)
+1 -> so/RB (advmod)
+1 -> ./. (punct)
+
+Life is better when you're laughing
+
+0 -> better/RBR (root)
+1 -> Life/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> laughing/VBG (advcl)
+2 -> when/WRB (advmod)
+2 -> you/PRP (nsubj)
+2 -> 're/VBP (aux)
+
+Pause for a moment and reflect.
+
+0 -> Pause/NN (root)
+1 -> moment/NN (nmod:for)
+2 -> for/IN (case)
+2 -> a/DT (det)
+1 -> and/CC (cc)
+1 -> reflect/VBP (conj:and)
+1 -> ./. (punct)
+
+Dog's sweater was nicer than mine.
+
+0 -> nicer/JJR (root)
+1 -> sweater/NN (nsubj)
+2 -> Dog/NN (nmod:poss)
+3 -> 's/POS (case)
+1 -> was/VBD (cop)
+1 -> mine/NN (nmod:than)
+2 -> than/IN (case)
+1 -> ./. (punct)
+
+Some pursue happiness, you create it.
+
+0 -> create/VBP (root)
+1 -> pursue/VBP (advcl)
+2 -> Some/DT (nsubj)
+2 -> happiness/NN (dobj)
+1 -> ,/, (punct)
+1 -> you/PRP (nsubj)
+1 -> it/PRP (dobj)
+1 -> ./. (punct)
+
+Should I tweet more often daily?
+
+0 -> tweet/VB (root)
+1 -> Should/MD (aux)
+1 -> I/PRP (nsubj)
+1 -> daily/JJ (advmod)
+2 -> often/RB (advmod)
+3 -> more/RBR (advmod)
+1 -> ?/. (punct)
+
+At Christmas, all roads lead home.
+
+0 -> lead/VBP (root)
+1 -> Christmas/NNP (nmod:at)
+2 -> At/IN (case)
+1 -> ,/, (punct)
+1 -> roads/NNS (nsubj)
+2 -> all/DT (det)
+1 -> home/NN (dobj)
+1 -> ./. (punct)
+
+I hear you in every song.
+
+0 -> hear/VBP (root)
+1 -> I/PRP (nsubj)
+1 -> you/PRP (dobj)
+1 -> song/NN (nmod:in)
+2 -> in/IN (case)
+2 -> every/DT (det)
+1 -> ./. (punct)
+
+To tell the truth…I lied.
+
+0 -> tell/VB (root)
+1 -> To/TO (mark)
+1 -> truth/NN (dobj)
+2 -> the/DT (det)
+1 -> .../: (punct)
+1 -> lied/VBD (parataxis)
+2 -> I/PRP (nsubj)
+1 -> ./. (punct)
+
+We become the books we read.
+
+0 -> become/VBP (root)
+1 -> We/PRP (nsubj)
+1 -> books/NNS (xcomp)
+2 -> the/DT (det)
+2 -> read/VBP (acl:relcl)
+3 -> we/PRP (nsubj)
+1 -> ./. (punct)
+
+It's never too late to learn.
+
+0 -> late/JJ (root)
+1 -> It/PRP (nsubj)
+1 -> 's/VBZ (cop)
+1 -> never/RB (neg)
+1 -> too/RB (advmod)
+1 -> learn/VB (xcomp)
+2 -> It/PRP (nsubj:xsubj)
+2 -> to/TO (mark)
+1 -> ./. (punct)
+
+We're a speck in the universe.
+
+0 -> speck/NN (root)
+1 -> We/PRP (nsubj)
+1 -> 're/VBP (cop)
+1 -> a/DT (det)
+1 -> universe/NN (nmod:in)
+2 -> in/IN (case)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+A right delayed is right denied.
+
+0 -> denied/VBN (root)
+1 -> A/DT (nsubjpass)
+2 -> delayed/VBN (amod)
+3 -> right/JJ (advmod)
+1 -> is/VBZ (auxpass)
+1 -> right/JJ (advmod)
+1 -> ./. (punct)
+
+I will start my diet tomorrow.
+
+0 -> start/VB (root)
+1 -> I/PRP (nsubj)
+1 -> will/MD (aux)
+1 -> diet/NN (dobj)
+2 -> my/PRP$ (nmod:poss)
+1 -> tomorrow/NN (nmod:tmod)
+1 -> ./. (punct)
+
+Strong words always outlast the paper.
+
+0 -> outlast/VBP (root)
+1 -> words/NNS (nsubj)
+2 -> Strong/JJ (amod)
+1 -> always/RB (advmod)
+1 -> paper/NN (dobj)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+Judging me doesn't make you perfect.
+
+0 -> make/VB (root)
+1 -> Judging/VBG (csubj)
+2 -> me/PRP (dobj)
+1 -> does/VBZ (aux)
+1 -> n't/RB (neg)
+1 -> perfect/JJ (xcomp)
+2 -> you/PRP (nsubj)
+1 -> ./. (punct)
+
+Walk with purpose; Collide with destiny.
+
+0 -> Walk/VB (root)
+1 -> purpose/NN (nmod:with)
+2 -> with/IN (case)
+1 -> ;/: (punct)
+1 -> Collide/NNP (dep)
+2 -> destiny/NN (nmod:with)
+3 -> with/IN (case)
+1 -> ./. (punct)
+
+Done is always better than perfect.
+
+0 -> better/JJR (root)
+1 -> Done/VBN (nsubj)
+1 -> is/VBZ (cop)
+1 -> always/RB (advmod)
+1 -> perfect/JJ (advcl:than)
+2 -> than/IN (case)
+1 -> ./. (punct)
+
+People don't know their true power.
+
+0 -> know/VB (root)
+1 -> People/NNS (nsubj)
+1 -> do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> power/NN (dobj)
+2 -> their/PRP$ (nmod:poss)
+2 -> true/JJ (amod)
+1 -> ./. (punct)
+
+Just take that leap of faith.
+
+0 -> take/VB (root)
+1 -> Just/RB (advmod)
+1 -> leap/NN (dobj)
+2 -> that/DT (det)
+2 -> faith/NN (nmod:of)
+3 -> of/IN (case)
+1 -> ./. (punct)
+
+New Monday; New week; New goals.
+
+0 -> Monday/NNP (root)
+1 -> New/NNP (compound)
+1 -> ;/: (punct)
+1 -> week/NN (dep)
+2 -> New/NNP (compound)
+1 -> ;/: (punct)
+1 -> goals/NNS (dep)
+2 -> New/NNP (compound)
+1 -> ./. (punct)
+
+Success comes from commitment and consistency.
+
+0 -> comes/VBZ (root)
+1 -> Success/NN (nsubj)
+1 -> commitment/NN (nmod:from)
+2 -> from/IN (case)
+2 -> and/CC (cc)
+2 -> consistency/NN (conj:and)
+1 -> consistency/NN (nmod:from)
+1 -> ./. (punct)
+
+Refugees have no choice; You do.
+
+0 -> have/VBP (root)
+1 -> Refugees/NNS (nsubj)
+1 -> choice/NN (dobj)
+2 -> no/DT (neg)
+1 -> ;/: (punct)
+1 -> do/VBP (parataxis)
+2 -> You/PRP (nsubj)
+1 -> ./. (punct)
+
+A day to refuel your soul.
+
+0 -> day/NN (root)
+1 -> A/DT (det)
+1 -> refuel/VB (acl:to)
+2 -> to/TO (mark)
+2 -> soul/NN (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+What we think of, we become.
+
+0 -> become/VBP (root)
+1 -> think/VBP (advcl)
+2 -> What/WP (dobj)
+2 -> we/PRP (nsubj)
+2 -> of/IN (nmod)
+1 -> ,/, (punct)
+1 -> we/PRP (nsubj)
+1 -> ./. (punct)
+
+Kindness is a language everyone understands.
+
+0 -> language/NN (root)
+1 -> Kindness/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> understands/VBZ (acl:relcl)
+2 -> everyone/NN (nsubj)
+1 -> ./. (punct)
+
+Originality is nothing but judicious imitation.
+
+0 -> nothing/NN (root)
+1 -> Originality/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> but/CC (cc)
+1 -> imitation/NN (conj:but)
+2 -> judicious/JJ (amod)
+1 -> ./. (punct)
+
+Free thought; Free speech; Free press.
+
+0 -> thought/VBD (root)
+1 -> Free/NNP (nsubj)
+1 -> ;/: (punct)
+1 -> speech/NN (dep)
+2 -> Free/NNP (compound)
+2 -> ;/: (punct)
+2 -> press/NN (dep)
+3 -> Free/NNP (compound)
+1 -> ./. (punct)
+
+What we dwell on, we become.
+
+0 -> become/VBP (root)
+1 -> dwell/VBP (advcl)
+2 -> What/WP (dobj)
+2 -> we/PRP (nsubj)
+2 -> on/IN (compound:prt)
+1 -> ,/, (punct)
+1 -> we/PRP (nsubj)
+1 -> ./. (punct)
+
+Imagined adulthood; Gained adulthood; Lost imagination.
+
+0 -> adulthood/NN (root)
+1 -> Imagined/VBN (amod)
+1 -> ;/: (punct)
+1 -> adulthood/NN (dep)
+2 -> Gained/VBN (amod)
+2 -> ;/: (punct)
+2 -> imagination/NN (dep)
+3 -> Lost/VBN (amod)
+1 -> ./. (punct)
+
+Don't look for heroes, be one.
+
+0 -> look/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> heroes/NNS (nmod:for)
+2 -> for/IN (case)
+1 -> ,/, (punct)
+1 -> one/CD (dep)
+2 -> be/VB (cop)
+1 -> ./. (punct)
+
+No religion is greater than humanity.
+
+0 -> greater/JJR (root)
+1 -> religion/NN (nsubj)
+2 -> No/DT (neg)
+1 -> is/VBZ (cop)
+1 -> humanity/NN (nmod:than)
+2 -> than/IN (case)
+1 -> ./. (punct)
+
+Nature is the art of God
+
+0 -> art/NN (root)
+1 -> Nature/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> God/NNP (nmod:of)
+2 -> of/IN (case)
+
+Impossible will take a little while.
+
+0 -> take/VB (root)
+1 -> Impossible/JJ (nsubj)
+1 -> will/MD (aux)
+1 -> while/NN (dobj)
+2 -> a/DT (det)
+2 -> little/JJ (amod)
+1 -> ./. (punct)
+
+Believe in the magic of Christmas.
+
+0 -> Believe/VB (root)
+1 -> magic/NN (nmod:in)
+2 -> in/IN (case)
+2 -> the/DT (det)
+2 -> Christmas/NNP (nmod:of)
+3 -> of/IN (case)
+1 -> ./. (punct)
+
+Enjoy each day of your life.
+
+0 -> Enjoy/VB (root)
+1 -> day/NN (nmod:tmod)
+2 -> each/DT (det)
+2 -> life/NN (nmod:of)
+3 -> of/IN (case)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Choices are the hinges of destiny.
+
+0 -> hinges/NNS (root)
+1 -> Choices/NNS (nsubj)
+1 -> are/VBP (cop)
+1 -> the/DT (det)
+1 -> destiny/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Art takes nature as its model.
+
+0 -> takes/VBZ (root)
+1 -> Art/NNP (nsubj)
+1 -> nature/NN (dobj)
+1 -> model/NN (nmod:as)
+2 -> as/IN (case)
+2 -> its/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+We are unified in our humanity.
+
+0 -> unified/VBN (root)
+1 -> We/PRP (nsubjpass)
+1 -> are/VBP (auxpass)
+1 -> humanity/NN (nmod:in)
+2 -> in/IN (case)
+2 -> our/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Small things lead to great joy.
+
+0 -> lead/VBP (root)
+1 -> things/NNS (nsubj)
+2 -> Small/JJ (amod)
+1 -> joy/NN (nmod:to)
+2 -> to/TO (case)
+2 -> great/JJ (amod)
+1 -> ./. (punct)
+
+The best fighter is never angry.
+
+0 -> angry/JJ (root)
+1 -> fighter/NN (nsubj)
+2 -> The/DT (det)
+2 -> best/JJS (amod)
+1 -> is/VBZ (cop)
+1 -> never/RB (neg)
+1 -> ./. (punct)
+
+Feminism includes and concerns all genders.
+
+0 -> includes/VBZ (root)
+1 -> Feminism/NN (nsubj)
+1 -> and/CC (cc)
+1 -> concerns/VBZ (conj:and)
+2 -> Feminism/NN (nsubj)
+2 -> genders/NNS (dobj)
+3 -> all/DT (det)
+1 -> ./. (punct)
+
+Focus energies on building the new.
+
+0 -> energies/NNS (root)
+1 -> Focus/NN (compound)
+1 -> building/VBG (acl:on)
+2 -> on/IN (mark)
+2 -> new/JJ (dobj)
+3 -> the/DT (det)
+1 -> ./. (punct)
+
+Inner peace is the new success.
+
+0 -> success/NN (root)
+1 -> peace/NN (nsubj)
+2 -> Inner/JJ (amod)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> new/JJ (amod)
+1 -> ./. (punct)
+
+Travel brings power and love back.
+
+0 -> brings/VBZ (root)
+1 -> Travel/NN (nsubj)
+1 -> power/NN (dobj)
+2 -> and/CC (cc)
+2 -> love/NN (conj:and)
+1 -> love/NN (dobj)
+1 -> back/RB (advmod)
+1 -> ./. (punct)
+
+Language is the dress of thought.
+
+0 -> dress/NN (root)
+1 -> Language/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> thought/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Be a rainbow in someone's cloud.
+
+0 -> rainbow/NN (root)
+1 -> Be/VB (cop)
+1 -> a/DT (det)
+1 -> cloud/NN (nmod:in)
+2 -> in/IN (case)
+2 -> someone/NN (nmod:poss)
+3 -> 's/POS (case)
+1 -> ./. (punct)
+
+Flush out the filth you see.
+
+0 -> Flush/JJ (root)
+1 -> filth/NN (nmod:out)
+2 -> out/IN (case)
+2 -> the/DT (det)
+2 -> see/VBP (acl:relcl)
+3 -> you/PRP (nsubj)
+1 -> ./. (punct)
+
+There's a tear in my beer.
+
+0 -> 's/VBZ (root)
+1 -> There/EX (expl)
+1 -> tear/VB (nsubj)
+2 -> a/DT (det)
+2 -> beer/NN (nmod:in)
+3 -> in/IN (case)
+3 -> my/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Remember, simplicity is the ultimate sophistication.
+
+0 -> sophistication/NN (root)
+1 -> Remember/VB (ccomp)
+1 -> ,/, (punct)
+1 -> simplicity/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> ultimate/JJ (amod)
+1 -> ./. (punct)
+
+Take every chance; Stop every fear.
+
+0 -> Take/VB (root)
+1 -> chance/NN (dobj)
+2 -> every/DT (det)
+1 -> ;/: (punct)
+1 -> Stop/VB (parataxis)
+2 -> fear/NN (dobj)
+3 -> every/DT (det)
+1 -> ./. (punct)
+
+Christmas is a story of love.
+
+0 -> story/NN (root)
+1 -> Christmas/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> a/DT (det)
+1 -> love/NN (nmod:of)
+2 -> of/IN (case)
+1 -> ./. (punct)
+
+Small change makes a big difference.
+
+0 -> makes/VBZ (root)
+1 -> change/NN (nsubj)
+2 -> Small/JJ (amod)
+1 -> difference/NN (dobj)
+2 -> a/DT (det)
+2 -> big/JJ (amod)
+1 -> ./. (punct)
+
+Not all wounds are actually visible.
+
+0 -> visible/JJ (root)
+1 -> wounds/NNS (nsubj)
+2 -> Not/RB (neg)
+2 -> all/DT (det)
+1 -> are/VBP (cop)
+1 -> actually/RB (advmod)
+1 -> ./. (punct)
+
+Starve your ego; Feed your soul.
+
+0 -> Starve/VB (root)
+1 -> ego/NN (dobj)
+2 -> your/PRP$ (nmod:poss)
+1 -> ;/: (punct)
+1 -> Feed/VB (parataxis)
+2 -> soul/NN (dobj)
+3 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+Never give in; Never give up.
+
+0 -> give/VB (root)
+1 -> Never/RB (neg)
+1 -> in/IN (compound:prt)
+1 -> ;/: (punct)
+1 -> give/VB (parataxis)
+2 -> Never/RB (neg)
+2 -> up/RP (compound:prt)
+1 -> ./. (punct)
+
+Vision is the true creative rhythm.
+
+0 -> rhythm/NN (root)
+1 -> Vision/NNP (nsubj)
+1 -> is/VBZ (cop)
+1 -> the/DT (det)
+1 -> true/JJ (amod)
+1 -> creative/JJ (amod)
+1 -> ./. (punct)
+
+Best investment is investing in yourself.
+
+0 -> investing/VBG (root)
+1 -> investment/NN (nsubj)
+2 -> Best/JJS (amod)
+1 -> is/VBZ (aux)
+1 -> yourself/PRP (nmod:in)
+2 -> in/IN (case)
+1 -> ./. (punct)
+
+Never give up; Keep moving forward.
+
+0 -> give/VB (root)
+1 -> Never/RB (neg)
+1 -> up/RP (compound:prt)
+1 -> ;/: (punct)
+1 -> Keep/VB (parataxis)
+2 -> moving/VBG (xcomp)
+3 -> forward/RB (advmod)
+1 -> ./. (punct)
+
+Remember, there is no Plan[et] B.
+
+0 -> is/VBZ (root)
+1 -> Remember/VB (ccomp)
+1 -> ,/, (punct)
+1 -> there/EX (expl)
+1 -> Plan/NN (nsubj)
+2 -> no/DT (neg)
+2 -> B./NNP (dep)
+3 -> -LSB-/-LRB- (punct)
+3 -> et/FW (compound)
+3 -> -RSB-/-RRB- (punct)
+
+God knows what's best for you.
+
+0 -> knows/VBZ (root)
+1 -> God/NNP (nsubj)
+1 -> best/JJS (ccomp)
+2 -> what/WP (nsubj)
+2 -> 's/VBZ (cop)
+2 -> you/PRP (nmod:for)
+3 -> for/IN (case)
+1 -> ./. (punct)
+
+Stop stressing; Let go; Move on.
+
+0 -> Stop/VB (root)
+1 -> stressing/VBG (xcomp)
+1 -> ;/: (punct)
+1 -> Let/VB (dep)
+2 -> go/VB (dobj)
+1 -> ;/: (punct)
+1 -> Move/VB (dep)
+2 -> on/IN (compound:prt)
+1 -> ./. (punct)
+
+Start from nothing; Stop for nothing.
+
+0 -> Start/NNP (root)
+1 -> nothing/NN (nmod:from)
+2 -> from/IN (case)
+1 -> ;/: (punct)
+1 -> Stop/VB (dep)
+2 -> nothing/NN (nmod:for)
+3 -> for/IN (case)
+1 -> ./. (punct)
+
+Spread the light; Be the light.
+
+0 -> Spread/VB (root)
+1 -> light/NN (dobj)
+2 -> the/DT (det)
+1 -> ;/: (punct)
+1 -> light/NN (parataxis)
+2 -> Be/VB (cop)
+2 -> the/DT (det)
+1 -> ./. (punct)
+
+My photographic memory never fully developed.
+
+0 -> developed/VBN (root)
+1 -> memory/NN (nsubjpass)
+2 -> My/PRP$ (nmod:poss)
+2 -> photographic/JJ (amod)
+1 -> never/RB (neg)
+1 -> fully/RB (advmod)
+1 -> ./. (punct)
+
+Think; Dream; Believe; And finally dare.
+
+0 -> Think/VB (root)
+1 -> ;/: (punct)
+1 -> Dream/NN (dep)
+2 -> ;/: (punct)
+2 -> Believe/NNP (conj:and)
+2 -> ;/: (punct)
+2 -> And/CC (cc)
+2 -> dare/VB (conj:and)
+3 -> finally/RB (advmod)
+1 -> Believe/NNP (dep)
+1 -> dare/VB (dep)
+1 -> ./. (punct)
+
+Changing the world starts with yourself.
+
+0 -> starts/VBZ (root)
+1 -> Changing/VBG (csubj)
+2 -> world/NN (dobj)
+3 -> the/DT (det)
+1 -> yourself/PRP (nmod:with)
+2 -> with/IN (case)
+1 -> ./. (punct)
+
+Helping others is like helping yourself.
+
+0 -> helping/VBG (root)
+1 -> Helping/VBG (csubj)
+2 -> others/NNS (dobj)
+1 -> is/VBZ (cop)
+1 -> like/IN (mark)
+1 -> yourself/PRP (dobj)
+1 -> ./. (punct)
+
+Pain is temporary; Quitting lasts forever.
+
+0 -> temporary/JJ (root)
+1 -> Pain/NN (nsubj)
+1 -> is/VBZ (cop)
+1 -> ;/: (punct)
+1 -> Quitting/VBG (parataxis)
+2 -> lasts/VBZ (dobj)
+3 -> forever/RB (advmod)
+1 -> ./. (punct)
+
+Opportunity is disguised as hard work.
+
+0 -> disguised/VBN (root)
+1 -> Opportunity/NNP (nsubjpass)
+1 -> is/VBZ (auxpass)
+1 -> work/NN (nmod:as)
+2 -> as/IN (case)
+2 -> hard/JJ (amod)
+1 -> ./. (punct)
+
+Realizing I deserved better changed everything.
+
+0 -> Realizing/VBG (root)
+1 -> deserved/VBD (ccomp)
+2 -> I/PRP (nsubj)
+2 -> everything/NN (dobj)
+3 -> changed/VBN (amod)
+4 -> better/RB (advmod)
+1 -> ./. (punct)
+
+My perspective will create my perception.
+
+0 -> create/VB (root)
+1 -> perspective/NN (nsubj)
+2 -> My/PRP$ (nmod:poss)
+1 -> will/MD (aux)
+1 -> perception/NN (dobj)
+2 -> my/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
+We see things as we are.
+
+0 -> see/VBP (root)
+1 -> We/PRP (nsubj)
+1 -> things/NNS (dobj)
+1 -> are/VBP (advcl:as)
+2 -> as/IN (mark)
+2 -> we/PRP (nsubj)
+1 -> ./. (punct)
+
+The best revenge is massive success.
+
+0 -> success/NN (root)
+1 -> revenge/NN (nsubj)
+2 -> The/DT (det)
+2 -> best/JJS (amod)
+1 -> is/VBZ (cop)
+1 -> massive/JJ (amod)
+1 -> ./. (punct)
+
+The most precious gift is time.
+
+0 -> time/NN (root)
+1 -> gift/NN (nsubj)
+2 -> The/DT (det)
+2 -> precious/JJ (amod)
+3 -> most/RBS (advmod)
+1 -> is/VBZ (cop)
+1 -> ./. (punct)
+
+To find yourself, think for yourself.
+
+0 -> think/VB (root)
+1 -> find/VB (advcl:to)
+2 -> To/TO (mark)
+2 -> yourself/PRP (dobj)
+1 -> ,/, (punct)
+1 -> yourself/PRP (nmod:for)
+2 -> for/IN (case)
+1 -> ./. (punct)
+
+I dug until I found me.
+
+0 -> dug/VBD (root)
+1 -> I/PRP (nsubj)
+1 -> found/VBD (advcl:until)
+2 -> until/IN (mark)
+2 -> I/PRP (nsubj)
+2 -> me/PRP (dobj)
+1 -> ./. (punct)
+
+Compassion cures more sins than condemnation.
+
+0 -> cures/NNS (root)
+1 -> Compassion/NNP (compound)
+1 -> sins/NNS (dobj)
+2 -> more/RBR (amod)
+2 -> condemnation/NN (nmod:than)
+3 -> than/IN (case)
+1 -> ./. (punct)
+
+Nature co-exists when there's no ego.
+
+0 -> co-exists/NNS (root)
+1 -> Nature/NNP (compound)
+1 -> 's/VBZ (acl:relcl)
+2 -> when/WRB (advmod)
+2 -> there/EX (expl)
+2 -> ego/NN (nsubj)
+3 -> no/DT (neg)
+1 -> ./. (punct)
+
+I love the smell of possibility.
+
+0 -> love/VBP (root)
+1 -> I/PRP (nsubj)
+1 -> smell/NN (dobj)
+2 -> the/DT (det)
+2 -> possibility/NN (nmod:of)
+3 -> of/IN (case)
+1 -> ./. (punct)
+
+Don't let the dream go extinct.
+
+0 -> let/VB (root)
+1 -> Do/VBP (aux)
+1 -> n't/RB (neg)
+1 -> go/VB (ccomp)
+2 -> dream/NN (nsubj)
+3 -> the/DT (det)
+2 -> extinct/JJ (xcomp)
+1 -> ./. (punct)
+
+Love alone can overcome any obstacle.
+
+0 -> overcome/VB (root)
+1 -> Love/NN (nsubj)
+2 -> alone/RB (advmod)
+1 -> can/MD (aux)
+1 -> obstacle/NN (dobj)
+2 -> any/DT (det)
+1 -> ./. (punct)
+
+Remember, money can't buy you life.
+
+0 -> buy/VB (root)
+1 -> Remember/VB (advcl)
+1 -> ,/, (punct)
+1 -> money/NN (nsubj)
+1 -> ca/MD (aux)
+1 -> n't/RB (neg)
+1 -> you/PRP (iobj)
+1 -> life/NN (dobj)
+1 -> ./. (punct)
+
+I write because God loves stories.
+
+0 -> write/VBP (root)
+1 -> I/PRP (nsubj)
+1 -> loves/VBZ (advcl:because)
+2 -> because/IN (mark)
+2 -> God/NNP (nsubj)
+2 -> stories/NNS (dobj)
+1 -> ./. (punct)
+
+Greed kills more than the sword.
+
+0 -> kills/VBZ (root)
+1 -> Greed/NNP (nsubj)
+1 -> more/JJR (dobj)
+2 -> sword/NN (nmod:than)
+3 -> than/IN (case)
+3 -> the/DT (det)
+1 -> ./. (punct)
+
+Go where you're dreams take you.
+
+0 -> Go/VB (root)
+1 -> dreams/NNS (advcl)
+2 -> where/WRB (advmod)
+2 -> you/PRP (nsubj)
+2 -> 're/VBP (cop)
+2 -> take/VB (ccomp)
+3 -> you/PRP (dobj)
+1 -> ./. (punct)
+
+Fasting with prayer is spiritual feast.
+
+0 -> feast/NN (root)
+1 -> Fasting/VBG (csubj)
+2 -> prayer/NN (nmod:with)
+3 -> with/IN (case)
+1 -> is/VBZ (cop)
+1 -> spiritual/JJ (amod)
+1 -> ./. (punct)
+
+Travel far enough, you meet yourself.
+
+0 -> meet/VBP (root)
+1 -> Travel/NN (advcl)
+2 -> enough/RB (advmod)
+3 -> far/RB (advmod)
+1 -> ,/, (punct)
+1 -> you/PRP (nsubj)
+1 -> yourself/PRP (dobj)
+1 -> ./. (punct)
+
+The greatest gift is your family.
+
+0 -> family/NN (root)
+1 -> gift/NN (nsubj)
+2 -> The/DT (det)
+2 -> greatest/JJS (amod)
+1 -> is/VBZ (cop)
+1 -> your/PRP$ (nmod:poss)
+1 -> ./. (punct)
+
