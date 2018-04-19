@@ -1,4 +1,4 @@
-Affection; Erection; No protection; Inspection; Infection.
+Affection. Erection. No protection. Inspection. Infection.
 
 0 -> Affection/NN (root)
 1 -> ;/: (punct)
@@ -24,7 +24,7 @@ Boy smiles, magician cringes: motionless rabbit.
 2 -> motionless/JJ (amod)
 1 -> ./. (punct)
 
-Commitment issues; A breakup follows; Whatever.
+Commitment issues. A breakup follows. Whatever.
 
 0 -> issues/NNS (root)
 1 -> Commitment/NN (compound)
@@ -87,7 +87,7 @@ He said ‘I do’… he didn’t.
 2 -> n't/RB (neg)
 1 -> ./. (punct)
 
-World creates man; Man creates pizzaburger.
+World creates man. Man creates pizzaburger.
 
 0 -> creates/VBZ (root)
 1 -> World/NNP (nsubj)
@@ -98,7 +98,7 @@ World creates man; Man creates pizzaburger.
 2 -> pizzaburger/NN (dobj)
 1 -> ./. (punct)
 
-Bear Cubs; Billy Clubs; Arm Stubs.
+Bear Cubs. Billy Clubs. Arm Stubs.
 
 0 -> Cubs/NNP (root)
 1 -> Bear/NNP (compound)
@@ -110,7 +110,7 @@ Bear Cubs; Billy Clubs; Arm Stubs.
 2 -> Arm/NN (compound)
 1 -> ./. (punct)
 
-Break-up email; Pregnancy positive; Delete message.
+Break-up email. Pregnancy positive. Delete message.
 
 0 -> email/NN (root)
 1 -> Break-up/NN (compound)
@@ -122,7 +122,7 @@ Break-up email; Pregnancy positive; Delete message.
 2 -> message/NN (dobj)
 1 -> ./. (punct)
 
-Selling rifle, never used; Dropped once.
+Selling rifle, never used. Dropped once.
 
 0 -> Selling/VBG (root)
 1 -> rifle/NN (dobj)
@@ -155,7 +155,7 @@ Bullet finalized the traitor’s document exchange.
 2 -> document/NN (compound)
 1 -> ./. (punct)
 
-Baby digested; Unaware mother nurses alien.
+Baby digested. Unaware mother nurses alien.
 
 0 -> digested/VBN (root)
 1 -> Baby/NNP (nsubj)
@@ -166,7 +166,7 @@ Baby digested; Unaware mother nurses alien.
 3 -> mother/NN (compound)
 1 -> ./. (punct)
 
-Princess found; Red mushroom sales down.
+Princess found. Red mushroom sales down.
 
 0 -> found/VBD (root)
 1 -> Princess/NNP (nsubj)
@@ -200,7 +200,7 @@ His last words were "I’m innocent."
 1 -> ./. (punct)
 1 -> ''/'' (punct)
 
-Columbus tumbles off world; King refunded.
+Columbus tumbles off world. King refunded.
 
 0 -> tumbles/VBZ (root)
 1 -> Columbus/NNP (nsubj)
@@ -225,7 +225,7 @@ I’ll wait… Waiting… Still waiting… Goodbye.
 3 -> Goodbye/NNP (dep)
 1 -> ./. (punct)
 
-Smell carrots; Life of a snowman.
+Smell carrots. Life of a snowman.
 
 0 -> carrots/NNS (root)
 1 -> Smell/NN (compound)
@@ -236,7 +236,7 @@ Smell carrots; Life of a snowman.
 3 -> a/DT (det)
 1 -> ./. (punct)
 
-"Eureka!" he said; Then he vanished.
+"Eureka!" he said. Then he vanished.
 
 0 -> ``/`` (root)
 1 -> Eureka/FW (root)
@@ -262,7 +262,7 @@ Inside cupboard, naked goosebumps - husband home.
 4 -> husband/NN (compound)
 3 -> ./. (punct)
 
-Was a poet; Didn’t know it.
+Was a poet. Didn’t know it.
 
 0 -> poet/NN (root)
 1 -> Was/VBD (cop)
@@ -284,7 +284,7 @@ The end began with lipstick marks.
 2 -> lipstick/NN (compound)
 1 -> ./. (punct)
 
-One wish: live forever; Became polystyrene
+One wish: live forever. Became polystyrene
 
 0 -> wish/NN (root)
 1 -> One/CD (nummod)
@@ -306,7 +306,7 @@ Found: two swimsuits next to river.
 4 -> to/TO (mwe)
 1 -> ./. (punct)
 
-Helping the Third World; Ignoring relatives.
+Helping the Third World. Ignoring relatives.
 
 0 -> Helping/VBG (root)
 1 -> World/NNP (dobj)
@@ -317,7 +317,7 @@ Helping the Third World; Ignoring relatives.
 2 -> relatives/NNS (dobj)
 1 -> ./. (punct)
 
-God pays attention; "Whoa, my bad!"
+God pays attention. "Whoa, my bad!"
 
 0 -> pays/VBZ (root)
 1 -> God/NNP (nsubj)
@@ -343,7 +343,7 @@ For sale: Hemingway book, never opened.
 2 -> never/RB (neg)
 1 -> ./. (punct)
 
-"Virtuous brevity." She scowled, "With sex?"
+"Virtuous brevity."  She scowled, "With sex?"
 
 0 -> brevity/NN (root)
 1 -> ``/`` (punct)
@@ -390,7 +390,7 @@ Cheshire found dead, Schrödinger found guilty.
 2 -> guilty/JJ (xcomp)
 1 -> ./. (punct)
 
-Home run; Catch; eBay auction; Rich!
+Home run. Catch. eBay auction. Rich!
 
 0 -> run/NN (root)
 1 -> Home/NNP (compound)
@@ -465,7 +465,7 @@ Lost in wilderness, he found himself.
 1 -> !/. (punct)
 1 -> ''/'' (punct)
 
-Brake; Swerve; Avoid; Rear vehicle rams.
+Brake. Swerve. Avoid. Rear vehicle rams.
 
 0 -> Brake/NNP (root)
 1 -> ;/: (punct)
@@ -478,7 +478,7 @@ Brake; Swerve; Avoid; Rear vehicle rams.
 3 -> vehicle/NN (compound)
 1 -> ./. (punct)
 
-"I don’t have Police, Mr; Marijuana."
+"I don’t have Police, Mr. Marijuana."
 
 0 -> have/VB (root)
 1 -> ``/`` (punct)
@@ -493,7 +493,7 @@ Brake; Swerve; Avoid; Rear vehicle rams.
 1 -> ./. (punct)
 1 -> ''/'' (punct)
 
-Ex-wife, ex-husband are fine; Kids aren’t.
+Ex-wife, ex-husband are fine. Kids aren’t.
 
 0 -> fine/JJ (root)
 1 -> Ex-wife/NN (discourse)
@@ -506,7 +506,7 @@ Ex-wife, ex-husband are fine; Kids aren’t.
 2 -> n't/RB (neg)
 1 -> ./. (punct)
 
-Robs Bank; Gets away; Tells everyone.
+Robs Bank. Gets away. Tells everyone.
 
 0 -> Bank/NNP (root)
 1 -> Robs/NNP (compound)
@@ -518,7 +518,7 @@ Robs Bank; Gets away; Tells everyone.
 2 -> Tells/VBZ (compound)
 1 -> ./. (punct)
 
-Partied through life; All 23 years.
+Partied through life. All 23 years.
 
 0 -> Partied/VBD (root)
 1 -> life/NN (nmod:through)
@@ -529,7 +529,7 @@ Partied through life; All 23 years.
 2 -> 23/CD (nummod)
 1 -> ./. (punct)
 
-Strangers; Friends; Best friends; Lovers; Strangers.
+Strangers. Friends. Best friends. Lovers. Strangers.
 
 0 -> Strangers/NNS (root)
 1 -> ;/: (punct)
@@ -568,7 +568,7 @@ He loves her, they’re ‘just friends’.
 2 -> '/POS (case)
 1 -> ./. (punct)
 
-Wax wings, High hopes; Long fall.
+Wax wings, High hopes. Long fall.
 
 0 -> wings/NNS (root)
 1 -> Wax/NN (compound)
@@ -580,7 +580,7 @@ Wax wings, High hopes; Long fall.
 2 -> Long/JJ (amod)
 1 -> ./. (punct)
 
-Checked mousetrap; Waistcoat!? Children’s book over.
+Checked mousetrap. Waistcoat!? Children’s book over.
 
 0 -> mousetrap/NN (root)
 1 -> Checked/VBN (amod)
@@ -593,7 +593,7 @@ Checked mousetrap; Waistcoat!? Children’s book over.
 2 -> over/IN (advmod)
 2 -> ./. (punct)
 
-Following take-off, engine fails; Automatic promotion!
+Following take-off, engine fails. Automatic promotion!
 
 0 -> fails/VBZ (root)
 1 -> take-off/NN (nmod:following)
@@ -641,7 +641,7 @@ Inebriation leaves keys in odd places…refrigerator?
 2 -> refrigerator/NN (dep)
 1 -> ?/. (punct)
 
-Father taken, hero lost; Forever changed.
+Father taken, hero lost. Forever changed.
 
 0 -> taken/VBN (root)
 1 -> Father/NNP (nsubj)
@@ -665,7 +665,7 @@ I am Jedi! Wait…automatic doors…
 3 -> automatic/JJ (amod)
 2 -> .../: (punct)
 
-Lonely baby; No longer a twin.
+Lonely baby. No longer a twin.
 
 0 -> baby/NN (root)
 1 -> Lonely/JJ (amod)
@@ -676,7 +676,7 @@ Lonely baby; No longer a twin.
 2 -> a/DT (det)
 1 -> ./. (punct)
 
-Too proud; Did operation himself; Dead.
+Too proud. Did operation himself. Dead.
 
 0 -> proud/JJ (root)
 1 -> Too/RB (advmod)
@@ -709,7 +709,7 @@ Special Olympics batting tee throws no-hitter.
 1 -> no-hitter/NN (dobj)
 1 -> ./. (punct)
 
-Day before the wedding; He proposes.
+Day before the wedding. He proposes.
 
 0 -> Day/NN (root)
 1 -> wedding/NN (nmod:before)
@@ -732,7 +732,7 @@ Met her…fate intervened…tattoo remains.
 2 -> tattoo/NN (nsubj)
 1 -> ./. (punct)
 
-Kidney transplant; "Anyone seen my keys?"
+Kidney transplant. "Anyone seen my keys?"
 
 0 -> transplant/NN (root)
 1 -> Kidney/NN (compound)
@@ -745,7 +745,7 @@ Kidney transplant; "Anyone seen my keys?"
 2 -> ?/. (punct)
 1 -> ''/'' (punct)
 
-Alien prophet preaches; Holy War begins.
+Alien prophet preaches. Holy War begins.
 
 0 -> preaches/VBZ (root)
 1 -> prophet/NN (nsubj)
@@ -756,7 +756,7 @@ Alien prophet preaches; Holy War begins.
 3 -> Holy/NNP (compound)
 1 -> ./. (punct)
 
-Best friends; Get amnesia; New lovers.
+Best friends. Get amnesia. New lovers.
 
 0 -> friends/NNS (root)
 1 -> Best/JJS (amod)
@@ -779,7 +779,7 @@ When you died, Christmas died too.
 1 -> too/RB (advmod)
 1 -> ./. (punct)
 
-First heartbreak; Nineteen years wishing; Reunited!
+First heartbreak. Nineteen years wishing. Reunited!
 
 0 -> heartbreak/NN (root)
 1 -> First/JJ (amod)
@@ -830,7 +830,7 @@ Fooled him with my seven-shooter!
 2 -> my/PRP$ (nmod:poss)
 1 -> !/. (punct)
 
-Married; Till fatness do us part.
+Married. Till fatness do us part.
 
 0 -> Married/NNP (root)
 1 -> ;/: (punct)
@@ -856,7 +856,7 @@ Married; Till fatness do us part.
 1 -> ''/'' (punct)
 1 -> ?/. (punct)
 
-Home early; Whose car is that?
+Home early. Whose car is that?
 
 0 -> Home/NNP (root)
 1 -> early/RB (advmod)
@@ -867,7 +867,7 @@ Home early; Whose car is that?
 2 -> that/IN (dep)
 1 -> ?/. (punct)
 
-Two "tweenagers." One passenger seat; Darwinism.
+Two "tweenagers." One passenger seat. Darwinism.
 
 0 -> tweenagers/NNS (root)
 1 -> Two/CD (nummod)
@@ -881,7 +881,7 @@ Two "tweenagers." One passenger seat; Darwinism.
 2 -> Darwinism/NNP (dep)
 2 -> ./. (punct)
 
-Rave at swing dance; Kicked out.
+Rave at swing dance. Kicked out.
 
 0 -> Rave/VB (root)
 1 -> dance/NN (nmod:at)
@@ -903,7 +903,7 @@ Fucked when drunk, ignored when sober.
 3 -> when/WRB (advmod)
 1 -> ./. (punct)
 
-Ran behind a car; Got Exhausted.
+Ran behind a car. Got Exhausted.
 
 0 -> Ran/NN (root)
 1 -> car/NN (nmod:behind)
@@ -914,7 +914,7 @@ Ran behind a car; Got Exhausted.
 2 -> Got/NNP (compound)
 1 -> ./. (punct)
 
-21 Shots; 60 Minutes; Never 22.
+21 Shots. 60 Minutes. Never 22.
 
 0 -> Shots/NNS (root)
 1 -> 21/CD (nummod)
@@ -926,7 +926,7 @@ Ran behind a car; Got Exhausted.
 2 -> Never/RB (advmod)
 1 -> ./. (punct)
 
-Paris Hilton; Mulcher fed; Applause earned.
+Paris Hilton. Mulcher fed. Applause earned.
 
 0 -> Hilton/NNP (root)
 1 -> Paris/NNP (compound)
@@ -938,7 +938,7 @@ Paris Hilton; Mulcher fed; Applause earned.
 3 -> earned/VBN (acl)
 1 -> ./. (punct)
 
-Children find Candy Land; Dentists rejoice.
+Children find Candy Land. Dentists rejoice.
 
 0 -> find/VBP (root)
 1 -> Children/NNS (nsubj)
@@ -949,7 +949,7 @@ Children find Candy Land; Dentists rejoice.
 2 -> Dentists/NNS (nsubj)
 1 -> ./. (punct)
 
-"Play dead." Cerebral aneurysm; "Good… acting…?!"
+"Play dead." Cerebral aneurysm. "Good… acting…?!"
 
 0 -> Play/VB (root)
 1 -> ``/`` (punct)
@@ -967,7 +967,7 @@ Children find Candy Land; Dentists rejoice.
 4 -> ?!/CD (dep)
 5 -> ''/'' (punct)
 
-Cloning? No such thing; Nice mirror.
+Cloning? No such thing. Nice mirror.
 
 0 -> Cloning/NN (root)
 1 -> ?/. (punct)
@@ -979,7 +979,7 @@ Cloning? No such thing; Nice mirror.
 3 -> Nice/NNP (compound)
 2 -> ./. (punct)
 
-Great sex; Broken heart; Worth it?
+Great sex. Broken heart. Worth it?
 
 0 -> sex/NN (root)
 1 -> Great/JJ (amod)
@@ -991,7 +991,7 @@ Great sex; Broken heart; Worth it?
 2 -> Worth/NNP (compound)
 1 -> ?/. (punct)
 
-"Poignant," in Southern drawl; Movie ruined.
+"Poignant," in Southern drawl. Movie ruined.
 
 0 -> ruined/VBN (root)
 1 -> ``/`` (punct)
@@ -1005,7 +1005,7 @@ Great sex; Broken heart; Worth it?
 1 -> Movie/NN (nsubj)
 1 -> ./. (punct)
 
-Saturday night; Music, food, wine… alone.
+Saturday night. Music, food, wine… alone.
 
 0 -> night/NN (root)
 1 -> Saturday/NNP (compound)
@@ -1039,7 +1039,7 @@ Traffic blocked ambulance arrives too late.
 3 -> too/RB (advmod)
 1 -> ./. (punct)
 
-Holdup; Water pistol; Police open fire.
+Holdup. Water pistol. Police open fire.
 
 0 -> Holdup/NN (root)
 1 -> ;/: (punct)
@@ -1083,7 +1083,7 @@ Eating for two, she mistakenly thought.
 1 -> mistakenly/RB (advmod)
 1 -> ./. (punct)
 
-Dark eyes dart; Blonde boy blushes.
+Dark eyes dart. Blonde boy blushes.
 
 0 -> dart/NN (root)
 1 -> Dark/JJ (amod)
@@ -1109,7 +1109,7 @@ Operation: ‘World Peace’, misguided, says Military.
 2 -> Military/NNP (xcomp)
 1 -> ./. (punct)
 
-The party’s over;  Designated driver snockered.
+The party’s over.  Designated driver snockered.
 
 0 -> snockered/VBD (root)
 1 -> party/NN (nmod:poss)
@@ -1121,7 +1121,7 @@ The party’s over;  Designated driver snockered.
 2 -> Designated/NNP (compound)
 1 -> ./. (punct)
 
-Moved 1807 kilometers; Dad lost job.
+Moved 1807 kilometers. Dad lost job.
 
 0 -> Moved/VBN (root)
 1 -> kilometers/NNS (dobj)
@@ -1142,7 +1142,7 @@ From ugly duckling to beautiful cassoulet.
 2 -> beautiful/JJ (amod)
 1 -> ./. (punct)
 
-Paris Hilton; Mulcher fed; Applause earned.
+Paris Hilton. Mulcher fed. Applause earned.
 
 0 -> Hilton/NNP (root)
 1 -> Paris/NNP (compound)
@@ -1177,7 +1177,7 @@ Knife hidden, he rings the doorbell.
 2 -> the/DT (det)
 1 -> ./. (punct)
 
-Rooftop, looking down, let go; Fall.
+Rooftop, looking down, let go. Fall.
 
 0 -> let/VB (root)
 1 -> Rooftop/NNP (nsubj)
@@ -1190,7 +1190,7 @@ Rooftop, looking down, let go; Fall.
 1 -> Fall/NN (parataxis)
 1 -> ./. (punct)
 
-War over; Back home; Nightmares begin.
+War over. Back home. Nightmares begin.
 
 0 -> War/NN (root)
 1 -> over/IN (advmod)
@@ -1213,7 +1213,7 @@ Found true love, 857 miles away…
 3 -> 857/CD (nummod)
 1 -> .../: (punct)
 
-Won the World; Lost the Girl.
+Won the World. Lost the Girl.
 
 0 -> World/NNP (root)
 1 -> Won/NNP (compound)
@@ -1224,7 +1224,7 @@ Won the World; Lost the Girl.
 3 -> the/DT (det)
 1 -> ./. (punct)
 
-Coma; 20 years; Awake! Divorced… Suicide.
+Coma. 20 years. Awake! Divorced… Suicide.
 
 0 -> Coma/NN (root)
 1 -> ;/: (punct)
@@ -1238,7 +1238,7 @@ Coma; 20 years; Awake! Divorced… Suicide.
 2 -> Suicide/NNP (dep)
 2 -> ./. (punct)
 
-Shit; Time travel is one way.
+Shit. Time travel is one way.
 
 0 -> Shit/VBN (root)
 1 -> ;/: (punct)
@@ -1249,7 +1249,7 @@ Shit; Time travel is one way.
 2 -> one/CD (nummod)
 1 -> ./. (punct)
 
-Three bind mice; Cat had lunch.
+Three bind mice. Cat had lunch.
 
 0 -> bind/VBP (root)
 1 -> Three/CD (nsubj)
@@ -1260,7 +1260,7 @@ Three bind mice; Cat had lunch.
 2 -> lunch/NN (dobj)
 1 -> ./. (punct)
 
-She laughed; He remembered it always.
+She laughed. He remembered it always.
 
 0 -> laughed/VBD (root)
 1 -> She/PRP (nsubj)
@@ -1282,7 +1282,7 @@ Vampire hunter dozed, now sleeps un-dead.
 2 -> un-dead/JJ (xcomp)
 1 -> ./. (punct)
 
-Cat leaps from shadows; Floating feathers.
+Cat leaps from shadows. Floating feathers.
 
 0 -> leaps/VBZ (root)
 1 -> Cat/NN (nsubj)
@@ -1293,7 +1293,7 @@ Cat leaps from shadows; Floating feathers.
 2 -> Floating/VBG (amod)
 1 -> ./. (punct)
 
-Nothing to declare; Much to remember.
+Nothing to declare. Much to remember.
 
 0 -> Nothing/NN (root)
 1 -> declare/VB (acl:to)
@@ -1304,7 +1304,7 @@ Nothing to declare; Much to remember.
 3 -> to/TO (mark)
 1 -> ./. (punct)
 
-Great fiance; Crappy husband; Great cuckold.
+Great fiance. Crappy husband. Great cuckold.
 
 0 -> fiance/NN (root)
 1 -> Great/JJ (amod)
@@ -1329,7 +1329,7 @@ She whispered her last: "save yourself."
 1 -> ./. (punct)
 1 -> ''/'' (punct)
 
-Dingy room; Skirt fixed; Next customer.
+Dingy room. Skirt fixed. Next customer.
 
 0 -> room/NN (root)
 1 -> Dingy/JJ (amod)
@@ -1341,7 +1341,7 @@ Dingy room; Skirt fixed; Next customer.
 2 -> Next/JJ (amod)
 1 -> ./. (punct)
 
-Distant sails; Our home, their crusade.
+Distant sails. Our home, their crusade.
 
 0 -> sails/NNS (root)
 1 -> Distant/JJ (amod)
@@ -1363,7 +1363,7 @@ Teleportation inventor becomes hybrid: man-bugspray.
 2 -> man-bugspray/NN (dep)
 1 -> ./. (punct)
 
-Owner died; Dog pined; Cat dined.
+Owner died. Dog pined. Cat dined.
 
 0 -> died/VBD (root)
 1 -> Owner/NNP (nsubj)
@@ -1375,7 +1375,7 @@ Owner died; Dog pined; Cat dined.
 2 -> Cat/NN (nsubj)
 1 -> ./. (punct)
 
-4+ hours; Called Pfizer; Busy signal…
+4+ hours. Called Pfizer. Busy signal…
 
 0 -> 4/CD (root)
 1 -> +/CC (cc)
@@ -1388,7 +1388,7 @@ Owner died; Dog pined; Cat dined.
 2 -> Busy/JJ (amod)
 1 -> .../: (punct)
 
-Wrote note; Took pills; Now…wait.
+Wrote note. Took pills. Now…wait.
 
 0 -> Wrote/VBD (root)
 1 -> note/NN (dobj)
@@ -1401,7 +1401,7 @@ Wrote note; Took pills; Now…wait.
 2 -> .../: (punct)
 1 -> ./. (punct)
 
-YouTube star; Virtual millionaire; Parents’ basement.
+YouTube star. Virtual millionaire. Parents’ basement.
 
 0 -> star/NN (root)
 1 -> YouTube/NNP (compound)
@@ -1427,7 +1427,7 @@ Fiat lux … Fiat nox … Fiat … Crap!
 2 -> .../: (punct)
 1 -> !/. (punct)
 
-Woman eats horse; Dies of course.
+Woman eats horse. Dies of course.
 
 0 -> eats/VBZ (root)
 1 -> Woman/NNP (nsubj)
@@ -1450,7 +1450,7 @@ Roommate’s girlfriend leaves, roommate farts loudly.
 2 -> loudly/RB (advmod)
 1 -> ./. (punct)
 
-Attack, Enemy, War, Peace; Why fight?
+Attack, Enemy, War, Peace. Why fight?
 
 0 -> Attack/NN (root)
 1 -> ,/, (punct)
@@ -1464,7 +1464,7 @@ Attack, Enemy, War, Peace; Why fight?
 2 -> Why/WRB (advmod)
 1 -> ?/. (punct)
 
-High Class; Stocks Crash; Spare Change?
+High Class. Stocks Crash. Spare Change?
 
 0 -> Class/NN (root)
 1 -> High/JJ (amod)
@@ -1509,7 +1509,7 @@ Fakeout on the interstate equals disaster.
 3 -> disaster/NN (dobj)
 1 -> ./. (punct)
 
-A.I; connects to Kristen; Overwrite? Yes.
+A.I. connects to Kristen. Overwrite? Yes.
 
 0 -> A.I/NNP (root)
 1 -> ;/: (punct)
@@ -1535,7 +1535,7 @@ Gatorade shorts coach’s headset: undefeated, electrocuted.
 2 -> electrocuted/JJ (dep)
 1 -> ./. (punct)
 
-Second Date; Good-Night Kiss; Audible Fart.
+Second Date. Good-Night Kiss. Audible Fart.
 
 0 -> Date/NN (root)
 1 -> Second/JJ (amod)
@@ -1547,7 +1547,7 @@ Second Date; Good-Night Kiss; Audible Fart.
 2 -> Audible/JJ (amod)
 1 -> ./. (punct)
 
-Snow plow came; Snow angel gone.
+Snow plow came. Snow angel gone.
 
 0 -> came/VBD (root)
 1 -> plow/VB (nsubj)
@@ -1558,7 +1558,7 @@ Snow plow came; Snow angel gone.
 3 -> Snow/NNP (compound)
 1 -> ./. (punct)
 
-Empty Bassinet; Unstained Bib; Aborted Decision.
+Empty Bassinet. Unstained Bib. Aborted Decision.
 
 0 -> Bassinet/NN (root)
 1 -> Empty/JJ (amod)
@@ -1570,7 +1570,7 @@ Empty Bassinet; Unstained Bib; Aborted Decision.
 3 -> Aborted/NNP (compound)
 1 -> ./. (punct)
 
-Beach: combed; Sun: set; Gin: tonicked.
+Beach: combed. Sun: set. Gin: tonicked.
 
 0 -> Beach/NNP (root)
 1 -> :/: (punct)
@@ -1585,7 +1585,7 @@ Beach: combed; Sun: set; Gin: tonicked.
 2 -> tonicked/VBN (dep)
 1 -> ./. (punct)
 
-Found Pig; Applied Lipstick; Still Pig.
+Found Pig; Applied Lipstick. Still Pig.
 
 0 -> Pig/NN (root)
 1 -> Found/JJ (amod)
@@ -1597,7 +1597,7 @@ Found Pig; Applied Lipstick; Still Pig.
 2 -> Still/RB (advmod)
 1 -> ./. (punct)
 
-Turned left onto highway; Wrong way.
+Turned left onto highway. Wrong way.
 
 0 -> Turned/VBN (root)
 1 -> left/JJ (xcomp)
@@ -1619,7 +1619,7 @@ Murderous rooster slaughters hens: foul play!
 2 -> foul/JJ (amod)
 1 -> !/. (punct)
 
-Best friends; Circumstances change; Worst enemies.
+Best friends. Circumstances change. Worst enemies.
 
 0 -> friends/NNS (root)
 1 -> Best/JJS (amod)
@@ -1631,7 +1631,7 @@ Best friends; Circumstances change; Worst enemies.
 3 -> Worst/JJS (amod)
 1 -> ./. (punct)
 
-Wished for immortality; Became lichen; Expletive.
+Wished for immortality. Became lichen. Expletive.
 
 0 -> Wished/VBN (root)
 1 -> immortality/NN (nmod:for)
@@ -1643,7 +1643,7 @@ Wished for immortality; Became lichen; Expletive.
 2 -> Expletive/NNP (dep)
 1 -> ./. (punct)
 
-Sign on research lab: "Gone; Fission."
+Sign on research lab: "Gone. Fission."
 
 0 -> Sign/NN (root)
 1 -> lab/NN (nmod:on)
@@ -1668,7 +1668,7 @@ Chronic smoker: Reborn as tobacco tree.
 3 -> tobacco/NN (compound)
 1 -> ./. (punct)
 
-Small Fish; Big Pond; Same Expectations.
+Small Fish. Big Pond. Same Expectations.
 
 0 -> Fish/NN (root)
 1 -> Small/JJ (amod)
@@ -1680,7 +1680,7 @@ Small Fish; Big Pond; Same Expectations.
 2 -> Same/JJ (amod)
 1 -> ./. (punct)
 
-Halitosis under mistletoe; Nowhere to run.
+Halitosis under mistletoe. Nowhere to run.
 
 0 -> Halitosis/NNP (root)
 1 -> mistletoe/NN (nmod:under)
@@ -1691,7 +1691,7 @@ Halitosis under mistletoe; Nowhere to run.
 2 -> to/TO (mark)
 1 -> ./. (punct)
 
-Son born handicapped; Made me better.
+Son born handicapped. Made me better.
 
 0 -> Son/NNP (root)
 1 -> born/VBN (acl)
@@ -1702,7 +1702,7 @@ Son born handicapped; Made me better.
 3 -> me/PRP (nsubj)
 1 -> ./. (punct)
 
-Five shots; "Ha! Missed." Six shooter.
+Five shots. "Ha! Missed." Six shooter.
 
 0 -> shots/NNS (root)
 1 -> Five/CD (nummod)
@@ -1717,7 +1717,7 @@ Five shots; "Ha! Missed." Six shooter.
 3 -> Six/CD (nummod)
 3 -> ./. (punct)
 
-Nuclear winter; Frozen earth; Dig deep.
+Nuclear winter. Frozen earth. Dig deep.
 
 0 -> winter/NN (root)
 1 -> Nuclear/JJ (amod)
@@ -1729,7 +1729,7 @@ Nuclear winter; Frozen earth; Dig deep.
 2 -> deep/JJ (xcomp)
 1 -> ./. (punct)
 
-Married young; Missed all the fun.
+Married young. Missed all the fun.
 
 0 -> young/JJ (root)
 1 -> Married/JJ (amod)
@@ -1750,7 +1750,7 @@ World’s second-oldest person gets promoted.
 1 -> gets/VBZ (auxpass)
 1 -> ./. (punct)
 
-Hole in heart; Inevitable surgically postponed.
+Hole in heart. Inevitable surgically postponed.
 
 0 -> Hole/NN (root)
 1 -> heart/NN (nmod:in)
@@ -1761,7 +1761,7 @@ Hole in heart; Inevitable surgically postponed.
 2 -> surgically/RB (advmod)
 1 -> ./. (punct)
 
-Determinist drowned in meritocracy; Poor choice.
+Determinist drowned in meritocracy. Poor choice.
 
 0 -> drowned/VBD (root)
 1 -> Determinist/NNP (nsubj)
@@ -1772,7 +1772,7 @@ Determinist drowned in meritocracy; Poor choice.
 2 -> Poor/NNP (compound)
 2 -> ./. (punct)
 
-Boy met girl; Girl met bus.
+Boy met girl. Girl met bus.
 
 0 -> met/VBD (root)
 1 -> Boy/NN (nsubj)
@@ -1783,7 +1783,7 @@ Boy met girl; Girl met bus.
 2 -> bus/NN (dobj)
 1 -> ./. (punct)
 
-I leave; Dog panics; Furniture shopping.
+I leave. Dog panics. Furniture shopping.
 
 0 -> leave/VBP (root)
 1 -> I/PRP (nsubj)
@@ -1860,7 +1860,7 @@ He sighed, knowing everything is unfini
 3 -> everything/NN (dobj)
 1 -> is/VBZ (cop)
 
-Ex seeing another man; RIP denial.
+Ex seeing another man. RIP denial.
 
 0 -> Ex/FW (root)
 1 -> seeing/VBG (acl)
@@ -1871,7 +1871,7 @@ Ex seeing another man; RIP denial.
 2 -> RIP/NN (compound)
 1 -> ./. (punct)
 
-Cry myself a river; Add toaster.
+Cry myself a river. Add toaster.
 
 0 -> myself/PRP (root)
 1 -> Cry/NN (compound)
@@ -1882,7 +1882,7 @@ Cry myself a river; Add toaster.
 2 -> Add/VB (compound)
 1 -> ./. (punct)
 
-0846: Hijack; Crash; God Bless America.
+0846: Hijack. Crash. God Bless America.
 
 0 -> 0846/CD (root)
 1 -> :/: (punct)
@@ -1919,7 +1919,7 @@ Snooze button ruins best laid plans.
 1 -> laid/VBN (amod)
 1 -> ./. (punct)
 
-He loved her; She loved Jesus.
+He loved her. She loved Jesus.
 
 0 -> loved/VBD (root)
 1 -> He/PRP (nsubj)
@@ -1941,7 +1941,7 @@ Lost in fantasy, found in prison.
 3 -> in/IN (case)
 1 -> ./. (punct)
 
-Friends; Liquid confidence; Admit love; Marriage.
+Friends. Liquid confidence. Admit love. Marriage.
 
 0 -> Friends/NNPS (root)
 1 -> ;/: (punct)
@@ -1989,7 +1989,7 @@ We had everything, except for chemistry.
 2 -> the/DT (det)
 1 -> ./. (punct)
 
-Sign reads "Quicksand." He can’t read.
+Sign reads "Quicksand."  He can’t read.
 
 0 -> reads/VBZ (root)
 1 -> Sign/NN (nsubj)
@@ -2013,7 +2013,7 @@ Apathetic prophet makes a pathetic profit.
 2 -> pathetic/JJ (amod)
 1 -> ./. (punct)
 
-Mom finds razors; Can’t find excuse.
+Mom finds razors. Can’t find excuse.
 
 0 -> finds/VBZ (root)
 1 -> Mom/NN (nsubj)
@@ -2025,7 +2025,7 @@ Mom finds razors; Can’t find excuse.
 2 -> excuse/NN (dobj)
 1 -> ./. (punct)
 
-On the rocks; Scotch and marriage.
+On the rocks. Scotch and marriage.
 
 0 -> rocks/NNS (root)
 1 -> On/IN (case)
@@ -2037,7 +2037,7 @@ On the rocks; Scotch and marriage.
 1 -> marriage/NN (dep)
 1 -> ./. (punct)
 
-She - blind; Miraculous donor; He - blind.
+She - blind. Miraculous donor. He - blind.
 
 0 -> blind/JJ (root)
 1 -> She/PRP (dep)
@@ -2051,7 +2051,7 @@ She - blind; Miraculous donor; He - blind.
 1 -> -/: (punct)
 1 -> ./. (punct)
 
-Buried in a steel casket; Immortal.
+Buried in a steel casket. Immortal.
 
 0 -> Buried/VBN (root)
 1 -> casket/NN (nmod:in)
@@ -2062,7 +2062,7 @@ Buried in a steel casket; Immortal.
 1 -> Immortal/NNP (dep)
 1 -> ./. (punct)
 
-Falling off a cliff; Wet bed.
+Falling off a cliff. Wet bed.
 
 0 -> Falling/VBG (root)
 1 -> off/RP (compound:prt)
@@ -2098,7 +2098,7 @@ After carefully dismantling Chekhov’s gun, I
 1 -> ,/, (punct)
 2 -> I/PRP (root)
 
-Science fair; Black hole; Planet gone.
+Science fair. Black hole. Planet gone.
 
 0 -> fair/JJ (root)
 1 -> Science/NNP (nsubj)
@@ -2110,7 +2110,7 @@ Science fair; Black hole; Planet gone.
 3 -> Planet/NN (nsubj)
 1 -> ./. (punct)
 
-Land value never decreases; Space colonization?
+Land value never decreases. Space colonization?
 
 0 -> decreases/VBZ (root)
 1 -> value/NN (nsubj)
@@ -2132,7 +2132,7 @@ In the beginning, man created God.
 1 -> God/NNP (dobj)
 1 -> ./. (punct)
 
-Bought monkey a typewriter; Awaiting Bible.
+Bought monkey a typewriter. Awaiting Bible.
 
 0 -> monkey/NN (root)
 1 -> Bought/JJ (amod)
@@ -2143,7 +2143,7 @@ Bought monkey a typewriter; Awaiting Bible.
 2 -> Bible/NNP (dobj)
 1 -> ./. (punct)
 
-PRINT "Hello, world." Goodbye, social life.
+PRINT "Hello, world."  Goodbye, social life.
 
 0 -> PRINT/NN (root)
 1 -> Hello/UH (dep)
@@ -2169,7 +2169,7 @@ Neurons link, we learn of love.
 3 -> of/IN (case)
 1 -> ./. (punct)
 
-Shelter helps; Cold doesn’t; Death does.
+Shelter helps. Cold doesn’t. Death does.
 
 0 -> helps/VBZ (root)
 1 -> Shelter/NN (nsubj)
@@ -2182,7 +2182,7 @@ Shelter helps; Cold doesn’t; Death does.
 2 -> Death/NN (nsubj)
 1 -> ./. (punct)
 
-Country made revolver; Revolver made country.
+Country made revolver. Revolver made country.
 
 0 -> made/VBD (root)
 1 -> Country/NN (nsubj)
@@ -2193,7 +2193,7 @@ Country made revolver; Revolver made country.
 2 -> country/NN (dobj)
 1 -> ./. (punct)
 
-Red; Black; Red; Red; Black; Millionaire.
+Red. Black. Red. Red. Black. Millionaire.
 
 0 -> Red/NNP (root)
 1 -> ;/: (punct)
@@ -2208,7 +2208,7 @@ Red; Black; Red; Red; Black; Millionaire.
 3 -> Millionaire/NNP (dep)
 1 -> ./. (punct)
 
-Angel appears to Joseph; Lies big-time.
+Angel appears to Joseph. Lies big-time.
 
 0 -> appears/VBZ (root)
 1 -> Angel/NNP (nsubj)
@@ -2219,7 +2219,7 @@ Angel appears to Joseph; Lies big-time.
 2 -> big-time/JJ (xcomp)
 1 -> ./. (punct)
 
-Job application;  Skills? World of Warcraft.
+Job application.  Skills?  World of Warcraft.
 
 0 -> application/NN (root)
 1 -> Job/NNP (compound)
@@ -2231,7 +2231,7 @@ Job application;  Skills? World of Warcraft.
 3 -> of/IN (case)
 2 -> ./. (punct)
 
-Wandering Forever; No Heaven; No Hell.
+Wandering Forever. No Heaven. No Hell.
 
 0 -> Wandering/VBG (root)
 1 -> Forever/RB (advmod)
@@ -2265,7 +2265,7 @@ I moved, but my heart stayed.
 3 -> my/PRP$ (nmod:poss)
 1 -> ./. (punct)
 
-Wanted: Puppy; Must fit old collar
+Wanted: Puppy. Must fit old collar
 
 0 -> Wanted/VBN (root)
 1 -> :/: (punct)
@@ -2276,7 +2276,7 @@ Wanted: Puppy; Must fit old collar
 2 -> collar/NN (dobj)
 3 -> old/JJ (amod)
 
-Class reunion; Not invited, no class.
+Class reunion. Not invited, no class.
 
 0 -> reunion/NN (root)
 1 -> Class/NNP (compound)
@@ -2298,7 +2298,7 @@ Personality found in bottle of Jager.
 3 -> of/IN (case)
 1 -> ./. (punct)
 
-Right place; Right time; Wrong dimension.
+Right place. Right time. Wrong dimension.
 
 0 -> place/NN (root)
 1 -> Right/RB (advmod)
@@ -2310,7 +2310,7 @@ Right place; Right time; Wrong dimension.
 2 -> Wrong/JJ (amod)
 1 -> ./. (punct)
 
-The bear ate; The hiker didn’t.
+The bear ate. The hiker didn’t.
 
 0 -> ate/VBD (root)
 1 -> bear/NN (nsubj)
@@ -2390,7 +2390,7 @@ X-ray vision! Everyone’s alien but me?
 2 -> me/PRP (conj:but)
 2 -> ?/. (punct)
 
-Breaking news: World peace; Humans extinct.
+Breaking news: World peace. Humans extinct.
 
 0 -> news/NN (root)
 1 -> Breaking/VBG (amod)
@@ -2402,7 +2402,7 @@ Breaking news: World peace; Humans extinct.
 3 -> Humans/NNS (nmod:npmod)
 1 -> ./. (punct)
 
-Only voice: echo; Only friend: shadow.
+Only voice: echo. Only friend: shadow.
 
 0 -> voice/NN (root)
 1 -> Only/RB (advmod)
@@ -2415,7 +2415,7 @@ Only voice: echo; Only friend: shadow.
 3 -> shadow/NN (dep)
 1 -> ./. (punct)
 
-Birth; School; Work; Death; Cryogenics; Birth.
+Birth. School. Work. Death. Cryogenics. Birth.
 
 0 -> Birth/NN (root)
 1 -> ;/: (punct)
@@ -2440,7 +2440,7 @@ Skeptical crayonist-arsonist ignites Sienna, Italy.
 2 -> Italy/NNP (appos)
 1 -> ./. (punct)
 
-Boy; Girl; Just friends; Both unsatisfied.
+Boy. Girl. Just friends. Both unsatisfied.
 
 0 -> Boy/NN (root)
 1 -> ;/: (punct)
@@ -2453,7 +2453,7 @@ Boy; Girl; Just friends; Both unsatisfied.
 2 -> Both/CC (cc:preconj)
 1 -> ./. (punct)
 
-Lonely; New email! Spam; It’ll do.
+Lonely. New email! Spam. It’ll do.
 
 0 -> Lonely/JJ (root)
 1 -> ;/: (punct)
@@ -2467,7 +2467,7 @@ Lonely; New email! Spam; It’ll do.
 3 -> 'll/MD (aux)
 2 -> ./. (punct)
 
-Great surgeon; Needlestick injury; HIV positive.
+Great surgeon. Needlestick injury. HIV positive.
 
 0 -> surgeon/NN (root)
 1 -> Great/JJ (amod)
@@ -2479,7 +2479,7 @@ Great surgeon; Needlestick injury; HIV positive.
 2 -> HIV/NN (nmod:npmod)
 2 -> ./. (punct)
 
-Goodbye; Hurt; Numb; Hello; Joy; Repeat.
+Goodbye. Hurt. Numb. Hello. Joy. Repeat.
 
 0 -> Goodbye/NNP (root)
 1 -> ;/: (punct)
@@ -2494,7 +2494,7 @@ Goodbye; Hurt; Numb; Hello; Joy; Repeat.
 1 -> Repeat/NN (dep)
 1 -> ./. (punct)
 
-Eat nothing; Look thin; Feel fat.
+Eat nothing. Look thin. Feel fat.
 
 0 -> Eat/VB (root)
 1 -> nothing/NN (dobj)
@@ -2517,7 +2517,7 @@ Ambulances in Sicilian cross; 4 DOAs.
 2 -> 4/CD (nummod)
 1 -> ./. (punct)
 
-Jailed for rape; Gets raped there.
+Jailed for rape. Gets raped there.
 
 0 -> Jailed/VBN (root)
 1 -> rape/NN (nmod:for)
@@ -2538,7 +2538,7 @@ Homecoming queen spreads legs for votes.
 2 -> for/IN (case)
 1 -> ./. (punct)
 
-Control C; Control V; Resume; Job?
+Control C. Control V. Resume. Job?
 
 0 -> C/NN (root)
 1 -> Control/NN (compound)
@@ -2551,7 +2551,7 @@ Control C; Control V; Resume; Job?
 2 -> Job/NNP (dep)
 1 -> ?/. (punct)
 
-One night; Three words; Never returned.
+One night. Three words. Never returned.
 
 0 -> night/NN (root)
 1 -> One/CD (nummod)
@@ -2563,7 +2563,7 @@ One night; Three words; Never returned.
 2 -> Never/RB (neg)
 1 -> ./. (punct)
 
-Window shattered; Intruder shot; Keys found.
+Window shattered. Intruder shot. Keys found.
 
 0 -> shattered/VBN (root)
 1 -> Window/NN (nsubj)
@@ -2575,7 +2575,7 @@ Window shattered; Intruder shot; Keys found.
 2 -> Keys/NNP (nsubj)
 1 -> ./. (punct)
 
-Should’ve; Could’ve; Would’ve; Didn’t; Didn’t; Didn’t.
+Should’ve. Could’ve. Would’ve. Didn’t. Didn’t. Didn’t.
 
 0 -> 've/VB (root)
 1 -> Should/MD (aux)
@@ -2620,7 +2620,7 @@ Robbing the cradle, "daughter not granddaughter…"
 1 -> .../: (punct)
 1 -> ''/'' (punct)
 
-Dead man lost; Flies will find.
+Dead man lost. Flies will find.
 
 0 -> lost/VBN (root)
 1 -> man/NN (nsubj)
@@ -2655,7 +2655,7 @@ Shuttle departs moon, leaving one man.
 3 -> one/CD (nummod)
 1 -> ./. (punct)
 
-Still have her; Just miss us.
+Still have her. Just miss us.
 
 0 -> have/VB (root)
 1 -> Still/RB (advmod)
@@ -2666,7 +2666,7 @@ Still have her; Just miss us.
 2 -> us/PRP (dobj)
 1 -> ./. (punct)
 
-Second Prize; Beauty Contest; Collect…$10??
+Second Prize. Beauty Contest. Collect…$10??
 
 0 -> Prize/NNP (root)
 1 -> Second/JJ (compound)
@@ -2692,7 +2692,7 @@ Plot foiled: Supervillain’s lair in foreclosure.
 3 -> in/IN (case)
 1 -> ./. (punct)
 
-Spotted the tiger; Died on spot.
+Spotted the tiger. Died on spot.
 
 0 -> Spotted/VBN (root)
 1 -> tiger/NN (dobj)
@@ -2714,7 +2714,7 @@ First love found again, in obits.
 2 -> in/IN (case)
 1 -> ./. (punct)
 
-"I’ll do it tomorrow." Tomorrow: ditto.
+"I’ll do it tomorrow."  Tomorrow: ditto.
 
 0 -> do/VB (root)
 1 -> ``/`` (punct)
@@ -2729,7 +2729,7 @@ First love found again, in obits.
 2 -> ditto/NN (dep)
 2 -> ./. (punct)
 
-Opportunity cost; Genius; Experimented; Now average.
+Opportunity cost. Genius. Experimented. Now average.
 
 0 -> cost/NN (root)
 1 -> Opportunity/NNP (compound)
@@ -2742,7 +2742,7 @@ Opportunity cost; Genius; Experimented; Now average.
 2 -> Now/RB (advmod)
 1 -> ./. (punct)
 
-Love at first sight; Stalking conviction.
+Love at first sight. Stalking conviction.
 
 0 -> Love/NN (root)
 1 -> sight/NN (nmod:at)
@@ -2779,7 +2779,7 @@ He bottle-feeds his wife's killer.
 3 -> indefinitely/RB (advmod)
 2 -> ./. (punct)
 
-Penniless weirdo; Struck lottery; Overnight genius.
+Penniless weirdo. Struck lottery. Overnight genius.
 
 0 -> weirdo/NN (root)
 1 -> Penniless/JJ (amod)
@@ -2791,7 +2791,7 @@ Penniless weirdo; Struck lottery; Overnight genius.
 2 -> Overnight/NNP (compound)
 1 -> ./. (punct)
 
-One week retired; Then he died.
+One week retired. Then he died.
 
 0 -> retired/VBN (root)
 1 -> week/NN (nmod:npmod)
@@ -2802,7 +2802,7 @@ One week retired; Then he died.
 2 -> he/PRP (nsubj)
 1 -> ./. (punct)
 
-Rule the night; Rue the morning.
+Rule the night. Rue the morning.
 
 0 -> Rule/NN (root)
 1 -> night/NN (nmod:tmod)
@@ -2827,7 +2827,7 @@ Cowboys: "Draw!" Stick man never wins.
 2 -> never/RB (neg)
 2 -> ./. (punct)
 
-The gun fired; I fell…Black.
+The gun fired. I fell…Black.
 
 0 -> fired/VBD (root)
 1 -> gun/NN (nsubj)
@@ -2850,7 +2850,7 @@ Homecoming Queen fails to come home.
 3 -> home/NN (dobj)
 1 -> ./. (punct)
 
-Pregnancy test? Positive; Marriage proposal? Negative.
+Pregnancy test? Positive. Marriage proposal? Negative.
 
 0 -> test/NN (root)
 1 -> Pregnancy/NN (compound)
@@ -2873,7 +2873,7 @@ Loved her enough to pretend otherwise.
 3 -> otherwise/RB (advmod)
 1 -> ./. (punct)
 
-Drink to Life; Drive to Death.
+Drink to Life. Drive to Death.
 
 0 -> Drink/VB (root)
 1 -> Life/NNP (nmod:to)
@@ -2894,7 +2894,7 @@ Pocket dialed dad while smoking weed.
 2 -> smoking/NN (compound)
 1 -> ./. (punct)
 
-Driving; Cow in road; Hamburgers tonight.
+Driving. Cow in road. Hamburgers tonight.
 
 0 -> Driving/VBG (root)
 1 -> ;/: (punct)
@@ -2906,7 +2906,7 @@ Driving; Cow in road; Hamburgers tonight.
 2 -> Hamburgers/NNP (compound)
 1 -> ./. (punct)
 
-Stock market plunges; Bankers follow suit.
+Stock market plunges. Bankers follow suit.
 
 0 -> plunges/VBZ (root)
 1 -> market/NN (nsubj)
@@ -2917,7 +2917,7 @@ Stock market plunges; Bankers follow suit.
 2 -> suit/NN (dobj)
 1 -> ./. (punct)
 
-Needle Broke; Turkey Baster; Over-dosed.
+Needle Broke. Turkey Baster. Over-dosed.
 
 0 -> Broke/NNP (root)
 1 -> Needle/NNP (compound)
@@ -2959,7 +2959,7 @@ Excessive virtual life brought real hemorrhoids.
 2 -> real/JJ (amod)
 1 -> ./. (punct)
 
-"You’re wrong." "But who is happier?"
+"You’re wrong."  "But who is happier?"
 
 0 -> wrong/JJ (root)
 1 -> ``/`` (punct)
@@ -2985,7 +2985,7 @@ They died with their boots on.
 1 -> on/IN (nmod)
 1 -> ./. (punct)
 
-She worked hard; He drank harder.
+She worked hard. He drank harder.
 
 0 -> worked/VBD (root)
 1 -> She/PRP (nsubj)
@@ -2996,7 +2996,7 @@ She worked hard; He drank harder.
 2 -> harder/RBR (advmod)
 1 -> ./. (punct)
 
-Won lottery yesterday; Son died today.
+Won lottery yesterday. Son died today.
 
 0 -> lottery/NN (root)
 1 -> Won/NNP (compound)
@@ -3007,7 +3007,7 @@ Won lottery yesterday; Son died today.
 2 -> today/NN (nmod:tmod)
 1 -> ./. (punct)
 
-Rover fetched; The children ran, terrorized.
+Rover fetched. The children ran, terrorized.
 
 0 -> fetched/VBD (root)
 1 -> Rover/NNP (nsubj)
@@ -3019,7 +3019,7 @@ Rover fetched; The children ran, terrorized.
 2 -> terrorized/VBN (dep)
 1 -> ./. (punct)
 
-Obscenities on whiteboard; In Sharpie; Shit.
+Obscenities on whiteboard. In Sharpie. Shit.
 
 0 -> Obscenities/NNS (root)
 1 -> whiteboard/NN (nmod:on)
@@ -3052,7 +3052,7 @@ Magician’s saw table: Only used once…
 2 -> once/RB (advmod)
 1 -> .../: (punct)
 
-Left handed woman seeks Mr; Right.
+Left handed woman seeks Mr. Right.
 
 0 -> seeks/VBZ (root)
 1 -> woman/NN (nsubj)
@@ -3063,7 +3063,7 @@ Left handed woman seeks Mr; Right.
 1 -> Right/RB (advmod)
 1 -> ./. (punct)
 
-Seven year relationship; Two month marriage.
+Seven year relationship. Two month marriage.
 
 0 -> relationship/NN (root)
 1 -> Seven/CD (nummod)
@@ -3134,7 +3134,7 @@ Monster under bed just wants friends.
 2 -> ./. (punct)
 2 -> ''/'' (punct)
 
-Youth taunts timid pensioner; Loses inheritance.
+Youth taunts timid pensioner. Loses inheritance.
 
 0 -> taunts/NNS (root)
 1 -> Youth/NN (compound)
@@ -3145,7 +3145,7 @@ Youth taunts timid pensioner; Loses inheritance.
 2 -> inheritance/NN (dobj)
 1 -> ./. (punct)
 
-Stretchered out: arsonist; Accelerant: too effective.
+Stretchered out: arsonist. Accelerant: too effective.
 
 0 -> Stretchered/VBN (root)
 1 -> out/RP (compound:prt)
@@ -3158,7 +3158,7 @@ Stretchered out: arsonist; Accelerant: too effective.
 4 -> too/RB (advmod)
 1 -> ./. (punct)
 
-Relaxing in my closed casket; Finally.
+Relaxing in my closed casket. Finally.
 
 0 -> Relaxing/VBG (root)
 1 -> casket/NN (nmod:in)
@@ -3169,7 +3169,7 @@ Relaxing in my closed casket; Finally.
 1 -> Finally/RB (advmod)
 1 -> ./. (punct)
 
-Uniforms ring the doorbell; God, no.
+Uniforms ring the doorbell. God, no.
 
 0 -> ring/VBP (root)
 1 -> Uniforms/NNS (nsubj)
@@ -3195,7 +3195,7 @@ Never forget…me…my…love…flatline…
 1 -> flatline/JJ (dep)
 1 -> .../: (punct)
 
-Engulfed in work; Expelled from friendlists.
+Engulfed in work. Expelled from friendlists.
 
 0 -> Engulfed/VBN (root)
 1 -> work/NN (nmod:in)
@@ -3206,7 +3206,7 @@ Engulfed in work; Expelled from friendlists.
 3 -> from/IN (case)
 1 -> ./. (punct)
 
-She’s the one; I’m the never.
+She’s the one. I’m the never.
 
 0 -> one/CD (root)
 1 -> She/PRP (nsubj)
@@ -3219,7 +3219,7 @@ She’s the one; I’m the never.
 2 -> the/DT (det)
 1 -> ./. (punct)
 
-Crowd standing; Anxious groom; Empty doorway.
+Crowd standing. Anxious groom. Empty doorway.
 
 0 -> standing/NN (root)
 1 -> Crowd/NN (compound)
@@ -3231,7 +3231,7 @@ Crowd standing; Anxious groom; Empty doorway.
 3 -> Empty/JJ (amod)
 1 -> ./. (punct)
 
-Planned sick day; Blizzard; Snow day.
+Planned sick day. Blizzard. Snow day.
 
 0 -> day/NN (root)
 1 -> Planned/NNP (compound)
@@ -3243,7 +3243,7 @@ Planned sick day; Blizzard; Snow day.
 2 -> Snow/NNP (compound)
 1 -> ./. (punct)
 
-Outmaneuvered, cornered and slain; Chess kills.
+Outmaneuvered, cornered and slain. Chess kills.
 
 0 -> Outmaneuvered/VBN (root)
 1 -> ,/, (punct)
@@ -3255,7 +3255,7 @@ Outmaneuvered, cornered and slain; Chess kills.
 2 -> Chess/NNP (nsubj)
 1 -> ./. (punct)
 
-Question asked; Negative reply; Ring returned.
+Question asked. Negative reply. Ring returned.
 
 0 -> asked/VBD (root)
 1 -> Question/NN (nsubj)
@@ -3267,7 +3267,7 @@ Question asked; Negative reply; Ring returned.
 3 -> Ring/VBG (auxpass)
 1 -> ./. (punct)
 
-Fire! Stopped; Dropped; Rolled… off cliff.
+Fire! Stopped. Dropped. Rolled… off cliff.
 
 0 -> Fire/NN (root)
 1 -> !/. (punct)
@@ -3281,7 +3281,7 @@ Fire! Stopped; Dropped; Rolled… off cliff.
 4 -> off/RP (case)
 2 -> ./. (punct)
 
-Buried father today; He isn’t amused.
+Buried father today. He isn’t amused.
 
 0 -> father/NN (root)
 1 -> Buried/VBN (amod)
@@ -3371,7 +3371,7 @@ He’s RIGHT! She’s RIGHT! None tonight.
 3 -> None/NN (compound)
 3 -> ./. (punct)
 
-Will read; Wife Omitted; Boyfriend Smirks.
+Will read. Wife Omitted. Boyfriend Smirks.
 
 0 -> read/VB (root)
 1 -> Will/MD (aux)
@@ -3383,7 +3383,7 @@ Will read; Wife Omitted; Boyfriend Smirks.
 3 -> Boyfriend/NNP (compound)
 1 -> ./. (punct)
 
-Apocalypse; Last woman; Pregnant; Stillborn child.
+Apocalypse. Last woman. Pregnant. Stillborn child.
 
 0 -> Apocalypse/NN (root)
 1 -> ;/: (punct)
@@ -3396,7 +3396,7 @@ Apocalypse; Last woman; Pregnant; Stillborn child.
 3 -> Stillborn/NNP (compound)
 1 -> ./. (punct)
 
-Boy finds dinosaur; Boy goes extinct.
+Boy finds dinosaur. Boy goes extinct.
 
 0 -> finds/VBZ (root)
 1 -> Boy/NN (nsubj)
@@ -3407,7 +3407,7 @@ Boy finds dinosaur; Boy goes extinct.
 2 -> extinct/JJ (xcomp)
 1 -> ./. (punct)
 
-Millions gathered protesting death; God laughed.
+Millions gathered protesting death. God laughed.
 
 0 -> gathered/VBD (root)
 1 -> Millions/NNS (nsubj)
@@ -3430,7 +3430,7 @@ Millions gathered protesting death; God laughed.
 1 -> !/. (punct)
 1 -> ''/'' (punct)
 
-Sleeping with her; Dreaming of you.
+Sleeping with her. Dreaming of you.
 
 0 -> Sleeping/VBG (root)
 1 -> her/PRP$ (nmod:with)
@@ -3441,7 +3441,7 @@ Sleeping with her; Dreaming of you.
 3 -> of/IN (case)
 1 -> ./. (punct)
 
-Long Night; Tossed, turned; Longer day.
+Long Night. Tossed, turned. Longer day.
 
 0 -> Night/NN (root)
 1 -> Long/JJ (amod)
@@ -3454,7 +3454,7 @@ Long Night; Tossed, turned; Longer day.
 3 -> Longer/JJR (amod)
 1 -> ./. (punct)
 
-Astronaut reaches stars; No way back.
+Astronaut reaches stars. No way back.
 
 0 -> reaches/VBZ (root)
 1 -> Astronaut/NN (nsubj)
@@ -3465,7 +3465,7 @@ Astronaut reaches stars; No way back.
 2 -> back/RB (advmod)
 1 -> ./. (punct)
 
-Dry Bones; Plastic Raft; Open Ocean.
+Dry Bones. Plastic Raft. Open Ocean.
 
 0 -> Bones/NNPS (root)
 1 -> Dry/NNP (compound)
@@ -3477,7 +3477,7 @@ Dry Bones; Plastic Raft; Open Ocean.
 3 -> Open/NNP (compound)
 1 -> ./. (punct)
 
-Rejected by peers; Accepted by cat.
+Rejected by peers. Accepted by cat.
 
 0 -> Rejected/VBN (root)
 1 -> peers/NNS (nmod:by)
@@ -3497,7 +3497,7 @@ Emotional rollercoaster not worth admission price
 3 -> price/NN (dep)
 4 -> admission/NN (compound)
 
-International Playboy; Table for one, please.
+International Playboy. Table for one, please.
 
 0 -> Playboy/NNP (root)
 1 -> International/NNP (compound)
@@ -3523,7 +3523,7 @@ International Playboy; Table for one, please.
 3 -> rainbow/NN (compound)
 2 -> */SYM (punct)
 
-Am artist; Lost arms; Still artist.
+Am artist. Lost arms. Still artist.
 
 0 -> artist/NN (root)
 1 -> Am/VBP (compound)
@@ -3535,7 +3535,7 @@ Am artist; Lost arms; Still artist.
 2 -> Still/RB (advmod)
 1 -> ./. (punct)
 
-Selfless society;  Ruined by one megalomaniac.
+Selfless society.  Ruined by one megalomaniac.
 
 0 -> society/NN (root)
 1 -> Selfless/JJ (amod)
@@ -3557,7 +3557,7 @@ Man cries holding his dog’s leash.
 4 -> 's/POS (case)
 1 -> ./. (punct)
 
-Our bedroom; Two voices; I knock.
+Our bedroom. Two voices. I knock.
 
 0 -> bedroom/NN (root)
 1 -> Our/PRP$ (nmod:poss)
@@ -3569,7 +3569,7 @@ Our bedroom; Two voices; I knock.
 2 -> I/PRP (nsubj)
 1 -> ./. (punct)
 
-Bride; Car crash; Wedding postponed forever.
+Bride. Car crash. Wedding postponed forever.
 
 0 -> Bride/NN (root)
 1 -> ;/: (punct)
@@ -3581,7 +3581,7 @@ Bride; Car crash; Wedding postponed forever.
 2 -> forever/RB (advmod)
 1 -> ./. (punct)
 
-Publisher yawned; Book still a dream.
+Publisher yawned. Book still a dream.
 
 0 -> yawned/VBD (root)
 1 -> Publisher/NN (nsubj)
@@ -3592,7 +3592,7 @@ Publisher yawned; Book still a dream.
 3 -> a/DT (det)
 1 -> ./. (punct)
 
-War; Just cause? Or just ’cause?
+War. Just cause? Or just ’cause?
 
 0 -> War/NN (root)
 1 -> ;/: (punct)
@@ -3614,7 +3614,7 @@ Flea flew from Fifi for Fido.
 3 -> for/IN (case)
 1 -> ./. (punct)
 
-"Oops" he exclaimed; Brain surgeon sued.
+"Oops" he exclaimed. Brain surgeon sued.
 
 0 -> exclaimed/VBD (root)
 1 -> ``/`` (punct)
@@ -3627,7 +3627,7 @@ Flea flew from Fifi for Fido.
 3 -> Brain/NN (compound)
 1 -> ./. (punct)
 
-Jobless; Homeless; Hopeless; Lifeless; Game over.
+Jobless. Homeless. Hopeless. Lifeless. Game over.
 
 0 -> Jobless/JJ (root)
 1 -> ;/: (punct)
@@ -3641,7 +3641,7 @@ Jobless; Homeless; Hopeless; Lifeless; Game over.
 2 -> over/RP (advmod)
 1 -> ./. (punct)
 
-Free samples; Get hooked; Crack addict.
+Free samples. Get hooked. Crack addict.
 
 0 -> samples/NNS (root)
 1 -> Free/NNP (compound)
@@ -3690,7 +3690,7 @@ Peltzman effect: Bought ABS, crashed nevertheless.
 3 -> nevertheless/RB (advmod)
 1 -> ./. (punct)
 
-She’s been bitten; Only cure: Headshot.
+She’s been bitten. Only cure: Headshot.
 
 0 -> bitten/VBN (root)
 1 -> She/PRP (nsubjpass)
@@ -3703,7 +3703,7 @@ She’s been bitten; Only cure: Headshot.
 2 -> Headshot/NNP (dep)
 1 -> ./. (punct)
 
-Nomad meets Gypsy; They both settle.
+Nomad meets Gypsy. They both settle.
 
 0 -> meets/VBZ (root)
 1 -> Nomad/NNP (nsubj)
@@ -3714,7 +3714,7 @@ Nomad meets Gypsy; They both settle.
 2 -> both/DT (dep)
 1 -> ./. (punct)
 
-Found heaven; No smoking; Check please.
+Found heaven. No smoking. Check please.
 
 0 -> heaven/NN (root)
 1 -> Found/JJ (amod)
@@ -3726,7 +3726,7 @@ Found heaven; No smoking; Check please.
 2 -> Check/VB (aux)
 1 -> ./. (punct)
 
-Cute; Smart; Funny; Nice; … Republican??? Shit.
+Cute. Smart. Funny. Nice. … Republican??? Shit.
 
 0 -> Cute/JJ (root)
 1 -> ;/: (punct)
@@ -3742,7 +3742,7 @@ Cute; Smart; Funny; Nice; … Republican??? Shit.
 1 -> Shit/NNP (root)
 2 -> ./. (punct)
 
-Large Hadron Collider; Black Hole; Gone.
+Large Hadron Collider. Black Hole. Gone.
 
 0 -> Collider/NNP (root)
 1 -> Large/JJ (amod)
@@ -3754,7 +3754,7 @@ Large Hadron Collider; Black Hole; Gone.
 2 -> Gone/VBN (dep)
 1 -> ./. (punct)
 
-Torched the haystack; Found the needle.
+Torched the haystack. Found the needle.
 
 0 -> Torched/VBN (root)
 1 -> haystack/NN (dobj)
@@ -3802,7 +3802,7 @@ Past deadline, reporter finds the story.
 2 -> the/DT (det)
 1 -> ./. (punct)
 
-God pressed delete; New Big Bang.
+God pressed delete. New Big Bang.
 
 0 -> pressed/VBD (root)
 1 -> God/NNP (nsubj)
@@ -3863,7 +3863,7 @@ Car hits dog, crushes child’s world.
 4 -> 's/POS (case)
 1 -> ./. (punct)
 
-Two lovers; One parachute; No survivors.
+Two lovers. One parachute. No survivors.
 
 0 -> lovers/NNS (root)
 1 -> Two/CD (nummod)
@@ -3875,7 +3875,7 @@ Two lovers; One parachute; No survivors.
 2 -> No/DT (neg)
 1 -> ./. (punct)
 
-Deleted his number; Memorized it first.
+Deleted his number. Memorized it first.
 
 0 -> number/NN (root)
 1 -> Deleted/JJ (amod)
@@ -3897,7 +3897,7 @@ Aspartame erodes short-term… hey, Fresca!
 2 -> Fresca/NNP (appos)
 1 -> !/. (punct)
 
-Two pink lines; One cold clinic.
+Two pink lines. One cold clinic.
 
 0 -> lines/NNS (root)
 1 -> Two/CD (nummod)
@@ -3908,7 +3908,7 @@ Two pink lines; One cold clinic.
 2 -> cold/JJ (amod)
 1 -> ./. (punct)
 
-Coffee before art; Goodbye straight lines.
+Coffee before art. Goodbye straight lines.
 
 0 -> Coffee/NNP (root)
 1 -> art/NN (nmod:before)
@@ -3930,7 +3930,7 @@ Shoplifter chased into traffic; sneakers fly.
 2 -> sneakers/NNS (nsubj)
 1 -> ./. (punct)
 
-Sandcastle for sale; Limited time offer.
+Sandcastle for sale. Limited time offer.
 
 0 -> Sandcastle/NNP (root)
 1 -> sale/NN (nmod:for)
@@ -3953,7 +3953,7 @@ Quit coffee: short nails, shorter fuse.
 3 -> shorter/JJR (amod)
 1 -> ./. (punct)
 
-Alone in bed; My blanket shifts.
+Alone in bed. My blanket shifts.
 
 0 -> Alone/RB (root)
 1 -> bed/NN (nmod:in)
@@ -3964,7 +3964,7 @@ Alone in bed; My blanket shifts.
 2 -> blanket/NN (compound)
 1 -> ./. (punct)
 
-One stunt; Stuck in eternal coma.
+One stunt. Stuck in eternal coma.
 
 0 -> stunt/NN (root)
 1 -> One/CD (nummod)
@@ -3975,7 +3975,7 @@ One stunt; Stuck in eternal coma.
 3 -> eternal/JJ (amod)
 1 -> ./. (punct)
 
-Doctor gave me twenty-four hours; Yesterday.
+Doctor gave me twenty-four hours. Yesterday.
 
 0 -> gave/VBD (root)
 1 -> Doctor/NN (nsubj)
@@ -3996,7 +3996,7 @@ Woke up in front of TRAIN.
 3 -> of/IN (mwe)
 1 -> ./. (punct)
 
-Virtual Friends, Best Friends; Meet? Awkward!
+Virtual Friends, Best Friends. Meet? Awkward!
 
 0 -> Friends/NNPS (root)
 1 -> Virtual/JJ (amod)
@@ -4009,7 +4009,7 @@ Virtual Friends, Best Friends; Meet? Awkward!
 1 -> Awkward/JJ (root)
 2 -> !/. (punct)
 
-Logged out; Pulled plug; Found life.
+Logged out. Pulled plug. Found life.
 
 0 -> Logged/VBN (root)
 1 -> out/RP (compound:prt)
@@ -4021,7 +4021,7 @@ Logged out; Pulled plug; Found life.
 3 -> Found/JJ (amod)
 1 -> ./. (punct)
 
-"You’re dying." Scared; Suicide; "April fools! …"
+"You’re dying." Scared. Suicide. "April fools! …"
 
 0 -> dying/VBG (root)
 1 -> ``/`` (punct)
@@ -4040,7 +4040,7 @@ Logged out; Pulled plug; Found life.
 2 -> .../: (root)
 3 -> ''/'' (punct)
 
-Received grade on H1N1 paper; "Superfluous."
+Received grade on H1N1 paper. "Superfluous."
 
 0 -> grade/NN (root)
 1 -> Received/VBN (amod)
@@ -4092,7 +4092,7 @@ Painfully, he changed "is" to "was."
 1 -> ./. (punct)
 1 -> ''/'' (punct)
 
-Secretary enters her boss’s cabin; Promotion.
+Secretary enters her boss’s cabin. Promotion.
 
 0 -> enters/VBZ (root)
 1 -> Secretary/NNP (nsubj)
@@ -4104,7 +4104,7 @@ Secretary enters her boss’s cabin; Promotion.
 1 -> Promotion/NNP (dep)
 1 -> ./. (punct)
 
-Homeowner has gun; Burglar doesn’t; Murder?
+Homeowner has gun. Burglar doesn’t. Murder?
 
 0 -> has/VBZ (root)
 1 -> Homeowner/NN (nsubj)
@@ -4117,7 +4117,7 @@ Homeowner has gun; Burglar doesn’t; Murder?
 1 -> Murder/NN (parataxis)
 2 -> ?/. (punct)
 
-Armageddon; Last two survivors; Sex? Denied…
+Armageddon. Last two survivors. Sex? Denied…
 
 0 -> Armageddon/NNP (root)
 1 -> ;/: (punct)
@@ -4130,7 +4130,7 @@ Armageddon; Last two survivors; Sex? Denied…
 1 -> Denied/VBN (root)
 2 -> .../: (punct)
 
-She loved again; I never did.
+She loved again. I never did.
 
 0 -> loved/VBD (root)
 1 -> She/PRP (nsubj)
@@ -4152,7 +4152,7 @@ Born a twin; Graduated only child.
 3 -> only/RB (amod)
 1 -> ./. (punct)
 
-"Pig!" . Gets pulled over; "Greetings, Officer."
+"Pig!". Gets pulled over. "Greetings, Officer."
 
 0 -> Pig/NN (root)
 1 -> ``/`` (punct)
@@ -4170,7 +4170,7 @@ Born a twin; Graduated only child.
 3 -> ./. (punct)
 3 -> ''/'' (punct)
 
-New stylist; New Cut; New hat.
+New stylist. New Cut. New hat.
 
 0 -> stylist/NN (root)
 1 -> New/NNP (compound)
@@ -4228,7 +4228,7 @@ Friends with benefits = friends with detriments.
 4 -> with/IN (case)
 1 -> ./. (punct)
 
-Zombies…get guns! Forgot bullets; Damn.
+Zombies…get guns! Forgot bullets. Damn.
 
 0 -> Zombies/NNS (root)
 1 -> .../: (punct)
@@ -4241,7 +4241,7 @@ Zombies…get guns! Forgot bullets; Damn.
 2 -> Damn/NNP (dep)
 2 -> ./. (punct)
 
-Fungus from a log; Visions, Journeys.
+Fungus from a log. Visions, Journeys.
 
 0 -> Fungus/NN (root)
 1 -> log/NN (nmod:from)
@@ -4253,7 +4253,7 @@ Fungus from a log; Visions, Journeys.
 2 -> Journeys/NNPS (appos)
 1 -> ./. (punct)
 
-"Out, Bitch!" Lonely; "Come back, Love!"
+"Out, Bitch!" Lonely. "Come back, Love!"
 
 0 -> Bitch/NNP (root)
 1 -> ``/`` (punct)
@@ -4281,7 +4281,7 @@ Legless veteran begs wearing his medals.
 3 -> his/PRP$ (nmod:poss)
 1 -> ./. (punct)
 
-Foot caught; Speeding Train! … Adjacent track.
+Foot caught. Speeding Train!… Adjacent track.
 
 0 -> caught/VBD (root)
 1 -> Foot/NNP (nsubj)
@@ -4294,7 +4294,7 @@ Foot caught; Speeding Train! … Adjacent track.
 2 -> Adjacent/JJ (amod)
 2 -> ./. (punct)
 
-Nerdy kid; Rocket launcher; Bully’s gone.
+Nerdy kid. Rocket launcher. Bully’s gone.
 
 0 -> kid/NN (root)
 1 -> Nerdy/JJ (amod)
@@ -4307,7 +4307,7 @@ Nerdy kid; Rocket launcher; Bully’s gone.
 3 -> 's/POS (case)
 1 -> ./. (punct)
 
-Country song on shuffle; Button Broken.
+Country song on shuffle. Button Broken.
 
 0 -> song/NN (root)
 1 -> Country/NN (compound)
@@ -4318,7 +4318,7 @@ Country song on shuffle; Button Broken.
 2 -> Button/NNP (compound)
 1 -> ./. (punct)
 
-Three blind mice; One happy cat.
+Three blind mice. One happy cat.
 
 0 -> mice/NNS (root)
 1 -> Three/CD (nummod)
@@ -4351,7 +4351,7 @@ Moon mined, too light, no tides.
 2 -> no/DT (neg)
 1 -> ./. (punct)
 
-John, Henry, Tito, Terry; Gunshots! John.
+John, Henry, Tito, Terry. Gunshots! John.
 
 0 -> John/NNP (root)
 1 -> ,/, (punct)
@@ -4366,7 +4366,7 @@ John, Henry, Tito, Terry; Gunshots! John.
 1 -> John/NNP (root)
 2 -> ./. (punct)
 
-Beautiful, meticulous, handcrafted art; Price reduced.
+Beautiful, meticulous, handcrafted art. Price reduced.
 
 0 -> Beautiful/JJ (root)
 1 -> ,/, (punct)
@@ -4379,7 +4379,7 @@ Beautiful, meticulous, handcrafted art; Price reduced.
 2 -> Price/NNP (nsubj)
 1 -> ./. (punct)
 
-Saw her smile; Crashed the car.
+Saw her smile. Crashed the car.
 
 0 -> Saw/VBD (root)
 1 -> smile/NN (dobj)
@@ -4390,7 +4390,7 @@ Saw her smile; Crashed the car.
 3 -> the/DT (det)
 1 -> ./. (punct)
 
-Grew up; Forgot how to fly.
+Grew up. Forgot how to fly.
 
 0 -> Grew/VBD (root)
 1 -> up/RP (compound:prt)
@@ -4417,7 +4417,7 @@ Pillows? Swords, Nunchuks, Maces, and Mauls!
 2 -> Mauls/NNP (appos)
 2 -> !/. (punct)
 
-Famine; Fight; Feast; Fuck; Famine… Forever.
+Famine. Fight. Feast. Fuck. Famine… Forever.
 
 0 -> Famine/NN (root)
 1 -> ;/: (punct)
@@ -4432,7 +4432,7 @@ Famine; Fight; Feast; Fuck; Famine… Forever.
 2 -> Forever/RB (dep)
 1 -> ./. (punct)
 
-Cannibal cook ruins dinner; Now dinner.
+Cannibal cook ruins dinner. Now dinner.
 
 0 -> dinner/NN (root)
 1 -> Cannibal/NNP (compound)
@@ -4443,7 +4443,7 @@ Cannibal cook ruins dinner; Now dinner.
 2 -> Now/RB (advmod)
 1 -> ./. (punct)
 
-Diamond ring; Perfect wedding; Worst marriage.
+Diamond ring. Perfect wedding. Worst marriage.
 
 0 -> ring/NN (root)
 1 -> Diamond/NNP (compound)
@@ -4455,7 +4455,7 @@ Diamond ring; Perfect wedding; Worst marriage.
 2 -> Worst/JJS (amod)
 1 -> ./. (punct)
 
-Dreamt of flying; Crashed into reality.
+Dreamt of flying. Crashed into reality.
 
 0 -> Dreamt/NN (root)
 1 -> flying/VBG (nmod:of)
@@ -4479,7 +4479,7 @@ She’s his love; he’s her wallet.
 2 -> her/PRP$ (nmod:poss)
 1 -> ./. (punct)
 
-Underwater collector; Bad lover; Lone shark.
+Underwater collector. Bad lover. Lone shark.
 
 0 -> collector/NN (root)
 1 -> Underwater/JJ (amod)
@@ -4491,7 +4491,7 @@ Underwater collector; Bad lover; Lone shark.
 2 -> Lone/NNP (compound)
 1 -> ./. (punct)
 
-Followed my heart; Stalking conviction followed.
+Followed my heart. Stalking conviction followed.
 
 0 -> Followed/VBN (root)
 1 -> heart/NN (dobj)
@@ -4502,7 +4502,7 @@ Followed my heart; Stalking conviction followed.
 3 -> Stalking/VBG (amod)
 1 -> ./. (punct)
 
-Judge said innocent; Public said guilty.
+Judge said innocent. Public said guilty.
 
 0 -> said/VBD (root)
 1 -> Judge/NNP (nsubj)
@@ -4513,7 +4513,7 @@ Judge said innocent; Public said guilty.
 2 -> guilty/JJ (xcomp)
 1 -> ./. (punct)
 
-Iced the dame; Knew too much.
+Iced the dame. Knew too much.
 
 0 -> Iced/VBN (root)
 1 -> dame/NN (dobj)
@@ -4548,7 +4548,7 @@ Lesbian vampire: "See you next month."
 1 -> ./. (punct)
 1 -> ''/'' (punct)
 
-Purchased monkey; Shipping error; Smelly package.
+Purchased monkey. Shipping error. Smelly package.
 
 0 -> monkey/NN (root)
 1 -> Purchased/VBN (amod)
@@ -4560,7 +4560,7 @@ Purchased monkey; Shipping error; Smelly package.
 2 -> Smelly/NNP (compound)
 1 -> ./. (punct)
 
-Lonely man; Artificial intelligence; Lonely machine.
+Lonely man. Artificial intelligence. Lonely machine.
 
 0 -> man/NN (root)
 1 -> Lonely/JJ (amod)
@@ -4597,7 +4597,7 @@ Masterpiece… Forgotten… Died… Remembered… Celebrated… Worshiped.
 4 -> Worshiped/JJ (dep)
 1 -> ./. (punct)
 
-His dog, her cat; Dog gone!
+His dog, her cat. Dog gone!
 
 0 -> dog/NN (root)
 1 -> His/PRP$ (nmod:poss)
@@ -4631,7 +4631,7 @@ Under the covers, over the monsters.
 2 -> the/DT (det)
 1 -> ./. (punct)
 
-Planet cools; Cells divide; Gods metastasize.
+Planet cools. Cells divide. Gods metastasize.
 
 0 -> cools/VBZ (root)
 1 -> Planet/NN (nsubj)
@@ -4643,7 +4643,7 @@ Planet cools; Cells divide; Gods metastasize.
 2 -> Gods/NNS (nsubj)
 1 -> ./. (punct)
 
-Family ties; War zones; Pretence Pretence.
+Family ties. War zones. Pretence Pretence.
 
 0 -> ties/NNS (root)
 1 -> Family/NNP (compound)
@@ -4655,7 +4655,7 @@ Family ties; War zones; Pretence Pretence.
 2 -> Pretence/NNP (compound)
 1 -> ./. (punct)
 
-Failed suicide attempt; Paralyzed; Suffer life.
+Failed suicide attempt. Paralyzed. Suffer life.
 
 0 -> attempt/NN (root)
 1 -> Failed/VBN (amod)
@@ -4678,7 +4678,7 @@ Time travel paradox: Prevented Big Bang.
 2 -> Big/NNP (compound)
 1 -> ./. (punct)
 
-Spent rent money; On tequila; Again.
+Spent rent money. On tequila. Again.
 
 0 -> money/NN (root)
 1 -> Spent/JJ (amod)
@@ -4702,7 +4702,7 @@ We’re only married because it’s easy.
 2 -> 's/VBZ (cop)
 1 -> ./. (punct)
 
-Jock; Nerd; Freak; Dancer; Singer; Friends?
+Jock. Nerd. Freak. Dancer. Singer. Friends?
 
 0 -> Jock/NN (root)
 1 -> ;/: (punct)
@@ -4727,7 +4727,7 @@ Vain vampire adores void in mirror.
 2 -> in/IN (case)
 1 -> ./. (punct)
 
-19 then 30; Lost best years.
+19 then 30. Lost best years.
 
 0 -> 19/CD (root)
 1 -> 30/CD (dep)
@@ -4752,7 +4752,7 @@ Chapter One: Coughin’. Chapter Two: Coffin.
 2 -> Coffin/NN (dep)
 2 -> ./. (punct)
 
-Masquerade party; I pose as reveler.
+Masquerade party. I pose as reveler.
 
 0 -> Masquerade/VB (root)
 1 -> party/NN (dobj)
@@ -4763,7 +4763,7 @@ Masquerade party; I pose as reveler.
 3 -> as/IN (case)
 1 -> ./. (punct)
 
-Fetus, age: twenty; Parasite in brother.
+Fetus, age: twenty. Parasite in brother.
 
 0 -> Fetus/NN (root)
 1 -> ,/, (punct)
@@ -4786,7 +4786,7 @@ Bearded pensioner held over yuletide break-ins.
 3 -> yuletide/NN (compound)
 1 -> ./. (punct)
 
-Disputes between nations; Sorrow among families.
+Disputes between nations. Sorrow among families.
 
 0 -> Disputes/NNS (root)
 1 -> nations/NNS (nmod:between)
@@ -4835,7 +4835,7 @@ Donner, party of five? Dinner’s ready.
 3 -> 's/POS (case)
 2 -> ./. (punct)
 
-Misleadingly deep puddle; Curious child missing.
+Misleadingly deep puddle. Curious child missing.
 
 0 -> puddle/NN (root)
 1 -> deep/JJ (amod)
@@ -4846,7 +4846,7 @@ Misleadingly deep puddle; Curious child missing.
 2 -> missing/VBG (acl)
 1 -> ./. (punct)
 
-Poked hole in condom; He’s mine.
+Poked hole in condom. He’s mine.
 
 0 -> hole/NN (root)
 1 -> Poked/VBN (amod)
@@ -4869,7 +4869,7 @@ Used vice-grip; now in hot water.
 2 -> hot/JJ (amod)
 1 -> ./. (punct)
 
-Narcissist falls for clone; True Love.
+Narcissist falls for clone. True Love.
 
 0 -> falls/VBZ (root)
 1 -> Narcissist/NN (nsubj)
@@ -4880,7 +4880,7 @@ Narcissist falls for clone; True Love.
 2 -> True/JJ (amod)
 1 -> ./. (punct)
 
-She merely smiled; His world stopped.
+She merely smiled. His world stopped.
 
 0 -> smiled/VBD (root)
 1 -> She/PRP (nsubj)
@@ -4891,7 +4891,7 @@ She merely smiled; His world stopped.
 3 -> His/PRP$ (nmod:poss)
 1 -> ./. (punct)
 
-Experimental failure; Vegan Zombie; Earth Saved!
+Experimental failure. Vegan Zombie. Earth Saved!
 
 0 -> failure/NN (root)
 1 -> Experimental/JJ (amod)
@@ -4914,7 +4914,7 @@ She loved cigarettes… more than life…
 3 -> than/IN (case)
 1 -> .../: (punct)
 
-Tree falls; Alone, crying for help.
+Tree falls. Alone, crying for help.
 
 0 -> falls/VBZ (root)
 1 -> Tree/NN (nsubj)
@@ -4947,7 +4947,7 @@ The same sky, but worlds apart.
 2 -> apart/RB (advmod)
 1 -> ./. (punct)
 
-Bad hangover; Misses flight; September 11th.
+Bad hangover. Misses flight. September 11th.
 
 0 -> hangover/NN (root)
 1 -> Bad/JJ (amod)
@@ -4973,7 +4973,7 @@ Bad hangover; Misses flight; September 11th.
 2 -> colorblind/JJ (amod)
 2 -> ''/'' (punct)
 
-You + I; A tragic miscalculation.
+You + I. A tragic miscalculation.
 
 0 -> You/PRP (root)
 1 -> +/CC (cc)
@@ -4984,7 +4984,7 @@ You + I; A tragic miscalculation.
 2 -> tragic/JJ (amod)
 1 -> ./. (punct)
 
-Man visits often; Rumors; Just carpool.
+Man visits often. Rumors. Just carpool.
 
 0 -> visits/NNS (root)
 1 -> Man/NN (compound)
@@ -4996,7 +4996,7 @@ Man visits often; Rumors; Just carpool.
 2 -> Just/RB (advmod)
 1 -> ./. (punct)
 
-One candle, unattended; Only ashes remain.
+One candle, unattended. Only ashes remain.
 
 0 -> candle/NN (root)
 1 -> One/CD (nummod)
@@ -5008,7 +5008,7 @@ One candle, unattended; Only ashes remain.
 3 -> Only/RB (advmod)
 1 -> ./. (punct)
 
-Wind blows; Sails fill; Journey begins.
+Wind blows. Sails fill. Journey begins.
 
 0 -> blows/NNS (root)
 1 -> Wind/NN (compound)
@@ -5020,7 +5020,7 @@ Wind blows; Sails fill; Journey begins.
 2 -> Journey/NN (nsubj)
 1 -> ./. (punct)
 
-A thousand wrinkles; A thousand stories.
+A thousand wrinkles. A thousand stories.
 
 0 -> wrinkles/NNS (root)
 1 -> A/DT (det)
@@ -5031,7 +5031,7 @@ A thousand wrinkles; A thousand stories.
 2 -> thousand/CD (nummod)
 1 -> ./. (punct)
 
-Free rent; Three squares; Maximum Security.
+Free rent. Three squares. Maximum Security.
 
 0 -> rent/NN (root)
 1 -> Free/NNP (compound)
@@ -5065,7 +5065,7 @@ Nightstand pen missing - story idea evaporates.
 2 -> story/NN (compound)
 1 -> ./. (punct)
 
-Pregnant wife rolls snake-eyes; Why, Vegas?
+Pregnant wife rolls snake-eyes. Why, Vegas?
 
 0 -> snake-eyes/NNS (root)
 1 -> Pregnant/JJ (amod)
@@ -5088,7 +5088,7 @@ Drank pesticide, killed butterflies in stomach.
 2 -> in/IN (case)
 1 -> ./. (punct)
 
-They lived happily ever after; Separately.
+They lived happily ever after. Separately.
 
 0 -> lived/VBD (root)
 1 -> They/PRP (nsubj)
@@ -5112,7 +5112,7 @@ They lived happily ever after; Separately.
 1 -> God/NNP (nsubj)
 1 -> ./. (punct)
 
-Pandora opened his box; How unfortunate.
+Pandora opened his box. How unfortunate.
 
 0 -> opened/VBD (root)
 1 -> Pandora/NNP (nsubj)
@@ -5134,7 +5134,7 @@ Teacher loses answer book …panic ensues.
 2 -> panic/NN (nsubj)
 1 -> ./. (punct)
 
-Bitter taste; Swollen lips; Bye lover.
+Bitter taste. Swollen lips. Bye lover.
 
 0 -> taste/NN (root)
 1 -> Bitter/JJ (amod)
@@ -5146,7 +5146,7 @@ Bitter taste; Swollen lips; Bye lover.
 2 -> Bye/NNP (compound)
 1 -> ./. (punct)
 
-Urinating marines; Our pride, pissed away.
+Urinating marines. Our pride, pissed away.
 
 0 -> Urinating/VBG (root)
 1 -> marines/NNS (dobj)
@@ -5158,7 +5158,7 @@ Urinating marines; Our pride, pissed away.
 3 -> away/RB (advmod)
 1 -> ./. (punct)
 
-Shook me all night long; Snorer
+Shook me all night long. Snorer
 
 0 -> Shook/VB (root)
 1 -> me/PRP (dobj)
@@ -5168,7 +5168,7 @@ Shook me all night long; Snorer
 1 -> ;/: (punct)
 1 -> Snorer/NNP (dep)
 
-Obituary column writer dies; Nobody notices.
+Obituary column writer dies. Nobody notices.
 
 0 -> dies/VBZ (root)
 1 -> writer/NN (nsubj)
@@ -5179,7 +5179,7 @@ Obituary column writer dies; Nobody notices.
 2 -> Nobody/NN (compound)
 1 -> ./. (punct)
 
-Pyrophobe blows out candle; Also nyctophobic.
+Pyrophobe blows out candle. Also nyctophobic.
 
 0 -> blows/NNS (root)
 1 -> Pyrophobe/NN (compound)
@@ -5190,7 +5190,7 @@ Pyrophobe blows out candle; Also nyctophobic.
 2 -> Also/RB (advmod)
 1 -> ./. (punct)
 
-Smoking my very last cigarette; Again.
+Smoking my very last cigarette. Again.
 
 0 -> Smoking/VBG (root)
 1 -> cigarette/NN (dobj)
@@ -5201,7 +5201,7 @@ Smoking my very last cigarette; Again.
 1 -> Again/RB (advmod)
 1 -> ./. (punct)
 
-Hang-up call; Husband nervous; Mistress sighs.
+Hang-up call. Husband nervous. Mistress sighs.
 
 0 -> call/NN (root)
 1 -> Hang-up/JJ (amod)
@@ -5213,7 +5213,7 @@ Hang-up call; Husband nervous; Mistress sighs.
 2 -> Mistress/NNP (nsubj)
 1 -> ./. (punct)
 
-Classic detective case; Culprit? The detective…
+Classic detective case. Culprit? The detective…
 
 0 -> case/NN (root)
 1 -> Classic/JJ (amod)
@@ -5235,7 +5235,7 @@ Single shy zombie seeks terminal necrophiliac.
 2 -> terminal/JJ (amod)
 1 -> ./. (punct)
 
-Tuesday, I find love; Always Monday.
+Tuesday, I find love. Always Monday.
 
 0 -> find/VBP (root)
 1 -> Tuesday/NNP (nmod:tmod)
@@ -5258,7 +5258,7 @@ Stoned man hallucinating, writes holy book.
 2 -> holy/JJ (amod)
 1 -> ./. (punct)
 
-Man steals some watches; Gets time.
+Man steals some watches. Gets time.
 
 0 -> steals/VBZ (root)
 1 -> Man/NN (nsubj)
@@ -5279,7 +5279,7 @@ Falling snow erases more than footprints.
 3 -> than/IN (case)
 1 -> ./. (punct)
 
-Seven dead explorers; Snake slithers away.
+Seven dead explorers. Snake slithers away.
 
 0 -> explorers/NNS (root)
 1 -> Seven/CD (nummod)
@@ -5301,7 +5301,7 @@ It cost too much, staying human.
 2 -> human/JJ (xcomp)
 1 -> ./. (punct)
 
-Blind date; Wrong restaurant; Missed destiny.
+Blind date. Wrong restaurant. Missed destiny.
 
 0 -> date/NN (root)
 1 -> Blind/NNP (compound)
@@ -5323,7 +5323,7 @@ Cat shit in her zen garden.
 2 -> zen/NN (compound)
 1 -> ./. (punct)
 
-Cupid’s arrow poisoned; Necrophilia laws changed.
+Cupid’s arrow poisoned. Necrophilia laws changed.
 
 0 -> poisoned/VBN (root)
 1 -> arrow/NN (nsubj)
@@ -5335,7 +5335,7 @@ Cupid’s arrow poisoned; Necrophilia laws changed.
 3 -> Necrophilia/NNP (compound)
 1 -> ./. (punct)
 
-Steel Warriors; Master’s bidding; "Robots Rise!"
+Steel Warriors. Master’s bidding. "Robots Rise!"
 
 0 -> Warriors/NNS (root)
 1 -> Steel/NNP (compound)
@@ -5350,7 +5350,7 @@ Steel Warriors; Master’s bidding; "Robots Rise!"
 1 -> !/. (punct)
 1 -> ''/'' (punct)
 
-Vehicle swerves; Alcohol flavored regret; Homicide.
+Vehicle swerves. Alcohol flavored regret. Homicide.
 
 0 -> swerves/VBZ (root)
 1 -> Vehicle/NNP (nsubj)
@@ -5394,7 +5394,7 @@ His last twenty dollars on red.
 2 -> on/IN (case)
 1 -> ./. (punct)
 
-Absent-minded grandma opens cupboard; Inside… skeleton.
+Absent-minded grandma opens cupboard. Inside… skeleton.
 
 0 -> opens/VBZ (root)
 1 -> grandma/NN (nsubj)
@@ -5420,7 +5420,7 @@ Absent-minded grandma opens cupboard; Inside… skeleton.
 1 -> ./. (punct)
 1 -> ''/'' (punct)
 
-Masturbated during childbirth documentary; Failed Sex-Ed.
+Masturbated during childbirth documentary. Failed Sex-Ed.
 
 0 -> Masturbated/VBN (root)
 1 -> documentary/NN (nmod:during)
@@ -5465,7 +5465,7 @@ Undercover boss given away by cameras.
 3 -> by/IN (case)
 1 -> ./. (punct)
 
-Last human; Wrong Planet; Alien Delicacy.
+Last human. Wrong Planet. Alien Delicacy.
 
 0 -> human/JJ (root)
 1 -> Last/JJ (amod)
@@ -5477,7 +5477,7 @@ Last human; Wrong Planet; Alien Delicacy.
 2 -> Alien/NNP (compound)
 1 -> ./. (punct)
 
-New planet; Hope rekindled; Slumberers awaken.
+New planet. Hope rekindled. Slumberers awaken.
 
 0 -> planet/NN (root)
 1 -> New/NNP (compound)
@@ -5500,7 +5500,7 @@ Cheating wife fortunate: kids resemble her.
 2 -> her/PRP (xcomp)
 1 -> ./. (punct)
 
-We're lying in bed; She's lying.
+We're lying in bed. She's lying.
 
 0 -> lying/VBG (root)
 1 -> We/PRP (nsubj)
@@ -5574,7 +5574,7 @@ Emo cowboys draw weapons, shoot themselves.
 2 -> themselves/PRP (dobj)
 1 -> ./. (punct)
 
-"Congratulations! Boy or Girl?" " …I’m overweight…"
+"Congratulations! Boy or Girl?" "…I’m overweight…"
 
 0 -> Congratulations/NNS (root)
 1 -> ``/`` (punct)
@@ -5592,7 +5592,7 @@ Emo cowboys draw weapons, shoot themselves.
 3 -> .../: (punct)
 3 -> ''/'' (punct)
 
-No stars; Light pollution; Bullets; Stars.
+No stars. Light pollution. Bullets. Stars.
 
 0 -> stars/NNS (root)
 1 -> No/DT (neg)
@@ -5605,7 +5605,7 @@ No stars; Light pollution; Bullets; Stars.
 2 -> Stars/NNP (conj)
 1 -> ./. (punct)
 
-Buried on Monday; Dies on Tuesday.
+Buried on Monday. Dies on Tuesday.
 
 0 -> Buried/VBN (root)
 1 -> Monday/NNP (nmod:on)
@@ -5616,7 +5616,7 @@ Buried on Monday; Dies on Tuesday.
 3 -> on/IN (case)
 1 -> ./. (punct)
 
-Gripping terror; agony; Unscheduled server maintenance.
+Gripping terror; agony. Unscheduled server maintenance.
 
 0 -> terror/NN (root)
 1 -> Gripping/JJ (amod)
@@ -5628,7 +5628,7 @@ Gripping terror; agony; Unscheduled server maintenance.
 2 -> server/NN (compound)
 1 -> ./. (punct)
 
-Fork in road; Knife in back.
+Fork in road. Knife in back.
 
 0 -> Fork/NN (root)
 1 -> road/NN (nmod:in)
@@ -5649,7 +5649,7 @@ Most likely to succeed shot himself.
 3 -> himself/PRP (nmod:npmod)
 1 -> ./. (punct)
 
-Mmm, chocolate? *Licks* No; Oh dear…
+Mmm, chocolate? *Licks* No. Oh dear…
 
 0 -> Mmm/NNP (root)
 1 -> ,/, (punct)
@@ -5664,7 +5664,7 @@ Mmm, chocolate? *Licks* No; Oh dear…
 3 -> dear/RB (advmod)
 2 -> .../: (punct)
 
-New start; New you; Not you.
+New start. New you. Not you.
 
 0 -> start/NN (root)
 1 -> New/JJ (amod)
@@ -5676,7 +5676,7 @@ New start; New you; Not you.
 3 -> Not/RB (neg)
 1 -> ./. (punct)
 
-Tony squealed; Last mistake he made…
+Tony squealed. Last mistake he made…
 
 0 -> squealed/VBD (root)
 1 -> Tony/NNP (nsubj)
@@ -5687,7 +5687,7 @@ Tony squealed; Last mistake he made…
 3 -> he/PRP (nsubj)
 1 -> .../: (punct)
 
-Deathly silent groom; Literal shotgun wedding.
+Deathly silent groom. Literal shotgun wedding.
 
 0 -> groom/NN (root)
 1 -> silent/JJ (amod)
@@ -5711,7 +5711,7 @@ Rapunzel, I am slipping! …a wig?!
 2 -> a/DT (det)
 2 -> wig/NN (compound)
 
-"I do; Wait! You’re Johnny’s twin!"
+"I do. Wait! You’re Johnny’s twin!"
 
 0 -> do/VBP (root)
 1 -> ``/`` (punct)
@@ -5727,7 +5727,7 @@ Rapunzel, I am slipping! …a wig?!
 2 -> !/. (punct)
 2 -> ''/'' (punct)
 
-Fat; Switched to diet soda; Cancer.
+Fat. Switched to diet soda. Cancer.
 
 0 -> Fat/NNP (root)
 1 -> ;/: (punct)
@@ -5739,7 +5739,7 @@ Fat; Switched to diet soda; Cancer.
 1 -> Cancer/NN (dep)
 1 -> ./. (punct)
 
-Soulmate’s funeral; His wife cries; Bitch.
+Soulmate’s funeral. His wife cries. Bitch.
 
 0 -> funeral/NN (root)
 1 -> Soulmate/NNP (nmod:poss)
@@ -5752,7 +5752,7 @@ Soulmate’s funeral; His wife cries; Bitch.
 2 -> Bitch/NNP (dep)
 1 -> ./. (punct)
 
-Fires; Miss; Throws gun; Finds ammunition.
+Fires. Miss. Throws gun. Finds ammunition.
 
 0 -> Fires/VBZ (root)
 1 -> ;/: (punct)
@@ -5765,7 +5765,7 @@ Fires; Miss; Throws gun; Finds ammunition.
 2 -> ammunition/NN (dobj)
 1 -> ./. (punct)
 
-Smiling dog; So thought the child.
+Smiling dog. So thought the child.
 
 0 -> Smiling/VBG (root)
 1 -> dog/NN (dobj)
@@ -5787,7 +5787,7 @@ Daughter marries; assumes parents done parenting.
 3 -> parenting/NN (dobj)
 1 -> ./. (punct)
 
-ADHD; Searched for cure; Got bored.
+ADHD. Searched for cure. Got bored.
 
 0 -> ADHD/NN (root)
 1 -> ;/: (punct)
@@ -5799,7 +5799,7 @@ ADHD; Searched for cure; Got bored.
 2 -> Got/NNP (nsubj)
 1 -> ./. (punct)
 
-One diamond; Two robbers; Three Rottweilers.
+One diamond. Two robbers. Three Rottweilers.
 
 0 -> diamond/NN (root)
 1 -> One/CD (nummod)
@@ -5811,7 +5811,7 @@ One diamond; Two robbers; Three Rottweilers.
 3 -> Three/CD (nummod)
 1 -> ./. (punct)
 
-Evening; Excess vodka; Morning; Excess inertia.
+Evening. Excess vodka. Morning. Excess inertia.
 
 0 -> Evening/NN (root)
 1 -> ;/: (punct)
@@ -5836,7 +5836,7 @@ Man’s best friend sacrifices life? Doggone.
 1 -> Doggone/NNP (root)
 2 -> ./. (punct)
 
-Given a tat; Traded for tit.
+Given a tat. Traded for tit.
 
 0 -> tat/NN (root)
 1 -> Given/VBN (case)
@@ -5859,7 +5859,7 @@ Robot invasion?! Oh, found Off switch.
 3 -> Off/IN (case)
 2 -> ./. (punct)
 
-Garlic, basil, parmesan, oil; Presto! Pesto!!
+Garlic, basil, parmesan, oil. Presto! Pesto!!
 
 0 -> Garlic/NNP (root)
 1 -> ,/, (punct)
@@ -5874,7 +5874,7 @@ Garlic, basil, parmesan, oil; Presto! Pesto!!
 1 -> !!/NN (root)
 2 -> Pesto/NNP (compound)
 
-Didn’t fall in love; You pushed.
+Didn’t fall in love. You pushed.
 
 0 -> fall/VB (root)
 1 -> Did/VBD (aux)
@@ -5886,7 +5886,7 @@ Didn’t fall in love; You pushed.
 2 -> You/PRP (nsubj)
 1 -> ./. (punct)
 
-Atheist; Struck by lightning…twice? Baptist.
+Atheist. Struck by lightning…twice? Baptist.
 
 0 -> Atheist/NNP (root)
 1 -> ;/: (punct)
@@ -5899,7 +5899,7 @@ Atheist; Struck by lightning…twice? Baptist.
 1 -> Baptist/NNP (root)
 2 -> ./. (punct)
 
-One cell survived; Spread; Not again.
+One cell survived. Spread. Not again.
 
 0 -> survived/VBD (root)
 1 -> cell/NN (nsubj)
@@ -5922,7 +5922,7 @@ Emily’s letters from Iraq stopped coming.
 1 -> coming/VBG (xcomp)
 1 -> ./. (punct)
 
-Went abroad; Finally feel like home.
+Went abroad. Finally feel like home.
 
 0 -> Went/VBD (root)
 1 -> abroad/RB (advmod)
@@ -5933,7 +5933,7 @@ Went abroad; Finally feel like home.
 3 -> like/IN (case)
 1 -> ./. (punct)
 
-Armageddon imminent; Make list; Tick most.
+Armageddon imminent. Make list. Tick most.
 
 0 -> imminent/JJ (root)
 1 -> Armageddon/NNP (nsubj)
@@ -5945,7 +5945,7 @@ Armageddon imminent; Make list; Tick most.
 2 -> most/JJS (dobj)
 1 -> ./. (punct)
 
-They smoked their last cigarette; Again.
+They smoked their last cigarette. Again.
 
 0 -> smoked/VBD (root)
 1 -> They/PRP (nsubj)
@@ -5956,7 +5956,7 @@ They smoked their last cigarette; Again.
 1 -> Again/RB (advmod)
 1 -> ./. (punct)
 
-Local psychiatrist; Moon struck; Loco psychiatrist.
+Local psychiatrist. Moon struck. Loco psychiatrist.
 
 0 -> psychiatrist/NN (root)
 1 -> Local/JJ (amod)
@@ -6001,7 +6001,7 @@ Two wives, one funeral, no tears.
 2 -> no/DT (neg)
 1 -> ./. (punct)
 
-Twice tempted; Twice loved; Lost both.
+Twice tempted. Twice loved. Lost both.
 
 0 -> tempted/VBN (root)
 1 -> Twice/RB (advmod)
@@ -6025,7 +6025,7 @@ Murdered…Revived as a Ghost…Revenge!
 1 -> Revenge/NN (dep)
 1 -> !/. (punct)
 
-Table for one; Martinis for two.
+Table for one. Martinis for two.
 
 0 -> Table/NNP (root)
 1 -> one/CD (nmod:for)
@@ -6036,7 +6036,7 @@ Table for one; Martinis for two.
 3 -> for/IN (case)
 1 -> ./. (punct)
 
-Twelve inch pianist; Genie needed hearing-aid.
+Twelve inch pianist. Genie needed hearing-aid.
 
 0 -> pianist/NN (root)
 1 -> Twelve/CD (nummod)
@@ -6068,7 +6068,7 @@ The smallest coffins are the heaviest.
 1 -> the/DT (det)
 1 -> ./. (punct)
 
-Fatty looks full; Dietician is missing.
+Fatty looks full. Dietician is missing.
 
 0 -> looks/NNS (root)
 1 -> Fatty/JJ (amod)
@@ -6090,7 +6090,7 @@ Doctor said indigestion; obituary said cancer.
 3 -> cancer/NN (dobj)
 1 -> ./. (punct)
 
-Murder suspect caught red handed; Painter.
+Murder suspect caught red handed. Painter.
 
 0 -> handed/NN (root)
 1 -> Murder/NN (compound)
@@ -6101,7 +6101,7 @@ Murder suspect caught red handed; Painter.
 1 -> Painter/NNP (dep)
 1 -> ./. (punct)
 
-Gunned down; College acceptance letter; "Congratulations…"
+Gunned down. College acceptance letter. "Congratulations…"
 
 0 -> Gunned/VBN (root)
 1 -> down/RB (advmod)
@@ -6151,7 +6151,7 @@ Swine flu traps Big Bad Wolf.
 2 -> Bad/NNP (compound)
 1 -> ./. (punct)
 
-Girl on fire; An old flame?
+Girl on fire. An old flame?
 
 0 -> Girl/NNP (root)
 1 -> fire/NN (nmod:on)
@@ -6162,7 +6162,7 @@ Girl on fire; An old flame?
 2 -> old/JJ (amod)
 1 -> ?/. (punct)
 
-Endless stars; Home is there somewhere.
+Endless stars. Home is there somewhere.
 
 0 -> stars/NNS (root)
 1 -> Endless/JJ (amod)
@@ -6173,7 +6173,7 @@ Endless stars; Home is there somewhere.
 3 -> somewhere/RB (advmod)
 1 -> ./. (punct)
 
-Transfer to public school; World discovered.
+Transfer to public school. World discovered.
 
 0 -> Transfer/NN (root)
 1 -> school/NN (nmod:to)
@@ -6194,7 +6194,7 @@ The mushroom cloud brought false dawn.
 2 -> false/JJ (amod)
 1 -> ./. (punct)
 
-Lived to write; Left suicide note.
+Lived to write. Left suicide note.
 
 0 -> Lived/VBN (root)
 1 -> write/VB (xcomp)
@@ -6205,7 +6205,7 @@ Lived to write; Left suicide note.
 2 -> suicide/NN (compound)
 1 -> ./. (punct)
 
-Brick wall finished; Where’s the door?
+Brick wall finished. Where’s the door?
 
 0 -> finished/VBD (root)
 1 -> wall/NN (nsubj)
@@ -6239,7 +6239,7 @@ Must take antidote ON EMPTY STOMACH?!
 3 -> the/DT (det)
 2 -> .../: (punct)
 
-Longed for Baby; He said maybe.
+Longed for Baby. He said maybe.
 
 0 -> Longed/VBN (root)
 1 -> Baby/NNP (nmod:for)
@@ -6296,7 +6296,7 @@ BREAKING: Simulated beings realize they're simulated.
 2 -> !/. (punct)
 3 -> ''/'' (punct)
 
-Loved trying sushi; Hated having anaphylaxis.
+Loved trying sushi. Hated having anaphylaxis.
 
 0 -> Loved/VBN (root)
 1 -> trying/VBG (xcomp)
@@ -6307,7 +6307,7 @@ Loved trying sushi; Hated having anaphylaxis.
 3 -> anaphylaxis/NN (dobj)
 1 -> ./. (punct)
 
-Plane loops the loop; Engine falters.
+Plane loops the loop. Engine falters.
 
 0 -> loops/NNS (root)
 1 -> Plane/NN (compound)
@@ -6337,7 +6337,7 @@ Plane loops the loop; Engine falters.
 3 -> ,/, (punct)
 3 -> ./. (punct)
 
-"Procrastinating?" "No; Flash fiction." "The difference?"
+"Procrastinating?"  "No. Flash fiction."  "The difference?"
 
 0 -> Procrastinating/NNP (root)
 1 -> ``/`` (punct)
@@ -6356,7 +6356,7 @@ Plane loops the loop; Engine falters.
 3 -> ?/. (punct)
 3 -> ''/'' (punct)
 
-New liver; Break open the Champagne!
+New liver. Break open the Champagne!
 
 0 -> liver/NN (root)
 1 -> New/NNP (compound)
@@ -6367,7 +6367,7 @@ New liver; Break open the Champagne!
 4 -> the/DT (det)
 1 -> !/. (punct)
 
-Two families; Fakes death; One family.
+Two families. Fakes death. One family.
 
 0 -> families/NNS (root)
 1 -> Two/CD (nummod)
@@ -6404,7 +6404,7 @@ Paramedics finished her text, "…love you."
 1 -> ./. (punct)
 1 -> ''/'' (punct)
 
-Night of fun; Life of regret.
+Night of fun. Life of regret.
 
 0 -> Night/NN (root)
 1 -> fun/NN (nmod:of)
@@ -6415,7 +6415,7 @@ Night of fun; Life of regret.
 3 -> of/IN (case)
 1 -> ./. (punct)
 
-My wedding invitations; My hit list.
+My wedding invitations. My hit list.
 
 0 -> invitations/NNS (root)
 1 -> My/PRP$ (nmod:poss)
@@ -6426,7 +6426,7 @@ My wedding invitations; My hit list.
 2 -> hit/NN (compound)
 1 -> ./. (punct)
 
-Swinging 60s; Free love; Paying now!
+Swinging 60s. Free love. Paying now!
 
 0 -> Swinging/VBG (root)
 1 -> 60s/NNS (dobj)
@@ -6448,7 +6448,7 @@ Unwanted boy grows into wanted man.
 2 -> wanted/JJ (amod)
 1 -> ./. (punct)
 
-Awaken; The dream has begun; life.
+Awaken. The dream has begun; life.
 
 0 -> Awaken/VB (root)
 1 -> ;/: (punct)
@@ -6472,7 +6472,7 @@ Match, made in heaven, ignited hell.
 1 -> hell/NN (dobj)
 1 -> ./. (punct)
 
-First draft: Juliet dies; Romeo necrophilic.
+First draft: Juliet dies. Romeo necrophilic.
 
 0 -> draft/NN (root)
 1 -> First/JJ (amod)
@@ -6516,7 +6516,7 @@ Optimist drowned in half full bathtub.
 2 -> full/JJ (amod)
 1 -> ./. (punct)
 
-Imagined adulthood; Gained adulthood; Lost Imagination.
+Imagined adulthood. Gained adulthood. Lost Imagination.
 
 0 -> adulthood/NN (root)
 1 -> Imagined/VBN (amod)
@@ -6549,7 +6549,7 @@ As many hair colors as personalities.
 3 -> as/IN (case)
 1 -> ./. (punct)
 
-"Duck!" "What?" Too late; Head rolls.
+"Duck!" "What?" Too late. Head rolls.
 
 0 -> Duck/NN (root)
 1 -> ``/`` (punct)
@@ -6566,7 +6566,7 @@ As many hair colors as personalities.
 3 -> Head/NNP (compound)
 3 -> ./. (punct)
 
-Empty highway; Petrol light flickers; Alone.
+Empty highway. Petrol light flickers. Alone.
 
 0 -> highway/NN (root)
 1 -> Empty/JJ (amod)
@@ -6578,7 +6578,7 @@ Empty highway; Petrol light flickers; Alone.
 1 -> Alone/RB (advmod)
 1 -> ./. (punct)
 
-Friended mom on Facebook; Got disowned.
+Friended mom on Facebook. Got disowned.
 
 0 -> disowned/VBN (root)
 1 -> mom/NN (nsubjpass)
@@ -6600,7 +6600,7 @@ Emily’s letters from Iraq stopped coming.
 1 -> coming/VBG (xcomp)
 1 -> ./. (punct)
 
-Eyjafjallajokull spews ashes; I contribute Dad’s.
+Eyjafjallajokull spews ashes. I contribute Dad’s.
 
 0 -> ashes/NNS (root)
 1 -> Eyjafjallajokull/NN (compound)
@@ -6648,7 +6648,7 @@ Heroic amnesiac detective was the killer.
 1 -> the/DT (det)
 1 -> ./. (punct)
 
-Empty wineglass; Valium bottle; Open window.
+Empty wineglass. Valium bottle. Open window.
 
 0 -> wineglass/NN (root)
 1 -> Empty/JJ (amod)
@@ -6660,7 +6660,7 @@ Empty wineglass; Valium bottle; Open window.
 2 -> Open/VB (amod)
 1 -> ./. (punct)
 
-Befriended tycoon; Married; Murdered; Now heiress.
+Befriended tycoon. Married. Murdered. Now heiress.
 
 0 -> tycoon/NN (root)
 1 -> Befriended/VBN (amod)
@@ -6684,7 +6684,7 @@ Three years after birth, he hears.
 1 -> he/PRP (nsubj)
 1 -> ./. (punct)
 
-Crush online; "What’s up?" Crush offline.
+Crush online. "What’s up?" Crush offline.
 
 0 -> online/NN (root)
 1 -> Crush/JJ (amod)
@@ -6748,7 +6748,7 @@ Romantic meal! Special guest, undercooked chicken.
 1 -> daddy/NNP (nsubj)
 1 -> ./. (punct)
 
-Atom splits; Fleeing, they become ash.
+Atom splits. Fleeing, they become ash.
 
 0 -> splits/VBZ (root)
 1 -> Atom/NN (nsubj)
@@ -6782,7 +6782,7 @@ Finding them entwined, Malcom shot both.
 1 -> both/DT (dobj)
 1 -> ./. (punct)
 
-Diagnosed with AIDS; Ex’s hubby doctor.
+Diagnosed with AIDS. Ex’s hubby doctor.
 
 0 -> Diagnosed/VBN (root)
 1 -> AIDS/NN (nmod:with)
@@ -6805,7 +6805,7 @@ Scratching heard…from inside the coffin.
 2 -> the/DT (det)
 1 -> ./. (punct)
 
-One bullet; Ten enemies; Kills himself.
+One bullet. Ten enemies. Kills himself.
 
 0 -> bullet/NN (root)
 1 -> One/CD (nummod)
@@ -6817,7 +6817,7 @@ One bullet; Ten enemies; Kills himself.
 2 -> himself/PRP (dobj)
 1 -> ./. (punct)
 
-"Help!" she cried; Only silence answered.
+"Help!" she cried. Only silence answered.
 
 0 -> Help/VB (root)
 1 -> ``/`` (punct)
@@ -6863,7 +6863,7 @@ Suicide note marked "return to sender."
 1 -> ./. (punct)
 1 -> ''/'' (punct)
 
-Newbie jumps from plane; Forgets parachute.
+Newbie jumps from plane. Forgets parachute.
 
 0 -> jumps/VBZ (root)
 1 -> Newbie/NN (nsubj)
@@ -6874,7 +6874,7 @@ Newbie jumps from plane; Forgets parachute.
 2 -> Forgets/NNS (compound)
 1 -> ./. (punct)
 
-Newspapers piling; Grass overgrown; Seen grandad?
+Newspapers piling. Grass overgrown. Seen grandad?
 
 0 -> piling/VBG (root)
 1 -> Newspapers/NNS (nsubj)
@@ -6886,7 +6886,7 @@ Newspapers piling; Grass overgrown; Seen grandad?
 3 -> Seen/VBN (amod)
 1 -> ?/. (punct)
 
-Human slaves; Robot slaves; Human slaves.
+Human slaves. Robot slaves. Human slaves.
 
 0 -> slaves/NNS (root)
 1 -> Human/JJ (amod)
@@ -6910,7 +6910,7 @@ Coyote howls, dark night, flat tire.
 2 -> flat/JJ (amod)
 1 -> ./. (punct)
 
-Sea of diseases; Medical student drowning.
+Sea of diseases. Medical student drowning.
 
 0 -> Sea/NN (root)
 1 -> diseases/NNS (nmod:of)
@@ -6921,7 +6921,7 @@ Sea of diseases; Medical student drowning.
 2 -> student/NN (compound)
 1 -> ./. (punct)
 
-Late; Speeding; Pulled Over; Really Late.
+Late. Speeding. Pulled Over. Really Late.
 
 0 -> Late/RB (root)
 1 -> ;/: (punct)
@@ -6948,7 +6948,7 @@ Late; Speeding; Pulled Over; Really Late.
 1 -> he/PRP (nsubj)
 1 -> ./. (punct)
 
-Pregnant thrice; Still a childless parents.
+Pregnant thrice. Still a childless parents.
 
 0 -> thrice/NN (root)
 1 -> Pregnant/JJ (amod)
@@ -6982,7 +6982,7 @@ Spark is gone, but she isn’t.
 2 -> n't/RB (neg)
 1 -> ./. (punct)
 
-He loved her; She loved herself.
+He loved her. She loved herself.
 
 0 -> loved/VBD (root)
 1 -> He/PRP (nsubj)
@@ -6993,7 +6993,7 @@ He loved her; She loved herself.
 2 -> herself/PRP (dobj)
 1 -> ./. (punct)
 
-Check bounced; So did his head.
+Check bounced. So did his head.
 
 0 -> Check/VB (root)
 1 -> bounced/VBN (xcomp)
@@ -7004,7 +7004,7 @@ Check bounced; So did his head.
 3 -> his/PRP$ (nmod:poss)
 1 -> ./. (punct)
 
-Bought "Invisible Man" toy; Empty box.
+Bought "Invisible Man" toy. Empty box.
 
 0 -> toy/NN (root)
 1 -> Bought/JJ (amod)
@@ -7017,7 +7017,7 @@ Bought "Invisible Man" toy; Empty box.
 2 -> Empty/JJ (amod)
 1 -> ./. (punct)
 
-Monday morning, accidental decaf; No survivors.
+Monday morning, accidental decaf. No survivors.
 
 0 -> morning/NN (root)
 1 -> Monday/NNP (compound)
@@ -7041,7 +7041,7 @@ Loafer loafed, co-worker slogged, loafer promoted.
 2 -> loafer/NN (nsubj)
 1 -> ./. (punct)
 
-Vibrator found! Roommate’s; Mike’s my roommate.
+Vibrator found! Roommate’s. Mike’s my roommate.
 
 0 -> found/VBD (root)
 1 -> Vibrator/NNP (nsubj)
@@ -7055,7 +7055,7 @@ Vibrator found! Roommate’s; Mike’s my roommate.
 3 -> my/PRP$ (nmod:poss)
 2 -> ./. (punct)
 
-"Only buzzed." Turns key; Gone forever.
+"Only buzzed." Turns key. Gone forever.
 
 0 -> buzzed/VBN (root)
 1 -> ``/`` (punct)
@@ -7069,7 +7069,7 @@ Vibrator found! Roommate’s; Mike’s my roommate.
 3 -> forever/RB (advmod)
 2 -> ./. (punct)
 
-Jackpot! I quit! Damn; Misread numbers.
+Jackpot! I quit! Damn. Misread numbers.
 
 0 -> Jackpot/NN (root)
 1 -> !/. (punct)
@@ -7082,7 +7082,7 @@ Jackpot! I quit! Damn; Misread numbers.
 4 -> Misread/NNP (compound)
 3 -> ./. (punct)
 
-For sale: Guitar; No strings attached.
+For sale: Guitar. No strings attached.
 
 0 -> sale/NN (root)
 1 -> For/IN (case)
@@ -7094,7 +7094,7 @@ For sale: Guitar; No strings attached.
 3 -> attached/VBN (acl)
 1 -> ./. (punct)
 
-Explosion; Chaos; Order; Life; Intelligence; Implosion.
+Explosion. Chaos. Order. Life. Intelligence. Implosion.
 
 0 -> Explosion/NN (root)
 1 -> ;/: (punct)
@@ -7109,7 +7109,7 @@ Explosion; Chaos; Order; Life; Intelligence; Implosion.
 2 -> Implosion/NNP (dep)
 1 -> ./. (punct)
 
-Time machine…check; Mistake list…check.
+Time machine…check. Mistake list…check.
 
 0 -> machine/NN (root)
 1 -> Time/NNP (compound)
@@ -7122,7 +7122,7 @@ Time machine…check; Mistake list…check.
 2 -> check/NN (dep)
 1 -> ./. (punct)
 
-Genius born; Drunk driver; Genius lost.
+Genius born. Drunk driver. Genius lost.
 
 0 -> Genius/NN (root)
 1 -> born/VBN (acl)
@@ -7155,7 +7155,7 @@ Fitting room cameras make accidental stars.
 2 -> accidental/JJ (amod)
 1 -> ./. (punct)
 
-Threw back the fish; Ordered pizza.
+Threw back the fish. Ordered pizza.
 
 0 -> Threw/VBD (root)
 1 -> back/RP (compound:prt)
@@ -7178,7 +7178,7 @@ Photographer's last photo remembered: Bull headshot.
 2 -> Bull/NN (compound)
 1 -> ./. (punct)
 
-One friend, two faces; High school.
+One friend, two faces. High school.
 
 0 -> friend/NN (root)
 1 -> One/CD (nummod)
@@ -7190,7 +7190,7 @@ One friend, two faces; High school.
 2 -> High/JJ (amod)
 1 -> ./. (punct)
 
-Best friends; Relationship; Breakup; Now strangers.
+Best friends. Relationship. Breakup. Now strangers.
 
 0 -> friends/NNS (root)
 1 -> Best/JJS (amod)
@@ -7203,7 +7203,7 @@ Best friends; Relationship; Breakup; Now strangers.
 3 -> Now/RB (advmod)
 1 -> ./. (punct)
 
-Mistook grenade for cigarette lighter; Smoked.
+Mistook grenade for cigarette lighter. Smoked.
 
 0 -> grenade/VB (root)
 1 -> Mistook/NNP (nsubj)
@@ -7225,7 +7225,7 @@ She found him hanging, then followed.
 2 -> then/RB (advmod)
 1 -> ./. (punct)
 
-Space walk; Lifeline snaps; Astronaut drifts.
+Space walk. Lifeline snaps. Astronaut drifts.
 
 0 -> walk/NN (root)
 1 -> Space/NN (compound)
@@ -7237,7 +7237,7 @@ Space walk; Lifeline snaps; Astronaut drifts.
 2 -> Astronaut/NN (compound)
 1 -> ./. (punct)
 
-Failed class; Attempted suicide; Failed again.
+Failed class. Attempted suicide. Failed again.
 
 0 -> Failed/VBD (root)
 1 -> class/NN (nsubj)
@@ -7279,7 +7279,7 @@ Failed class; Attempted suicide; Failed again.
 1 -> .../: (punct)
 1 -> ''/'' (punct)
 
-Turns the ignition; Car blows up.
+Turns the ignition. Car blows up.
 
 0 -> Turns/VBZ (root)
 1 -> ignition/NN (dobj)
@@ -7300,7 +7300,7 @@ Cunning terrorist only uses red wires.
 2 -> red/JJ (amod)
 1 -> ./. (punct)
 
-Cut wrists; Second thoughts; Too laaaate…
+Cut wrists. Second thoughts. Too laaaate…
 
 0 -> wrists/NNS (root)
 1 -> Cut/NNP (compound)
@@ -7312,7 +7312,7 @@ Cut wrists; Second thoughts; Too laaaate…
 2 -> Too/RB (advmod)
 1 -> .../: (punct)
 
-Scientist becomes president; Politics are outlawed.
+Scientist becomes president. Politics are outlawed.
 
 0 -> becomes/VBZ (root)
 1 -> Scientist/NN (nsubj)
@@ -7323,7 +7323,7 @@ Scientist becomes president; Politics are outlawed.
 2 -> are/VBP (auxpass)
 1 -> ./. (punct)
 
-She sips; He chugs; Long night…
+She sips. He chugs. Long night…
 
 0 -> sips/VBZ (root)
 1 -> She/PRP (nsubj)
@@ -7335,7 +7335,7 @@ She sips; He chugs; Long night…
 2 -> Long/NNP (compound)
 1 -> .../: (punct)
 
-Born; Founded thriving pigment empire; Dyed.
+Born. Founded thriving pigment empire. Dyed.
 
 0 -> Born/VBN (root)
 1 -> ;/: (punct)
@@ -7358,7 +7358,7 @@ A penny saved, a whim squandered.
 3 -> a/DT (det)
 1 -> ./. (punct)
 
-Trusted; Loved; Betrayed Trust, Feigned Love.
+Trusted. Loved. Betrayed Trust, Feigned Love.
 
 0 -> Trusted/VBN (root)
 1 -> ;/: (punct)
@@ -7392,7 +7392,7 @@ Medicated Hamlet makes boring ass play.
 2 -> ass/NN (compound)
 1 -> ./. (punct)
 
-Broke up; Baby?! Damn… I’m stuck.
+Broke up. Baby?! Damn… I’m stuck.
 
 0 -> Broke/VB (root)
 1 -> up/RP (compound:prt)
@@ -7437,7 +7437,7 @@ Champagne! Latent aggression bubbles to surface.
 3 -> to/TO (case)
 2 -> ./. (punct)
 
-Impulsiveness level upped; Girlfriend level downed.
+Impulsiveness level upped. Girlfriend level downed.
 
 0 -> upped/VBD (root)
 1 -> level/NN (nsubj)
@@ -7458,7 +7458,7 @@ Heart surgery finally opened his heart.
 2 -> his/PRP$ (nmod:poss)
 1 -> ./. (punct)
 
-Cancer; Only three months left; Pregnant.
+Cancer. Only three months left. Pregnant.
 
 0 -> Cancer/NN (root)
 1 -> ;/: (punct)
@@ -7491,7 +7491,7 @@ Loved her enough to pretend otherwise.
 3 -> otherwise/RB (advmod)
 1 -> ./. (punct)
 
-2112; Human ignorance boiled the earth.
+2112. Human ignorance boiled the earth.
 
 0 -> 2112/CD (root)
 1 -> ;/: (punct)
@@ -7535,7 +7535,7 @@ Boys cross thruway… one son remaining.
 3 -> one/CD (nummod)
 1 -> ./. (punct)
 
-Today it ended; Stillborn; Fruitless love.
+Today it ended. Stillborn. Fruitless love.
 
 0 -> ended/VBD (root)
 1 -> Today/NN (nmod:tmod)
@@ -7547,7 +7547,7 @@ Today it ended; Stillborn; Fruitless love.
 3 -> Fruitless/JJ (amod)
 1 -> ./. (punct)
 
-Underwater; No way out; Reluctantly inhale.
+Underwater. No way out. Reluctantly inhale.
 
 0 -> Underwater/JJ (root)
 1 -> ;/: (punct)
@@ -7579,7 +7579,7 @@ The only mourner, her pet cat.
 2 -> pet/NN (compound)
 1 -> ./. (punct)
 
-Sharp new yellow pencil; Limitless potential.
+Sharp new yellow pencil. Limitless potential.
 
 0 -> pencil/NN (root)
 1 -> Sharp/JJ (amod)
@@ -7600,7 +7600,7 @@ Optimist drowns in half full bathtub.
 2 -> full/JJ (amod)
 1 -> ./. (punct)
 
-Boring class; Window; Distracted; Goodbye, teacher!
+Boring class. Window. Distracted. Goodbye, teacher!
 
 0 -> class/NN (root)
 1 -> Boring/JJ (amod)
@@ -7614,7 +7614,7 @@ Boring class; Window; Distracted; Goodbye, teacher!
 3 -> teacher/NN (appos)
 1 -> !/. (punct)
 
-Dreamt we kissed; Alas, alarm clock.
+Dreamt we kissed. Alas, alarm clock.
 
 0 -> Dreamt/NN (root)
 1 -> kissed/VBD (acl:relcl)
@@ -7636,7 +7636,7 @@ Happy masochist entangled in jellyfish tentacles.
 3 -> jellyfish/NN (compound)
 1 -> ./. (punct)
 
-Shooting at anarchist meetup; Call cops!
+Shooting at anarchist meetup. Call cops!
 
 0 -> Shooting/NN (root)
 1 -> meetup/NN (nmod:at)
@@ -7667,7 +7667,7 @@ Baby looks just like the milkman.
 2 -> the/DT (det)
 1 -> ./. (punct)
 
-Spiders hatch; Man gets sudden headache.
+Spiders hatch. Man gets sudden headache.
 
 0 -> hatch/VBP (root)
 1 -> Spiders/NNS (nsubj)
@@ -7689,7 +7689,7 @@ Won food fight – used canned vegetables.
 2 -> canned/JJ (amod)
 1 -> ./. (punct)
 
-B&B weekend; Bad clams; Shared bathroom.
+B&B weekend. Bad clams. Shared bathroom.
 
 0 -> weekend/NN (root)
 1 -> B&B/NN (compound)
@@ -7701,7 +7701,7 @@ B&B weekend; Bad clams; Shared bathroom.
 2 -> Shared/VBN (amod)
 1 -> ./. (punct)
 
-Flat tire; Flight missed; Air crash.
+Flat tire. Flight missed. Air crash.
 
 0 -> tire/NN (root)
 1 -> Flat/JJR (amod)
@@ -7713,7 +7713,7 @@ Flat tire; Flight missed; Air crash.
 2 -> Air/NNP (compound)
 1 -> ./. (punct)
 
-Went looking for Jesus; Found methamphetamine.
+Went looking for Jesus. Found methamphetamine.
 
 0 -> Went/VBD (root)
 1 -> looking/VBG (xcomp)
@@ -7735,7 +7735,7 @@ Foreclosure came, got my first paycheck.
 3 -> first/JJ (amod)
 1 -> ./. (punct)
 
-Lost: imaginary friend; Last seen: eight.
+Lost: imaginary friend. Last seen: eight.
 
 0 -> Lost/NNP (root)
 1 -> :/: (punct)
@@ -7760,7 +7760,7 @@ Artificial limb, bungie jump – bad idea.
 2 -> bad/JJ (amod)
 1 -> ./. (punct)
 
-No coloring book; White walls; Art!
+No coloring book. White walls. Art!
 
 0 -> book/NN (root)
 1 -> No/DT (neg)
@@ -7772,7 +7772,7 @@ No coloring book; White walls; Art!
 1 -> Art/NNP (dep)
 2 -> !/. (punct)
 
-Woodsman on vacation; Dead Riding Hood.
+Woodsman on vacation. Dead Riding Hood.
 
 0 -> Woodsman/NN (root)
 1 -> vacation/NN (nmod:on)
@@ -7794,7 +7794,7 @@ Car wheels screech, training wheels spin.
 3 -> wheels/NNS (nsubj)
 1 -> ./. (punct)
 
-Family reunion; Here’s your name tag.
+Family reunion. Here’s your name tag.
 
 0 -> reunion/NN (root)
 1 -> Family/NNP (compound)
@@ -7806,7 +7806,7 @@ Family reunion; Here’s your name tag.
 2 -> name/NN (compound)
 1 -> ./. (punct)
 
-God creates g-spot; "No, smaller."
+God creates g-spot. "No, smaller."
 
 0 -> creates/VBZ (root)
 1 -> God/NNP (nsubj)
@@ -7819,7 +7819,7 @@ God creates g-spot; "No, smaller."
 1 -> ./. (punct)
 1 -> ''/'' (punct)
 
-Jet lag; Morning wood; Misunderstood; Damn!
+Jet lag. Morning wood. Misunderstood. Damn!
 
 0 -> lag/NN (root)
 1 -> Jet/NNP (compound)
@@ -7898,7 +7898,7 @@ He points, "Look! It’s a distraction!"
 2 -> !/. (punct)
 2 -> ''/'' (punct)
 
-Finding Nemo; Grilling Nemo; Eating Nemo.
+Finding Nemo. Grilling Nemo. Eating Nemo.
 
 0 -> Finding/VBG (root)
 1 -> Nemo/NNP (dobj)
@@ -7910,7 +7910,7 @@ Finding Nemo; Grilling Nemo; Eating Nemo.
 2 -> Eating/NNP (compound)
 1 -> ./. (punct)
 
-Spring marriage; Summer fling; Autumn divorce.
+Spring marriage. Summer fling. Autumn divorce.
 
 0 -> marriage/NN (root)
 1 -> Spring/NN (compound)
@@ -7922,7 +7922,7 @@ Spring marriage; Summer fling; Autumn divorce.
 3 -> Autumn/NN (compound)
 1 -> ./. (punct)
 
-Epitaph: Anti-abortion Activist; Died in Childbirth.
+Epitaph: Anti-abortion Activist. Died in Childbirth.
 
 0 -> Epitaph/NNP (root)
 1 -> :/: (punct)
@@ -7947,7 +7947,7 @@ Epitaph: Anti-abortion Activist; Died in Childbirth.
 2 -> profusely/RB (advmod)
 2 -> ./. (punct)
 
-Boy meets Girl; Not Girl; Thailand.
+Boy meets Girl. Not Girl. Thailand.
 
 0 -> meets/VBZ (root)
 1 -> Boy/NN (nsubj)
@@ -7959,7 +7959,7 @@ Boy meets Girl; Not Girl; Thailand.
 2 -> Thailand/NNP (dep)
 1 -> ./. (punct)
 
-Butterfly; Windscreen wipers; Half a butterfly.
+Butterfly. Windscreen wipers. Half a butterfly.
 
 0 -> Butterfly/NN (root)
 1 -> ;/: (punct)
@@ -7993,7 +7993,7 @@ Divorce products, hung by wedding bells.
 3 -> wedding/NN (compound)
 1 -> ./. (punct)
 
-Successfully stole car; Busted swiping sandwich.
+Successfully stole car. Busted swiping sandwich.
 
 0 -> car/NN (root)
 1 -> stole/VBN (amod)
@@ -8004,7 +8004,7 @@ Successfully stole car; Busted swiping sandwich.
 3 -> sandwich/NN (dobj)
 1 -> ./. (punct)
 
-Skinhead goes to college; Jewish roomate.
+Skinhead goes to college. Jewish roomate.
 
 0 -> goes/VBZ (root)
 1 -> Skinhead/NNP (nsubj)
@@ -8015,7 +8015,7 @@ Skinhead goes to college; Jewish roomate.
 2 -> Jewish/JJ (amod)
 1 -> ./. (punct)
 
-Man builds computer; Computer builds man.
+Man builds computer. Computer builds man.
 
 0 -> builds/VBZ (root)
 1 -> Man/NN (nsubj)
@@ -8026,7 +8026,7 @@ Man builds computer; Computer builds man.
 2 -> man/NN (dobj)
 1 -> ./. (punct)
 
-A son abused; Another son abused.
+A son abused. Another son abused.
 
 0 -> abused/VBD (root)
 1 -> son/NN (nsubj)
@@ -8037,7 +8037,7 @@ A son abused; Another son abused.
 3 -> Another/DT (det)
 1 -> ./. (punct)
 
-Didn’t Study; Plan B: "Food Poisoning."
+Didn’t Study. Plan B: "Food Poisoning."
 
 0 -> Study/NN (root)
 1 -> Did/VBD (aux)
@@ -8066,7 +8066,7 @@ Smart, pretty, fun - oooh, crooked teeth.
 3 -> crooked/JJ (amod)
 1 -> ./. (punct)
 
-The day unfolds; I fold laundry.
+The day unfolds. I fold laundry.
 
 0 -> unfolds/VBZ (root)
 1 -> day/NN (nsubj)
@@ -8077,7 +8077,7 @@ The day unfolds; I fold laundry.
 2 -> laundry/NN (dobj)
 1 -> ./. (punct)
 
-Post-war reconstruction; Corrupt contractors clean up.
+Post-war reconstruction. Corrupt contractors clean up.
 
 0 -> reconstruction/NN (root)
 1 -> Post-war/JJ (amod)
@@ -8088,7 +8088,7 @@ Post-war reconstruction; Corrupt contractors clean up.
 2 -> up/RP (compound:prt)
 1 -> ./. (punct)
 
-Old friends; One time hook-up; Acquaintances.
+Old friends. One time hook-up. Acquaintances.
 
 0 -> friends/NNS (root)
 1 -> Old/JJ (amod)
@@ -8100,7 +8100,7 @@ Old friends; One time hook-up; Acquaintances.
 1 -> Acquaintances/NNS (dep)
 1 -> ./. (punct)
 
-Mystery button pushed; Curious cat crushed.
+Mystery button pushed. Curious cat crushed.
 
 0 -> pushed/VBD (root)
 1 -> button/NN (nsubj)
@@ -8155,7 +8155,7 @@ Indiscretion’s booty: hours lost, money gone.
 3 -> money/NN (nsubj)
 1 -> ./. (punct)
 
-Rectal cancer; Rectum nearly killed him.
+Rectal cancer. Rectum nearly killed him.
 
 0 -> cancer/NN (root)
 1 -> Rectal/JJ (amod)
@@ -8166,7 +8166,7 @@ Rectal cancer; Rectum nearly killed him.
 2 -> him/PRP (dobj)
 1 -> ./. (punct)
 
-Found your needles while cleaning; Goodbye.
+Found your needles while cleaning. Goodbye.
 
 0 -> Found/VB (root)
 1 -> needles/NNS (dobj)
@@ -8177,7 +8177,7 @@ Found your needles while cleaning; Goodbye.
 1 -> Goodbye/NNP (dep)
 1 -> ./. (punct)
 
-Leaders lie; Sons die; Mothers cry.
+Leaders lie. Sons die. Mothers cry.
 
 0 -> lie/VBP (root)
 1 -> Leaders/NNS (nsubj)
@@ -8202,7 +8202,7 @@ Online resume? Ready! …No hits yet.
 4 -> yet/RB (advmod)
 4 -> ./. (punct)
 
-Lost: winning lottery ticket; Reward offered.
+Lost: winning lottery ticket. Reward offered.
 
 0 -> Lost/NNP (root)
 1 -> :/: (punct)
@@ -8214,7 +8214,7 @@ Lost: winning lottery ticket; Reward offered.
 3 -> Reward/VB (auxpass)
 1 -> ./. (punct)
 
-Old classmates; One night stand; Strangers.
+Old classmates. One night stand. Strangers.
 
 0 -> classmates/NNS (root)
 1 -> Old/JJ (amod)
@@ -8226,7 +8226,7 @@ Old classmates; One night stand; Strangers.
 1 -> Strangers/NNS (dep)
 1 -> ./. (punct)
 
-Lovely nurse, impure thoughts; CLEAR! Passed.
+Lovely nurse, impure thoughts. CLEAR! Passed.
 
 0 -> nurse/NN (root)
 1 -> Lovely/JJ (amod)
@@ -8239,7 +8239,7 @@ Lovely nurse, impure thoughts; CLEAR! Passed.
 1 -> Passed/VBN (root)
 2 -> ./. (punct)
 
-Walked out of closet; Got disowned.
+Walked out of closet. Got disowned.
 
 0 -> Walked/VBN (root)
 1 -> closet/NN (nmod:out_of)
@@ -8260,7 +8260,7 @@ Geniuses executed in the smouldering libraries.
 3 -> smouldering/VBG (amod)
 1 -> ./. (punct)
 
-Princess died; Salmonella; Another frog kiss.
+Princess died. Salmonella. Another frog kiss.
 
 0 -> died/VBD (root)
 1 -> Princess/NNP (nsubj)
@@ -8283,7 +8283,7 @@ Amnesiac awakens: Who am I today?
 2 -> today/NN (dep)
 1 -> ?/. (punct)
 
-Smashed thumb, she faints; Smashed face.
+Smashed thumb, she faints. Smashed face.
 
 0 -> face/NN (root)
 1 -> thumb/NN (nsubj)
@@ -8295,7 +8295,7 @@ Smashed thumb, she faints; Smashed face.
 1 -> Smashed/VBN (amod)
 1 -> ./. (punct)
 
-Goodbye, mission control; Thanks for trying.
+Goodbye, mission control. Thanks for trying.
 
 0 -> Goodbye/NNP (root)
 1 -> ,/, (punct)
@@ -8321,7 +8321,7 @@ Mix-a-lot gasps, "Ass fixation, not ASPHYXIATION!!!!"
 3 -> !!!!/CD (nummod)
 1 -> ''/'' (punct)
 
-One tree - thousand matches; One match…
+One tree - thousand matches. One match…
 
 0 -> tree/NN (root)
 1 -> One/CD (nummod)
@@ -8345,7 +8345,7 @@ One tree - thousand matches; One match…
 3 -> Her/PRP$ (nmod:poss)
 2 -> otherwise/RB (advmod)
 
-Surgeon saves patient; Patient thanks God.
+Surgeon saves patient. Patient thanks God.
 
 0 -> saves/VBZ (root)
 1 -> Surgeon/NNP (nsubj)
@@ -8417,7 +8417,7 @@ Alzheimer’s Advantage: new friends every day!
 3 -> every/DT (det)
 1 -> !/. (punct)
 
-365 Apples; My annual insurance policy.
+365 Apples. My annual insurance policy.
 
 0 -> Apples/NNS (root)
 1 -> 365/CD (nummod)
@@ -8428,7 +8428,7 @@ Alzheimer’s Advantage: new friends every day!
 2 -> insurance/NN (compound)
 1 -> ./. (punct)
 
-Men; Lovers; One is still "straight."
+Men. Lovers. One is still "straight."
 
 0 -> Men/NN (root)
 1 -> ;/: (punct)
@@ -8442,7 +8442,7 @@ Men; Lovers; One is still "straight."
 1 -> ./. (punct)
 1 -> ''/'' (punct)
 
-Shipwrecked; Canned food! No can opener.
+Shipwrecked. Canned food! No can opener.
 
 0 -> Shipwrecked/VBN (root)
 1 -> ;/: (punct)
@@ -8454,7 +8454,7 @@ Shipwrecked; Canned food! No can opener.
 2 -> can/MD (aux)
 2 -> ./. (punct)
 
-Brought roses home; Keys didn’t fit.
+Brought roses home. Keys didn’t fit.
 
 0 -> home/NN (root)
 1 -> Brought/JJ (amod)
@@ -8466,7 +8466,7 @@ Brought roses home; Keys didn’t fit.
 2 -> n't/RB (neg)
 1 -> ./. (punct)
 
-Rain; Two Strangers; One Umbrella; Love.
+Rain. Two Strangers. One Umbrella. Love.
 
 0 -> Rain/NN (root)
 1 -> ;/: (punct)
@@ -8479,7 +8479,7 @@ Rain; Two Strangers; One Umbrella; Love.
 1 -> Love/NNP (dep)
 1 -> ./. (punct)
 
-Fat; Drugs; Skinny; Rehab; …Fat again.
+Fat. Drugs. Skinny. Rehab. …Fat again.
 
 0 -> Fat/NNP (root)
 1 -> ;/: (punct)
@@ -8504,7 +8504,7 @@ Blind man can see past disability.
 2 -> past/JJ (amod)
 1 -> ./. (punct)
 
-Terminator ran Windows Vista; Humanity unscathed.
+Terminator ran Windows Vista. Humanity unscathed.
 
 0 -> ran/VBD (root)
 1 -> Terminator/NNP (nsubj)
@@ -8528,7 +8528,7 @@ Terminator ran Windows Vista; Humanity unscathed.
 2 -> text/NN (compound)
 2 -> ./. (punct)
 
-Drunk; Home late; Locked Door; Divorce.
+Drunk. Home late. Locked Door. Divorce.
 
 0 -> Drunk/NNP (root)
 1 -> ;/: (punct)
@@ -8541,7 +8541,7 @@ Drunk; Home late; Locked Door; Divorce.
 3 -> Divorce/NNP (dep)
 1 -> ./. (punct)
 
-He called; Had the wrong number.
+He called. Had the wrong number.
 
 0 -> called/VBD (root)
 1 -> He/PRP (nsubj)
@@ -8581,7 +8581,7 @@ New TV! Only snow? Nuclear winter…
 2 -> ./. (punct)
 2 -> ''/'' (punct)
 
-"End," said God; No more Universe.
+"End," said God. No more Universe.
 
 0 -> said/VBD (root)
 1 -> ``/`` (punct)
@@ -8595,7 +8595,7 @@ New TV! Only snow? Nuclear winter…
 2 -> more/RBR (amod)
 1 -> ./. (punct)
 
-Stock market plunges; Bankers follow suit.
+Stock market plunges. Bankers follow suit.
 
 0 -> plunges/VBZ (root)
 1 -> market/NN (nsubj)
@@ -8617,7 +8617,7 @@ He wanted perfection, so stayed single.
 2 -> single/JJ (xcomp)
 1 -> ./. (punct)
 
-Driving alone; Feel hand on shoulder.
+Driving alone. Feel hand on shoulder.
 
 0 -> Driving/VBG (root)
 1 -> alone/RB (advmod)
@@ -8628,7 +8628,7 @@ Driving alone; Feel hand on shoulder.
 3 -> on/IN (case)
 1 -> ./. (punct)
 
-Best puppy; Not the best dog.
+Best puppy. Not the best dog.
 
 0 -> puppy/NN (root)
 1 -> Best/JJS (amod)
@@ -8639,7 +8639,7 @@ Best puppy; Not the best dog.
 2 -> best/JJS (amod)
 1 -> ./. (punct)
 
-Am Christian; Read Bible; Was Christian.
+Am Christian. Read Bible. Was Christian.
 
 0 -> Christian/NNP (root)
 1 -> Am/VBP (compound)
@@ -8651,7 +8651,7 @@ Am Christian; Read Bible; Was Christian.
 2 -> Was/VBD (compound)
 1 -> ./. (punct)
 
-Borrowed book; Spilled coffee; Oh Fuck.
+Borrowed book. Spilled coffee. Oh Fuck.
 
 0 -> book/NN (root)
 1 -> Borrowed/VBN (amod)
@@ -8698,7 +8698,7 @@ Fortune cookie reads: That wasn’t chicken.
 2 -> n't/RB (neg)
 1 -> ./. (punct)
 
-Ate candy from child-safe bottle; COLORRRSSSS
+Ate candy from child-safe bottle. COLORRRSSSS
 
 0 -> Ate/VBD (root)
 1 -> candy/NN (dobj)
@@ -8725,7 +8725,7 @@ Ate candy from child-safe bottle; COLORRRSSSS
 2 -> ./. (punct)
 2 -> ''/'' (punct)
 
-Chubby Checker; Fats Domino; Paunchy Stratego?
+Chubby Checker. Fats Domino. Paunchy Stratego?
 
 0 -> Checker/NNP (root)
 1 -> Chubby/NNP (compound)
@@ -8750,7 +8750,7 @@ Crash! Sirens wail! Crash! Sirens silent.
 4 -> Sirens/NNS (nsubj)
 4 -> ./. (punct)
 
-Stop sign; Cute girl; "Insurance please."
+Stop sign. Cute girl. "Insurance please."
 
 0 -> Stop/VB (root)
 1 -> sign/NN (dobj)
@@ -8764,7 +8764,7 @@ Stop sign; Cute girl; "Insurance please."
 1 -> ./. (punct)
 1 -> ''/'' (punct)
 
-Murdered someone with Ipad; Fingerprints everywhere.
+Murdered someone with Ipad. Fingerprints everywhere.
 
 0 -> someone/NN (root)
 1 -> Murdered/VBN (amod)
@@ -8775,7 +8775,7 @@ Murdered someone with Ipad; Fingerprints everywhere.
 2 -> everywhere/RB (advmod)
 1 -> ./. (punct)
 
-She was lovely; Then things changed.
+She was lovely. Then things changed.
 
 0 -> lovely/JJ (root)
 1 -> She/PRP (nsubj)
@@ -8786,7 +8786,7 @@ She was lovely; Then things changed.
 2 -> things/NNS (nsubj)
 1 -> ./. (punct)
 
-First Friend; Then Lover; Lost both.
+First Friend. Then Lover. Lost both.
 
 0 -> Friend/NN (root)
 1 -> First/NNP (compound)
@@ -8811,7 +8811,7 @@ Deforestation conpsiricists: Michener, Proust, Hearst, I.R.S.
 2 -> ,/, (punct)
 2 -> I.R.S./NNP (appos)
 
-Train whistled; She struggled; Speed bump?
+Train whistled. She struggled. Speed bump?
 
 0 -> whistled/VBN (root)
 1 -> Train/NN (nsubj)
@@ -8888,7 +8888,7 @@ Checking into a hotel to checkout.
 2 -> to/TO (case)
 1 -> ./. (punct)
 
-Expresso–Depresso; Starbucks has the upper-hand.
+Expresso–Depresso. Starbucks has the upper-hand.
 
 0 -> Expresso/NNP (root)
 1 -> --/: (punct)
@@ -8900,7 +8900,7 @@ Expresso–Depresso; Starbucks has the upper-hand.
 3 -> the/DT (det)
 1 -> ./. (punct)
 
-Tried altarboy outfit; Still no luck.
+Tried altarboy outfit. Still no luck.
 
 0 -> Tried/VBD (root)
 1 -> outfit/NN (dobj)
@@ -8938,7 +8938,7 @@ It’s all over: surgery; chemotherapy; life.
 1 -> life/NN (conj)
 1 -> ./. (punct)
 
-Left good man before menopause; Mistake.
+Left good man before menopause. Mistake.
 
 0 -> man/NN (root)
 1 -> Left/VBN (amod)
@@ -8949,7 +8949,7 @@ Left good man before menopause; Mistake.
 1 -> Mistake/NNP (dep)
 1 -> ./. (punct)
 
-Finals / Concert… Life: pass; Physics: fail.
+Finals / Concert… Life: pass. Physics: fail.
 
 0 -> Finals/NNS (root)
 1 -> Concert/NNP (dep)
@@ -9000,7 +9000,7 @@ The last Astronaut watches Earth burn.
 2 -> watches/NNS (compound)
 1 -> ./. (punct)
 
-Didn’t save her; Afraid of lawsuit.
+Didn’t save her. Afraid of lawsuit.
 
 0 -> save/VB (root)
 1 -> Did/VBD (aux)
@@ -9012,7 +9012,7 @@ Didn’t save her; Afraid of lawsuit.
 3 -> of/IN (case)
 1 -> ./. (punct)
 
-Siblings argue; Salt in his cereal.
+Siblings argue. Salt in his cereal.
 
 0 -> argue/VBP (root)
 1 -> Siblings/NNS (nsubj)
@@ -9023,7 +9023,7 @@ Siblings argue; Salt in his cereal.
 3 -> his/PRP$ (nmod:poss)
 1 -> ./. (punct)
 
-Car keys lost; Sold sofa yesterday.
+Car keys lost. Sold sofa yesterday.
 
 0 -> lost/VBD (root)
 1 -> keys/NNS (nsubj)
@@ -9034,7 +9034,7 @@ Car keys lost; Sold sofa yesterday.
 2 -> yesterday/NN (nmod:tmod)
 1 -> ./. (punct)
 
-She wants him; He wants pizza.
+She wants him. He wants pizza.
 
 0 -> wants/VBZ (root)
 1 -> She/PRP (nsubj)
@@ -9057,7 +9057,7 @@ Big rock, strong rope, Bye Mother-in-law.
 2 -> Bye/NNP (compound)
 1 -> ./. (punct)
 
-Hated kids; Met preschooler; Future mother.
+Hated kids. Met preschooler. Future mother.
 
 0 -> kids/NNS (root)
 1 -> Hated/VBN (amod)
@@ -9069,7 +9069,7 @@ Hated kids; Met preschooler; Future mother.
 3 -> Future/JJ (amod)
 1 -> ./. (punct)
 
-Missing Tooth; Darkness; 23 Frantic Minutes.
+Missing Tooth. Darkness. 23 Frantic Minutes.
 
 0 -> Missing/VBG (root)
 1 -> Tooth/NN (dobj)
@@ -9081,7 +9081,7 @@ Missing Tooth; Darkness; 23 Frantic Minutes.
 3 -> Frantic/JJ (amod)
 1 -> ./. (punct)
 
-Trapped in vinegar; What a pickle!!!
+Trapped in vinegar. What a pickle!!!
 
 0 -> Trapped/VBN (root)
 1 -> vinegar/NN (nmod:in)
@@ -9092,7 +9092,7 @@ Trapped in vinegar; What a pickle!!!
 3 -> a/DT (det)
 3 -> !!!/CD (nummod)
 
-Lived to eat; Life ate me.
+Lived to eat. Life ate me.
 
 0 -> Lived/VBN (root)
 1 -> eat/VB (xcomp)
@@ -9115,7 +9115,7 @@ Through mud, under bullets, found freedom.
 1 -> freedom/NN (dobj)
 1 -> ./. (punct)
 
-Question asked; Negative reply; Ring returned.
+Question asked. Negative reply. Ring returned.
 
 0 -> asked/VBD (root)
 1 -> Question/NN (nsubj)
@@ -9127,7 +9127,7 @@ Question asked; Negative reply; Ring returned.
 3 -> Ring/VBG (auxpass)
 1 -> ./. (punct)
 
-Father murdered for inheritance; Market crashed.
+Father murdered for inheritance. Market crashed.
 
 0 -> murdered/VBN (root)
 1 -> Father/NNP (nsubj)
@@ -9138,7 +9138,7 @@ Father murdered for inheritance; Market crashed.
 2 -> Market/NN (nsubj)
 1 -> ./. (punct)
 
-Puppet girlfriend; snip; No strings attached.
+Puppet girlfriend; snip. No strings attached.
 
 0 -> girlfriend/NN (root)
 1 -> Puppet/NN (compound)
@@ -9150,7 +9150,7 @@ Puppet girlfriend; snip; No strings attached.
 2 -> attached/VBN (acl)
 1 -> ./. (punct)
 
-Dot in the sky; Dead pixel.
+Dot in the sky. Dead pixel.
 
 0 -> Dot/VB (root)
 1 -> sky/NN (nmod:in)
@@ -9173,7 +9173,7 @@ Voyager still transmitted, but Earth didn't.
 2 -> n't/RB (neg)
 1 -> ./. (punct)
 
-Neglected her; She left; I follow.
+Neglected her. She left. I follow.
 
 0 -> Neglected/VBN (root)
 1 -> her/PRP$ (dobj)
@@ -9185,7 +9185,7 @@ Neglected her; She left; I follow.
 2 -> I/PRP (nsubj)
 1 -> ./. (punct)
 
-Old Man; Never Remarried; Visits Cemetery.
+Old Man. Never Remarried. Visits Cemetery.
 
 0 -> Man/NN (root)
 1 -> Old/JJ (amod)
@@ -9197,7 +9197,7 @@ Old Man; Never Remarried; Visits Cemetery.
 2 -> Visits/NNP (compound)
 1 -> ./. (punct)
 
-False teeth fell out; Kiss ended.
+False teeth fell out. Kiss ended.
 
 0 -> fell/VBD (root)
 1 -> teeth/NNS (nsubj)
@@ -9208,7 +9208,7 @@ False teeth fell out; Kiss ended.
 2 -> Kiss/VB (auxpass)
 1 -> ./. (punct)
 
-Home late; Doors locked; I’m caught.
+Home late. Doors locked. I’m caught.
 
 0 -> Home/NNP (root)
 1 -> late/RB (advmod)
@@ -9221,7 +9221,7 @@ Home late; Doors locked; I’m caught.
 2 -> 'm/VBP (auxpass)
 1 -> ./. (punct)
 
-Wasted day; Wasted life; Dessert, please.
+Wasted day. Wasted life. Dessert, please.
 
 0 -> day/NN (root)
 1 -> Wasted/VBN (amod)
@@ -9260,7 +9260,7 @@ Everyone mocks Scoff Drops™ inventor –- initially.
 2 -> initially/RB (advmod)
 1 -> ./. (punct)
 
-Yoga instructor farts; No inner peace.
+Yoga instructor farts. No inner peace.
 
 0 -> farts/NNS (root)
 1 -> Yoga/NN (compound)
@@ -9271,7 +9271,7 @@ Yoga instructor farts; No inner peace.
 2 -> inner/JJ (amod)
 1 -> ./. (punct)
 
-Imaginary Castles; Conquered by reality warheads.
+Imaginary Castles. Conquered by reality warheads.
 
 0 -> Castles/NNS (root)
 1 -> Imaginary/JJ (amod)
@@ -9282,7 +9282,7 @@ Imaginary Castles; Conquered by reality warheads.
 3 -> reality/NN (compound)
 1 -> ./. (punct)
 
-Teenager runs away; Exam results arrive.
+Teenager runs away. Exam results arrive.
 
 0 -> runs/VBZ (root)
 1 -> Teenager/NN (nsubj)
@@ -9293,7 +9293,7 @@ Teenager runs away; Exam results arrive.
 3 -> Exam/NN (compound)
 1 -> ./. (punct)
 
-Crook outruns cops; Walkie-talkies outrun crook.
+Crook outruns cops. Walkie-talkies outrun crook.
 
 0 -> outruns/VBZ (root)
 1 -> Crook/NN (nsubj)
@@ -9318,7 +9318,7 @@ Groom: "Oh shit! Was that today?"
 2 -> ?/. (punct)
 2 -> ''/'' (punct)
 
-Dictator; Stability; Oil; Invasion; Democracy; Chaos.
+Dictator. Stability. Oil. Invasion. Democracy. Chaos.
 
 0 -> Dictator/NN (root)
 1 -> ;/: (punct)
@@ -9346,7 +9346,7 @@ Dictator; Stability; Oil; Invasion; Democracy; Chaos.
 2 -> the/DT (det)
 1 -> ./. (punct)
 
-Sad; Schadenfreude; Laughs; Sorry; Guilty; Sad.
+Sad. Schadenfreude. Laughs. Sorry. Guilty. Sad.
 
 0 -> Sad/JJ (root)
 1 -> ;/: (punct)
@@ -9361,7 +9361,7 @@ Sad; Schadenfreude; Laughs; Sorry; Guilty; Sad.
 2 -> Sad/NNP (dep)
 1 -> ./. (punct)
 
-Goth club; "Hammer Time". Dancefloor PACKED!
+Goth club. "Hammer Time". Dancefloor PACKED!
 
 0 -> club/NN (root)
 1 -> Goth/NNP (compound)
@@ -9375,7 +9375,7 @@ Goth club; "Hammer Time". Dancefloor PACKED!
 2 -> Dancefloor/NNP (compound)
 2 -> !/. (punct)
 
-"Sorry; Bad hair day; Love, Rapunzel"
+"Sorry. Bad hair day. Love, Rapunzel"
 
 0 -> ``/`` (root)
 1 -> Sorry/JJ (root)
@@ -9403,7 +9403,7 @@ February 14, 2011: "Table for one."
 1 -> ./. (punct)
 1 -> ''/'' (punct)
 
-Tiny casket; Father sobs; Finally sober.
+Tiny casket. Father sobs. Finally sober.
 
 0 -> casket/NN (root)
 1 -> Tiny/NNP (compound)
@@ -9427,7 +9427,7 @@ Shrodinger’s cat pleas: think outside box!
 3 -> outside/JJ (amod)
 1 -> !/. (punct)
 
-Balloon heavy; He jumps; She lives.
+Balloon heavy. He jumps. She lives.
 
 0 -> heavy/NN (root)
 1 -> Balloon/NN (compound)
@@ -9439,7 +9439,7 @@ Balloon heavy; He jumps; She lives.
 2 -> She/PRP (nsubj)
 1 -> ./. (punct)
 
-Bullied future President; Laughed too soon.
+Bullied future President. Laughed too soon.
 
 0 -> President/NN (root)
 1 -> Bullied/VBN (amod)
@@ -9450,7 +9450,7 @@ Bullied future President; Laughed too soon.
 3 -> too/RB (advmod)
 1 -> ./. (punct)
 
-Best friends; Some beers; New lovers.
+Best friends. Some beers. New lovers.
 
 0 -> friends/NNS (root)
 1 -> Best/JJS (amod)
@@ -9462,7 +9462,7 @@ Best friends; Some beers; New lovers.
 3 -> New/NNP (compound)
 1 -> ./. (punct)
 
-Shot in crotch; No hard feelings.
+Shot in crotch. No hard feelings.
 
 0 -> Shot/NN (root)
 1 -> crotch/NN (nmod:in)
@@ -9484,7 +9484,7 @@ Harshness of reality, softened by Merlot.
 3 -> by/IN (case)
 1 -> ./. (punct)
 
-The war for peace; No survivors.
+The war for peace. No survivors.
 
 0 -> war/NN (root)
 1 -> The/DT (det)
@@ -9495,7 +9495,7 @@ The war for peace; No survivors.
 2 -> No/DT (neg)
 1 -> ./. (punct)
 
-Patient screams; Morphine can’t numb death.
+Patient screams. Morphine can’t numb death.
 
 0 -> screams/NNS (root)
 1 -> Patient/NN (compound)

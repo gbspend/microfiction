@@ -8,7 +8,6 @@ from penseur import penseur
 import priority
 from pattern.en import conjugate,INFINITIVE,article,DEFINITE,INDEFINITE
 import oxdict as od
-import pickle
 
 priority = reload(priority)
 p = reload(p)

@@ -136,13 +136,11 @@ def w2vweights(l,word,w2v):
 def w2vweightslist(l,words,w2v):
 	return [(x,total_similarity(x,words,w2v)) for x in l]
 
-def has_tag(word):
-	return word.find('_') != -1
-
-def strip_tag(tagged):
-	if not has_tag(tagged):
-		return tagged
-	return tagged[:-(len(tagged)-tagged.find('_'))]
+def strip_tag(w):
+	loc = w.find('_')
+	if loc == -1:
+		return w
+	return w[:-(len(w)-loc)]
 
 def w2vWeightsListNew(l, words, w2v):
 	tuple_list = [(x, new_total_similarity(x, words, w2v)) for x in l]
@@ -188,43 +186,44 @@ def relation(start, relations, w2v):
 	return sorted([x[0] for x in w2v.similar_by_vector(w2v[start] + rel)], key=lambda x : w2v.similarity(start, x), reverse = True)
 
 # relations should be [(noun, verb)...]
-def get_verbs_from_noun(start, relations, w2v_alt):
-	if not has_tag(start):
+def get_verbs_from_noun(start, relations, w2v):
+	if '_' not in start:
 		start += '_NN'
-	return get_scholar_rels(start, relations, w2v_alt, '_NN', '_VB')
+	return get_scholar_rels(start, relations, w2v, '_NN', '_VB')
 
 # relations should be [(verb, noun)...]
-def get_nouns_from_verb(start, relations, w2v_alt):
-	if not has_tag(start):
+def get_nouns_from_verb(start, relations, w2v):
+	if '_' not in start:
 		start += '_VB'
-	return get_scholar_rels(start, relations, w2v_alt, '_VB', '_NN')
+	return get_scholar_rels(start, relations, w2v, '_VB', '_NN')
 
 # Scholar by Daniel Ricks: https://github.com/danielricks/scholar
-def get_scholar_rels(start, relations, w2v_alt, tag1, tag2):
-	counts = defaultdict(int)
-	total_res = []
+def get_scholar_rels(start, relations, w2v, tag1, tag2):
+	counts = defaultdict(float)
+	ret = []
 	for rel in relations:
 		positives = [rel[1] + tag2, start]
 		negatives = [rel[0] + tag1]
 		flag = False
 		for w in positives+negatives:
-			if w not in w2v_alt:
+			if w not in w2v:
 				flag = True
+				break
 		if flag:
 			continue
 
-		idxs, metrics = w2v_alt.analogy(pos=positives, neg=negatives, n=10)
-		res = w2v_alt.generate_response(idxs, metrics).tolist()
-		total_res += res
+		idxs, metrics = w2v.analogy(pos=positives, neg=negatives, n=10)
+		res = w2v.generate_response(idxs, metrics).tolist()
+		ret += res
 		for x in res:
-			counts [x[0]] += 1
+			counts[x[0]] += x[1]
 
-	total_res = [x[0] for x in total_res]
-	total_res = list(set(total_res)) # remove duplicates
-	total_res = sorted(total_res, key=counts.get, reverse=True)
-	total_res = [x[:-(len(x)-x.find('_'))] for x in total_res]
+	ret = [x[0] for x in ret]
+	ret = sorted(ret, key=counts.get, reverse=True)
+	ret = [x[:-(len(x)-x.find('_'))] for x in ret]
+	ret = list(set(ret)) # remove duplicates
 
-	return total_res
+	return ret
 
 #Ideas:
 #wn.synsets(word) -> lemmas -> names (to "cast a wider net")

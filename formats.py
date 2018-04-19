@@ -50,7 +50,7 @@ A node consists of:
 	word:	Lower case word
 	pos:	POS
 	dep:	The dependency node type (root, advmod, etc)
-	index:	A position ("index") in the story (corresponds to "plug-in story" numbers)
+	index:	A 0-indexed position ("index") in the story (corresponds to "plug-in story" numbers)
   children:	A list of children
 	[That's it, all the "relation" processing will happen later]
 	[Intentionally doesn't include raw line, because the number probably won't mean anything]
@@ -71,7 +71,7 @@ def isBadFormat(form):
 
 punc = ''.join(string.punctuation.split('-'))
 marker = ' -> '
-def makeForms(fname):
+def makeRawForms(fname):
 	ret = []
 	with open(fname) as f:
 	    content = f.readlines()
@@ -102,7 +102,7 @@ def makeForms(fname):
 			node['word'] = word.lower()
 			node['pos'] = wordparts[1]
 			node['dep'] = parts[3][1:-1]
-			node['index'] = curr['words'].index(word)+1
+			node['index'] = curr['words'].index(word) #0-indexed
 			if len(last) == 0:
 				last.append(node)
 				curr['root'] = node
@@ -115,15 +115,12 @@ def makeForms(fname):
 			
 #0 -> friend/NN (root)
 
-def makeAllForms():
+def makeAllRawForms():
 	path = os.getcwd()+'/corpus/'
 	ret = []
 	for f in os.listdir(path):
-		ret += makeForms(path+f)
+		ret += makeRawForms(path+f)
 	return ret
 
 #NOTES:
 #Maybe choose some POS that are never "locked" (articles, what else?)
-
-#TODO:
-#Set up git for real (be careful; make backup)

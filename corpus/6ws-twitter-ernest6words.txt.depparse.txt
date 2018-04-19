@@ -123,7 +123,7 @@ You are capable of greater things.
 2 -> greater/JJR (amod)
 1 -> ./. (punct)
 
-Knowledge speaks; Wisdom listens; Philosophy contemplates.
+Knowledge speaks. Wisdom listens. Philosophy contemplates.
 
 0 -> speaks/VBZ (root)
 1 -> Knowledge/NN (nsubj)
@@ -197,7 +197,7 @@ Your purpose is to create one.
 2 -> one/CD (dobj)
 1 -> ./. (punct)
 
-It's our EARTH; Let's protect it.
+It's our EARTH. Let's protect it.
 
 0 -> EARTH/NN (root)
 1 -> It/PRP (nsubj)
@@ -373,7 +373,7 @@ Art is the essence of awareness.
 2 -> of/IN (case)
 1 -> ./. (punct)
 
-Believe you can; You're halfway there.
+Believe you can. You're halfway there.
 
 0 -> Believe/VB (root)
 1 -> can/MD (ccomp)
@@ -492,7 +492,7 @@ Perception believed is always reality achieved.
 1 -> achieved/VBD (acl)
 1 -> ./. (punct)
 
-Live your dream; Share your passion.
+Live your dream. Share your passion.
 
 0 -> Live/VB (root)
 1 -> dream/NN (dobj)
@@ -645,7 +645,7 @@ Mother still dressed him every day.
 2 -> every/DT (det)
 1 -> ./. (punct)
 
-Give hope; Give blood; Give life.
+Give hope. Give blood. Give life.
 
 0 -> Give/VB (root)
 1 -> hope/NN (dobj)
@@ -657,7 +657,7 @@ Give hope; Give blood; Give life.
 2 -> life/NN (dobj)
 1 -> ./. (punct)
 
-Eat half; Walk double; Laugh triple.
+Eat half. Walk double. Laugh triple.
 
 0 -> Eat/VB (root)
 1 -> half/NN (dobj)
@@ -679,7 +679,7 @@ True friends make your world beautiful.
 3 -> your/PRP$ (nmod:poss)
 1 -> ./. (punct)
 
-Failed exam; Attempted suicide; Failed again.
+Failed exam. Attempted suicide. Failed again.
 
 0 -> exam/NN (root)
 1 -> Failed/VBN (amod)
@@ -857,7 +857,7 @@ Being happy is a conscious choice.
 1 -> conscious/JJ (amod)
 1 -> ./. (punct)
 
-Change you thoughts; Transform your life.
+Change you thoughts. Transform your life.
 
 0 -> Change/NNP (root)
 1 -> thoughts/NNS (acl:relcl)
@@ -878,7 +878,7 @@ Time is your most valuable asset.
 2 -> most/RBS (advmod)
 1 -> ./. (punct)
 
-Breathe in peace; Breathe out love.
+Breathe in peace. Breathe out love.
 
 0 -> Breathe/VB (root)
 1 -> peace/NN (nmod:in)
@@ -909,7 +909,7 @@ I dreamt of you last night.
 2 -> last/JJ (amod)
 1 -> ./. (punct)
 
-Forget your phone; Live your life.
+Forget your phone. Live your life.
 
 0 -> Forget/VB (root)
 1 -> phone/NN (dobj)
@@ -1002,7 +1002,7 @@ Patience is the companion of wisdom.
 2 -> of/IN (case)
 1 -> ./. (punct)
 
-Happiness pursued eludes; Happiness given returns.
+Happiness pursued eludes. Happiness given returns.
 
 0 -> pursued/VBD (root)
 1 -> Happiness/NN (nsubj)
@@ -1075,7 +1075,7 @@ Love is a four legged word.
 1 -> legged/VBD (amod)
 1 -> ./. (punct)
 
-Just do it; Whispered the heart.
+Just do it. Whispered the heart.
 
 0 -> do/VB (root)
 1 -> Just/RB (advmod)
@@ -1149,7 +1149,7 @@ True wealth is a free soul.
 1 -> free/JJ (amod)
 1 -> ./. (punct)
 
-Tear-soaked goodbye letter; Stamped but unsent.
+Tear-soaked goodbye letter. Stamped but unsent.
 
 0 -> letter/NN (root)
 1 -> Tear-soaked/JJ (amod)
@@ -1171,7 +1171,7 @@ Knowledge only speaks but wisdom listens.
 2 -> wisdom/NN (nsubj)
 1 -> ./. (punct)
 
-Small home; Big dreams; Happy wife.
+Small home. Big dreams. Happy wife.
 
 0 -> home/NN (root)
 1 -> Small/JJ (amod)
@@ -1214,7 +1214,7 @@ Nature is my manifestation of God.
 2 -> of/IN (case)
 1 -> ./. (punct)
 
-Dream it; Believe it; Achieve it.
+Dream it. Believe it. Achieve it.
 
 0 -> Dream/VB (root)
 1 -> it/PRP (dobj)
@@ -1331,7 +1331,7 @@ The journey itself is my home.
 1 -> my/PRP$ (nmod:poss)
 1 -> ./. (punct)
 
-One Flag; One Land; One Spirit.
+One Flag. One Land. One Spirit.
 
 0 -> Flag/NN (root)
 1 -> One/CD (nummod)
@@ -1353,7 +1353,7 @@ Successful people just inculcate successful habits.
 2 -> successful/JJ (amod)
 1 -> ./. (punct)
 
-Find your tribe; Love them hard.
+Find your tribe. Love them hard.
 
 0 -> Find/VB (root)
 1 -> tribe/NN (dobj)
@@ -1364,7 +1364,7 @@ Find your tribe; Love them hard.
 2 -> hard/RB (advmod)
 1 -> ./. (punct)
 
-I leave; Dog panics; Furniture shopping.
+I leave. Dog panics. Furniture shopping.
 
 0 -> leave/VBP (root)
 1 -> I/PRP (nsubj)
@@ -1417,7 +1417,7 @@ Patience is the companion of wisdom.
 2 -> of/IN (case)
 1 -> ./. (punct)
 
-I'm a woman phenomenally; That's me.
+I'm a woman phenomenally. That's me.
 
 0 -> woman/NN (root)
 1 -> I/PRP (nsubj)
@@ -1511,7 +1511,7 @@ Be stronger than your strongest excuse.
 2 -> strongest/JJS (amod)
 1 -> ./. (punct)
 
-Ignore the noise; Follow your choice.
+Ignore the noise. Follow your choice.
 
 0 -> Ignore/VB (root)
 1 -> noise/NN (dobj)
@@ -1542,7 +1542,7 @@ The most precious gift is time.
 1 -> is/VBZ (cop)
 1 -> ./. (punct)
 
-Never stop believing; Miracles happen everyday.
+Never stop believing. Miracles happen everyday.
 
 0 -> stop/VB (root)
 1 -> Never/RB (neg)
@@ -1573,7 +1573,7 @@ Women are the architects of society.
 2 -> of/IN (case)
 1 -> ./. (punct)
 
-One Land; One Flag; One Republic.
+One Land. One Flag. One Republic.
 
 0 -> Land/NN (root)
 1 -> One/CD (nummod)
@@ -1647,7 +1647,7 @@ One conscious breath is a meditation.
 1 -> a/DT (det)
 1 -> ./. (punct)
 
-Time moves slowly; But passes quickly.
+Time moves slowly. But passes quickly.
 
 0 -> moves/VBZ (root)
 1 -> Time/NNP (nsubj)
@@ -1701,7 +1701,7 @@ Have a cup of positivitea today.
 1 -> today/NN (nmod:tmod)
 1 -> ./. (punct)
 
-Live without pretending; Speak without offending.
+Live without pretending. Speak without offending.
 
 0 -> Live/VB (root)
 1 -> pretending/VBG (advcl:without)
@@ -1742,7 +1742,7 @@ I will start my diet tomorrow.
 1 -> tomorrow/NN (nmod:tmod)
 1 -> ./. (punct)
 
-Fear is stupid; So are regrets.
+Fear is stupid. So are regrets.
 
 0 -> stupid/JJ (root)
 1 -> Fear/NN (nsubj)
@@ -1784,7 +1784,7 @@ Soil is the soul of earth.
 2 -> of/IN (case)
 1 -> ./. (punct)
 
-Pain is inevitable; Suffering is optional.
+Pain is inevitable. Suffering is optional.
 
 0 -> inevitable/JJ (root)
 1 -> Pain/NN (nsubj)
@@ -1877,7 +1877,7 @@ Embrace the life that's calling you.
 3 -> you/PRP (dobj)
 1 -> ./. (punct)
 
-Try again; Fail again; Fail better.
+Try again. Fail again. Fail better.
 
 0 -> Try/VB (root)
 1 -> again/RB (advmod)
@@ -1940,7 +1940,7 @@ Good fiction creates its own reality.
 2 -> own/JJ (amod)
 1 -> ./. (punct)
 
-Life is tough; So are you.
+Life is tough. So are you.
 
 0 -> tough/JJ (root)
 1 -> Life/NNP (nsubj)
@@ -2005,7 +2005,7 @@ Remember, maturity starts when drama ends.
 2 -> drama/NN (nsubj)
 1 -> ./. (punct)
 
-It's the will; Not the skill.
+It's the will. Not the skill.
 
 0 -> the/DT (root)
 1 -> It/PRP (nsubj)
@@ -2017,7 +2017,7 @@ It's the will; Not the skill.
 2 -> the/DT (det)
 1 -> ./. (punct)
 
-Nobody is superior; Nobody is inferior.
+Nobody is superior. Nobody is inferior.
 
 0 -> superior/JJ (root)
 1 -> Nobody/NN (nsubj)
@@ -2089,7 +2089,7 @@ Silence is a fence around wisdom.
 2 -> around/IN (case)
 1 -> ./. (punct)
 
-Life is fragile; Handle with prayer.
+Life is fragile. Handle with prayer.
 
 0 -> fragile/JJ (root)
 1 -> Life/NNP (nsubj)
@@ -2100,7 +2100,7 @@ Life is fragile; Handle with prayer.
 3 -> with/IN (case)
 1 -> ./. (punct)
 
-Was hot; Raised kids; Lost cool.
+Was hot. Raised kids. Lost cool.
 
 0 -> Was/VBD (root)
 1 -> hot/JJ (xcomp)
@@ -2153,7 +2153,7 @@ Every storm runs out of rain.
 3 -> of/IN (mwe)
 1 -> ./. (punct)
 
-Heroes get remembered; Legends never die.
+Heroes get remembered. Legends never die.
 
 0 -> remembered/VBN (root)
 1 -> Heroes/NNS (nsubjpass)
@@ -2164,7 +2164,7 @@ Heroes get remembered; Legends never die.
 2 -> never/RB (neg)
 1 -> ./. (punct)
 
-Be you; The world will adjust.
+Be you. The world will adjust.
 
 0 -> Be/VB (root)
 1 -> you/PRP (nsubj)
@@ -2300,7 +2300,7 @@ Art is when work meets love.
 2 -> love/NN (dobj)
 1 -> ./. (punct)
 
-Leader is admired; Boss is feared.
+Leader is admired. Boss is feared.
 
 0 -> admired/VBN (root)
 1 -> Leader/NNP (nsubjpass)
@@ -2363,7 +2363,7 @@ Crazy looking problems are sometimes real.
 1 -> sometimes/RB (advmod)
 1 -> ./. (punct)
 
-Confidence is silent; Insecurities are loud.
+Confidence is silent. Insecurities are loud.
 
 0 -> silent/JJ (root)
 1 -> Confidence/NN (nsubj)
@@ -2570,7 +2570,7 @@ I believe in redefining my impossible.
 3 -> my/PRP$ (nmod:poss)
 1 -> ./. (punct)
 
-FRIDAY; My second favourite "F" word.
+FRIDAY. My second favourite "F" word.
 
 0 -> FRIDAY/NN (root)
 1 -> ;/: (punct)
@@ -2593,7 +2593,7 @@ Every artist was first an amateur.
 1 -> an/DT (det)
 1 -> ./. (punct)
 
-Patience attracts happiness; Happiness drives everything.
+Patience attracts happiness. Happiness drives everything.
 
 0 -> attracts/VBZ (root)
 1 -> Patience/NN (nsubj)
@@ -2624,7 +2624,7 @@ Wise souls speak loudly in silence.
 2 -> in/IN (case)
 1 -> ./. (punct)
 
-She fell down; Broke her heart.
+She fell down. Broke her heart.
 
 0 -> fell/VBD (root)
 1 -> She/PRP (nsubj)
@@ -2645,7 +2645,7 @@ Sow the seeds of love today.
 1 -> today/NN (nmod:tmod)
 1 -> ./. (punct)
 
-No water; No life; No existence.
+No water. No life. No existence.
 
 0 -> water/NN (root)
 1 -> No/DT (neg)
@@ -2723,7 +2723,7 @@ It's my sins that nailed HIM.
 2 -> HIM/NNP (dobj)
 1 -> ./. (punct)
 
-Won the world; Lost the girl.
+Won the world. Lost the girl.
 
 0 -> Lost/VBD (root)
 1 -> Won/NNP (nsubj)
@@ -2744,7 +2744,7 @@ Gratitude opens the doors to happiness.
 2 -> to/TO (case)
 1 -> ./. (punct)
 
-Excessive sorrow laughs; Excessive joy weeps.
+Excessive sorrow laughs. Excessive joy weeps.
 
 0 -> laughs/VBZ (root)
 1 -> sorrow/NN (nsubj)
@@ -2809,7 +2809,7 @@ Better the foot-slip than the tongue.
 2 -> the/DT (det)
 1 -> ./. (punct)
 
-A thousand wrinkles; A thousand stories.
+A thousand wrinkles. A thousand stories.
 
 0 -> wrinkles/NNS (root)
 1 -> A/DT (det)
@@ -2820,7 +2820,7 @@ A thousand wrinkles; A thousand stories.
 2 -> thousand/CD (nummod)
 1 -> ./. (punct)
 
-Wanted: Puppy; Must fit old collar.
+Wanted: Puppy. Must fit old collar.
 
 0 -> Wanted/VBN (root)
 1 -> :/: (punct)
@@ -2954,7 +2954,7 @@ Go out and paint the stars.
 2 -> the/DT (det)
 1 -> ./. (punct)
 
-You deserve happiness; So I left.
+You deserve happiness. So I left.
 
 0 -> deserve/VBP (root)
 1 -> You/PRP (nsubj)
@@ -3037,7 +3037,7 @@ Showing-off is fool's idea of glory.
 2 -> of/IN (case)
 1 -> ./. (punct)
 
-Trust your instinct; Trust your abilities.
+Trust your instinct. Trust your abilities.
 
 0 -> instinct/NN (root)
 1 -> Trust/NNP (compound)
@@ -3337,7 +3337,7 @@ Easy reading is damn hard writing.
 2 -> damn/RB (advmod)
 1 -> ./. (punct)
 
-Dream it; Believe it; Achieve it.
+Dream it. Believe it. Achieve it.
 
 0 -> Dream/VB (root)
 1 -> it/PRP (dobj)
@@ -3349,7 +3349,7 @@ Dream it; Believe it; Achieve it.
 2 -> it/PRP (dobj)
 1 -> ./. (punct)
 
-Strangers; Friends; Best friends; Lovers; Strangers.
+Strangers. Friends. Best friends. Lovers. Strangers.
 
 0 -> Strangers/NNS (root)
 1 -> ;/: (punct)
@@ -3538,7 +3538,7 @@ Today is full of possible beginnings.
 2 -> possible/JJ (amod)
 1 -> ./. (punct)
 
-Honest feelings; Bad timing; Painful combination.
+Honest feelings. Bad timing. Painful combination.
 
 0 -> feelings/NNS (root)
 1 -> Honest/JJ (amod)
@@ -3642,7 +3642,7 @@ Beauty shines even through your flaws.
 2 -> your/PRP$ (nmod:poss)
 1 -> ./. (punct)
 
-You asked; I answered with silence.
+You asked. I answered with silence.
 
 0 -> asked/VBD (root)
 1 -> You/PRP (nsubj)
@@ -3740,7 +3740,7 @@ Rewards come in actions, not discussions.
 3 -> not/RB (neg)
 1 -> ./. (punct)
 
-Live well; Laugh often; Love much.
+Live well. Laugh often. Love much.
 
 0 -> Live/VB (root)
 1 -> well/RB (advmod)
@@ -3782,7 +3782,7 @@ Adversity introduces a man to himself.
 2 -> to/TO (case)
 1 -> ./. (punct)
 
-Be who you're born to be. #LifeLessons
+Be who you're born to be.#LifeLessons
 
 0 -> Be/VB (root)
 1 -> born/VBN (ccomp)
@@ -3877,7 +3877,7 @@ Books are a uniquely portable magic.
 2 -> uniquely/RB (advmod)
 1 -> ./. (punct)
 
-Save our tigers; Save our habitat.
+Save our tigers. Save our habitat.
 
 0 -> Save/VB (root)
 1 -> tigers/NNS (dobj)
@@ -3898,7 +3898,7 @@ Nature protects if she is protected.
 2 -> is/VBZ (auxpass)
 1 -> ./. (punct)
 
-Words can inspire; Words can destroy.
+Words can inspire. Words can destroy.
 
 0 -> inspire/VB (root)
 1 -> Words/NNS (nsubj)
@@ -3994,7 +3994,7 @@ Fading memories: the lonely heart's mirage.
 3 -> 's/POS (case)
 1 -> ./. (punct)
 
-Find your tribe; Love them hard.
+Find your tribe. Love them hard.
 
 0 -> Find/VB (root)
 1 -> tribe/NN (dobj)
@@ -4025,7 +4025,7 @@ Be the one to stand out.
 3 -> out/RP (compound:prt)
 1 -> ./. (punct)
 
-Married best friend; No longer friends.
+Married best friend. No longer friends.
 
 0 -> friend/NN (root)
 1 -> Married/JJ (amod)
@@ -4045,7 +4045,7 @@ Music is universal language of mankind
 1 -> mankind/NN (nmod:of)
 2 -> of/IN (case)
 
-Visualize your success; Then take action!
+Visualize your success. Then take action!
 
 0 -> Visualize/VB (root)
 1 -> success/NN (dobj)
@@ -4056,7 +4056,7 @@ Visualize your success; Then take action!
 2 -> action/NN (dobj)
 1 -> !/. (punct)
 
-Starve your distractions; Feed your focus.
+Starve your distractions. Feed your focus.
 
 0 -> Starve/VB (root)
 1 -> distractions/NNS (dobj)
@@ -4088,7 +4088,7 @@ In the end only kindness matters.
 2 -> kindness/NN (compound)
 1 -> ./. (punct)
 
-We're lying in bed; She's lying.
+We're lying in bed. She's lying.
 
 0 -> lying/VBG (root)
 1 -> We/PRP (nsubj)
@@ -4111,7 +4111,7 @@ The secret of living is giving.
 1 -> is/VBZ (aux)
 1 -> ./. (punct)
 
-Broken crayons still colour; Donate them.
+Broken crayons still colour. Donate them.
 
 0 -> colour/NN (root)
 1 -> crayons/NNS (nsubj)
@@ -4143,7 +4143,7 @@ Don't stand in your own way.
 2 -> own/JJ (amod)
 1 -> ./. (punct)
 
-New stylist; New haircut; New hat.
+New stylist. New haircut. New hat.
 
 0 -> stylist/NN (root)
 1 -> New/NNP (compound)
@@ -4303,7 +4303,7 @@ Never let self-doubt hold you captive.
 3 -> you/PRP (nsubj)
 1 -> ./. (punct)
 
-Drowning in information; Starving for wisdom.
+Drowning in information. Starving for wisdom.
 
 0 -> Drowning/VBG (root)
 1 -> information/NN (nmod:in)
@@ -4325,7 +4325,7 @@ Pride divides men, humility joins them.
 2 -> them/PRP (dobj)
 1 -> ./. (punct)
 
-Rain; Two strangers; One umbrella; Love.
+Rain. Two strangers. One umbrella. Love.
 
 0 -> Rain/NN (root)
 1 -> ;/: (punct)
@@ -4338,7 +4338,7 @@ Rain; Two strangers; One umbrella; Love.
 1 -> Love/NNP (dep)
 1 -> ./. (punct)
 
-Condemn me; History will absolve me.
+Condemn me. History will absolve me.
 
 0 -> Condemn/VB (root)
 1 -> me/PRP (dobj)
@@ -4400,7 +4400,7 @@ You are responsible for your life.
 2 -> your/PRP$ (nmod:poss)
 1 -> ./. (punct)
 
-Stay humble; Work hard; Be kind.
+Stay humble. Work hard. Be kind.
 
 0 -> Stay/NNP (root)
 1 -> humble/JJ (amod)
@@ -4422,7 +4422,7 @@ And she still wears the ring.
 2 -> the/DT (det)
 1 -> ./. (punct)
 
-Don't facebook your problems; Face them.
+Don't facebook your problems. Face them.
 
 0 -> facebook/VB (root)
 1 -> Do/VBP (aux)
@@ -4507,7 +4507,7 @@ Friends are the sunshine of life.
 2 -> of/IN (case)
 1 -> ./. (punct)
 
-I'm sorry; I sold your fantasies.
+I'm sorry. I sold your fantasies.
 
 0 -> sorry/JJ (root)
 1 -> I/PRP (nsubj)
@@ -4551,7 +4551,7 @@ It's never too late to learn.
 2 -> to/TO (mark)
 1 -> ./. (punct)
 
-He screams; She screams; They complain.
+He screams. She screams. They complain.
 
 0 -> screams/VBZ (root)
 1 -> He/PRP (nsubj)
@@ -4583,7 +4583,7 @@ To travel is to truly live.
 1 -> truly/RB (advmod)
 1 -> ./. (punct)
 
-Heart stopping hellos; Heart breaking goodbyes.
+Heart stopping hellos. Heart breaking goodbyes.
 
 0 -> hellos/NNS (root)
 1 -> Heart/NNP (compound)
@@ -4666,7 +4666,7 @@ Dad is a daughter's first love.
 1 -> first/JJ (amod)
 1 -> ./. (punct)
 
-Played PokemonGo; Discovered playground in vicinity.
+Played PokemonGo. Discovered playground in vicinity.
 
 0 -> PokemonGo/NN (root)
 1 -> Played/VBN (amod)
@@ -4730,7 +4730,7 @@ Simple act of caring is heroic.
 1 -> is/VBZ (cop)
 1 -> ./. (punct)
 
-New beginnings; New ideas; new energies.
+New beginnings. New ideas. new energies.
 
 0 -> beginnings/NNS (root)
 1 -> New/NNP (compound)
@@ -4892,7 +4892,7 @@ Saving a life will change yours.
 1 -> yours/PRP$ (dobj)
 1 -> ./. (punct)
 
-Everyday is an opportunity; Seize it.
+Everyday is an opportunity. Seize it.
 
 0 -> opportunity/NN (root)
 1 -> Everyday/JJ (nsubj)
@@ -4913,7 +4913,7 @@ Best teacher is your last mistake.
 1 -> last/JJ (amod)
 1 -> ./. (punct)
 
-Buy less; Choose well; Curb wastage.
+Buy less. Choose well. Curb wastage.
 
 0 -> Buy/VB (root)
 1 -> less/RBR (advmod)
@@ -4967,7 +4967,7 @@ Hug's a handshake from the heart.
 2 -> the/DT (det)
 1 -> ./. (punct)
 
-A thousand wrinkles; A thousand stories.
+A thousand wrinkles. A thousand stories.
 
 0 -> wrinkles/NNS (root)
 1 -> A/DT (det)
@@ -5029,7 +5029,7 @@ Gratitude is always the best attitude.
 1 -> best/JJS (amod)
 1 -> ./. (punct)
 
-Happiness is a habit; Cultivate it.
+Happiness is a habit. Cultivate it.
 
 0 -> habit/NN (root)
 1 -> Happiness/NN (nsubj)
@@ -5051,7 +5051,7 @@ Success and happiness starts with you.
 2 -> with/IN (case)
 1 -> ./. (punct)
 
-Live beautifully; Dream passionately; Love completely.
+Live beautifully. Dream passionately. Love completely.
 
 0 -> Live/VB (root)
 1 -> beautifully/RB (advmod)
@@ -5177,7 +5177,7 @@ Creativity is just intelligence having fun.
 2 -> fun/NN (dobj)
 1 -> ./. (punct)
 
-Sometimes you win; Sometimes you learn.
+Sometimes you win. Sometimes you learn.
 
 0 -> win/VBP (root)
 1 -> Sometimes/RB (advmod)
@@ -5211,7 +5211,7 @@ Make every day, every second count.
 2 -> second/JJ (amod)
 1 -> ./. (punct)
 
-New stylist; New haircut; New hat.
+New stylist. New haircut. New hat.
 
 0 -> stylist/NN (root)
 1 -> New/NNP (compound)
@@ -5336,7 +5336,7 @@ Love is the absence of judgement.
 2 -> of/IN (case)
 1 -> ./. (punct)
 
-Live to express; Not to impress.
+Live to express. Not to impress.
 
 0 -> Live/VB (root)
 1 -> express/VB (xcomp)
@@ -5422,7 +5422,7 @@ True love is love of giving.
 2 -> of/IN (mark)
 1 -> ./. (punct)
 
-Starve your distractions; Feed your focus.
+Starve your distractions. Feed your focus.
 
 0 -> Starve/VB (root)
 1 -> distractions/NNS (dobj)
@@ -5485,7 +5485,7 @@ Drown all your troubles, not yourself.
 2 -> not/RB (neg)
 1 -> ./. (punct)
 
-Played PokemonGo; Discovered playground in vicinity.
+Played PokemonGo. Discovered playground in vicinity.
 
 0 -> PokemonGo/NN (root)
 1 -> Played/VBN (amod)
@@ -5601,7 +5601,7 @@ Value your life and stop complaining.
 2 -> complaining/VBG (xcomp)
 1 -> ./. (punct)
 
-8 letters; 3 words; Too late.
+8 letters. 3 words. Too late.
 
 0 -> letters/NNS (root)
 1 -> 8/CD (nummod)
@@ -5665,7 +5665,7 @@ Happiness multiplies when you share it.
 2 -> it/PRP (dobj)
 1 -> ./. (punct)
 
-She left me; Vodka for lunch.
+She left me. Vodka for lunch.
 
 0 -> left/VBD (root)
 1 -> She/PRP (nsubj)
@@ -5699,7 +5699,7 @@ Disclaimer: Teri Maa Ki, Pahlaj Nihalani.
 3 -> Pahlaj/NNP (compound)
 1 -> ./. (punct)
 
-She left me; Vodka for lunch.
+She left me. Vodka for lunch.
 
 0 -> left/VBD (root)
 1 -> She/PRP (nsubj)
@@ -5720,7 +5720,7 @@ Teamwork always makes the dream work.
 2 -> dream/NN (compound)
 1 -> ./. (punct)
 
-Be realistic; Plan for a miracle.
+Be realistic. Plan for a miracle.
 
 0 -> realistic/JJ (root)
 1 -> Be/VB (cop)
@@ -5754,7 +5754,7 @@ Art is a scream of freedom.
 2 -> of/IN (case)
 1 -> ./. (punct)
 
-Played PokemonGo; Discovered playground in vicinity.
+Played PokemonGo. Discovered playground in vicinity.
 
 0 -> PokemonGo/NN (root)
 1 -> Played/VBN (amod)
@@ -5806,7 +5806,7 @@ There's no greater motivator than rejection.
 3 -> than/IN (case)
 1 -> ./. (punct)
 
-Discipline weighs ounces; Regret weighs tons.
+Discipline weighs ounces. Regret weighs tons.
 
 0 -> weighs/VBZ (root)
 1 -> Discipline/NN (nsubj)
@@ -5828,7 +5828,7 @@ It's in giving that we receive.
 2 -> we/PRP (nsubj)
 1 -> ./. (punct)
 
-Fear is temporary; Regret is forever.
+Fear is temporary. Regret is forever.
 
 0 -> temporary/JJ (root)
 1 -> Fear/NN (nsubj)
@@ -5839,7 +5839,7 @@ Fear is temporary; Regret is forever.
 2 -> is/VBZ (cop)
 1 -> ./. (punct)
 
-Quiet the mind; Soul will speak.
+Quiet the mind. Soul will speak.
 
 0 -> mind/NN (root)
 1 -> Quiet/JJ (amod)
@@ -5850,7 +5850,7 @@ Quiet the mind; Soul will speak.
 2 -> will/MD (aux)
 1 -> ./. (punct)
 
-Fall seven times; Stand up eight.
+Fall seven times. Stand up eight.
 
 0 -> Fall/NN (root)
 1 -> times/NNS (nmod:npmod)
@@ -5926,7 +5926,7 @@ Spread love as thick as Nutella.
 3 -> as/IN (case)
 1 -> ./. (punct)
 
-Stop stressing; Let go; Move on.
+Stop stressing. Let go. Move on.
 
 0 -> Stop/VB (root)
 1 -> stressing/VBG (xcomp)
@@ -5970,7 +5970,7 @@ Don't live up to your stereotypes.
 2 -> your/PRP$ (nmod:poss)
 1 -> ./. (punct)
 
-I'm not arrogant; I'm an introvert.
+I'm not arrogant. I'm an introvert.
 
 0 -> arrogant/JJ (root)
 1 -> I/PRP (nsubj)
@@ -6243,7 +6243,7 @@ Be the reason someone smiles today.
 2 -> today/NN (nmod:tmod)
 1 -> ./. (punct)
 
-Never stop wondering; Never stop wandering.
+Never stop wondering. Never stop wandering.
 
 0 -> stop/VB (root)
 1 -> Never/RB (neg)
@@ -6296,7 +6296,7 @@ Over thinking leads to negative thoughts.
 2 -> negative/JJ (amod)
 1 -> ./. (punct)
 
-Dad has Alzheimer\u2019s; Get introduced everyday.
+Dad has Alzheimer\u2019s. Get introduced everyday.
 
 0 -> has/VBZ (root)
 1 -> Dad/NNP (nsubj)
@@ -6362,7 +6362,7 @@ Within nature lies cure for humanity.
 3 -> for/IN (case)
 1 -> ./. (punct)
 
-Logged out; Pulled plug; Found life.
+Logged out. Pulled plug. Found life.
 
 0 -> Logged/VBN (root)
 1 -> out/RP (compound:prt)
@@ -6552,7 +6552,7 @@ Without habitat there is no wildlife.
 2 -> no/DT (neg)
 1 -> ./. (punct)
 
-See the person; Not the disability.
+See the person. Not the disability.
 
 0 -> See/VB (root)
 1 -> person/NN (dobj)
@@ -6563,7 +6563,7 @@ See the person; Not the disability.
 2 -> the/DT (det)
 1 -> ./. (punct)
 
-Strangers; Friends; Best friends; Lovers; Strangers.
+Strangers. Friends. Best friends. Lovers. Strangers.
 
 0 -> Strangers/NNS (root)
 1 -> ;/: (punct)
@@ -6673,7 +6673,7 @@ You can beat death in life.
 2 -> in/IN (case)
 1 -> ./. (punct)
 
-Square box; Round pizza; Triangle slices.
+Square box. Round pizza. Triangle slices.
 
 0 -> box/NN (root)
 1 -> Square/NN (compound)
@@ -6695,7 +6695,7 @@ When will you stop hating me?
 2 -> me/PRP (dobj)
 1 -> ?/. (punct)
 
-Gratitude is riches; Complaint is poverty.
+Gratitude is riches. Complaint is poverty.
 
 0 -> riches/NNS (root)
 1 -> Gratitude/NN (nsubj)
@@ -6706,7 +6706,7 @@ Gratitude is riches; Complaint is poverty.
 2 -> is/VBZ (cop)
 1 -> ./. (punct)
 
-The greatest gift is family; Always.
+The greatest gift is family. Always.
 
 0 -> family/NN (root)
 1 -> gift/NN (nsubj)
@@ -6728,7 +6728,7 @@ Forgive yourself and welcome love back.
 1 -> back/RB (advmod)
 1 -> ./. (punct)
 
-Never meant yes; Now changing diapers.
+Never meant yes. Now changing diapers.
 
 0 -> meant/VBN (root)
 1 -> Never/RB (neg)
@@ -6739,7 +6739,7 @@ Never meant yes; Now changing diapers.
 2 -> diapers/NNS (dobj)
 1 -> ./. (punct)
 
-Kind heart; Fierce mind; Brave spirit.
+Kind heart. Fierce mind. Brave spirit.
 
 0 -> heart/NN (root)
 1 -> Kind/NNP (compound)
@@ -6865,7 +6865,7 @@ Success occurs when opportunity meets preparation.
 2 -> preparation/NN (dobj)
 1 -> ./. (punct)
 
-Positive mind; Positive vibes; Positive life.
+Positive mind. Positive vibes. Positive life.
 
 0 -> mind/NN (root)
 1 -> Positive/JJ (amod)
@@ -6886,7 +6886,7 @@ Silence is the most powerful scream
 1 -> powerful/JJ (amod)
 2 -> most/RBS (advmod)
 
-Be a voice; Not an echo.
+Be a voice. Not an echo.
 
 0 -> voice/NN (root)
 1 -> Be/VB (cop)
@@ -6917,7 +6917,7 @@ Politics have no relation to morals.
 3 -> to/TO (case)
 1 -> ./. (punct)
 
-Be a warrior; Not a worrier.
+Be a warrior. Not a worrier.
 
 0 -> warrior/NN (root)
 1 -> Be/VB (cop)
@@ -6928,7 +6928,7 @@ Be a warrior; Not a worrier.
 2 -> a/DT (det)
 1 -> ./. (punct)
 
-No ego; No desire; Profound happiness.
+No ego. No desire. Profound happiness.
 
 0 -> ego/NN (root)
 1 -> No/DT (neg)
@@ -6950,7 +6950,7 @@ Our friendship will always come first.
 1 -> first/RB (advmod)
 1 -> ./. (punct)
 
-Winners never quit; Quitters never win.
+Winners never quit. Quitters never win.
 
 0 -> quit/VBD (root)
 1 -> Winners/NNS (nsubj)
@@ -6961,7 +6961,7 @@ Winners never quit; Quitters never win.
 2 -> never/RB (neg)
 1 -> ./. (punct)
 
-One night; Three words; Never returned.
+One night. Three words. Never returned.
 
 0 -> night/NN (root)
 1 -> One/CD (nummod)
@@ -7132,7 +7132,7 @@ Mastering your self is true power.
 1 -> true/JJ (amod)
 1 -> ./. (punct)
 
-Dream big; Start small; Act now.
+Dream big. Start small. Act now.
 
 0 -> Dream/VB (root)
 1 -> big/JJ (xcomp)
@@ -7175,7 +7175,7 @@ Giving up is not an option.
 1 -> an/DT (det)
 1 -> ./. (punct)
 
-Sometimes you win; Sometimes you learn.
+Sometimes you win. Sometimes you learn.
 
 0 -> win/VBP (root)
 1 -> Sometimes/RB (advmod)
@@ -7216,7 +7216,7 @@ How a house built a family.
 2 -> a/DT (det)
 1 -> ./. (punct)
 
-Hey little fighter; It'll be brighter.
+Hey little fighter. It'll be brighter.
 
 0 -> fighter/NN (root)
 1 -> Hey/UH (det)
@@ -7228,7 +7228,7 @@ Hey little fighter; It'll be brighter.
 2 -> be/VB (cop)
 1 -> ./. (punct)
 
-Faith moves mountains; Doubt creates them.
+Faith moves mountains. Doubt creates them.
 
 0 -> mountains/NNS (root)
 1 -> Faith/NN (compound)
@@ -7459,7 +7459,7 @@ Judging me doesn't make you perfect.
 2 -> you/PRP (nsubj)
 1 -> ./. (punct)
 
-Walk with purpose; Collide with destiny.
+Walk with purpose. Collide with destiny.
 
 0 -> Walk/VB (root)
 1 -> purpose/NN (nmod:with)
@@ -7501,7 +7501,7 @@ Just take that leap of faith.
 3 -> of/IN (case)
 1 -> ./. (punct)
 
-New Monday; New week; New goals.
+New Monday. New week. New goals.
 
 0 -> Monday/NNP (root)
 1 -> New/NNP (compound)
@@ -7524,7 +7524,7 @@ Success comes from commitment and consistency.
 1 -> consistency/NN (nmod:from)
 1 -> ./. (punct)
 
-Refugees have no choice; You do.
+Refugees have no choice. You do.
 
 0 -> have/VBP (root)
 1 -> Refugees/NNS (nsubj)
@@ -7576,7 +7576,7 @@ Originality is nothing but judicious imitation.
 2 -> judicious/JJ (amod)
 1 -> ./. (punct)
 
-Free thought; Free speech; Free press.
+Free thought. Free speech. Free press.
 
 0 -> thought/VBD (root)
 1 -> Free/NNP (nsubj)
@@ -7599,7 +7599,7 @@ What we dwell on, we become.
 1 -> we/PRP (nsubj)
 1 -> ./. (punct)
 
-Imagined adulthood; Gained adulthood; Lost imagination.
+Imagined adulthood. Gained adulthood. Lost imagination.
 
 0 -> adulthood/NN (root)
 1 -> Imagined/VBN (amod)
@@ -7817,7 +7817,7 @@ Remember, simplicity is the ultimate sophistication.
 1 -> ultimate/JJ (amod)
 1 -> ./. (punct)
 
-Take every chance; Stop every fear.
+Take every chance. Stop every fear.
 
 0 -> Take/VB (root)
 1 -> chance/NN (dobj)
@@ -7858,7 +7858,7 @@ Not all wounds are actually visible.
 1 -> actually/RB (advmod)
 1 -> ./. (punct)
 
-Starve your ego; Feed your soul.
+Starve your ego. Feed your soul.
 
 0 -> Starve/VB (root)
 1 -> ego/NN (dobj)
@@ -7869,7 +7869,7 @@ Starve your ego; Feed your soul.
 3 -> your/PRP$ (nmod:poss)
 1 -> ./. (punct)
 
-Never give in; Never give up.
+Never give in. Never give up.
 
 0 -> give/VB (root)
 1 -> Never/RB (neg)
@@ -7900,7 +7900,7 @@ Best investment is investing in yourself.
 2 -> in/IN (case)
 1 -> ./. (punct)
 
-Never give up; Keep moving forward.
+Never give up. Keep moving forward.
 
 0 -> give/VB (root)
 1 -> Never/RB (neg)
@@ -7935,7 +7935,7 @@ God knows what's best for you.
 3 -> for/IN (case)
 1 -> ./. (punct)
 
-Stop stressing; Let go; Move on.
+Stop stressing. Let go. Move on.
 
 0 -> Stop/VB (root)
 1 -> stressing/VBG (xcomp)
@@ -7947,7 +7947,7 @@ Stop stressing; Let go; Move on.
 2 -> on/IN (compound:prt)
 1 -> ./. (punct)
 
-Start from nothing; Stop for nothing.
+Start from nothing. Stop for nothing.
 
 0 -> Start/NNP (root)
 1 -> nothing/NN (nmod:from)
@@ -7958,7 +7958,7 @@ Start from nothing; Stop for nothing.
 3 -> for/IN (case)
 1 -> ./. (punct)
 
-Spread the light; Be the light.
+Spread the light. Be the light.
 
 0 -> Spread/VB (root)
 1 -> light/NN (dobj)
@@ -7979,7 +7979,7 @@ My photographic memory never fully developed.
 1 -> fully/RB (advmod)
 1 -> ./. (punct)
 
-Think; Dream; Believe; And finally dare.
+Think. Dream. Believe. And finally dare.
 
 0 -> Think/VB (root)
 1 -> ;/: (punct)
@@ -8014,7 +8014,7 @@ Helping others is like helping yourself.
 1 -> yourself/PRP (dobj)
 1 -> ./. (punct)
 
-Pain is temporary; Quitting lasts forever.
+Pain is temporary. Quitting lasts forever.
 
 0 -> temporary/JJ (root)
 1 -> Pain/NN (nsubj)
