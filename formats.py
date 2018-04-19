@@ -37,7 +37,7 @@ def makeEmptyFormat(s):
 	return form
 	
 def makeNode():
-	return {'raw':'', 'word':'', 'index':-1, 'pos':'', 'children':[]}
+	return {'word':'', 'index':-1, 'pos':'', 'dep':'', 'children':[]}
 
 '''
 A format consists of:
@@ -49,11 +49,11 @@ A format consists of:
 A node consists of:
 	word:	Lower case word
 	pos:	POS
-	dep:	The dependency node type (root, advmod, etc)
+	dep:	The dependency node type (root, advmod, etc) (Not currently used)
 	index:	A 0-indexed position ("index") in the story (corresponds to "plug-in story" numbers)
   children:	A list of children
 	[That's it, all the "relation" processing will happen later]
-	[Intentionally doesn't include raw line, because the number probably won't mean anything]
+	[Intentionally doesn't include raw line, because the number is irrelevantdue to "needShift"]
 '''
 
 def arrayIns(a,i,v):
@@ -124,3 +124,4 @@ def makeAllRawForms():
 
 #NOTES:
 #Maybe choose some POS that are never "locked" (articles, what else?)
+#Ex: try only unlocking leaf nodes in the primitive hierarchy? /shrug

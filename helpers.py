@@ -4,7 +4,7 @@ import string
 import numpy as np
 import datamuse as dm
 import random
-from pattern.en import conjugate, PRESENT, parse, pluralize
+from pattern.en import parse, pluralize, comparative, superlative, conjugate, PRESENT, PAST, PARTICIPLE, INFINITIVE
 import oxdict as od
 from operator import itemgetter
 
@@ -29,7 +29,6 @@ def baseWord(word):
 	if base is None:
 		return word
 	return base
-
 
 def dist(s1, s2):
 	if len(s1) > len(s2):
@@ -68,7 +67,6 @@ def firstCharUp(s):
 	return s[0].upper() + s[1:]
 
 #takes in a list of words and returns the ones that match part of speech p ('n' or 'v' for example) (unmorphied)
-#if "extra" is True: add all synset names that are related (example: 'chair' (verb) would return 'chair' and 'moderate')
 def pos(a,p):
 	ret = set()
 	for i in a:
@@ -198,7 +196,7 @@ def get_nouns_from_verb(start, relations, w2v):
 	return get_scholar_rels(start, relations, w2v, '_VB', '_NN')
 
 # Scholar by Daniel Ricks: https://github.com/danielricks/scholar
-def get_scholar_rels(start, relations, w2v, tag1, tag2):
+def get_scholar_rels(start, relations, w2v, tag1, tag2,num=10):
 	counts = defaultdict(float)
 	ret = []
 	for rel in relations:
@@ -212,7 +210,7 @@ def get_scholar_rels(start, relations, w2v, tag1, tag2):
 		if flag:
 			continue
 
-		idxs, metrics = w2v.analogy(pos=positives, neg=negatives, n=10)
+		idxs, metrics = w2v.analogy(pos=positives, neg=negatives, n=num)
 		res = w2v.generate_response(idxs, metrics).tolist()
 		ret += res
 		for x in res:
@@ -254,7 +252,7 @@ def toPresent(verb):
 
 #only takes single words!
 def makePlural(w):
-	if od.isMassOrProper(w) or parse(w).split('/')[1] == 'NNS':
+	if od.isMassOrProper(w) or getPOS(w) == 'NNS':
 		return w
 	return pluralize(w)
 
@@ -269,4 +267,97 @@ def addToDictList(d,k,v):
 	if k not in d:
 		d[k] = []
 	d[k].append(v)
+
+def getPOS(w):
+	return parse(w).split('/')[1]
+
+'''
+* is pattern.en
+^ is custom
+= is leave it
+# is can't
+JJR <- JJ comparative
+JJS <- JJ superlative
+NNS <- NN pluralize
+NNP <- NN=
+NNPS <- NN, NNP pluralize (both)
+PDT <- DT#
+PRP <- RP#
+PRP$ <- PRP^ RP#
+RBR <- RB comparative
+RBS <- RB superlative
+VBD <- VB conjugate
+VBG <- VB conjugate?
+VBN <- VB conjugate?
+VBP <- VB conjugate
+VBZ <- VB conjugate
+WDT <- DT#
+WP$ <- WP^
+WRB <- RB#
+'''
+
+PRPD = {'me':'mine','you':'yours','he':'his','she':'hers','it':'its','us':'ours','them':'theirs'}
+WPD = {'who':'whose'}
+
+#try to conjugate the word from POS p to POS target
+#See "p in target" cases above
+def tryPOS(word,p,target):
+	if target in p and target not in ['RB','DT','RP']:
+		if target == 'PRP' or target == 'WP':
+			d = WPD
+			if target == 'PRP':
+				d = PRPD
+			for k in d:
+				if d[k] == word:
+					return k
+			return None
+		return wn.morphy(word)
+
+	#else
+	if target == 'PRP$' and p == 'PRP':
+		return PRPD.get(word)
+	if target == 'WP$':
+		return WPD.get(word)
+	if p == 'NN':
+		if target == 'NNP':
+			return word
+		else:
+			return pluralize(word)
+	if p == 'NNP':
+		return pluralize(word)
+	if 'VB' in p:
+		t = ''
+		if target == 'VBD':
+			t = PAST
+		if target == 'VBP':
+			t = INFINITIVE
+		if target == 'VBZ':
+			t = PRESENT
+		if target == 'VBN':
+			t = PAST+PARTICIPLE
+		if target == 'VBG':
+			t = PARTICIPLE
+		if t:
+			return conjugate(word,tense=t)
+	
+	ret = ''
+	if target == 'JJR' or target == 'RBR':
+		ret = comparative(word)
+	if target == 'JJS' or target == 'RBS':
+		ret = superlative(word)
+	if not ret or ' ' in ret:
+		return None #default
+	else:
+		return ret
+
+
+
+
+
+
+
+
+
+
+
 

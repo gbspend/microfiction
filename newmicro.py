@@ -1,78 +1,30 @@
-import word2vec
-import random
-import sys
+import word2vec, random, priority, formats
 import helpers as h
-import punchy as p
-import nounverb as nv
 from penseur import penseur
-import priority
-from pattern.en import conjugate,INFINITIVE,article,DEFINITE,INDEFINITE
-import oxdict as od
-import formats
+import wordbags as wb
+from itertools import chain, izip_longest
+import conceptnet as cn
 
 priority = reload(priority)
-p = reload(p)
 h = reload(h)
-nv = reload(nv)
 
 #=FORMATS===========================================
-#formats take 1 string "topic" and a list of either None or string that will be "locked in" (from eval.)
-# it's up to each function to intelligently handle "locks" in their respective hierarchies
-# (for example, in 123action if the noun is unlocked, then ignore other locks because everything needs to change
-
-nones = [None,None,None,None,None,None]
-
-threeactaxis = ('plunger volcano paper the mug switches',['bridge standoff gunshot the revolution begins','eternity loneliness homecoming the tail wags'])
-threeactregen = [0,1,2,5] #TODO add 4 [[],[],[],None,None,[]]
-def threeaction(topic,noun,w2v,lock=nones):
-	useLock = True
-	#if lock[4] is not None:
-	#	noun = lock[4]
-	#else:
-	#	noun = nv.makeNoun(topic)
-	#	if noun is None:
-	#		print "ABORT! NO NOUN FOR:",topic
-	#		exit()
-	#	useLock = False
-
-	if lock[5] is not None and useLock:
-		verb = conjugate(lock[5],INFINITIVE) + '_VB'
-	else:
-		verbs = nv.makeVerb(topic,[noun],1,w2v,False) #how to decide jux?
-		if not verbs:
-			print "NO VERB FOR:",noun
-			return None
-		verb = verbs[0]
-		useLock = False
-
-	# print "VERB:",verb
-
-	bgs = ['', '', '']
-	for i in range(3):
-		if lock[i] is not None and useLock:
-			bgs[i] = lock[i]
-		else:
-			b = p.get_bg(topic,[verb, noun+'_NN'],w2v) # add tag for w2v
-			if b is None:
-				print "NO BG WORDS FOR:",noun,verb
-				return None
-			bgs[i] = b
-	art = h.firstCharUp(article(noun.lower(), function=random.choice([INDEFINITE,DEFINITE])))
-	return ". ".join([h.firstCharUp(x) for x in bgs])+". "+art+" "+noun+" "+h.toPresent(h.strip_tag(verb))+"."
-
-formats = [
-	(threeaction, threeactaxis, threeactregen)
-
-]
-
-#===================================================
 
 axes = ('plunger volcano paper the mug switches',['bridge standoff gunshot the revolution begins','eternity loneliness homecoming the tail wags'])
 
 #word, start, and end are untagged
 def w2vChoices(word,start,startTag,end,endTag,w2v):
-	return h.get_scholar_rels(word+startTag,[(start,end)],w2v,startTag,endTag)
+	return h.get_scholar_rels(word+startTag,[(start,end)],w2v,startTag,endTag,20)
 
+def plugin(plug,words):
+	parts = plug.split('W')
+	return ''.join([x for x in list(chain.from_iterable(izip_longest(parts, words))) if x is not None])
+
+#takes root node, returns lowercase word
+def genRoot(root):
+	return 'better'#TEMP!		
+
+relsCache = {}
 #node is current node
 #parent is parent node
 #prev is previously generated word (remember parent -> child words are just a _relation_; prev is the word that rel will be applied to)
@@ -82,41 +34,62 @@ def w2vChoices(word,start,startTag,end,endTag,w2v):
 def genrec(node,parent,prev,force,w2v,fillin):
 	i = node['index']
 	if not force and fillin[i]:
+		word = fillin[i]
 		if parent:
 			force = True #only force regen if its not the root (i.e. it has a parent)
 	else:
+		nodep = node['pos']
 		startTag = '_'+parent['pos']
-		endTag = '_'+node['pos']
+		endTag = '_'+nodep
+		#maybe just have a set list to draw from for some restricted POS like IN, etc?
 		choices = w2vChoices(prev,parent['word'],startTag,node['word'],endTag,w2v)
-		cnRels = cn.getRels(parent['word'],node['word'])
+		cacheK = (parent['word'],node['word'])
+		if cacheK in relsCache:
+			cnRels = relsCache[cacheK]
+		else:
+			cnRels = cn.getRels(parent['word'],node['word'])
+			if cnRels:
+				print "GOT CN RELS FOR",parent['word'],node['word']
+			relsCache[cacheK] = cnRels
 		for rel in cnRels:
-			choices += cn.getOutgoing(prev, rel):
+			choices += cn.getOutgoing(prev, rel)
+		final = []
+		for c in choices:
+			p = h.getPOS(c)
+			if p == nodep:
+				final.append(c)
+			elif p in nodep or nodep in p or ('VB' in p and 'VB' in nodep):
+				newc = h.tryPOS(c,p,nodep)
+				if newc:
+					final.append(newc)
 
-		#PLEASE MAKE THIS SMARTER
-		word = random.choice(choices)
-		#^^^
+		#what to do if final is empty? Maybe just plug in original word??
+		if not final:
+			word = node['word']
+		else:
+			word = random.choice(final) #Can this be smarter?
 
 		fillin[i]=word
 	if len(node['children']):
 		for child in node['children']:
 			genrec(child,node,word,force,w2v,fillin)
 
-#MUST LOCK ROOT!
 def gen(fraw,w2v,lock):
 	#traverse tree; if parent locked, regen all children (set a force flag)
 	root = fraw['root']
-	if not lock[root['index']]:
-		print "ROOT NOT LOCKED!"
+	lock[root['index']] = genRoot(root)
+	genrec(root,None,None,False,w2v,lock) #lock is out var
+	if None in lock:
 		return None
-	genrec(node,None,None,False,w2v,lock) #lock is out var
 	for i in fraw['cap']:
 		lock[i] = h.firstCharUp(lock[i])
+	return plugin(fraw['plug'],lock)
 	
 def makeFormats(w2v):
 	ret = []
-	for fraw in formats.makeAllForms():
-		addRels(fraw)
-		genf = lambda w2v, lock=[None,None,None,None,None,None]: gen(fraw,w2v,lock)
+	for fraw in formats.makeAllRawForms():
+		#Preprocess each node by making sure word_pos are in w2v (and massage them if they aren't)!
+		genf = lambda lock=[None,None,None,None,None,None]: gen(fraw,w2v,lock)
 		regen = range(6)
 		del regen[fraw['root']['index']]
 		ret.append((genf,axes,regen))
@@ -124,30 +97,24 @@ def makeFormats(w2v):
 
 #===================================================
 
-def isBad(v):
-	if not od.checkVerb(v):
-		return True
-	return False
-
-def doit(topic,noun,w2v,pens,retries=0):
+def doit(formats,w2v,pens,retries=0):
 	#if not stanford.check():
 	#	print "START THE SERVER"
 	#	raw_input('Press Enter...')
 	f = random.choice(formats)
-	form = f[0]
+	genf = f[0]
 	axis = f[1]
 	canRegen = f[2]
-	s = form(topic,noun,w2v)
-	regenf = lambda lock: form(topic,noun,w2v,lock)
+	s = genf([None,None,None,None,None,None])
 	scoref = lambda x: h.getSkipScores(axis[0],axis[1][0],axis[1][1],x,pens)
-	if s is None or isBad(h.getV(s)):
+	if s is None:
 		if retries > 20:
 			return None
 		print "RETRYING"
 		return doit(topic,noun,w2v,pens,retries+1)
 	else:
-		return s
-#		best = priority.best(s,regenf,canRegen,scoref)[0]
+		return s, scoref(s)
+#		best = priority.best(s,genf,canRegen,scoref)[0]
 #		raw = h.strip(best).split()[:3]
 #		notraw = best.split()
 #		best = ". ".join([h.firstCharUp(h.makePlural(r)) for r in raw])+". "+" ".join(notraw[3:])
@@ -155,15 +122,11 @@ def doit(topic,noun,w2v,pens,retries=0):
 #		return best
 
 if __name__ == "__main__":
-	topic = sys.argv[1]
-	if '_' not in topic:
-		print "Make sure to tag topic"
-		exit()
-	noun = sys.argv[2]
 	w2v = word2vec.load('data/tagged.bin')
 	print "Word2Vec Loaded"
 	pens = penseur.Penseur()
 	print "Penseur Loaded"
 
 	formats = makeFormats(w2v)
-	doit(topic,noun,w2v,pens)
+	doit(formats,w2v,pens)
+

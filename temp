@@ -1,0 +1,7 @@
+w2v = word2vec.load('data/tagged.bin')
+f = formats.makeAllRawForms()
+fraw = [i for i in f if i['root']['word']=='better'][1]
+fraw['root']['children'][0]['pos'] = 'NN' #FIX!
+newmicro.gen(fraw,w2v,[None,None,None,None,None,None])
+
+
