@@ -19,10 +19,10 @@ def makeEmptyFormat(s):
 			else:
 				inWord = True
 				currWord += c
-				count += 1
 				plug += 'W'
 				if c.isupper():
 					cap.append(count)
+				count += 1 #0-indexed
 		else:
 			if inWord:
 				words.append(currWord)
@@ -45,7 +45,7 @@ A format consists of:
 	words:	List of words to look for in dependency tree nodes
 	root:	Root node
 	plug:	Numbered, punctuated "plug-in story" (e.g. "Sorry Katie," sighed Santa; "No witnesses." -> "W W," W W; "W W." (split on 'W')) 
-	cap:	Set of capitalized words (e.g. "Sorry Katie," sighed Santa; "No witnesses." -> set([1,2,4,5]))
+	cap:	Set 0-indexed of capitalized words (e.g. "Sorry Katie," sighed Santa; "No witnesses." -> set([0,1,3,4]))
 A node consists of:
 	word:	Lower case word
 	pos:	POS

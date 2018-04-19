@@ -265,4 +265,8 @@ def getV(s,i=5):
 		return v
 	return m
 
+def addToDictList(d,k,v):
+	if k not in d:
+		d[k] = []
+	d[k].append(v)
 
