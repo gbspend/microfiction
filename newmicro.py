@@ -4,6 +4,7 @@ from penseur import penseur
 import wordbags as wb
 from itertools import chain, izip_longest
 import conceptnet as cn
+import wordbags as wb
 
 priority = reload(priority)
 h = reload(h)
@@ -22,7 +23,7 @@ def plugin(plug,words):
 
 #takes root node (pos), returns lowercase word
 def genRoot(root):
-	return root['word'] #TEMP!
+	return wb.get(root['pos']).lower()
 
 relsCache = {}
 #node is current node
@@ -85,6 +86,7 @@ def gen(fraw,w2v,lock):
 		lock[i] = h.firstCharUp(lock[i])
 	return plugin(fraw['plug'],lock)
 
+#this function tries to get node POS to agree with w2v. W2v isn't perfect, but the more the nodes agree with it, the more results we'll get.
 def processPOS(node,w2v):
 	if node['pos'][-1] == '$':
 		node['pos'] = node['pos'][:-1] #w2v doesn't have $...?
@@ -115,19 +117,23 @@ def makeFormats(w2v):
 	ret = []
 	for fraw in formats.makeAllRawForms():
 		processPOS(fraw['root'],w2v) #Preprocess each node by checking whether word_pos is in w2v and massage them if possible
-		genf = lambda lock=[None,None,None,None,None,None]: gen(fraw,w2v,lock)
+		genf = lambda lock, fraw=fraw, w2v=w2v: gen(fraw,w2v,lock)
 		regen = range(6)
 		del regen[fraw['root']['index']]
-		ret.append((genf,axes,regen))
+		ret.append((genf,axes,regen,fraw))
 	return ret
 
 #===================================================
 
-def doit(formats,w2v,pens,retries=0):
+def doit(formats,w2v,pens,retries=0,forcef=None):
 	#if not stanford.check():
 	#	print "START THE SERVER"
 	#	raw_input('Press Enter...')
-	f = random.choice(formats)
+	if not forcef:
+		f = random.choice(formats)
+	else:
+		f = forcef
+	print f[3]['raw']
 	genf = f[0]
 	axis = f[1]
 	canRegen = f[2]
@@ -137,9 +143,9 @@ def doit(formats,w2v,pens,retries=0):
 		if retries > 20:
 			return None
 		print "RETRYING"
-		return doit(topic,noun,w2v,pens,retries+1)
+		return doit(formats,w2v,pens,retries+1,f)
 	else:
-		return s
+		return s#, scoref(h.strip(s))
 #		best = priority.best(s,genf,canRegen,scoref)[0]
 #		raw = h.strip(best).split()[:3]
 #		notraw = best.split()
@@ -150,7 +156,7 @@ def doit(formats,w2v,pens,retries=0):
 if __name__ == "__main__":
 	w2v = word2vec.load('data/tagged.bin')
 	print "Word2Vec Loaded"
-	pens = penseur.Penseur()
+	pens = None#penseur.Penseur()
 	print "Penseur Loaded"
 
 	formats = makeFormats(w2v)

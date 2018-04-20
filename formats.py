@@ -2,6 +2,7 @@ import os, string, re
 
 holds = [("'s","*&")] #things that should just be left in plug
 def makeEmptyFormat(s):
+	s = string.replace(s,'\xe2\x80\xa6','...') #elipses unicode char
 	form = {'raw':s}
 	plug = ''
 	cap = []
