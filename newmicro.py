@@ -20,9 +20,9 @@ def plugin(plug,words):
 	parts = plug.split('W')
 	return ''.join([x for x in list(chain.from_iterable(izip_longest(parts, words))) if x is not None])
 
-#takes root node, returns lowercase word
+#takes root node (pos), returns lowercase word
 def genRoot(root):
-	return 'better'#TEMP!		
+	return root['word'] #TEMP!
 
 relsCache = {}
 #node is current node
@@ -52,7 +52,7 @@ def genrec(node,parent,prev,force,w2v,fillin):
 				print "GOT CN RELS FOR",parent['word'],node['word']
 			relsCache[cacheK] = cnRels
 		for rel in cnRels:
-			choices += cn.getOutgoing(prev, rel)
+			choices += [cn.stripPre(t[0]) for t in cn.getOutgoing(prev, rel)]
 		final = []
 		for c in choices:
 			p = h.getPOS(c)
@@ -84,11 +84,37 @@ def gen(fraw,w2v,lock):
 	for i in fraw['cap']:
 		lock[i] = h.firstCharUp(lock[i])
 	return plugin(fraw['plug'],lock)
+
+def processPOS(node,w2v):
+	if node['pos'][-1] == '$':
+		node['pos'] = node['pos'][:-1] #w2v doesn't have $...?
+	old = node['word']
+	useOld = False
+	do = True #ugly way of doing it all again without hyphens
+	while do:
+		do = False
+		w = node['word']
+		if w+'_'+node['pos'] not in w2v:
+			p = h.getPOS(w)
+			if p == node['pos'] or w+'_'+p not in w2v:
+				if (p == 'NNP' or node['pos'] == 'NNP') and w+'_'+'NN' in w2v:
+					p = 'NN'
+				elif (p == 'NNPS' or node['pos'] == 'NNPS') and w+'_'+'NNS' in w2v:
+					p = 'NNS'
+				elif '-' in w:
+					node['word'] = ''.join(w.split('-'))
+					do = True
+					useOld = True
+			node['pos'] = p
+	if useOld and node['word']+'_'+node['pos'] not in w2v:
+		node['word'] = old
+	for c in node['children']:
+		processPOS(c,w2v)
 	
 def makeFormats(w2v):
 	ret = []
 	for fraw in formats.makeAllRawForms():
-		#Preprocess each node by making sure word_pos are in w2v (and massage them if they aren't)!
+		processPOS(fraw['root'],w2v) #Preprocess each node by checking whether word_pos is in w2v and massage them if possible
 		genf = lambda lock=[None,None,None,None,None,None]: gen(fraw,w2v,lock)
 		regen = range(6)
 		del regen[fraw['root']['index']]
@@ -113,7 +139,7 @@ def doit(formats,w2v,pens,retries=0):
 		print "RETRYING"
 		return doit(topic,noun,w2v,pens,retries+1)
 	else:
-		return s, scoref(s)
+		return s
 #		best = priority.best(s,genf,canRegen,scoref)[0]
 #		raw = h.strip(best).split()[:3]
 #		notraw = best.split()

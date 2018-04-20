@@ -269,7 +269,7 @@ def addToDictList(d,k,v):
 	d[k].append(v)
 
 def getPOS(w):
-	return parse(w).split('/')[1]
+	return parse(w).split('/')[1].split('-')[0]
 
 '''
 * is pattern.en
