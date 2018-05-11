@@ -3,8 +3,8 @@ import requests
 #new username is brads
 #password is fowl with special char at end
 
-app_id = '7b7ce7fa'
-app_key = 'e30c7d55f087909349ccc994cb40e6f9'
+app_id = '7b7ce7fa' #alt: 'e2682864'
+app_key = 'e30c7d55f087909349ccc994cb40e6f9' #alt: 'e71a2e787482944c1ab230671331836b'
 
 url = 'https://od-api.oxforddictionaries.com:443/api/v1/entries/en/'
 

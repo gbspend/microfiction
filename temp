@@ -1,5 +1,7 @@
 import word2vec, newmicro
+from penseur import penseur
 w2v = word2vec.load('data/tagged.bin')
+pens = penseur.Penseur()
 formats = newmicro.makeFormats(w2v)
-newmicro.doit(formats,w2v,None)
+newmicro.doit(formats,w2v,pens)
 

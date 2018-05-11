@@ -350,14 +350,3 @@ def tryPOS(word,p,target):
 	else:
 		return ret
 
-
-
-
-
-
-
-
-
-
-
-

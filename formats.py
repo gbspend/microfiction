@@ -40,6 +40,22 @@ def makeEmptyFormat(s):
 def makeNode():
 	return {'word':'', 'index':-1, 'pos':'', 'dep':'', 'children':[]}
 
+def arrayIns(a,i,v):
+	a += [None]*(i-len(a)+1)
+	a[i]=v
+
+def numberRec(n,i):
+	n['index'] = i
+	if len(n['children']) > 0:
+		for c in n['children']:
+			numberRec(c,i+1)
+
+def isBadFormat(form):
+	return 'root' not in form or len(form['words']) != 6
+
+punc = ''.join(string.punctuation.split('-'))
+marker = ' -> '
+
 '''
 A format consists of:
 	raw:	Raw story
@@ -56,22 +72,6 @@ A node consists of:
 	[That's it, all the "relation" processing will happen later]
 	[Intentionally doesn't include raw line, because the number is irrelevantdue to "needShift"]
 '''
-
-def arrayIns(a,i,v):
-	a += [None]*(i-len(a)+1)
-	a[i]=v
-
-def numberRec(n,i):
-	n['index'] = i
-	if len(n['children']) > 0:
-		for c in n['children']:
-			numberRec(c,i+1)
-
-def isBadFormat(form):
-	return 'root' not in form or len(form['words']) != 6
-
-punc = ''.join(string.punctuation.split('-'))
-marker = ' -> '
 def makeRawForms(fname):
 	ret = []
 	with open(fname) as f:

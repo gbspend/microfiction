@@ -11,7 +11,8 @@ h = reload(h)
 
 #=FORMATS===========================================
 
-axes = ('plunger volcano paper the mug switches',['bridge standoff gunshot the revolution begins','eternity loneliness homecoming the tail wags'])
+badstory = 'plunger volcano paper the mug switches'
+#axes = ('plunger volcano paper the mug switches',['bridge standoff gunshot the revolution begins','eternity loneliness homecoming the tail wags'])
 
 #word, start, and end are untagged
 def w2vChoices(word,start,startTag,end,endTag,w2v):
@@ -120,7 +121,7 @@ def makeFormats(w2v):
 		genf = lambda lock, fraw=fraw, w2v=w2v: gen(fraw,w2v,lock)
 		regen = range(6)
 		del regen[fraw['root']['index']]
-		ret.append((genf,axes,regen,fraw))
+		ret.append((genf,(badstory, h.strip(" ".join(fraw['words']))),regen,fraw))
 	return ret
 
 #===================================================
@@ -138,14 +139,15 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 	axis = f[1]
 	canRegen = f[2]
 	s = genf([None,None,None,None,None,None])
-	scoref = lambda x: h.getSkipScores(axis[0],axis[1][0],axis[1][1],x,pens)
+	scoref = lambda x: h.getSkipScores(axis[0],axis[1],axis[1],x,pens)
 	if s is None:
 		if retries > 20:
 			return None
 		print "RETRYING"
 		return doit(formats,w2v,pens,retries+1,f)
 	else:
-		return s#, scoref(h.strip(s))
+		print s
+		return s, scoref([h.strip(s)])[0]
 #		best = priority.best(s,genf,canRegen,scoref)[0]
 #		raw = h.strip(best).split()[:3]
 #		notraw = best.split()
