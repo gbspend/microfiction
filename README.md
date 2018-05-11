@@ -5,7 +5,7 @@ CS673 - Winter 2017
 
 install:
 
-	apt-get install python-dev g++ python-tk
+	apt-get install python-dev g++ python-tk libblas-dev
 	
 	pip install matplotlib numpy scipy cython requests nltk pattern word2vec Theano
 	
