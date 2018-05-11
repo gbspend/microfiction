@@ -7,21 +7,23 @@ install:
 
 	apt-get install python-dev g++ python-tk
 	
-	pip install numpy scipy matplotlib cython word2vec requests nltk pattern 
+	pip install matplotlib numpy scipy cython requests nltk pattern word2vec Theano
 	
 
 download:
 
-	https://drive.google.com/file/d/1srOUFidQ9fV240wyF7GW4eqF6raCawBV/view (place posttagged_wikipedia_for_word2vec.bin in /data folder and rename to tagged.bin)
+	https://drive.google.com/file/d/1srOUFidQ9fV240wyF7GW4eqF6raCawBV/view (place posttagged_wikipedia_for_word2vec.bin in ./data folder and rename to tagged.bin)
 	
-	https://github.com/danielricks/penseur (place in /penseur folder)
+	https://github.com/danielricks/penseur (place in ./penseur folder)
 	
-	Paste the snippet from pens_func at the bottom of penseur/penseur.py
+	Paste the snippet from pens_func at the bottom of ./penseur/penseur.py
 	
-	In penseur/skipthoughts.py line 94, change to Verbose=False
+	Touch __init__.py in ./penseur folder
+	
+	In ./penseur/skipthoughts.py line 94, change to Verbose=False
 
 run:
-	In /data folder-
+	In ./data folder-
 	
 	wget http://www.cs.toronto.edu/~rkiros/models/dictionary.txt
 		
