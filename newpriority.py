@@ -7,10 +7,9 @@ numChildren = 10
 strikes = 7#10
 
 class Niche:
-	def __init__(self,v, node):
-		self.verb = v
-		self.intrans = od.checkVerb(v)
-		self.isDead = not self.intrans
+	def __init__(self,s,node):
+		self.seed = s
+		self.isDead = False
 		self.heap = []
 		self.stale = 0
 		self.bestsc = node.score
@@ -22,16 +21,13 @@ class Niche:
 			self.bestsc = curr.score
 			self.bestch = curr
 			self.stale = 0
-			#print "NEW BEST:",self.bestch.s,self.bestch.score
 			return True
 		return False
 
 	def push(self,node):
-		if self.stale > strikes or not self.intrans:
+		if self.stale > strikes:
 			return
 		if not self.heap:
-			#if self.isDead:
-			#	print self.verb, "REANIMATED"
 			self.isDead = False
 		hq.heappush(self.heap,(-node.score,node))
 
@@ -40,15 +36,12 @@ class Niche:
 			return []
 		if not self.heap:
 			self.isDead = True
-			#print self.verb, "DIED: heap empty"
 			return []
 		curr = hq.heappop(self.heap)[1]
-		#print curr.s,curr.score
 		if not self.checkBest(curr):
 			self.stale += 1
 			if self.stale > strikes:
 				self.isDead = True
-				#print self.verb, "DIED: struck out"
 				return []
 		childs = []
 		for i in xrange(numChildren):
@@ -56,20 +49,6 @@ class Niche:
 			if newch is not None:
 				childs.append(newch)
 		return childs
-'''
-		if not childs:
-			return []
-		raw = [" ".join(c.words) for c in childs]
-		scores = self.scoref(raw)
-		ret = []
-		for i,child in enumerate(childs):
-			child.score = scores[i]
-			if h.getV(child.s) != self.verb:
-				ret.append(child)
-			else:
-				hq.heappush(self.heap,(-child.score,child))
-		return ret
-'''
 
 
 class Settings:
@@ -100,15 +79,18 @@ class Node:
 		if len(set(node.words)) != len(node.words) or node.s == self.s: #duplicate or didn't change
 			return None
 		return node
+		
+def getIndex(story, i):
+	return h.strip(story.split(' ')[i])
 
-
-def best(s,regenf,canRegen,scoref):
+#s is story NOT STRIPPED
+def best(s,regenf,canRegen,scoref,fraw):
 	niches = {}
-	verb = h.getV(s)
+	seedi = fraw['root']['index']
+	seed = getIndex(s,seedi)
 	root = Node(s,Settings(regenf,canRegen))
-	root.score = scoref([s])[0]
-	ni = Niche(verb,root)
-	niches[verb] = ni
+	root.score = scoref([h.strip(s)])[0]
+	niches[seed] = Niche(seed,root)
 	while True:
 		#print "--------------------------------"
 		children = []
@@ -126,17 +108,15 @@ def best(s,regenf,canRegen,scoref):
 		scores = scoref(raw)
 		for i,child in enumerate(children):
 			child.score = scores[i]
-			v = h.getV(child.s)
-			if v not in niches:
-				ni2 = Niche(v,child)
-				niches[v] = ni2
+			k = getIndex(child.s,seedi)
+			if k not in niches:
+				ni2 = Niche(k,child)
+				niches[k] = ni2
 			else:
-				niches[v].push(child)
+				niches[k].push(child)
 	choices = []
-	for v in niches:
-		n = niches[v]
-		if not n.intrans:
-			continue
+	for k in niches:
+		n = niches[k]
 		print n.bestch.s,n.bestsc
 		choices.append((n.bestch,n.bestsc))
 	m = min([c[1] for c in choices])
@@ -145,44 +125,3 @@ def best(s,regenf,canRegen,scoref):
 	i = h.weighted_choice(choices,-m)
 	best = choices[i][0]
 	return best.s,best.score
-
-'''
-heap = []
-#s is initial artifact
-#regenf,canRegen,scoref: see Settings __init__ (identical params)
-def best(s,regenf,canRegen,scoref):
-	root = Node(s,Settings(regenf,canRegen))
-	root.score = scoref([s])[0]
-	hq.heappush(heap,(-root.score,root))
-	bestsc = root.score
-	bestch = root
-	count = 0
-	print "starting priority loop"
-	while True:
-		if not heap:
-			break
-		curr = hq.heappop(heap)[1]
-		print curr.s,curr.score
-		if curr.score > bestsc:
-			bestsc = curr.score
-			bestch = curr
-			count = 0
-			print "NEW BEST:",bestch.s,bestch.score
-		else:
-			count += 1
-			if count > strikes:
-				break
-		childs = []
-		for i in xrange(numChildren):
-			newch = curr.getChild()
-			if newch is not None:
-				childs.append(newch)
-		if not childs:
-			continue
-		raw = [" ".join(c.words) for c in childs]
-		scores = scoref(raw)
-		for i,child in enumerate(childs):
-			child.score = scores[i]
-			hq.heappush(heap,(-child.score,child))
-	return bestch.s,bestsc
-'''

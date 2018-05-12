@@ -1,13 +1,10 @@
-import word2vec, random, priority, formats
+import word2vec, random, newpriority, formats
 import helpers as h
 from penseur import penseur
 import wordbags as wb
 from itertools import chain, izip_longest
 import conceptnet as cn
 import wordbags as wb
-
-priority = reload(priority)
-h = reload(h)
 
 #=FORMATS===========================================
 
@@ -85,7 +82,7 @@ def gen(fraw,w2v,lock):
 		return None
 	for i in fraw['cap']:
 		lock[i] = h.firstCharUp(lock[i])
-	return plugin(fraw['plug'],lock)
+	return plugin(fraw['plug'],lock),fraw
 
 #this function tries to get node POS to agree with w2v. W2v isn't perfect, but the more the nodes agree with it, the more results we'll get.
 def processPOS(node,w2v):
@@ -138,7 +135,7 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 	genf = f[0]
 	axis = f[1]
 	canRegen = f[2]
-	s = genf([None,None,None,None,None,None])
+	s,fraw = genf([None,None,None,None,None,None])
 	scoref = lambda x: h.getSkipScores(axis[0],axis[1],axis[1],x,pens)
 	if s is None:
 		if retries > 20:
@@ -146,14 +143,7 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 		print "RETRYING"
 		return doit(formats,w2v,pens,retries+1,f)
 	else:
-		print s
-		return s, scoref([h.strip(s)])[0]
-#		best = priority.best(s,genf,canRegen,scoref)[0]
-#		raw = h.strip(best).split()[:3]
-#		notraw = best.split()
-#		best = ". ".join([h.firstCharUp(h.makePlural(r)) for r in raw])+". "+" ".join(notraw[3:])
-#		print best,"\n"
-#		return best
+		return newpriority.best(s,genf,canRegen,scoref,fraw)[0]
 
 if __name__ == "__main__":
 	w2v = word2vec.load('data/tagged.bin')
