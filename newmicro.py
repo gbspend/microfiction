@@ -6,6 +6,8 @@ from itertools import chain, izip_longest
 import conceptnet as cn
 import wordbags as wb
 
+newpriority = reload(newpriority)
+
 #=FORMATS===========================================
 
 badstory = 'plunger volcano paper the mug switches'

@@ -72,7 +72,7 @@ class Node:
 		i = random.choice(self.sett.canRegen)
 		lock = self.words[:]
 		lock[i] = None
-		news = self.sett.regen(lock)
+		news,fraw = self.sett.regen(lock)
 		if not news:
 			return None
 		node = Node(news,self.sett)
