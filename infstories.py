@@ -19,9 +19,11 @@ if __name__ == "__main__":
 	formats = newmicro.makeFormats(w2v)
 	for i in range(1000):#while True:
 		form = random.choice(formats)
-		s,score = newmicro.doit(formats,w2v,pens,forcef=form)
-		l = [form[3]['raw'], s,str(score),'']
-		writeList('newstories',l)
+		temp = newmicro.doit(formats,w2v,pens,forcef=form)
+		if temp:
+			s,score = temp
+			l = [form[3]['raw'], s,str(score),'']
+			writeList('newstories',l)
 
 
 
