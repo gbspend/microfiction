@@ -158,7 +158,7 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 if __name__ == "__main__":
 	w2v = word2vec.load('data/tagged.bin')
 	print "Word2Vec Loaded"
-	pens = None#penseur.Penseur()
+	pens = penseur.Penseur()
 	print "Penseur Loaded"
 
 	formats = makeFormats(w2v)

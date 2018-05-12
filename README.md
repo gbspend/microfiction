@@ -12,8 +12,8 @@ install:
 
 download:
 
-	https://drive.google.com/file/d/1srOUFidQ9fV240wyF7GW4eqF6raCawBV/view (place posttagged_wikipedia_for_word2vec.bin in ./data folder and rename to tagged.bin)
-	
+	Download https://drive.google.com/file/d/1srOUFidQ9fV240wyF7GW4eqF6raCawBV/view (for ssh: download in OS and use (p)scp), place posttagged_wikipedia_for_word2vec.bin in ./data folder, and rename to tagged.bin (discard the rest)
+
 	https://github.com/danielricks/penseur (place in ./penseur folder)
 	
 	Paste the snippet from pens_func at the bottom of ./penseur/penseur.py
