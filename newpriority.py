@@ -1,7 +1,6 @@
 import helpers as h
 import random
 import heapq as hq
-import oxdict as od
 
 numChildren = 10
 strikes = 7#10
@@ -104,7 +103,7 @@ def best(s,regenf,canRegen,scoref,fraw):
 			break
 		if not children:
 			continue
-		raw = [" ".join(c.words) for c in children]
+		raw = [h.strip(c) for c in children]
 		scores = scoref(raw)
 		for i,child in enumerate(children):
 			child.score = scores[i]
