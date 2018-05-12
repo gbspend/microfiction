@@ -17,7 +17,7 @@ if __name__ == "__main__":
 	w2v = word2vec.load('data/tagged.bin')
 	pens = penseur.Penseur()
 	formats = newmicro.makeFormats(w2v)
-	while True:
+	for i in range(1000):#while True:
 		form = random.choice(formats)
 		s,score = newmicro.doit(formats,w2v,pens,forcef=form)
 		l = [form[3]['raw'], s,str(score),'']
