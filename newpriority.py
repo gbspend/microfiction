@@ -71,7 +71,10 @@ class Node:
 		i = random.choice(self.sett.canRegen)
 		lock = self.words[:]
 		lock[i] = None
-		news,fraw = self.sett.regen(lock)
+		temp = self.sett.regen(lock)
+		if not temp:
+			return None
+		news,fraw = temp
 		if not news:
 			return None
 		node = Node(news,self.sett)
@@ -103,7 +106,7 @@ def best(s,regenf,canRegen,scoref,fraw):
 			break
 		if not children:
 			continue
-		raw = [h.strip(c) for c in children]
+		raw = [h.strip(c.s) for c in children]
 		scores = scoref(raw)
 		for i,child in enumerate(children):
 			child.score = scores[i]
