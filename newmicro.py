@@ -49,8 +49,6 @@ def genrec(node,parent,prev,force,w2v,fillin):
 			cnRels = relsCache[cacheK]
 		else:
 			cnRels = cn.getRels(parent['word'],node['word'])
-			if cnRels:
-				print "GOT CN RELS FOR",parent['word'],node['word']
 			relsCache[cacheK] = cnRels
 		for rel in cnRels:
 			choices += [cn.stripPre(t[0]) for t in cn.getOutgoing(prev, rel)]
@@ -137,14 +135,15 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 	genf = f[0]
 	axis = f[1]
 	canRegen = f[2]
-	s,fraw = genf([None,None,None,None,None,None])
 	scoref = lambda x: h.getSkipScores(axis[0],axis[1],axis[1],x,pens)
-	if s is None:
-		if retries > 20:
+	temp = genf([None,None,None,None,None,None])
+	if temp is None:
+		if retries > 5:
 			return None
 		print "RETRYING"
 		return doit(formats,w2v,pens,retries+1,f)
 	else:
+		s,fraw = temp
 		return newpriority.best(s,genf,canRegen,scoref,fraw)[0]
 
 if __name__ == "__main__":
