@@ -29,21 +29,36 @@ def fillBags():
 			h.addToDictList(bags, parts[1], parts[0])
 
 def get(pos):
+	l,f = getList(pos)
+	ret = random.choice(l)
+	if f:
+		ret = f(ret)
+	return ret
+
+def getAll(pos):
+	l,f = getList(pos)
+	if f:
+		return [f(x) for x in l]
+	return l
+
+#returns a (list,function) tuple; function may be None
+def getList(pos):
 	global bags
 	if not bags:
 		fillBags()
+	f = None
 	if pos in ['JJ','JJR','JJS','RB','RBR','RBS']:
 		if 'JJ' in pos:
-			word = random.choice(bags['JJ'])
+			l = bags['JJ']
 		else:
-			word = random.choice(bags['RB'])
+			l = bags['RB']
 		if pos[-1] == 'R':
-			word = comparative(word)
+			f = comparative
 		elif pos[-1] == 'S':
-			word = superlative(word)
-		return word
+			f = superlative
+		return l,f
 	if 'VB' in pos:
-		word = random.choice(bags['VB'])
+		l = bags['VB']
 		t = ''
 		if pos == 'VBD':
 			t = PAST
@@ -56,25 +71,25 @@ def get(pos):
 		if pos == 'VBG':
 			t = PARTICIPLE
 		if t:
-			word = conjugate(word,tense=t)
-		return word
+			f = lambda x: conjugate(x,tense=t)
+		return l,f
 	if 'NN' in pos:
 		#separate bag for NNP?
-		word = random.choice(bags['NN'])
+		l = bags['NN']
 		if pos[-1] == 'S':
-			word = pluralize(word)
-		return word
+			f = pluralize
+		return l,f
 	if pos == 'WP$':
-		return random.choice(h.WPD.values())
+		return h.WPD.values(),None
 	if pos == 'PRP$':
-		return random.choice(h.PRPD.values())
+		return h.PRPD.values(),None
 	if pos == 'WRB':
-		return random.choice(['what', 'who', 'which', 'whom', 'whose'])
+		return ['what', 'who', 'which', 'whom', 'whose'],None
 
 	if pos == 'FW':
 		pos = 'NN'
 	if pos in bags:
-		return random.choice(bags[pos])
+		return bags[pos],None
 	else:
 		print "No bag for",pos
-		return None
+		return None,None

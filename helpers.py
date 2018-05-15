@@ -236,7 +236,6 @@ def get_scholar_rels(start, relations, w2v, tag1, tag2,num=10):
 #returns score, higher is better
 #len(l) > 1
 def getSkipScores(bad,good1,good2,l,p):
-	#return [random.random() for x in l]
 	dummy = False
 	if len(l) == 1:
 		dummy = True

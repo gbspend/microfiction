@@ -123,6 +123,7 @@ def best(s,regenf,canRegen,scoref):
 		if not children:
 			continue
 		raw = [" ".join(c.words) for c in children]
+		#speed up by preventing generation of stories with verbs that match stale > strikes or intrans niches!
 		scores = scoref(raw)
 		for i,child in enumerate(children):
 			child.score = scores[i]

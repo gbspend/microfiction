@@ -2,8 +2,8 @@ import helpers as h
 import random
 import heapq as hq
 
-numChildren = 10
-strikes = 7#10
+numChildren = 5
+strikes = 5
 
 class Niche:
 	def __init__(self,s,node):
@@ -116,6 +116,7 @@ def best(s,regenf,canRegen,scoref,fraw):
 				niches[k] = ni2
 			else:
 				niches[k].push(child)
+		print len(niches)
 	choices = []
 	for k in niches:
 		n = niches[k]

@@ -8,6 +8,8 @@ import wordbags as wb
 
 newpriority = reload(newpriority)
 
+maxRoots = 50 #Max Niches, too
+
 #=FORMATS===========================================
 
 badstory = 'plunger volcano paper the mug switches'
@@ -17,13 +19,37 @@ badstory = 'plunger volcano paper the mug switches'
 def w2vChoices(word,start,startTag,end,endTag,w2v):
 	return h.get_scholar_rels(word+startTag,[(start,end)],w2v,startTag,endTag,20)
 
+'''
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "newmicro.py", line 148, in doit
+    temp = genf([None,None,None,None,None,None])
+  File "newmicro.py", line 127, in <lambda>
+    genf = lambda lock, fraw=fraw, w2v=w2v: gen(fraw,w2v,lock)
+  File "newmicro.py", line 94, in gen
+    return plugin(fraw['plug'],lock),fraw
+  File "newmicro.py", line 24, in plugin
+    return ''.join([x for x in list(chain.from_iterable(izip_longest(parts, words))) if x is not None])
+UnicodeDecodeError: 'ascii' codec can't decode byte 0xe2 in position 1: ordinal not in range(128)
+'''
 def plugin(plug,words):
 	parts = plug.split('W')
-	return ''.join([x for x in list(chain.from_iterable(izip_longest(parts, words))) if x is not None])
+	try:
+		return ''.join([x for x in list(chain.from_iterable(izip_longest(parts, words))) if x is not None])
+	except UnicodeDecodeError:
+		print "Unicooooooooooode!"
+		return None
 
+rootCache = None
 #takes root node (pos), returns lowercase word
-def genRoot(root):
-	return wb.get(root['pos']).lower()
+def genRoot(root,w2v):
+	global rootCache,maxRoots
+	pos = root['pos']
+	if not rootCache:
+		rootCache = wb.getAll(pos)
+		if len(rootCache) > maxRoots:
+			rootCache = [h.strip_tag(w) for w in h.w2vsortlistNew([x+'_'+pos for x in rootCache],[root['word']+'_'+root['pos']],w2v)[:maxRoots]]
+	return random.choice(rootCache).lower()
 
 relsCache = {}
 #node is current node
@@ -43,7 +69,7 @@ def genrec(node,parent,prev,force,w2v,fillin):
 		startTag = '_'+parent['pos']
 		endTag = '_'+nodep
 		#maybe just have a set list to draw from for some restricted POS like IN, etc?
-		choices = w2vChoices(prev,parent['word'],startTag,node['word'],endTag,w2v)
+		choices = w2vChoices(prev,parent['word'],startTag,node['word'],endTag,w2v) #TODO: if parent is root, cache these choices!
 		cacheK = (parent['word'],node['word'])
 		if cacheK in relsCache:
 			cnRels = relsCache[cacheK]
@@ -76,7 +102,7 @@ def genrec(node,parent,prev,force,w2v,fillin):
 def gen(fraw,w2v,lock):
 	#traverse tree; if parent locked, regen all children (set a force flag)
 	root = fraw['root']
-	lock[root['index']] = genRoot(root)
+	lock[root['index']] = genRoot(root,w2v)
 	genrec(root,None,None,False,w2v,lock) #lock is out var
 	if None in lock:
 		return None
@@ -87,7 +113,7 @@ def gen(fraw,w2v,lock):
 #this function tries to get node POS to agree with w2v. W2v isn't perfect, but the more the nodes agree with it, the more results we'll get.
 def processPOS(node,w2v):
 	if node['pos'][-1] == '$':
-		node['pos'] = node['pos'][:-1] #w2v doesn't have $...?
+		node['pos'] = node['pos'][:-1] #w2v doesn't have $, apparently...?
 	old = node['word']
 	useOld = False
 	do = True #ugly way of doing it all again without hyphens
@@ -95,7 +121,7 @@ def processPOS(node,w2v):
 		do = False
 		w = node['word']
 		if w+'_'+node['pos'] not in w2v:
-			p = h.getPOS(w)
+			p = h.getPOS(w) #try to figure out POS ourselves
 			if p == node['pos'] or w+'_'+p not in w2v:
 				if (p == 'NNP' or node['pos'] == 'NNP') and w+'_'+'NN' in w2v:
 					p = 'NN'
@@ -139,11 +165,14 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 	temp = genf([None,None,None,None,None,None])
 	if temp is None:
 		if retries > 5:
-			return None
+			global rootCache
+			rootCache = None
+			return doit(formats,w2v,pens)
 		print "RETRYING"
 		return doit(formats,w2v,pens,retries+1,f)
 	else:
 		s,fraw = temp
+		#return s,scoref([h.strip(s)])
 		return newpriority.best(s,genf,canRegen,scoref,fraw)[0]
 
 if __name__ == "__main__":

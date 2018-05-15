@@ -124,6 +124,7 @@ def doit(topic,noun,w2v,pens,retries=0):
 		print "RETRYING"
 		return doit(topic,noun,w2v,pens,retries+1)
 	else:
+		#instead of just randomly genning one story, randomly gen one for each verb (species) to get started?
 		best = priority.best(s,regenf,canRegen,scoref)[0]
 		raw = h.strip(best).split()[:3]
 		notraw = best.split()
