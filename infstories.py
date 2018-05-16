@@ -1,4 +1,5 @@
 #python infstories.py > /dev/null 2>&1 &
+#ps aux | grep 
 #jobs -l
 #kill [PID]
 import micro, newmicro, word2vec, os, random
