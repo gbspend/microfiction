@@ -8,7 +8,7 @@ import wordbags as wb
 
 newpriority = reload(newpriority)
 
-maxRoots = 50 #Max Niches, too
+maxRoots = 60 #Max Niches, too
 
 #=FORMATS===========================================
 
@@ -150,9 +150,8 @@ def makeFormats(w2v):
 #===================================================
 
 def doit(formats,w2v,pens,retries=0,forcef=None):
-	#if not stanford.check():
-	#	print "START THE SERVER"
-	#	raw_input('Press Enter...')
+	global rootCache
+	rootCache = None
 	if not forcef:
 		f = random.choice(formats)
 	else:
@@ -165,8 +164,6 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 	temp = genf([None,None,None,None,None,None])
 	if temp is None:
 		if retries > 5:
-			global rootCache
-			rootCache = None
 			return doit(formats,w2v,pens)
 		print "RETRYING"
 		return doit(formats,w2v,pens,retries+1,f)

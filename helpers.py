@@ -270,6 +270,13 @@ def addToDictList(d,k,v):
 def getPOS(w):
 	return parse(w).split('/')[1].split('-')[0]
 
+def numMatch(parentWords,childWords):
+	ret = 0
+	for i in range(len(parentWords)):
+		if parentWords[i] == childWords[i] or wn.morphy(parentWords[i]) == wn.morphy(childWords[i]):
+			ret += 1
+	return ret
+
 '''
 * is pattern.en
 ^ is custom

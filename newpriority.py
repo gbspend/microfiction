@@ -2,8 +2,8 @@ import helpers as h
 import random
 import heapq as hq
 
-numChildren = 5
-strikes = 5
+numChildren = 7
+strikes = 7
 
 class Niche:
 	def __init__(self,s,node):
@@ -77,10 +77,12 @@ class Node:
 		news,fraw = temp
 		if not news:
 			return None
-		node = Node(news,self.sett)
-		if len(set(node.words)) != len(node.words) or node.s == self.s: #duplicate or didn't change
-			return None
-		return node
+		child = Node(news,self.sett)
+		#TODO! This rejects too many, I think? Test more! Maybe make it not match the original story...?
+		#if h.numMatch(self.words,child.words) > 2: #too similar
+		#	print self.words,child.words
+		#	return None
+		return child
 		
 def getIndex(story, i):
 	return h.strip(story.split(' ')[i])
