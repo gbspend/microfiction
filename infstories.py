@@ -19,10 +19,10 @@ if __name__ == "__main__":
 	pens = penseur.Penseur()
 	formats = newmicro.makeFormats(w2v)
 	for i in range(1000):#while True:
-		temp = newmicro.doit(formats,w2v,pens,forcef=form)
+		temp = newmicro.doit(formats,w2v,pens)
 		if temp:
 			s,score,raws = temp
-			l = [raws, s,str(score),'']
+			l = [raws,s,str(score),'']
 			print l
 			writeList('newstories',l)
 
