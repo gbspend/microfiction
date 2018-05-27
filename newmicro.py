@@ -41,14 +41,18 @@ def plugin(plug,words):
 		return None
 
 rootCache = None
+def fillRootCache(pos,w2v):
+	global rootCache,maxRoots
+	rootCache = wb.getAll(pos)
+	if len(rootCache) > maxRoots:
+		rootCache = [h.strip_tag(w).lower() for w in h.w2vsortlistNew([x+'_'+pos for x in rootCache],[root['word']+'_'+root['pos']],w2v)[:maxRoots]]
+		
 #takes root node (pos), returns lowercase word
 def genRoot(root,w2v):
-	global rootCache,maxRoots
+	global rootCache
 	pos = root['pos']
 	if not rootCache:
-		rootCache = wb.getAll(pos)
-		if len(rootCache) > maxRoots:
-			rootCache = [h.strip_tag(w) for w in h.w2vsortlistNew([x+'_'+pos for x in rootCache],[root['word']+'_'+root['pos']],w2v)[:maxRoots]]
+		fillRootCache(pos,w2v)
 	return random.choice(rootCache).lower()
 
 relsCache = {}
@@ -102,7 +106,8 @@ def genrec(node,parent,prev,force,w2v,fillin):
 def gen(fraw,w2v,lock):
 	#traverse tree; if parent locked, regen all children (set a force flag)
 	root = fraw['root']
-	lock[root['index']] = genRoot(root,w2v)
+	if lock[root['index']] is None:
+		lock[root['index']] = genRoot(root,w2v)
 	genrec(root,None,None,False,w2v,lock) #lock is out var
 	if None in lock:
 		return None
@@ -156,11 +161,32 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 		f = random.choice(formats)
 	else:
 		f = forcef
-	print f[3]['raw']
 	genf = f[0]
 	axis = f[1]
 	canRegen = f[2]
+	#print f[3]['raw']
+	root = f[3]['root']
+	
+	fillRootCache(root['pos'],w2v) #this feels messy
+	stories = []
+	for r in rootCache:
+		lock = [None,None,None,None,None,None]
+		lock[root['index']] = r
+		temp = None
+		count = 0
+		while temp is None and count < 5:
+			temp = genf([None,None,None,None,None,None])
+			count+=1
+		if temp:
+			s,fraw = temp
+			stories.append(s)
+	if not stories:
+		return None
+	for s in stories:
+		print s
 	scoref = lambda x: h.getSkipScores(axis[0],axis[1],axis[1],x,pens)
+	return newpriority.best(stories,genf,canRegen,scoref,fraw)[0]
+	'''
 	temp = genf([None,None,None,None,None,None])
 	if temp is None:
 		if retries > 5:
@@ -171,6 +197,7 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 		s,fraw = temp
 		#return s,scoref([h.strip(s)])
 		return newpriority.best(s,genf,canRegen,scoref,fraw)[0]
+	'''
 
 if __name__ == "__main__":
 	w2v = word2vec.load('data/tagged.bin')

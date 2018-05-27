@@ -87,14 +87,27 @@ class Node:
 def getIndex(story, i):
 	return h.strip(story.split(' ')[i])
 
-#s is story NOT STRIPPED
-def best(s,regenf,canRegen,scoref,fraw):
+#stories can be a string or list
+#NOT STRIPPED
+def best(stories,regenf,canRegen,scoref,fraw):
+	if type(stories) != list:
+		stories = [stories]
 	niches = {}
 	seedi = fraw['root']['index']
-	seed = getIndex(s,seedi)
-	root = Node(s,Settings(regenf,canRegen))
-	root.score = scoref([h.strip(s)])[0]
-	niches[seed] = Niche(seed,root)
+	
+	bad = True
+	for s in stories:
+		if not s:
+			continue
+		seed = getIndex(s,seedi)
+		root = Node(s,Settings(regenf,canRegen))
+		root.score = scoref([h.strip(s)])[0]
+		niches[seed] = Niche(seed,root)
+		bad = False
+	if bad:
+		print "Refiner got no stories!"
+		return None
+		
 	while True:
 		#print "--------------------------------"
 		children = []
