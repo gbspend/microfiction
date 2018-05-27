@@ -41,8 +41,9 @@ def plugin(plug,words):
 		return None
 
 rootCache = None
-def fillRootCache(pos,w2v):
+def fillRootCache(root,w2v):
 	global rootCache,maxRoots
+	pos = root['pos']
 	rootCache = wb.getAll(pos)
 	if len(rootCache) > maxRoots:
 		rootCache = [h.strip_tag(w).lower() for w in h.w2vsortlistNew([x+'_'+pos for x in rootCache],[root['word']+'_'+root['pos']],w2v)[:maxRoots]]
@@ -52,7 +53,7 @@ def genRoot(root,w2v):
 	global rootCache
 	pos = root['pos']
 	if not rootCache:
-		fillRootCache(pos,w2v)
+		fillRootCache(root,w2v)
 	return random.choice(rootCache).lower()
 
 relsCache = {}
@@ -167,7 +168,7 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 	#print f[3]['raw']
 	root = f[3]['root']
 	
-	fillRootCache(root['pos'],w2v) #this feels messy
+	fillRootCache(root,w2v) #this feels messy
 	stories = []
 	for r in rootCache:
 		lock = [None,None,None,None,None,None]
