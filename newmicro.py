@@ -165,10 +165,11 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 	genf = f[0]
 	axis = f[1]
 	canRegen = f[2]
-	#print f[3]['raw']
+	print f[3]['raw']
 	root = f[3]['root']
 	
 	fillRootCache(root,w2v) #this feels messy
+	print len(rootCache)
 	stories = []
 	for r in rootCache:
 		lock = [None,None,None,None,None,None]
@@ -181,10 +182,9 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 		if temp:
 			s,fraw = temp
 			stories.append(s)
+			print s
 	if not stories:
 		return None
-	for s in stories:
-		print s
 	scoref = lambda x: h.getSkipScores(axis[0],axis[1],axis[1],x,pens)
 	return newpriority.best(stories,genf,canRegen,scoref,fraw)[0]
 	'''
