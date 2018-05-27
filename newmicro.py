@@ -186,7 +186,12 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 	if not stories:
 		return None
 	scoref = lambda x: h.getSkipScores(axis[0],axis[1],axis[1],x,pens)
-	return newpriority.best(stories,genf,canRegen,scoref,fraw)[0]
+	temp = newpriority.best(stories,genf,canRegen,scoref,fraw)[0]
+	if temp:
+		s,sc = temp
+		return s,sc,f[3]['raw']
+	else:
+		return None
 	'''
 	temp = genf([None,None,None,None,None,None])
 	if temp is None:

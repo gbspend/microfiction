@@ -5,7 +5,7 @@ import heapq as hq
 numChildren = 7
 strikes = 7
 
-class Niche:
+class Species:
 	def __init__(self,s,node):
 		self.seed = s
 		self.isDead = False
@@ -92,7 +92,7 @@ def getIndex(story, i):
 def best(stories,regenf,canRegen,scoref,fraw):
 	if type(stories) != list:
 		stories = [stories]
-	niches = {}
+	species = {}
 	seedi = fraw['root']['index']
 	
 	bad = True
@@ -102,7 +102,7 @@ def best(stories,regenf,canRegen,scoref,fraw):
 		seed = getIndex(s,seedi)
 		root = Node(s,Settings(regenf,canRegen))
 		root.score = scoref([h.strip(s)])[0]
-		niches[seed] = Niche(seed,root)
+		species[seed] = Species(seed,root)
 		bad = False
 	if bad:
 		print "Refiner got no stories!"
@@ -112,11 +112,11 @@ def best(stories,regenf,canRegen,scoref,fraw):
 		#print "--------------------------------"
 		children = []
 		allDead = True
-		for k in niches:
-			n = niches[k]
-			if not n.isDead:
+		for k in species:
+			p = species[k]
+			if not p.isDead:
 				allDead = False
-				children += n.step()
+				children += p.step()
 		if allDead and not children:
 			break
 		if not children:
@@ -126,17 +126,17 @@ def best(stories,regenf,canRegen,scoref,fraw):
 		for i,child in enumerate(children):
 			child.score = scores[i]
 			k = getIndex(child.s,seedi)
-			if k not in niches:
-				ni2 = Niche(k,child)
-				niches[k] = ni2
+			if k not in species:
+				ni2 = Species(k,child)
+				species[k] = ni2
 			else:
-				niches[k].push(child)
-		print len(niches)
+				species[k].push(child)
+		print len(species)
 	choices = []
-	for k in niches:
-		n = niches[k]
-		print n.bestch.s,n.bestsc
-		choices.append((n.bestch,n.bestsc))
+	for k in species:
+		p = species[k]
+		print p.bestch.s,p.bestsc
+		choices.append((p.bestch,p.bestsc))
 	m = min([c[1] for c in choices])
 	if m >=0:
 		m = 0
