@@ -2,7 +2,7 @@
 #ps aux | grep 
 #jobs -l
 #kill [PID]
-import micro, newmicro, word2vec, os, random
+import micro, newmicro, word2vec, os, random, sys
 from penseur import penseur
 
 #lines is array
