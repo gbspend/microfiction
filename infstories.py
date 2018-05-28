@@ -11,7 +11,7 @@ def writeList(fname, lines):
 		o = 'a' # append if already exists
 	else:
 		o = 'w' # make a new file if not
-	with open(fname,o) as f:
+	with open(fname,o,0) as f:
 		f.write('\n'.join(lines)+'\n')
 
 if __name__ == "__main__":
