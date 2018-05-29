@@ -1,4 +1,4 @@
-import word2vec, random, newpriority, formats
+import word2vec, random, newpriority, formats, sys
 import helpers as h
 from penseur import penseur
 import wordbags as wb
@@ -206,11 +206,16 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 	'''
 
 if __name__ == "__main__":
+	times = 1
+	if len(sys.argv) > 1:
+		times = int(sys.argv[1])
 	w2v = word2vec.load('data/tagged.bin')
 	print "Word2Vec Loaded"
 	pens = penseur.Penseur()
 	print "Penseur Loaded"
 
 	formats = makeFormats(w2v)
-	doit(formats,w2v,pens)
+	
+	for i in range(times):
+		print doit(formats,w2v,pens)
 
