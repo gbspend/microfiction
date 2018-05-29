@@ -131,7 +131,7 @@ def best(stories,regenf,canRegen,scoref,fraw):
 				species[k] = ni2
 			else:
 				species[k].push(child)
-		print len(species)
+		#print len(species)
 	choices = []
 	for k in species:
 		p = species[k]
