@@ -66,7 +66,7 @@ A format consists of:
 A node consists of:
 	word:	Lower case word
 	pos:	POS
-	dep:	The dependency node type (root, advmod, etc) (Not currently used)
+	dep:	The dependency node type (root, advmod, etc)
 	index:	A 0-indexed position ("index") in the story (corresponds to "plug-in story" numbers)
   children:	A list of children
 	[That's it, all the "relation" processing will happen later]

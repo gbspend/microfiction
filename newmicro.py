@@ -55,6 +55,7 @@ def genRoot(root,w2v):
 		fillRootCache(root,w2v)
 	return random.choice(rootCache).lower()
 
+choiceCache = {}
 relsCache = {}
 #node is current node
 #parent is parent node
@@ -73,17 +74,22 @@ def genrec(node,parent,prev,force,w2v,fillin):
 		startTag = '_'+parent['pos']
 		endTag = '_'+nodep
 		#maybe just have a set list to draw from for some restricted POS like IN, etc?
-		choices = w2vChoices(prev,parent['word'],startTag,node['word'],endTag,w2v) #TODO: if parent is root, cache these choices!
 		cacheK = (parent['word'],node['word'])
-		if cacheK in relsCache:
-			cnRels = relsCache[cacheK]
+		if parent['dep'] == 'root' and cacheK in choiceCache:
+			choices = choiceCache[cacheK]
 		else:
-			cnRels = cn.getRels(parent['word'],node['word'])
-			relsCache[cacheK] = cnRels
+			choices = w2vChoices(prev,parent['word'],startTag,node['word'],endTag,w2v)
+			if parent['dep'] == 'root': #only cache choices from root (more likely to be used, caching all is too much data for too little overlap)
+				choiceCache[cacheK] = choices
+		if cacheK not in relsCache:
+			relsCache[cacheK] = cn.getRels(parent['word'],node['word'])
+		cnRels = relsCache[cacheK]
 		for rel in cnRels:
 			choices += [cn.stripPre(t[0]) for t in cn.getOutgoing(prev, rel)]
 		final = []
 		for c in choices:
+			if c == node['word']: #try to find a different word
+				continue
 			p = h.getPOS(c)
 			if p == nodep:
 				final.append(c)
@@ -92,14 +98,17 @@ def genrec(node,parent,prev,force,w2v,fillin):
 				if newc:
 					final.append(newc)
 
-		#what to do if final is empty? Maybe just plug in original word??
-		#print 'From', parent['word'],'to',node['word'],' vvv'
-		#print 'From',prev,'to',final
-		#print ''
 		if not final:
-			word = node['word']
+			word = wb.get(nodep)#word = node['word'] #grab from wordbag instead??
 		else:
 			word = random.choice(final) #Can this be smarter?
+		#what to do if final is empty? Maybe just plug in original word??
+		#print 'Vector:', parent['word'],'to',node['word']
+		#print 'Apply vector to:',prev,'->',final
+		#print 'Chose:',word
+		#print ''
+		if not word:
+			word = node['word']
 
 		fillin[i]=word
 	if len(node['children']):
