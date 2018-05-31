@@ -2,8 +2,8 @@ import helpers as h
 import random
 import heapq as hq
 
-numChildren = 7
-strikes = 7
+numChildren = 6
+strikes = 6
 
 class Species:
 	def __init__(self,s,node):
@@ -135,8 +135,10 @@ def best(stories,regenf,canRegen,scoref,fraw):
 	choices = []
 	for k in species:
 		p = species[k]
-		print p.bestch.s,p.bestsc
+		#print p.bestch.s,p.bestsc
 		choices.append((p.bestch,p.bestsc))
+	for c in sorted(choices,key=lambda x: x[1],reverse=True):
+		print c[0].s,c[1]
 	m = min([c[1] for c in choices])
 	if m >=0:
 		m = 0

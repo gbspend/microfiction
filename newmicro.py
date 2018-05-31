@@ -51,7 +51,6 @@ def fillRootCache(root,w2v):
 #takes root node (pos), returns lowercase word
 def genRoot(root,w2v):
 	global rootCache
-	pos = root['pos']
 	if not rootCache:
 		fillRootCache(root,w2v)
 	return random.choice(rootCache).lower()
@@ -94,6 +93,9 @@ def genrec(node,parent,prev,force,w2v,fillin):
 					final.append(newc)
 
 		#what to do if final is empty? Maybe just plug in original word??
+		#print 'From', parent['word'],'to',node['word'],' vvv'
+		#print 'From',prev,'to',final
+		#print ''
 		if not final:
 			word = node['word']
 		else:
@@ -172,12 +174,12 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 	#print len(rootCache)
 	stories = []
 	for r in rootCache:
-		lock = [None,None,None,None,None,None]
-		lock[root['index']] = r
 		temp = None
 		count = 0
 		while temp is None and count < 5:
-			temp = genf([None,None,None,None,None,None])
+			lock = [None,None,None,None,None,None]
+			lock[root['index']] = r
+			temp = genf(lock)
 			count+=1
 		if temp:
 			s,fraw = temp
