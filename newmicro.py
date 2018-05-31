@@ -74,18 +74,21 @@ def genrec(node,parent,prev,force,w2v,fillin):
 		startTag = '_'+parent['pos']
 		endTag = '_'+nodep
 		#maybe just have a set list to draw from for some restricted POS like IN, etc?
-		cacheK = (parent['word'],node['word'])
+		cacheK = (prev,parent['word'],node['word'])
 		if parent['dep'] == 'root' and cacheK in choiceCache:
 			choices = choiceCache[cacheK]
 		else:
 			choices = w2vChoices(prev,parent['word'],startTag,node['word'],endTag,w2v)
 			if parent['dep'] == 'root': #only cache choices from root (more likely to be used, caching all is too much data for too little overlap)
 				choiceCache[cacheK] = choices
+
+		cacheK = (parent['word'],node['word'])
 		if cacheK not in relsCache:
 			relsCache[cacheK] = cn.getRels(parent['word'],node['word'])
 		cnRels = relsCache[cacheK]
 		for rel in cnRels:
 			choices += [cn.stripPre(t[0]) for t in cn.getOutgoing(prev, rel)]
+
 		final = []
 		for c in choices:
 			if c == node['word']: #try to find a different word
