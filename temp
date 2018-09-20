@@ -3,5 +3,45 @@ from penseur import penseur
 w2v = word2vec.load('data/tagged.bin')
 pens = penseur.Penseur()
 formats = newmicro.makeFormats(w2v)
-newmicro.doit(formats,w2v,pens)
+#newmicro.doit(formats,w2v,pens)
 
+#recursive; returns list of POS in order
+def poss(node,l = None):
+	if l is None:
+		l = [None,None,None,None,None,None]
+	l[node['index']] = node['pos']
+	for c in node['children']:
+		l = poss(c,l)
+	return l
+
+from collections import defaultdict
+d = defaultdict(list)
+for f in formats:
+	f = f[3]
+	print f['raw']
+	s = " ".join(poss(f['root']))
+	if s in d:
+		print "DUPE:",s,f['raw']
+	d[s].append(f)
+	print s
+
+
+
+
+
+
+def icheck(node,seen=None):
+	if seen is None:
+		seen = set()
+	seen.add(node['index'])
+	for c in node['children']:
+		seen = icheck(c,seen)
+	return seen
+
+for f in formats:
+	f = f[3]
+	s = icheck(f['root'])
+	if not s == set([0,1,2,3,4,5]):
+		print "BAD:", f['raw'], s
+
+	

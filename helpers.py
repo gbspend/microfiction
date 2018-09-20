@@ -7,6 +7,7 @@ import random
 from pattern.en import parse, pluralize, comparative, superlative, conjugate, PRESENT, PAST, PARTICIPLE, INFINITIVE
 import oxdict as od
 from operator import itemgetter
+import os, csv
 
 def synName(s):
 	return s.lemma_names()[0]
@@ -226,9 +227,17 @@ def get_scholar_rels(start, relations, w2v, tag1, tag2,num=10):
 #Ideas:
 #wn.synsets(word) -> lemmas -> names (to "cast a wider net")
 
-#use w2v to make our own "relations": give it [(nail,hammer),(horse,ride)] and pass in king
-#see nancy's notes in Slack
-
+#for collecting survey data on how well the scorer is doing
+def writeCsv(csvname, row):
+	csvPath = "score_data/"
+	fname = csvPath+csvname+'.csv'
+	if os.path.exists(fname):
+		o = 'a' # append if already exists
+	else:
+		o = 'w' # make a new file if not
+	with open(fname,o+'b') as f:
+		writer = csv.writer(f, delimiter=';', quoting=csv.QUOTE_NONE)
+		writer.writerow(row)
 
 #good/bad are axis ends
 #l is list of sentences to score
@@ -239,11 +248,14 @@ def getSkipScores(bad,good1,good2,l,p):
 	dummy = False
 	if len(l) == 1:
 		dummy = True
-		l += ['asd']
+		l += ['asdf']
 	p.encode(l)
 	scores = p.get_axis_scores(bad,good1,good2)
+	l = l[:-1]
 	if dummy:
-		return scores[:1]
+		scores = scores[:1]
+	for i,story in enumerate(l):
+		writeCsv("basic1D",[story,scores[i]])
 	return scores
 
 def toPresent(verb):

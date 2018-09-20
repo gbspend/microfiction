@@ -8,7 +8,7 @@ import wordbags as wb
 
 newpriority = reload(newpriority)
 
-maxRoots = 60 #Max Niches, too
+maxRoots = 60
 
 #=FORMATS===========================================
 

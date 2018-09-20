@@ -2,8 +2,9 @@ import helpers as h
 import random
 import heapq as hq
 
-numChildren = 6
-strikes = 6
+numChildren = 3
+strikes = 3
+maxSpecies = 10
 
 class Species:
 	def __init__(self,s,node):
@@ -109,10 +110,12 @@ def best(stories,regenf,canRegen,scoref,fraw):
 		return None
 		
 	while True:
-		#print "--------------------------------"
+		print "--------------------------------"
 		children = []
 		allDead = True
-		for k in species:
+		tempcount = 0
+		for k in sorted(species.keys(),key=lambda x: species[x].bestsc,reverse=True)[:maxSpecies]:
+			tempcount+=1
 			p = species[k]
 			if not p.isDead:
 				allDead = False
@@ -121,6 +124,7 @@ def best(stories,regenf,canRegen,scoref,fraw):
 			break
 		if not children:
 			continue
+		print tempcount, len(children)
 		raw = [h.strip(c.s) for c in children]
 		scores = scoref(raw)
 		for i,child in enumerate(children):
@@ -131,13 +135,14 @@ def best(stories,regenf,canRegen,scoref,fraw):
 				species[k] = ni2
 			else:
 				species[k].push(child)
-		#print len(species)
+		print len(species)
 	choices = []
 	for k in species:
 		p = species[k]
 		#print p.bestch.s,p.bestsc
 		choices.append((p.bestch,p.bestsc))
-	for c in sorted(choices,key=lambda x: x[1],reverse=True):
+	choices = sorted(choices,key=lambda x: x[1],reverse=True)[:maxSpecies]
+	for c in choices:
 		print c[0].s,c[1]
 	m = min([c[1] for c in choices])
 	if m >=0:
