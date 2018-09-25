@@ -156,10 +156,21 @@ def processPOS(node,w2v):
 		node['word'] = old
 	for c in node['children']:
 		processPOS(c,w2v)
+		
+def hasNoneIndex(node):
+	if node['index'] is None:
+		return True
+	for c in node['children']:
+		if hasNoneIndex(c):
+			return True
+	return False
 	
 def makeFormats(w2v):
 	ret = []
 	for fraw in formats.makeAllRawForms():
+		if hasNoneIndex(fraw['root']):
+			print "excluded",fraw['raw']
+			continue
 		processPOS(fraw['root'],w2v) #Preprocess each node by checking whether word_pos is in w2v and massage them if possible
 		genf = lambda lock, fraw=fraw, w2v=w2v: gen(fraw,w2v,lock)
 		regen = range(6)
