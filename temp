@@ -5,6 +5,8 @@ pens = penseur.Penseur()
 formats = newmicro.makeFormats(w2v)
 #newmicro.doit(formats,w2v,pens)
 
+
+
 #recursive; returns list of POS in order
 def poss(node,l = None):
 	if l is None:
@@ -42,6 +44,16 @@ for f in formats:
 	f = f[3]
 	s = icheck(f['root'])
 	if not s == set([0,1,2,3,4,5]):
-		print "BAD:", f['raw'], s
+		print "BAD:", f['raw'], s, "(",f['plug'],")"
 
 	
+
+
+import re
+def findR(formats, regex):
+	for f in formats:
+		f = f[3]
+		if "'" not in f['raw'] and re.search(regex, f['plug']):
+			print f['raw'],f['plug']
+
+

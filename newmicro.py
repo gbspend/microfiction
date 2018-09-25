@@ -7,6 +7,7 @@ import conceptnet as cn
 import wordbags as wb
 
 newpriority = reload(newpriority)
+formats = reload(formats)
 
 maxRoots = 60
 
@@ -156,26 +157,30 @@ def processPOS(node,w2v):
 		node['word'] = old
 	for c in node['children']:
 		processPOS(c,w2v)
-		
-def hasNoneIndex(node):
-	if node['index'] is None:
-		return True
+
+def allIndices(node,seen=None):
+	if seen is None:
+		seen = set()
+	seen.add(node['index'])
 	for c in node['children']:
-		if hasNoneIndex(c):
-			return True
-	return False
-	
+		seen = allIndices(c,seen)
+	return seen
+
 def makeFormats(w2v):
 	ret = []
+	ex = 0
 	for fraw in formats.makeAllRawForms():
-		if hasNoneIndex(fraw['root']):
-			print "excluded",fraw['raw']
+		s = allIndices(fraw['root'])
+		if s != set([0,1,2,3,4,5]):
+			print "SKIP:", fraw['raw'], s
+			ex +=1
 			continue
 		processPOS(fraw['root'],w2v) #Preprocess each node by checking whether word_pos is in w2v and massage them if possible
 		genf = lambda lock, fraw=fraw, w2v=w2v: gen(fraw,w2v,lock)
 		regen = range(6)
 		del regen[fraw['root']['index']]
 		ret.append((genf,(badstory, h.strip(" ".join(fraw['words']))),regen,fraw))
+	print "Excluded",ex
 	return ret
 
 #===================================================

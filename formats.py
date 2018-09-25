@@ -78,7 +78,7 @@ def makeRawForms(fname):
 	    content = f.readlines()
 	curr = None
 	last = []
-	needShift = False #if the "root" doesn't have a _word_ or if we filtered out a linking node
+	used_indices = set()
 	for line in content:
 		line = line.strip()
 		if not line:
@@ -88,7 +88,7 @@ def makeRawForms(fname):
 				ret.append(curr)
 			curr = makeEmptyFormat(line)
 			last = []
-			needShift = False
+			used_indices = set()
 		else:
 			parts = line.split()
 			n = int(parts[0])
@@ -103,7 +103,15 @@ def makeRawForms(fname):
 			node['word'] = word.lower()
 			node['pos'] = wordparts[1]
 			node['dep'] = parts[3][1:-1]
-			node['index'] = curr['words'].index(word) #0-indexed
+			indices = [t_i for t_i, x in enumerate(curr['words']) if x == word]
+			for try_i in indices:
+				if try_i not in used_indices:
+					node['index'] = try_i
+					used_indices.add(try_i)
+					break
+			if node['index'] == -1:
+				print "-1 index",curr['raw'],word,indices,used_indices
+			#is this still not good enough? Should it try to base index on parents? (like to the right of parent?)
 			if len(last) == 0:
 				last.append(node)
 				curr['root'] = node
