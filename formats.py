@@ -56,6 +56,11 @@ def isBadFormat(form):
 punc = ''.join(string.punctuation.split('-'))
 marker = ' -> '
 
+def setIndRec(node, correct_inds):
+	node['index'] = correct_inds.index(node['index'])
+	for c in node['children']:
+		setIndRec(c,correct_inds)
+
 '''
 A format consists of:
 	raw:	Raw story
@@ -85,6 +90,8 @@ def makeRawForms(fname):
 			continue
 		if marker not in line:
 			if curr is not None and not isBadFormat(curr):
+				#postprocess fixing indexes (currently they are in the correct order but not necessarily
+				setIndRec(curr['root'], sorted(list(used_indices))) #index of "index" is correct index :P
 				ret.append(curr)
 			curr = makeEmptyFormat(line)
 			last = []
@@ -103,15 +110,8 @@ def makeRawForms(fname):
 			node['word'] = word.lower()
 			node['pos'] = wordparts[1]
 			node['dep'] = parts[3][1:-1]
-			indices = [t_i for t_i, x in enumerate(curr['words']) if x == word]
-			for try_i in indices:
-				if try_i not in used_indices:
-					node['index'] = try_i
-					used_indices.add(try_i)
-					break
-			if node['index'] == -1:
-				print "-1 index",curr['raw'],word,indices,used_indices
-			#is this still not good enough? Should it try to base index on parents? (like to the right of parent?)
+			node['index'] = int(parts[4]) #not guaranteed to be 0-5
+			used_indices.add(node['index'])
 			if len(last) == 0:
 				last.append(node)
 				curr['root'] = node
