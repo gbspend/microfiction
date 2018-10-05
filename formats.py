@@ -91,7 +91,7 @@ def makeRawForms(fname):
 		if marker not in line:
 			if curr is not None and not isBadFormat(curr):
 				#postprocess fixing indexes (currently they are in the correct order but not necessarily
-				setIndRec(curr['root'], sorted(list(used_indices))) #index of "index" is correct index :P
+				setIndRec(curr['root'], sorted(list(used_indices))) #the raw index's index in "used_indices" is correct index :P
 				ret.append(curr)
 			curr = makeEmptyFormat(line)
 			last = []

@@ -32,7 +32,7 @@ public class SkeletonParser {
 		sb.append(Integer.toString(indent));
 		sb.append(" -> ");
 		sb.append(word.toString()+" ");
-		String temp = "() ";
+		String temp = "() "; //getting this from edges is a pain; formats.py currently only needs "(root)"
 		if (indent == 0) {
 			temp = "(root) ";
 		}
@@ -88,6 +88,8 @@ public class SkeletonParser {
 			String story = line.trim();
 			story = story.replaceAll("\\\\\"", "\""); // get rid of \"
 			story = story.replaceAll("\\.\\.+", "…"); // replace multiple periods with ellipses
+			story = story.replaceAll("[\\u2018\\u2019]", "'");
+			story = story.replaceAll("[\\u201C\\u201D]", "\"");
 			docs.add(story);
 		}
 		bufferedReader.close();

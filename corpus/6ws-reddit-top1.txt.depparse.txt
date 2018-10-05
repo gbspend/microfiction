@@ -95,7 +95,7 @@ The smallest coffins are the heaviest.
 1 -> the/DT () 5
 1 -> ./. () 7
 
-Brought roses home. Keys didn’t fit.
+Brought roses home. Keys didn't fit.
 
 0 -> home/NN (root) 3
 1 -> Brought/JJ () 1
@@ -2509,7 +2509,7 @@ Unpopular messiah turns wine into water.
 2 -> into/IN () 5
 1 -> ./. () 7
 
-Death extends his hand, smiling. “Deal?”
+Death extends his hand, smiling. "Deal?"
 
 0 -> extends/VBZ (root) 2
 1 -> Death/NN () 1
@@ -3081,20 +3081,21 @@ Ran into small keg. Micro bruise.
 2 -> Micro/NNP () 6
 1 -> ./. () 8
 
-“‘Jesus Christ’: archaic expletive; origin unknown.”
+"'Jesus Christ': archaic expletive; origin unknown."
 
-0 -> Christ/NNP (root) 3
-1 -> ```/CD () 1
-1 -> Jesus/NNP () 2
-1 -> '/POS () 4
-1 -> :/: () 5
-1 -> expletive/NN () 7
-2 -> archaic/JJ () 6
-2 -> ;/: () 8
-2 -> unknown/NN () 10
-3 -> origin/NN () 9
-1 -> ./. () 11
-1 -> ''/'' () 12
+0 -> ''/'' (root) 1
+1 -> `/`` () 2
+2 -> Christ/NNP () 4
+3 -> Jesus/NNP () 3
+3 -> '/POS () 5
+3 -> :/: () 6
+3 -> expletive/NN () 8
+4 -> archaic/JJ () 7
+4 -> ;/: () 9
+4 -> unknown/NN () 11
+5 -> origin/NN () 10
+3 -> ./. () 12
+3 -> ''/'' () 13
 
 He squinted. Sunrise at three AM?
 
@@ -3873,7 +3874,7 @@ President Schwarzennegger slowly leant forward. "… Aliens?"
 1 -> ?/. () 10
 1 -> ''/'' () 11
 
-“Boys” was more accurate than “soldiers”
+"Boys" was more accurate than "soldiers"
 
 0 -> accurate/JJ (root) 6
 1 -> ``/`` () 1

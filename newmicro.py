@@ -5,6 +5,7 @@ import wordbags as wb
 from itertools import chain, izip_longest
 import conceptnet as cn
 import wordbags as wb
+import re
 
 newpriority = reload(newpriority)
 formats = reload(formats)
@@ -165,14 +166,17 @@ def allIndices(node,seen=None):
 	for c in node['children']:
 		seen = allIndices(c,seen)
 	return seen
+	
+def checkChars(str_to_search):
+	return not bool(re.compile(r'[^! ",.;:?W]').search(str_to_search))
 
 def makeFormats(w2v):
 	ret = []
 	ex = 0
 	for fraw in formats.makeAllRawForms():
 		s = allIndices(fraw['root'])
-		if s != set([0,1,2,3,4,5]):
-			print "SKIP:", fraw['raw'], s
+		if s != set([0,1,2,3,4,5]) or not checkChars(fraw['plug']):
+			#print "SKIP:", fraw['raw'], s
 			ex +=1
 			continue
 		processPOS(fraw['root'],w2v) #Preprocess each node by checking whether word_pos is in w2v and massage them if possible
@@ -245,6 +249,7 @@ if __name__ == "__main__":
 	print "Penseur Loaded"
 
 	formats = makeFormats(w2v)
+	print "Formats:",len(formats)
 	
 	for i in range(times):
 		print doit(formats,w2v,pens)

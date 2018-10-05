@@ -110,12 +110,10 @@ def best(stories,regenf,canRegen,scoref,fraw):
 		return None
 		
 	while True:
-		print "--------------------------------"
+		#print "--------------------------------"
 		children = []
 		allDead = True
-		tempcount = 0
 		for k in sorted(species.keys(),key=lambda x: species[x].bestsc,reverse=True)[:maxSpecies]:
-			tempcount+=1
 			p = species[k]
 			if not p.isDead:
 				allDead = False
@@ -124,7 +122,7 @@ def best(stories,regenf,canRegen,scoref,fraw):
 			break
 		if not children:
 			continue
-		print tempcount, len(children)
+		print "Num Species:",len(children)
 		raw = [h.strip(c.s) for c in children]
 		scores = scoref(raw)
 		for i,child in enumerate(children):
@@ -135,7 +133,7 @@ def best(stories,regenf,canRegen,scoref,fraw):
 				species[k] = ni2
 			else:
 				species[k].push(child)
-		print len(species)
+		#print len(species)
 	choices = []
 	for k in species:
 		p = species[k]

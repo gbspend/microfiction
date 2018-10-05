@@ -1,4 +1,4 @@
-“But…” God cowered, “who are YOU?!”
+"But…" God cowered, "who are YOU?!"
 
 0 -> cowered/VBD (root) 6
 1 -> ``/`` () 1
@@ -1892,7 +1892,7 @@ The paramedic smiles. He saved one.
 2 -> one/CD () 7
 1 -> ./. () 8
 
-“Are we alone?” wondered the Martians.
+"Are we alone?" wondered the Martians.
 
 0 -> ``/`` (root) 1
 1 -> Are/VBP () 2
@@ -2170,7 +2170,7 @@ The Six Word Movie was better.
 1 -> was/VBD () 5
 1 -> ./. () 7
 
-“Reborn a sheep?!” bleated Buddha, unintelligibly.
+"Reborn a sheep?!" bleated Buddha, unintelligibly.
 
 0 -> Reborn/VB (root) 2
 1 -> ``/`` () 1
@@ -4145,7 +4145,7 @@ Pact made. She jumped. He didn't.
 1 -> !/. () 7
 1 -> ''/'' () 8
 
-You’re a mistake I’d make again.
+You're a mistake I'd make again.
 
 0 -> mistake/NN (root) 4
 1 -> You/PRP () 1

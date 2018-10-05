@@ -73,7 +73,7 @@ Bravely, Zack refused the passed joint.
 2 -> passed/VBN () 6
 1 -> ./. () 8
 
-He said ‘I do’… he didn’t.
+He said 'I do'… he didn't.
 
 0 -> said/VBD (root) 2
 1 -> He/PRP () 1
@@ -144,7 +144,7 @@ Two years-for one word: Remission.
 1 -> Remission/NN () 6
 1 -> ./. () 7
 
-Bullet finalized the traitor’s document exchange.
+Bullet finalized the traitor's document exchange.
 
 0 -> finalized/VBD (root) 2
 1 -> Bullet/NN () 1
@@ -187,7 +187,7 @@ Over-budget temple contractor shortens his chortens.
 2 -> his/PRP$ () 5
 1 -> ./. () 7
 
-His last words were "I’m innocent."
+His last words were "I'm innocent."
 
 0 -> innocent/JJ (root) 8
 1 -> words/NNS () 3
@@ -211,7 +211,7 @@ Columbus tumbles off world. King refunded.
 2 -> King/NNP () 6
 1 -> ./. () 8
 
-I’ll wait… Waiting… Still waiting… Goodbye.
+I'll wait… Waiting… Still waiting… Goodbye.
 
 0 -> wait/VB (root) 3
 1 -> I/PRP () 1
@@ -262,7 +262,7 @@ Inside cupboard, naked goosebumps - husband home.
 4 -> husband/NN () 7
 3 -> ./. () 9
 
-Was a poet. Didn’t know it.
+Was a poet. Didn't know it.
 
 0 -> poet/NN (root) 3
 1 -> Was/VBD () 1
@@ -437,7 +437,7 @@ Lost in wilderness, he found himself.
 2 -> my/PRP$ () 5
 1 -> ./. () 7
 
-"She’s stupid." "But she’s so hot."
+"She's stupid." "But she's so hot."
 
 0 -> stupid/JJ (root) 4
 1 -> ``/`` () 1
@@ -454,7 +454,7 @@ Lost in wilderness, he found himself.
 1 -> ./. () 7
 1 -> ''/'' () 8
 
-"It’s just a paper-cut!"
+"It's just a paper-cut!"
 
 0 -> paper-cut/NN (root) 6
 1 -> ``/`` () 1
@@ -478,7 +478,7 @@ Brake. Swerve. Avoid. Rear vehicle rams.
 3 -> vehicle/NN () 8
 1 -> ./. () 10
 
-"I don’t have Police, Mr. Marijuana."
+"I don't have Police, Mr. Marijuana."
 
 0 -> have/VB (root) 5
 1 -> ``/`` () 1
@@ -493,7 +493,7 @@ Brake. Swerve. Avoid. Rear vehicle rams.
 1 -> ./. () 11
 1 -> ''/'' () 12
 
-Ex-wife, ex-husband are fine. Kids aren’t.
+Ex-wife, ex-husband are fine. Kids aren't.
 
 0 -> fine/JJ (root) 5
 1 -> Ex-wife/NN () 1
@@ -553,7 +553,7 @@ Ice melted and politics drowned again.
 1 -> again/RB () 6
 1 -> ./. () 7
 
-He loves her, they’re ‘just friends’.
+He loves her, they're 'just friends'.
 
 0 -> loves/VBZ (root) 2
 1 -> He/PRP () 1
@@ -579,7 +579,7 @@ Wax wings, High hopes. Long fall.
 2 -> Long/JJ () 7
 1 -> ./. () 9
 
-Checked mousetrap. Waistcoat!? Children’s book over.
+Checked mousetrap. Waistcoat!? Children's book over.
 
 0 -> mousetrap/NN (root) 2
 1 -> Checked/VBN () 1
@@ -840,7 +840,7 @@ Married. Till fatness do us part.
 2 -> us/PRP () 6
 1 -> ./. () 8
 
-"Walk of Shame" or "Conqueror’s March"?
+"Walk of Shame" or "Conqueror's March"?
 
 0 -> March/NNP (root) 10
 1 -> ``/`` () 1
@@ -1093,7 +1093,7 @@ Dark eyes dart. Blonde boy blushes.
 2 -> boy/NN () 6
 1 -> ./. () 8
 
-Operation: ‘World Peace’, misguided, says Military.
+Operation: 'World Peace', misguided, says Military.
 
 0 -> Operation/NN (root) 1
 1 -> :/: () 2
@@ -1108,7 +1108,7 @@ Operation: ‘World Peace’, misguided, says Military.
 2 -> Military/NNP () 11
 1 -> ./. () 12
 
-The party’s over.  Designated driver snockered.
+The party's over.  Designated driver snockered.
 
 0 -> snockered/VBD (root) 8
 1 -> party/NN () 2
@@ -1400,7 +1400,7 @@ Wrote note. Took pills. Now…wait.
 2 -> .../: () 8
 1 -> ./. () 10
 
-YouTube star. Virtual millionaire. Parents’ basement.
+YouTube star. Virtual millionaire. Parents' basement.
 
 0 -> star/NN (root) 2
 1 -> YouTube/NNP () 1
@@ -1437,7 +1437,7 @@ Woman eats horse. Dies of course.
 3 -> of/IN () 6
 1 -> ./. () 8
 
-Roommate’s girlfriend leaves, roommate farts loudly.
+Roommate's girlfriend leaves, roommate farts loudly.
 
 0 -> leaves/VBZ (root) 4
 1 -> girlfriend/NN () 3
@@ -1521,7 +1521,7 @@ A.I. connects to Kristen. Overwrite? Yes.
 0 -> Yes/UH (root) 1
 1 -> ./. () 2
 
-Gatorade shorts coach’s headset: undefeated, electrocuted.
+Gatorade shorts coach's headset: undefeated, electrocuted.
 
 0 -> headset/NN (root) 5
 1 -> coach/NN () 3
@@ -1739,7 +1739,7 @@ Married young. Missed all the fun.
 3 -> the/DT () 6
 1 -> ./. () 8
 
-World’s second-oldest person gets promoted.
+World's second-oldest person gets promoted.
 
 0 -> promoted/VBN (root) 6
 1 -> person/NN () 4
@@ -1987,7 +1987,7 @@ We had everything, except for chemistry.
 2 -> the/DT () 8
 1 -> ./. () 10
 
-Sign reads "Quicksand."  He can’t read.
+Sign reads "Quicksand."  He can't read.
 
 0 -> reads/VBZ (root) 2
 1 -> Sign/NN () 1
@@ -2011,7 +2011,7 @@ Apathetic prophet makes a pathetic profit.
 2 -> pathetic/JJ () 5
 1 -> ./. () 7
 
-Mom finds razors. Can’t find excuse.
+Mom finds razors. Can't find excuse.
 
 0 -> finds/VBZ (root) 2
 1 -> Mom/NN () 1
@@ -2084,7 +2084,7 @@ Death extends his hand, smiling, "Deal?"
 1 -> ?/. () 10
 1 -> ''/'' () 11
 
-After carefully dismantling Chekhov’s gun, I
+After carefully dismantling Chekhov's gun, I
 
 0 -> dismantling/VBG (root) 3
 1 -> After/IN () 1
@@ -2166,7 +2166,7 @@ Neurons link, we learn of love.
 3 -> of/IN () 6
 1 -> ./. () 8
 
-Shelter helps. Cold doesn’t. Death does.
+Shelter helps. Cold doesn't. Death does.
 
 0 -> helps/VBZ (root) 2
 1 -> Shelter/NN () 1
@@ -2307,7 +2307,7 @@ Right place. Right time. Wrong dimension.
 2 -> Wrong/JJ () 7
 1 -> ./. () 9
 
-The bear ate. The hiker didn’t.
+The bear ate. The hiker didn't.
 
 0 -> ate/VBD (root) 3
 1 -> bear/NN () 2
@@ -2330,7 +2330,7 @@ He left her eating ice-cream, deserted.
 2 -> deserted/VBN () 7
 1 -> ./. () 8
 
-What’s left: training wheels, broken helmet.
+What's left: training wheels, broken helmet.
 
 0 -> What/WP (root) 1
 1 -> 's/VBZ () 2
@@ -2375,7 +2375,7 @@ Rifle sighted wrong; 30 year oppression.
 2 -> year/NN () 6
 1 -> ./. () 8
 
-X-ray vision! Everyone’s alien but me?
+X-ray vision! Everyone's alien but me?
 
 0 -> vision/NN (root) 2
 1 -> X-ray/NN () 1
@@ -2450,7 +2450,7 @@ Boy. Girl. Just friends. Both unsatisfied.
 2 -> Both/CC () 8
 1 -> ./. () 10
 
-Lonely. New email! Spam. It’ll do.
+Lonely. New email! Spam. It'll do.
 
 0 -> Lonely/JJ (root) 1
 1 -> ;/: () 2
@@ -2572,7 +2572,7 @@ Window shattered. Intruder shot. Keys found.
 2 -> Keys/NNP () 7
 1 -> ./. () 9
 
-Should’ve. Could’ve. Would’ve. Didn’t. Didn’t. Didn’t.
+Should've. Could've. Would've. Didn't. Didn't. Didn't.
 
 0 -> 've/VB (root) 2
 1 -> Should/MD () 1
@@ -2677,7 +2677,7 @@ Second Prize. Beauty Contest. Collect…$10??
 4 -> ??/CD () 11
 5 -> 10/CD () 10
 
-Plot foiled: Supervillain’s lair in foreclosure.
+Plot foiled: Supervillain's lair in foreclosure.
 
 0 -> foiled/JJ (root) 2
 1 -> Plot/NN () 1
@@ -2711,7 +2711,7 @@ First love found again, in obits.
 2 -> in/IN () 6
 1 -> ./. () 8
 
-"I’ll do it tomorrow."  Tomorrow: ditto.
+"I'll do it tomorrow."  Tomorrow: ditto.
 
 0 -> do/VB (root) 4
 1 -> ``/`` () 1
@@ -2760,7 +2760,7 @@ He bottle-feeds his wife's killer.
 3 -> 's/POS () 5
 1 -> ./. () 7
 
-"Let’s stay friends." Translation: Goodbye, indefinitely.
+"Let's stay friends." Translation: Goodbye, indefinitely.
 
 0 -> ``/`` (root) 1
 1 -> Let/VB () 2
@@ -2924,7 +2924,7 @@ Needle Broke. Turkey Baster. Over-dosed.
 2 -> Over-dosed/JJ () 7
 1 -> ./. () 8
 
-Life’s meaning revealed on Twitter unnoticed.
+Life's meaning revealed on Twitter unnoticed.
 
 0 -> revealed/VBD (root) 4
 1 -> meaning/NN () 3
@@ -2955,7 +2955,7 @@ Excessive virtual life brought real hemorrhoids.
 2 -> real/JJ () 5
 1 -> ./. () 7
 
-"You’re wrong."  "But who is happier?"
+"You're wrong."  "But who is happier?"
 
 0 -> wrong/JJ (root) 4
 1 -> ``/`` () 1
@@ -3036,7 +3036,7 @@ Seven-shooter surprises Arnold the Kid.
 2 -> the/DT () 4
 1 -> ./. () 6
 
-Magician’s saw table: Only used once…
+Magician's saw table: Only used once…
 
 0 -> table/NN (root) 4
 1 -> Magician/NN () 1
@@ -3114,7 +3114,7 @@ Monster under bed just wants friends.
 1 -> friends/NNS () 6
 1 -> ./. () 7
 
-"I’m schizophrenic (and so am I)."
+"I'm schizophrenic (and so am I)."
 
 0 -> ``/`` (root) 1
 1 -> schizophrenic/JJ () 4
@@ -3201,7 +3201,7 @@ Engulfed in work. Expelled from friendlists.
 3 -> from/IN () 6
 1 -> ./. () 8
 
-She’s the one. I’m the never.
+She's the one. I'm the never.
 
 0 -> one/CD (root) 4
 1 -> She/PRP () 1
@@ -3276,7 +3276,7 @@ Fire! Stopped. Dropped. Rolled… off cliff.
 3 -> off/RP () 7
 1 -> ./. () 9
 
-Buried father today. He isn’t amused.
+Buried father today. He isn't amused.
 
 0 -> father/NN (root) 2
 1 -> Buried/VBN () 1
@@ -3310,7 +3310,7 @@ We kiss; I remember someone else.
 3 -> else/RB () 7
 1 -> ./. () 8
 
-"Lie to me, baby." – Pinocchio’s girlfriend.
+"Lie to me, baby." – Pinocchio's girlfriend.
 
 0 -> baby/NN (root) 6
 1 -> ``/`` () 1
@@ -3352,7 +3352,7 @@ For sale: lifejacket, worn to death.
 4 -> to/TO () 7
 1 -> ./. () 9
 
-He’s RIGHT! She’s RIGHT! None tonight.
+He's RIGHT! She's RIGHT! None tonight.
 
 0 -> RIGHT/NNP (root) 3
 1 -> He/PRP () 1
@@ -3541,7 +3541,7 @@ Selfless society.  Ruined by one megalomaniac.
 3 -> one/CD () 6
 1 -> ./. () 8
 
-Man cries holding his dog’s leash.
+Man cries holding his dog's leash.
 
 0 -> cries/VBZ (root) 2
 1 -> Man/NN () 1
@@ -3587,7 +3587,7 @@ Publisher yawned. Book still a dream.
 3 -> a/DT () 6
 1 -> ./. () 8
 
-War. Just cause? Or just ’cause?
+War. Just cause? Or just 'cause?
 
 0 -> War/NN (root) 1
 1 -> ;/: () 2
@@ -3658,7 +3658,7 @@ Litigious invading aliens had patented fire.
 1 -> fire/NN () 6
 1 -> ./. () 7
 
-What’s for dinner, Mom? …where’s Rover?
+What's for dinner, Mom? …where's Rover?
 
 0 -> Mom/NN (root) 6
 1 -> dinner/NN () 4
@@ -3685,7 +3685,7 @@ Peltzman effect: Bought ABS, crashed nevertheless.
 3 -> nevertheless/RB () 8
 1 -> ./. () 9
 
-She’s been bitten. Only cure: Headshot.
+She's been bitten. Only cure: Headshot.
 
 0 -> bitten/VBN (root) 4
 1 -> She/PRP () 1
@@ -3760,7 +3760,7 @@ Torched the haystack. Found the needle.
 3 -> the/DT () 6
 1 -> ./. () 8
 
-First words: "Hello, World!" Programmer’s baby.
+First words: "Hello, World!" Programmer's baby.
 
 0 -> words/NNS (root) 2
 1 -> First/NNP () 1
@@ -3846,7 +3846,7 @@ T.H.C., L.S.D., D.U.I., C.P.R., D.O.A., R.I.P
 1 -> ,/, () 10
 1 -> R.I.P/NN () 11
 
-Car hits dog, crushes child’s world.
+Car hits dog, crushes child's world.
 
 0 -> hits/VBZ (root) 2
 1 -> Car/NN () 1
@@ -4016,7 +4016,7 @@ Logged out. Pulled plug. Found life.
 3 -> Found/JJ () 7
 1 -> ./. () 9
 
-"You’re dying." Scared. Suicide. "April fools! …"
+"You're dying." Scared. Suicide. "April fools! …"
 
 0 -> dying/VBG (root) 4
 1 -> ``/`` () 1
@@ -4087,7 +4087,7 @@ Painfully, he changed "is" to "was."
 1 -> ./. () 11
 1 -> ''/'' () 12
 
-Secretary enters her boss’s cabin. Promotion.
+Secretary enters her boss's cabin. Promotion.
 
 0 -> enters/VBZ (root) 2
 1 -> Secretary/NNP () 1
@@ -4099,7 +4099,7 @@ Secretary enters her boss’s cabin. Promotion.
 1 -> Promotion/NNP () 8
 1 -> ./. () 9
 
-Homeowner has gun. Burglar doesn’t. Murder?
+Homeowner has gun. Burglar doesn't. Murder?
 
 0 -> has/VBZ (root) 2
 1 -> Homeowner/NN () 1
@@ -4177,7 +4177,7 @@ New stylist. New Cut. New hat.
 2 -> New/NNP () 7
 1 -> ./. () 9
 
-Third testicle or tumor? Riskin’ it.
+Third testicle or tumor? Riskin' it.
 
 0 -> testicle/NN (root) 2
 1 -> Third/JJ () 1
@@ -4189,7 +4189,7 @@ Third testicle or tumor? Riskin’ it.
 1 -> it/PRP () 3
 1 -> ./. () 4
 
-Gasoline can, match, ex’s pickup truck.
+Gasoline can, match, ex's pickup truck.
 
 0 -> match/NN (root) 4
 1 -> Gasoline/NN () 1
@@ -4289,7 +4289,7 @@ Foot caught. Speeding Train!… Adjacent track.
 1 -> Adjacent/JJ () 2
 1 -> ./. () 4
 
-Nerdy kid. Rocket launcher. Bully’s gone.
+Nerdy kid. Rocket launcher. Bully's gone.
 
 0 -> kid/NN (root) 2
 1 -> Nerdy/JJ () 1
@@ -4459,7 +4459,7 @@ Dreamt of flying. Crashed into reality.
 3 -> into/IN () 6
 1 -> ./. () 8
 
-She’s his love; he’s her wallet.
+She's his love; he's her wallet.
 
 0 -> love/NN (root) 4
 1 -> She/PRP () 1
@@ -4683,7 +4683,7 @@ Spent rent money. On tequila. Again.
 1 -> Again/RB () 8
 1 -> ./. () 9
 
-We’re only married because it’s easy.
+We're only married because it's easy.
 
 0 -> married/JJ (root) 4
 1 -> We/PRP () 1
@@ -4731,7 +4731,7 @@ Vain vampire adores void in mirror.
 2 -> best/JJS () 6
 1 -> ./. () 8
 
-Chapter One: Coughin’. Chapter Two: Coffin.
+Chapter One: Coughin'. Chapter Two: Coffin.
 
 0 -> Chapter/NNP (root) 1
 1 -> One/CD () 2
@@ -4790,7 +4790,7 @@ Disputes between nations. Sorrow among families.
 3 -> among/IN () 6
 1 -> ./. () 8
 
-"If you’re rich, I am single."
+"If you're rich, I am single."
 
 0 -> single/JJ (root) 9
 1 -> ``/`` () 1
@@ -4815,7 +4815,7 @@ Misery loves company; pharmaceutical loves misery.
 3 -> misery/NN () 7
 1 -> ./. () 8
 
-Donner, party of five? Dinner’s ready.
+Donner, party of five? Dinner's ready.
 
 0 -> Donner/NNP (root) 1
 1 -> ,/, () 2
@@ -4839,7 +4839,7 @@ Misleadingly deep puddle. Curious child missing.
 2 -> missing/VBG () 7
 1 -> ./. () 8
 
-Poked hole in condom. He’s mine.
+Poked hole in condom. He's mine.
 
 0 -> hole/NN (root) 2
 1 -> Poked/VBN () 1
@@ -4952,7 +4952,7 @@ Bad hangover. Misses flight. September 11th.
 2 -> September/NNP () 7
 1 -> ./. () 9
 
-"Cut the red wire?! I’m colorblind!!!"
+"Cut the red wire?! I'm colorblind!!!"
 
 0 -> ``/`` (root) 1
 1 -> wire/NN () 5
@@ -5316,7 +5316,7 @@ Cat shit in her zen garden.
 2 -> zen/NN () 5
 1 -> ./. () 7
 
-Cupid’s arrow poisoned. Necrophilia laws changed.
+Cupid's arrow poisoned. Necrophilia laws changed.
 
 0 -> poisoned/VBN (root) 4
 1 -> arrow/NN () 3
@@ -5328,7 +5328,7 @@ Cupid’s arrow poisoned. Necrophilia laws changed.
 3 -> Necrophilia/NNP () 6
 1 -> ./. () 9
 
-Steel Warriors. Master’s bidding. "Robots Rise!"
+Steel Warriors. Master's bidding. "Robots Rise!"
 
 0 -> Warriors/NNS (root) 2
 1 -> Steel/NNP () 1
@@ -5366,7 +5366,7 @@ Moved to mountains, mountains move me.
 1 -> me/PRP () 7
 1 -> ./. () 8
 
-Lovers only when people aren’t watching.
+Lovers only when people aren't watching.
 
 0 -> Lovers/NNS (root) 1
 1 -> watching/VBG () 7
@@ -5399,7 +5399,7 @@ Absent-minded grandma opens cupboard. Inside… skeleton.
 2 -> .../: () 7
 1 -> ./. () 9
 
-"If you’re rich, I am single."
+"If you're rich, I am single."
 
 0 -> single/JJ (root) 9
 1 -> ``/`` () 1
@@ -5517,7 +5517,7 @@ Man steals calender; gets twelve months.
 3 -> twelve/CD () 6
 1 -> ./. () 8
 
-"No, that’s my time machine, imposter."
+"No, that's my time machine, imposter."
 
 0 -> machine/NN (root) 8
 1 -> ``/`` () 1
@@ -5567,7 +5567,7 @@ Emo cowboys draw weapons, shoot themselves.
 2 -> themselves/PRP () 7
 1 -> ./. () 8
 
-"Congratulations! Boy or Girl?" "…I’m overweight…"
+"Congratulations! Boy or Girl?" "…I'm overweight…"
 
 0 -> Congratulations/NNS (root) 2
 1 -> ``/`` () 1
@@ -5704,7 +5704,7 @@ Rapunzel, I am slipping! …a wig?!
 1 -> a/DT () 2
 1 -> wig/NN () 3
 
-"I do. Wait! You’re Johnny’s twin!"
+"I do. Wait! You're Johnny's twin!"
 
 0 -> do/VBP (root) 3
 1 -> ``/`` () 1
@@ -5732,7 +5732,7 @@ Fat. Switched to diet soda. Cancer.
 1 -> Cancer/NN () 8
 1 -> ./. () 9
 
-Soulmate’s funeral. His wife cries. Bitch.
+Soulmate's funeral. His wife cries. Bitch.
 
 0 -> funeral/NN (root) 3
 1 -> Soulmate/NNP () 1
@@ -5817,7 +5817,7 @@ Evening. Excess vodka. Morning. Excess inertia.
 3 -> Excess/JJ () 8
 1 -> ./. () 10
 
-Man’s best friend sacrifices life? Doggone.
+Man's best friend sacrifices life? Doggone.
 
 0 -> life/NN (root) 6
 1 -> Man/NN () 1
@@ -5867,7 +5867,7 @@ Garlic, basil, parmesan, oil. Presto! Pesto!!
 0 -> !!/NN (root) 2
 1 -> Pesto/NNP () 1
 
-Didn’t fall in love. You pushed.
+Didn't fall in love. You pushed.
 
 0 -> fall/VB (root) 3
 1 -> Did/VBD () 1
@@ -5904,7 +5904,7 @@ One cell survived. Spread. Not again.
 3 -> Not/RB () 7
 1 -> ./. () 9
 
-Emily’s letters from Iraq stopped coming.
+Emily's letters from Iraq stopped coming.
 
 0 -> stopped/VBD (root) 6
 1 -> letters/NNS () 3
@@ -5971,7 +5971,7 @@ Emo totally devastated by spilt milk.
 2 -> spilt/JJ () 5
 1 -> ./. () 7
 
-Her baby has my husband’s allergies.
+Her baby has my husband's allergies.
 
 0 -> has/VBZ (root) 3
 1 -> baby/NN () 2
@@ -6198,7 +6198,7 @@ Lived to write. Left suicide note.
 2 -> suicide/NN () 6
 1 -> ./. () 8
 
-Brick wall finished. Where’s the door?
+Brick wall finished. Where's the door?
 
 0 -> finished/VBD (root) 3
 1 -> wall/NN () 2
@@ -6243,7 +6243,7 @@ Longed for Baby. He said maybe.
 2 -> maybe/RB () 7
 1 -> ./. () 8
 
-Irony: d’Artagnan dies of paper cut.
+Irony: d'Artagnan dies of paper cut.
 
 0 -> Irony/NN (root) 1
 1 -> :/: () 2
@@ -6280,7 +6280,7 @@ BREAKING: Simulated beings realize they're simulated.
 3 -> 're/VBP () 7
 1 -> ./. () 9
 
-"God’s dead!"
+"God's dead!"
 
 0 -> ``/`` (root) 1
 1 -> God/NNP () 2
@@ -6521,7 +6521,7 @@ Imagined adulthood. Gained adulthood. Lost Imagination.
 2 -> Lost/NNP () 7
 1 -> ./. () 9
 
-Wikileaks ruined Virginia’s Santa Claus belief.
+Wikileaks ruined Virginia's Santa Claus belief.
 
 0 -> ruined/VBD (root) 2
 1 -> Wikileaks/NNP () 1
@@ -6582,7 +6582,7 @@ Friended mom on Facebook. Got disowned.
 1 -> Got/VBD () 6
 1 -> ./. () 8
 
-Emily’s letters from Iraq stopped coming.
+Emily's letters from Iraq stopped coming.
 
 0 -> stopped/VBD (root) 6
 1 -> letters/NNS () 3
@@ -6593,7 +6593,7 @@ Emily’s letters from Iraq stopped coming.
 1 -> coming/VBG () 7
 1 -> ./. () 8
 
-Eyjafjallajokull spews ashes. I contribute Dad’s.
+Eyjafjallajokull spews ashes. I contribute Dad's.
 
 0 -> ashes/NNS (root) 3
 1 -> Eyjafjallajokull/NN () 1
@@ -6605,7 +6605,7 @@ Eyjafjallajokull spews ashes. I contribute Dad’s.
 3 -> 's/POS () 8
 1 -> ./. () 9
 
-He wouldn’t apologize, 20 years later.
+He wouldn't apologize, 20 years later.
 
 0 -> apologize/VB (root) 4
 1 -> He/PRP () 1
@@ -6677,7 +6677,7 @@ Three years after birth, he hears.
 1 -> he/PRP () 6
 1 -> ./. () 8
 
-Crush online. "What’s up?" Crush offline.
+Crush online. "What's up?" Crush offline.
 
 0 -> online/NN (root) 2
 1 -> Crush/JJ () 1
@@ -6705,7 +6705,7 @@ After twelve shots- "I did what?!"
 2 -> what/WP () 8
 2 -> ''/'' () 10
 
-Volunteer bravely reignites dragon’s pilot light.
+Volunteer bravely reignites dragon's pilot light.
 
 0 -> reignites/VBZ (root) 3
 1 -> Volunteer/NN () 1
@@ -6775,7 +6775,7 @@ Finding them entwined, Malcom shot both.
 1 -> both/DT () 7
 1 -> ./. () 8
 
-Diagnosed with AIDS. Ex’s hubby doctor.
+Diagnosed with AIDS. Ex's hubby doctor.
 
 0 -> Diagnosed/VBN (root) 1
 1 -> AIDS/NN () 3
@@ -6927,7 +6927,7 @@ Late. Speeding. Pulled Over. Really Late.
 2 -> Really/RB () 8
 1 -> ./. () 10
 
-"I’ll quit tomorrow," then he died.
+"I'll quit tomorrow," then he died.
 
 0 -> died/VBD (root) 10
 1 -> ``/`` () 1
@@ -6952,7 +6952,7 @@ Pregnant thrice. Still a childless parents.
 2 -> childless/JJ () 6
 1 -> ./. () 8
 
-Wish I’d met his friends first.
+Wish I'd met his friends first.
 
 0 -> Wish/NNP (root) 1
 1 -> met/VBD () 4
@@ -6963,7 +6963,7 @@ Wish I’d met his friends first.
 2 -> first/RB () 7
 1 -> ./. () 8
 
-Spark is gone, but she isn’t.
+Spark is gone, but she isn't.
 
 0 -> gone/VBN (root) 3
 1 -> Spark/NN () 1
@@ -7034,7 +7034,7 @@ Loafer loafed, co-worker slogged, loafer promoted.
 2 -> loafer/NN () 7
 1 -> ./. () 9
 
-Vibrator found! Roommate’s. Mike’s my roommate.
+Vibrator found! Roommate's. Mike's my roommate.
 
 0 -> found/VBD (root) 2
 1 -> Vibrator/NNP () 1
@@ -7384,7 +7384,7 @@ Medicated Hamlet makes boring ass play.
 2 -> ass/NN () 5
 1 -> ./. () 7
 
-Broke up. Baby?! Damn… I’m stuck.
+Broke up. Baby?! Damn… I'm stuck.
 
 0 -> Broke/VB (root) 1
 1 -> up/RP () 2
@@ -7786,7 +7786,7 @@ Car wheels screech, training wheels spin.
 3 -> wheels/NNS () 6
 1 -> ./. () 8
 
-Family reunion. Here’s your name tag.
+Family reunion. Here's your name tag.
 
 0 -> reunion/NN (root) 2
 1 -> Family/NNP () 1
@@ -7846,7 +7846,7 @@ She married Rich and divorced richer.
 2 -> richer/JJR () 6
 1 -> ./. () 7
 
-"I’ll be back tomorrow." Years ago.
+"I'll be back tomorrow." Years ago.
 
 0 -> tomorrow/NN (root) 6
 1 -> ``/`` () 1
@@ -7874,7 +7874,7 @@ Trapped, tied down, breeze, freed…balloon.
 1 -> balloon/NN () 10
 1 -> ./. () 11
 
-He points, "Look! It’s a distraction!"
+He points, "Look! It's a distraction!"
 
 0 -> points/VBZ (root) 2
 1 -> He/PRP () 1
@@ -8028,7 +8028,7 @@ A son abused. Another son abused.
 3 -> Another/DT () 5
 1 -> ./. () 8
 
-Didn’t Study. Plan B: "Food Poisoning."
+Didn't Study. Plan B: "Food Poisoning."
 
 0 -> Study/NN (root) 3
 1 -> Did/VBD () 1
@@ -8133,7 +8133,7 @@ Suicide failed: poison past sell by.
 2 -> by/IN () 7
 1 -> ./. () 8
 
-Indiscretion’s booty: hours lost, money gone.
+Indiscretion's booty: hours lost, money gone.
 
 0 -> booty/NN (root) 3
 1 -> Indiscretion/NNP () 1
@@ -8396,7 +8396,7 @@ Told SatNav salesman to get lost.
 2 -> get/VB () 5
 1 -> ./. () 7
 
-Alzheimer’s Advantage: new friends every day!
+Alzheimer's Advantage: new friends every day!
 
 0 -> Advantage/NNP (root) 3
 1 -> Alzheimer/NNP () 1
@@ -8445,7 +8445,7 @@ Shipwrecked. Canned food! No can opener.
 1 -> can/MD () 2
 1 -> ./. () 4
 
-Brought roses home. Keys didn’t fit.
+Brought roses home. Keys didn't fit.
 
 0 -> home/NN (root) 3
 1 -> Brought/JJ () 1
@@ -8555,7 +8555,7 @@ New TV! Only snow? Nuclear winter…
 1 -> Nuclear/JJ () 1
 1 -> .../: () 3
 
-"Safety’s working." Later: "Leak in Gulf."
+"Safety's working." Later: "Leak in Gulf."
 
 0 -> working/NN (root) 4
 1 -> ``/`` () 1
@@ -8654,7 +8654,7 @@ Borrowed book. Spilled coffee. Oh Fuck.
 2 -> Oh/UH () 7
 1 -> ./. () 9
 
-Hold me tight; the meteor’s close.
+Hold me tight; the meteor's close.
 
 0 -> Hold/VB (root) 1
 1 -> tight/JJ () 3
@@ -8677,7 +8677,7 @@ Loved a broad, she moved abroad.
 1 -> abroad/RB () 7
 1 -> ./. () 8
 
-Fortune cookie reads: That wasn’t chicken.
+Fortune cookie reads: That wasn't chicken.
 
 0 -> reads/VBZ (root) 3
 1 -> cookie/NN () 2
@@ -8699,7 +8699,7 @@ Ate candy from child-safe bottle. COLORRRSSSS
 1 -> ;/: () 6
 1 -> COLORRRSSSS/NNS () 7
 
-"Come hither look?" "No, it’s gas."
+"Come hither look?" "No, it's gas."
 
 0 -> look/VB (root) 4
 1 -> ``/`` () 1
@@ -8834,7 +8834,7 @@ Calvin plus Ritalin equals no Hobbes.
 2 -> no/DT () 5
 1 -> ./. () 7
 
-Another drink couldn’t hurt… Three dead.
+Another drink couldn't hurt… Three dead.
 
 0 -> hurt/VB (root) 5
 1 -> drink/NN () 2
@@ -8856,7 +8856,7 @@ My father still has my virginity.
 2 -> my/PRP$ () 5
 1 -> ./. () 7
 
-My crush? My best friend’s boyfriend.
+My crush? My best friend's boyfriend.
 
 0 -> crush/NN (root) 2
 1 -> My/PRP$ () 1
@@ -8914,7 +8914,7 @@ Tried altarboy outfit. Still no luck.
 4 -> heart/NN () 8
 3 -> ./. () 10
 
-It’s all over: surgery; chemotherapy; life.
+It's all over: surgery; chemotherapy; life.
 
 0 -> surgery/NN (root) 6
 1 -> It/PRP () 1
@@ -8954,7 +8954,7 @@ Finals / Concert… Life: pass. Physics: fail.
 2 -> fail/VB () 11
 1 -> ./. () 12
 
-Prince Charming: "Pumpkins? She’s stark mad!"
+Prince Charming: "Pumpkins? She's stark mad!"
 
 0 -> Charming/NNP (root) 2
 1 -> Prince/NNP () 1
@@ -8990,7 +8990,7 @@ The last Astronaut watches Earth burn.
 2 -> watches/NNS () 4
 1 -> ./. () 7
 
-Didn’t save her. Afraid of lawsuit.
+Didn't save her. Afraid of lawsuit.
 
 0 -> save/VB (root) 3
 1 -> Did/VBD () 1
@@ -9198,7 +9198,7 @@ False teeth fell out. Kiss ended.
 2 -> Kiss/VB () 6
 1 -> ./. () 8
 
-Home late. Doors locked. I’m caught.
+Home late. Doors locked. I'm caught.
 
 0 -> Home/NNP (root) 1
 1 -> late/RB () 2
@@ -9405,7 +9405,7 @@ Tiny casket. Father sobs. Finally sober.
 2 -> Finally/RB () 7
 1 -> ./. () 9
 
-Shrodinger’s cat pleas: think outside box!
+Shrodinger's cat pleas: think outside box!
 
 0 -> pleas/NNS (root) 4
 1 -> Shrodinger/NNP () 1
@@ -9485,7 +9485,7 @@ The war for peace. No survivors.
 2 -> No/DT () 6
 1 -> ./. () 8
 
-Patient screams. Morphine can’t numb death.
+Patient screams. Morphine can't numb death.
 
 0 -> screams/NNS (root) 2
 1 -> Patient/NN () 1

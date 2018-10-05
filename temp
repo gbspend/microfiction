@@ -40,12 +40,12 @@ def icheck(node,seen=None):
 		seen = icheck(c,seen)
 	return seen
 
-for f in formats:
+for i,f in enumerate(formats):
 	f = f[3]
 	s = icheck(f['root'])
 	if not s == set([0,1,2,3,4,5]):
-		print "BAD:", f['raw'], s, "(",f['plug'],")"
-
+		print "BAD",i,":", f['raw'], s, "(",f['plug'],")"
+#newmicro now filters these out... maybe don't filter so I can poke around in REPL and see what's wrong?
 	
 
 
@@ -56,4 +56,19 @@ def findR(formats, regex):
 		if "'" not in f['raw'] and re.search(regex, f['plug']):
 			print f['raw'],f['plug']
 
+
+ws = list(set([f[3]['plug'] for f in formats]))
+cs = set()
+for w in ws:
+	for c in w:
+		cs.add(c)
+
+for c in cs:
+	sub = [w for w in ws if c in w]
+	if len(sub) < 5:
+		print c
+		for s in sub:
+			print '\t%s'%s
+	else:
+		print c, len(sub), sub[0]
 
