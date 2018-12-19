@@ -18,8 +18,11 @@ badstory = 'plunger volcano paper the mug switches'
 #axes = ('plunger volcano paper the mug switches',['bridge standoff gunshot the revolution begins','eternity loneliness homecoming the tail wags'])
 
 #word, start, and end are untagged
-def w2vChoices(word,start,startTag,end,endTag,w2v):
-	return h.get_scholar_rels(word+startTag,[(start,end)],w2v,startTag,endTag,20)
+def w2vChoices(word,start,startTag,end,endTag,w2v,rmax=30,rmin=10):
+	maxset = set(h.get_scholar_rels(word+startTag,[(start,end)],w2v,startTag,endTag,rmax))
+	minset = set(h.get_scholar_rels(word+startTag,[(start,end)],w2v,startTag,endTag,rmin))
+	#print maxset-minset, minset
+	return list(maxset-minset)
 
 '''
 Traceback (most recent call last):
@@ -47,14 +50,20 @@ def fillRootCache(root,w2v):
 	global rootCache,maxRoots
 	pos = root['pos']
 	rootCache = wb.getAll(pos)
+	if rootCache is None:
+		return False
 	if len(rootCache) > maxRoots:
 		rootCache = [h.strip_tag(w).lower() for w in h.w2vsortlistNew([x+'_'+pos for x in rootCache],[root['word']+'_'+root['pos']],w2v)[:maxRoots]]
+	#remove top 10% (likely uninteresting)
+	rootCache = rootCache[:int(len(rootCache)*.1)]
+	return True
 		
 #takes root node (pos), returns lowercase word
 def genRoot(root,w2v):
 	global rootCache
 	if not rootCache:
-		fillRootCache(root,w2v)
+		if not fillRootCache(root,w2v):
+			return None
 	return random.choice(rootCache).lower()
 
 choiceCache = {}
@@ -88,6 +97,8 @@ def genrec(node,parent,prev,force,w2v,fillin):
 		if cacheK not in relsCache:
 			relsCache[cacheK] = cn.getRels(parent['word'],node['word'])
 		cnRels = relsCache[cacheK]
+		if cnRels:
+			print "has rels!",parent['word'],"->",node['word']
 		for rel in cnRels:
 			choices += [cn.stripPre(t[0]) for t in cn.getOutgoing(prev, rel)]
 
@@ -124,7 +135,10 @@ def gen(fraw,w2v,lock):
 	#traverse tree; if parent locked, regen all children (set a force flag)
 	root = fraw['root']
 	if lock[root['index']] is None:
-		lock[root['index']] = genRoot(root,w2v)
+		new_root = genRoot(root,w2v)
+		if not new_root:
+			return None
+		lock[root['index']] = new_root
 	genrec(root,None,None,False,w2v,lock) #lock is out var
 	if None in lock:
 		return None
@@ -184,7 +198,7 @@ def makeFormats(w2v):
 		regen = range(6)
 		del regen[fraw['root']['index']]
 		ret.append((genf,(badstory, h.strip(" ".join(fraw['words']))),regen,fraw))
-	print "Excluded",ex
+	print "Number of excluded (bad) formats:",ex,"(%d total, %f%%)"%(len(ret),(float(ex)/len(ret)*100))
 	return ret
 
 #===================================================
@@ -202,7 +216,9 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 	print f[3]['raw']
 	root = f[3]['root']
 	
-	fillRootCache(root,w2v) #this feels messy
+	if not fillRootCache(root,w2v):
+		print "Couldn't fill rootChache for root", root
+		return None
 	#print len(rootCache)
 	stories = []
 	for r in rootCache:

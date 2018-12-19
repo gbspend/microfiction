@@ -30,6 +30,8 @@ def fillBags():
 
 def get(pos):
 	l,f = getList(pos)
+	if l is None:
+		return None
 	ret = random.choice(l)
 	if f:
 		ret = f(ret)
@@ -37,6 +39,8 @@ def get(pos):
 
 def getAll(pos):
 	l,f = getList(pos)
+	if l is None:
+		return None
 	if f:
 		return [f(x) for x in l]
 	return l

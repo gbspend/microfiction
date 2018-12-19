@@ -237,24 +237,23 @@ def writeCsv(csvname, row):
 		o = 'w' # make a new file if not
 	with open(fname,o+'b') as f:
 		writer = csv.writer(f, delimiter=';', quoting=csv.QUOTE_NONE)
-		writer.writerow(row)
+		try:
+			writer.writerow(row)
+		except Exception:
+			pass
 
 #good/bad are axis ends
 #l is list of sentences to score
 #p is Penseur instance
 #returns score, higher is better
 #len(l) > 1
-def getSkipScores(bad,good1,good2,l,p):
-	dummy = False
-	if len(l) == 1:
-		dummy = True
-		l += ['asdf']
-	p.encode(l)
+def getSkipScores(bad,good1,good2,story_list,p):
+	story_list += ['asdf'] #need to add/remove dummy story in case len(story_list) ==1
+	p.encode([strip(s) for s in story_list])
 	scores = p.get_axis_scores(bad,good1,good2)
-	l = l[:-1]
-	if dummy:
-		scores = scores[:1]
-	for i,story in enumerate(l):
+	story_list = story_list[:-1]
+	scores = scores[:-1]
+	for i,story in enumerate(story_list):
 		writeCsv("basic1D",[story,scores[i]])
 	return scores
 

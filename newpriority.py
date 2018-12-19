@@ -102,7 +102,7 @@ def best(stories,regenf,canRegen,scoref,fraw):
 			continue
 		seed = getIndex(s,seedi)
 		root = Node(s,Settings(regenf,canRegen))
-		root.score = scoref([h.strip(s)])[0]
+		root.score = scoref([s])[0]
 		species[seed] = Species(seed,root)
 		bad = False
 	if bad:
@@ -122,9 +122,9 @@ def best(stories,regenf,canRegen,scoref,fraw):
 			break
 		if not children:
 			continue
-		print "Num Species:",len(children)
-		raw = [h.strip(c.s) for c in children]
-		scores = scoref(raw)
+		#print "Num species, children:",len(species.keys()),",",len(children)
+		#raw = [h.strip(c.s) for c in children]
+		scores = scoref([c.s for c in children])
 		for i,child in enumerate(children):
 			child.score = scores[i]
 			k = getIndex(child.s,seedi)
