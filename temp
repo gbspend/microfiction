@@ -3,7 +3,7 @@ from penseur import penseur
 w2v = word2vec.load('data/tagged.bin')
 pens = penseur.Penseur()
 formats = newmicro.makeFormats(w2v)
-#newmicro.doit(formats,w2v,pens)
+newmicro.doit(formats,w2v,pens)
 
 
 
@@ -72,3 +72,31 @@ for c in cs:
 	else:
 		print c, len(sub), sub[0]
 
+
+
+
+
+#generate list of concat'ed POS (in order!) for each story
+from collections import defaultdict
+def posrec(node,curr):
+	p = node['pos']
+	if p.startswith("VB"):
+		p="VB"
+	if p.startswith("NN"):
+		p="NN"
+	#NOTE: TODO find more equiv POS(?)
+	curr[node['index']]=
+	for c in node['children']:
+		posrec(c,curr)
+	return curr
+
+poss = []
+for tup in formats:
+	f = tup[3]
+	poss.append(''.join(posrec(f['root'],[None,None,None,None,None,None])))
+
+interpos = defaultdict(list) #dictionary of format index to list of other indices that have same POS
+for i,c in enum(poss):
+	for j,p in enum(poss):
+		if c == p:
+			interpos[i].append(j)
