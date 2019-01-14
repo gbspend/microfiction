@@ -6,6 +6,7 @@ from itertools import chain, izip_longest
 import conceptnet as cn
 import wordbags as wb
 import re
+from collections import defaultdict
 
 newpriority = reload(newpriority)
 formats = reload(formats)
@@ -184,10 +185,26 @@ def allIndices(node,seen=None):
 def checkChars(str_to_search):
 	return not bool(re.compile(r'[^! ",.;:?W]').search(str_to_search))
 
+def posListRec(node,curr):
+	p = node['pos']
+	if p.startswith('VB'):
+		p='VB'
+	if p.startswith('NN'):
+		p='NN'
+	#NOTE: TODO find more equiv POS(?)
+	curr[node['index']]=p
+	for c in node['children']:
+		posListRec(c,curr)
+	return curr
+
 def makeFormats(w2v):
 	ret = []
 	ex = 0
+	seen = set()
 	for fraw in formats.makeAllRawForms():
+		if fraw['raw'] in seen:
+			continue
+		seen.add(fraw['raw'])
 		s = allIndices(fraw['root'])
 		if s != set([0,1,2,3,4,5]) or not checkChars(fraw['plug']):
 			#print "SKIP:", fraw['raw'], s
@@ -197,8 +214,28 @@ def makeFormats(w2v):
 		genf = lambda lock, fraw=fraw, w2v=w2v: gen(fraw,w2v,lock)
 		regen = range(6)
 		del regen[fraw['root']['index']]
-		ret.append((genf,(badstory, h.strip(" ".join(fraw['words']))),regen,fraw))
+		ret.append((genf,[badstory, h.strip(" ".join(fraw['words']))],regen,fraw))
 	print "Number of excluded (bad) formats:",ex,"(%d total, %f%%)"%(len(ret),(float(ex)/len(ret)*100))
+	
+	poss = []
+	for tup in ret:
+		f = tup[3]
+		poss.append(''.join(posListRec(f['root'],[None,None,None,None,None,None])))
+	interpos = defaultdict(list) #dictionary of format index to list of other indices that have same POS
+	for i,c in enumerate(poss):
+		for j,p in enumerate(poss):
+			if c == p and i != j:
+				interpos[i].append(j)
+	for i,tup in enumerate(ret):
+		sames = interpos[i]
+		otheraxis = None
+		axes = tup[1]
+		if len(sames) < 1:
+			otheraxis = axes[1] #duplicate single good axis
+		else:
+			otheraxis = h.strip(ret[random.choice(sames)][3]['raw'])
+		axes.append(otheraxis)
+			
 	return ret
 
 #===================================================
@@ -235,7 +272,7 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 			#print s
 	if not stories:
 		return None
-	scoref = lambda x: h.getSkipScores(axis[0],axis[1],axis[1],x,pens)
+	scoref = lambda x: h.getSkipScores(axis[0],axis[1],axis[2],x,pens)
 	temp = newpriority.best(stories,genf,canRegen,scoref,fraw)
 	if temp:
 		s,sc = temp

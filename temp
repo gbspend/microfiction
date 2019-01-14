@@ -80,10 +80,10 @@ for c in cs:
 from collections import defaultdict
 def posrec(node,curr):
 	p = node['pos']
-	if p.startswith("VB"):
-		p="VB"
-	if p.startswith("NN"):
-		p="NN"
+	if p.startswith('VB'):
+		p='VB'
+	if p.startswith('NN'):
+		p='NN'
 	#NOTE: TODO find more equiv POS(?)
 	curr[node['index']]=
 	for c in node['children']:
@@ -96,7 +96,9 @@ for tup in formats:
 	poss.append(''.join(posrec(f['root'],[None,None,None,None,None,None])))
 
 interpos = defaultdict(list) #dictionary of format index to list of other indices that have same POS
-for i,c in enum(poss):
-	for j,p in enum(poss):
-		if c == p:
+for i,c in enumerate(poss):
+	for j,p in enumerate(poss):
+		if c == p and i != j:
 			interpos[i].append(j)
+
+
