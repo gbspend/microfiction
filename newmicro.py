@@ -7,6 +7,7 @@ import conceptnet as cn
 import wordbags as wb
 import re
 from collections import defaultdict
+import hashlib
 
 newpriority = reload(newpriority)
 formats = reload(formats)
@@ -240,7 +241,17 @@ def makeFormats(w2v):
 
 #===================================================
 
-def doit(formats,w2v,pens,retries=0,forcef=None):
+#maps number n, which is in rage oldmin--oldmax to newmin--newmax
+def rangify(n,oldmin,oldmax,newmin,newmax):
+	R = float(newmax - newmin) / (oldmax - oldmin)
+	return (n - oldmin) * R + newmin
+
+def randomScores(ss):
+	return [rangify(int(hashlib.md5(s).hexdigest(),16),0,int("1"*128,2),-0.20662908,1.3317157) for s in ss]
+	#from 128-bit MD5 digest ("random") to min--max from basic1D.csv (ignoring distribution)
+	#The skipthought scorer _does_ output a gaussian, but maybe that's irrelevant...?
+
+def doit(formats,w2v,pens,retries=0,forcef=None,randsc=False):
 	global rootCache
 	rootCache = None
 	if not forcef:
@@ -273,6 +284,8 @@ def doit(formats,w2v,pens,retries=0,forcef=None):
 	if not stories:
 		return None
 	scoref = lambda x: h.getSkipScores(axis[0],axis[1],axis[2],x,pens)
+	if randsc:
+		scoref = randomScores
 	temp = newpriority.best(stories,genf,canRegen,scoref,fraw)
 	if temp:
 		s,sc = temp

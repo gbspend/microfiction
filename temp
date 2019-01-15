@@ -85,7 +85,7 @@ def posrec(node,curr):
 	if p.startswith('NN'):
 		p='NN'
 	#NOTE: TODO find more equiv POS(?)
-	curr[node['index']]=
+	curr[node['index']]=p
 	for c in node['children']:
 		posrec(c,curr)
 	return curr

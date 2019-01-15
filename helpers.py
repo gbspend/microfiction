@@ -253,8 +253,8 @@ def getSkipScores(bad,good1,good2,story_list,p):
 	scores = p.get_axis_scores(bad,good1,good2)
 	story_list = story_list[:-1]
 	scores = scores[:-1]
-	for i,story in enumerate(story_list):
-		writeCsv("basic1D",[story,scores[i]])
+	#for i,story in enumerate(story_list):
+	#	writeCsv("basic1D",[story,scores[i]])
 	return scores
 
 def toPresent(verb):
