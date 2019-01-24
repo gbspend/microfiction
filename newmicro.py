@@ -4,7 +4,6 @@ from penseur import penseur
 import wordbags as wb
 from itertools import chain, izip_longest
 import conceptnet as cn
-import wordbags as wb
 import re
 from collections import defaultdict
 import hashlib

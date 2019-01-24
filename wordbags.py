@@ -17,6 +17,7 @@ WRB Wh-adverb
 
 bags = None
 def fillBags():
+	print "FILLING BAGS"
 	global bags
 	path = os.getcwd()+'/bags/'
 	bags = {}
@@ -44,6 +45,9 @@ def getAll(pos):
 	if f:
 		return [f(x) for x in l]
 	return l
+
+#MD, PDT, RP, WDT scraped from exemplar stories
+other = {'WRB':['what', 'who', 'which', 'whom', 'whose'],'MD': ['would', 'shall', 'could', 'should', 'will', 'can', 'must'], 'PDT': ['all', 'half'], 'RP': ['off', 'over', 'back', 'up', 'down', 'away', 'out'], 'WDT': ['whatever', 'that']}
 
 #returns a (list,function) tuple; function may be None
 def getList(pos):
@@ -87,8 +91,8 @@ def getList(pos):
 		return h.WPD.values(),None
 	if pos == 'PRP$':
 		return h.PRPD.values(),None
-	if pos == 'WRB':
-		return ['what', 'who', 'which', 'whom', 'whose'],None
+	if pos in other:
+		return other[pos],None
 
 	if pos == 'FW':
 		pos = 'NN'

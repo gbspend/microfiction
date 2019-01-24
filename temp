@@ -3,6 +3,7 @@ from penseur import penseur
 w2v = word2vec.load('data/tagged.bin')
 pens = penseur.Penseur()
 formats = newmicro.makeFormats(w2v)
+
 newmicro.doit(formats,w2v,pens)
 
 
@@ -75,11 +76,13 @@ for c in cs:
 
 
 
-
+unk = {'MD':set(),'RP':set(),'PDT':set(),'WDT':set()}
 #generate list of concat'ed POS (in order!) for each story
 from collections import defaultdict
 def posrec(node,curr):
 	p = node['pos']
+	if p in unk:
+		unk[p].add(node['word'])
 	if p.startswith('VB'):
 		p='VB'
 	if p.startswith('NN'):
@@ -90,15 +93,71 @@ def posrec(node,curr):
 		posrec(c,curr)
 	return curr
 
+import wordbags as wb
+import random
+def garbrec(node,isRoot,curr):
+	if isRoot:
+		w = node['word']
+	else:
+		choices = wb.getAll(node['pos'])
+		if not choices:
+			return None
+		w = random.choice(choices)
+	curr[node['index']]=w
+	for c in node['children']:
+		garbrec(c,False,curr)
+	return curr
+
 poss = []
+garbs = []
 for tup in formats:
 	f = tup[3]
-	poss.append(''.join(posrec(f['root'],[None,None,None,None,None,None])))
+	pl = posrec(f['root'],[None,None,None,None,None,None])
+	poss.append(''.join(pl))
+	grb = garbrec(f['root'],True,[None,None,None,None,None,None])
+	if None in grb:
+		grb = None
+	garbs.append(grb)
 
 interpos = defaultdict(list) #dictionary of format index to list of other indices that have same POS
 for i,c in enumerate(poss):
 	for j,p in enumerate(poss):
 		if c == p and i != j:
 			interpos[i].append(j)
+
+
+import helpers as h
+def scorestory(t,s,p):
+	return h.getSkipScores(t[0],t[1],t[2],[s],p)[0]
+
+def getstory(i):
+	return h.strip(formats[i][3]['raw'])
+
+def getinterstories(i):
+	ret = [getstory(i)]
+	for j in interpos[i]:
+		ret.append(getstory(j))
+	return ret
+
+from itertools import combinations
+badstory = 'plunger volcano paper the mug switches'
+def testaxes(ai1,ai2,interis,p):
+	goods = [getstory(i) for i in interis if i!=ai1 and i!=ai2]
+	bads = [garbs[i] for i in interis]
+	s1 = getstory(ai1)
+	s2 = getstory(ai2)
+	sumgood = sum(h.getSkipScores(badstory,s1,s2,[goods],p))
+	sumbad = sum(h.getSkipScores(badstory,s1,s2,[bads],p))
+	print sumgood,sumbad
+	return sumgood-sumbad
+
+interis = interpos[560] + [560]
+results = {}
+for ai1,ai2 in combinations(interis,2):
+	k = getstory(ai1)+"; "+getstory(ai2)
+	v = testaxes(ai1,ai2,interis,pens)
+	print k,v,"\n"
+	results[k] = v
+
 
 
