@@ -140,16 +140,31 @@ def getinterstories(i):
 	return ret
 
 from itertools import combinations
+import matplotlib.pyplot as plt
 badstory = 'plunger volcano paper the mug switches'
-def testaxes(ai1,ai2,interis,p):
+def testaxes(ai1,ai2,interis,p,graph=False):
 	goods = [getstory(i) for i in interis if i!=ai1 and i!=ai2]
 	bads = [garbs[i] for i in interis]
-	s1 = getstory(ai1)
-	s2 = getstory(ai2)
-	sumgood = sum(h.getSkipScores(badstory,s1,s2,[goods],p))
-	sumbad = sum(h.getSkipScores(badstory,s1,s2,[bads],p))
-	print sumgood,sumbad
-	return sumgood-sumbad
+	if type(ai1) == int:
+		s1 = getstory(ai1)
+	else:
+		s1=ai1
+	if type(ai2) == int:
+		s2 = getstory(ai2)
+	else:
+		s2=ai2
+	goodsc = h.getSkipScores(badstory,s1,s2,goods,p)
+	badsc = h.getSkipScores(badstory,s1,s2,bads,p)
+	if graph:
+		plt.plot(goodsc)
+		plt.plot(badsc)
+		plt.show()
+		return None
+	else:
+		sumgood = sum(goodsc)
+		sumbad = sum(badsc)
+		print sumgood,sumbad
+		return sumgood-sumbad
 
 interis = interpos[560] + [560]
 results = {}
@@ -158,6 +173,58 @@ for ai1,ai2 in combinations(interis,2):
 	v = testaxes(ai1,ai2,interis,pens)
 	print k,v,"\n"
 	results[k] = v
+
+mx = 0
+nx = 100
+mv = None
+nv = None
+for k in results:
+	c = results[k]
+	if c > mx:
+		mx = c
+		mv = k
+	if c < nx:
+		nx = c
+		nv = k
+
+def getindex(s):
+	for i,f in enumerate(formats):
+		if h.strip(f[3]['raw']) == s:
+			return i
+
+#TODO: get indices of various stories and plot score comparisons! (write function that does it automatically by splitting on "; " and looking up indices)
+
+
+garbscores = []
+for i,g in enumerate(garbs):
+	sc = scorestory(formats[i][1],g,pens)
+	print g,
+	garbscores.append(sc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
