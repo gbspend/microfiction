@@ -116,8 +116,13 @@ for tup in formats:
 	poss.append(''.join(pl))
 	grb = garbrec(f['root'],True,[None,None,None,None,None,None])
 	if None in grb:
-		grb = None
-	garbs.append(grb)
+		garbs.append(None)
+	else:
+		ret = [h.strip(grb)]
+		for i,w in enumerate(f['words']):
+			grb[i]=w
+			ret.append(h.strip(grb))
+		garbs.append(ret)
 
 interpos = defaultdict(list) #dictionary of format index to list of other indices that have same POS
 for i,c in enumerate(poss):
@@ -144,7 +149,7 @@ import matplotlib.pyplot as plt
 badstory = 'plunger volcano paper the mug switches'
 def testaxes(ai1,ai2,interis,p,graph=False):
 	goods = [getstory(i) for i in interis if i!=ai1 and i!=ai2]
-	bads = [garbs[i] for i in interis]
+	bads = [garbs[i][0] for i in interis]
 	if type(ai1) == int:
 		s1 = getstory(ai1)
 	else:
@@ -192,33 +197,29 @@ def getindex(s):
 		if h.strip(f[3]['raw']) == s:
 			return i
 
-#TODO: get indices of various stories and plot score comparisons! (write function that does it automatically by splitting on "; " and looking up indices)
+def twois():
+	a = random.choice(interis)
+	b = random.choice(interis)
+	while a == b:
+		b = random.choice(interis)
+	return a,b
 
-
-garbscores = []
-for i,g in enumerate(garbs):
-	sc = scorestory(formats[i][1],g,pens)
-	print g,
-	garbscores.append(sc)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+def randmultitest():
+	print
+	s1,s2 = [getstory(i) for i in twois()]
+	somegarbs = set()
+	while len(somegarbs) < 20:
+		somegarbs.add(tuple(random.choice(garbs)))
+	samelevels = [[],[],[],[],[],[],[]]
+	for gs in somegarbs:
+		for i,g in enumerate(gs):
+			samelevels[i].append(g)
+	i = 0
+	for l in samelevels:
+		plt.plot(h.getSkipScores(badstory,s1,s2,l,pens),label=str(i))
+		i+=1
+	plt.legend()
+	plt.show()
 
 
 
