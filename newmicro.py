@@ -98,8 +98,8 @@ def genrec(node,parent,prev,force,w2v,fillin):
 		if cacheK not in relsCache:
 			relsCache[cacheK] = cn.getRels(parent['word'],node['word'])
 		cnRels = relsCache[cacheK]
-		if cnRels:
-			print "has rels!",parent['word'],"->",node['word']
+		#if cnRels:
+		#	print "has rels!",parent['word'],"->",node['word']
 		for rel in cnRels:
 			choices += [cn.stripPre(t[0]) for t in cn.getOutgoing(prev, rel)]
 

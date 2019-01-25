@@ -103,16 +103,6 @@ Scientists develop first atomic bomb. Again.
 1 -> Again/RB () 7
 1 -> ./. () 8
 
-I have mixed drinks about feelings.
-
-0 -> mixed/VBN (root) 3
-1 -> I/PRP () 1
-1 -> have/VBP () 2
-1 -> drinks/NNS () 4
-1 -> feelings/NNS () 6
-2 -> about/IN () 5
-1 -> ./. () 7
-
 I just wrote a great cliffhanger.
 
 0 -> wrote/VBD (root) 3
@@ -122,32 +112,6 @@ I just wrote a great cliffhanger.
 2 -> a/DT () 4
 2 -> great/JJ () 5
 1 -> ./. () 7
-
-Paramedics finished her text, "…love you".
-
-0 -> finished/VBD (root) 2
-1 -> Paramedics/NNPS () 1
-1 -> text/NN () 4
-2 -> her/PRP$ () 3
-1 -> ,/, () 5
-1 -> ''/'' () 6
-1 -> .../: () 7
-1 -> love/NN () 8
-2 -> you/PRP () 9
-2 -> ''/'' () 10
-1 -> ./. () 11
-
-Suicide letter. No comments. Two downvotes.
-
-0 -> letter/NN (root) 2
-1 -> Suicide/NN () 1
-1 -> ;/: () 3
-1 -> comments/NNS () 5
-2 -> No/DT () 4
-2 -> ;/: () 6
-2 -> downvotes/NNS () 8
-3 -> Two/CD () 7
-1 -> ./. () 9
 
 One bullet is a lifetime supply.
 
@@ -190,18 +154,6 @@ Thousands dead after Americans go metric.
 1 -> Americans/NNPS () 4
 1 -> metric/JJ () 6
 1 -> ./. () 7
-
-My french teacher died. Adios, buddy.
-
-0 -> died/VBD (root) 4
-1 -> teacher/NN () 3
-2 -> My/PRP$ () 1
-2 -> french/JJ () 2
-1 -> ;/: () 5
-1 -> Adios/NNP () 6
-2 -> ,/, () 7
-2 -> buddy/NN () 8
-1 -> ./. () 9
 
 I look for you in everyone.
 
@@ -246,18 +198,6 @@ Doctor accidentally eats an apple, disappears.
 1 -> disappears/VBZ () 7
 1 -> ./. () 8
 
-Unfortunately, haiku possibilities, seldom appear here.
-
-0 -> appear/VBP (root) 7
-1 -> Unfortunately/RB () 1
-1 -> ,/, () 2
-1 -> possibilities/NNS () 4
-2 -> haiku/NN () 3
-1 -> ,/, () 5
-1 -> seldom/RB () 6
-1 -> here/RB () 8
-1 -> ./. () 9
-
 "Sorry Katie," sighed Santa. "No witnesses."
 
 0 -> sighed/VBD (root) 6
@@ -283,17 +223,6 @@ Introduced myself to mother again today.
 1 -> again/RB () 5
 1 -> today/NN () 6
 1 -> ./. () 7
-
-Balled too hard. Motherfuckers found me.
-
-0 -> Balled/VBN (root) 1
-1 -> hard/RB () 3
-2 -> too/RB () 2
-1 -> ;/: () 4
-1 -> found/VBD () 6
-2 -> Motherfuckers/NNS () 5
-2 -> me/PRP () 7
-1 -> ./. () 8
 
 "Wrong number," says a familiar voice.
 
@@ -354,17 +283,6 @@ Birth certificate. Death certificate. One pen.
 3 -> One/CD () 7
 1 -> ./. () 9
 
-Theater offends Trump, fourth wall built.
-
-0 -> offends/VBZ (root) 2
-1 -> Theater/NNP () 1
-1 -> Trump/NNP () 3
-2 -> ,/, () 4
-2 -> wall/NN () 6
-3 -> fourth/JJ () 5
-3 -> built/VBN () 7
-1 -> ./. () 8
-
 I just saw my reflection blink.
 
 0 -> saw/VBD (root) 3
@@ -374,27 +292,6 @@ I just saw my reflection blink.
 2 -> my/PRP$ () 4
 2 -> reflection/NN () 5
 1 -> ./. () 7
-
-We are now a private sub.
-
-0 -> sub/NN (root) 6
-1 -> We/PRP () 1
-1 -> are/VBP () 2
-1 -> now/RB () 3
-1 -> a/DT () 4
-1 -> private/JJ () 5
-1 -> ./. () 7
-
-This is Major Tom, signing off.
-
-0 -> Tom/NNP (root) 4
-1 -> This/DT () 1
-1 -> is/VBZ () 2
-1 -> Major/JJ () 3
-1 -> ,/, () 5
-1 -> signing/VBG () 6
-2 -> off/RP () 7
-1 -> ./. () 8
 
 Stop laughing, help me bury him.
 
@@ -437,18 +334,6 @@ I still get drunk over you.
 2 -> over/IN () 5
 1 -> ./. () 7
 
-I saw. I came. Lumberjack fetish.
-
-0 -> saw/VBD (root) 2
-1 -> I/PRP () 1
-1 -> ;/: () 3
-1 -> came/VBD () 5
-2 -> I/PRP () 4
-1 -> ;/: () 6
-1 -> fetish/NN () 8
-2 -> Lumberjack/NNP () 7
-1 -> ./. () 9
-
 "Does Santa love rich kids more?"
 
 0 -> ``/`` (root) 1
@@ -470,21 +355,6 @@ I am still holding his beer.
 1 -> beer/NN () 6
 2 -> his/PRP$ () 5
 1 -> ./. () 7
-
-TGIF. BYOB. YOLO. DUI. SUV. DOA.
-
-0 -> TGIF/NN (root) 1
-1 -> ;/: () 2
-1 -> BYOB/NN () 3
-1 -> ;/: () 4
-1 -> YOLO/NNP () 5
-1 -> ;/: () 6
-1 -> DUI/NNP () 7
-2 -> ;/: () 8
-2 -> SUV/NN () 9
-2 -> ;/: () 10
-2 -> DOA/NNP () 11
-1 -> ./. () 12
 
 She paid for college in ones.
 
@@ -543,19 +413,6 @@ The last humans rattled their cages.
 2 -> their/PRP$ () 5
 1 -> ./. () 7
 
-Strangers. Friends. More than friends. Strangers.
-
-0 -> Strangers/NNS (root) 1
-1 -> ;/: () 2
-1 -> Friends/NNPS () 3
-1 -> ;/: () 4
-1 -> More/JJR () 5
-2 -> friends/NNS () 7
-3 -> than/IN () 6
-1 -> ;/: () 8
-1 -> Strangers/NNS () 9
-1 -> ./. () 10
-
 The last human burned the slowest.
 
 0 -> burned/VBN (root) 4
@@ -586,29 +443,6 @@ Our dinner date ended with breakfast.
 1 -> breakfast/NN () 6
 2 -> with/IN () 5
 1 -> ./. () 7
-
-For sale: This story format. Overused.
-
-0 -> format/NN (root) 6
-1 -> sale/NN () 2
-2 -> For/IN () 1
-1 -> :/: () 3
-1 -> This/DT () 4
-1 -> story/NN () 5
-1 -> ;/: () 7
-1 -> Overused/NNP () 8
-1 -> ./. () 9
-
-I am Tupac Amaru Shakur, AMA.
-
-0 -> Shakur/NNP (root) 5
-1 -> I/PRP () 1
-1 -> am/VBP () 2
-1 -> Tupac/NNP () 3
-1 -> Amaru/NNP () 4
-1 -> ,/, () 6
-1 -> AMA/NNP () 7
-1 -> ./. () 8
 
 The riot gear hid his tears.
 
@@ -688,18 +522,6 @@ Friendship bracelets hid her healing wrists.
 2 -> healing/NN () 5
 1 -> ./. () 7
 
-For sale. BMW. Blinkers never used.
-
-0 -> sale/NN (root) 2
-1 -> For/IN () 1
-1 -> ;/: () 3
-1 -> BMW/NNP () 4
-2 -> ;/: () 5
-2 -> Blinkers/NNS () 6
-3 -> used/VBN () 8
-4 -> never/RB () 7
-1 -> ./. () 9
-
 Jumped. Then I changed my mind.
 
 0 -> Jumped/VBN (root) 1
@@ -709,17 +531,6 @@ Jumped. Then I changed my mind.
 2 -> I/PRP () 4
 2 -> mind/NN () 7
 3 -> my/PRP$ () 6
-1 -> ./. () 8
-
-Fucked sarcastic girl. She loved it.
-
-0 -> girl/NN (root) 3
-1 -> Fucked/JJ () 1
-1 -> sarcastic/JJ () 2
-1 -> ;/: () 4
-1 -> loved/VBD () 6
-2 -> She/PRP () 5
-2 -> it/PRP () 7
 1 -> ./. () 8
 
 Morale is high. Morals are low.
@@ -744,31 +555,6 @@ Morale is high. Morals are low.
 3 -> that/IN () 6
 2 -> ?/. () 8
 2 -> ''/'' () 9
-
-"Unusual name," Said Imamu to Bob.
-
-0 -> Said/VBD (root) 6
-1 -> name/NN () 3
-2 -> ``/`` () 1
-2 -> Unusual/JJ () 2
-2 -> ,/, () 4
-2 -> ''/'' () 5
-1 -> Imamu/NNP () 7
-1 -> Bob/NNP () 9
-2 -> to/TO () 8
-1 -> ./. () 10
-
-Fr sal: Typwritr. In mint cnditin.
-
-0 -> sal/NN (root) 2
-1 -> Fr/NNP () 1
-1 -> :/: () 3
-1 -> Typwritr/NN () 4
-2 -> ;/: () 5
-2 -> cnditin/NN () 8
-3 -> In/IN () 6
-3 -> mint/NN () 7
-1 -> ./. () 9
 
 Wanted: Loving wife or talented actress.
 
@@ -812,26 +598,16 @@ Examining the cut, she saw wiring.
 1 -> wiring/NN () 7
 1 -> ./. () 8
 
-he hit send, then a tree.
+He hit send, then a tree.
 
 0 -> hit/VBD (root) 2
-1 -> he/PRP () 1
+1 -> He/PRP () 1
 1 -> send/VB () 3
 2 -> ,/, () 4
 2 -> tree/NN () 7
 3 -> then/RB () 5
 3 -> a/DT () 6
 1 -> ./. () 8
-
-The Pearly Gates were rusted shut.
-
-0 -> rusted/VBN (root) 5
-1 -> Gates/NNP () 3
-2 -> The/DT () 1
-2 -> Pearly/NNP () 2
-1 -> were/VBD () 4
-1 -> shut/VBN () 6
-1 -> ./. () 7
 
 "Mr. President, the shareholders are waiting."
 
@@ -856,19 +632,6 @@ My therapist committed suicide last night.
 1 -> night/NN () 6
 2 -> last/JJ () 5
 1 -> ./. () 7
-
-"Dee-Dee… I leave you my laboratory."
-
-0 -> ``/`` (root) 1
-1 -> leave/VBP () 5
-2 -> Dee-Dee/NNP () 2
-2 -> .../: () 3
-2 -> I/PRP () 4
-2 -> laboratory/NN () 8
-3 -> you/PRP () 6
-3 -> my/PRP$ () 7
-2 -> ./. () 9
-2 -> ''/'' () 10
 
 Wanted one, expected two, buried three.
 
@@ -903,16 +666,6 @@ One gold medal: Paid with childhood.
 3 -> with/IN () 6
 1 -> ./. () 8
 
-Happy six word story not marketable.
-
-0 -> marketable/JJ (root) 6
-1 -> story/NN () 4
-2 -> Happy/JJ () 1
-2 -> six/CD () 2
-2 -> word/NN () 3
-1 -> not/RB () 5
-1 -> ./. () 7
-
 Taught my son to walk. Again.
 
 0 -> Taught/NNP (root) 1
@@ -944,42 +697,6 @@ Today, sports photographers became war photographers.
 2 -> sports/NNS () 3
 1 -> photographers/NNS () 7
 2 -> war/NN () 6
-1 -> ./. () 8
-
-For sale: English flag, slightly waved.
-
-0 -> sale/NN (root) 2
-1 -> For/IN () 1
-1 -> :/: () 3
-1 -> flag/NN () 5
-2 -> English/NNP () 4
-2 -> ,/, () 6
-2 -> waved/VBN () 8
-3 -> slightly/RB () 7
-1 -> ./. () 9
-
-Another "in-flight Wi-Fi" appeared. Oh shi…
-
-0 -> appeared/VBD (root) 6
-1 -> Wi-Fi/NN () 4
-2 -> Another/DT () 1
-2 -> ``/`` () 2
-2 -> in-flight/JJ () 3
-2 -> ''/'' () 5
-1 -> ;/: () 7
-1 -> shi/FW () 9
-2 -> Oh/UH () 8
-1 -> .../: () 10
-
-The Cancer spread. The Scorpio grinned.
-
-0 -> spread/NN (root) 3
-1 -> The/DT () 1
-1 -> Cancer/NNP () 2
-1 -> ;/: () 4
-1 -> grinned/VBD () 7
-2 -> Scorpio/NNP () 6
-3 -> The/DT () 5
 1 -> ./. () 8
 
 She once sold seashells. Tonight, herself.
@@ -1051,16 +768,6 @@ Grandpa, what was "the Internet" like?
 1 -> ''/'' () 8
 1 -> like/IN () 9
 1 -> ?/. () 10
-
-Sexually depraved neurosurgeon caught blowing minds.
-
-0 -> caught/VBD (root) 4
-1 -> neurosurgeon/NN () 3
-2 -> depraved/JJ () 2
-3 -> Sexually/RB () 1
-1 -> blowing/VBG () 5
-2 -> minds/NNS () 6
-1 -> ./. () 7
 
 Regret hit before the pavement did.
 
@@ -1161,18 +868,6 @@ The mortician sighed. Another old friend.
 2 -> old/JJ () 6
 1 -> ./. () 8
 
-Trump book "My Struggle" sells out.
-
-0 -> book/NN (root) 2
-1 -> Trump/NNP () 1
-1 -> sells/VBZ () 7
-2 -> Struggle/NN () 5
-3 -> ``/`` () 3
-3 -> My/PRP$ () 4
-3 -> ''/'' () 6
-2 -> out/RP () 8
-1 -> ./. () 9
-
 Unpopular messiah turns wine into water.
 
 0 -> turns/VBZ (root) 3
@@ -1181,30 +876,6 @@ Unpopular messiah turns wine into water.
 1 -> wine/NN () 4
 1 -> water/NN () 6
 2 -> into/IN () 5
-1 -> ./. () 7
-
-Death extends his hand, smiling. "Deal?"
-
-0 -> extends/VBZ (root) 2
-1 -> Death/NN () 1
-1 -> hand/NN () 4
-2 -> his/PRP$ () 3
-1 -> ,/, () 5
-1 -> smiling/VBG () 6
-1 -> ;/: () 7
-1 -> Deal/NNP () 9
-2 -> ``/`` () 8
-2 -> ?/. () 10
-1 -> ''/'' () 11
-
-Mushroom clouds illuminated their first kiss.
-
-0 -> illuminated/VBD (root) 3
-1 -> clouds/NNS () 2
-2 -> Mushroom/NN () 1
-1 -> kiss/NN () 6
-2 -> their/PRP$ () 4
-2 -> first/JJ () 5
 1 -> ./. () 7
 
 Everyone learned to ignore the cameras.
@@ -1216,18 +887,6 @@ Everyone learned to ignore the cameras.
 2 -> cameras/NNS () 6
 3 -> the/DT () 5
 1 -> ./. () 7
-
-Cops make awful "knock knock" jokes.
-
-0 -> make/VBP (root) 2
-1 -> Cops/NNS () 1
-1 -> knock/VB () 6
-2 -> knock/VB () 5
-3 -> awful/JJ () 3
-3 -> ``/`` () 4
-2 -> ''/'' () 7
-2 -> jokes/NNS () 8
-1 -> ./. () 9
 
 I should have kissed you back.
 
@@ -1413,17 +1072,6 @@ She was better as a fantasy.
 1 -> ?/. () 9
 1 -> ''/'' () 10
 
-I post in wrong subreddits, AMA!
-
-0 -> post/VBP (root) 2
-1 -> I/PRP () 1
-1 -> subreddits/NNS () 5
-2 -> in/IN () 3
-2 -> wrong/JJ () 4
-2 -> ,/, () 6
-2 -> AMA/NNP () 7
-1 -> !/. () 8
-
 Blue and white facepaint, never used.
 
 0 -> used/VBN (root) 7
@@ -1478,28 +1126,6 @@ Killer nods attentively in jury box.
 2 -> jury/NN () 5
 1 -> ./. () 7
 
-Ran into small keg. Micro bruise.
-
-0 -> Ran/NN (root) 1
-1 -> keg/NN () 4
-2 -> into/IN () 2
-2 -> small/JJ () 3
-1 -> ;/: () 5
-1 -> bruise/NN () 7
-2 -> Micro/NNP () 6
-1 -> ./. () 8
-
-He squinted. Sunrise at three AM?
-
-0 -> squinted/VBD (root) 2
-1 -> He/PRP () 1
-1 -> ;/: () 3
-1 -> Sunrise/NNP () 4
-2 -> AM/NNP () 7
-3 -> at/IN () 5
-3 -> three/CD () 6
-1 -> ?/. () 8
-
 "I do," she said, as told.
 
 0 -> said/VBD (root) 7
@@ -1536,31 +1162,6 @@ A billion likes. Still no cure.
 2 -> no/DT () 6
 1 -> ./. () 8
 
-No Vietcong ever called me nigger.
-
-0 -> called/VBD (root) 4
-1 -> Vietcong/NNP () 2
-2 -> No/DT () 1
-1 -> ever/RB () 3
-1 -> nigger/NN () 6
-2 -> me/PRP () 5
-1 -> ./. () 7
-
-"Strike now, Booth," hissed Mrs. Lincoln.
-
-0 -> ``/`` (root) 1
-1 -> hissed/VBD () 8
-2 -> Strike/NN () 2
-2 -> now/RB () 3
-2 -> ,/, () 4
-2 -> Booth/NNP () 5
-2 -> ,/, () 6
-2 -> ''/'' () 7
-2 -> Mrs/NNP () 9
-3 -> ;/: () 10
-3 -> Lincoln/NNP () 11
-2 -> ./. () 12
-
 God showed up. She was pissed.
 
 0 -> showed/VBD (root) 2
@@ -1570,17 +1171,6 @@ God showed up. She was pissed.
 1 -> pissed/VBN () 7
 2 -> She/PRP () 5
 2 -> was/VBD () 6
-1 -> ./. () 8
-
-Shit. I AM the adult supervision.
-
-0 -> Shit/VBN (root) 1
-1 -> ;/: () 2
-1 -> AM/VBP () 4
-2 -> I/PRP () 3
-2 -> supervision/NN () 7
-3 -> the/DT () 5
-3 -> adult/JJ () 6
 1 -> ./. () 8
 
 For sale: hipster music, never heard.
@@ -1657,6 +1247,29 @@ One drink too many. Five funerals.
 2 -> ;/: () 5
 2 -> funerals/NNS () 7
 3 -> Five/CD () 6
+1 -> ./. () 8
+
+"Is anyone here NOT an informant?"
+
+0 -> informant/NN (root) 7
+1 -> ``/`` () 1
+1 -> Is/VBZ () 2
+1 -> anyone/NN () 3
+2 -> here/RB () 4
+1 -> NOT/RB () 5
+1 -> an/DT () 6
+1 -> ?/. () 8
+1 -> ''/'' () 9
+
+Shit. I AM the adult supervision.
+
+0 -> Shit/VBN (root) 1
+1 -> ;/: () 2
+1 -> AM/VBP () 4
+2 -> I/PRP () 3
+2 -> supervision/NN () 7
+3 -> the/DT () 5
+3 -> adult/JJ () 6
 1 -> ./. () 8
 
 Sweating, God asked, "Who created me?"
@@ -1752,17 +1365,6 @@ The pale blue dot turned orange.
 1 -> sadly/RB () 9
 1 -> ./. () 10
 
-Anorexic homosexual. Skeletons in the closet.
-
-0 -> homosexual/NN (root) 2
-1 -> Anorexic/JJ () 1
-1 -> ;/: () 3
-1 -> Skeletons/NNP () 4
-2 -> closet/NN () 7
-3 -> in/IN () 5
-3 -> the/DT () 6
-1 -> ./. () 8
-
 Thirteen adventurous years. Sleep well pup.
 
 0 -> years/NNS (root) 3
@@ -1785,28 +1387,6 @@ I attended my funeral. Nobody knew.
 2 -> Nobody/NN () 6
 1 -> ./. () 8
 
-Hot wet, oh…SIX word stories.
-
-0 -> wet/JJ (root) 2
-1 -> Hot/JJ () 1
-1 -> ,/, () 3
-1 -> stories/NNS () 8
-2 -> oh/UH () 4
-2 -> .../: () 5
-2 -> SIX/CD () 6
-2 -> word/NN () 7
-1 -> ./. () 9
-
-She still uses my Netflix account.
-
-0 -> uses/VBZ (root) 3
-1 -> She/PRP () 1
-1 -> still/RB () 2
-1 -> account/NN () 6
-2 -> my/PRP$ () 4
-2 -> Netflix/NNP () 5
-1 -> ./. () 7
-
 American vampire develops type two diabetes.
 
 0 -> develops/VBZ (root) 3
@@ -1826,30 +1406,6 @@ The noose did feel surprisingly comfortable.
 1 -> comfortable/JJ () 6
 2 -> surprisingly/RB () 5
 1 -> ./. () 7
-
-"That stripper oddly resembles my…HEY!"
-
-0 -> ``/`` (root) 1
-1 -> resembles/VBZ () 5
-2 -> stripper/NN () 3
-3 -> That/DT () 2
-2 -> oddly/RB () 4
-2 -> HEY/NN () 8
-3 -> my/PRP$ () 6
-3 -> .../: () 7
-2 -> !/. () 9
-2 -> ''/'' () 10
-
-Challenge: write happier six word stories.
-
-0 -> Challenge/NN (root) 1
-1 -> :/: () 2
-1 -> write/VB () 3
-2 -> stories/NNS () 7
-3 -> happier/JJR () 4
-3 -> six/CD () 5
-3 -> word/NN () 6
-1 -> ./. () 8
 
 Man said, let there be god.
 
@@ -1871,16 +1427,6 @@ Janitor limps past his highschool glories.
 2 -> his/PRP$ () 4
 2 -> highschool/JJ () 5
 1 -> ./. () 7
-
-I figured out how clickbaits work!
-
-0 -> figured/VBD (root) 2
-1 -> I/PRP () 1
-1 -> out/RP () 3
-1 -> work/VBP () 6
-2 -> how/WRB () 4
-2 -> clickbaits/NNS () 5
-1 -> !/. () 7
 
 To her, "forever" meant "three months"
 
@@ -1927,20 +1473,6 @@ The greenest grass is usually artificial.
 1 -> usually/RB () 5
 1 -> ./. () 7
 
-President Schwarzennegger slowly leant forward. "… Aliens?"
-
-0 -> leant/VBD (root) 4
-1 -> Schwarzennegger/NNP () 2
-2 -> President/NNP () 1
-1 -> slowly/RB () 3
-1 -> forward/RB () 5
-1 -> ;/: () 6
-1 -> ''/'' () 7
-1 -> .../: () 8
-1 -> Aliens/NNS () 9
-1 -> ?/. () 10
-1 -> ''/'' () 11
-
 "Boys" was more accurate than "soldiers"
 
 0 -> accurate/JJ (root) 6
@@ -1962,16 +1494,6 @@ The other cop just stood there.
 2 -> other/JJ () 2
 1 -> just/RB () 4
 1 -> there/RB () 6
-1 -> ./. () 7
-
-Accurate election coverage mystifies Onion staff.
-
-0 -> mystifies/VBZ (root) 4
-1 -> coverage/NN () 3
-2 -> Accurate/JJ () 1
-2 -> election/NN () 2
-1 -> staff/NN () 6
-2 -> Onion/NNP () 5
 1 -> ./. () 7
 
 Her suicide note. His hit list.
@@ -2004,17 +1526,6 @@ Too lazy to write a novel.
 2 -> novel/NN () 6
 3 -> a/DT () 5
 1 -> ./. () 7
-
-In April, May calls June election.
-
-0 -> calls/VBZ (root) 5
-1 -> April/NNP () 2
-2 -> In/IN () 1
-1 -> ,/, () 3
-1 -> May/NNP () 4
-1 -> election/NN () 7
-2 -> June/NNP () 6
-1 -> ./. () 8
 
 Baby-proofed house. They still got in.
 
@@ -2056,16 +1567,6 @@ Sensitive kleptomaniacs always take things literally.
 1 -> always/RB () 3
 1 -> things/NNS () 5
 1 -> literally/RB () 6
-1 -> ./. () 7
-
-Loving life is just Stockholm syndrome.
-
-0 -> syndrome/NN (root) 6
-1 -> life/NN () 2
-2 -> Loving/JJ () 1
-1 -> is/VBZ () 3
-1 -> just/RB () 4
-1 -> Stockholm/NNP () 5
 1 -> ./. () 7
 
 Her smile spoke every single language.
@@ -2133,16 +1634,6 @@ Every planet we reach is dead.
 1 -> is/VBZ () 5
 1 -> ./. () 7
 
-This subreddit barely tells stories anymore.
-
-0 -> tells/VBZ (root) 4
-1 -> subreddit/NN () 2
-2 -> This/DT () 1
-1 -> barely/RB () 3
-1 -> stories/NNS () 5
-1 -> anymore/RB () 6
-1 -> ./. () 7
-
 Pepsi truckdriver caught drinking Coke. Canned.
 
 0 -> caught/VBD (root) 3
@@ -2178,16 +1669,6 @@ I flipped the switch. "Goodnight, mom."
 1 -> ./. () 10
 1 -> ''/'' () 11
 
-My swear jar is fucking full.
-
-0 -> fucking/VBG (root) 5
-1 -> jar/NN () 3
-2 -> My/PRP$ () 1
-2 -> swear/VBP () 2
-1 -> is/VBZ () 4
-1 -> full/JJ () 6
-1 -> ./. () 7
-
 The ambulance slowed, the urgency gone.
 
 0 -> slowed/VBD (root) 3
@@ -2198,16 +1679,6 @@ The ambulance slowed, the urgency gone.
 2 -> urgency/NN () 6
 3 -> the/DT () 5
 1 -> ./. () 8
-
-This sub kills too many children.
-
-0 -> kills/VBZ (root) 3
-1 -> sub/NN () 2
-2 -> This/DT () 1
-1 -> children/NNS () 6
-2 -> many/JJ () 5
-3 -> too/RB () 4
-1 -> ./. () 7
 
 This is me practicing being okay.
 
@@ -2263,27 +1734,6 @@ Used coffin available. Some interior scratches.
 2 -> interior/JJ () 6
 1 -> ./. () 8
 
-Suspense is my business. And business -
-
-0 -> business/NN (root) 4
-1 -> Suspense/NN () 1
-1 -> is/VBZ () 2
-1 -> my/PRP$ () 3
-1 -> ;/: () 5
-1 -> And/CC () 6
-1 -> business/NN () 7
-2 -> -/: () 8
-
-This subreddit is really fucking depressing.
-
-0 -> fucking/JJ (root) 5
-1 -> subreddit/NN () 2
-2 -> This/DT () 1
-1 -> is/VBZ () 3
-1 -> really/RB () 4
-1 -> depressing/VBG () 6
-1 -> ./. () 7
-
 Bang. Earth. Evolution. Humans. Politics. Bang.
 
 0 -> Bang/NNP (root) 1
@@ -2298,17 +1748,6 @@ Bang. Earth. Evolution. Humans. Politics. Bang.
 1 -> ;/: () 10
 1 -> Bang/NNP () 11
 1 -> ./. () 12
-
-Eventually, Aang had to bury Appa.
-
-0 -> had/VBD (root) 4
-1 -> Eventually/RB () 1
-1 -> ,/, () 2
-1 -> Aang/NNP () 3
-1 -> bury/VB () 6
-2 -> to/TO () 5
-2 -> Appa/NN () 7
-1 -> ./. () 8
 
 "… You were in the control group."
 
@@ -2405,16 +1844,6 @@ They opened the coffin. Scratch marks.
 2 -> marks/NNS () 7
 1 -> ./. () 8
 
-The memory foam remembered someone else.
-
-0 -> remembered/VBD (root) 4
-1 -> foam/NN () 3
-2 -> The/DT () 1
-2 -> memory/NN () 2
-1 -> someone/NN () 5
-2 -> else/RB () 6
-1 -> ./. () 7
-
 He cried as he reloaded again.
 
 0 -> cried/VBD (root) 2
@@ -2490,43 +1919,6 @@ Humans are ugliest behind their keyboards.
 2 -> their/PRP$ () 5
 1 -> ./. () 7
 
-Cloned self. Phoned self. Boned self.
-
-0 -> self/NN (root) 2
-1 -> Cloned/VBN () 1
-1 -> ;/: () 3
-1 -> self/NN () 5
-2 -> Phoned/VBN () 4
-2 -> ;/: () 6
-2 -> self/NN () 8
-3 -> Boned/VBN () 7
-1 -> ./. () 9
-
-"Is anyone here NOT an informant?"
-
-0 -> informant/NN (root) 7
-1 -> ``/`` () 1
-1 -> Is/VBZ () 2
-1 -> anyone/NN () 3
-2 -> here/RB () 4
-1 -> NOT/RB () 5
-1 -> an/DT () 6
-1 -> ?/. () 8
-1 -> ''/'' () 9
-
-Drank, she left. Quit, friends left.
-
-0 -> left/VBD (root) 9
-1 -> Drank/NNP () 1
-1 -> left/VBD () 4
-2 -> ,/, () 2
-2 -> she/PRP () 3
-2 -> ;/: () 5
-1 -> Quit/NNP () 6
-1 -> ,/, () 7
-1 -> friends/NNS () 8
-1 -> ./. () 10
-
 A girl, a ring, a no.
 
 0 -> girl/NN (root) 2
@@ -2571,18 +1963,6 @@ They look human. Trust no one.
 2 -> no/DT () 6
 1 -> ./. () 8
 
-For sale: left AirPod, used once.
-
-0 -> sale/NN (root) 2
-1 -> For/IN () 1
-1 -> :/: () 3
-1 -> left/VBD () 4
-2 -> AirPod/NNP () 5
-2 -> ,/, () 6
-2 -> used/VBD () 7
-3 -> once/RB () 8
-1 -> ./. () 9
-
 Drink some food coloring. Dye inside.
 
 0 -> Drink/VB (root) 1
@@ -2609,17 +1989,6 @@ Drink some food coloring. Dye inside.
 2 -> are/VBP () 10
 2 -> YOU/PRP () 11
 2 -> ''/'' () 13
-
-Damn, Can this sub brighten up?
-
-0 -> brighten/VB (root) 6
-1 -> Damn/NNP () 1
-1 -> ,/, () 2
-1 -> Can/MD () 3
-1 -> sub/NN () 5
-2 -> this/DT () 4
-1 -> up/RP () 7
-1 -> ?/. () 8
 
 I made love, she had sex.
 
@@ -2698,27 +2067,6 @@ We ended like we began… happy.
 2 -> we/PRP () 4
 2 -> .../: () 6
 2 -> happy/JJ () 7
-1 -> ./. () 8
-
-I unsubscribed from the depression subreddit.
-
-0 -> unsubscribed/VBD (root) 2
-1 -> I/PRP () 1
-1 -> subreddit/NN () 6
-2 -> from/IN () 3
-2 -> the/DT () 4
-2 -> depression/NN () 5
-1 -> ./. () 7
-
-Mods are asleep, post seven words.
-
-0 -> words/NNS (root) 7
-1 -> Mods/NNS () 1
-1 -> are/VBP () 2
-1 -> asleep/RB () 3
-1 -> ,/, () 4
-1 -> post/NN () 5
-1 -> seven/CD () 6
 1 -> ./. () 8
 
 Convicted hacker escapes using hidden file.
@@ -2830,16 +2178,6 @@ Immediately, beloved son became despised daughter.
 2 -> despised/VBN () 6
 1 -> ./. () 8
 
-President Musk just declared Martian independence.
-
-0 -> declared/VBD (root) 4
-1 -> Musk/NNP () 2
-2 -> President/NNP () 1
-1 -> just/RB () 3
-1 -> independence/NN () 6
-2 -> Martian/NNP () 5
-1 -> ./. () 7
-
 Her footprints led to still water.
 
 0 -> led/VBD (root) 3
@@ -2933,32 +2271,6 @@ White dress. Black dress. Red dress.
 2 -> Red/NNP () 7
 1 -> ./. () 9
 
-"DO NOT TOUCH," read the braille.
-
-0 -> read/VBD (root) 7
-1 -> ``/`` () 1
-1 -> TOUCH/NNP () 4
-2 -> DO/NNP () 2
-2 -> NOT/NNP () 3
-1 -> ,/, () 5
-1 -> ''/'' () 6
-1 -> braille/NN () 9
-2 -> the/DT () 8
-1 -> ./. () 10
-
-… Tinder downloaded … Tinder deleted … Tinder downloaded …
-
-0 -> downloaded/VBD (root) 3
-1 -> .../: () 1
-1 -> Tinder/NN () 2
-1 -> .../: () 4
-1 -> downloaded/VBD () 9
-2 -> Tinder/NN () 5
-3 -> deleted/VBN () 6
-3 -> .../: () 7
-2 -> Tinder/NN () 8
-1 -> .../: () 10
-
 Grades back. Returned cap and gown.
 
 0 -> Grades/NNS (root) 1
@@ -3004,28 +2316,6 @@ Yesterday gone; Today wasted; Dreading tomorrow.
 2 -> tomorrow/NN () 8
 1 -> ./. () 9
 
-Mexican alcohol. American literature. Tequila Mockingbird.
-
-0 -> alcohol/NN (root) 2
-1 -> Mexican/JJ () 1
-1 -> ;/: () 3
-1 -> literature/NN () 5
-2 -> American/JJ () 4
-1 -> ;/: () 6
-1 -> Mockingbird/NNP () 8
-2 -> Tequila/NNP () 7
-1 -> ./. () 9
-
-Dead horse beaten with baby shoes.
-
-0 -> horse/NN (root) 2
-1 -> Dead/JJ () 1
-1 -> beaten/VBN () 3
-2 -> shoes/NNS () 6
-3 -> with/IN () 4
-3 -> baby/NN () 5
-1 -> ./. () 7
-
 Funerals cost less than university tuition.
 
 0 -> cost/VBD (root) 2
@@ -3035,17 +2325,6 @@ Funerals cost less than university tuition.
 3 -> than/IN () 4
 3 -> university/NN () 5
 1 -> ./. () 7
-
-He mEans welL, keePing Me hostagE.
-
-0 -> mEans/VBZ (root) 2
-1 -> He/PRP () 1
-1 -> welL/NN () 3
-1 -> ,/, () 4
-1 -> keePing/VBG () 5
-2 -> hostagE/NN () 7
-3 -> Me/PRP () 6
-1 -> ./. () 8
 
 Empty crib. But not for long!
 
@@ -3070,18 +2349,6 @@ Conjoined twins. One gay. One homophobic.
 3 -> One/CD () 7
 1 -> ./. () 9
 
-"But Adam, I poop from there"
-
-0 -> poop/NN (root) 6
-1 -> ``/`` () 1
-1 -> But/CC () 2
-1 -> Adam/NNP () 3
-1 -> ,/, () 4
-1 -> I/PRP () 5
-1 -> there/EX () 8
-2 -> from/IN () 7
-1 -> ''/'' () 9
-
 Went to the vet. Left alone.
 
 0 -> Went/VBD (root) 1
@@ -3092,19 +2359,6 @@ Went to the vet. Left alone.
 1 -> Left/VBN () 6
 2 -> alone/RB () 7
 1 -> ./. () 8
-
-"Warheads aimed and ready, President Trump."
-
-0 -> Trump/NNP (root) 8
-1 -> ``/`` () 1
-1 -> Warheads/NNS () 2
-2 -> aimed/VBN () 3
-3 -> and/CC () 4
-3 -> ready/JJ () 5
-1 -> ,/, () 6
-1 -> President/NNP () 7
-1 -> ./. () 9
-1 -> ''/'' () 10
 
 Lost my gut. Found my penis.
 
@@ -3217,64 +2471,6 @@ Drank to forget. Forgot to stop.
 3 -> to/TO () 6
 1 -> ./. () 8
 
-Math genius turns into standard deviant.
-
-0 -> turns/VBZ (root) 3
-1 -> genius/NN () 2
-2 -> Math/NNP () 1
-1 -> deviant/JJ () 6
-2 -> into/IN () 4
-2 -> standard/JJ () 5
-1 -> ./. () 7
-
-"…some cave paintings of mushroom clouds"
-
-0 -> ''/'' (root) 1
-1 -> .../: () 2
-2 -> paintings/NNS () 5
-3 -> some/DT () 3
-3 -> cave/NN () 4
-3 -> clouds/NNS () 8
-4 -> of/IN () 6
-4 -> mushroom/NN () 7
-3 -> ''/'' () 9
-
-Greek mythology is my Achilles elbow.
-
-0 -> elbow/NN (root) 6
-1 -> mythology/NN () 2
-2 -> Greek/JJ () 1
-1 -> is/VBZ () 3
-1 -> my/PRP$ () 4
-1 -> Achilles/NNPS () 5
-1 -> ./. () 7
-
-Hemingway killed babies to sell shoes.
-
-0 -> killed/VBD (root) 2
-1 -> Hemingway/NNP () 1
-1 -> babies/NNS () 3
-1 -> sell/VB () 5
-2 -> to/TO () 4
-2 -> shoes/NNS () 6
-1 -> ./. () 7
-
-"Six words…" She muttered. "Plagiarize Hemingway!"
-
-0 -> muttered/VBN (root) 7
-1 -> ``/`` () 1
-1 -> words/NNS () 3
-2 -> Six/CD () 2
-1 -> .../: () 4
-1 -> ''/'' () 5
-1 -> She/PRP () 6
-1 -> ;/: () 8
-1 -> Plagiarize/VB () 10
-2 -> ``/`` () 9
-2 -> Hemingway/NNP () 11
-1 -> !/. () 12
-1 -> ''/'' () 13
-
 Leading causes of death; obesity, hunger.
 
 0 -> causes/NNS (root) 2
@@ -3285,18 +2481,6 @@ Leading causes of death; obesity, hunger.
 1 -> obesity/NN () 6
 2 -> ,/, () 7
 2 -> hunger/NN () 8
-1 -> ./. () 9
-
-For sale: baby shoes, contain feet.
-
-0 -> shoes/NNS (root) 5
-1 -> sale/NN () 2
-2 -> For/IN () 1
-1 -> :/: () 3
-1 -> baby/NN () 4
-1 -> ,/, () 6
-1 -> contain/VBP () 7
-2 -> feet/NNS () 8
 1 -> ./. () 9
 
 I miss hearing about your day.
@@ -3343,16 +2527,6 @@ Guitar for sale. No strings attached.
 2 -> attached/VBN () 7
 1 -> ./. () 8
 
-One Bullet Was Cheaper Than Therapy.
-
-0 -> Was/VBD (root) 3
-1 -> Bullet/NNP () 2
-2 -> One/CD () 1
-1 -> Cheaper/NNP () 4
-2 -> Therapy/NN () 6
-3 -> Than/IN () 5
-1 -> ./. () 7
-
 "Forever" was shorter than I anticipated.
 
 0 -> shorter/JJR (root) 5
@@ -3377,16 +2551,6 @@ Devil, still confused, bans snowball fights.
 3 -> snowball/NN () 7
 1 -> ./. () 9
 
-My sarcasm degree really paid off…
-
-0 -> paid/VBD (root) 5
-1 -> degree/NN () 3
-2 -> My/PRP$ () 1
-2 -> sarcasm/NN () 2
-1 -> really/RB () 4
-1 -> off/RP () 6
-1 -> .../: () 7
-
 Pretty gets away with being ugly.
 
 0 -> gets/VBZ (root) 2
@@ -3408,17 +2572,6 @@ Mass Murder. One Dead. The Priest.
 1 -> Priest/NN () 8
 2 -> The/DT () 7
 1 -> ./. () 9
-
-Forgot deodorant. Raptor arms all day.
-
-0 -> deodorant/NN (root) 2
-1 -> Forgot/NNP () 1
-1 -> ;/: () 3
-1 -> arms/NNS () 5
-2 -> Raptor/NNP () 4
-2 -> day/NN () 7
-3 -> all/DT () 6
-1 -> ./. () 8
 
 Left Earth. Mars sucks. Kinda stuck…
 
@@ -3464,17 +2617,6 @@ Lost custody of her inner child.
 2 -> inner/JJ () 5
 1 -> ./. () 7
 
-We sent Curiosity. They sent theirs.
-
-0 -> sent/VBD (root) 2
-1 -> We/PRP () 1
-1 -> Curiosity/NN () 3
-1 -> ;/: () 4
-1 -> sent/VBD () 6
-2 -> They/PRP () 5
-2 -> theirs/PRP () 7
-1 -> ./. () 8
-
 Eclipse should have ended days ago…
 
 0 -> ended/VBN (root) 4
@@ -3519,17 +2661,6 @@ I trust you. That scares me.
 2 -> me/PRP () 7
 1 -> ./. () 8
 
-The rapist pulled himself together. Therapist.
-
-0 -> pulled/VBD (root) 3
-1 -> rapist/NN () 2
-2 -> The/DT () 1
-1 -> himself/PRP () 4
-1 -> together/RB () 5
-1 -> ;/: () 6
-1 -> Therapist/NNP () 7
-2 -> ./. () 8
-
 "For sale: dad sandals, socks included."
 
 0 -> included/VBD (root) 9
@@ -3543,16 +2674,6 @@ The rapist pulled himself together. Therapist.
 1 -> socks/NNS () 8
 1 -> ./. () 10
 1 -> ''/'' () 11
-
-Well well welcome to stutter club.
-
-0 -> welcome/JJ (root) 3
-1 -> Well/RB () 1
-1 -> well/RB () 2
-1 -> club/NN () 6
-2 -> to/TO () 4
-2 -> stutter/NN () 5
-1 -> ./. () 7
 
 He gets sadder. Jokes get funnier.
 
@@ -3642,19 +2763,6 @@ Grab a shovel, I miss mom.
 1 -> mom/NN () 7
 1 -> ./. () 8
 
-"World Star Hiphop"; His last breath.
-
-0 -> Hiphop/NNP (root) 4
-1 -> ``/`` () 1
-1 -> World/NNP () 2
-1 -> Star/NNP () 3
-1 -> ''/'' () 5
-1 -> ;/: () 6
-1 -> breath/NN () 9
-2 -> His/PRP$ () 7
-2 -> last/JJ () 8
-1 -> ./. () 10
-
 Cigarettes bring me closer to God.
 
 0 -> bring/VBP (root) 2
@@ -3697,42 +2805,6 @@ My ring finger has a tanline.
 2 -> a/DT () 5
 1 -> ./. () 7
 
-"Guilty", bleeped Judgebot. Meatbags in uproar.
-
-0 -> Guilty/NNP (root) 2
-1 -> ``/`` () 1
-1 -> ''/'' () 3
-1 -> ,/, () 4
-1 -> Judgebot/NN () 6
-2 -> bleeped/JJ () 5
-1 -> ;/: () 7
-1 -> Meatbags/NNP () 8
-2 -> uproar/NN () 10
-3 -> in/IN () 9
-1 -> ./. () 11
-
-Staring at headlights. Oh deer god.
-
-0 -> Staring/VBG (root) 1
-1 -> headlights/NNS () 3
-2 -> at/IN () 2
-1 -> ;/: () 4
-1 -> god/NN () 7
-2 -> Oh/UH () 5
-2 -> deer/NNS () 6
-1 -> ./. () 8
-
-Clicked random button, ended up here.
-
-0 -> ended/VBD (root) 5
-1 -> button/NN () 3
-2 -> Clicked/VBN () 1
-2 -> random/JJ () 2
-1 -> ,/, () 4
-1 -> here/RB () 7
-2 -> up/RB () 6
-1 -> ./. () 8
-
 One man left. Finally, world peace.
 
 0 -> left/VBN (root) 3
@@ -3754,27 +2826,6 @@ My apologies: baby shoes now needed.
 2 -> baby/NN () 4
 2 -> needed/VBN () 7
 3 -> now/RB () 6
-1 -> ./. () 8
-
-The Six Word Movie was better.
-
-0 -> better/RBR (root) 6
-1 -> Movie/NN () 4
-2 -> The/DT () 1
-2 -> Six/CD () 2
-2 -> Word/NN () 3
-1 -> was/VBD () 5
-1 -> ./. () 7
-
-She dumped me. Netflix password changed.
-
-0 -> dumped/VBD (root) 2
-1 -> She/PRP () 1
-1 -> me/PRP () 3
-1 -> ;/: () 4
-1 -> changed/VBD () 7
-2 -> password/NN () 6
-3 -> Netflix/NNP () 5
 1 -> ./. () 8
 
 A wise man once said nothing.
@@ -3833,39 +2884,6 @@ He entered Heaven, it was empty.
 2 -> was/VBD () 6
 1 -> ./. () 8
 
-Breast cancer cured; Suzan Komen sues.
-
-0 -> cured/VBN (root) 3
-1 -> cancer/NN () 2
-2 -> Breast/NN () 1
-1 -> ;/: () 4
-1 -> sues/VBZ () 7
-2 -> Komen/NNP () 6
-3 -> Suzan/NNP () 5
-1 -> ./. () 8
-
-I was born on Earth. AMA.
-
-0 -> born/VBN (root) 3
-1 -> I/PRP () 1
-1 -> was/VBD () 2
-1 -> Earth/NNP () 5
-2 -> on/IN () 4
-1 -> ;/: () 6
-1 -> AMA/NNP () 7
-1 -> ./. () 8
-
-There was no twist. Shyamalan laughed.
-
-0 -> was/VBD (root) 2
-1 -> There/EX () 1
-1 -> twist/NN () 4
-2 -> no/DT () 3
-1 -> ;/: () 5
-1 -> laughed/VBD () 7
-2 -> Shyamalan/NNP () 6
-1 -> ./. () 8
-
 I wanted Dad, not his money.
 
 0 -> wanted/VBD (root) 2
@@ -3898,57 +2916,6 @@ After seven years of silence, voicemail.
 3 -> of/IN () 4
 1 -> ,/, () 6
 1 -> ./. () 8
-
-Judas, grinning, rolled back the stone.
-
-0 -> rolled/VBD (root) 5
-1 -> Judas/NNP () 1
-1 -> ,/, () 2
-1 -> grinning/VBG () 3
-1 -> ,/, () 4
-1 -> back/RP () 6
-1 -> stone/NN () 8
-2 -> the/DT () 7
-1 -> ./. () 9
-
-Asshole submits same story six times.
-
-0 -> submits/VBZ (root) 2
-1 -> Asshole/NN () 1
-1 -> story/NN () 4
-2 -> same/JJ () 3
-1 -> times/NNS () 6
-2 -> six/CD () 5
-1 -> ./. () 7
-
-He saw. He came. She sighed.
-
-0 -> saw/VBD (root) 2
-1 -> He/PRP () 1
-1 -> ;/: () 3
-1 -> came/VBD () 5
-2 -> He/PRP () 4
-1 -> ;/: () 6
-1 -> sighed/VBD () 8
-2 -> She/PRP () 7
-1 -> ./. () 9
-
-Today, "you" and "I" became "we".
-
-0 -> became/VBD (root) 10
-1 -> Today/NN () 1
-1 -> ,/, () 2
-1 -> ``/`` () 3
-1 -> you/PRP () 4
-1 -> ''/'' () 5
-1 -> and/CC () 6
-1 -> ``/`` () 7
-1 -> I/PRP () 8
-1 -> ''/'' () 9
-1 -> ``/`` () 11
-1 -> we/PRP () 12
-1 -> ''/'' () 13
-1 -> ./. () 14
 
 At night, windows turn into portraits.
 
@@ -3983,19 +2950,6 @@ The sheets still smell like her.
 2 -> like/IN () 5
 1 -> ./. () 7
 
-Godzilla endorses Uber: "Great food app!"
-
-0 -> endorses/VBZ (root) 2
-1 -> Godzilla/NNP () 1
-1 -> Uber/NNP () 3
-1 -> :/: () 4
-1 -> ``/`` () 5
-1 -> app/NN () 8
-2 -> Great/JJ () 6
-2 -> food/NN () 7
-1 -> !/. () 9
-1 -> ''/'' () 10
-
 Some names will always taste bitter.
 
 0 -> taste/VB (root) 5
@@ -4005,27 +2959,6 @@ Some names will always taste bitter.
 1 -> always/RB () 4
 1 -> bitter/JJ () 6
 1 -> ./. () 7
-
-The downvotes mean they read it…
-
-0 -> mean/VBP (root) 3
-1 -> downvotes/NNS () 2
-2 -> The/DT () 1
-1 -> read/VB () 5
-2 -> they/PRP () 4
-2 -> it/PRP () 6
-1 -> .../: () 7
-
-Murdered by transphobia. Misgendered in eulogy.
-
-0 -> Murdered/VBN (root) 1
-1 -> transphobia/NN () 3
-2 -> by/IN () 2
-1 -> ;/: () 4
-1 -> Misgendered/NNP () 5
-2 -> eulogy/NN () 7
-3 -> in/IN () 6
-1 -> ./. () 8
 
 I miss who I once was.
 
@@ -4068,21 +3001,6 @@ I still make coffee for two.
 2 -> for/IN () 5
 1 -> ./. () 7
 
-Womb. Bloom. Broom. Groom. Doom. Tomb.
-
-0 -> Womb/NN (root) 1
-1 -> ;/: () 2
-1 -> Bloom/NNP () 3
-2 -> ;/: () 4
-2 -> Broom/NNP () 5
-2 -> ;/: () 6
-2 -> Groom/NNP () 7
-2 -> ;/: () 8
-2 -> Doom/NN () 9
-2 -> ;/: () 10
-2 -> Tomb/NNP () 11
-1 -> ./. () 12
-
 Please exist. I need your help.
 
 0 -> exist/VB (root) 2
@@ -4092,27 +3010,6 @@ Please exist. I need your help.
 2 -> I/PRP () 4
 2 -> help/NN () 7
 3 -> your/PRP$ () 6
-1 -> ./. () 8
-
-Autocorrect causes cannibals legalized in Colorado.
-
-0 -> causes/VBZ (root) 2
-1 -> Autocorrect/NN () 1
-1 -> cannibals/NNS () 3
-2 -> legalized/VBN () 4
-3 -> Colorado/NNP () 6
-4 -> in/IN () 5
-1 -> ./. () 7
-
-Met Chris Hansen. Took a seat.
-
-0 -> Hansen/NNP (root) 3
-1 -> Met/NNP () 1
-1 -> Chris/NNP () 2
-1 -> ;/: () 4
-1 -> Took/VBD () 5
-2 -> seat/NN () 7
-3 -> a/DT () 6
 1 -> ./. () 8
 
 My Grandma has become a photograph.
@@ -4208,18 +3105,6 @@ Three placemats at the table now.
 1 -> now/RB () 6
 1 -> ./. () 7
 
-For sale. Fidget spinner, never spun.
-
-0 -> sale/NN (root) 2
-1 -> For/IN () 1
-1 -> ;/: () 3
-1 -> spinner/NN () 5
-2 -> Fidget/NNP () 4
-2 -> ,/, () 6
-2 -> spun/VBD () 8
-3 -> never/RB () 7
-1 -> ./. () 9
-
 Thought I could fly. Confidence dropping.
 
 0 -> Thought/NNP (root) 1
@@ -4230,21 +3115,6 @@ Thought I could fly. Confidence dropping.
 1 -> dropping/VBG () 7
 2 -> Confidence/NN () 6
 1 -> ./. () 8
-
-Womb. Bloom. Perfume. Groom. Doom. Tomb.
-
-0 -> Womb/NN (root) 1
-1 -> ;/: () 2
-1 -> Bloom/NNP () 3
-2 -> ;/: () 4
-2 -> Perfume/NNP () 5
-2 -> ;/: () 6
-2 -> Groom/NNP () 7
-2 -> ;/: () 8
-2 -> Doom/NN () 9
-2 -> ;/: () 10
-2 -> Tomb/NNP () 11
-1 -> ./. () 12
 
 Several unlucky people survived the apocalypse.
 
@@ -4312,20 +3182,6 @@ Every simulated universe has a God.
 4 -> pizza/NN () 10
 2 -> ./. () 11
 
-"When we grow up" became "if".
-
-0 -> became/VBD (root) 7
-1 -> ``/`` () 1
-1 -> grow/VBP () 4
-2 -> When/WRB () 2
-2 -> we/PRP () 3
-2 -> up/RP () 5
-1 -> ''/'' () 6
-1 -> ``/`` () 8
-1 -> ''/'' () 10
-2 -> if/IN () 9
-1 -> ./. () 11
-
 I think I love my wife.
 
 0 -> think/VBP (root) 2
@@ -4360,27 +3216,6 @@ Man defaces Picasso painting. Nobody notices.
 2 -> Nobody/NN () 6
 1 -> ./. () 8
 
-Hosted an elderly orgy. Nobody came.
-
-0 -> Hosted/VBN (root) 1
-1 -> orgy/NN () 4
-2 -> an/DT () 2
-2 -> elderly/JJ () 3
-1 -> ;/: () 5
-1 -> came/VBD () 7
-2 -> Nobody/NN () 6
-1 -> ./. () 8
-
-Her son stepped on every crack.
-
-0 -> stepped/VBD (root) 3
-1 -> son/NN () 2
-2 -> Her/PRP$ () 1
-1 -> crack/NN () 6
-2 -> on/IN () 4
-2 -> every/DT () 5
-1 -> ./. () 7
-
 I am sorry I outgrew you.
 
 0 -> sorry/JJ (root) 3
@@ -4391,10 +3226,10 @@ I am sorry I outgrew you.
 2 -> you/PRP () 6
 1 -> ./. () 7
 
-she would have been eight today.
+She would have been eight today.
 
 0 -> today/NN (root) 6
-1 -> she/PRP () 1
+1 -> She/PRP () 1
 1 -> would/MD () 2
 1 -> have/VB () 3
 1 -> been/VBN () 4
@@ -4420,17 +3255,6 @@ I live two days a week.
 2 -> week/NN () 6
 3 -> a/DT () 5
 1 -> ./. () 7
-
-Thanks for the brazzers membership, mom.
-
-0 -> Thanks/NNS (root) 1
-1 -> membership/NN () 5
-2 -> for/IN () 2
-2 -> the/DT () 3
-2 -> brazzers/NNS () 4
-2 -> ,/, () 6
-2 -> mom/NN () 7
-1 -> ./. () 8
 
 He calls another man "dad" now.
 
@@ -4465,22 +3289,6 @@ Drinking will not bring her back.
 2 -> her/PRP$ () 5
 1 -> ./. () 7
 
-"Ego", whispered Fear. "Give me reason."
-
-0 -> Ego/NN (root) 2
-1 -> ``/`` () 1
-1 -> ''/'' () 3
-1 -> ,/, () 4
-1 -> Fear/NN () 6
-2 -> whispered/VBD () 5
-1 -> ;/: () 7
-1 -> Give/VB () 9
-2 -> ``/`` () 8
-2 -> reason/NN () 11
-3 -> me/PRP () 10
-1 -> ./. () 12
-1 -> ''/'' () 13
-
 Insomniac bear spends entire winter gaming.
 
 0 -> spends/VBZ (root) 3
@@ -4490,18 +3298,6 @@ Insomniac bear spends entire winter gaming.
 2 -> entire/JJ () 4
 2 -> winter/NN () 5
 1 -> ./. () 7
-
-"Ebola free" mass celebrations trigger outbreak.
-
-0 -> ``/`` (root) 1
-1 -> trigger/VBP () 7
-2 -> celebrations/NNS () 6
-3 -> Ebola/NNP () 2
-3 -> free/JJ () 3
-3 -> ''/'' () 4
-3 -> mass/NN () 5
-2 -> outbreak/NN () 8
-2 -> ./. () 9
 
 I love the sex. Not you.
 
@@ -4536,16 +3332,6 @@ Dozed off young, woke up old.
 1 -> old/JJ () 7
 1 -> ./. () 8
 
-Free Wi-Fi at cemeteries proves popular.
-
-0 -> proves/VBZ (root) 5
-1 -> Wi-Fi/NNP () 2
-2 -> Free/NNP () 1
-2 -> cemeteries/NNS () 4
-3 -> at/IN () 3
-1 -> popular/JJ () 6
-1 -> ./. () 7
-
 I stood there and did nothing.
 
 0 -> stood/VBD (root) 2
@@ -4569,33 +3355,6 @@ I stood there and did nothing.
 2 -> ''/'' () 8
 1 -> God/NNP () 10
 1 -> ./. () 11
-
-"Well no shit, Sherlock," said Watson.
-
-0 -> said/VBD (root) 9
-1 -> ``/`` () 1
-1 -> Well/UH () 2
-1 -> shit/NN () 4
-2 -> no/DT () 3
-2 -> ,/, () 5
-2 -> Sherlock/NNP () 6
-2 -> ,/, () 7
-2 -> ''/'' () 8
-1 -> Watson/NNP () 10
-1 -> ./. () 11
-
-"Hello Elsa, I am Charles Xavier…"
-
-0 -> Xavier/NNP (root) 8
-1 -> ``/`` () 1
-1 -> Hello/UH () 2
-1 -> Elsa/NNP () 3
-1 -> ,/, () 4
-1 -> I/PRP () 5
-1 -> am/VBP () 6
-1 -> Charles/NNP () 7
-1 -> .../: () 9
-1 -> ''/'' () 10
 
 We discovered ourselves in each other.
 
@@ -4685,18 +3444,6 @@ Entry level. Experience required: five years.
 3 -> five/CD () 7
 1 -> ./. () 9
 
-Music playlist "gym" has zero plays.
-
-0 -> has/VBZ (root) 6
-1 -> gym/NN () 4
-2 -> Music/NN () 1
-2 -> playlist/NN () 2
-2 -> ``/`` () 3
-2 -> ''/'' () 5
-1 -> plays/NNS () 8
-2 -> zero/CD () 7
-1 -> ./. () 9
-
 "My wife, actually", she corrected him.
 
 0 -> corrected/VBD (root) 9
@@ -4722,10 +3469,10 @@ Ultimately, her suicide killed him too.
 1 -> too/RB () 7
 1 -> ./. () 8
 
-Time Travel exists. Well, it did.
+Time travel exists. Well, it did.
 
 0 -> exists/VBZ (root) 3
-1 -> Travel/NNP () 2
+1 -> travel/NN () 2
 2 -> Time/NNP () 1
 1 -> ;/: () 4
 1 -> did/VBD () 8
@@ -4742,16 +3489,6 @@ At last the hallucinations noticed me.
 2 -> last/JJ () 2
 2 -> the/DT () 3
 1 -> me/PRP () 6
-1 -> ./. () 7
-
-Your Pokemon save file is corrupted.
-
-0 -> corrupted/VBN (root) 6
-1 -> save/VBP () 3
-2 -> Pokemon/NNS () 2
-3 -> Your/PRP$ () 1
-2 -> file/NN () 4
-1 -> is/VBZ () 5
 1 -> ./. () 7
 
 Never asked. Still have the ring.
@@ -4824,16 +3561,6 @@ Got into heaven. Bored as hell.
 3 -> as/IN () 6
 1 -> ./. () 8
 
-Learned her pornstar name while honeymooning.
-
-0 -> Learned/VBN (root) 1
-1 -> name/NN () 4
-2 -> her/PRP$ () 2
-2 -> pornstar/JJ () 3
-1 -> honeymooning/VBG () 6
-2 -> while/IN () 5
-1 -> ./. () 7
-
 Their second chance lasted a lifetime.
 
 0 -> lasted/VBD (root) 4
@@ -4842,16 +3569,6 @@ Their second chance lasted a lifetime.
 2 -> second/JJ () 2
 1 -> lifetime/NN () 6
 2 -> a/DT () 5
-1 -> ./. () 7
-
-Hitler marveled at my enormous cock.
-
-0 -> marveled/VBD (root) 2
-1 -> Hitler/NNP () 1
-1 -> cock/NN () 6
-2 -> at/IN () 3
-2 -> my/PRP$ () 4
-2 -> enormous/JJ () 5
 1 -> ./. () 7
 
 "Well… because I could" said God.
@@ -4958,16 +3675,6 @@ My clone stared at me. "Impostor."
 1 -> ./. () 9
 1 -> ''/'' () 10
 
-My OS is now my SO.
-
-0 -> SO/NNP (root) 6
-1 -> OS/NN () 2
-2 -> My/PRP$ () 1
-1 -> is/VBZ () 3
-1 -> now/RB () 4
-1 -> my/PRP$ () 5
-1 -> ./. () 7
-
 He never called me "Dad" again.
 
 0 -> called/VBD (root) 3
@@ -4989,29 +3696,6 @@ Was that a person or pothole?
 3 -> or/CC () 5
 3 -> pothole/NN () 6
 3 -> ?/. () 7
-
-Just enough Valium to stop crying.
-
-0 -> Valium/NNP (root) 3
-1 -> enough/RB () 2
-2 -> Just/RB () 1
-1 -> stop/VB () 5
-2 -> to/TO () 4
-2 -> crying/VBG () 6
-1 -> ./. () 7
-
-"Airforce Two, new designation: Airforce One"
-
-0 -> ``/`` (root) 1
-1 -> Airforce/NNP () 2
-2 -> Two/CD () 3
-2 -> ,/, () 4
-2 -> designation/NN () 6
-3 -> new/JJ () 5
-2 -> :/: () 7
-2 -> One/CD () 9
-3 -> Airforce/NNP () 8
-2 -> ''/'' () 10
 
 Tan line on left ring finger.
 
@@ -5066,27 +3750,6 @@ Scars, our life stories in Braille.
 3 -> Braille/NNP () 7
 4 -> in/IN () 6
 3 -> ./. () 8
-
-I swiped left on my wife.
-
-0 -> swiped/VBD (root) 2
-1 -> I/PRP () 1
-1 -> left/VBN () 3
-2 -> wife/NN () 6
-3 -> on/IN () 4
-3 -> my/PRP$ () 5
-1 -> ./. () 7
-
-She learned my username. My throwaway.
-
-0 -> learned/VBD (root) 2
-1 -> She/PRP () 1
-1 -> username/NN () 4
-2 -> my/PRP$ () 3
-1 -> ;/: () 5
-1 -> throwaway/NN () 7
-2 -> My/PRP$ () 6
-1 -> ./. () 8
 
 He finally proposed. She confessed everything.
 
@@ -5145,18 +3808,18 @@ Degree, job, wife, kids. Happy now?
 3 -> In/IN () 7
 2 -> ''/'' () 9
 
-"I will love you forever" "K"
+"I will love you forever" "OK"
 
-0 -> ``/`` (root) 1
+0 -> OK/UH (root) 9
+1 -> ``/`` () 1
 1 -> love/VB () 4
 2 -> I/PRP () 2
 2 -> will/MD () 3
 2 -> you/PRP () 5
 2 -> forever/RB () 6
 2 -> ''/'' () 7
-2 -> K/NNP () 9
-3 -> ``/`` () 8
-3 -> ''/'' () 10
+1 -> ``/`` () 8
+1 -> ''/'' () 10
 
 My best friends are all memories.
 
@@ -5178,19 +3841,6 @@ Cried myself asleep. Screamed myself awake.
 2 -> myself/PRP () 6
 2 -> awake/RB () 7
 1 -> ./. () 8
-
-"Siri: How to tie a noose."
-
-0 -> ``/`` (root) 1
-1 -> Siri/NNP () 2
-2 -> :/: () 3
-2 -> tie/VB () 6
-3 -> How/WRB () 4
-3 -> to/TO () 5
-3 -> noose/NN () 8
-4 -> a/DT () 7
-2 -> ./. () 9
-2 -> ''/'' () 10
 
 Newborn cries along with single dad.
 
@@ -5272,29 +3922,6 @@ Dogs too can lose best friends.
 2 -> best/JJS () 5
 1 -> ./. () 7
 
-I often tell myself, "Cloning rocks!"
-
-0 -> tell/VBP (root) 3
-1 -> I/PRP () 1
-1 -> often/RB () 2
-1 -> myself/PRP () 4
-1 -> ,/, () 5
-1 -> ``/`` () 6
-1 -> rocks/NNS () 8
-2 -> Cloning/NN () 7
-1 -> !/. () 9
-1 -> ''/'' () 10
-
-Recognized the face on the milk.
-
-0 -> Recognized/VBN (root) 1
-1 -> face/NN () 3
-2 -> the/DT () 2
-2 -> milk/NN () 6
-3 -> on/IN () 4
-3 -> the/DT () 5
-1 -> ./. () 7
-
 So, this meant nothing to you?
 
 0 -> meant/VBD (root) 4
@@ -5305,18 +3932,6 @@ So, this meant nothing to you?
 1 -> you/PRP () 7
 2 -> to/TO () 6
 1 -> ?/. () 8
-
-For sale: Windows phone. Never used.
-
-0 -> sale/NN (root) 2
-1 -> For/IN () 1
-1 -> :/: () 3
-1 -> phone/NN () 5
-2 -> Windows/NNP () 4
-2 -> ;/: () 6
-2 -> used/VBN () 8
-3 -> Never/RB () 7
-1 -> ./. () 9
 
 She would have been born today.
 
@@ -5350,17 +3965,6 @@ Four chords. Same progression. Platinum album.
 2 -> album/NN () 8
 3 -> Platinum/NN () 7
 1 -> ./. () 9
-
-Breaking: Nestle hikes breathable air rates.
-
-0 -> Breaking/VBG (root) 1
-1 -> :/: () 2
-1 -> hikes/VBZ () 4
-2 -> Nestle/NNP () 3
-2 -> rates/NNS () 7
-3 -> breathable/JJ () 5
-3 -> air/NN () 6
-1 -> ./. () 8
 
 The faded sign reads, "Coming Soon!"
 
@@ -5398,16 +4002,6 @@ Married for love. Divorced, same reason.
 2 -> ,/, () 6
 2 -> same/JJ () 7
 1 -> ./. () 9
-
-This subreddit is like tiny twitter.
-
-0 -> twitter/NN (root) 6
-1 -> subreddit/NN () 2
-2 -> This/DT () 1
-1 -> is/VBZ () 3
-1 -> like/IN () 4
-1 -> tiny/JJ () 5
-1 -> ./. () 7
 
 Again, hunger overwhelmed guilt. He ate.
 
@@ -5553,9 +4147,9 @@ Dad, what was the future like?
 3 -> the/DT () 5
 1 -> ?/. () 8
 
-"Fuck you in particular," Said God.
+"Fuck you in particular," said God.
 
-0 -> Said/VBD (root) 8
+0 -> said/VBD (root) 8
 1 -> ``/`` () 1
 1 -> Fuck/VB () 2
 2 -> you/PRP () 3
@@ -5584,16 +4178,6 @@ I finally deleted her number today.
 1 -> number/NN () 5
 2 -> her/PRP$ () 4
 1 -> today/NN () 6
-1 -> ./. () 7
-
-Cheerfully late for OCD support group.
-
-0 -> late/RB (root) 2
-1 -> Cheerfully/RB () 1
-1 -> group/NN () 6
-2 -> for/IN () 3
-2 -> OCD/NN () 4
-2 -> support/NN () 5
 1 -> ./. () 7
 
 Brother hid. I distracted Father. Always.
@@ -5708,17 +4292,6 @@ Changed my mind, after I jumped.
 1 -> jumped/VBD () 7
 2 -> after/IN () 5
 2 -> I/PRP () 6
-1 -> ./. () 8
-
-Shooting spree. Internet unimpressed with killcount.
-
-0 -> spree/NN (root) 2
-1 -> Shooting/NN () 1
-1 -> ;/: () 3
-1 -> unimpressed/JJ () 5
-2 -> Internet/NNP () 4
-2 -> killcount/NN () 7
-3 -> with/IN () 6
 1 -> ./. () 8
 
 "Do food stamps buy dog treats?"
@@ -5861,19 +4434,6 @@ Tomorrow will be better, I promise.
 1 -> I/PRP () 6
 1 -> ./. () 8
 
-For sale: glass ceiling. Dented. Unbroken.
-
-0 -> sale/NN (root) 2
-1 -> For/IN () 1
-1 -> :/: () 3
-1 -> ceiling/NN () 5
-2 -> glass/NN () 4
-2 -> ;/: () 6
-2 -> Dented/VBN () 7
-3 -> ;/: () 8
-3 -> Unbroken/NNP () 9
-1 -> ./. () 10
-
 United Kingdom is the latest oxymoron.
 
 0 -> oxymoron/NN (root) 6
@@ -5927,14 +4487,14 @@ Dreamed I died. Never woke up.
 2 -> up/RP () 7
 1 -> ./. () 8
 
-Found nearest habitable planet. Nuclear Wasteland.
+Found nearest habitable planet. Nuclear wasteland.
 
 0 -> planet/NN (root) 4
 1 -> Found/JJ () 1
 1 -> nearest/JJS () 2
 1 -> habitable/JJ () 3
 1 -> ;/: () 5
-1 -> Wasteland/NN () 7
+1 -> wasteland/NN () 7
 2 -> Nuclear/JJ () 6
 1 -> ./. () 8
 
@@ -5948,20 +4508,6 @@ Brought roses. She brought her friend.
 2 -> friend/NN () 7
 3 -> her/PRP$ () 6
 1 -> ./. () 8
-
-German tragedy: "look mom, no Hans."
-
-0 -> tragedy/NN (root) 2
-1 -> German/JJ () 1
-1 -> :/: () 3
-1 -> look/VB () 5
-2 -> ``/`` () 4
-2 -> mom/NN () 6
-2 -> ,/, () 7
-2 -> Hans/NNP () 9
-3 -> no/DT () 8
-1 -> ./. () 10
-1 -> ''/'' () 11
 
 Am I that hard to love?
 
@@ -6071,17 +4617,6 @@ I loved my son. Now daughter.
 2 -> Now/RB () 6
 1 -> ./. () 8
 
-Packed my patience. United lost it.
-
-0 -> Packed/VBN (root) 1
-1 -> patience/NN () 3
-2 -> my/PRP$ () 2
-1 -> ;/: () 4
-1 -> lost/VBD () 6
-2 -> United/NNP () 5
-2 -> it/PRP () 7
-1 -> ./. () 8
-
 I forgot to remember him today.
 
 0 -> forgot/VBD (root) 2
@@ -6102,16 +4637,6 @@ Opened incognito mode. Found my daughter.
 2 -> daughter/NN () 7
 3 -> my/PRP$ () 6
 1 -> ./. () 8
-
-Compulsively counting words in this sub.
-
-0 -> counting/VBG (root) 2
-1 -> Compulsively/RB () 1
-1 -> words/NNS () 3
-1 -> sub/NN () 6
-2 -> in/IN () 4
-2 -> this/DT () 5
-1 -> ./. () 7
 
 Girl of my dreams. Woke up.
 
@@ -6717,18 +5242,6 @@ True friends make your world beautiful.
 3 -> your/PRP$ () 4
 1 -> ./. () 7
 
-Failed exam. Attempted suicide. Failed again.
-
-0 -> exam/NN (root) 2
-1 -> Failed/VBN () 1
-1 -> ;/: () 3
-1 -> suicide/NN () 5
-2 -> Attempted/VBN () 4
-1 -> ;/: () 6
-1 -> Failed/VBD () 7
-2 -> again/RB () 8
-1 -> ./. () 9
-
 Healthy soil leads to healthy civilization.
 
 0 -> leads/VBZ (root) 3
@@ -7053,16 +5566,6 @@ You too can make a difference.
 1 -> can/MD () 3
 1 -> difference/NN () 6
 2 -> a/DT () 5
-1 -> ./. () 7
-
-Love is a four legged word.
-
-0 -> word/NN (root) 6
-1 -> Love/NN () 1
-1 -> is/VBZ () 2
-1 -> a/DT () 3
-1 -> four/CD () 4
-1 -> legged/VBD () 5
 1 -> ./. () 7
 
 Just do it. Whispered the heart.
@@ -7491,16 +5994,6 @@ Your thoughts will shape your character.
 2 -> your/PRP$ () 5
 1 -> ./. () 7
 
-Self confidence is the best cosmetic.
-
-0 -> cosmetic/NN (root) 6
-1 -> confidence/NN () 2
-2 -> Self/NN () 1
-1 -> is/VBZ () 3
-1 -> the/DT () 4
-1 -> best/JJS () 5
-1 -> ./. () 7
-
 Worrying will never change the outcome.
 
 0 -> change/VB (root) 4
@@ -7854,16 +6347,6 @@ Reading is dreaming with open eyes.
 2 -> open/JJ () 5
 1 -> ./. () 7
 
-Innocence sees no race or colour.
-
-0 -> sees/VBZ (root) 2
-1 -> Innocence/NN () 1
-1 -> race/NN () 4
-2 -> no/DT () 3
-2 -> or/CC () 5
-2 -> colour/NN () 6
-1 -> ./. () 7
-
 Positive things happen to positive people.
 
 0 -> happen/VB (root) 3
@@ -7968,17 +6451,6 @@ Be you. The world will adjust.
 3 -> world/NN () 5
 4 -> The/DT () 4
 3 -> will/MD () 6
-1 -> ./. () 8
-
-For greed, all nature is little.
-
-0 -> little/JJ (root) 7
-1 -> greed/NN () 2
-2 -> For/IN () 1
-1 -> ,/, () 3
-1 -> nature/NN () 5
-2 -> all/DT () 4
-1 -> is/VBZ () 6
 1 -> ./. () 8
 
 Together we make a blessed family.
@@ -8276,17 +6748,6 @@ Take a small step every day.
 2 -> every/DT () 5
 1 -> ./. () 7
 
-Remember, hard times reveal true friends.
-
-0 -> reveal/VBP (root) 5
-1 -> Remember/VB () 1
-1 -> ,/, () 2
-1 -> times/NNS () 4
-2 -> hard/JJ () 3
-1 -> friends/NNS () 7
-2 -> true/JJ () 6
-1 -> ./. () 8
-
 We must not let terrorism triumph.
 
 0 -> let/VB (root) 4
@@ -8306,19 +6767,6 @@ I believe in redefining my impossible.
 2 -> impossible/JJ () 6
 3 -> my/PRP$ () 5
 1 -> ./. () 7
-
-FRIDAY. My second favourite "F" word.
-
-0 -> FRIDAY/NN (root) 1
-1 -> ;/: () 2
-1 -> word/NN () 9
-2 -> My/PRP$ () 3
-2 -> second/JJ () 4
-2 -> favourite/JJ () 5
-2 -> ``/`` () 6
-2 -> F/NN () 7
-2 -> ''/'' () 8
-1 -> ./. () 10
 
 Every artist was first an amateur.
 
@@ -8456,16 +6904,6 @@ Peace is a battle worth waging.
 2 -> waging/VBG () 6
 1 -> ./. () 7
 
-Better the foot-slip than the tongue.
-
-0 -> foot-slip/NN (root) 3
-1 -> Better/RBR () 1
-1 -> the/DT () 2
-1 -> tongue/NN () 6
-2 -> than/IN () 4
-2 -> the/DT () 5
-1 -> ./. () 7
-
 A thousand wrinkles. A thousand stories.
 
 0 -> wrinkles/NNS (root) 3
@@ -8508,17 +6946,6 @@ True profound happiness lies beyond sadness.
 1 -> sadness/NN () 6
 2 -> beyond/IN () 5
 1 -> ./. () 7
-
-Drove through parkway, parked in driveway.
-
-0 -> Drove/VB (root) 1
-1 -> parkway/NN () 3
-2 -> through/IN () 2
-1 -> ,/, () 4
-1 -> parked/VBN () 5
-2 -> driveway/NN () 7
-3 -> in/IN () 6
-1 -> ./. () 8
 
 Why walk when you can dance.
 
@@ -8896,16 +7323,6 @@ Easy reading is damn hard writing.
 2 -> damn/RB () 4
 1 -> ./. () 7
 
-Women are real architects of society.
-
-0 -> architects/NNS (root) 4
-1 -> Women/NNS () 1
-1 -> are/VBP () 2
-1 -> real/JJ () 3
-1 -> society/NN () 6
-2 -> of/IN () 5
-1 -> ./. () 7
-
 Focus on solutions, not on problems.
 
 0 -> Focus/NN (root) 1
@@ -9109,16 +7526,6 @@ Positive attitude leads to positive outcomes.
 1 -> outcomes/NNS () 6
 2 -> to/TO () 4
 2 -> positive/JJ () 5
-1 -> ./. () 7
-
-There were only six words left.
-
-0 -> were/VBD (root) 2
-1 -> There/EX () 1
-1 -> left/VBD () 6
-2 -> words/NNS () 5
-3 -> six/CD () 4
-4 -> only/RB () 3
 1 -> ./. () 7
 
 Beauty shines even through your flaws.
@@ -9557,16 +7964,6 @@ Only love can save the world.
 2 -> the/DT () 5
 1 -> ./. () 7
 
-Right delayed is a right denied.
-
-0 -> delayed/VBN (root) 2
-1 -> Right/RB () 1
-1 -> is/VBZ () 3
-1 -> right/JJ () 5
-2 -> a/DT () 4
-2 -> denied/VBN () 6
-1 -> ./. () 7
-
 Quiet the mind, soul will speak.
 
 0 -> speak/VB (root) 7
@@ -9716,17 +8113,6 @@ Hard times will reveal true friends.
 1 -> friends/NNS () 6
 2 -> true/JJ () 5
 1 -> ./. () 7
-
-Sometimes, change is what we need.
-
-0 -> is/VBZ (root) 4
-1 -> Sometimes/RB () 1
-1 -> ,/, () 2
-1 -> change/NN () 3
-1 -> need/VBP () 7
-2 -> what/WP () 5
-2 -> we/PRP () 6
-1 -> ./. () 8
 
 Sometimes you need to let go.
 
@@ -10695,28 +9081,6 @@ Fear is temporary. Regret is forever.
 1 -> forever/RB () 7
 2 -> Regret/NNP () 5
 2 -> is/VBZ () 6
-1 -> ./. () 8
-
-Quiet the mind. Soul will speak.
-
-0 -> mind/NN (root) 3
-1 -> Quiet/JJ () 1
-1 -> the/DT () 2
-1 -> ;/: () 4
-1 -> speak/VB () 7
-2 -> Soul/NNP () 5
-2 -> will/MD () 6
-1 -> ./. () 8
-
-Fall seven times. Stand up eight.
-
-0 -> Fall/NN (root) 1
-1 -> times/NNS () 3
-2 -> seven/CD () 2
-1 -> ;/: () 4
-1 -> Stand/VB () 5
-2 -> up/RP () 6
-2 -> eight/CD () 7
 1 -> ./. () 8
 
 You must improvise, adapt and overcome.
@@ -11873,16 +10237,6 @@ We become the books we read.
 3 -> we/PRP () 5
 1 -> ./. () 7
 
-A right delayed is right denied.
-
-0 -> denied/VBN (root) 6
-1 -> A/DT () 1
-2 -> delayed/VBN () 3
-3 -> right/JJ () 2
-1 -> is/VBZ () 4
-1 -> right/JJ () 5
-1 -> ./. () 7
-
 Strong words always outlast the paper.
 
 0 -> outlast/VBP (root) 4
@@ -12517,29 +10871,6 @@ Bravely, Zack refused the passed joint.
 2 -> passed/VBN () 6
 1 -> ./. () 8
 
-World creates man. Man creates pizzaburger.
-
-0 -> creates/VBZ (root) 2
-1 -> World/NNP () 1
-1 -> man/NN () 3
-1 -> ;/: () 4
-1 -> creates/VBZ () 6
-2 -> Man/NN () 5
-2 -> pizzaburger/NN () 7
-1 -> ./. () 8
-
-Bear Cubs. Billy Clubs. Arm Stubs.
-
-0 -> Cubs/NNP (root) 2
-1 -> Bear/NNP () 1
-1 -> ;/: () 3
-1 -> Clubs/NNP () 5
-2 -> Billy/NNP () 4
-1 -> ;/: () 6
-1 -> Stubs/NNS () 8
-2 -> Arm/NN () 7
-1 -> ./. () 9
-
 Break-up email. Pregnancy positive. Delete message.
 
 0 -> email/NN (root) 2
@@ -12585,16 +10916,6 @@ Princess found. Red mushroom sales down.
 2 -> mushroom/NN () 5
 2 -> down/RB () 7
 1 -> ./. () 8
-
-Over-budget temple contractor shortens his chortens.
-
-0 -> shortens/VBZ (root) 4
-1 -> contractor/NN () 3
-2 -> Over-budget/JJ () 1
-2 -> temple/NN () 2
-1 -> chortens/NNS () 6
-2 -> his/PRP$ () 5
-1 -> ./. () 7
 
 Columbus tumbles off world. King refunded.
 
@@ -12686,19 +11007,6 @@ Relationship expires; leaves a bitter aftertaste.
 3 -> a/DT () 5
 3 -> bitter/JJ () 6
 1 -> ./. () 8
-
-Home run. Catch. eBay auction. Rich!
-
-0 -> run/NN (root) 2
-1 -> Home/NNP () 1
-1 -> ;/: () 3
-1 -> auction/NN () 7
-2 -> Catch/NNP () 4
-2 -> ;/: () 5
-2 -> eBay/NNP () 6
-2 -> ;/: () 8
-2 -> Rich/NNP () 9
-3 -> !/. () 10
 
 Lost in wilderness, he found himself.
 
@@ -12818,7 +11126,7 @@ Too proud. Did operation himself. Dead.
 1 -> Dead/NNP () 8
 1 -> ./. () 9
 
-Secretary broke leg; rediscovering plumpy wife.
+Secretary broke leg; rediscovering plump wife.
 
 0 -> broke/VBD (root) 2
 1 -> Secretary/NNP () 1
@@ -12826,7 +11134,7 @@ Secretary broke leg; rediscovering plumpy wife.
 1 -> ;/: () 4
 1 -> rediscovering/VBG () 5
 2 -> wife/NN () 7
-3 -> plumpy/JJ () 6
+3 -> plump/JJ () 6
 1 -> ./. () 8
 
 Special Olympics batting tee throws no-hitter.
@@ -12999,18 +11307,6 @@ Ran behind a car. Got Exhausted.
 2 -> Got/NNP () 6
 1 -> ./. () 8
 
-Paris Hilton. Mulcher fed. Applause earned.
-
-0 -> Hilton/NNP (root) 2
-1 -> Paris/NNP () 1
-1 -> ;/: () 3
-1 -> fed/NN () 5
-2 -> Mulcher/NNP () 4
-2 -> ;/: () 6
-2 -> Applause/NN () 7
-3 -> earned/VBN () 8
-1 -> ./. () 9
-
 Children find Candy Land. Dentists rejoice.
 
 0 -> find/VBP (root) 2
@@ -13033,20 +11329,6 @@ Great sex. Broken heart. Worth it?
 1 -> it/PRP () 8
 2 -> Worth/NNP () 7
 1 -> ?/. () 9
-
-"Poignant," in Southern drawl. Movie ruined.
-
-0 -> ruined/VBN (root) 10
-1 -> ``/`` () 1
-1 -> Poignant/JJ () 2
-1 -> ,/, () 3
-1 -> ''/'' () 4
-1 -> drawl/NN () 7
-2 -> in/IN () 5
-2 -> Southern/NNP () 6
-1 -> ;/: () 8
-1 -> Movie/NN () 9
-1 -> ./. () 11
 
 Saturday night. Music, food, wine… alone.
 
@@ -13137,16 +11419,6 @@ Dark eyes dart. Blonde boy blushes.
 2 -> boy/NN () 6
 1 -> ./. () 8
 
-From ugly duckling to beautiful cassoulet.
-
-0 -> duckling/NN (root) 3
-1 -> From/IN () 1
-1 -> ugly/JJ () 2
-1 -> cassoulet/NN () 6
-2 -> to/TO () 4
-2 -> beautiful/JJ () 5
-1 -> ./. () 7
-
 For sale: indoor trapeze, cemetery plots.
 
 0 -> sale/NN (root) 2
@@ -13194,17 +11466,6 @@ War over. Back home. Nightmares begin.
 1 -> begin/VBP () 8
 2 -> Nightmares/NNS () 7
 1 -> ./. () 9
-
-Won the World. Lost the Girl.
-
-0 -> World/NNP (root) 3
-1 -> Won/NNP () 1
-1 -> the/DT () 2
-1 -> ;/: () 4
-1 -> Lost/VBD () 5
-2 -> Girl/NNP () 7
-3 -> the/DT () 6
-1 -> ./. () 8
 
 Shit. Time travel is one way.
 
@@ -13346,19 +11607,6 @@ Wrote note. Took pills. Now…wait.
 2 -> .../: () 8
 1 -> ./. () 10
 
-Fiat lux … Fiat nox … Fiat … Crap!
-
-0 -> lux/NN (root) 2
-1 -> Fiat/NNP () 1
-1 -> .../: () 3
-1 -> nox/NN () 5
-2 -> Fiat/NNP () 4
-1 -> .../: () 6
-1 -> Crap/NNP () 9
-2 -> Fiat/NNP () 7
-2 -> .../: () 8
-1 -> !/. () 10
-
 Woman eats horse. Dies of course.
 
 0 -> eats/VBZ (root) 2
@@ -13395,29 +11643,6 @@ High Class. Stocks Crash. Spare Change?
 2 -> Change/NNP () 8
 3 -> Spare/NNP () 7
 1 -> ?/. () 9
-
-Things rolled: My Rs, her eyes.
-
-0 -> rolled/VBD (root) 2
-1 -> Things/NNS () 1
-1 -> :/: () 3
-1 -> Rs/NN () 5
-2 -> My/PRP$ () 4
-2 -> ,/, () 6
-2 -> eyes/NNS () 8
-3 -> her/PRP$ () 7
-1 -> ./. () 9
-
-Super cheap guitar; no strings attached!
-
-0 -> guitar/NN (root) 3
-1 -> Super/NNP () 1
-1 -> cheap/JJ () 2
-1 -> ;/: () 4
-1 -> strings/NNS () 6
-2 -> no/DT () 5
-2 -> attached/VBN () 7
-1 -> !/. () 8
 
 Fakeout on the interstate equals disaster.
 
@@ -13630,17 +11855,6 @@ Hole in heart. Inevitable surgically postponed.
 2 -> surgically/RB () 6
 1 -> ./. () 8
 
-Determinist drowned in meritocracy. Poor choice.
-
-0 -> drowned/VBD (root) 2
-1 -> Determinist/NNP () 1
-1 -> meritocracy/NN () 4
-2 -> in/IN () 3
-1 -> ;/: () 5
-1 -> choice/NN () 7
-2 -> Poor/NNP () 6
-2 -> ./. () 8
-
 Boy met girl. Girl met bus.
 
 0 -> met/VBD (root) 2
@@ -13704,17 +11918,6 @@ Once again, I kicked the habit.
 1 -> I/PRP () 4
 1 -> habit/NN () 7
 2 -> the/DT () 6
-1 -> ./. () 8
-
-Ex seeing another man. RIP denial.
-
-0 -> Ex/FW (root) 1
-1 -> seeing/VBG () 2
-2 -> man/NN () 4
-3 -> another/DT () 3
-1 -> ;/: () 5
-1 -> denial/NN () 7
-2 -> RIP/NN () 6
 1 -> ./. () 8
 
 Cry myself a river. Add toaster.
@@ -13794,19 +11997,6 @@ We had everything, except for chemistry.
 2 -> except/IN () 5
 3 -> for/IN () 6
 1 -> ./. () 8
-
-"Arbeit macht frei," read the Jew.
-
-0 -> read/VBD (root) 7
-1 -> ``/`` () 1
-1 -> frei/NNP () 4
-2 -> Arbeit/NNP () 2
-2 -> macht/NNP () 3
-1 -> ,/, () 5
-1 -> ''/'' () 6
-1 -> Jew/NN () 9
-2 -> the/DT () 8
-1 -> ./. () 10
 
 Apathetic prophet makes a pathetic profit.
 
@@ -13993,13 +12183,13 @@ Class reunion. Not invited, no class.
 3 -> no/DT () 7
 1 -> ./. () 9
 
-Personality found in bottle of Jager.
+Personality found in bottle of whiskey.
 
 0 -> found/VBD (root) 2
 1 -> Personality/NN () 1
 1 -> bottle/NN () 4
 2 -> in/IN () 3
-2 -> Jager/NNP () 6
+2 -> whiskey/NN () 6
 3 -> of/IN () 5
 1 -> ./. () 7
 
@@ -14035,17 +12225,6 @@ Mom snorted our child support money.
 2 -> child/NN () 4
 2 -> support/NN () 5
 1 -> ./. () 7
-
-Stuck in tiny ball, Charmander plotted.
-
-0 -> plotted/VBD (root) 7
-1 -> Stuck/NNP () 1
-2 -> ball/NN () 4
-3 -> in/IN () 2
-3 -> tiny/JJ () 3
-1 -> ,/, () 5
-1 -> Charmander/NNP () 6
-1 -> ./. () 8
 
 Breaking news: World peace. Humans extinct.
 
@@ -14139,17 +12318,6 @@ Eat nothing. Look thin. Feel fat.
 2 -> Feel/NNP () 7
 1 -> ./. () 9
 
-Jailed for rape. Gets raped there.
-
-0 -> Jailed/VBN (root) 1
-1 -> rape/NN () 3
-2 -> for/IN () 2
-1 -> ;/: () 4
-1 -> raped/VBN () 6
-2 -> Gets/VBZ () 5
-2 -> there/RB () 7
-1 -> ./. () 8
-
 Homecoming queen spreads legs for votes.
 
 0 -> Homecoming/VBG (root) 1
@@ -14159,19 +12327,6 @@ Homecoming queen spreads legs for votes.
 1 -> votes/NNS () 6
 2 -> for/IN () 5
 1 -> ./. () 7
-
-Control C. Control V. Resume. Job?
-
-0 -> C/NN (root) 2
-1 -> Control/NN () 1
-1 -> ;/: () 3
-1 -> V/NNP () 5
-2 -> Control/NNP () 4
-1 -> ;/: () 6
-1 -> Resume/VB () 7
-2 -> ;/: () 8
-2 -> Job/NNP () 9
-1 -> ?/. () 10
 
 Window shattered. Intruder shot. Keys found.
 
@@ -14253,14 +12408,14 @@ Spotted the tiger. Died on spot.
 3 -> on/IN () 6
 1 -> ./. () 8
 
-First love found again, in obits.
+First love found again, in obituary.
 
 0 -> found/VBD (root) 3
 1 -> love/NN () 2
 2 -> First/JJ () 1
 1 -> again/RB () 4
 1 -> ,/, () 5
-1 -> obits/NNS () 7
+1 -> obituary/NN () 7
 2 -> in/IN () 6
 1 -> ./. () 8
 
@@ -14322,7 +12477,7 @@ Rule the night. Rue the morning.
 2 -> the/DT () 6
 1 -> ./. () 8
 
-The gun fired. I fell…Black.
+The gun fired. I fell… Black.
 
 0 -> fired/VBD (root) 3
 1 -> gun/NN () 2
@@ -14452,29 +12607,6 @@ Rover fetched. The children ran, terrorized.
 2 -> terrorized/VBN () 8
 1 -> ./. () 9
 
-Obscenities on whiteboard. In Sharpie. Shit.
-
-0 -> Obscenities/NNS (root) 1
-1 -> whiteboard/NN () 3
-2 -> on/IN () 2
-1 -> ;/: () 4
-1 -> Sharpie/NN () 6
-2 -> In/IN () 5
-2 -> ;/: () 7
-2 -> Shit/NNP () 8
-1 -> ./. () 9
-
-Left handed woman seeks Mr. Right.
-
-0 -> seeks/VBZ (root) 4
-1 -> woman/NN () 3
-2 -> Left/VBN () 1
-2 -> handed/NN () 2
-1 -> Mr/NN () 5
-1 -> ;/: () 6
-1 -> Right/RB () 7
-1 -> ./. () 8
-
 Seven year relationship. Two month marriage.
 
 0 -> relationship/NN (root) 3
@@ -14496,17 +12628,6 @@ Harmony and Happiness lost to Money.
 2 -> to/TO () 5
 1 -> ./. () 7
 
-Random House offices relocate… but where?
-
-0 -> relocate/VBP (root) 4
-1 -> offices/NNS () 3
-2 -> Random/NNP () 1
-2 -> House/NNP () 2
-1 -> .../: () 5
-1 -> but/CC () 6
-1 -> where/WRB () 7
-2 -> ?/. () 8
-
 Monster under bed just wants friends.
 
 0 -> wants/VBZ (root) 5
@@ -14527,19 +12648,6 @@ Youth taunts timid pensioner. Loses inheritance.
 1 -> Loses/VBZ () 6
 2 -> inheritance/NN () 7
 1 -> ./. () 8
-
-Stretchered out: arsonist. Accelerant: too effective.
-
-0 -> Stretchered/VBN (root) 1
-1 -> out/RP () 2
-1 -> :/: () 3
-1 -> arsonist/NN () 4
-2 -> ;/: () 5
-2 -> Accelerant/NNP () 6
-3 -> :/: () 7
-3 -> effective/JJ () 9
-4 -> too/RB () 8
-1 -> ./. () 10
 
 Relaxing in my closed casket. Finally.
 
@@ -14721,18 +12829,6 @@ Millions gathered protesting death. God laughed.
 2 -> God/NNP () 6
 1 -> ./. () 8
 
-"Pray the burping ATM stays sick!"
-
-0 -> Pray/VB (root) 2
-1 -> ``/`` () 1
-1 -> stays/VBZ () 6
-2 -> ATM/NNP () 5
-3 -> the/DT () 3
-3 -> burping/VBG () 4
-2 -> sick/JJ () 7
-1 -> !/. () 8
-1 -> ''/'' () 9
-
 Sleeping with her. Dreaming of you.
 
 0 -> Sleeping/VBG (root) 1
@@ -14861,16 +12957,6 @@ Publisher yawned. Book still a dream.
 3 -> a/DT () 6
 1 -> ./. () 8
 
-Flea flew from Fifi for Fido.
-
-0 -> flew/VBD (root) 2
-1 -> Flea/NN () 1
-1 -> Fifi/NNP () 4
-2 -> from/IN () 3
-2 -> Fido/NNP () 6
-3 -> for/IN () 5
-1 -> ./. () 7
-
 "Oops" he exclaimed. Brain surgeon sued.
 
 0 -> exclaimed/VBD (root) 5
@@ -14919,18 +13005,6 @@ Litigious invading aliens had patented fire.
 1 -> had/VBD () 4
 1 -> fire/NN () 6
 1 -> ./. () 7
-
-Peltzman effect: Bought ABS, crashed nevertheless.
-
-0 -> effect/NN (root) 2
-1 -> Peltzman/NNP () 1
-1 -> :/: () 3
-1 -> ABS/NN () 5
-2 -> Bought/JJ () 4
-2 -> ,/, () 6
-2 -> crashed/VBD () 7
-3 -> nevertheless/RB () 8
-1 -> ./. () 9
 
 Nomad meets Gypsy. They both settle.
 
@@ -14998,16 +13072,6 @@ God pressed delete. New Big Bang.
 2 -> New/NNP () 5
 2 -> Big/NNP () 6
 1 -> ./. () 8
-
-Nurse boner gives faulty BP reading.
-
-0 -> gives/VBZ (root) 3
-1 -> boner/NN () 2
-2 -> Nurse/NN () 1
-1 -> reading/NN () 6
-2 -> faulty/JJ () 4
-2 -> BP/NN () 5
-1 -> ./. () 7
 
 Two lovers. One parachute. No survivors.
 
@@ -15121,16 +13185,6 @@ Doctor gave me twenty-four hours. Yesterday.
 1 -> Yesterday/NN () 7
 1 -> ./. () 8
 
-Woke up in front of TRAIN.
-
-0 -> Woke/VBD (root) 1
-1 -> up/RP () 2
-1 -> TRAIN/NN () 6
-2 -> in/IN () 3
-3 -> front/NN () 4
-3 -> of/IN () 5
-1 -> ./. () 7
-
 Scuffed knees, runny nose, unconditional laundry.
 
 0 -> knees/NNS (root) 2
@@ -15142,21 +13196,6 @@ Scuffed knees, runny nose, unconditional laundry.
 1 -> laundry/NN () 8
 2 -> unconditional/JJ () 7
 1 -> ./. () 9
-
-Painfully, he changed "is" to "was."
-
-0 -> changed/VBD (root) 4
-1 -> Painfully/RB () 1
-1 -> ,/, () 2
-1 -> he/PRP () 3
-1 -> ``/`` () 5
-1 -> was/VBD () 10
-2 -> is/VBZ () 6
-2 -> ''/'' () 7
-2 -> to/TO () 8
-2 -> ``/`` () 9
-1 -> ./. () 11
-1 -> ''/'' () 12
 
 She loved again. I never did.
 
@@ -15180,18 +13219,6 @@ Born a twin; Graduated only child.
 3 -> only/RB () 6
 1 -> ./. () 8
 
-New stylist. New Cut. New hat.
-
-0 -> stylist/NN (root) 2
-1 -> New/NNP () 1
-1 -> ;/: () 3
-1 -> Cut/NNP () 5
-2 -> New/NNP () 4
-1 -> ;/: () 6
-1 -> hat/NN () 8
-2 -> New/NNP () 7
-1 -> ./. () 9
-
 Fungus from a log. Visions, Journeys.
 
 0 -> Fungus/NN (root) 1
@@ -15213,17 +13240,6 @@ Legless veteran begs wearing his medals.
 2 -> medals/NNS () 6
 3 -> his/PRP$ () 5
 1 -> ./. () 7
-
-Country song on shuffle. Button Broken.
-
-0 -> song/NN (root) 2
-1 -> Country/NN () 1
-1 -> shuffle/NN () 4
-2 -> on/IN () 3
-1 -> ;/: () 5
-1 -> Broken/NNP () 7
-2 -> Button/NNP () 6
-1 -> ./. () 8
 
 Three blind mice. One happy cat.
 
@@ -15282,21 +13298,6 @@ Grew up. Forgot how to fly.
 2 -> how/WRB () 5
 2 -> to/TO () 6
 1 -> ./. () 8
-
-Famine. Fight. Feast. Fuck. Famine… Forever.
-
-0 -> Famine/NN (root) 1
-1 -> ;/: () 2
-1 -> Fight/NN () 3
-1 -> ;/: () 4
-1 -> Feast/NNP () 5
-1 -> ;/: () 6
-1 -> Fuck/NNP () 7
-1 -> ;/: () 8
-1 -> Famine/NN () 9
-2 -> .../: () 10
-2 -> Forever/RB () 11
-1 -> ./. () 12
 
 Cannibal cook ruins dinner. Now dinner.
 
@@ -15635,17 +13636,6 @@ Misleadingly deep puddle. Curious child missing.
 2 -> missing/VBG () 7
 1 -> ./. () 8
 
-Used vice-grip; now in hot water.
-
-0 -> vice-grip/NN (root) 2
-1 -> Used/VBN () 1
-1 -> ;/: () 3
-1 -> water/NN () 7
-2 -> now/RB () 4
-2 -> in/IN () 5
-2 -> hot/JJ () 6
-1 -> ./. () 8
-
 Narcissist falls for clone. True Love.
 
 0 -> falls/VBZ (root) 2
@@ -15783,18 +13773,6 @@ Scientists just broke up; no chemistry.
 2 -> no/DT () 6
 1 -> ./. () 8
 
-Pregnant wife rolls snake-eyes. Why, Vegas?
-
-0 -> snake-eyes/NNS (root) 4
-1 -> Pregnant/JJ () 1
-1 -> wife/NN () 2
-1 -> rolls/NNS () 3
-1 -> ;/: () 5
-1 -> Vegas/NNP () 8
-2 -> Why/WRB () 6
-2 -> ,/, () 7
-1 -> ?/. () 9
-
 Drank pesticide, killed butterflies in stomach.
 
 0 -> killed/VBD (root) 4
@@ -15887,28 +13865,6 @@ Obituary column writer dies. Nobody notices.
 2 -> Nobody/NN () 6
 1 -> ./. () 8
 
-Pyrophobe blows out candle. Also nyctophobic.
-
-0 -> blows/NNS (root) 2
-1 -> Pyrophobe/NN () 1
-1 -> candle/NN () 4
-2 -> out/IN () 3
-1 -> ;/: () 5
-1 -> nyctophobic/JJ () 7
-2 -> Also/RB () 6
-1 -> ./. () 8
-
-Smoking my very last cigarette. Again.
-
-0 -> Smoking/VBG (root) 1
-1 -> cigarette/NN () 5
-2 -> my/PRP$ () 2
-2 -> last/JJ () 4
-3 -> very/RB () 3
-1 -> ;/: () 6
-1 -> Again/RB () 7
-1 -> ./. () 8
-
 Hang-up call. Husband nervous. Mistress sighs.
 
 0 -> call/NN (root) 2
@@ -15920,16 +13876,6 @@ Hang-up call. Husband nervous. Mistress sighs.
 1 -> sighs/VBZ () 8
 2 -> Mistress/NNP () 7
 1 -> ./. () 9
-
-Single shy zombie seeks terminal necrophiliac.
-
-0 -> seeks/VBZ (root) 4
-1 -> zombie/NN () 3
-2 -> Single/JJ () 1
-2 -> shy/JJ () 2
-1 -> necrophiliac/NN () 6
-2 -> terminal/JJ () 5
-1 -> ./. () 7
 
 Tuesday, I find love. Always Monday.
 
@@ -16064,28 +14010,6 @@ Absent-minded grandma opens cupboard. Inside… skeleton.
 2 -> .../: () 7
 1 -> ./. () 9
 
-Masturbated during childbirth documentary. Failed Sex-Ed.
-
-0 -> Masturbated/VBN (root) 1
-1 -> documentary/NN () 4
-2 -> during/IN () 2
-2 -> childbirth/NN () 3
-1 -> ;/: () 5
-1 -> Failed/VBD () 6
-2 -> Sex-Ed/NN () 7
-1 -> ./. () 8
-
-Co-ed learns professors can rape, too.
-
-0 -> learns/VBZ (root) 2
-1 -> Co-ed/JJ () 1
-1 -> rape/NN () 5
-2 -> professors/NNS () 3
-2 -> can/MD () 4
-2 -> ,/, () 6
-2 -> too/RB () 7
-1 -> ./. () 8
-
 Unlock Phone… Nothing… Lock Phone… Loneliness.
 
 0 -> Unlock/VB (root) 1
@@ -16153,17 +14077,6 @@ Man steals calender; gets twelve months.
 1 -> gets/VBZ () 5
 2 -> months/NNS () 7
 3 -> twelve/CD () 6
-1 -> ./. () 8
-
-Custodian closet quickie: Mile Low Club.
-
-0 -> quickie/NN (root) 3
-1 -> Custodian/NN () 1
-1 -> closet/NN () 2
-1 -> :/: () 4
-1 -> Club/NNP () 7
-2 -> Mile/NNP () 5
-2 -> Low/NNP () 6
 1 -> ./. () 8
 
 Emo cowboys draw weapons, shoot themselves.
@@ -16246,17 +14159,6 @@ New start. New you. Not you.
 3 -> Not/RB () 7
 1 -> ./. () 9
 
-Tony squealed. Last mistake he made…
-
-0 -> squealed/VBD (root) 2
-1 -> Tony/NNP () 1
-1 -> ;/: () 3
-1 -> mistake/NN () 5
-2 -> Last/JJ () 4
-2 -> made/VBD () 7
-3 -> he/PRP () 6
-1 -> .../: () 8
-
 Deathly silent groom. Literal shotgun wedding.
 
 0 -> groom/NN (root) 3
@@ -16315,30 +14217,6 @@ Daughter marries; assumes parents done parenting.
 3 -> parenting/NN () 7
 1 -> ./. () 8
 
-ADHD. Searched for cure. Got bored.
-
-0 -> ADHD/NN (root) 1
-1 -> ;/: () 2
-1 -> Searched/VBN () 3
-2 -> cure/NN () 5
-3 -> for/IN () 4
-1 -> ;/: () 6
-1 -> bored/VBN () 8
-2 -> Got/NNP () 7
-1 -> ./. () 9
-
-One diamond. Two robbers. Three Rottweilers.
-
-0 -> diamond/NN (root) 2
-1 -> One/CD () 1
-1 -> ;/: () 3
-1 -> robbers/NNS () 5
-2 -> Two/CD () 4
-2 -> ;/: () 6
-2 -> Rottweilers/NNS () 8
-3 -> Three/CD () 7
-1 -> ./. () 9
-
 Evening. Excess vodka. Morning. Excess inertia.
 
 0 -> Evening/NN (root) 1
@@ -16351,17 +14229,6 @@ Evening. Excess vodka. Morning. Excess inertia.
 2 -> inertia/NN () 9
 3 -> Excess/JJ () 8
 1 -> ./. () 10
-
-Given a tat. Traded for tit.
-
-0 -> tat/NN (root) 3
-1 -> Given/VBN () 1
-1 -> a/DT () 2
-1 -> ;/: () 4
-1 -> Traded/NNP () 5
-2 -> tit/NN () 7
-3 -> for/IN () 6
-1 -> ./. () 8
 
 One cell survived. Spread. Not again.
 
@@ -16408,18 +14275,6 @@ They smoked their last cigarette. Again.
 1 -> ;/: () 6
 1 -> Again/RB () 7
 1 -> ./. () 8
-
-Local psychiatrist. Moon struck. Loco psychiatrist.
-
-0 -> psychiatrist/NN (root) 2
-1 -> Local/JJ () 1
-1 -> ;/: () 3
-1 -> struck/VBD () 5
-2 -> Moon/NNP () 4
-1 -> ;/: () 6
-1 -> psychiatrist/NN () 8
-2 -> Loco/NNP () 7
-1 -> ./. () 9
 
 Emo totally devastated by spilt milk.
 
@@ -16478,17 +14333,6 @@ Table for one. Martinis for two.
 3 -> for/IN () 6
 1 -> ./. () 8
 
-Twelve inch pianist. Genie needed hearing-aid.
-
-0 -> pianist/NN (root) 3
-1 -> Twelve/CD () 1
-1 -> inch/NN () 2
-1 -> ;/: () 4
-1 -> needed/VBD () 6
-2 -> Genie/NNP () 5
-2 -> hearing-aid/NN () 7
-1 -> ./. () 8
-
 Fatty looks full. Dietician is missing.
 
 0 -> looks/NNS (root) 2
@@ -16536,16 +14380,6 @@ Gunned down. College acceptance letter. "Congratulations…"
 1 -> .../: () 10
 1 -> ''/'' () 11
 
-Swine flu traps Big Bad Wolf.
-
-0 -> traps/NNS (root) 3
-1 -> Swine/NN () 1
-1 -> flu/NN () 2
-1 -> Wolf/NNP () 6
-2 -> Big/JJ () 4
-2 -> Bad/NNP () 5
-1 -> ./. () 7
-
 Girl on fire. An old flame?
 
 0 -> Girl/NNP (root) 1
@@ -16579,16 +14413,6 @@ Transfer to public school. World discovered.
 2 -> World/NNP () 6
 1 -> ./. () 8
 
-The mushroom cloud brought false dawn.
-
-0 -> brought/VBD (root) 4
-1 -> cloud/NN () 3
-2 -> The/DT () 1
-2 -> mushroom/NN () 2
-1 -> dawn/NN () 6
-2 -> false/JJ () 5
-1 -> ./. () 7
-
 Lived to write. Left suicide note.
 
 0 -> Lived/VBN (root) 1
@@ -16619,17 +14443,6 @@ Longed for Baby. He said maybe.
 1 -> said/VBD () 6
 2 -> He/PRP () 5
 2 -> maybe/RB () 7
-1 -> ./. () 8
-
-Loved trying sushi. Hated having anaphylaxis.
-
-0 -> Loved/VBN (root) 1
-1 -> trying/VBG () 2
-2 -> sushi/NN () 3
-1 -> ;/: () 4
-1 -> Hated/VBN () 5
-2 -> having/VBG () 6
-3 -> anaphylaxis/NN () 7
 1 -> ./. () 8
 
 Plane loops the loop. Engine falters.
@@ -16737,40 +14550,6 @@ Match, made in heaven, ignited hell.
 1 -> hell/NN () 8
 1 -> ./. () 9
 
-First draft: Juliet dies. Romeo necrophilic.
-
-0 -> draft/NN (root) 2
-1 -> First/JJ () 1
-1 -> :/: () 3
-1 -> dies/VBZ () 5
-2 -> Juliet/NNP () 4
-2 -> ;/: () 6
-2 -> necrophilic/JJ () 8
-3 -> Romeo/NNP () 7
-1 -> ./. () 9
-
-Optimist drowned in half full bathtub.
-
-0 -> drowned/VBD (root) 2
-1 -> Optimist/NN () 1
-1 -> bathtub/NN () 6
-2 -> in/IN () 3
-2 -> half/NN () 4
-2 -> full/JJ () 5
-1 -> ./. () 7
-
-Imagined adulthood. Gained adulthood. Lost Imagination.
-
-0 -> adulthood/NN (root) 2
-1 -> Imagined/VBN () 1
-1 -> ;/: () 3
-1 -> adulthood/NN () 5
-2 -> Gained/VBN () 4
-1 -> ;/: () 6
-1 -> Imagination/NNP () 8
-2 -> Lost/NNP () 7
-1 -> ./. () 9
-
 As many hair colors as personalities.
 
 0 -> As/IN (root) 1
@@ -16793,17 +14572,6 @@ Empty highway. Petrol light flickers. Alone.
 1 -> Alone/RB () 8
 1 -> ./. () 9
 
-Friended mom on Facebook. Got disowned.
-
-0 -> disowned/VBN (root) 7
-1 -> mom/NN () 2
-2 -> Friended/NNP () 1
-2 -> Facebook/NNP () 4
-3 -> on/IN () 3
-2 -> ;/: () 5
-1 -> Got/VBD () 6
-1 -> ./. () 8
-
 Heroic amnesiac detective was the killer.
 
 0 -> killer/NN (root) 6
@@ -16813,18 +14581,6 @@ Heroic amnesiac detective was the killer.
 1 -> was/VBD () 4
 1 -> the/DT () 5
 1 -> ./. () 7
-
-Empty wineglass. Valium bottle. Open window.
-
-0 -> wineglass/NN (root) 2
-1 -> Empty/JJ () 1
-1 -> ;/: () 3
-1 -> bottle/NN () 5
-2 -> Valium/NNP () 4
-1 -> ;/: () 6
-1 -> window/NN () 8
-2 -> Open/VB () 7
-1 -> ./. () 9
 
 Befriended tycoon. Married. Murdered. Now heiress.
 
@@ -16849,19 +14605,6 @@ Three years after birth, he hears.
 1 -> ,/, () 5
 1 -> he/PRP () 6
 1 -> ./. () 8
-
-"This is our secret," whispered daddy.
-
-0 -> whispered/VBD (root) 8
-1 -> ``/`` () 1
-1 -> secret/NN () 5
-2 -> This/DT () 2
-2 -> is/VBZ () 3
-2 -> our/PRP$ () 4
-1 -> ,/, () 6
-1 -> ''/'' () 7
-1 -> daddy/NNP () 9
-1 -> ./. () 10
 
 Atom splits. Fleeing, they become ash.
 
@@ -17023,17 +14766,6 @@ Late. Speeding. Pulled Over. Really Late.
 2 -> Really/RB () 8
 1 -> ./. () 10
 
-Pregnant thrice. Still a childless parents.
-
-0 -> thrice/NN (root) 2
-1 -> Pregnant/JJ () 1
-1 -> ;/: () 3
-1 -> parents/NNS () 7
-2 -> Still/RB () 4
-2 -> a/DT () 5
-2 -> childless/JJ () 6
-1 -> ./. () 8
-
 He loved her. She loved herself.
 
 0 -> loved/VBD (root) 2
@@ -17091,18 +14823,6 @@ Loafer loafed, co-worker slogged, loafer promoted.
 1 -> ,/, () 6
 1 -> promoted/VBD () 8
 2 -> loafer/NN () 7
-1 -> ./. () 9
-
-For sale: Guitar. No strings attached.
-
-0 -> sale/NN (root) 2
-1 -> For/IN () 1
-1 -> :/: () 3
-1 -> Guitar/NN () 4
-2 -> ;/: () 5
-2 -> strings/NNS () 7
-3 -> No/DT () 6
-3 -> attached/VBN () 8
 1 -> ./. () 9
 
 Explosion. Chaos. Order. Life. Intelligence. Implosion.
@@ -17269,18 +14989,6 @@ Cunning terrorist only uses red wires.
 2 -> red/JJ () 5
 1 -> ./. () 7
 
-Cut wrists. Second thoughts. Too laaaate…
-
-0 -> wrists/NNS (root) 2
-1 -> Cut/NNP () 1
-1 -> ;/: () 3
-1 -> thoughts/NNS () 5
-2 -> Second/JJ () 4
-1 -> ;/: () 6
-1 -> laaaate/NN () 8
-2 -> Too/RB () 7
-1 -> .../: () 9
-
 Scientist becomes president. Politics are outlawed.
 
 0 -> becomes/VBZ (root) 2
@@ -17303,18 +15011,6 @@ She sips. He chugs. Long night…
 1 -> night/NN () 8
 2 -> Long/NNP () 7
 1 -> .../: () 9
-
-Born. Founded thriving pigment empire. Dyed.
-
-0 -> Born/VBN (root) 1
-1 -> ;/: () 2
-1 -> Founded/VBN () 3
-2 -> thriving/VBG () 4
-3 -> empire/NN () 6
-4 -> pigment/NN () 5
-1 -> ;/: () 7
-1 -> Dyed/VBN () 8
-1 -> ./. () 9
 
 A penny saved, a whim squandered.
 
@@ -17360,37 +15056,6 @@ Medicated Hamlet makes boring ass play.
 2 -> boring/JJ () 4
 2 -> ass/NN () 5
 1 -> ./. () 7
-
-Intentional paper cut equals hemophilia suicide.
-
-0 -> equals/VBZ (root) 4
-1 -> paper/NN () 2
-2 -> Intentional/JJ () 1
-2 -> cut/VBN () 3
-1 -> suicide/NN () 6
-2 -> hemophilia/NN () 5
-1 -> ./. () 7
-
-Guitarist breaks G-string fingering A minor.
-
-0 -> breaks/NNS (root) 2
-1 -> Guitarist/NN () 1
-1 -> G-string/JJ () 3
-2 -> fingering/VBG () 4
-3 -> minor/JJ () 6
-4 -> A/DT () 5
-1 -> ./. () 7
-
-Impulsiveness level upped. Girlfriend level downed.
-
-0 -> upped/VBD (root) 3
-1 -> level/NN () 2
-2 -> Impulsiveness/NN () 1
-1 -> ;/: () 4
-1 -> downed/VBN () 7
-2 -> level/NN () 6
-3 -> Girlfriend/NN () 5
-1 -> ./. () 8
 
 Heart surgery finally opened his heart.
 
@@ -17673,19 +15338,6 @@ Car wheels screech, training wheels spin.
 3 -> wheels/NNS () 6
 1 -> ./. () 8
 
-Jet lag. Morning wood. Misunderstood. Damn!
-
-0 -> lag/NN (root) 2
-1 -> Jet/NNP () 1
-1 -> ;/: () 3
-1 -> wood/NN () 5
-2 -> Morning/NN () 4
-1 -> ;/: () 6
-1 -> Misunderstood/NNP () 7
-1 -> ;/: () 8
-1 -> Damn/NNP () 9
-2 -> !/. () 10
-
 Selling Parachute: never opened, slightly stained.
 
 0 -> Selling/VBG (root) 1
@@ -17697,16 +15349,6 @@ Selling Parachute: never opened, slightly stained.
 2 -> stained/VBN () 8
 3 -> slightly/RB () 7
 1 -> ./. () 9
-
-She married Rich and divorced richer.
-
-0 -> married/VBD (root) 2
-1 -> She/PRP () 1
-1 -> Rich/NNP () 3
-1 -> and/CC () 4
-1 -> divorced/VBN () 5
-2 -> richer/JJR () 6
-1 -> ./. () 7
 
 Trapped, tied down, breeze, freed…balloon.
 
@@ -17721,18 +15363,6 @@ Trapped, tied down, breeze, freed…balloon.
 1 -> .../: () 9
 1 -> balloon/NN () 10
 1 -> ./. () 11
-
-Finding Nemo. Grilling Nemo. Eating Nemo.
-
-0 -> Finding/VBG (root) 1
-1 -> Nemo/NNP () 2
-1 -> ;/: () 3
-1 -> Grilling/VBG () 4
-2 -> Nemo/NNP () 5
-1 -> ;/: () 6
-1 -> Nemo/NNP () 8
-2 -> Eating/NNP () 7
-1 -> ./. () 9
 
 Spring marriage. Summer fling. Autumn divorce.
 
@@ -17815,17 +15445,6 @@ Successfully stole car. Busted swiping sandwich.
 3 -> sandwich/NN () 7
 1 -> ./. () 8
 
-Skinhead goes to college. Jewish roomate.
-
-0 -> goes/VBZ (root) 2
-1 -> Skinhead/NNP () 1
-1 -> college/NN () 4
-2 -> to/TO () 3
-1 -> ;/: () 5
-1 -> roomate/NN () 7
-2 -> Jewish/JJ () 6
-1 -> ./. () 8
-
 Man builds computer. Computer builds man.
 
 0 -> builds/VBZ (root) 2
@@ -17857,17 +15476,6 @@ The day unfolds. I fold laundry.
 1 -> fold/VBP () 6
 2 -> I/PRP () 5
 2 -> laundry/NN () 7
-1 -> ./. () 8
-
-Post-war reconstruction. Corrupt contractors clean up.
-
-0 -> reconstruction/NN (root) 2
-1 -> Post-war/JJ () 1
-1 -> ;/: () 3
-1 -> clean/VBP () 6
-2 -> contractors/NNS () 5
-3 -> Corrupt/NNP () 4
-2 -> up/RP () 7
 1 -> ./. () 8
 
 Old friends. One time hook-up. Acquaintances.
@@ -17912,17 +15520,6 @@ Suicide failed: poison past sell by.
 2 -> sell/NN () 6
 3 -> past/IN () 5
 2 -> by/IN () 7
-1 -> ./. () 8
-
-Rectal cancer. Rectum nearly killed him.
-
-0 -> cancer/NN (root) 2
-1 -> Rectal/JJ () 1
-1 -> ;/: () 3
-1 -> killed/VBD () 6
-2 -> Rectum/NNP () 4
-2 -> nearly/RB () 5
-2 -> him/PRP () 7
 1 -> ./. () 8
 
 Found your needles while cleaning. Goodbye.
@@ -17983,16 +15580,6 @@ Walked out of closet. Got disowned.
 2 -> Got/NNP () 6
 1 -> ./. () 8
 
-Geniuses executed in the smouldering libraries.
-
-0 -> Geniuses/NNS (root) 1
-1 -> executed/VBN () 2
-2 -> libraries/NNS () 6
-3 -> in/IN () 3
-3 -> the/DT () 4
-3 -> smouldering/VBG () 5
-1 -> ./. () 7
-
 Princess died. Salmonella. Another frog kiss.
 
 0 -> died/VBD (root) 2
@@ -18028,20 +15615,6 @@ Smashed thumb, she faints. Smashed face.
 1 -> Smashed/VBN () 7
 1 -> ./. () 9
 
-Mix-a-lot gasps, "Ass fixation, not ASPHYXIATION!!!!"
-
-0 -> gasps/NNS (root) 2
-1 -> Mix-a-lot/JJ () 1
-1 -> ,/, () 3
-1 -> ``/`` () 4
-1 -> fixation/NN () 6
-2 -> Ass/NN () 5
-2 -> ,/, () 7
-2 -> ASPHYXIATION/NNP () 9
-3 -> not/RB () 8
-3 -> !!!!/CD () 10
-1 -> ''/'' () 11
-
 Surgeon saves patient. Patient thanks God.
 
 0 -> saves/VBZ (root) 2
@@ -18052,27 +15625,6 @@ Surgeon saves patient. Patient thanks God.
 2 -> Patient/NN () 5
 2 -> thanks/NNS () 6
 1 -> ./. () 8
-
-Pregnant Girl with GED studybook, crying.
-
-0 -> crying/VBG (root) 7
-1 -> Girl/NNP () 2
-2 -> Pregnant/JJ () 1
-2 -> studybook/NN () 5
-3 -> with/IN () 3
-3 -> GED/NN () 4
-2 -> ,/, () 6
-1 -> ./. () 8
-
-Told SatNav salesman to get lost.
-
-0 -> salesman/NN (root) 3
-1 -> Told/VBN () 1
-1 -> SatNav/NNP () 2
-1 -> lost/VBN () 6
-2 -> to/TO () 4
-2 -> get/VB () 5
-1 -> ./. () 7
 
 Men. Lovers. One is still "straight."
 
@@ -18087,19 +15639,6 @@ Men. Lovers. One is still "straight."
 2 -> ``/`` () 8
 1 -> ./. () 10
 1 -> ''/'' () 11
-
-Rain. Two Strangers. One Umbrella. Love.
-
-0 -> Rain/NN (root) 1
-1 -> ;/: () 2
-1 -> Strangers/NNS () 4
-2 -> Two/CD () 3
-1 -> ;/: () 5
-1 -> Umbrella/NN () 7
-2 -> One/CD () 6
-1 -> ;/: () 8
-1 -> Love/NNP () 9
-1 -> ./. () 10
 
 Fat. Drugs. Skinny. Rehab. …Fat again.
 
@@ -18125,17 +15664,6 @@ Blind man can see past disability.
 1 -> disability/NN () 6
 2 -> past/JJ () 5
 1 -> ./. () 7
-
-Terminator ran Windows Vista. Humanity unscathed.
-
-0 -> ran/VBD (root) 2
-1 -> Terminator/NNP () 1
-1 -> Vista/NNP () 4
-2 -> Windows/NNP () 3
-2 -> ;/: () 5
-2 -> unscathed/JJ () 7
-3 -> Humanity/NNP () 6
-1 -> ./. () 8
 
 Drunk. Home late. Locked Door. Divorce.
 
@@ -18220,7 +15748,7 @@ Am Christian. Read Bible. Was Christian.
 2 -> Was/VBD () 7
 1 -> ./. () 9
 
-Borrowed book. Spilled coffee. Oh Fuck.
+Borrowed book. Spilled coffee. Oh fuck.
 
 0 -> book/NN (root) 2
 1 -> Borrowed/VBN () 1
@@ -18228,7 +15756,7 @@ Borrowed book. Spilled coffee. Oh Fuck.
 1 -> coffee/NN () 5
 2 -> Spilled/VBN () 4
 1 -> ;/: () 6
-1 -> Fuck/NNP () 8
+1 -> fuck/NN () 8
 2 -> Oh/UH () 7
 1 -> ./. () 9
 
@@ -18242,18 +15770,6 @@ Loved a broad, she moved abroad.
 1 -> she/PRP () 5
 1 -> abroad/RB () 7
 1 -> ./. () 8
-
-Chubby Checker. Fats Domino. Paunchy Stratego?
-
-0 -> Checker/NNP (root) 2
-1 -> Chubby/NNP () 1
-1 -> ;/: () 3
-1 -> Domino/NNP () 5
-2 -> Fats/NNP () 4
-2 -> ;/: () 6
-2 -> Stratego/NNP () 8
-3 -> Paunchy/NNP () 7
-1 -> ?/. () 9
 
 Stop sign. Cute girl. "Insurance please."
 
@@ -18323,26 +15839,6 @@ Talent drowning in files still dreams.
 3 -> files/NNS () 4
 4 -> in/IN () 3
 1 -> still/RB () 5
-1 -> ./. () 7
-
-Calvin plus Ritalin equals no Hobbes.
-
-0 -> equals/VBZ (root) 4
-1 -> Calvin/NNP () 1
-2 -> plus/CC () 2
-2 -> Ritalin/NNP () 3
-1 -> Hobbes/NNP () 6
-2 -> no/DT () 5
-1 -> ./. () 7
-
-My father still has my virginity.
-
-0 -> has/VBZ (root) 4
-1 -> father/NN () 2
-2 -> My/PRP$ () 1
-1 -> still/RB () 3
-1 -> virginity/NN () 6
-2 -> my/PRP$ () 5
 1 -> ./. () 7
 
 Checking into a hotel to checkout.
@@ -18432,18 +15928,6 @@ She wants him. He wants pizza.
 2 -> He/PRP () 5
 2 -> pizza/NN () 7
 1 -> ./. () 8
-
-Big rock, strong rope, Bye Mother-in-law.
-
-0 -> rock/NN (root) 2
-1 -> Big/JJ () 1
-1 -> ,/, () 3
-1 -> rope/NN () 5
-2 -> strong/JJ () 4
-1 -> ,/, () 6
-1 -> Mother-in-law/NNP () 8
-2 -> Bye/NNP () 7
-1 -> ./. () 9
 
 Hated kids. Met preschooler. Future mother.
 
@@ -18662,20 +16146,6 @@ Sad. Schadenfreude. Laughs. Sorry. Guilty. Sad.
 2 -> Sad/NNP () 11
 1 -> ./. () 12
 
-"Sorry. Bad hair day. Love, Rapunzel"
-
-0 -> ``/`` (root) 1
-1 -> Sorry/JJ () 2
-2 -> ;/: () 3
-2 -> day/NN () 6
-3 -> Bad/JJ () 4
-3 -> hair/NN () 5
-2 -> ;/: () 7
-2 -> Love/NNP () 8
-3 -> ,/, () 9
-3 -> Rapunzel/NNP () 10
-3 -> ''/'' () 11
-
 Tiny casket. Father sobs. Finally sober.
 
 0 -> casket/NN (root) 2
@@ -18755,4 +16225,8 @@ The war for peace. No survivors.
 1 -> survivors/NNS () 7
 2 -> No/DT () 6
 1 -> ./. () 8
+
+end
+
+0 -> end/NN (root) 1
 
