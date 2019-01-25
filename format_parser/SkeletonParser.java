@@ -18,7 +18,7 @@ import edu.stanford.nlp.ling.IndexedWord;
 
 public class SkeletonParser {
 
-	static String[] files = new String[] {"6ws-reddit-top2.txt", "6ws-twitter-ernest6words.txt", "6ws-twitter-sixwordstories.txt", "6ws-reddit-top1.txt"};
+	static String[] files = new String[] {"filteredexemplars", "6ws-reddit-top2.txt", "6ws-twitter-ernest6words.txt", "6ws-twitter-sixwordstories.txt", "6ws-reddit-top1.txt"};
 
 	//basically tries to replicate SemanticGraph.toString() but adding index.
 	//Also a great opportunity to filter/fix bad formats (duplicate words, weird punct, ...what else?)
