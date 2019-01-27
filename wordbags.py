@@ -17,7 +17,7 @@ WRB Wh-adverb
 
 bags = None
 def fillBags():
-	print "FILLING BAGS"
+	#print "FILLING BAGS"
 	global bags
 	path = os.getcwd()+'/bags/'
 	bags = {}

@@ -2,7 +2,7 @@ import helpers as h
 import random
 import heapq as hq
 
-numChildren = 3
+numChildren = 4
 strikes = 3
 maxSpecies = 10
 
@@ -140,11 +140,13 @@ def best(stories,regenf,canRegen,scoref,fraw):
 		#print p.bestch.s,p.bestsc
 		choices.append((p.bestch,p.bestsc))
 	choices = sorted(choices,key=lambda x: x[1],reverse=True)[:maxSpecies]
+	top = []
 	for c in choices:
+		top.append((c[0].s,c[1]))
 		print c[0].s,c[1]
 	m = min([c[1] for c in choices])
 	if m >=0:
 		m = 0
 	i = h.weighted_choice(choices,-m)
 	best = choices[i][0]
-	return best.s,best.score
+	return best.s,best.score,top

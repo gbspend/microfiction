@@ -8,8 +8,8 @@ import re
 from collections import defaultdict
 import hashlib
 
-newpriority = reload(newpriority)
-formats = reload(formats)
+#newpriority = reload(newpriority)
+#formats = reload(formats)
 
 maxRoots = 60
 
@@ -287,8 +287,8 @@ def doit(formats,w2v,pens,retries=0,forcef=None,randsc=False):
 		scoref = randomScores
 	temp = newpriority.best(stories,genf,canRegen,scoref,fraw)
 	if temp:
-		s,sc = temp
-		return s,sc,f[3]['raw']
+		s,sc,top = temp
+		return s,sc,f[3]['raw'],top
 	else:
 		return None
 	'''
@@ -305,7 +305,7 @@ def doit(formats,w2v,pens,retries=0,forcef=None,randsc=False):
 	'''
 
 if __name__ == "__main__":
-	times = 1
+	times = 30
 	if len(sys.argv) > 1:
 		times = int(sys.argv[1])
 	w2v = word2vec.load('data/tagged.bin')
@@ -316,6 +316,19 @@ if __name__ == "__main__":
 	formats = makeFormats(w2v)
 	print "Formats:",len(formats)
 	
+	allres = []
 	for i in range(times):
-		print doit(formats,w2v,pens)
+		temp = doit(formats,w2v,pens)
+		if temp:
+			s,sc,raw,top = temp
+			print s,";",raw
+			allres += top
+	allres = [a for a in allres if a]
+	print allres
+	finalout = sorted(allres,reverse=True,key=lambda s: s[1])[:20]
+	print "\nOUTPUT"
+	for f in finalout:
+		print f
+	
+	
 

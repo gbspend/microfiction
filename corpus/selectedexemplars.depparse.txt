@@ -247,7 +247,7 @@ Lonely pyromaniac looking for perfect match.
 3 -> perfect/JJ () 5
 1 -> ./. () 7
 
-Lincoln awoke, still drunk…"Freed who?"
+Lincoln awoke, still drunk… "Freed who?"
 
 0 -> awoke/VBD (root) 2
 1 -> Lincoln/NNP () 1
@@ -1749,7 +1749,7 @@ Bang. Earth. Evolution. Humans. Politics. Bang.
 1 -> Bang/NNP () 11
 1 -> ./. () 12
 
-"… You were in the control group."
+"…You were in the control group."
 
 0 -> group/NN (root) 8
 1 -> ''/'' () 1
@@ -3136,7 +3136,7 @@ She laughs at my shitty jokes.
 2 -> shitty/JJ () 5
 1 -> ./. () 7
 
-After that…only the poor died.
+After that… only the poor died.
 
 0 -> died/VBD (root) 7
 1 -> that/DT () 2
@@ -8578,7 +8578,7 @@ You either get bitter or better.
 2 -> better/RBR () 6
 1 -> ./. () 7
 
-Deaf does not make you dumb .
+Deaf does not make you dumb.
 
 0 -> make/VB (root) 4
 1 -> Deaf/JJ () 1
@@ -9328,7 +9328,7 @@ The axe forgets; the tree remembers.
 3 -> the/DT () 5
 1 -> ./. () 8
 
-Remember,money and success reveals you.
+Remember, money and success reveals you.
 
 0 -> reveals/VBZ (root) 6
 1 -> Remember/VB () 1
@@ -10216,7 +10216,7 @@ I hear you in every song.
 2 -> every/DT () 5
 1 -> ./. () 7
 
-To tell the truth…I lied.
+To tell the truth… I lied.
 
 0 -> tell/VB (root) 2
 1 -> To/TO () 1
@@ -11158,7 +11158,7 @@ Day before the wedding. He proposes.
 2 -> He/PRP () 6
 1 -> ./. () 8
 
-Met her…fate intervened…tattoo remains.
+Met her… fate intervened… tattoo remains.
 
 0 -> intervened/VBD (root) 5
 1 -> Met/NNP () 1
@@ -11594,7 +11594,7 @@ Owner died. Dog pined. Cat dined.
 2 -> Cat/NN () 7
 1 -> ./. () 9
 
-Wrote note. Took pills. Now…wait.
+Wrote note. Took pills. Now… wait.
 
 0 -> Wrote/VBD (root) 1
 1 -> note/NN () 2
@@ -12672,19 +12672,21 @@ Uniforms ring the doorbell. God, no.
 2 -> no/DT () 8
 1 -> ./. () 9
 
-Never forget…me…my…love…flatline…
+"Never forget… me… my… love…" Flatline…
 
-0 -> forget/VB (root) 2
-1 -> Never/RB () 1
-1 -> .../: () 3
-1 -> me/PRP () 4
-2 -> .../: () 5
-2 -> love/NN () 8
-3 -> my/PRP$ () 6
-3 -> .../: () 7
-1 -> .../: () 9
-1 -> flatline/JJ () 10
-1 -> .../: () 11
+0 -> forget/VB (root) 3
+1 -> ``/`` () 1
+1 -> Never/RB () 2
+1 -> .../: () 4
+1 -> me/PRP () 5
+2 -> .../: () 6
+2 -> love/NN () 9
+3 -> my/PRP$ () 7
+3 -> .../: () 8
+1 -> .../: () 10
+1 -> ''/'' () 11
+1 -> Flatline/NNP () 12
+1 -> .../: () 13
 
 Engulfed in work. Expelled from friendlists.
 
@@ -12911,7 +12913,7 @@ Am artist. Lost arms. Still artist.
 2 -> Still/RB () 7
 1 -> ./. () 9
 
-Selfless society.  Ruined by one megalomaniac.
+Selfless society. Ruined by one megalomaniac.
 
 0 -> society/NN (root) 2
 1 -> Selfless/JJ () 1
@@ -14310,12 +14312,12 @@ Twice tempted. Twice loved. Lost both.
 2 -> both/DT () 8
 1 -> ./. () 9
 
-Murdered…Revived as a Ghost…Revenge!
+Murdered… Revived as a ghost… Revenge!
 
 0 -> Murdered/VBN (root) 1
 1 -> .../: () 2
 1 -> Revived/VBN () 3
-2 -> Ghost/NN () 6
+2 -> ghost/NN () 6
 3 -> as/IN () 4
 3 -> a/DT () 5
 1 -> .../: () 7
@@ -14640,7 +14642,7 @@ Finding them entwined, Malcom shot both.
 1 -> both/DT () 7
 1 -> ./. () 8
 
-Scratching heard…from inside the coffin.
+Scratching heard… from inside the coffin.
 
 0 -> heard/VBN (root) 2
 1 -> Scratching/VBG () 1
@@ -14840,7 +14842,7 @@ Explosion. Chaos. Order. Life. Intelligence. Implosion.
 2 -> Implosion/NNP () 11
 1 -> ./. () 12
 
-Time machine…check. Mistake list…check.
+Time machine… check. Mistake list… check.
 
 0 -> machine/NN (root) 2
 1 -> Time/NNP () 1
@@ -15350,7 +15352,7 @@ Selling Parachute: never opened, slightly stained.
 3 -> slightly/RB () 7
 1 -> ./. () 9
 
-Trapped, tied down, breeze, freed…balloon.
+Trapped, tied down, breeze, freed… balloon.
 
 0 -> Trapped/VBN (root) 1
 1 -> ,/, () 2
@@ -16225,6 +16227,19 @@ The war for peace. No survivors.
 1 -> survivors/NNS () 7
 2 -> No/DT () 6
 1 -> ./. () 8
+
+Gun. Mask. Note. The teller screams.
+
+0 -> Gun/NN (root) 1
+1 -> ;/: () 2
+1 -> Mask/NN () 3
+2 -> ;/: () 4
+2 -> Note/NN () 5
+2 -> ;/: () 6
+2 -> screams/NNS () 9
+3 -> The/DT () 7
+3 -> teller/NN () 8
+1 -> ./. () 10
 
 end
 

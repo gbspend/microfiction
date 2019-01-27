@@ -62,7 +62,7 @@ def toNoun(w):
 	return best
 
 def strip(s):
-	return str(s).translate(None, string.punctuation).lower()
+	return str(s).translate(None, string.punctuation).lower().strip()
 
 def firstCharUp(s):
 	return s[0].upper() + s[1:]

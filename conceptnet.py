@@ -74,12 +74,21 @@ def getRels(start, end):
 		rels.update(subs)
 	return list(rels)
 
-
-#Un-needed currently...
+badcodereport = False
 #takes a start word and an end word and returns all words related to start by any relation by which end is related to it
 def superGet(start, end, justRels=False):
+	global badcodereport
 	u = url+'/query?start=/c/en/'+start+eng
-	obj = requests.get(u).json() #results are paginated, but let's just stick with one for now
+	resp = requests.get(u) #results are paginated, but let's just stick with one for now
+	if not resp.ok:
+		if not badcodereport:
+			print "HTTP ERROR: ConceptNet returned status code %d" % resp.status_code
+			badcodereport = True
+		return []
+	elif badcodereport:
+		print "HTTP OK: ConceptNet is OK again %d" % resp.status_code
+		badcodereport = False
+	obj = resp.json()
 	allrels = {}
 	endBase = h.baseWord(end)
 	good = set()
