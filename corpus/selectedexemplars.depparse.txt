@@ -2337,18 +2337,6 @@ Empty crib. But not for long!
 2 -> for/IN () 6
 1 -> !/. () 8
 
-Conjoined twins. One gay. One homophobic.
-
-0 -> twins/NNS (root) 2
-1 -> Conjoined/NNP () 1
-1 -> ;/: () 3
-1 -> gay/JJ () 5
-2 -> One/CD () 4
-2 -> ;/: () 6
-2 -> homophobic/JJ () 8
-3 -> One/CD () 7
-1 -> ./. () 9
-
 Went to the vet. Left alone.
 
 0 -> Went/VBD (root) 1
@@ -8246,17 +8234,6 @@ The root of joy is gratefulness.
 3 -> of/IN () 3
 1 -> is/VBZ () 5
 1 -> ./. () 7
-
-Played PokemonGo. Discovered playground in vicinity.
-
-0 -> PokemonGo/NN (root) 2
-1 -> Played/VBN () 1
-1 -> ;/: () 3
-1 -> playground/NN () 5
-2 -> Discovered/VBN () 4
-2 -> vicinity/NN () 7
-3 -> in/IN () 6
-1 -> ./. () 8
 
 Always be positive, patient and persistent.
 
