@@ -221,10 +221,48 @@ def randmultitest():
 	plt.legend()
 	plt.show()
 
+randmultitest()
 
 
 
+#only switch from an to a, not vice versa...?
+from pattern.en import article,suggest
+import helpers as h
+stories = []
+with open('compareresults','r') as f:
+	for line in f:
+		line = line.strip()
+		if line and line[-1] in "1234567890":
+			stories.append(h.strip(line[:line.rfind(' ')]).split(' '))
 
+sps = []
+for s in stories:
+	for w in s:
+		sp = suggest(w)
+		if len(sp) > 1:
+			sps.append([w]+sp)
+
+def fixaan(l):
+	for i in range(len(l)):
+		if l[i] == 'a' or l[i] == 'an':
+			newa = article(l[i+1])
+			if newa == 'an':
+				print l,i
+			elif newa == 'a' and newa != l[i]:
+				print l,i
+				l[i] = newa
+
+for s in stories:
+	fixaan(s)
+
+
+import time
+start = time.time()
+for s in stories * 1000:
+	for w in s:
+		a = article(w)
+
+print time.time() - start
 
 
 

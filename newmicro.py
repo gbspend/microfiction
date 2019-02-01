@@ -7,6 +7,7 @@ import conceptnet as cn
 import re
 from collections import defaultdict
 import hashlib
+from pattern.en import article
 
 #newpriority = reload(newpriority)
 #formats = reload(formats)
@@ -143,6 +144,9 @@ def gen(fraw,w2v,lock):
 	genrec(root,None,None,False,w2v,lock) #lock is out var
 	if None in lock:
 		return None
+	for i in range(len(lock)):
+		if i+1 < len(lock) and (lock[i] == 'a' or lock[i] == 'an'):
+			lock[i] = article(lock[i+1])
 	for i in fraw['cap']:
 		lock[i] = h.firstCharUp(lock[i])
 	return plugin(fraw['plug'],lock),fraw
@@ -215,7 +219,8 @@ def makeFormats(w2v):
 		regen = range(6)
 		del regen[fraw['root']['index']]
 		ret.append((genf,[badstory, h.strip(" ".join(fraw['words']))],regen,fraw))
-	print "Number of excluded (bad) formats:",ex,"(%d total, %f%%)"%(len(ret),(float(ex)/len(ret)*100))
+	if ex:
+		print "Number of excluded (bad) formats:",ex,"(%d total, %f%%)"%(len(ret),(float(ex)/len(ret)*100))
 	
 	poss = []
 	for tup in ret:
