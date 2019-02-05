@@ -191,11 +191,11 @@ def checkChars(str_to_search):
 
 def posListRec(node,curr):
 	p = node['pos']
-	if p.startswith('VB'):
-		p='VB'
-	if p.startswith('NN'):
-		p='NN'
-	#NOTE: TODO find more equiv POS(?)
+	equivs = ['VB','NN','JJ','PRP','RB']
+	for e in equivs:
+		if p.startswith(e):
+			p=e
+			break
 	curr[node['index']]=p
 	for c in node['children']:
 		posListRec(c,curr)

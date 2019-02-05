@@ -79,16 +79,16 @@ for c in cs:
 unk = {'MD':set(),'RP':set(),'PDT':set(),'WDT':set()}
 #generate list of concat'ed POS (in order!) for each story
 from collections import defaultdict
-def posrec(node,curr):
+def posrec(node,curr,i=0):
 	p = node['pos']
 	if p in unk:
 		unk[p].add(node['word'])
-	if p.startswith('VB'):
-		p='VB'
-	if p.startswith('NN'):
-		p='NN'
-	#NOTE: TODO find more equiv POS(?)
-	curr[node['index']]=p
+	equivs = ['VB','NN','JJ','PRP','RB']
+	for e in equivs:
+		if p.startswith(e):
+			p=e
+			break
+	curr[node['index']]=p+str(i)
 	for c in node['children']:
 		posrec(c,curr)
 	return curr
@@ -114,8 +114,8 @@ for tup in formats:
 	f = tup[3]
 	pl = posrec(f['root'],[None,None,None,None,None,None])
 	poss.append(''.join(pl))
-	grb = garbrec(f['root'],True,[None,None,None,None,None,None])
-	if None in grb:
+	grb = None#garbrec(f['root'],True,[None,None,None,None,None,None])
+	if not grb or None in grb:
 		garbs.append(None)
 	else:
 		ret = [h.strip(grb)]
@@ -129,6 +129,8 @@ for i,c in enumerate(poss):
 	for j,p in enumerate(poss):
 		if c == p and i != j:
 			interpos[i].append(j)
+
+
 
 
 import helpers as h
