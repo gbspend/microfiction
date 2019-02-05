@@ -79,7 +79,7 @@ for c in cs:
 unk = {'MD':set(),'RP':set(),'PDT':set(),'WDT':set()}
 #generate list of concat'ed POS (in order!) for each story
 from collections import defaultdict
-def posrec(node,curr,i=0):
+def posrec(node,curr):
 	p = node['pos']
 	if p in unk:
 		unk[p].add(node['word'])
@@ -88,7 +88,7 @@ def posrec(node,curr,i=0):
 		if p.startswith(e):
 			p=e
 			break
-	curr[node['index']]=p+str(i)
+	curr[node['index']]=p
 	for c in node['children']:
 		posrec(c,curr)
 	return curr
