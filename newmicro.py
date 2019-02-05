@@ -218,7 +218,7 @@ def makeFormats(w2v):
 		genf = lambda lock, fraw=fraw, w2v=w2v: gen(fraw,w2v,lock)
 		regen = range(6)
 		del regen[fraw['root']['index']]
-		ret.append((genf,[badstory, h.strip(" ".join(fraw['words']))],regen,fraw))
+		ret.append((genf,[badstory],regen,fraw))
 	if ex:
 		print "Number of excluded (bad) formats:",ex,"(%d total, %f%%)"%(len(ret),(float(ex)/len(ret)*100))
 	
@@ -231,17 +231,21 @@ def makeFormats(w2v):
 		for j,p in enumerate(poss):
 			if c == p and i != j:
 				interpos[i].append(j)
+	oldlen = len(ret)
+	newret = []
 	for i,tup in enumerate(ret):
 		sames = interpos[i]
-		otheraxis = None
-		axes = tup[1]
-		if len(sames) < 1:
-			otheraxis = axes[1] #duplicate single good axis
-		else:
+		if len(sames) > 1:
+			axes = tup[1]
+			firstaxis = h.strip(ret[random.choice(sames)][3]['raw'])
 			otheraxis = h.strip(ret[random.choice(sames)][3]['raw'])
-		axes.append(otheraxis)
-			
-	return ret
+			while firstaxis == otheraxis:
+				otheraxis = h.strip(ret[random.choice(sames)][3]['raw'])
+			axes.append(firstaxis)
+			axes.append(otheraxis)
+			newret.append(tup)
+	print "Number of excluded (single axis) formats:", oldlen - len(newret), "(%d)"%len(newret)
+	return newret
 
 #===================================================
 
