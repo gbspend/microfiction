@@ -8965,18 +8965,6 @@ Karma and shadows follow one everywhere.
 2 -> everywhere/RB () 6
 1 -> ./. () 7
 
-Disclaimer: Teri Maa Ki, Pahlaj Nihalani.
-
-0 -> Disclaimer/NNP (root) 1
-1 -> :/: () 2
-1 -> Ki/NN () 5
-2 -> Teri/NNP () 3
-2 -> Maa/NNP () 4
-2 -> ,/, () 6
-2 -> Nihalani/NNP () 8
-3 -> Pahlaj/NNP () 7
-1 -> ./. () 9
-
 Teamwork always makes the dream work.
 
 0 -> makes/VBZ (root) 3
