@@ -76,13 +76,11 @@ for c in cs:
 
 
 
-unk = {'MD':set(),'RP':set(),'PDT':set(),'WDT':set()}
 #generate list of concat'ed POS (in order!) for each story
+import helpers as h
 from collections import defaultdict
 def posrec(node,curr):
 	p = node['pos']
-	if p in unk:
-		unk[p].add(node['word'])
 	equivs = ['VB','NN','JJ','PRP','RB']
 	for e in equivs:
 		if p.startswith(e):
@@ -114,7 +112,7 @@ for tup in formats:
 	f = tup[3]
 	pl = posrec(f['root'],[None,None,None,None,None,None])
 	poss.append(''.join(pl))
-	grb = None#garbrec(f['root'],True,[None,None,None,None,None,None])
+	grb = garbrec(f['root'],True,[None,None,None,None,None,None])
 	if not grb or None in grb:
 		garbs.append(None)
 	else:
@@ -133,9 +131,23 @@ for i,c in enumerate(poss):
 
 
 
+
+possets = []
+for k in interpos:
+	found = False
+	for s in possets:
+		if k in s:
+			found = True
+			break
+	if found:
+		continue
+	possets.append(set(interpos[k] + [k]))
+
+
+
+
+
 import helpers as h
-def scorestory(t,s,p):
-	return h.getSkipScores(t[0],t[1],t[2],[s],p)[0]
 
 def getstory(i):
 	return h.strip(formats[i][3]['raw'])
@@ -160,8 +172,7 @@ def testaxes(ai1,ai2,interis,p,graph=False):
 		s2 = getstory(ai2)
 	else:
 		s2=ai2
-	goodsc = h.getSkipScores(badstory,s1,s2,goods,p)
-	badsc = h.getSkipScores(badstory,s1,s2,bads,p)
+	goodsc,badsc = h.getSkipScores(badstory,s1,s2,[goods,bads],p)
 	if graph:
 		plt.plot(goodsc)
 		plt.plot(badsc)
@@ -173,7 +184,44 @@ def testaxes(ai1,ai2,interis,p,graph=False):
 		print sumgood,sumbad
 		return sumgood-sumbad
 
-interis = interpos[560] + [560]
+scoresfn = 'axesscores'
+axscores = {}
+with open(scoresfn,'r') as f:
+	for line in f:
+		line = line.strip()
+		parts = line.split('\t')
+		axscores[parts[0]] = float(parts[1])
+
+for interis in possets:
+	if len(interis) == 2:
+		continue #set up 10-20% cutoff
+	#else: use non-exemplar best axes
+	candidates = {}
+	for ai1,ai2 in combinations(interis,2):
+		k = getstory(ai1)+"; "+getstory(ai2)
+		v = 0
+		if k in axscores:
+			v = axscores[k]
+		else:
+			v = testaxes(ai1,ai2,interis,pens)
+			axscores[k] = v #for posterity
+		candidates[k] = v
+	best = sorted(candidates.keys(),key=lambda k:candidates[k],reverse=True)
+	for i in interis:
+		pass #change format
+		
+
+with open(scoresfn, 'w') as fout:
+	for k in axscores:
+		fout.write(k+"\t"+str(axscores[k])+"\n")
+
+
+
+
+
+
+testn=559
+interis = interpos[559] + [559]
 results = {}
 for ai1,ai2 in combinations(interis,2):
 	k = getstory(ai1)+"; "+getstory(ai2)
@@ -194,6 +242,14 @@ for k in results:
 		nx = c
 		nv = k
 
+
+
+
+
+
+
+
+#generate best/worst graphs
 def getindex(s):
 	for i,f in enumerate(formats):
 		if h.strip(f[3]['raw']) == s:
@@ -223,10 +279,11 @@ def randmultitest():
 	plt.legend()
 	plt.show()
 
-randmultitest()
+#randmultitest()
 
 
 
+#a/an via pattern.en doesn't work wel...
 #only switch from an to a, not vice versa...?
 from pattern.en import article,suggest
 import helpers as h
@@ -258,13 +315,14 @@ for s in stories:
 	fixaan(s)
 
 
-import time
-start = time.time()
-for s in stories * 1000:
-	for w in s:
-		a = article(w)
 
-print time.time() - start
+
+
+
+
+
+
+
 
 
 
