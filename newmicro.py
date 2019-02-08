@@ -8,6 +8,7 @@ import re
 from collections import defaultdict
 import hashlib
 from pattern.en import article
+from itertools import combinations
 
 #newpriority = reload(newpriority)
 #formats = reload(formats)
@@ -200,8 +201,42 @@ def posListRec(node,curr):
 	for c in node['children']:
 		posListRec(c,curr)
 	return curr
+	
+def getstory(i,fmts):
+	return h.strip(fmts[i][3]['raw'])
 
-def makeFormats(w2v):
+def garbrec(node,isRoot,curr):
+	if isRoot:
+		w = node['word']
+	else:
+		choices = wb.getAll(node['pos'])
+		if not choices:
+			return None
+		w = random.choice(choices)
+	curr[node['index']]=w
+	for c in node['children']:
+		garbrec(c,False,curr)
+	return curr
+		
+def testaxes(ai1,ai2,interis,p,fmts):
+	goods = [getstory(i,fmts) for i in interis if i!=ai1 and i!=ai2]
+	bads = [garbrec(fmts[i][3]['root'],True,[None,None,None,None,None,None]) for i in interis] #don't necessarily need one per i... maybe just half? max 10?
+	if type(ai1) == int:
+		s1 = getstory(ai1,fmts)
+	else:
+		s1=ai1
+	if type(ai2) == int:
+		s2 = getstory(ai2,fmts)
+	else:
+		s2=ai2
+	allsc = h.getSkipScores(badstory,s1,s2,goods+bads,p) #all at once is faster
+	goodsc = allsc[:len(goods)]
+	badsc = allsc[len(goods):]
+	sumgood = sum(goodsc)
+	sumbad = sum(badsc)
+	return sumgood-sumbad
+
+def makeFormats(w2v,pens):
 	ret = []
 	ex = 0
 	seen = set()
@@ -218,7 +253,8 @@ def makeFormats(w2v):
 		genf = lambda lock, fraw=fraw, w2v=w2v: gen(fraw,w2v,lock)
 		regen = range(6)
 		del regen[fraw['root']['index']]
-		ret.append((genf,[badstory, h.strip(" ".join(fraw['words']))],regen,fraw))
+		goodstory = h.strip(" ".join(fraw['words']))
+		ret.append([genf,[badstory, goodstory, goodstory, True],regen,fraw])
 	if ex:
 		print "Number of excluded (bad) formats:",ex,"(%d total, %f%%)"%(len(ret),(float(ex)/len(ret)*100))
 	
@@ -231,15 +267,61 @@ def makeFormats(w2v):
 		for j,p in enumerate(poss):
 			if c == p and i != j:
 				interpos[i].append(j)
-	for i,tup in enumerate(ret):
-		sames = interpos[i]
-		otheraxis = None
-		axes = tup[1]
-		if len(sames) < 1:
-			otheraxis = axes[1] #duplicate single good axis
-		else:
-			otheraxis = h.strip(ret[random.choice(sames)][3]['raw'])
-		axes.append(otheraxis)
+				
+	#==========
+	# calculated best axes for each cluster of 3+ stories (or read from file if stored there)
+	# all 1- or 2-cluster formats will get 1 or 2 different axes, respectively, and be flagged (axes[3] == True) that they need the "10-20% cutoff" instead
+
+	possets = []
+	for k in interpos:
+		found = False
+		for s in possets:
+			if k in s:
+				found = True
+				break
+		if found:
+			continue
+		possets.append(set(interpos[k] + [k]))
+	
+	scoresfn = 'axesscores'
+	axscores = {}
+	with open(scoresfn,'r') as f:
+		for line in f:
+			line = line.strip()
+			parts = line.split('\t')
+			axscores[parts[0]] = float(parts[1])
+
+	for interis in possets:
+		if len(interis) == 2:
+			newaxes = [getstory(j,ret) for j in interis]
+			for i in interis:
+				ret[i][1] = ret[i][1][:1] + newaxes + [True]
+			continue
+		#else: use non-exemplar best axes
+		candidates = {}
+		for ai1,ai2 in combinations(interis,2):
+			k = getstory(ai1,ret)+"; "+getstory(ai2,ret)
+			v = 0
+			if k in axscores:
+				v = axscores[k]
+			else:
+				v = testaxes(ai1,ai2,interis,pens,ret)
+				axscores[k] = v #for posterity
+			candidates[k] = v
+		best = sorted(candidates.keys(),key=lambda k:candidates[k],reverse=True)
+		for i in interis:
+			exemplar = getstory(i,ret)
+			besti = 0
+			while exemplar in best[besti]: #pick the best axes that don't include the format's exemplar (avoid plagiarism)
+				besti += 1
+			newaxes = best[besti].split('; ')
+			ret[i][1] = ret[i][1][:1] + newaxes
+			
+
+	with open(scoresfn, 'w') as fout:
+		for k in axscores:
+			fout.write(k+"\t"+str(axscores[k])+"\n")
+	#==========
 			
 	return ret
 
@@ -264,6 +346,7 @@ def doit(formats,w2v,pens,retries=0,forcef=None,randsc=False):
 		f = forcef
 	genf = f[0]
 	axis = f[1]
+	print axis #TEMP
 	canRegen = f[2]
 	print f[3]['raw']
 	root = f[3]['root']
@@ -293,7 +376,15 @@ def doit(formats,w2v,pens,retries=0,forcef=None,randsc=False):
 	temp = newpriority.best(stories,genf,canRegen,scoref,fraw)
 	if temp:
 		s,sc,top = temp
-		return s,sc,f[3]['raw'],top
+		return top #Below doesn't work :( They all need to get mixed together to get the best stories, and any given story may have been scored by best axes or not...
+		
+		#DEAD
+		returnnum = 10
+		if len(axis) > 3 and axis[3]: #need to take "top 20% minus top 10%":
+			return top[returnnum:returnnum*2]
+		else:
+			return top[:returnnum]
+		#return s,sc,f[3]['raw'],top
 	else:
 		return None
 	'''
@@ -318,18 +409,14 @@ if __name__ == "__main__":
 	pens = penseur.Penseur()
 	print "Penseur Loaded"
 
-	formats = makeFormats(w2v)
+	formats = makeFormats(w2v,pens)
 	print "Formats:",len(formats)
 	
 	allres = []
 	for i in range(times):
-		temp = doit(formats,w2v,pens)
-		if temp:
-			s,sc,raw,top = temp
-			print s,";",raw
-			allres += top
+		allres += doit(formats,w2v,pens)
 	allres = [a for a in allres if a]
-	print allres
+	#print allres
 	finalout = sorted(allres,reverse=True,key=lambda s: s[1])[:20]
 	print "\nOUTPUT"
 	for f in finalout:

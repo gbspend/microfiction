@@ -2,7 +2,7 @@ import word2vec, newmicro
 from penseur import penseur
 w2v = word2vec.load('data/tagged.bin')
 pens = penseur.Penseur()
-formats = newmicro.makeFormats(w2v)
+formats = newmicro.makeFormats(w2v,pens)
 
 newmicro.doit(formats,w2v,pens)[:3]
 
@@ -201,7 +201,6 @@ for interis in possets:
 		newaxes = [getstory(j) for j in interis]
 		for i in interis:
 			print formats[i][3]['raw'],": old axes:",formats[i][1]
-			formats[i] = list(formats[i]) #change from tupe
 			formats[i][1] = formats[i][1][:1] + newaxes + [True]
 			print "new axes:",formats[i][1]
 		#axes[3] == True marks that it needs 10-20% cutoff because it can't have "best axes"
@@ -225,7 +224,6 @@ for interis in possets:
 			besti += 1
 		newaxes = best[besti].split('; ')
 		print formats[i][3]['raw'],": old axes:",formats[i][1]
-		formats[i] = list(formats[i]) #change from tupe
 		formats[i][1] = formats[i][1][:1] + newaxes
 		print "new axes:",formats[i][1]
 		
