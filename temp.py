@@ -172,7 +172,9 @@ def testaxes(ai1,ai2,interis,p,graph=False):
 		s2 = getstory(ai2)
 	else:
 		s2=ai2
-	goodsc,badsc = h.getSkipScores(badstory,s1,s2,[goods,bads],p)
+	allsc = h.getSkipScores(badstory,s1,s2,goods+bads,p)
+	goodsc = allsc[:len(goods)]
+	badsc = allsc[len(goods):]
 	if graph:
 		plt.plot(goodsc)
 		plt.plot(badsc)
@@ -181,7 +183,7 @@ def testaxes(ai1,ai2,interis,p,graph=False):
 	else:
 		sumgood = sum(goodsc)
 		sumbad = sum(badsc)
-		print sumgood,sumbad
+		#print sumgood,sumbad
 		return sumgood-sumbad
 
 scoresfn = 'axesscores'
@@ -193,8 +195,17 @@ with open(scoresfn,'r') as f:
 		axscores[parts[0]] = float(parts[1])
 
 for interis in possets:
+	print interis,[formats[i][3]['raw'] for i in interis]
 	if len(interis) == 2:
-		continue #set up 10-20% cutoff
+		print "Len 2"
+		newaxes = [getstory(j) for j in interis]
+		for i in interis:
+			print formats[i][3]['raw'],": old axes:",formats[i][1]
+			formats[i] = list(formats[i]) #change from tupe
+			formats[i][1] = formats[i][1][:1] + newaxes + [True]
+			print "new axes:",formats[i][1]
+		#axes[3] == True marks that it needs 10-20% cutoff because it can't have "best axes"
+		continue
 	#else: use non-exemplar best axes
 	candidates = {}
 	for ai1,ai2 in combinations(interis,2):
@@ -208,7 +219,15 @@ for interis in possets:
 		candidates[k] = v
 	best = sorted(candidates.keys(),key=lambda k:candidates[k],reverse=True)
 	for i in interis:
-		pass #change format
+		exemplar = getstory(i)
+		besti = 0
+		while exemplar in best[besti]: #pick the best axes that don't include the format's exemplar (avoid plagiarism)
+			besti += 1
+		newaxes = best[besti].split('; ')
+		print formats[i][3]['raw'],": old axes:",formats[i][1]
+		formats[i] = list(formats[i]) #change from tupe
+		formats[i][1] = formats[i][1][:1] + newaxes
+		print "new axes:",formats[i][1]
 		
 
 with open(scoresfn, 'w') as fout:
