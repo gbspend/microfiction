@@ -67,9 +67,14 @@ class Node:
 	#s is string (artifact)
 	#sett is Settings object
 	def __init__(self,s,sett):
-		self.sett = sett
 		self.s = s
-		self.words = h.strip(s).split()
+		self.sett = sett
+		self.isbad = False
+		try: # fixes unicode characters trying to sneak through; see https://stackoverflow.com/questions/517923/what-is-the-best-way-to-remove-accents-in-a-python-unicode-string
+			self.words = h.strip(s).split()
+		except Exception as e:
+			print s, e
+			self.isbad = True
 		self.score = None#sett.calcScore
 		#print "--Created node [",s,"]",self.score
 
@@ -83,11 +88,10 @@ class Node:
 		news,fraw = temp
 		if not news:
 			return None
-		try: #fixes unicode characters trying to sneak through; see https://stackoverflow.com/questions/517923/what-is-the-best-way-to-remove-accents-in-a-python-unicode-string
-			child = Node(news,self.sett)
-		except Exception as e:
-			print news, e
+		child = Node(news,self.sett)
+		if child.isbad:
 			return None
+
 		#TODO! This rejects too many, I think? Test more! Maybe make it not match the original story...?
 		#if h.numMatch(self.words,child.words) > 2: #too similar
 		#	print self.words,child.words
@@ -111,6 +115,8 @@ def best(stories,regenf,canRegen,scoref,fraw,norm=False):
 			continue
 		seed = getIndex(s,seedi)
 		root = Node(s,Settings(regenf,canRegen))
+		if root.isbad:
+			break
 		root.score = scoref([s])[0]
 		species[seed] = Species(seed,root)
 		bad = False
