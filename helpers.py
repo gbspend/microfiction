@@ -9,6 +9,11 @@ import oxdict as od
 from operator import itemgetter
 import os, csv
 
+#maps number n, which is in rage oldmin--oldmax to newmin--newmax
+def rangify(n,oldmin,oldmax,newmin,newmax):
+	R = float(newmax - newmin) / (oldmax - oldmin)
+	return (n - oldmin) * R + newmin
+
 def synName(s):
 	return s.lemma_names()[0]
 

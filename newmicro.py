@@ -22,6 +22,7 @@ badstory = 'plunger volcano paper the mug switches'
 
 #word, start, and end are untagged
 def w2vChoices(word,start,startTag,end,endTag,w2v,rmax=30,rmin=10):
+	assert rmax > rmin
 	maxset = set(h.get_scholar_rels(word+startTag,[(start,end)],w2v,startTag,endTag,rmax))
 	minset = set(h.get_scholar_rels(word+startTag,[(start,end)],w2v,startTag,endTag,rmin))
 	#print maxset-minset, minset
@@ -77,7 +78,7 @@ relsCache = {}
 #force is boolean to force regen (ignore lock)
 #w2v is w2v
 #fillin is out var; starts as lock, fill in other words (replace if forced)
-def genrec(node,parent,prev,force,w2v,fillin):
+def genrec(node,parent,prev,force,w2v,fillin,w2vmax,w2vmin):
 	i = node['index']
 	if not force and fillin[i]:
 		word = fillin[i]
@@ -92,7 +93,7 @@ def genrec(node,parent,prev,force,w2v,fillin):
 		if parent['dep'] == 'root' and cacheK in choiceCache:
 			choices = choiceCache[cacheK]
 		else:
-			choices = w2vChoices(prev,parent['word'],startTag,node['word'],endTag,w2v)
+			choices = w2vChoices(prev,parent['word'],startTag,node['word'],endTag,w2v,w2vmax,w2vmin)
 			if parent['dep'] == 'root': #only cache choices from root (more likely to be used, caching all is too much data for too little overlap)
 				choiceCache[cacheK] = choices
 
@@ -122,7 +123,7 @@ def genrec(node,parent,prev,force,w2v,fillin):
 		else:
 			word = random.choice(final) #Can this be smarter?
 		#what to do if final is empty? Maybe just plug in original word??
-		#print 'Vector:', parent['word'],'to',node['word']
+		#print 'Vector:', parent['word'],'to',node['word']/
 		#print 'Apply vector to:',prev,'->',final
 		#print 'Chose:',word
 		#print ''
@@ -132,9 +133,9 @@ def genrec(node,parent,prev,force,w2v,fillin):
 		fillin[i]=word
 	if len(node['children']):
 		for child in node['children']:
-			genrec(child,node,word,force,w2v,fillin)
+			genrec(child,node,word,force,w2v,fillin,w2vmax,w2vmin)
 
-def gen(fraw,w2v,lock):
+def gen(fraw,w2v,lock,w2vmax=30,w2vmin=10):
 	#traverse tree; if parent locked, regen all children (set a force flag)
 	root = fraw['root']
 	if lock[root['index']] is None:
@@ -142,7 +143,7 @@ def gen(fraw,w2v,lock):
 		if not new_root:
 			return None
 		lock[root['index']] = new_root
-	genrec(root,None,None,False,w2v,lock) #lock is out var
+	genrec(root,None,None,False,w2v,lock,w2vmax,w2vmin) #lock is out var
 	if None in lock:
 		return None
 	for i in range(len(lock)):
@@ -236,7 +237,7 @@ def testaxes(ai1,ai2,interis,p,fmts):
 	sumbad = sum(badsc)
 	return sumgood-sumbad
 
-def makeFormats(w2v,pens):
+def makeFormats(w2v,pens,bestaxes=True,w2vmax=30,w2vmin=10):
 	ret = []
 	ex = 0
 	seen = set()
@@ -250,7 +251,7 @@ def makeFormats(w2v,pens):
 			ex +=1
 			continue
 		processPOS(fraw['root'],w2v) #Preprocess each node by checking whether word_pos is in w2v and massage them if possible
-		genf = lambda lock, fraw=fraw, w2v=w2v: gen(fraw,w2v,lock)
+		genf = lambda lock, fraw=fraw, w2v=w2v, w2vmax=w2vmax, w2vmin=w2vmin: gen(fraw,w2v,lock,w2vmax,w2vmin)
 		regen = range(6)
 		del regen[fraw['root']['index']]
 		goodstory = h.strip(" ".join(fraw['words']))
@@ -267,6 +268,18 @@ def makeFormats(w2v,pens):
 		for j,p in enumerate(poss):
 			if c == p and i != j:
 				interpos[i].append(j)
+	
+	if not bestaxes:
+		for i,tup in enumerate(ret):
+			sames = interpos[i]
+			otheraxis = None
+			axes = tup[1]
+			if len(sames) < 1:
+				otheraxis = axes[1] #duplicate single good axis
+			else:
+				otheraxis = h.strip(ret[random.choice(sames)][3]['raw'])
+			axes[2] = otheraxis
+		return ret
 				
 	#==========
 	# calculated best axes for each cluster of 3+ stories (or read from file if stored there)
@@ -295,7 +308,7 @@ def makeFormats(w2v,pens):
 		if len(interis) == 2:
 			newaxes = [getstory(j,ret) for j in interis]
 			for i in interis:
-				ret[i][1] = ret[i][1][:1] + newaxes + [True]
+				ret[i][1] = ret[i][1][:1] + newaxes + [True] #note: difference between l[:1] and 1[0] is that the former returns a list!
 			continue
 		#else: use non-exemplar best axes
 		candidates = {}
@@ -327,19 +340,15 @@ def makeFormats(w2v,pens):
 
 #===================================================
 
-#maps number n, which is in rage oldmin--oldmax to newmin--newmax
-def rangify(n,oldmin,oldmax,newmin,newmax):
-	R = float(newmax - newmin) / (oldmax - oldmin)
-	return (n - oldmin) * R + newmin
-
 def randomScores(ss):
-	return [rangify(int(hashlib.md5(s).hexdigest(),16),0,int("1"*128,2),-0.20662908,1.3317157) for s in ss]
+	return [h.rangify(int(hashlib.md5(s).hexdigest(),16),0,int("1"*128,2),-0.20662908,1.3317157) for s in ss]
 	#from 128-bit MD5 digest ("random") to min--max from basic1D.csv (ignoring distribution)
 	#The skipthought scorer _does_ output a gaussian, but maybe that's irrelevant...?
 
-def doit(formats,w2v,pens,retries=0,forcef=None,randsc=False):
+def doit(formats,w2v,pens,forcef=None,normalize=True):
 	global rootCache
 	rootCache = None
+	
 	if not forcef:
 		f = random.choice(formats)
 	else:
@@ -371,9 +380,9 @@ def doit(formats,w2v,pens,retries=0,forcef=None,randsc=False):
 	if not stories:
 		return None
 	scoref = lambda x: h.getSkipScores(axis[0],axis[1],axis[2],x,pens)
-	if randsc:
+	if False:
 		scoref = randomScores
-	temp = newpriority.best(stories,genf,canRegen,scoref,fraw)
+	temp = newpriority.best(stories,genf,canRegen,scoref,fraw,normalize)
 	if temp:
 		s,sc,top = temp
 		return top #Below doesn't work :( They all need to get mixed together to get the best stories, and any given story may have been scored by best axes or not...
@@ -387,20 +396,36 @@ def doit(formats,w2v,pens,retries=0,forcef=None,randsc=False):
 		#return s,sc,f[3]['raw'],top
 	else:
 		return None
-	'''
-	temp = genf([None,None,None,None,None,None])
-	if temp is None:
-		if retries > 5:
-			return doit(formats,w2v,pens)
-		print "RETRYING"
-		return doit(formats,w2v,pens,retries+1,f)
-	else:
-		s,fraw = temp
-		#return s,scoref([h.strip(s)])
-		return newpriority.best(s,genf,canRegen,scoref,fraw)[0]
-	'''
 
 if __name__ == "__main__":
+	paramsfn='params'
+	
+	params = {}
+	params['best_axes']=True
+	params['bottom_percent']=20
+	params['top_percent']=10
+	params['normalize']=True
+	params['w2v_max']=30
+	params['w2v_min']=10
+	
+	with open(paramsfn,'r') as f:
+		for line in f:
+			line = line.strip()
+			if '=' not in line:
+				continue
+			k,v = line.split('=')
+			v = v.strip()
+			if v.isdigit():
+				v = int(v)
+			elif v == 'True':
+				v = True
+			else:
+				v = False
+			params[k.strip()] = v
+			
+	for k in params:
+		print k,params[k]
+
 	times = 30
 	if len(sys.argv) > 1:
 		times = int(sys.argv[1])
@@ -409,15 +434,19 @@ if __name__ == "__main__":
 	pens = penseur.Penseur()
 	print "Penseur Loaded"
 
-	formats = makeFormats(w2v,pens)
+	formats = makeFormats(w2v,pens,params['best_axes'],params['w2v_max'],params['w2v_min'])
 	print "Formats:",len(formats)
 	
 	allres = []
 	for i in range(times):
-		allres += doit(formats,w2v,pens)
+		allres += doit(formats,w2v,pens,None,params['normalize'])
 	allres = [a for a in allres if a]
 	#print allres
-	finalout = sorted(allres,reverse=True,key=lambda s: s[1])[:20]
+	
+	top = int(params['top_percent']/100.0*len(allres))
+	bottom = int(params['bottom_percent']/100.0*len(allres))
+	assert top < bottom
+	finalout = sorted(allres,reverse=True,key=lambda s: s[1])[top:bottom]
 	print "\nOUTPUT"
 	for f in finalout:
 		print f

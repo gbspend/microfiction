@@ -12,13 +12,18 @@ class Species:
 		self.isDead = False
 		self.heap = []
 		self.stale = 0
+		self.lowsc = node.score
 		self.bestsc = node.score
 		self.bestch = node
+		self.secondch = None
 		self.push(node)
 
 	def checkBest(self,curr):
+		if curr.score < self.lowsc:
+			self.lowsc = curr.score
 		if curr.score > self.bestsc:
 			self.bestsc = curr.score
+			self.secondch = self.bestch
 			self.bestch = curr
 			self.stale = 0
 			return True
@@ -78,7 +83,11 @@ class Node:
 		news,fraw = temp
 		if not news:
 			return None
-		child = Node(news,self.sett)
+		try: #fixes unicode characters trying to sneak through; see https://stackoverflow.com/questions/517923/what-is-the-best-way-to-remove-accents-in-a-python-unicode-string
+			child = Node(news,self.sett)
+		except Exception as e:
+			print news, e
+			return None
 		#TODO! This rejects too many, I think? Test more! Maybe make it not match the original story...?
 		#if h.numMatch(self.words,child.words) > 2: #too similar
 		#	print self.words,child.words
@@ -90,7 +99,7 @@ def getIndex(story, i):
 
 #stories can be a string or list
 #NOT STRIPPED
-def best(stories,regenf,canRegen,scoref,fraw):
+def best(stories,regenf,canRegen,scoref,fraw,norm=False):
 	if type(stories) != list:
 		stories = [stories]
 	species = {}
@@ -134,19 +143,31 @@ def best(stories,regenf,canRegen,scoref,fraw):
 			else:
 				species[k].push(child)
 		#print len(species)
+	
+	lowest = 1000
+	highest = -1000
 	choices = []
 	for k in species:
 		p = species[k]
+		if p.lowsc < lowest:
+			lowest = p.lowsc
+		if p.bestsc > highest:
+			highest = p.bestsc
 		#print p.bestch.s,p.bestsc
-		choices.append((p.bestch,p.bestsc))
+		assert p.bestch.score == p.bestsc
+		choices.append((p.bestch.s, p.bestsc))
+		if p.secondch:
+			choices.append((p.secondch.s,p.secondch.score))
+	
+	if norm:
+		choices = [(s,h.rangify(c,lowest,highest,0,1)) for s,c in choices]
+	
 	choices = sorted(choices,key=lambda x: x[1],reverse=True)[:maxSpecies]
-	top = []
-	for c in choices:
-		top.append((c[0].s,c[1]))
-		print c[0].s,c[1]
+	if True:
+		for s,c in choices:
+			print s,c
 	m = min([c[1] for c in choices])
 	if m >=0:
 		m = 0
 	i = h.weighted_choice(choices,-m)
-	best = choices[i][0]
-	return best.s,best.score,top
+	return choices[i] + (choices,)
