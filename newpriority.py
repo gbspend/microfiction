@@ -73,7 +73,7 @@ class Node:
 		try: # fixes unicode characters trying to sneak through; see https://stackoverflow.com/questions/517923/what-is-the-best-way-to-remove-accents-in-a-python-unicode-string
 			self.words = h.strip(s).split()
 		except Exception as e:
-			print s, e
+			#print s, e
 			self.isbad = True
 		self.score = None#sett.calcScore
 		#print "--Created node [",s,"]",self.score

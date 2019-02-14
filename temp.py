@@ -4,8 +4,12 @@ w2v = word2vec.load('data/tagged.bin')
 pens = penseur.Penseur()
 formats = newmicro.makeFormats(w2v,pens)
 
-newmicro.doit(formats,w2v,pens)[:3]
+newmicro.doit(formats,w2v,pens)
 
+def getFormat(s):
+	for f in formats:
+		if f[3]['raw'] == s:
+			return f
 
 
 #recursive; returns list of POS in order
