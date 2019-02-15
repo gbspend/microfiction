@@ -237,7 +237,7 @@ def testaxes(ai1,ai2,interis,p,fmts):
 	sumbad = sum(badsc)
 	return sumgood-sumbad
 
-def makeFormats(w2v,pens,bestaxes=True,w2vmax=30,w2vmin=10):
+def makeFormats(w2v,pens,bestaxes=True,w2vmax=30,w2vmin=10,backoff=False):
 	ret = []
 	ex = 0
 	seen = set()
@@ -279,63 +279,75 @@ def makeFormats(w2v,pens,bestaxes=True,w2vmax=30,w2vmin=10):
 			else:
 				otheraxis = h.strip(ret[random.choice(sames)][3]['raw'])
 			axes[2] = otheraxis
-		return ret
-				
+	else:
 	#==========
 	# calculated best axes for each cluster of 3+ stories (or read from file if stored there)
 	# all 1- or 2-cluster formats will get 1 or 2 different axes, respectively, and be flagged (axes[3] == True) that they need the "10-20% cutoff" instead
 
-	possets = []
-	for k in interpos:
-		found = False
-		for s in possets:
-			if k in s:
-				found = True
-				break
-		if found:
-			continue
-		possets.append(set(interpos[k] + [k]))
-	
-	scoresfn = 'axesscores'
-	axscores = {}
-	with open(scoresfn,'r') as f:
-		for line in f:
-			line = line.strip()
-			parts = line.split('\t')
-			axscores[parts[0]] = float(parts[1])
+		possets = []
+		for k in interpos:
+			found = False
+			for s in possets:
+				if k in s:
+					found = True
+					break
+			if found:
+				continue
+			possets.append(set(interpos[k] + [k]))
+		
+		scoresfn = 'axesscores'
+		axscores = {}
+		with open(scoresfn,'r') as f:
+			for line in f:
+				line = line.strip()
+				parts = line.split('\t')
+				axscores[parts[0]] = float(parts[1])
 
-	for interis in possets:
-		if len(interis) == 2:
-			newaxes = [getstory(j,ret) for j in interis]
+		for interis in possets:
+			if len(interis) == 2:
+				newaxes = [getstory(j,ret) for j in interis]
+				for i in interis:
+					ret[i][1] = ret[i][1][:1] + newaxes + [True] #note: difference between l[:1] and 1[0] is that the former returns a list!
+				continue
+			#else: use non-exemplar best axes
+			candidates = {}
+			for ai1,ai2 in combinations(interis,2):
+				k = getstory(ai1,ret)+"; "+getstory(ai2,ret)
+				v = 0
+				if k in axscores:
+					v = axscores[k]
+				else:
+					v = testaxes(ai1,ai2,interis,pens,ret)
+					axscores[k] = v #for posterity
+				candidates[k] = v
+			best = sorted(candidates.keys(),key=lambda k:candidates[k],reverse=True)
 			for i in interis:
-				ret[i][1] = ret[i][1][:1] + newaxes + [True] #note: difference between l[:1] and 1[0] is that the former returns a list!
-			continue
-		#else: use non-exemplar best axes
-		candidates = {}
-		for ai1,ai2 in combinations(interis,2):
-			k = getstory(ai1,ret)+"; "+getstory(ai2,ret)
-			v = 0
-			if k in axscores:
-				v = axscores[k]
-			else:
-				v = testaxes(ai1,ai2,interis,pens,ret)
-				axscores[k] = v #for posterity
-			candidates[k] = v
-		best = sorted(candidates.keys(),key=lambda k:candidates[k],reverse=True)
-		for i in interis:
-			exemplar = getstory(i,ret)
-			besti = 0
-			while exemplar in best[besti]: #pick the best axes that don't include the format's exemplar (avoid plagiarism)
-				besti += 1
-			newaxes = best[besti].split('; ')
-			ret[i][1] = ret[i][1][:1] + newaxes
-			
+				exemplar = getstory(i,ret)
+				besti = 0
+				while exemplar in best[besti]: #pick the best axes that don't include the format's exemplar (avoid plagiarism)
+					besti += 1
+				newaxes = best[besti].split('; ')
+				ret[i][1] = ret[i][1][:1] + newaxes
+				
 
-	with open(scoresfn, 'w') as fout:
-		for k in axscores:
-			fout.write(k+"\t"+str(axscores[k])+"\n")
+		with open(scoresfn, 'w') as fout:
+			for k in axscores:
+				fout.write(k+"\t"+str(axscores[k])+"\n")
 	#==========
-			
+	
+	if backoff:
+		bests = []
+		partial = []
+		for f in ret:
+			s = h.strip(f[3]['raw'])
+			if s not in f[1]:
+				bests.append(f)
+			elif s != f[1][2]:
+				partial.append(f)
+		if bests:
+			return bests
+		if partial:
+			return partial
 	return ret
 
 #===================================================
@@ -407,6 +419,7 @@ if __name__ == "__main__":
 	params['normalize']=True
 	params['w2v_max']=30
 	params['w2v_min']=10
+	params['backoff']=False #<reducto>BACK OFF!</reducto>
 	
 	with open(paramsfn,'r') as f:
 		for line in f:
@@ -434,7 +447,7 @@ if __name__ == "__main__":
 	pens = penseur.Penseur()
 	print "Penseur Loaded"
 
-	formats = makeFormats(w2v,pens,params['best_axes'],params['w2v_max'],params['w2v_min'])
+	formats = makeFormats(w2v,pens,params['best_axes'],params['w2v_max'],params['w2v_min'],params['backoff'])
 	print "Formats:",len(formats)
 	
 	allres = []

@@ -6,10 +6,16 @@ formats = newmicro.makeFormats(w2v,pens)
 
 newmicro.doit(formats,w2v,pens)
 
+
+
 def getFormat(s):
 	for f in formats:
 		if f[3]['raw'] == s:
 			return f
+
+bads = 'Stock market plunges. Bankers follow suit.'
+bf = getFormat(bads)
+newmicro.doit(formats,w2v,pens,bf)
 
 
 #recursive; returns list of POS in order
