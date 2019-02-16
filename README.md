@@ -1,6 +1,4 @@
 # microfiction
-CS673 - Winter 2017
-
 ***Setup***
 
 install:
