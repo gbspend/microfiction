@@ -367,7 +367,7 @@ def doit(formats,w2v,pens,forcef=None,normalize=True):
 		f = forcef
 	genf = f[0]
 	axis = f[1]
-	print axis #TEMP
+	#print axis #TEMP
 	canRegen = f[2]
 	print f[3]['raw']
 	root = f[3]['root']

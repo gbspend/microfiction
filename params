@@ -1,7 +1,7 @@
 best_axes=True
 bottom_percent=20
 top_percent=10
-normalize=True
+normalize=False
 w2v_max=30
 w2v_min=10
 backoff=True

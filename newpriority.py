@@ -169,7 +169,7 @@ def best(stories,regenf,canRegen,scoref,fraw,norm=False):
 		choices = [(s,h.rangify(c,lowest,highest,0,1)) for s,c in choices]
 	
 	choices = sorted(choices,key=lambda x: x[1],reverse=True)[:maxSpecies]
-	if True:
+	if False:
 		for s,c in choices:
 			print s,c
 	m = min([c[1] for c in choices])
