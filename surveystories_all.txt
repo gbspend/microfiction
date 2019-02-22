@@ -1,0 +1,272 @@
+#Parameters:
+#	normalize: normalized scores or not
+#	backoff: whether the system tried to only use stories from clusters of 2+ (or 3+ if "best axes" = True)
+#	best_axes:	True: the system tried to compute the "best" axes from all pairs of potential axes from the exmplars cluster (if possible)
+#						False: the system used the exmplar itself and a random other story from the cluster (if possible)
+
+== normalize=True; backoff=True; best_axes=True; Top 10-20%; 10 exemplars
+Herbalist saves way tale ...famine befalls.
+Rambunctious dog dies within hare brucellosis.
+Clemency requires luxuries. Retrial gets family.
+Incorrigible mom enters corpse. Atop... camarasaurus.
+Nobody gone; Dairyman reaped; Traumatizing kidz.
+Consideration: Puppy skirts got horrible uv.
+Question: Sweetheart buddies perpetrated insane reality.
+Fine sadness found never, around guardian.
+Me hear their Guile. Ye think.
+Artificiality well concept, unfolded through Canaiolo.
+#Comment: OKish, a couple good ones
+
+== normalize=False; backoff=True; best_axes=True; Top 10-20%; 10 exemplars
+Celebratory is every narrative for spontaneity.
+Celebratory is every narrative for compassion.
+Me hated them. Himself admired yourself.
+A rest is any fnew beginning.
+Xmas is no story beyond soulmate.
+Me liked them. Himself liked him.
+Breakfast is no story concerning soulmate.
+Wives have an architects for community.
+Thanksgiving becomes every tale during gladness.
+Wives have an architects for culture.
+#Comment: Bad
+
+== normalize=False; backoff=True; best_axes=True; Top 10-20%; 10 exemplars
+Find, yours cowardice is his strength.
+Poetics represents no laughter near peace.
+Bauhaus means any rage without conscience.
+Needlepoint means most kiss throughout independence.
+Disgust fixes each tenderness within misadventure.
+Anything portrays equal. Betacommand seems unfair.
+Sympathy obtains this universality against sexuality.
+Noone persists sympathetic. Dislike is unsympathetic.
+Printmaking sees no nightmare within freedom.
+Anything portrays equal. Entropy confesses unfair.
+#Comment: Mostly bad, a few good
+
+== normalize=False; backoff=True; best_axes=False; Top 10-20%; 10 exemplars
+Powerlessness represents each society throughout propriety.
+Injustice represents each society throughout propriety.
+Desperation has another fund such generality.
+Promiscuous skin causes to good humanity.
+Democrats get another respect to immoralities.
+Desperation has another fund in generality.
+Brutality represents your association regarding hierarchy.
+Undernourished water leads to retarded humanity.
+Economics have any extent to passions.
+Laws be several entrustment to consolations.
+#Comment: Fairly coherent, a few good
+
+== normalize=True; backoff=True; best_axes=False; Top 10-20%; 10 exemplars
+Followed he malady. Bossing death accompanied.
+Followed himself chest. Bossing death accompanied.
+Salt is no useful causal right.
+Twelfth soul realized immediately, within eulogy.
+Heartless boar cultists hens: pitiful comedy!
+Teachers be both architects among ichthyologist.
+Raysse includes education for a soul.
+Sociopathic stag sprees snappers: disgusting game!
+Times machine... keyword. Mistake section... handler.
+Myself exactly witnessed yours merhaba sleepwalker.
+#Comment: Mostly bad, a few pretty good
+
+== normalize=True; backoff=False; best_axes=True; Top 10-15%; 30 exemplars
+Kinsman ties. Holocaust countries. Guardianship Guardianship.
+To him, "endlessly" meant "twenty decades"
+You candyman wrote no perfect versification.
+Semester excursion theorem: Avoided Oot Badda.
+Adverse anger yells. Undesirable euphoria grieves.
+Abhorred girls. Horsewhipped schoolmistress. Forseeable goddaughter.
+We yourself suggest from, me become.
+Extreme joy smiles. Inadequate enthusiasm cries.
+Himself printed his undated for uncertainty.
+Specialists develop young thermonuclear firebomb. Suddenly.
+Her cooks. Himself flushes. Nearly week...
+A tempo coccolith snow frightens him.
+Vanmarcke gis reification: Hindered Perfect Bada.
+Every abolition aksumite faithfulness is wasted.
+Primatologists only broke away; some superconductivity.
+#Comment: Better than most, lots bad
+
+== normalize=False; backoff=False; best_axes=True; Top 10-15%; 30 exemplars
+Eventually make away. Get moving downward.
+Eloquence... Panggau... Cannonaded... Lauded... Serenaded... Defiled.
+Toughest friends. Any champagnes. New dreamers.
+No photographer remained originally less outstanding.
+Longest roommates. Those beverages. New heroines.
+Biggest parents. Any brandies. Senior friends.
+Longest roommates. Those lagers. New heroines.
+Hottest buddies. Any beers. Temporary newlyweds.
+Her remained longer versus another adventure.
+Hardly bring over. Move journeying backward.
+All artist was tentatively your elite.
+We me mean until, myself remain.
+Shotgun. Scarf. Hint. A magician howls.
+Shipping perhaps so, yourself encounter you.
+Got about more stranger nor pothole?
+#Comment: pretty coherent, almost none good
+
+== normalize=True; backoff=False; best_axes=True; Top 5-10%; 30 exemplars
+Exited hotel; Get cloak then at.
+Protopunk wholly overwhelmed alongside extrawide gruel.
+Found: dozen neckties initial to estuary.
+Twelve military goblins enter phosphorescence banker.
+Yours hardly get scared between yours.
+He grandniece accounting covered a wedding.
+Myself synthetic function finally thoroughly developed.
+Predominate such biggest edition in you.
+You yells. Herself yells. She complain.
+Experience inflicting throughout dossiers clearly dreams.
+There is magnificent strength from universalism.
+Suggest. Mermaid. Think. If abruptly dare.
+Robbing these hyperborean, "nephew merely cousin..."
+Overdubbing yourself impulse is absurd power.
+Yourself perfer indeed taking his soda.
+#Comment: almost all bad
+
+== normalize=False; backoff=True; best_axes=False; Top 10-15%; 30 exemplars
+Exasperation is genetic military towards foolishness.
+Joy is a path to childhood.
+Gullibility provides mental security between deceit.
+Contentment makes some way to feelings.
+Thanksgiving is every tale beyond happiness.
+Thanksgiving involves every tale from happiness.
+Revelry remains parades within a soul.
+Joy becomes a path to childhood.
+Doll looks obviously unlike a conman.
+Kitten sounds simply excepting a drunkard.
+Easter is no story from soulmate.
+Myself knew she. She disliked yourself.
+Thanksgiving involves every tale than happiness.
+Doll looks obviously unlike a charwoman.
+Humility represents another curve to lifetime.
+#Comment: fairly coherent, some bad, few good
+
+== normalize=True; backoff=True; best_axes=False; Top 10-15%; 30 exemplars
+His dirtiest bush is seldom artificial.
+Brokerage retailer plunges. Shippers pass countersuit.
+Encouraging whatever Manoah Woman. Tolerating husbands.
+Frighten her illusions. Immobilize we agenda.
+Subjective girlfriends be never around touch.
+Inactivity user. Stillbirth realistic. Delist message.
+Persib Sate has both newest opportunist.
+Distance journey paradox: Denied Scary Kapi.
+His sextuplet is within yours fingers.
+Righteousness waited after damnation. Anything came.
+Montreal Sate has both newest opportunist.
+Short citicorp account; unattended picture resistors.
+Her sextuplet is within yours fingers.
+His freest bush is seldom artificial.
+A creamy maroon color turned currant.
+#Comment: half bad, half coherent, some good
+
+== normalize=True; backoff=True; best_axes=False; Top 10-15%; 30 exemplars
+Compassion is each son among foresight.
+Passerby hides psalter; goes eighty months.
+Lesbians be your cabinetmakers by pedlar.
+Personally confound all confidence in perspective.
+Viable voters only motivate formidable habits.
+Kindness is some association for participation.
+Perseverance is any trust despite expectation.
+Villain steals mahzor; is sixty weeks.
+His niggas talked any slinky dialect.
+Patriotism is both foundation by fortune.
+Adolescents behave every designers for culture.
+Often seems useless before he achieved.
+Music disc. Championship whopper. Biquaternion chromosomes.
+Bloke grabs thread; is eighteen years.
+Transwomen appear another painters to ethnologist.
+#Comment: some coherence, not great
+
+== normalize=False; backoff=True; best_axes=False; Top 10-15%; 30 exemplars
+Soulmate is both absence regarding ignorance.
+Difference is another swindler like grief.
+Me hated them. Somebody disparaged she.
+Soulmate is both absence regarding conscience.
+Affection is some way to stepdaughter.
+You options may interpret her widowhood.
+Feelings is some way to stepdaughter.
+Difference is another swindler among grief.
+Conscientiousness behaves another curve to lifetime.
+Prevalence gets both killer upon misery.
+A candy poisoned, any whim swindled.
+Yours did anybody. Him had fantastic.
+Joy is a lack with truthfulness.
+A brownie abducted, another least sacrificed.
+Gather each best demo than yours.
+#Comment: few coherent, most bad+
+
+== normalize True; bottom_percent 15; backoff True; best_axes False; top_percent 10
+Believe during yonder enchantment than selflessness.
+Supported hers... demise resisted... skinsuit survives.
+Godlike squads perform an eleventh pallbearer.
+Loneliness promoted warmakers. Contentment afforded relocates.
+Warm Skeletons. Cheesecake Seawall. Answerthon Ocean.
+You warts be them proudest medals.
+Heartless dogs attend a previous enthronement.
+Patriotism near russophobia is subjective democracy.
+Give fear. Provide setal. Find schoolfriend.
+Diamond ring. Glassy diamond. Costliest engagement.
+Devastated against experience. Rescued throughout infertilities.
+Overwhelmed for orchestration. Liberated among regrowths.
+Inhuman forger. Disruptive boyfriend. Makai witch.
+Rainbow circle. Pure circus. Weirdest niece.
+See their man. Truly their caregiver.
+#fairly coherent, some bad, few good
+
+== normalize False; bottom_percent 15; backoff True; best_axes False; top_percent 10
+Represent no paladin. Clearly every philanderer.
+There becomes another employment about cowardice.
+Mean no paladin. Purely any philanderer.
+Stepchild seems maybe because a spiv.
+Include a beast. Usually this nymphomaniac.
+There gets this hpsp of lowliness.
+Grandchildren find Goober Forest. Veterinarians detest.
+Adults find Beefeater Forest. Veterinarians detest.
+Momma sounds definitely considering a plumber.
+Me hated them. They disdained myself.
+Girl gets right unlike a peddler.
+Kid looks obviously because a bookie.
+Me hated them. They shunned myself.
+Oddest roommates. Conditions adjustment. Stupidest enemies.
+#somewhat coherent, some bad, none good
+
+== normalize False; bottom_percent 15; backoff True; best_axes False; top_percent 10
+Several most besides perfect measure is anxiety.
+Anyone takes month. Times takes anyone.
+Few veriest scary black is grief.
+Magician during anxious catastrophes spy despair.
+They Maggie is become a waxwork.
+Imagine, predictability requires a human adaptability.
+Every fairliest stunning measure is anxiety.
+They Momma is become a waxwork.
+Innate god lacks trusting soul exists.
+Imagination is reality upon both miz.
+Imagination is reality like both miz.
+Make more Weekend every economical afternoon.
+Comradeship arises observed of possible places.
+Imagine, predictability requires a sentient adaptability.
+#barely coherent, most bad
+
+BAD STORIES
+"Maximal psychophysicss brownout," refused whose Haft. 0.25458422
+Purchase Comparison to your Microblogging Safari. 0.2511147
+Intrinsic dignity represents this separate reputation. 0.24801692
+Open said. Compulsory speaker. Exempt tripadvisor. 0.24348849
+Portion for freeway. Haversack inside next. 0.23771693
+Vengeful flipper blackmails nets: nasty trick! 0.23404233
+Broad limit TVs end ignominious vixens. 0.2339348
+Dissonant cellar loudspeakers give unfortunate heroes. 0.2294247
+Simple suite camcorders follow imminent Elvises. 0.22636917
+Bulky tub flashlights bring incurable headliners. 0.2209737
+Buy Advantage to no BBQ Tiki. 0.21779265
+Ridge until seafront. Shoulder for then. 0.21742977
+Dressy cafeteria camcorders create unexpected clouds. 0.15996495
+Box-shape cube. Marvelous flav. Dirtiest datastructure. 0.0637143
+Oblique ceasefire represents most separate hit. 0.049005806
+
+
+#General comments:
+# Best_axes doesn't give good results. I think this is because it represents the system "doubling down" on scores (i.e. using scores to say "these are the best axes") when the scores can't be trusted that much (they're good for big picture, but not granluar differentiation of story quality)
+# Normalizing doesn't necessarily lead to better stories in the output, but it DOES lead to more diverse output (i.e. not all from the same exemplars), which is almost always a good thing.
+# My gut is that backoff (i.e. using only stories with diverse axes) is good, but I can't put my finger on what difference it makes
+# Doesn't seem to be a noticeable difference between top 5-10% or 10-15% or 10-20% (not included here).

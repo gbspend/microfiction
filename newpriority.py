@@ -162,7 +162,7 @@ def best(stories,regenf,canRegen,scoref,fraw,norm=False):
 		#print p.bestch.s,p.bestsc
 		assert p.bestch.score == p.bestsc
 		choices.append((p.bestch.s, p.bestsc))
-		if p.secondch:
+		if p.secondch: #balance between not letting good stories getting buried under slightly better stories and minimizing species score bias
 			choices.append((p.secondch.s,p.secondch.score))
 	
 	if norm:
