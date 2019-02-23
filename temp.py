@@ -2,7 +2,7 @@ import word2vec, newmicro
 from penseur import penseur
 w2v = word2vec.load('data/tagged.bin')
 pens = penseur.Penseur()
-formats = newmicro.makeFormats(w2v,pens)
+formats = newmicro.makeFormats(w2v,pens,False)
 
 newmicro.doit(formats,w2v,pens)
 
@@ -126,10 +126,10 @@ for tup in formats:
 	if not grb or None in grb:
 		garbs.append(None)
 	else:
-		ret = [h.strip(grb)]
+		ret = [h.strip(' '.join(grb))]
 		for i,w in enumerate(f['words']):
 			grb[i]=w
-			ret.append(h.strip(grb))
+			ret.append(h.strip(' '.join(grb)))
 		garbs.append(ret)
 
 interpos = defaultdict(list) #dictionary of format index to list of other indices that have same POS
@@ -137,6 +137,29 @@ for i,c in enumerate(poss):
 	for j,p in enumerate(poss):
 		if c == p and i != j:
 			interpos[i].append(j)
+
+
+import matplotlib.pyplot as plt
+for i,gs in enumerate(garbs):
+	f = formats[i]
+	axes = f[1]
+	scs = h.getSkipScores(axes[0],axes[1],axes[2],gs,pens)
+	prev = -10000
+	for s in scs:
+			if s < prev:
+					print i,f[3]['raw'],axes,"\n",[(gs[i],scs[i]) for i in range(len(gs))],"\n"
+					break
+			prev = s
+	if True: #verbose
+		c = 'b'
+		titl = f[3]['raw']+' '+str(axes)
+		if prev != scs[-1]:
+			c = 'r'
+			titl = "BAD: "+titl
+		a = plt.plot(scs,color=c)
+		b = plt.title(titl)
+		plt.show()
+
 
 
 

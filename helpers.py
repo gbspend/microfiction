@@ -252,11 +252,12 @@ def writeCsv(csvname, row):
 #p is Penseur instance
 #returns score, higher is better
 #len(l) > 1
-def getSkipScores(bad,good1,good2,story_list,p):
+def getSkipScores(bad,good1,good2,sts,p):
+	story_list = sts[:]
 	story_list += ['asdf'] #need to add/remove dummy story in case len(story_list) ==1
 	p.encode([strip(s) for s in story_list])
 	scores = p.get_axis_scores(bad,good1,good2)
-	story_list = story_list[:-1]
+	#story_list = story_list[:-1]
 	scores = scores[:-1]
 	#for i,story in enumerate(story_list):
 	#	writeCsv("basic1D",[story,scores[i]])

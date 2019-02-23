@@ -459,7 +459,9 @@ if __name__ == "__main__":
 	top = int(params['top_percent']/100.0*len(allres))
 	bottom = int(params['bottom_percent']/100.0*len(allres))
 	assert top < bottom
-	finalout = sorted(allres,reverse=True,key=lambda s: s[1])[top:bottom]
+	finalout = sorted(allres,reverse=True,key=lambda s: s[1])
+	if (bottom - top) > top:
+		finalout = finalout[top:bottom]
 	print "\nOUTPUT"
 	for f in finalout:
 		print f
