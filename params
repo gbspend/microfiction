@@ -1,5 +1,5 @@
-best_axes=True
-bottom_percent=20
+best_axes=False
+bottom_percent=15
 top_percent=10
 normalize=False
 w2v_max=30

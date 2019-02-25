@@ -137,6 +137,8 @@ for i,c in enumerate(poss):
 			interpos[i].append(j)
 
 genss = []
+finalgarbs = []
+scoress = []
 import matplotlib.pyplot as plt
 for i,g in enumerate(garbs):
 	if not g:
@@ -152,13 +154,15 @@ for i,g in enumerate(garbs):
 		grb[j]=w
 		gs.append(h.strip(' '.join(grb)))
 	scs = h.getSkipScores(axes[0],axes[1],axes[2],gs,pens)
+	finalgarbs.append(gs)
+	scoress.append(scs)
 	prev = -10000
 	for s in scs:
 			if s < prev:
 					print i,f[3]['raw'],axes,"\n",[(gs[i],scs[i]) for i in range(len(gs))],"\n"
 					break
 			prev = s
-	if True: #verbose
+	if False: #verbose
 		c = 'b'
 		titl = f[3]['raw']+' '+str(axes)
 		if prev != scs[-1]:

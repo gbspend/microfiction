@@ -142,3 +142,14 @@ print "Coherence:"
 comparesamp(cohgood,cohbad)
 print "Impact:"
 comparesamp(impgood,impbad)
+
+topc = sorted(stories,reverse=True,key=lambda s:cohsc[stories.index(s)])[:10]
+topi = sorted(stories,reverse=True,key=lambda s:impsc[stories.index(s)])[:10]
+
+ts = [2,4,1,1,3,1,2,1,1,1]
+for i in range(10):
+	print topc[i],"\t"*ts[i],topi[i]
+
+
+topdiffc = sorted(stories,reverse=True,key=lambda s:cohsc[stories.index(s)]-impsc[stories.index(s)])[:10]
+topdiffi = sorted(stories,reverse=True,key=lambda s:impsc[stories.index(s)]-cohsc[stories.index(s)])[:10]
