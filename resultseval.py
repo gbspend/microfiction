@@ -84,11 +84,16 @@ def plot_regression(x,y,label=''):
 
 #plt.plot(scorersc) #messy
 plt.plot(cohsc,'o',label='Average coherence')
-plot_regression(list(range(115)),cohsc,label='Coherence Regression')
+plot_regression(list(range(115)),cohsc,label='Coherence regression')
 plt.plot(impsc,'o',label='Average impact')
-plot_regression(list(range(115)),impsc,label='Impact Regression')
+plot_regression(list(range(115)),impsc,label='Impact regression')
+plt.yticks([1,2,3,4,5,6,7], sorted(rvals.keys(),key=lambda k:rvals[k]))
+lbls = ['']*115
+lbls[0] = "Top scored story"
+lbls[-1] = "Lowest scored story"
+plt.xticks(range(115),lbls)
 plt.legend()
-plt.title("Average human-rated coherence and impact of stories sorted by skipthought score (descending)")
+plt.suptitle("Average human-rated coherence and impact of stories sorted by descending score")
 plt.show()
 
 
@@ -107,15 +112,45 @@ for i in range(100,115):
 	cohbad+=coh[s]
 	impbad+=imp[s]
 
+plt.subplot(121)
 plt.boxplot([cohgood,cohbad])
-plt.xticks([1,2], ('Top 100 skipthought-scored stories', 'Bottom 15'))
-plt.title("Boxplot comparison of human-scored coherence of top and bottom skipthought-scored stories")
-plt.show()
+plt.xticks([1,2], ('Top 100 stories', 'Bottom 15'))
+plt.yticks([1,2,3,4,5,6,7], sorted(rvals.keys(),key=lambda k:rvals[k]))
+plt.title("Coherence")
+#plt.tight_layout()
+plt.subplot(122)
 plt.boxplot([impgood,impbad])
-plt.xticks([1,2], ('Top 100 skipthought-scored stories', 'Bottom 15'))
-plt.title("Boxplot comparison of human-scored impact of top and bottom skipthought-scored stories")
+plt.xticks([1,2], ('Top 100 stories', 'Bottom 15'))
+plt.yticks([1,2,3,4,5,6,7], ['']*7)
+plt.title("Impact")
+plt.suptitle("Boxplot comparison of human-rated coherence and impact of top and bottom stories")
+#plt.tight_layout()
 plt.show()
 
+
+subvals = ['Strongly disagree','','','Neither agree nor disagree','','','Strongly agree']
+plt.subplot(211)
+plt.hist(cohsc,rwidth=.9)
+plt.title("Histogram of average human-rated coherence")
+plt.xticks([1,2,3,4,5,6,7], subvals)
+plt.tight_layout()
+plt.subplot(212)
+plt.hist(impsc,rwidth=.9)
+plt.title("Histogram of average human-rated impact")
+plt.xticks([1,2,3,4,5,6,7], subvals)
+plt.tight_layout()
+plt.show()
+
+
+topc = sorted(stories,reverse=True,key=lambda s:cohsc[stories.index(s)])[:10]
+topi = sorted(stories,reverse=True,key=lambda s:impsc[stories.index(s)])[:10]
+
+ts = [2,4,1,1,3,1,2,1,1,1]
+for i in range(10):
+	print topc[i],"\t"*ts[i],topi[i]
+
+topdiffc = sorted(stories,reverse=True,key=lambda s:cohsc[stories.index(s)]-impsc[stories.index(s)])[:10]
+topdiffi = sorted(stories,reverse=True,key=lambda s:impsc[stories.index(s)]-cohsc[stories.index(s)])[:10]
 
 from scipy.stats import ttest_ind
 def printstatp(stat,p):
@@ -143,13 +178,4 @@ comparesamp(cohgood,cohbad)
 print "Impact:"
 comparesamp(impgood,impbad)
 
-topc = sorted(stories,reverse=True,key=lambda s:cohsc[stories.index(s)])[:10]
-topi = sorted(stories,reverse=True,key=lambda s:impsc[stories.index(s)])[:10]
 
-ts = [2,4,1,1,3,1,2,1,1,1]
-for i in range(10):
-	print topc[i],"\t"*ts[i],topi[i]
-
-
-topdiffc = sorted(stories,reverse=True,key=lambda s:cohsc[stories.index(s)]-impsc[stories.index(s)])[:10]
-topdiffi = sorted(stories,reverse=True,key=lambda s:impsc[stories.index(s)]-cohsc[stories.index(s)])[:10]
