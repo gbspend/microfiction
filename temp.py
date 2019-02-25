@@ -136,6 +136,9 @@ for i,c in enumerate(poss):
 		if c == p and i != j:
 			interpos[i].append(j)
 
+
+
+
 genss = []
 finalgarbs = []
 scoress = []
