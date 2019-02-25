@@ -116,6 +116,8 @@ def garbrec(node,isRoot,curr):
 		garbrec(c,False,curr)
 	return curr
 
+
+
 poss = []
 garbs = []
 for tup in formats:
@@ -126,11 +128,7 @@ for tup in formats:
 	if not grb or None in grb:
 		garbs.append(None)
 	else:
-		ret = [h.strip(' '.join(grb))]
-		for i,w in enumerate(f['words']):
-			grb[i]=w
-			ret.append(h.strip(' '.join(grb)))
-		garbs.append(ret)
+		garbs.append(grb)
 
 interpos = defaultdict(list) #dictionary of format index to list of other indices that have same POS
 for i,c in enumerate(poss):
@@ -138,11 +136,21 @@ for i,c in enumerate(poss):
 		if c == p and i != j:
 			interpos[i].append(j)
 
-
+genss = []
 import matplotlib.pyplot as plt
-for i,gs in enumerate(garbs):
+for i,g in enumerate(garbs):
+	if not g:
+		genss.append(None)
+		continue
+	grb = g[:]
 	f = formats[i]
 	axes = f[1]
+	gs = [h.strip(' '.join(grb))]
+	ss = h.strip(random.choice(newmicro.doit(formats,w2v,pens,f,False))[0])
+	genss.append(ss)
+	for j,w in enumerate(ss.split(' ')):#(f['words']): #use a generated story instead of f['words'] to avoid bias toward the axis story itself
+		grb[j]=w
+		gs.append(h.strip(' '.join(grb)))
 	scs = h.getSkipScores(axes[0],axes[1],axes[2],gs,pens)
 	prev = -10000
 	for s in scs:
@@ -196,7 +204,7 @@ import matplotlib.pyplot as plt
 badstory = 'plunger volcano paper the mug switches'
 def testaxes(ai1,ai2,interis,p,graph=False):
 	goods = [getstory(i) for i in interis if i!=ai1 and i!=ai2]
-	bads = [garbs[i][0] for i in interis]
+	bads = [garbs[i][0] for i in interis] #DOESN'T WORK ANYMORE!
 	if type(ai1) == int:
 		s1 = getstory(ai1)
 	else:
@@ -317,7 +325,7 @@ def randmultitest():
 	s1,s2 = [getstory(i) for i in twois()]
 	somegarbs = set()
 	while len(somegarbs) < 20:
-		somegarbs.add(tuple(random.choice(garbs)))
+		somegarbs.add(tuple(random.choice(garbs))) #DOESN'T WORK ANYMORE!
 	samelevels = [[],[],[],[],[],[],[]]
 	for gs in somegarbs:
 		for i,g in enumerate(gs):
