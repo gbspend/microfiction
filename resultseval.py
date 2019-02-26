@@ -82,19 +82,20 @@ def plot_regression(x,y,label=''):
 
 #============
 
-#plt.plot(scorersc) #messy
-plt.plot(cohsc,'o',label='Average coherence')
-plot_regression(list(range(115)),cohsc,label='Coherence regression')
-plt.plot(impsc,'o',label='Average impact')
-plot_regression(list(range(115)),impsc,label='Impact regression')
-plt.yticks([1,2,3,4,5,6,7], sorted(rvals.keys(),key=lambda k:rvals[k]))
-lbls = ['']*115
-lbls[0] = "Top scored story"
-lbls[-1] = "Lowest scored story"
-plt.xticks(range(115),lbls)
-plt.legend()
-#plt.suptitle("Average human-rated coherence and impact of stories sorted by descending score")
-plt.show()
+if False:
+	#plt.plot(scorersc) #messy
+	plt.plot(cohsc,'o',label='Average coherence')
+	plot_regression(list(range(115)),cohsc,label='Coherence regression')
+	plt.plot(impsc,'o',label='Average impact')
+	plot_regression(list(range(115)),impsc,label='Impact regression')
+	plt.yticks([1,2,3,4,5,6,7], sorted(rvals.keys(),key=lambda k:rvals[k]))
+	lbls = ['']*115
+	lbls[0] = "Top scored story"
+	lbls[-1] = "Lowest scored story"
+	plt.xticks(range(115),lbls)
+	plt.legend()
+	#plt.suptitle("Average human-rated coherence and impact of stories sorted by descending score")
+	plt.show()
 
 
 cohgood = []
@@ -102,7 +103,7 @@ cohbad = []
 impgood = []
 impbad = []
 
-for i in range(100):
+for i in range(15):
 	s=stories[i]
 	cohgood+=coh[s]
 	impgood+=imp[s]
@@ -128,18 +129,19 @@ plt.title("Impact")
 plt.show()
 
 
-subvals = ['Strongly disagree','','','Neither agree nor disagree','','','Strongly agree']
-plt.subplot(211)
-plt.hist(cohsc,rwidth=.9)
-plt.title("Coherence")#plt.title("Histogram of average human-rated coherence")
-plt.xticks([1,2,3,4,5,6,7], subvals)
-plt.tight_layout()
-plt.subplot(212)
-plt.hist(impsc,rwidth=.9)
-plt.title("Impact")#plt.title("Histogram of average human-rated impact")
-plt.xticks([1,2,3,4,5,6,7], subvals)
-plt.tight_layout()
-plt.show()
+if False:
+	subvals = ['Strongly disagree','','','Neither agree nor disagree','','','Strongly agree']
+	plt.subplot(211)
+	plt.hist(cohsc,rwidth=.9)
+	plt.title("Coherence")#plt.title("Histogram of average human-rated coherence")
+	plt.xticks([1,2,3,4,5,6,7], subvals)
+	plt.tight_layout()
+	plt.subplot(212)
+	plt.hist(impsc,rwidth=.9)
+	plt.title("Impact")#plt.title("Histogram of average human-rated impact")
+	plt.xticks([1,2,3,4,5,6,7], subvals)
+	plt.tight_layout()
+	plt.show()
 
 
 topc = sorted(stories,reverse=True,key=lambda s:cohsc[stories.index(s)])[:10]

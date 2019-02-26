@@ -142,6 +142,7 @@ for i,c in enumerate(poss):
 genss = []
 finalgarbs = []
 scoress = []
+badis = []
 import matplotlib.pyplot as plt
 for i,g in enumerate(garbs):
 	if not g:
@@ -163,6 +164,7 @@ for i,g in enumerate(garbs):
 	for s in scs:
 			if s < prev:
 					print i,f[3]['raw'],axes,"\n",[(gs[i],scs[i]) for i in range(len(gs))],"\n"
+					badis.append(i)
 					break
 			prev = s
 	if False: #verbose
@@ -382,8 +384,24 @@ for s in stories:
 
 
 
+#these were "not bad": [128, 1, 145, 23, 153, 157, 30, 50, 184, 208, 56, 227, 85, 91, 96, 98, 99, 236, 240, 241, 119, 124, 125]
+#load scoress from pickle
+import numpy as np
+def doit(scss):
+	loc = 1
+	fig = plt.figure()
+	for i in list(np.random.choice(len(scss),4)):
+		sc = scss[i]
+		plt.subplot(2,2,loc)
+		plt.xticks(range(7),reversed(range(7)))
+		loc+=1
+		plt.plot(sc)
+	fig.text(0.5, 0.04, 'Number of random words', ha='center')
+	fig.text(0.04, 0.5, 'Skip-thought score', va='center', rotation='vertical')
+	fig.show()
 
 
+doit(scoress)
 
 
 
