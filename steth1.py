@@ -114,6 +114,18 @@ untagged1(w2v,"woman",[("boy","prince"),("man","king")],"_NN","_NN",10)
 untagged2(w2v,"woman",[("boy","prince"),("man","king")],"_NN","_NN",10)
 onlyPosMatches(test1(w2v,["king_NN","prince_NN","woman_NN"],["man_NN","boy_NN"],10),"_NN")
 
+untagged1(w2v,"cow",[("dog","barks"),("cat","meows")],"_NN","_VBZ",10)
+untagged2(w2v,"cow",[("dog","barks"),("cat","meows")],"_NN","_VBZ",10)
+#moos_VBZ is in w2v! what the word2heck!?
+
+untagged1(w2v,"drive",[("row","boat"),("fly","plane")],"_VB","_NN",10)
+untagged2(w2v,"drive",[("row","boat"),("fly","plane")],"_VB","_NN",10)
+
+untagged1(w2v,"river",[("forest","trees"),("mountain","rocks")],"_NN","_NNS",10)
+untagged1(w2v,"ocean",[("forest","trees"),("mountain","rocks")],"_NN","_NNS",10)
+untagged2(w2v,"river",[("forest","trees"),("mountain","rocks")],"_NN","_NNS",10)
+untagged2(w2v,"ocean",[("forest","trees"),("mountain","rocks")],"_NN","_NNS",10)
+
 idxs, metrics = w2v.analogy(pos=["king_NN","prince_NN","woman_NN"],neg=["man_NN","boy_NN"],n=10)
 ret = w2v.generate_response(idxs, metrics).tolist()
 
