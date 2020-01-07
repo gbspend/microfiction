@@ -23,6 +23,7 @@ badstory = 'plunger volcano paper the mug switches'
 #word, start, and end are untagged
 def w2vChoices(word,start,startTag,end,endTag,w2v,rmax=30,rmin=10):
 	assert rmax > rmin
+	#1/6/2020 note: this pos/neg and tag allocation (agreement) are correct!
 	maxset = set(h.get_scholar_rels(word+startTag,[(start,end)],w2v,startTag,endTag,rmax))
 	minset = set(h.get_scholar_rels(word+startTag,[(start,end)],w2v,startTag,endTag,rmin))
 	#print maxset-minset, minset

@@ -201,6 +201,10 @@ def get_nouns_from_verb(start, relations, w2v):
 		start += '_VB'
 	return get_scholar_rels(start, relations, w2v, '_VB', '_NN')
 
+#start: POS tagged word like "dog_NN"
+#relations: list of tuples/lists of len 2, untagged [(cat, meow), (cow, moo)]
+#tag1: POS tag of left hand of relations (t[0]) and start
+#tag2: POS tag of right hand of relations (t[1])
 # Scholar by Daniel Ricks: https://github.com/danielricks/scholar
 def get_scholar_rels(start, relations, w2v, tag1, tag2,num=10):
 	counts = defaultdict(float)
@@ -225,7 +229,7 @@ def get_scholar_rels(start, relations, w2v, tag1, tag2,num=10):
 	ret = [x[0] for x in ret]
 	ret = sorted(ret, key=counts.get, reverse=True)
 	ret = [x[:-(len(x)-x.find('_'))] for x in ret]
-	ret = list(set(ret)) # remove duplicates
+	ret = list(set(ret)) # remove duplicates (and undoes sort!)
 
 	return ret
 
