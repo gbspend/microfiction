@@ -1,5 +1,5 @@
 from collections import defaultdict
-import word2vec, newmicro
+import word2vec
 w2v = word2vec.load('data/tagged.bin')
 
 def get_scholar_rels(start, relations, w2v, tag1, tag2,num=10):
@@ -66,8 +66,10 @@ def test1(w2v,poss,negs,num=10):
 #filter by tag2
 def untagged1(w2v,query, relations, tag1, tag2, num=10):
 	ret = []
+	if "_" not in query:
+		query += tag1
 	for rel in relations:
-		positives = [rel[1] + tag2, query + tag1]
+		positives = [rel[1] + tag2, query]
 		negatives = [rel[0] + tag1]
 		flag = False
 		for w in positives+negatives:
