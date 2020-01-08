@@ -40,10 +40,6 @@ def makeEmptyFormat(s):
 def makeNode():
 	return {'word':'', 'index':-1, 'pos':'', 'dep':'', 'children':[]}
 
-def arrayIns(a,i,v):
-	a += [None]*(i-len(a)+1)
-	a[i]=v
-
 def numberRec(n,i):
 	n['index'] = i
 	if len(n['children']) > 0:
@@ -90,7 +86,7 @@ def makeRawForms(fname):
 			continue
 		if marker not in line:
 			if curr is not None and not isBadFormat(curr):
-				#postprocess fixing indexes (currently they are in the correct order but not necessarily
+				#postprocess fixing indexes (currently they are in the correct order but not necessarily sequential
 				setIndRec(curr['root'], sorted(list(used_indices))) #the raw index's index in "used_indices" is correct index :P
 				ret.append(curr)
 			curr = makeEmptyFormat(line)
@@ -116,9 +112,12 @@ def makeRawForms(fname):
 				last.append(node)
 				curr['root'] = node
 			else:
-				if n-1 > len(last)-1:
+				#last stores the last node at each level (n) denoted by the first number on the "->" line in the corpus file
+				if n > len(last):
 					n = len(last)
-				arrayIns(last,n,node)
+				if n == len(last):
+					last.append(None)
+				last[n]=node
 				last[n-1]['children'].append(node)
 	return ret
 			
