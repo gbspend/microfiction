@@ -1,4 +1,4 @@
-import word2vec, random, newpriority, formats, sys
+import word2vec, random, newpriority, formatssw, sys
 import helpers as h
 from penseur import penseur
 import wordbags as wb
@@ -86,6 +86,8 @@ def genrec(node,parent,prev,force,w2v,fillin,w2vmax,w2vmin):
 		if parent:
 			force = True #only force regen if its not the root (i.e. it has a parent)
 	else:
+		if parent['replace']:
+			parent = parent['replace']
 		nodep = node['pos']
 		startTag = '_'+parent['pos']
 		endTag = '_'+nodep
@@ -94,6 +96,7 @@ def genrec(node,parent,prev,force,w2v,fillin,w2vmax,w2vmin):
 		if parent['dep'] == 'root' and cacheK in choiceCache:
 			choices = choiceCache[cacheK]
 		else:
+			
 			choices = w2vChoices(prev,parent['word'],startTag,node['word'],endTag,w2v,w2vmax,w2vmin)
 			if parent['dep'] == 'root': #only cache choices from root (more likely to be used, caching all is too much data for too little overlap)
 				choiceCache[cacheK] = choices
@@ -102,8 +105,6 @@ def genrec(node,parent,prev,force,w2v,fillin,w2vmax,w2vmin):
 		if cacheK not in relsCache:
 			relsCache[cacheK] = cn.getRels(parent['word'],node['word'])
 		cnRels = relsCache[cacheK]
-		#if cnRels:
-		#	print "has rels!",parent['word'],"->",node['word']
 		for rel in cnRels:
 			choices += [cn.stripPre(t[0]) for t in cn.getOutgoing(prev, rel)]
 
@@ -120,14 +121,9 @@ def genrec(node,parent,prev,force,w2v,fillin,w2vmax,w2vmin):
 					final.append(newc)
 
 		if not final:
-			word = wb.get(nodep)#word = node['word'] #grab from wordbag instead??
+			word = wb.get(nodep)#grab from wordbag insteadof using node['word']
 		else:
 			word = random.choice(final) #Can this be smarter?
-		#what to do if final is empty? Maybe just plug in original word??
-		#print 'Vector:', parent['word'],'to',node['word']/
-		#print 'Apply vector to:',prev,'->',final
-		#print 'Chose:',word
-		#print ''
 		if not word:
 			word = node['word']
 
@@ -242,7 +238,7 @@ def makeFormats(w2v,pens,bestaxes=True,w2vmax=30,w2vmin=10,backoff=False):
 	ret = []
 	ex = 0
 	seen = set()
-	for fraw in formats.makeAllRawForms():
+	for fraw in formatssw.makeAllRawForms():
 		if fraw['raw'] in seen:
 			continue
 		seen.add(fraw['raw'])

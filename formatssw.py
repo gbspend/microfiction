@@ -1,4 +1,6 @@
 import os, string, re
+from nltk.corpus import stopwords as sw
+stopwords = set(sw.words('english'))
 
 holds = [("'s","*&")] #things that should just be left in plug
 def makeEmptyFormat(s):
@@ -38,7 +40,7 @@ def makeEmptyFormat(s):
 	return form
 	
 def makeNode():
-	return {'word':'', 'index':-1, 'pos':'', 'dep':'', 'children':[],'replace':None}
+	return {'word':'', 'index':-1, 'pos':'', 'dep':'', 'children':[], 'replace':None}
 
 def numberRec(n,i):
 	n['index'] = i
@@ -123,11 +125,33 @@ def makeRawForms(fname):
 			
 #0 -> friend/NN (root)
 
+#finds parent nodes containing stopwords and looks back to see if it can find a non-stopword parent
+#if it does, that parent is stored in node['replace'] and can be used for generation
+#if any nodes can't be so replaced, the function returns False (True otherwise) and the format should be discarded (onlt 4%!)
+def stopwordRec(node,parent):
+	node['parent'] = parent
+	w = node['word']
+	for n in node['children']:
+		if w in stopwords:
+			p = parent
+			while True:
+				if not p: #bad! There wasn't a non-stopword node between here and the root; discard the format
+					return False
+				elif p['word'] not in stopwords:
+					node['replace'] = p
+					break
+				p = p['parent']
+		if not stopwordRec(n,node):
+			return False
+	return True
+
 def makeAllRawForms():
 	path = os.getcwd()+'/corpus/'
 	ret = []
 	for f in os.listdir(path):
-		ret += makeRawForms(path+f)
+		for fraw in makeRawForms(path+f):
+			if stopwordRec(fraw['root'],None):
+				ret.append(fraw)
 	return ret
 
 #NOTES:
