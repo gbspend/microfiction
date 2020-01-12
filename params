@@ -5,3 +5,4 @@ normalize=False
 w2v_max=30
 w2v_min=10
 backoff=True
+verb_gen=False

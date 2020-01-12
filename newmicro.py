@@ -79,7 +79,7 @@ relsCache = {}
 #force is boolean to force regen (ignore lock)
 #w2v is w2v
 #fillin is out var; starts as lock, fill in other words (replace if forced)
-def genrec(node,parent,prev,force,w2v,fillin,w2vmax,w2vmin):
+def genrec(node,parent,prev,force,w2v,fillin,w2vmax,w2vmin,verbgen):
 	i = node['index']
 	if not force and fillin[i]:
 		word = fillin[i]
@@ -123,6 +123,9 @@ def genrec(node,parent,prev,force,w2v,fillin,w2vmax,w2vmin):
 		if not final:
 			word = wb.get(nodep)#grab from wordbag insteadof using node['word']
 		else:
+			if verbgen:
+				print parent['word'],":",node['word'],"::",prev,":\n",final
+				print
 			word = random.choice(final) #Can this be smarter?
 		if not word:
 			word = node['word']
@@ -130,9 +133,9 @@ def genrec(node,parent,prev,force,w2v,fillin,w2vmax,w2vmin):
 		fillin[i]=word
 	if len(node['children']):
 		for child in node['children']:
-			genrec(child,node,word,force,w2v,fillin,w2vmax,w2vmin)
+			genrec(child,node,word,force,w2v,fillin,w2vmax,w2vmin,verbgen)
 
-def gen(fraw,w2v,lock,w2vmax=30,w2vmin=10):
+def gen(fraw,w2v,lock,w2vmax=30,w2vmin=10,verbgen=False):
 	#traverse tree; if parent locked, regen all children (set a force flag)
 	root = fraw['root']
 	if lock[root['index']] is None:
@@ -140,7 +143,7 @@ def gen(fraw,w2v,lock,w2vmax=30,w2vmin=10):
 		if not new_root:
 			return None
 		lock[root['index']] = new_root
-	genrec(root,None,None,False,w2v,lock,w2vmax,w2vmin) #lock is out var
+	genrec(root,None,None,False,w2v,lock,w2vmax,w2vmin,verbgen) #lock is out var
 	if None in lock:
 		return None
 	for i in range(len(lock)):
@@ -234,7 +237,7 @@ def testaxes(ai1,ai2,interis,p,fmts):
 	sumbad = sum(badsc)
 	return sumgood-sumbad
 
-def makeFormats(w2v,pens,bestaxes=True,w2vmax=30,w2vmin=10,backoff=False):
+def makeFormats(w2v,pens,bestaxes=True,w2vmax=30,w2vmin=10,backoff=False,verbgen=False):
 	ret = []
 	ex = 0
 	seen = set()
@@ -248,7 +251,7 @@ def makeFormats(w2v,pens,bestaxes=True,w2vmax=30,w2vmin=10,backoff=False):
 			ex +=1
 			continue
 		processPOS(fraw['root'],w2v) #Preprocess each node by checking whether word_pos is in w2v and massage them if possible
-		genf = lambda lock, fraw=fraw, w2v=w2v, w2vmax=w2vmax, w2vmin=w2vmin: gen(fraw,w2v,lock,w2vmax,w2vmin)
+		genf = lambda lock, fraw=fraw, w2v=w2v, w2vmax=w2vmax, w2vmin=w2vmin, verbgen=verbgen: gen(fraw,w2v,lock,w2vmax,w2vmin,verbgen)
 		regen = range(6)
 		del regen[fraw['root']['index']]
 		goodstory = h.strip(" ".join(fraw['words']))
@@ -417,6 +420,7 @@ if __name__ == "__main__":
 	params['w2v_max']=30
 	params['w2v_min']=10
 	params['backoff']=False #<reducto>BACK OFF!</reducto>
+	params['verb_gen']=False #verbose generation; prints x:y::a:[list]
 	
 	with open(paramsfn,'r') as f:
 		for line in f:
@@ -433,6 +437,7 @@ if __name__ == "__main__":
 				v = False
 			params[k.strip()] = v
 			
+	assert params['bottom_percent'] > params['top_percent']
 	for k in params:
 		print k,params[k]
 
@@ -444,7 +449,7 @@ if __name__ == "__main__":
 	pens = penseur.Penseur()
 	print "Penseur Loaded"
 
-	formats = makeFormats(w2v,pens,params['best_axes'],params['w2v_max'],params['w2v_min'],params['backoff'])
+	formats = makeFormats(w2v,pens,params['best_axes'],params['w2v_max'],params['w2v_min'],params['backoff'],params['verb_gen'])
 	print "Formats:",len(formats)
 	
 	allres = []
@@ -453,12 +458,15 @@ if __name__ == "__main__":
 	allres = [a for a in allres if a]
 	#print allres
 	
+	finalout = sorted(allres,reverse=True,key=lambda s: s[1])
 	top = int(params['top_percent']/100.0*len(allres))
 	bottom = int(params['bottom_percent']/100.0*len(allres))
-	assert top < bottom
-	finalout = sorted(allres,reverse=True,key=lambda s: s[1])
-	if (bottom - top) > top:
-		finalout = finalout[top:bottom]
+	if top > 0 and bottom > 0:
+		if top == bottom:
+			top -= 1
+		assert top < bottom, str(top)+", "+str(bottom)+", "+str(params['top_percent'])+", "+str(params['bottom_percent'])+", "+str(len(allres))
+		if (bottom - top) > top:
+			finalout = finalout[top:bottom]
 	print "\nOUTPUT"
 	for f in finalout:
 		print f
