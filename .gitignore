@@ -97,4 +97,5 @@ corenlp-python/*
 format_parser/*.depparse.txt
 oldoutput/*
 OLD/*
+*.p
 
